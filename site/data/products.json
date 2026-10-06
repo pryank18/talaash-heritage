@@ -1,0 +1,301 @@
+[
+  {
+    "id": "11111111-1111-4111-8111-111111111101",
+    "slug": "reading-asokan-edicts-brahmi",
+    "title": "Reading Aśokan edicts: a first session in Brāhmī",
+    "subtitle": "Live online lecture with a guided reading of the Girnar rock edict",
+    "description": "A two-hour live session that takes you from the Brāhmī alphabet to reading a full line of an Aśokan edict by yourself. We cover how the script was deciphered, the sound values of each letter, and the conventions epigraphists use when they publish a reading.\n\nYou get the handout and the estampage images a day before the session. The recording stays available to registered participants for 30 days.",
+    "type": "live",
+    "price_paise": 49900,
+    "compare_at_paise": null,
+    "currency": "INR",
+    "stock": 80,
+    "requires_shipping": false,
+    "image_url": null,
+    "starts_at": "2026-11-14T12:30:00Z",
+    "duration_minutes": 120,
+    "speaker": "Talaash Heritage faculty",
+    "venue": "Online, link sent after payment",
+    "details": {
+      "Language": "English and Hindi",
+      "Level": "No background needed",
+      "Includes": "Handout, estampage images, 30-day recording"
+    },
+    "tags": [
+      "epigraphy",
+      "brahmi"
+    ],
+    "is_active": true,
+    "is_featured": true,
+    "sort_order": 10
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111102",
+    "slug": "sakta-ethos-devimahatmya-recording",
+    "title": "Understanding the Śākta ethos from the Devīmāhātmya",
+    "subtitle": "Lecture recording on the tantric tradition",
+    "description": "The full recording of our lecture on how the Devīmāhātmya frames the Goddess, and what that tells us about the Śākta and tantric traditions that grew around the text.\n\nWatch at your own pace. The reading list and slides are included.",
+    "type": "recording",
+    "price_paise": 29900,
+    "compare_at_paise": null,
+    "currency": "INR",
+    "stock": null,
+    "requires_shipping": false,
+    "image_url": null,
+    "starts_at": null,
+    "duration_minutes": 95,
+    "speaker": "Talaash Heritage faculty",
+    "venue": "Online, watch any time",
+    "details": {
+      "Language": "English",
+      "Includes": "Slides and reading list",
+      "Access": "Link on your order page after payment"
+    },
+    "tags": [
+      "religion",
+      "texts"
+    ],
+    "is_active": true,
+    "is_featured": true,
+    "sort_order": 20
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111109",
+    "slug": "counselling-archaeology-careers",
+    "title": "One-to-one counselling: studying and working in archaeology and heritage",
+    "subtitle": "A 45-minute video call about your next step",
+    "description": "A private conversation about where you are and where you want to go: which MA or PhD programmes suit you, how entrance exams and fieldwork applications work, what jobs exist in museums, surveys, conservation and heritage management, and what to do in the next six months.\n\nSend your questions and your CV beforehand so the time is spent on answers. You get a written summary of the advice after the call.",
+    "type": "counselling",
+    "price_paise": 49900,
+    "compare_at_paise": null,
+    "currency": "INR",
+    "stock": null,
+    "requires_shipping": false,
+    "image_url": null,
+    "starts_at": null,
+    "duration_minutes": 45,
+    "speaker": "Talaash Heritage faculty",
+    "venue": "Online video call",
+    "details": {
+      "Booking": "Choose your time from the calendar link on your order page after payment",
+      "Language": "English or Hindi",
+      "Rescheduling": "Free up to 24 hours before your slot"
+    },
+    "tags": [
+      "counselling",
+      "careers"
+    ],
+    "is_active": true,
+    "is_featured": true,
+    "sort_order": 25
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111103",
+    "slug": "indian-temple-architecture-course",
+    "title": "Indian temple architecture: Nāgara, Drāviḍa and Vesara",
+    "subtitle": "Six-week weekend course",
+    "description": "Six Saturday sessions that teach you to read a temple: its plan, its elevation and the vocabulary used to describe both. By the end you can look at a śikhara or a vimāna and place it by region and period.\n\nEach week has one live class, one reading and a short identification exercise with feedback.",
+    "type": "course",
+    "price_paise": 249900,
+    "compare_at_paise": 299900,
+    "currency": "INR",
+    "stock": 40,
+    "requires_shipping": false,
+    "image_url": null,
+    "starts_at": "2026-12-05T05:30:00Z",
+    "duration_minutes": 90,
+    "speaker": "Talaash Heritage faculty",
+    "venue": "Online, link sent after payment",
+    "details": {
+      "Schedule": "Saturdays, 11:00 am IST, six weeks",
+      "Language": "English",
+      "Certificate": "On completing four of six exercises"
+    },
+    "tags": [
+      "architecture",
+      "art history"
+    ],
+    "is_active": true,
+    "is_featured": true,
+    "sort_order": 30
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111104",
+    "slug": "mehrauli-archaeological-park-walk",
+    "title": "Mehrauli Archaeological Park: a thousand years in three hours",
+    "subtitle": "Guided heritage walk in Delhi",
+    "description": "A morning walk through Mehrauli, from the stepwells to the tombs, with an archaeologist who shows you how to tell a Sultanate arch from a Mughal one and why the difference matters.\n\nGroups are kept small so everyone can hear and ask questions. Wear walking shoes and carry water.",
+    "type": "walk",
+    "price_paise": 79900,
+    "compare_at_paise": null,
+    "currency": "INR",
+    "stock": 20,
+    "requires_shipping": false,
+    "image_url": null,
+    "starts_at": "2026-11-22T02:00:00Z",
+    "duration_minutes": 180,
+    "speaker": "Talaash Heritage faculty",
+    "venue": "Meeting point shared after payment",
+    "details": {
+      "Group size": "20 people at most",
+      "Distance": "About 3 km on uneven ground",
+      "Language": "English and Hindi"
+    },
+    "tags": [
+      "delhi",
+      "walk"
+    ],
+    "is_active": true,
+    "is_featured": false,
+    "sort_order": 40
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111110",
+    "slug": "national-museum-harappan-gallery-day",
+    "title": "Harappan gallery up close: a museum morning with an archaeologist",
+    "subtitle": "Small-group experience at the National Museum, New Delhi",
+    "description": "Three hours in one gallery instead of thirty minutes in ten. We look at seals, weights, beads and pottery the way an excavator does: what it is made of, how it was found, and what it can and cannot tell us.\n\nYou leave with a short illustrated guide to the objects we discussed.",
+    "type": "experience",
+    "price_paise": 119900,
+    "compare_at_paise": null,
+    "currency": "INR",
+    "stock": 12,
+    "requires_shipping": false,
+    "image_url": null,
+    "starts_at": "2026-11-29T05:00:00Z",
+    "duration_minutes": 180,
+    "speaker": "Talaash Heritage faculty",
+    "venue": "Meeting point shared after payment",
+    "details": {
+      "Group size": "12 people at most",
+      "Museum entry": "Not included; buy at the counter",
+      "Language": "English and Hindi"
+    },
+    "tags": [
+      "delhi",
+      "museum"
+    ],
+    "is_active": true,
+    "is_featured": true,
+    "sort_order": 45
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111105",
+    "slug": "brahmi-script-chart-a3",
+    "title": "Brāhmī script chart",
+    "subtitle": "A3 print with Devanāgarī and roman equivalents",
+    "description": "Every Aśokan Brāhmī letter with its Devanāgarī and IAST equivalent, set large enough to read from across a room. Printed on 250 gsm matte paper and shipped rolled in a tube.",
+    "type": "physical",
+    "price_paise": 34900,
+    "compare_at_paise": null,
+    "currency": "INR",
+    "stock": 60,
+    "requires_shipping": true,
+    "image_url": null,
+    "starts_at": null,
+    "duration_minutes": null,
+    "speaker": null,
+    "venue": null,
+    "details": {
+      "Size": "A3, 297 × 420 mm",
+      "Paper": "250 gsm matte",
+      "Ships in": "3 to 5 working days"
+    },
+    "tags": [
+      "print",
+      "epigraphy"
+    ],
+    "is_active": true,
+    "is_featured": true,
+    "sort_order": 50
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111106",
+    "slug": "trench-field-notebook",
+    "title": "Trench notebook",
+    "subtitle": "Gridded field notebook with a printed scale on the cover edge",
+    "description": "A pocket notebook built for site visits: 5 mm grid pages for plans and sections, a 15 cm scale printed along the cover edge, and a stitched spine that lies flat.",
+    "type": "physical",
+    "price_paise": 24900,
+    "compare_at_paise": null,
+    "currency": "INR",
+    "stock": 120,
+    "requires_shipping": true,
+    "image_url": null,
+    "starts_at": null,
+    "duration_minutes": null,
+    "speaker": null,
+    "venue": null,
+    "details": {
+      "Size": "A6, 96 pages",
+      "Paper": "100 gsm, 5 mm grid",
+      "Ships in": "3 to 5 working days"
+    },
+    "tags": [
+      "stationery"
+    ],
+    "is_active": true,
+    "is_featured": true,
+    "sort_order": 60
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111107",
+    "slug": "monuments-postcard-set",
+    "title": "Twelve monuments postcard set",
+    "subtitle": "Measured drawings of twelve Indian monuments",
+    "description": "Twelve postcards, each with a measured elevation drawing on the front and a short note on the back about when the monument was built and what to look for when you visit.",
+    "type": "physical",
+    "price_paise": 19900,
+    "compare_at_paise": null,
+    "currency": "INR",
+    "stock": 200,
+    "requires_shipping": true,
+    "image_url": null,
+    "starts_at": null,
+    "duration_minutes": null,
+    "speaker": null,
+    "venue": null,
+    "details": {
+      "Contents": "12 postcards, 105 × 148 mm",
+      "Paper": "300 gsm uncoated",
+      "Ships in": "3 to 5 working days"
+    },
+    "tags": [
+      "print",
+      "architecture"
+    ],
+    "is_active": true,
+    "is_featured": true,
+    "sort_order": 70
+  },
+  {
+    "id": "11111111-1111-4111-8111-111111111108",
+    "slug": "harappan-seals-reading-pack",
+    "title": "Harappan seals reading pack",
+    "subtitle": "Printed booklet with a recorded introduction",
+    "description": "A 48-page booklet on how Harappan seals were made, used and excavated, with drawings of forty seals at actual size. Comes with a one-hour recorded introduction you can watch before you read.",
+    "type": "physical",
+    "price_paise": 59900,
+    "compare_at_paise": null,
+    "currency": "INR",
+    "stock": 0,
+    "requires_shipping": true,
+    "image_url": null,
+    "starts_at": null,
+    "duration_minutes": 60,
+    "speaker": null,
+    "venue": null,
+    "details": {
+      "Booklet": "48 pages, A5",
+      "Recording": "60 minutes, link on your order page",
+      "Ships in": "3 to 5 working days"
+    },
+    "tags": [
+      "booklet",
+      "harappa"
+    ],
+    "is_active": true,
+    "is_featured": false,
+    "sort_order": 80
+  }
+]
