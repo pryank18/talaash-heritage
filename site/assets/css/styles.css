@@ -462,3 +462,6 @@ a.chip:hover, a.chip:focus-visible { border-color: var(--ink); }
 .faq summary:hover { text-decoration: underline; text-decoration-thickness: 1px; }
 .faq details p { margin: 0 0 1rem; }
 .filters label { white-space: nowrap; }
+
+/* ---------- programme illustrations ---------- */
+.art-note { margin: 0.4rem 0 0; font-size: var(--step--1); color: var(--ink-soft); }
