@@ -139,10 +139,15 @@ export function stratArt(p) {
   return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${esc(`Illustration for ${p.title}`)}" xmlns="http://www.w3.org/2000/svg">${out}</svg>`;
 }
 
-export function productArt(p) {
-  return p.image_url
-    ? `<img src="${esc(p.image_url)}" alt="${esc(p.title)}" loading="lazy" width="400" height="300">`
-    : stratArt(p);
+/** True when the picture is one of our own drawn illustrations rather than a photograph. */
+export const isIllustration = (p) => /^assets\/img\/programmes\/[a-z0-9-]+\.jpg$/.test(p.image_url || "");
+
+/** `sizes` tells the browser how wide the picture is shown, so phones fetch the small file. */
+export function productArt(p, sizes = "(min-width: 1000px) 25vw, (min-width: 640px) 50vw, 100vw") {
+  if (!p.image_url) return stratArt(p);
+  if (!isIllustration(p)) return `<img src="${esc(p.image_url)}" alt="${esc(p.title)}" loading="lazy" width="400" height="300">`;
+  const small = p.image_url.replace(/\.jpg$/, "-s.jpg");
+  return `<img src="${esc(small)}" srcset="${esc(small)} 560w, ${esc(p.image_url)} 1040w" sizes="${esc(sizes)}" alt="${esc(`Illustration for ${p.title}`)}" loading="lazy" width="1040" height="780">`;
 }
 
 export function priceHtml(p) {

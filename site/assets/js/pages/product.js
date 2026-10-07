@@ -1,7 +1,7 @@
 import { getProduct } from "../api.js";
 import { CONFIG } from "../config.js";
 import { addToCart, getCart, MAX_QTY } from "../store.js";
-import { $, esc, formatDuration, formatWhen, isRequest, isSoon, kindLabel, priceHtml, productArt, requestLinks, stockFlag, toast } from "../ui.js";
+import { $, esc, formatDuration, formatWhen, isIllustration, isRequest, isSoon, kindLabel, priceHtml, productArt, requestLinks, stockFlag, toast } from "../ui.js";
 
 const root = $("#product-root");
 const slug = new URLSearchParams(location.search).get("slug");
@@ -77,7 +77,10 @@ async function render() {
   root.innerHTML = `
     <p class="crumbs"><a href="shop.html">Shop</a> / ${esc(kindLabel(p))}</p>
     <div class="product">
-      <div class="product-art">${productArt(p)}</div>
+      <div>
+        <div class="product-art">${productArt(p, "(min-width: 760px) 50vw, 100vw")}</div>
+        ${isIllustration(p) ? `<p class="art-note">Illustration, not a photograph.</p>` : ""}
+      </div>
       <div>
         <h1>${esc(p.title)}</h1>
         ${p.subtitle ? `<p class="product-sub">${esc(p.subtitle)}</p>` : ""}

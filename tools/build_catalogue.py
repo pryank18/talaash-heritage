@@ -2,7 +2,7 @@
 plus how the existing database listings are shown (hidden, or enquiry-only).
 Run: python3 build_catalogue.py <path to site/data/catalogue.json>
 """
-import json, re, sys, unicodedata
+import json, os, re, sys, unicodedata
 
 LANG = "English, Hindi or both"
 
@@ -150,6 +150,16 @@ def slugify(text):
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
 
 
+IMG_DIR = "assets/img/programmes"
+
+
+def illustration(out_path, slug):
+    """Path of the programme's illustration, if the file is in the site folder."""
+    site = os.path.dirname(os.path.dirname(os.path.abspath(out_path)))
+    rel = f"{IMG_DIR}/{slug}.jpg"
+    return rel if os.path.exists(os.path.join(site, rel)) else None
+
+
 def programme(i, row):
     f, title, sub, desc, aud, length, where, by, group, extra = row
     slug = slugify(title)
@@ -161,7 +171,7 @@ def programme(i, row):
         "id": f"req-{slug}", "slug": slug, "title": title, "subtitle": sub,
         "description": f"{desc}\n\n{FLEX[f]}",
         "type": TYPE[f], "kind": KIND[f], "price_paise": 0, "compare_at_paise": None, "currency": "INR",
-        "stock": None, "requires_shipping": False, "image_url": None, "starts_at": None, "duration_minutes": None,
+        "stock": None, "requires_shipping": False, "image_url": illustration(sys.argv[1], slug), "starts_at": None, "duration_minutes": None,
         "speaker": None, "venue": where, "details": details,
         "highlights": H[title], "audience": audiences(aud),
         "tags": ["on-request", f] + [t for t in extra if t != "featured"],
@@ -177,6 +187,7 @@ catalogue = {
     "overrides": {
         "counselling-archaeology-careers": {
             "tags": ["on-request", "counselling"], "kind": "One-to-one counselling", "is_featured": False, "sort_order": 900,
+            "image_url": illustration(sys.argv[1], "counselling-archaeology-careers"),
             "details": {"For": "Students and early-career professionals", "Language": "English or Hindi",
                         "How it works": "Tell us what you want to discuss and we agree a time that suits you", "Fee": "Shared when you enquire"},
         },
