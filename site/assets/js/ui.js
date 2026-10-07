@@ -1,5 +1,6 @@
 // Small rendering helpers shared by every page.
 import { CONFIG } from "./config.js";
+import { lang, t } from "./i18n.js";
 
 export const $ = (sel, root = document) => root.querySelector(sel);
 export const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
@@ -52,12 +53,18 @@ const waLink = (text) => `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeUR
 /** WhatsApp and email links that open with the programme already named. Nothing about the visitor is put in the link. */
 export function requestLinks(p) {
   const soon = isSoon(p);
-  const text = soon
+  const text = lang === "hi"
+    ? soon
+      ? `नमस्ते ${CONFIG.brand}, कृपया "${p.title}" उपलब्ध होने पर मुझे सूचित करें।`
+      : p.tags?.includes("counselling")
+      ? `नमस्ते ${CONFIG.brand}, परामर्श सत्र के लिए अनुरोध।\n\nचर्चा का विषय: \nमेरी उपलब्धता: `
+      : `नमस्ते ${CONFIG.brand}, "${p.title}" के आयोजन के लिए अनुरोध।\n\nकिसके लिए (विद्यालय, महाविद्यालय, कार्यस्थल या निजी समूह): \nसमूह का आकार: \nपसंदीदा तिथियाँ: \nशहर या ऑनलाइन: \nकोई बदलाव जो आप चाहते हैं: `
+    : soon
     ? `Hello ${CONFIG.brand}, please let me know when "${p.title}" is available.`
     : p.tags?.includes("counselling")
     ? `Hello ${CONFIG.brand}, I would like to book a counselling session.\n\nWhat I want to discuss: \nWhen I am free: `
     : `Hello ${CONFIG.brand}, I would like to request "${p.title}".\n\nWho it is for (school, college, workplace or private group): \nGroup size: \nPreferred dates: \nCity or online: \nAnything you would like changed: `;
-  const subject = soon ? `Notify me: ${p.title}` : `Request: ${p.title}`;
+  const subject = soon ? `${t("Notify me")}: ${p.title}` : `${t("Request")}: ${p.title}`;
   return {
     whatsapp: waLink(text),
     email: `mailto:${CONFIG.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`,

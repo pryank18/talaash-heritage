@@ -577,3 +577,20 @@ html[data-theme="dark"] .card-art, html[data-theme="dark"] .product-art { box-sh
   .wordmark-latin { font-size: 0.9rem; letter-spacing: 0.04em; }
   .wordmark-tag { font-size: 0.64rem; letter-spacing: 0.03em; }
 }
+
+/* ---------- language ---------- */
+.lang-bar { background: var(--plaster-deep); border-bottom: 1px solid var(--line); font-size: 0.8rem; }
+.lang-bar-inner { max-width: var(--wrap); margin-inline: auto; padding: 0.2rem var(--gutter); display: flex; justify-content: flex-end; align-items: center; gap: 0.45rem; color: var(--ink-soft); }
+.lang-option { font: inherit; background: none; border: 0; padding: 0.15rem 0.2rem; color: var(--ink-soft); cursor: pointer; text-decoration: underline; text-underline-offset: 0.2em; }
+.lang-option[aria-pressed="true"] { color: var(--ink); font-weight: 600; text-decoration: none; cursor: default; }
+.lang-option[lang="hi"] { font-family: "Noto Sans Devanagari", var(--font-body); }
+/* Devanagari: no letter-spacing (it breaks the headline stroke) and a little more line height for the vowel signs. */
+html[lang="hi"] h1, html[lang="hi"] h2, html[lang="hi"] h3, html[lang="hi"] .legend, html[lang="hi"] legend { letter-spacing: 0; line-height: 1.4; }
+html[lang="hi"] h2 { text-transform: none; }
+html[lang="hi"] body { line-height: 1.7; }
+
+.gate-lang { display: flex; justify-content: flex-end; gap: 0.4rem; align-items: center; font-size: 0.8rem; color: #d8d3c8; margin-bottom: -0.6rem; }
+.gate-lang .lang-option { color: #d8d3c8; }
+.gate-lang .lang-option[aria-pressed="true"] { color: #fff; }
+.lang-notice { background: #fff7df; color: #1c1b19; border-bottom: 1px solid #e9cf86; font-size: var(--step--1); padding: 0.5rem var(--gutter); text-align: center; }
+html[data-theme="dark"] .lang-notice { background: #2d2717; color: var(--ink); border-color: #6e5a26; }

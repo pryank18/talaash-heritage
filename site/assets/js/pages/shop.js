@@ -1,5 +1,6 @@
 import { getProducts } from "../api.js";
 import { $, $$, esc, isRequest, isSoon, productCard } from "../ui.js";
+import { t } from "../i18n.js";
 
 const FILTERS = {
   all: { label: "Everything", types: null, title: "Everything we offer" },
@@ -39,7 +40,7 @@ function sorted(list) {
 
 async function render() {
   heading.textContent = FILTERS[active].title;
-  document.title = `${FILTERS[active].title} | Talaash Heritage`;
+  document.title = t(`${FILTERS[active].title} | Talaash Heritage`);
   $$("[data-filter]", chips).forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.filter === active)));
   try {
     const products = await getProducts();
@@ -83,7 +84,7 @@ chips.innerHTML =
   Object.entries(FILTERS)
     .map(([key, f]) => `<button class="chip" type="button" data-filter="${key}" aria-pressed="false">${f.label}</button>`)
     .join("") +
-  `<label>Sort by
+  `<label><span>Sort by</span>
     <select id="shop-sort">
       <option value="featured">Featured</option>
       <option value="date">Date, soonest first</option>

@@ -1,6 +1,7 @@
 import { getProduct } from "../api.js";
 import { CONFIG } from "../config.js";
 import { addToCart, getCart, MAX_QTY } from "../store.js";
+import { t } from "../i18n.js";
 import { $, esc, formatDuration, formatWhen, isRequest, isSoon, kindLabel, priceHtml, productArt, requestLinks, stockFlag, toast } from "../ui.js";
 
 const root = $("#product-root");
@@ -75,7 +76,7 @@ async function render() {
   const unit = p.requires_shipping ? "Quantity" : p.type === "counselling" ? "Sessions" : p.type === "recording" ? "Copies" : "Seats";
 
   root.innerHTML = `
-    <p class="crumbs"><a href="shop.html">Everything we offer</a> / ${esc(kindLabel(p))}</p>
+    <p class="crumbs"><a href="shop.html">Everything we offer</a> / ${esc(t(kindLabel(p)))}</p>
     <div class="product">
       <div class="product-art">${productArt(p, "(min-width: 760px) 50vw, 100vw")}</div>
       <div>

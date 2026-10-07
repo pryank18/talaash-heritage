@@ -40,6 +40,11 @@ function currentPage() {
 function template(hard, v) {
   return `
   <div class="gate-top">
+    <div class="gate-lang" data-no-translate>
+      <button type="button" class="lang-option" data-lang-set="en" lang="en" aria-pressed="${document.documentElement.getAttribute("data-lang") !== "hi"}">English</button>
+      <span aria-hidden="true">|</span>
+      <button type="button" class="lang-option" data-lang-set="hi" lang="hi" aria-pressed="${document.documentElement.getAttribute("data-lang") === "hi"}">हिन्दी</button>
+    </div>
     <img class="gate-badge" src="assets/img/logo-192.png" alt="" width="56" height="56">
     <h2 id="gate-title">${v && hard ? "Our privacy notice changed. Confirm your details" : v ? "Update your details" : hard ? "Welcome to Talaash Heritage" : "Register with Talaash Heritage"}</h2>
     <p>We ask every visitor for their contact details and location. We use them to send lecture links and order updates, and to plan sessions and walks near you.</p>
