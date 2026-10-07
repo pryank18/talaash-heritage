@@ -65,6 +65,7 @@ function renderFooter() {
         <h2>Help</h2>
         <ul>
           <li><a href="contact.html">Contact us</a></li>
+          <li><a href="about.html#questions">Common questions</a></li>
           <li><a href="sell.html">Sell with us</a></li>
           <li><a href="seller.html">Partner sign-in</a></li>
           <li><a href="shipping-returns.html">Shipping, cancellations and refunds</a></li>

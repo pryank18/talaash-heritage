@@ -84,7 +84,7 @@
    "slug": "mehrauli-archaeological-park",
    "title": "Mehrauli Archaeological Park",
    "subtitle": "A thousand years of building in one walk",
-   "description": "From Rajon ki Baoli to Balban's tomb and Jamali Kamali, the park holds remains from the eleventh century to the British period. An archaeologist shows you how to tell one period's masonry and arches from another's.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit. Entry tickets, where a site charges them, are extra.",
+   "description": "From Rajon ki Baoli to Balban's tomb and Jamali Kamali, the park holds remains from the eleventh century to the British period. An archaeologist shows you how to tell one period's masonry and arches from another's.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit.",
    "type": "walk",
    "kind": "Heritage walk",
    "price_paise": 0,
@@ -100,11 +100,27 @@
    "details": {
     "For": "Schools, colleges, companies and the public",
     "Length": "About 3 hours",
+    "When": "Any day you choose. Early morning is best in the warmer months.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
     "Group size": "About 10 works well. Smaller and larger groups can be discussed.",
+    "Meeting point": "Agreed with you and sent with a map pin once the date is fixed.",
+    "Bring": "Comfortable shoes, water and a cap. The ground is uneven in places.",
+    "Tickets": "Entry tickets, where the site charges them, are not part of our fee.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Rajon ki Baoli, a Lodi-period stepwell with its mosque and tomb",
+    "Balban's tomb, with one of the earliest true arches in India",
+    "The mosque and tomb of Jamali Kamali, from the first years of Mughal rule",
+    "Quli Khan's tomb, which a British official turned into a country house"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "work",
+    "public"
+   ],
    "tags": [
     "on-request",
     "walk"
@@ -118,7 +134,7 @@
    "slug": "the-qutb-complex",
    "title": "The Qutb complex",
    "subtitle": "Reading a World Heritage Site stone by stone",
-   "description": "The Qutb Minar stands beside a mosque built with reused temple pillars, an iron pillar of the Gupta period, and the Alai Darwaza of 1311. We read the inscriptions and the joints in the masonry to follow how the complex grew.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit. Entry tickets, where a site charges them, are extra.",
+   "description": "The Qutb Minar stands beside a mosque built with reused temple pillars, an iron pillar of the Gupta period, and the Alai Darwaza of 1311. We read the inscriptions and the joints in the masonry to follow how the complex grew.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit.",
    "type": "walk",
    "kind": "Heritage walk",
    "price_paise": 0,
@@ -134,11 +150,27 @@
    "details": {
     "For": "Schools, colleges, companies and the public",
     "Length": "2 to 3 hours",
+    "When": "Any day you choose. Early morning is best in the warmer months.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
     "Group size": "About 10 works well. Smaller and larger groups can be discussed.",
+    "Meeting point": "Agreed with you and sent with a map pin once the date is fixed.",
+    "Bring": "Comfortable shoes, water and a cap. The ground is uneven in places.",
+    "Tickets": "Entry tickets, where the site charges them, are not part of our fee.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The Quwwat-ul-Islam mosque and its reused temple pillars",
+    "The Iron Pillar and its Gupta-period Sanskrit inscription",
+    "The Qutb Minar storey by storey, and who built which",
+    "The Alai Darwaza, Iltutmish's tomb and the unfinished Alai Minar"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "work",
+    "public"
+   ],
    "tags": [
     "on-request",
     "walk",
@@ -153,7 +185,7 @@
    "slug": "purana-qila",
    "title": "Purana Qila",
    "subtitle": "A sixteenth-century fort and the dig beneath it",
-   "description": "Humayun and Sher Shah built the fort. Archaeologists have excavated inside it several times since the 1950s and found settlement going back more than two thousand years. We walk the walls and look at what came out of the trenches.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit. Entry tickets, where a site charges them, are extra.",
+   "description": "Humayun and Sher Shah built the fort. Archaeologists have excavated inside it several times since the 1950s and found settlement going back more than two thousand years. We walk the walls and look at what came out of the trenches.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit.",
    "type": "walk",
    "kind": "Heritage walk",
    "price_paise": 0,
@@ -169,11 +201,26 @@
    "details": {
     "For": "Schools, colleges and the public",
     "Length": "2 to 3 hours",
+    "When": "Any day you choose. Early morning is best in the warmer months.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
     "Group size": "About 10 works well. Smaller and larger groups can be discussed.",
+    "Meeting point": "Agreed with you and sent with a map pin once the date is fixed.",
+    "Bring": "Comfortable shoes, water and a cap. The ground is uneven in places.",
+    "Tickets": "Entry tickets, where the site charges them, are not part of our fee.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The three gateways and the walls of the sixteenth-century fort",
+    "The Qila-i-Kuhna mosque and the Sher Mandal",
+    "The excavations from the 1950s to the most recent seasons, and what each layer held",
+    "How archaeologists date a site lived on for more than two thousand years"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "walk"
@@ -187,7 +234,7 @@
    "slug": "hauz-khas",
    "title": "Hauz Khas",
    "subtitle": "A medieval college beside a royal reservoir",
-   "description": "Alauddin Khalji dug the reservoir for his city of Siri. Firoz Shah Tughlaq later built a madrasa along its edge and his own tomb at the corner. The walk covers how the college worked and how to recognise Tughlaq building.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit. Entry tickets, where a site charges them, are extra.",
+   "description": "Alauddin Khalji dug the reservoir for his city of Siri. Firoz Shah Tughlaq later built a madrasa along its edge and his own tomb at the corner. The walk covers how the college worked and how to recognise Tughlaq building.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit.",
    "type": "walk",
    "kind": "Heritage walk",
    "price_paise": 0,
@@ -203,11 +250,27 @@
    "details": {
     "For": "Schools, colleges, companies and the public",
     "Length": "About 2 hours",
+    "When": "Any day you choose. Early morning is best in the warmer months.",
     "Led by": "A historian",
     "Language": "English, Hindi or both",
     "Group size": "About 10 works well. Smaller and larger groups can be discussed.",
+    "Meeting point": "Agreed with you and sent with a map pin once the date is fixed.",
+    "Bring": "Comfortable shoes, water and a cap. The ground is uneven in places.",
+    "Tickets": "Entry tickets, where the site charges them, are not part of our fee.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The reservoir Alauddin Khalji had dug for his city of Siri",
+    "Firoz Shah Tughlaq's madrasa, hall by hall",
+    "Firoz Shah's tomb and the pavilions in the garden",
+    "How to recognise Tughlaq building: sloping walls, plain stone, little ornament"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "work",
+    "public"
+   ],
    "tags": [
     "on-request",
     "walk"
@@ -221,7 +284,7 @@
    "slug": "museum-morning-with-an-archaeologist",
    "title": "Museum morning with an archaeologist",
    "subtitle": "One gallery, looked at properly",
-   "description": "Most visitors pass a thousand objects in an hour and remember none. We choose one gallery with you and spend the morning on a dozen objects: what each is, how it was made and found, and what it tells us.\n\nGive us your date and your group, and we choose the gallery, the pace and the language to suit. Museum entry is extra.",
+   "description": "Most visitors pass a thousand objects in an hour and remember none. We choose one gallery with you and spend the morning on a dozen objects: what each is, how it was made and found, and what it tells us.\n\nGive us your date and your group, and we choose the gallery, the pace and the language to suit.",
    "type": "experience",
    "kind": "Museum visit",
    "price_paise": 0,
@@ -237,11 +300,26 @@
    "details": {
     "For": "Schools, colleges, companies and the public",
     "Length": "About 3 hours",
+    "When": "Any day the museum is open. We check its weekly closing day before fixing the date.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
     "Group size": "About 10 works well. Smaller and larger groups can be discussed.",
+    "Meeting point": "Agreed with you and sent with a map pin once the date is fixed.",
+    "Tickets": "Museum entry is not part of our fee.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "One gallery, chosen with you beforehand",
+    "About a dozen objects, each looked at slowly",
+    "How to read a museum label, and what it leaves out",
+    "Questions you can carry into any other gallery"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "work",
+    "public"
+   ],
    "tags": [
     "on-request",
     "visit"
@@ -271,11 +349,24 @@
    "details": {
     "For": "Schools, colleges and companies",
     "Length": "About 75 minutes",
+    "When": "Any date you choose, in the daytime or the evening.",
     "Led by": "A heritage educator",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Culture and heritage: the difference, with Indian examples",
+    "Tangible and intangible heritage",
+    "Who protects heritage: UNESCO, the Archaeological Survey of India and local communities",
+    "Time for the group's own questions"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "work"
+   ],
    "tags": [
     "on-request",
     "lecture",
@@ -306,11 +397,23 @@
    "details": {
     "For": "Schools and colleges",
     "Length": "60 to 75 minutes",
+    "When": "Any date you choose, in the daytime or the evening.",
     "Led by": "A field archaeologist",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "How sites are found",
+    "How a trench is laid out, dug and recorded",
+    "What happens to finds in the laboratory",
+    "What becomes of a site after the dig"
+   ],
+   "audience": [
+    "school",
+    "college"
+   ],
    "tags": [
     "on-request",
     "lecture"
@@ -340,11 +443,23 @@
    "details": {
     "For": "Schools and colleges",
     "Length": "60 to 75 minutes",
+    "When": "Any date you choose, in the daytime or the evening.",
     "Led by": "A prehistorian",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The oldest stone tools found in the subcontinent",
+    "Handaxes, flake tools and microliths: what changed and why",
+    "The first farming villages",
+    "How archaeologists date finds this old"
+   ],
+   "audience": [
+    "school",
+    "college"
+   ],
    "tags": [
     "on-request",
     "lecture"
@@ -374,11 +489,23 @@
    "details": {
     "For": "Schools and colleges",
     "Length": "60 to 75 minutes",
+    "When": "Any date you choose, in the daytime or the evening.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "What makes a settlement a city",
+    "Planning, drains, weights and seals in the Indus cities",
+    "Mesopotamia, Egypt and early China beside the Indus",
+    "The Indus script, which no one has yet read"
+   ],
+   "audience": [
+    "school",
+    "college"
+   ],
    "tags": [
     "on-request",
     "lecture"
@@ -408,11 +535,24 @@
    "details": {
     "For": "Colleges, schools and the public",
     "Length": "About 90 minutes",
+    "When": "Any date you choose, in the daytime or the evening.",
     "Led by": "An epigraphist",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Brāhmī, the script of most of Aśoka's edicts",
+    "How Brāhmī grew into the scripts of north and south India",
+    "A line of an edict, read together",
+    "Dating an inscription from the shape of its letters"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "lecture"
@@ -442,11 +582,24 @@
    "details": {
     "For": "Colleges, companies and the public",
     "Length": "About 90 minutes",
+    "When": "Any date you choose, in the daytime or the evening.",
     "Led by": "An art historian",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The parts of a temple, from gateway to sanctum",
+    "Nāgara, Drāviḍa and Vesara: how to tell them apart",
+    "Reading a plan and an elevation",
+    "Examples from north India, the south and the Deccan"
+   ],
+   "audience": [
+    "college",
+    "work",
+    "public"
+   ],
    "tags": [
     "on-request",
     "lecture"
@@ -476,11 +629,24 @@
    "details": {
     "For": "Schools, colleges and companies",
     "Length": "60 to 75 minutes",
+    "When": "Any date you choose, in the daytime or the evening.",
     "Led by": "A linguist",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The language families of India: Indo-Aryan, Dravidian, Austroasiatic, Tibeto-Burman and others",
+    "How neighbouring languages borrow from one another",
+    "How linguists reconstruct a language's history",
+    "Endangered languages, and what is lost with them"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "work"
+   ],
    "tags": [
     "on-request",
     "lecture"
@@ -510,11 +676,24 @@
    "details": {
     "For": "Schools, colleges and the public",
     "Length": "60 to 75 minutes",
+    "When": "Any date you choose, in the daytime or the evening.",
     "Led by": "A rock art researcher",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The painted shelters of Bhimbetka and central India",
+    "The rock engravings of the Konkan coast",
+    "How rock art is dated",
+    "How it is recorded and protected"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "lecture"
@@ -544,11 +723,23 @@
    "details": {
     "For": "Colleges and the public",
     "Length": "About 90 minutes",
+    "When": "Any date you choose, in the daytime or the evening.",
     "Led by": "An Indologist",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Where the text sits in the Mārkaṇḍeya Purāṇa",
+    "Its three episodes: Madhu and Kaiṭabha, Mahiṣāsura, Śumbha and Niśumbha",
+    "Key passages read in translation",
+    "The Goddess in sculpture and painting"
+   ],
+   "audience": [
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "lecture"
@@ -578,11 +769,23 @@
    "details": {
     "For": "Schools and colleges",
     "Length": "About 60 minutes",
+    "When": "Any date you choose, in the daytime or the evening.",
     "Led by": "A Talaash Heritage counsellor",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "What the work is, in the field, the museum and the archive",
+    "Which degrees lead to it, and how to get in",
+    "Where the jobs are",
+    "The students' own questions"
+   ],
+   "audience": [
+    "school",
+    "college"
+   ],
    "tags": [
     "on-request",
     "lecture"
@@ -612,11 +815,23 @@
    "details": {
     "For": "Schools and colleges",
     "Length": "About 3 hours",
+    "When": "Any date you choose.",
     "Led by": "A field archaeologist",
     "Language": "English, Hindi or both",
     "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
+    "We bring": "What the session needs, for the number of people you confirm.",
+    "You arrange": "An open patch of ground, or a room if we use sand trays.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Laying out a trench and digging it layer by layer",
+    "Recording each find and where it lay",
+    "Working out, as a team, what happened at the site"
+   ],
+   "audience": [
+    "school",
+    "college"
+   ],
    "tags": [
     "on-request",
     "workshop",
@@ -647,11 +862,24 @@
    "details": {
     "For": "Schools, colleges and companies",
     "Length": "2 to 3 hours",
+    "When": "Any date you choose.",
     "Led by": "An archaeologist, with a potter",
     "Language": "English, Hindi or both",
     "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
+    "We bring": "What the session needs, for the number of people you confirm.",
+    "You arrange": "A room or open space with tables. We tell you exactly what is needed once we know the group.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Shaping a pot by hand",
+    "Sorting sherds by fabric, form and decoration",
+    "What pottery tells an archaeologist about date and daily life"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "work"
+   ],
    "tags": [
     "on-request",
     "workshop"
@@ -681,11 +909,23 @@
    "details": {
     "For": "Schools and colleges",
     "Length": "Half a day",
+    "When": "Any date you choose.",
     "Led by": "An art historian",
     "Language": "English, Hindi or both",
     "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
+    "We bring": "What the session needs, for the number of people you confirm.",
+    "You arrange": "A room with a screen for the talk. Entry tickets for the visit, where charged, are not part of our fee.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "A short illustrated talk on how figures are identified",
+    "Study in a gallery or at a temple: what each figure holds and wears",
+    "A quiz to finish"
+   ],
+   "audience": [
+    "school",
+    "college"
+   ],
    "tags": [
     "on-request",
     "workshop"
@@ -715,11 +955,25 @@
    "details": {
     "For": "Schools, colleges, companies and the public",
     "Length": "About 2 hours",
+    "When": "Any date you choose.",
     "Led by": "An epigraphist",
     "Language": "English, Hindi or both",
     "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
+    "We bring": "What the session needs, for the number of people you confirm.",
+    "You arrange": "A room with tables and a screen. Online, nothing: we send the link.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The vowels and consonants of Brāhmī",
+    "Writing your own name",
+    "Reading a few words from an Aśokan edict"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "work",
+    "public"
+   ],
    "tags": [
     "on-request",
     "workshop",
@@ -750,11 +1004,23 @@
    "details": {
     "For": "Colleges, museums and archives",
     "Length": "Half a day or a full day",
+    "When": "Any date you choose.",
     "Led by": "A documentation specialist",
     "Language": "English, Hindi or both",
     "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
+    "We bring": "What the session needs, for the number of people you confirm.",
+    "You arrange": "A room with tables and a screen.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Filling in a context sheet",
+    "Drawing and photographing an object to scale",
+    "Writing a catalogue entry"
+   ],
+   "audience": [
+    "college",
+    "work"
+   ],
    "tags": [
     "on-request",
     "workshop"
@@ -784,11 +1050,24 @@
    "details": {
     "For": "Colleges, museums, archives and company collections",
     "Length": "1 to 2 days",
+    "When": "Any date you choose.",
     "Led by": "A conservator",
     "Language": "English, Hindi or both",
     "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
+    "We bring": "What the session needs, for the number of people you confirm.",
+    "You arrange": "A room with tables and a screen.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "What damages a collection: light, damp, pests and handling",
+    "Assessing the condition of an object",
+    "Storing and handling paper, textiles and metal",
+    "Practice on sample materials"
+   ],
+   "audience": [
+    "college",
+    "work"
+   ],
    "tags": [
     "on-request",
     "workshop"
@@ -818,11 +1097,23 @@
    "details": {
     "For": "Colleges and senior school students",
     "Length": "2 to 3 hours",
+    "When": "Any date you choose.",
     "Led by": "A prehistorian",
     "Language": "English, Hindi or both",
     "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
+    "We bring": "What the session needs, for the number of people you confirm.",
+    "You arrange": "A room with tables and a screen.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "A demonstration of how stone tools were struck",
+    "Reading the scars on a tool",
+    "Sorting tool types and handling replicas"
+   ],
+   "audience": [
+    "school",
+    "college"
+   ],
    "tags": [
     "on-request",
     "workshop"
@@ -852,11 +1143,23 @@
    "details": {
     "For": "Companies and organisations",
     "Length": "About 3 hours",
+    "When": "Any date you choose.",
     "Led by": "A field archaeologist",
     "Language": "English, Hindi or both",
     "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
+    "We bring": "What the session needs, for the number of people you confirm.",
+    "You arrange": "An open patch of ground, or a room if we use sand trays.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Teams excavate a prepared trench",
+    "They record their finds as they go",
+    "Each team presents its reading of the evidence",
+    "Careful observation and clear reporting win, not speed"
+   ],
+   "audience": [
+    "work"
+   ],
    "tags": [
     "on-request",
     "workshop"
@@ -886,11 +1189,22 @@
    "details": {
     "For": "Colleges, study circles and the public",
     "Length": "Six sessions",
+    "When": "Dates and timings are set with your batch.",
     "Led by": "A Prakrit scholar",
     "Language": "English, Hindi or both",
     "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
+    "You need": "A computer or phone with a steady connection.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The sounds and basic grammar of Prakrit",
+    "Guided reading of short passages",
+    "Where Prakrit is found: inscriptions, drama and Jain texts"
+   ],
+   "audience": [
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "course"
@@ -920,11 +1234,22 @@
    "details": {
     "For": "Colleges, study circles and the public",
     "Length": "Evening sessions, number agreed with you",
+    "When": "Dates and timings are set with your batch.",
     "Led by": "A Pali scholar",
     "Language": "English, Hindi or both",
     "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
+    "You need": "A computer or phone with a steady connection.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Pronunciation and basic grammar",
+    "Reading short passages",
+    "A test at the end, for those who want one"
+   ],
+   "audience": [
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "course"
@@ -954,11 +1279,22 @@
    "details": {
     "For": "Colleges, study circles and the public",
     "Length": "About ten evening sessions",
+    "When": "Dates and timings are set with your batch.",
     "Led by": "A manuscript scholar",
     "Language": "English, Hindi or both",
     "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
+    "You need": "A computer or phone with a steady connection.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The alphabet, conjuncts and numerals",
+    "Practice in transliteration",
+    "Reading from manuscript pages"
+   ],
+   "audience": [
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "course"
@@ -988,11 +1324,23 @@
    "details": {
     "For": "Colleges, study circles and the public",
     "Length": "Four sessions, about 4.5 hours in all",
+    "When": "Dates and timings are set with your batch.",
     "Led by": "An art historian",
     "Language": "English, Hindi or both",
     "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
+    "You need": "A computer or phone with a steady connection.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "The parts of a temple and their names",
+    "The regional styles and how old each is",
+    "The ways scholars study architecture",
+    "A certificate of completion, if you want one"
+   ],
+   "audience": [
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "course",
@@ -1023,11 +1371,23 @@
    "details": {
     "For": "Colleges, departments and working professionals",
     "Length": "Three months of weekend sessions",
+    "When": "Dates and timings are set with your batch.",
     "Led by": "A remote sensing specialist",
     "Language": "English, Hindi or both",
     "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
+    "You need": "A computer or phone with a steady connection.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Satellite images and aerial photographs as sources",
+    "Using mapping software to find and map sites",
+    "Monitoring how a site changes over time",
+    "Live weekend sessions, with recordings of each"
+   ],
+   "audience": [
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "course"
@@ -1057,11 +1417,22 @@
    "details": {
     "For": "Colleges, study circles and the public",
     "Length": "Three evenings, 90 minutes each",
+    "When": "Dates and timings are set with your batch.",
     "Led by": "A historian of sport",
     "Language": "English, Hindi or both",
     "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
+    "You need": "A computer or phone with a steady connection.",
     "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Wrestling and combat in sculpture and texts",
+    "Traditions that are still practised",
+    "What these sports meant to those who practised and paid for them"
+   ],
+   "audience": [
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "course"
@@ -1091,12 +1462,23 @@
    "details": {
     "For": "Colleges and university departments",
     "Length": "About 7 days, plus travel",
+    "When": "Dates agreed with your institution.",
     "Led by": "Conservators and documentation specialists",
     "Language": "English, Hindi or both",
     "Group size": "About 35 works well. Smaller and larger groups can be discussed.",
-    "Price": "Quoted for your group",
-    "Itinerary": "Day-by-day plan shared before you commit"
+    "Itinerary": "A day-by-day plan reaches you before you commit.",
+    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Documenting objects from a museum collection",
+    "Cleaning and rehousing them under supervision",
+    "Daily laboratory sessions and lectures",
+    "Visits to nearby sites"
+   ],
+   "audience": [
+    "college"
+   ],
    "tags": [
     "on-request",
     "field"
@@ -1126,12 +1508,23 @@
    "details": {
     "For": "Colleges and university departments",
     "Length": "About 3 days",
+    "When": "Dates agreed with your institution.",
     "Led by": "Prehistorians",
     "Language": "English, Hindi or both",
     "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "Price": "Quoted for your group",
-    "Itinerary": "Day-by-day plan shared before you commit"
+    "Itinerary": "A day-by-day plan reaches you before you commit.",
+    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Reading the local landscape",
+    "Finding and classifying stone tools",
+    "Documenting rock art and megaliths",
+    "Taking samples"
+   ],
+   "audience": [
+    "college"
+   ],
    "tags": [
     "on-request",
     "field"
@@ -1161,12 +1554,26 @@
    "details": {
     "For": "Schools, colleges, companies and the public",
     "Length": "5 to 6 days",
+    "When": "Any dates you choose. October to March is the most comfortable season for this route.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
     "Group size": "About 12 works well. Smaller and larger groups can be discussed.",
-    "Price": "Quoted for your group",
-    "Itinerary": "Day-by-day plan shared before you commit"
+    "Itinerary": "A day-by-day plan reaches you before you commit.",
+    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Delhi: the monuments of the Sultanate",
+    "Agra and Fatehpur Sikri: the Mughal court",
+    "Jaipur: a planned city of the eighteenth century",
+    "An archaeologist with the group throughout"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "work",
+    "public"
+   ],
    "tags": [
     "on-request",
     "tour",
@@ -1197,12 +1604,24 @@
    "details": {
     "For": "Schools, colleges and the public",
     "Length": "6 to 8 days",
+    "When": "Any dates you choose. October to March is the most comfortable season for this route.",
     "Led by": "A historian",
     "Language": "English, Hindi or both",
     "Group size": "About 12 works well. Smaller and larger groups can be discussed.",
-    "Price": "Quoted for your group",
-    "Itinerary": "Day-by-day plan shared before you commit"
+    "Itinerary": "A day-by-day plan reaches you before you commit.",
+    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Forts chosen with you from the six on the World Heritage list: Chittorgarh, Kumbhalgarh, Ranthambore, Gagron, Amber and Jaisalmer",
+    "How each was sited, supplied with water and defended",
+    "A historian with the group throughout"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "tour"
@@ -1232,12 +1651,24 @@
    "details": {
     "For": "Colleges and the public",
     "Length": "6 to 7 days",
+    "When": "Any dates you choose. October to March is the most comfortable season for this route.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
     "Group size": "About 12 works well. Smaller and larger groups can be discussed.",
-    "Price": "Quoted for your group",
-    "Itinerary": "Day-by-day plan shared before you commit"
+    "Itinerary": "A day-by-day plan reaches you before you commit.",
+    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Price": "Quoted for your group"
    },
+   "highlights": [
+    "Bhimbetka: painted rock shelters",
+    "Sanchi: the Great Stupa and its gateways",
+    "Udayagiri: rock-cut caves of the Gupta period",
+    "Khajuraho: the Chandella temples"
+   ],
+   "audience": [
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "tour"
@@ -1267,12 +1698,25 @@
    "details": {
     "For": "Schools, colleges and societies",
     "Length": "As long as you need",
+    "When": "Any dates you choose. We advise on the best season for the region.",
     "Led by": "An expert chosen for the region",
     "Language": "English, Hindi or both",
     "Group size": "About 12 works well. Smaller and larger groups can be discussed.",
-    "Price": "Quoted for your group",
-    "Itinerary": "Day-by-day plan shared before you commit"
+    "Itinerary": "A day-by-day plan reaches you before you commit.",
+    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Price": "Quoted for your group"
    },
+   "highlights": [
+    "A region you choose",
+    "A route built around what your group is studying",
+    "An expert in that period travelling with you",
+    "An itinerary and a quotation before you commit"
+   ],
+   "audience": [
+    "school",
+    "college",
+    "public"
+   ],
    "tags": [
     "on-request",
     "tour"

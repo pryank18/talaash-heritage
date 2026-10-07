@@ -56,7 +56,7 @@ export function requestLinks(p) {
     ? `Hello ${CONFIG.brand}, please tell me when "${p.title}" is available.`
     : p.tags?.includes("counselling")
     ? `Hello ${CONFIG.brand}, I would like to book a counselling session.\n\nWhat I want to discuss: \nWhen I am free: `
-    : `Hello ${CONFIG.brand}, I would like to request "${p.title}".\n\nGroup size: \nPreferred dates: \nCity or online: \nAnything you would like changed: `;
+    : `Hello ${CONFIG.brand}, I would like to request "${p.title}".\n\nWho it is for (school, college, workplace or private group): \nGroup size: \nPreferred dates: \nCity or online: \nAnything you would like changed: `;
   const subject = soon ? `Tell me when it is ready: ${p.title}` : `Request: ${p.title}`;
   return {
     whatsapp: waLink(text),
@@ -73,6 +73,9 @@ export function typeLine(p) {
   if (p.type === "counselling") return `${typeLabel(p.type)}, ${formatDuration(p.duration_minutes) || "book your own time"}`;
   return when ? `${typeLabel(p.type)}, ${when}` : typeLabel(p.type);
 }
+
+/** Length and place for programmes run on request, so a card can be judged without opening it. */
+export const cardMeta = (p) => (isRequest(p) ? [p.details?.Length, p.venue].filter(Boolean).join(" · ") : "");
 
 /** null = no flag. Seats and stock are only called out when it changes a decision. */
 export function stockFlag(p) {
@@ -160,6 +163,7 @@ export function productCard(p) {
     </a>
     <p class="card-type">${esc(typeLine(p))}</p>
     <h3><a href="${href}">${esc(p.title)}</a></h3>
+    ${cardMeta(p) ? `<p class="card-meta">${esc(cardMeta(p))}</p>` : ""}
     ${p.seller_name ? `<p class="card-seller">With ${esc(p.seller_name)}</p>` : ""}
     <div class="card-foot">
       <span class="price">${request ? "On request" : soon ? "" : priceHtml(p)}</span>

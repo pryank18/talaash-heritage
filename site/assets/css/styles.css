@@ -438,3 +438,27 @@ body.is-gated > :not(dialog):not(script) { filter: blur(3px); pointer-events: no
 .fit { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.5rem 2rem; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
 .fit li { border-top: 2px solid var(--haldi); padding-top: 0.75rem; }
 .fit strong { display: block; margin-bottom: 0.2rem; }
+
+/* ---------- listing detail on cards and programme pages ---------- */
+.card-meta { margin: -0.3rem 0 0.7rem; font-size: var(--step--1); color: var(--ink-soft); }
+.covers-title { font-size: var(--step-1); margin: 1.5rem 0 0.5rem; }
+.covers { margin: 0 0 0.5rem; padding-left: 1.15rem; }
+.covers li { margin-bottom: 0.35rem; }
+.covers li::marker { color: var(--haldi); }
+
+/* ---------- who the programme is for ---------- */
+.filters-for { margin-top: -1rem; }
+.filters-label { font-size: var(--step--1); color: var(--ink-soft); margin-right: 0.25rem; }
+.chip-quiet { font-size: var(--step--1); padding: 0.35rem 0.75rem; }
+a.chip { text-decoration: none; display: inline-block; }
+a.chip:hover, a.chip:focus-visible { border-color: var(--ink); }
+.for-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin: -0.5rem 0 1.5rem; }
+.steps-more { margin: 1.5rem 0 0; }
+
+/* ---------- common questions ---------- */
+.faq { border-top: 1px solid var(--line); margin-top: 1rem; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; padding: 0.8rem 0; font-weight: 600; }
+.faq summary:hover { text-decoration: underline; text-decoration-thickness: 1px; }
+.faq details p { margin: 0 0 1rem; }
+.filters label { white-space: nowrap; }
