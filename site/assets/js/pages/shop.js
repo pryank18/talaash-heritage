@@ -10,12 +10,22 @@ const FILTERS = {
   physical: { label: "Books and prints", types: ["physical"], title: "Books and prints" },
 };
 
+// A second, optional question: who the programme is for. It narrows whichever section is open.
+const AUDIENCES = {
+  school: "Schools",
+  college: "Colleges and universities",
+  work: "Workplaces",
+  public: "Individuals and private groups",
+};
+
 const params = new URLSearchParams(location.search);
 let active = FILTERS[params.get("type")] ? params.get("type") : "all";
+let who = AUDIENCES[params.get("for")] ? params.get("for") : "";
 let sort = "featured";
 
 const grid = $("#shop-grid");
 const chips = $("#shop-filters");
+const forRow = $("#shop-for");
 const heading = $("#shop-title");
 const count = $("#shop-count");
 
@@ -34,9 +44,15 @@ async function render() {
   try {
     const products = await getProducts();
     const types = FILTERS[active].types;
-    const list = sorted(types ? products.filter((p) => types.includes(p.type)) : products);
+    const inSection = types ? products.filter((p) => types.includes(p.type)) : products;
+    // Sections with nothing planned for a group (recordings, books) do not ask who it is for.
+    const asks = inSection.some((p) => p.audience?.length);
+    forRow.hidden = !asks;
+    const forWho = asks && who ? who : "";
+    $$("[data-for]", forRow).forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.for === forWho)));
+    const list = sorted(forWho ? inSection.filter((p) => p.audience?.includes(forWho)) : inSection);
     const onRequest = list.filter(isRequest).length;
-    count.textContent = `${list.length} listed${onRequest ? `. ${onRequest === list.length ? "All" : onRequest} arranged on request, on dates that suit you.` : ""}`;
+    count.textContent = `${list.length} listed${forWho ? ` for ${AUDIENCES[forWho].toLowerCase()}` : ""}${onRequest ? `. ${onRequest === list.length ? "All" : onRequest} arranged on request, on dates that suit you.` : ""}`;
     grid.innerHTML = list.length
       ? list.map(productCard).join("")
       : `<div class="empty"><h2>Nothing listed here yet</h2><p>Tell us what you are looking for and we will arrange it. <a href="contact.html">Contact us</a> or <a href="shop.html">see everything we offer</a>.</p></div>`;
@@ -57,6 +73,23 @@ chips.innerHTML =
       <option value="price-desc">Price, high to low</option>
     </select>
   </label>`;
+
+forRow.innerHTML =
+  `<span class="filters-label" id="shop-for-label">Planning for</span>` +
+  [["", "Anyone"], ...Object.entries(AUDIENCES)]
+    .map(([key, label]) => `<button class="chip chip-quiet" type="button" data-for="${key}" aria-pressed="false">${label}</button>`)
+    .join("");
+
+forRow.addEventListener("click", (e) => {
+  const chip = e.target.closest("[data-for]");
+  if (!chip) return;
+  who = chip.dataset.for;
+  const url = new URL(location.href);
+  if (who) url.searchParams.set("for", who);
+  else url.searchParams.delete("for");
+  history.replaceState(null, "", url);
+  render();
+});
 
 chips.addEventListener("click", (e) => {
   const chip = e.target.closest("[data-filter]");

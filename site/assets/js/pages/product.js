@@ -35,7 +35,7 @@ function requestPanel(p) {
         <a class="btn btn-primary" href="${esc(links.whatsapp)}" target="_blank" rel="noopener">${counselling ? "Request a session on WhatsApp" : "Request on WhatsApp"}</a>
         <a class="btn btn-outline" href="${esc(links.email)}">Request by email</a>
       </div>
-      <p class="small muted">Nothing is charged until you approve the plan.</p>
+      <p class="small muted">Nothing is charged until you approve the plan. <a href="about.html#questions">Common questions</a></p>
     </div>`;
 }
 
@@ -104,6 +104,7 @@ async function render() {
                <p class="small muted" data-incart>${inCart ? `${inCart} already in your cart. <a href="cart.html">View cart</a>` : ""}</p>`
         }
         <div class="prose">${(p.description || "").split(/\n{2,}/).map((para) => `<p>${esc(para)}</p>`).join("")}</div>
+        ${p.highlights?.length ? `<h2 class="covers-title">What it covers</h2><ul class="covers">${p.highlights.map((h) => `<li>${esc(h)}</li>`).join("")}</ul>` : ""}
         ${
           p.seller_name
             ? `<div class="partner-note"><p><strong>Run by ${esc(p.seller_name)}</strong>, an independent partner of Talaash Heritage.${p.seller_bio ? ` ${esc(p.seller_bio)}` : ""}</p><p class="small muted">You book and pay through Talaash Heritage, and our <a href="shipping-returns.html">refund policy</a> applies.</p></div>`
