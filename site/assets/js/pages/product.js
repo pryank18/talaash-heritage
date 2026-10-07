@@ -1,4 +1,5 @@
 import { getProduct } from "../api.js";
+import { CONFIG } from "../config.js";
 import { addToCart, getCart, MAX_QTY } from "../store.js";
 import { $, esc, formatDuration, formatWhen, priceHtml, productArt, stockFlag, toast, typeLabel } from "../ui.js";
 
@@ -48,7 +49,9 @@ async function render() {
         <p class="product-price">${priceHtml(p)}</p>
         ${flag ? `<p><strong>${esc(flag.text)}</strong></p>` : ""}
         ${
-          flag?.soldOut
+          CONFIG.sampleNotice
+            ? `<p class="note">Bookings open soon. This listing is an example while the site is being set up.</p><a class="btn btn-outline" href="contact.html">Contact us</a>`
+            : flag?.soldOut
             ? `<p class="muted">Write to us and we will tell you when it is back.</p><a class="btn btn-outline" href="contact.html">Contact us</a>`
             : `<div class="buy-row">
                  <span class="small muted">${unit}</span>
@@ -71,7 +74,7 @@ async function render() {
       </div>
     </div>`;
 
-  if (flag?.soldOut) return;
+  if (flag?.soldOut || CONFIG.sampleNotice) return;
   let qty = 1;
   const out = $("[data-qty]", root);
   const dec = $("[data-dec]", root);

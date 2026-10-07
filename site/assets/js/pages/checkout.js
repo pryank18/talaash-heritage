@@ -48,6 +48,10 @@ function whatsappLink(order, cart, customer) {
 }
 
 async function render() {
+  if (CONFIG.sampleNotice) {
+    root.innerHTML = `<div class="empty"><h2>Bookings open soon</h2><p>The listings on the site are examples while it is being set up, so orders are not being taken yet.</p><a class="btn btn-primary" href="shop.html">Back to the shop</a></div>`;
+    return;
+  }
   const visitor = await requireVisitor();
   if (!visitor) return;
 
