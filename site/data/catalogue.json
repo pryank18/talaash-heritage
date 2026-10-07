@@ -16,11 +16,17 @@
    "is_featured": false,
    "sort_order": 900,
    "image_url": "assets/img/programmes/counselling-archaeology-careers.jpg",
+   "title": "Career counselling in archaeology and heritage",
+   "subtitle": "A private online session on study and career choices",
+   "description": "A one-to-one conversation about your next step: which master's or doctoral programmes suit you, how entrance examinations and fieldwork applications work, and what roles exist in museums, survey, conservation and heritage management.\n\nThe session is held online at a time agreed with you. Its length and fee are confirmed when you enquire.",
+   "duration_minutes": null,
+   "speaker": null,
+   "venue": "Online video call",
    "details": {
     "For": "Students and early-career professionals",
     "Language": "English or Hindi",
-    "How it works": "Tell us what you want to discuss and we agree a time that suits you",
-    "Fee": "Shared when you enquire"
+    "Scheduling": "A time is agreed with you",
+    "Length and fee": "Confirmed when you enquire"
    }
   },
   "sakta-ethos-devimahatmya-recording": {
@@ -29,10 +35,13 @@
    ],
    "is_featured": false,
    "sort_order": 910,
-   "details": {
-    "Language": "English",
-    "Includes": "Slides and reading list"
-   }
+   "title": "The Śākta ethos in the Devīmāhātmya",
+   "subtitle": "A lecture recording on the Goddess and the Śākta tradition",
+   "description": "A lecture on how the Devīmāhātmya presents the Goddess, and what the text reveals about the Śākta and tantric traditions that developed around it.",
+   "duration_minutes": null,
+   "speaker": null,
+   "venue": "Online",
+   "details": {}
   },
   "brahmi-script-chart-a3": {
    "tags": [
@@ -40,9 +49,11 @@
    ],
    "is_featured": false,
    "sort_order": 920,
+   "title": "Brāhmī script chart",
+   "subtitle": "A wall chart of Aśokan Brāhmī with Devanāgarī and roman equivalents",
+   "description": "Each letter of Aśokan Brāhmī set beside its Devanāgarī and IAST equivalent, at a size that can be read across a classroom.",
    "details": {
-    "Size": "A3, 297 × 420 mm",
-    "Paper": "250 gsm matte"
+    "Size": "A3"
    }
   },
   "trench-field-notebook": {
@@ -51,9 +62,11 @@
    ],
    "is_featured": false,
    "sort_order": 930,
+   "title": "Field notebook",
+   "subtitle": "A gridded pocket notebook for site visits",
+   "description": "A pocket notebook for site visits, with gridded pages for plans and sections and a printed scale along the cover edge.",
    "details": {
-    "Size": "A6, 96 pages",
-    "Paper": "100 gsm, 5 mm grid"
+    "Size": "A6"
    }
   },
   "monuments-postcard-set": {
@@ -62,9 +75,11 @@
    ],
    "is_featured": false,
    "sort_order": 940,
+   "title": "Indian monuments postcard set",
+   "subtitle": "Twelve postcards of measured monument drawings",
+   "description": "Twelve postcards, each with a measured elevation drawing of an Indian monument on the front and a short note on its date and features on the back.",
    "details": {
-    "Contents": "12 postcards, 105 × 148 mm",
-    "Paper": "300 gsm uncoated"
+    "Contents": "12 postcards"
    }
   },
   "harappan-seals-reading-pack": {
@@ -73,10 +88,10 @@
    ],
    "is_featured": false,
    "sort_order": 950,
-   "details": {
-    "Booklet": "48 pages, A5",
-    "Recording": "60 minutes"
-   }
+   "title": "Harappan seals reading pack",
+   "subtitle": "A printed booklet with a recorded introduction",
+   "description": "A booklet on how Harappan seals were made, used and excavated, illustrated with drawings of seals, accompanied by a recorded introduction.",
+   "details": {}
   }
  },
  "programmes": [
@@ -84,8 +99,8 @@
    "id": "req-mehrauli-archaeological-park",
    "slug": "mehrauli-archaeological-park",
    "title": "Mehrauli Archaeological Park",
-   "subtitle": "A thousand years of building in one walk",
-   "description": "From Rajon ki Baoli to Balban's tomb and Jamali Kamali, the park holds remains from the eleventh century to the British period. An archaeologist shows you how to tell one period's masonry and arches from another's.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit.",
+   "subtitle": "A guided heritage walk through ten centuries of building, from the Sultanate to the British period",
+   "description": "The park holds standing remains from the eleventh century to the nineteenth, among them Rajon ki Baoli, the tomb of Balban and the mosque and tomb of Jamali Kamali. An archaeologist shows how masonry, arches and decoration distinguish one period from the next.\n\nThe date, start time, pace and language are arranged to suit your group.",
    "type": "walk",
    "kind": "Heritage walk",
    "price_paise": 0,
@@ -104,10 +119,10 @@
     "When": "Any day you choose. Early morning is best in the warmer months.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 10 works well. Smaller and larger groups can be discussed.",
-    "Meeting point": "Agreed with you and sent with a map pin once the date is fixed.",
-    "Bring": "Comfortable shoes, water and a cap. The ground is uneven in places.",
-    "Tickets": "Entry tickets, where the site charges them, are not part of our fee.",
+    "Group size": "About 10 is suggested. Smaller and larger groups are welcome.",
+    "Meeting point": "Agreed with you. A map location is shared once the date is confirmed.",
+    "What to bring": "Comfortable shoes, water and a hat. The ground is uneven in places.",
+    "Entry fees": "Monument entry fees, where charged, are not included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -134,8 +149,8 @@
    "id": "req-the-qutb-complex",
    "slug": "the-qutb-complex",
    "title": "The Qutb complex",
-   "subtitle": "Reading a World Heritage Site stone by stone",
-   "description": "The Qutb Minar stands beside a mosque built with reused temple pillars, an iron pillar of the Gupta period, and the Alai Darwaza of 1311. We read the inscriptions and the joints in the masonry to follow how the complex grew.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit.",
+   "subtitle": "A guided heritage walk through a World Heritage Site, read from its inscriptions and masonry",
+   "description": "The Qutb Minar stands beside a mosque built with reused temple pillars, an iron pillar of the Gupta period and the Alai Darwaza of 1311. The walk uses the inscriptions and the joints in the masonry to trace how the complex grew under successive rulers.\n\nThe date, start time, pace and language are arranged to suit your group.",
    "type": "walk",
    "kind": "Heritage walk",
    "price_paise": 0,
@@ -154,10 +169,10 @@
     "When": "Any day you choose. Early morning is best in the warmer months.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 10 works well. Smaller and larger groups can be discussed.",
-    "Meeting point": "Agreed with you and sent with a map pin once the date is fixed.",
-    "Bring": "Comfortable shoes, water and a cap. The ground is uneven in places.",
-    "Tickets": "Entry tickets, where the site charges them, are not part of our fee.",
+    "Group size": "About 10 is suggested. Smaller and larger groups are welcome.",
+    "Meeting point": "Agreed with you. A map location is shared once the date is confirmed.",
+    "What to bring": "Comfortable shoes, water and a hat. The ground is uneven in places.",
+    "Entry fees": "Monument entry fees, where charged, are not included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -185,8 +200,8 @@
    "id": "req-purana-qila",
    "slug": "purana-qila",
    "title": "Purana Qila",
-   "subtitle": "A sixteenth-century fort and the dig beneath it",
-   "description": "Humayun and Sher Shah built the fort. Archaeologists have excavated inside it several times since the 1950s and found settlement going back more than two thousand years. We walk the walls and look at what came out of the trenches.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit.",
+   "subtitle": "A guided heritage walk around a sixteenth-century fort and the excavations within it",
+   "description": "The fort was built under Humayun and Sher Shah Suri. Excavations inside it since the 1950s have found settlement going back more than two thousand years. The walk covers the walls, gateways and mosque, and what each excavation revealed.\n\nThe date, start time, pace and language are arranged to suit your group.",
    "type": "walk",
    "kind": "Heritage walk",
    "price_paise": 0,
@@ -205,10 +220,10 @@
     "When": "Any day you choose. Early morning is best in the warmer months.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 10 works well. Smaller and larger groups can be discussed.",
-    "Meeting point": "Agreed with you and sent with a map pin once the date is fixed.",
-    "Bring": "Comfortable shoes, water and a cap. The ground is uneven in places.",
-    "Tickets": "Entry tickets, where the site charges them, are not part of our fee.",
+    "Group size": "About 10 is suggested. Smaller and larger groups are welcome.",
+    "Meeting point": "Agreed with you. A map location is shared once the date is confirmed.",
+    "What to bring": "Comfortable shoes, water and a hat. The ground is uneven in places.",
+    "Entry fees": "Monument entry fees, where charged, are not included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -234,8 +249,8 @@
    "id": "req-hauz-khas",
    "slug": "hauz-khas",
    "title": "Hauz Khas",
-   "subtitle": "A medieval college beside a royal reservoir",
-   "description": "Alauddin Khalji dug the reservoir for his city of Siri. Firoz Shah Tughlaq later built a madrasa along its edge and his own tomb at the corner. The walk covers how the college worked and how to recognise Tughlaq building.\n\nGive us your date and your group, and we set the start time, the pace and the language to suit.",
+   "subtitle": "A guided heritage walk around a fourteenth-century madrasa, tomb and reservoir",
+   "description": "Alauddin Khalji had the reservoir dug for his city of Siri. Firoz Shah Tughlaq later built a madrasa along its edge and his own tomb at the corner. The walk explains how the madrasa functioned and how to recognise Tughlaq architecture.\n\nThe date, start time, pace and language are arranged to suit your group.",
    "type": "walk",
    "kind": "Heritage walk",
    "price_paise": 0,
@@ -254,10 +269,10 @@
     "When": "Any day you choose. Early morning is best in the warmer months.",
     "Led by": "A historian",
     "Language": "English, Hindi or both",
-    "Group size": "About 10 works well. Smaller and larger groups can be discussed.",
-    "Meeting point": "Agreed with you and sent with a map pin once the date is fixed.",
-    "Bring": "Comfortable shoes, water and a cap. The ground is uneven in places.",
-    "Tickets": "Entry tickets, where the site charges them, are not part of our fee.",
+    "Group size": "About 10 is suggested. Smaller and larger groups are welcome.",
+    "Meeting point": "Agreed with you. A map location is shared once the date is confirmed.",
+    "What to bring": "Comfortable shoes, water and a hat. The ground is uneven in places.",
+    "Entry fees": "Monument entry fees, where charged, are not included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -283,9 +298,9 @@
   {
    "id": "req-museum-morning-with-an-archaeologist",
    "slug": "museum-morning-with-an-archaeologist",
-   "title": "Museum morning with an archaeologist",
-   "subtitle": "One gallery, looked at properly",
-   "description": "Most visitors pass a thousand objects in an hour and remember none. We choose one gallery with you and spend the morning on a dozen objects: what each is, how it was made and found, and what it tells us.\n\nGive us your date and your group, and we choose the gallery, the pace and the language to suit.",
+   "title": "Museum gallery study",
+   "subtitle": "A guided museum visit that studies one gallery in depth, object by object",
+   "description": "Rather than a rapid tour of a whole museum, this visit concentrates on a single gallery chosen with you. An archaeologist takes the group through about a dozen objects: what each is, how it was made and found, and what it tells us.\n\nThe gallery, date, pace and language are arranged to suit your group.",
    "type": "experience",
    "kind": "Museum visit",
    "price_paise": 0,
@@ -301,12 +316,12 @@
    "details": {
     "For": "Schools, colleges, companies and the public",
     "Length": "About 3 hours",
-    "When": "Any day the museum is open. We check its weekly closing day before fixing the date.",
+    "When": "Any day the museum is open. Its weekly closing day is checked before the date is fixed.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 10 works well. Smaller and larger groups can be discussed.",
-    "Meeting point": "Agreed with you and sent with a map pin once the date is fixed.",
-    "Tickets": "Museum entry is not part of our fee.",
+    "Group size": "About 10 is suggested. Smaller and larger groups are welcome.",
+    "Meeting point": "Agreed with you. A map location is shared once the date is confirmed.",
+    "Entry fees": "Museum entry fees are not included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -332,9 +347,9 @@
   {
    "id": "req-culture-and-heritage-what-we-inherit-and-why-it-matters",
    "slug": "culture-and-heritage-what-we-inherit-and-why-it-matters",
-   "title": "Culture and heritage: what we inherit and why it matters",
-   "subtitle": "An illustrated talk for students and teams new to the subject",
-   "description": "What counts as culture, what counts as heritage, and how the two differ. We work through tangible and intangible heritage with Indian examples, then look at who protects it: UNESCO, the Archaeological Survey of India, and the people who live beside a monument.\n\nLength, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
+   "title": "Culture and heritage",
+   "subtitle": "An illustrated lecture on tangible and intangible heritage, and on who protects it",
+   "description": "The lecture explains what counts as culture and what counts as heritage, and how the two differ. It works through tangible and intangible heritage with Indian examples, then looks at the institutions and communities that protect it, from UNESCO and the Archaeological Survey of India to the people who live beside a monument.\n\nLength, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
    "type": "live",
    "kind": "Lecture",
    "price_paise": 0,
@@ -350,11 +365,11 @@
    "details": {
     "For": "Schools, colleges and companies",
     "Length": "About 75 minutes",
-    "When": "Any date you choose, in the daytime or the evening.",
+    "When": "Any date you choose, daytime or evening.",
     "Led by": "A heritage educator",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -380,9 +395,9 @@
   {
    "id": "req-what-archaeologists-actually-do",
    "slug": "what-archaeologists-actually-do",
-   "title": "What archaeologists actually do",
-   "subtitle": "How a site is found, dug, recorded and looked after",
-   "description": "From the first survey to the museum shelf. Students see how a site is located, how a trench is laid out and recorded, what happens to finds in the laboratory, and what becomes of a site once the dig is over.\n\nLength, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
+   "title": "Archaeology in practice",
+   "subtitle": "An illustrated lecture on how sites are found, excavated, recorded and cared for",
+   "description": "The lecture follows an archaeological site from the first survey to the museum shelf: how a site is located, how a trench is laid out and recorded, what happens to finds in the laboratory, and what becomes of a site once excavation ends.\n\nLength, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
    "type": "live",
    "kind": "Lecture",
    "price_paise": 0,
@@ -398,11 +413,11 @@
    "details": {
     "For": "Schools and colleges",
     "Length": "60 to 75 minutes",
-    "When": "Any date you choose, in the daytime or the evening.",
+    "When": "Any date you choose, daytime or evening.",
     "Led by": "A field archaeologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -427,8 +442,8 @@
    "id": "req-from-stone-tools-to-the-first-villages",
    "slug": "from-stone-tools-to-the-first-villages",
    "title": "From stone tools to the first villages",
-   "subtitle": "Human origins and the Stone Age in South Asia",
-   "description": "How early people lived in the subcontinent, told through the tools they left behind. We follow the story from handaxes to microliths to the first farming settlements, using photographs of real finds.\n\nLength, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
+   "subtitle": "An illustrated lecture on human origins and the Stone Age in South Asia",
+   "description": "The lecture traces how early people lived in the subcontinent through the tools they left behind, from handaxes to microliths to the first farming settlements, using photographs of excavated material.\n\nLength, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
    "type": "live",
    "kind": "Lecture",
    "price_paise": 0,
@@ -444,11 +459,11 @@
    "details": {
     "For": "Schools and colleges",
     "Length": "60 to 75 minutes",
-    "When": "Any date you choose, in the daytime or the evening.",
+    "When": "Any date you choose, daytime or evening.",
     "Led by": "A prehistorian",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -472,9 +487,9 @@
   {
    "id": "req-the-first-cities-harappa-among-the-early-civilisations",
    "slug": "the-first-cities-harappa-among-the-early-civilisations",
-   "title": "The first cities: Harappa among the early civilisations",
-   "subtitle": "Mesopotamia, Egypt, China and the Indus compared",
-   "description": "What made a city more than four thousand years ago: planning, drains, weights, seals and trade. We set the Harappan cities beside Mesopotamia, Egypt and early China, so students see what the four shared and what belonged to the Indus world alone.\n\nLength, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
+   "title": "The first cities: the Indus and its contemporaries",
+   "subtitle": "An illustrated lecture comparing the Indus cities with Mesopotamia, Egypt and early China",
+   "description": "The lecture examines what made a city more than four thousand years ago: planning, drainage, standard weights, seals and trade. Setting the Harappan cities beside their contemporaries shows what the early civilisations shared and what was distinctive to the Indus.\n\nLength, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
    "type": "live",
    "kind": "Lecture",
    "price_paise": 0,
@@ -490,11 +505,11 @@
    "details": {
     "For": "Schools and colleges",
     "Length": "60 to 75 minutes",
-    "When": "Any date you choose, in the daytime or the evening.",
+    "When": "Any date you choose, daytime or evening.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -518,9 +533,9 @@
   {
    "id": "req-reading-india-s-scripts-brahmi-to-sarada",
    "slug": "reading-india-s-scripts-brahmi-to-sarada",
-   "title": "Reading India's scripts: Brāhmī to Śāradā",
-   "subtitle": "A lecture and demonstration with real inscriptions",
-   "description": "Most scripts used in India today descend from Brāhmī, the script of Aśoka's edicts. We trace that family on screen, read a line of an edict together, and show how epigraphists date an inscription from the shape of its letters.\n\nLength, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
+   "title": "India's scripts: from Brāhmī to Śāradā",
+   "subtitle": "An illustrated lecture, with a reading demonstration, on the Brāhmī family of scripts",
+   "description": "Most scripts used in India today descend from Brāhmī, the script of most of Aśoka's edicts. The lecture traces that family, reads a line of an edict with the audience, and shows how epigraphists date an inscription from the shapes of its letters.\n\nLength, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
    "type": "live",
    "kind": "Lecture",
    "price_paise": 0,
@@ -536,11 +551,11 @@
    "details": {
     "For": "Colleges, schools and the public",
     "Length": "About 90 minutes",
-    "When": "Any date you choose, in the daytime or the evening.",
+    "When": "Any date you choose, daytime or evening.",
     "Led by": "An epigraphist",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -565,9 +580,9 @@
   {
    "id": "req-how-to-read-a-temple",
    "slug": "how-to-read-a-temple",
-   "title": "How to read a temple",
-   "subtitle": "Nāgara, Drāviḍa and Vesara in one evening",
-   "description": "A plan, an elevation and a handful of terms are enough to start reading a temple. We compare the northern, southern and Deccan traditions with photographs and drawings, so the next temple you visit makes sense from the gateway to the sanctum.\n\nLength, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
+   "title": "Reading a temple",
+   "subtitle": "A single illustrated lecture on the Nāgara, Drāviḍa and Vesara traditions",
+   "description": "A plan, an elevation and a small set of terms are enough to begin reading a temple. The lecture compares the northern, southern and Deccan traditions through photographs and drawings. For a fuller treatment, see the four-session course on Indian temple architecture.\n\nLength, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
    "type": "live",
    "kind": "Lecture",
    "price_paise": 0,
@@ -583,11 +598,11 @@
    "details": {
     "For": "Colleges, companies and the public",
     "Length": "About 90 minutes",
-    "When": "Any date you choose, in the daytime or the evening.",
+    "When": "Any date you choose, daytime or evening.",
     "Led by": "An art historian",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -613,8 +628,8 @@
    "id": "req-india-s-linguistic-heritage",
    "slug": "india-s-linguistic-heritage",
    "title": "India's linguistic heritage",
-   "subtitle": "The language families of the subcontinent and how they met",
-   "description": "India's languages belong to several families that have borrowed from one another for thousands of years. This talk maps them, explains how linguists reconstruct their history, and looks at what is lost when a language stops being spoken.\n\nLength, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
+   "subtitle": "An illustrated lecture on the language families of the subcontinent and their history",
+   "description": "India's languages belong to several families that have influenced one another for thousands of years. The lecture maps those families, explains how linguists reconstruct their history, and considers what is lost when a language ceases to be spoken.\n\nLength, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
    "type": "live",
    "kind": "Lecture",
    "price_paise": 0,
@@ -630,11 +645,11 @@
    "details": {
     "For": "Schools, colleges and companies",
     "Length": "60 to 75 minutes",
-    "When": "Any date you choose, in the daytime or the evening.",
+    "When": "Any date you choose, daytime or evening.",
     "Led by": "A linguist",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -660,8 +675,8 @@
    "id": "req-rock-art-of-india",
    "slug": "rock-art-of-india",
    "title": "Rock art of India",
-   "subtitle": "Painted shelters and engraved rocks, and how they are recorded",
-   "description": "From the painted shelters of Bhimbetka to the engravings of the Konkan coast, India is rich in rock art. We look at what the images show, how they are dated, and how researchers document them before they fade.\n\nLength, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
+   "subtitle": "An illustrated lecture on India's painted shelters and rock engravings",
+   "description": "India has one of the world's largest bodies of rock art, from the painted shelters of Bhimbetka to the engravings of the Konkan coast. The lecture looks at what the images depict, how they are dated, and how researchers document them before they fade.\n\nLength, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
    "type": "live",
    "kind": "Lecture",
    "price_paise": 0,
@@ -677,11 +692,11 @@
    "details": {
     "For": "Schools, colleges and the public",
     "Length": "60 to 75 minutes",
-    "When": "Any date you choose, in the daytime or the evening.",
+    "When": "Any date you choose, daytime or evening.",
     "Led by": "A rock art researcher",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -706,9 +721,9 @@
   {
    "id": "req-the-goddess-in-text-and-image-the-devimahatmya",
    "slug": "the-goddess-in-text-and-image-the-devimahatmya",
-   "title": "The goddess in text and image: the Devīmāhātmya",
-   "subtitle": "The text behind Navarātri",
-   "description": "The Devīmāhātmya is the best-known Sanskrit text on the Goddess and is still recited every Navarātri. We read key passages in translation and set them beside sculpture and painting to see how the Śākta tradition took shape.\n\nLength, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
+   "title": "The Devīmāhātmya: the Goddess in text and image",
+   "subtitle": "An illustrated lecture on the Devīmāhātmya and the Śākta tradition",
+   "description": "The Devīmāhātmya is the best-known Sanskrit text on the Goddess and is still recited during Navarātri. The lecture reads key passages in translation and sets them beside sculpture and painting to show how the Śākta tradition took shape.\n\nLength, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
    "type": "live",
    "kind": "Lecture",
    "price_paise": 0,
@@ -724,11 +739,11 @@
    "details": {
     "For": "Colleges and the public",
     "Length": "About 90 minutes",
-    "When": "Any date you choose, in the daytime or the evening.",
+    "When": "Any date you choose, daytime or evening.",
     "Led by": "An Indologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -753,8 +768,8 @@
    "id": "req-careers-in-archaeology-museums-and-heritage",
    "slug": "careers-in-archaeology-museums-and-heritage",
    "title": "Careers in archaeology, museums and heritage",
-   "subtitle": "A group session for students choosing what to study",
-   "description": "What the work is, which degrees lead to it, and where the jobs are. Students leave with a map of courses, entrance routes and first steps, and there is time for their own questions.\n\nLength, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
+   "subtitle": "A guidance lecture for students choosing what to study",
+   "description": "The lecture sets out what the work involves, which degrees lead to it and where the employment is. Students leave with an outline of courses, entrance routes and first steps, and time is given to their own questions.\n\nLength, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
    "type": "live",
    "kind": "Lecture",
    "price_paise": 0,
@@ -770,11 +785,11 @@
    "details": {
     "For": "Schools and colleges",
     "Length": "About 60 minutes",
-    "When": "Any date you choose, in the daytime or the evening.",
+    "When": "Any date you choose, daytime or evening.",
     "Led by": "A Talaash Heritage counsellor",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -798,9 +813,9 @@
   {
    "id": "req-mock-trench-a-practice-excavation",
    "slug": "mock-trench-a-practice-excavation",
-   "title": "Mock trench: a practice excavation",
-   "subtitle": "Students dig, record and interpret a prepared trench",
-   "description": "We build a trench with layers and planted finds. Students excavate with real tools, record what they find and where, and then argue out what happened at the site.\n\nWe bring the materials and fit the session to your space, your timetable and the age of the group.",
+   "title": "Mock excavation",
+   "subtitle": "A hands-on workshop in which students excavate and record a prepared trench",
+   "description": "A trench is prepared in advance with layers and planted finds. Students excavate it with real tools, record each find and its position, and then interpret what happened at the site.\n\nAll materials are provided. The session is adapted to your space, your timetable and the age of the participants.",
    "type": "experience",
    "kind": "Workshop",
    "price_paise": 0,
@@ -819,9 +834,9 @@
     "When": "Any date you choose.",
     "Led by": "A field archaeologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
-    "We bring": "What the session needs, for the number of people you confirm.",
-    "You arrange": "An open patch of ground, or a room if we use sand trays.",
+    "Group size": "About 20 is suggested. Smaller and larger groups are welcome.",
+    "We provide": "All materials, for the confirmed number of participants.",
+    "You arrange": "An open area of ground, or a room if sand trays are used.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -845,9 +860,9 @@
   {
    "id": "req-clay-and-the-past-a-pottery-workshop",
    "slug": "clay-and-the-past-a-pottery-workshop",
-   "title": "Clay and the past: a pottery workshop",
-   "subtitle": "Make a pot, then learn to read one",
-   "description": "Pottery is the most common find on an excavation. Participants shape clay by hand, then sort replica sherds the way archaeologists do: by fabric, form and decoration.\n\nWe bring the materials and fit the session to your space, your timetable and the age of the group.",
+   "title": "Pottery: making and identification",
+   "subtitle": "A hands-on workshop in shaping pottery and in sorting sherds as archaeologists do",
+   "description": "Pottery is the most common find on an excavation. Participants shape a vessel by hand, then sort replica sherds by fabric, form and decoration, as archaeologists do in the field.\n\nAll materials are provided. The session is adapted to your space, your timetable and the age of the participants.",
    "type": "experience",
    "kind": "Workshop",
    "price_paise": 0,
@@ -866,9 +881,9 @@
     "When": "Any date you choose.",
     "Led by": "An archaeologist, with a potter",
     "Language": "English, Hindi or both",
-    "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
-    "We bring": "What the session needs, for the number of people you confirm.",
-    "You arrange": "A room or open space with tables. We tell you exactly what is needed once we know the group.",
+    "Group size": "About 20 is suggested. Smaller and larger groups are welcome.",
+    "We provide": "All materials, for the confirmed number of participants.",
+    "You arrange": "A room or open space with tables. Exact requirements are confirmed once the group is known.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -892,9 +907,9 @@
   {
    "id": "req-reading-sculpture",
    "slug": "reading-sculpture",
-   "title": "Reading sculpture",
-   "subtitle": "A talk, a gallery or temple visit, and a quiz",
-   "description": "Who is this figure, and how do we know? After a short illustrated talk, students study sculpture in a museum gallery or at a temple, identify figures from what they hold and wear, and finish with a quiz.\n\nWe bring the materials and fit the session to your space, your timetable and the age of the group.",
+   "title": "Identifying sculpture",
+   "subtitle": "A half-day workshop combining a short lecture, a gallery or temple visit and a quiz",
+   "description": "After a short illustrated lecture on how figures are identified, participants study sculpture in a museum gallery or at a temple, identify figures from their attributes and dress, and finish with a quiz.\n\nAll materials are provided. The session is adapted to your space, your timetable and the age of the participants.",
    "type": "experience",
    "kind": "Workshop",
    "price_paise": 0,
@@ -913,9 +928,9 @@
     "When": "Any date you choose.",
     "Led by": "An art historian",
     "Language": "English, Hindi or both",
-    "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
-    "We bring": "What the session needs, for the number of people you confirm.",
-    "You arrange": "A room with a screen for the talk. Entry tickets for the visit, where charged, are not part of our fee.",
+    "Group size": "About 20 is suggested. Smaller and larger groups are welcome.",
+    "We provide": "All materials, for the confirmed number of participants.",
+    "You arrange": "A room with a screen for the lecture. Entry fees for the visit, where charged, are not included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -938,9 +953,9 @@
   {
    "id": "req-write-like-asoka-s-scribes-a-brahmi-workshop",
    "slug": "write-like-asoka-s-scribes-a-brahmi-workshop",
-   "title": "Write like Aśoka's scribes: a Brāhmī workshop",
-   "subtitle": "Learn the letters and write your own name",
-   "description": "Brāhmī is more than two thousand years old and simple enough to begin in an afternoon. Participants learn the letters, write their names, and read a few words from a real edict.\n\nWe bring the materials and fit the session to your space, your timetable and the age of the group.",
+   "title": "Introduction to Brāhmī script",
+   "subtitle": "A hands-on workshop in reading and writing the script of Aśoka's edicts",
+   "description": "Brāhmī is more than two thousand years old and can be learnt to a basic level in a single session. Participants learn the letters, write their own names, and read a few words from an Aśokan edict.\n\nAll materials are provided. The session is adapted to your space, your timetable and the age of the participants.",
    "type": "experience",
    "kind": "Workshop",
    "price_paise": 0,
@@ -959,9 +974,9 @@
     "When": "Any date you choose.",
     "Led by": "An epigraphist",
     "Language": "English, Hindi or both",
-    "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
-    "We bring": "What the session needs, for the number of people you confirm.",
-    "You arrange": "A room with tables and a screen. Online, nothing: we send the link.",
+    "Group size": "About 20 is suggested. Smaller and larger groups are welcome.",
+    "We provide": "All materials, for the confirmed number of participants.",
+    "You arrange": "A room with tables and a screen. Online, nothing; the link is sent to you.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -987,9 +1002,9 @@
   {
    "id": "req-recording-the-past-a-documentation-workshop",
    "slug": "recording-the-past-a-documentation-workshop",
-   "title": "Recording the past: a documentation workshop",
-   "subtitle": "How to record a site and an object properly",
-   "description": "A find without a record is only an old object. Participants fill in a context sheet, draw and photograph an object to scale, and write a catalogue entry, using the formats we use in our own projects.\n\nWe bring the materials and fit the session to your space, your timetable and the age of the group.",
+   "title": "Archaeological documentation",
+   "subtitle": "A hands-on workshop in recording sites and objects to a professional standard",
+   "description": "A find without a record is only an old object. Participants complete a context sheet, draw and photograph an object to scale, and write a catalogue entry, using the formats applied in field and museum practice.\n\nAll materials are provided. The session is adapted to your space, your timetable and the age of the participants.",
    "type": "experience",
    "kind": "Workshop",
    "price_paise": 0,
@@ -1008,8 +1023,8 @@
     "When": "Any date you choose.",
     "Led by": "A documentation specialist",
     "Language": "English, Hindi or both",
-    "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
-    "We bring": "What the session needs, for the number of people you confirm.",
+    "Group size": "About 20 is suggested. Smaller and larger groups are welcome.",
+    "We provide": "All materials, for the confirmed number of participants.",
     "You arrange": "A room with tables and a screen.",
     "Price": "Quoted for your group"
    },
@@ -1033,9 +1048,9 @@
   {
    "id": "req-caring-for-collections-preventive-conservation-basics",
    "slug": "caring-for-collections-preventive-conservation-basics",
-   "title": "Caring for collections: preventive conservation basics",
-   "subtitle": "Paper, textiles and metal, for anyone who looks after old things",
-   "description": "Most damage to a collection comes from light, damp, pests and handling, and most of it can be prevented cheaply. A conservator shows how to assess, store and handle paper, textiles and metal, with practice on sample materials.\n\nWe bring the materials and fit the session to your space, your timetable and the age of the group.",
+   "title": "Preventive conservation",
+   "subtitle": "A one- or two-day workshop on caring for paper, textiles and metal",
+   "description": "Most damage to a collection is caused by light, damp, pests and handling, and much of it can be prevented at little cost. A conservator shows how to assess, store and handle paper, textiles and metal, with practice on sample materials.\n\nAll materials are provided. The session is adapted to your space, your timetable and the age of the participants.",
    "type": "experience",
    "kind": "Workshop",
    "price_paise": 0,
@@ -1054,8 +1069,8 @@
     "When": "Any date you choose.",
     "Led by": "A conservator",
     "Language": "English, Hindi or both",
-    "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
-    "We bring": "What the session needs, for the number of people you confirm.",
+    "Group size": "About 20 is suggested. Smaller and larger groups are welcome.",
+    "We provide": "All materials, for the confirmed number of participants.",
     "You arrange": "A room with tables and a screen.",
     "Price": "Quoted for your group"
    },
@@ -1080,9 +1095,9 @@
   {
    "id": "req-stone-tools-up-close",
    "slug": "stone-tools-up-close",
-   "title": "Stone tools up close",
-   "subtitle": "How early tools were made, used and classified",
-   "description": "A prehistorian demonstrates how stone tools were struck and what the scars on them mean. Participants sort tool types, handle replicas and learn the first steps of lithic analysis.\n\nWe bring the materials and fit the session to your space, your timetable and the age of the group.",
+   "title": "Stone tools: making and classification",
+   "subtitle": "A hands-on workshop on how prehistoric stone tools were made, used and classified",
+   "description": "A prehistorian demonstrates how stone tools were struck and what the scars on them reveal. Participants sort tool types, handle replicas and learn the first steps of lithic analysis.\n\nAll materials are provided. The session is adapted to your space, your timetable and the age of the participants.",
    "type": "experience",
    "kind": "Workshop",
    "price_paise": 0,
@@ -1101,8 +1116,8 @@
     "When": "Any date you choose.",
     "Led by": "A prehistorian",
     "Language": "English, Hindi or both",
-    "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
-    "We bring": "What the session needs, for the number of people you confirm.",
+    "Group size": "About 20 is suggested. Smaller and larger groups are welcome.",
+    "We provide": "All materials, for the confirmed number of participants.",
     "You arrange": "A room with tables and a screen.",
     "Price": "Quoted for your group"
    },
@@ -1126,9 +1141,9 @@
   {
    "id": "req-the-dig-an-archaeology-team-challenge",
    "slug": "the-dig-an-archaeology-team-challenge",
-   "title": "The dig: an archaeology team challenge",
-   "subtitle": "A half-day team activity for workplaces",
-   "description": "Teams compete to excavate, record and interpret a prepared trench, then present their reading of the evidence. It rewards careful observation and clear reporting more than speed.\n\nWe bring the materials and fit the session to your space, your timetable and the age of the group.",
+   "title": "Team excavation challenge",
+   "subtitle": "A half-day hands-on workshop for workplace teams",
+   "description": "Teams excavate, record and interpret a prepared trench, then present their reading of the evidence. The exercise rewards careful observation and clear reporting rather than speed.\n\nAll materials are provided. The session is adapted to your space, your timetable and the age of the participants.",
    "type": "experience",
    "kind": "Workshop",
    "price_paise": 0,
@@ -1147,9 +1162,9 @@
     "When": "Any date you choose.",
     "Led by": "A field archaeologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 20 works well. Smaller and larger groups can be discussed.",
-    "We bring": "What the session needs, for the number of people you confirm.",
-    "You arrange": "An open patch of ground, or a room if we use sand trays.",
+    "Group size": "About 20 is suggested. Smaller and larger groups are welcome.",
+    "We provide": "All materials, for the confirmed number of participants.",
+    "You arrange": "An open area of ground, or a room if sand trays are used.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1172,9 +1187,9 @@
   {
    "id": "req-prakrit-a-first-course",
    "slug": "prakrit-a-first-course",
-   "title": "Prakrit: a first course",
-   "subtitle": "Read the language of India's earliest inscriptions",
-   "description": "Prakrit was the everyday speech of much of ancient India and the language of Aśoka's edicts. The course covers the basics of grammar and guided reading of short passages.\n\nWe run it for your batch on dates you choose. Timing, pace and assessment are agreed before it starts.",
+   "title": "Introductory Prakrit",
+   "subtitle": "An online course of six sessions in Prakrit grammar and reading",
+   "description": "Prakrit was the everyday speech of much of ancient India and the language of Aśoka's edicts. The course covers the essentials of grammar, with guided reading of short passages.\n\nThe course is run for your batch on dates you choose. Timings, pace and assessment are agreed before it begins.",
    "type": "course",
    "kind": "Course",
    "price_paise": 0,
@@ -1193,8 +1208,8 @@
     "When": "Dates and timings are set with your batch.",
     "Led by": "A Prakrit scholar",
     "Language": "English, Hindi or both",
-    "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
-    "You need": "A computer or phone with a steady connection.",
+    "Group size": "About 15 is suggested. Smaller and larger groups are welcome.",
+    "You need": "A computer or phone with a stable internet connection.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1217,9 +1232,9 @@
   {
    "id": "req-pali-a-first-course",
    "slug": "pali-a-first-course",
-   "title": "Pali: a first course",
-   "subtitle": "Begin reading the language of the Theravāda Buddhist canon",
-   "description": "The course covers pronunciation, basic grammar and the reading of short passages, and ends with a test for those who want one.\n\nWe run it for your batch on dates you choose. Timing, pace and assessment are agreed before it starts.",
+   "title": "Introductory Pali",
+   "subtitle": "An online course in Pali pronunciation, grammar and reading",
+   "description": "Pali is the language of the Theravāda Buddhist canon. The course covers pronunciation, basic grammar and the reading of short passages, and ends with an optional assessment.\n\nThe course is run for your batch on dates you choose. Timings, pace and assessment are agreed before it begins.",
    "type": "course",
    "kind": "Course",
    "price_paise": 0,
@@ -1238,8 +1253,8 @@
     "When": "Dates and timings are set with your batch.",
     "Led by": "A Pali scholar",
     "Language": "English, Hindi or both",
-    "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
-    "You need": "A computer or phone with a steady connection.",
+    "Group size": "About 15 is suggested. Smaller and larger groups are welcome.",
+    "You need": "A computer or phone with a stable internet connection.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1262,9 +1277,9 @@
   {
    "id": "req-sarada-script",
    "slug": "sarada-script",
-   "title": "Śāradā script",
-   "subtitle": "Learn to read the script of Kashmir's manuscripts",
-   "description": "Participants learn the alphabet, conjuncts and numerals, practise transliteration, and read from manuscript pages.\n\nWe run it for your batch on dates you choose. Timing, pace and assessment are agreed before it starts.",
+   "title": "Reading Śāradā script",
+   "subtitle": "An online course of about ten sessions in reading Śāradā manuscripts",
+   "description": "Śāradā was the principal script of Kashmir for centuries, and many manuscripts from the region are written in it. Participants learn the alphabet, conjuncts and numerals, practise transliteration, and read from manuscript pages.\n\nThe course is run for your batch on dates you choose. Timings, pace and assessment are agreed before it begins.",
    "type": "course",
    "kind": "Course",
    "price_paise": 0,
@@ -1283,8 +1298,8 @@
     "When": "Dates and timings are set with your batch.",
     "Led by": "A manuscript scholar",
     "Language": "English, Hindi or both",
-    "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
-    "You need": "A computer or phone with a steady connection.",
+    "Group size": "About 15 is suggested. Smaller and larger groups are welcome.",
+    "You need": "A computer or phone with a stable internet connection.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1308,8 +1323,8 @@
    "id": "req-understanding-indian-temple-architecture",
    "slug": "understanding-indian-temple-architecture",
    "title": "Understanding Indian temple architecture",
-   "subtitle": "Four evenings on temple forms and how they developed",
-   "description": "A basic introduction: the parts of a temple, the regional styles and their antiquity, and the ways scholars approach architecture. A certificate of completion can be issued.\n\nWe run it for your batch on dates you choose. Timing, pace and assessment are agreed before it starts.",
+   "subtitle": "An online course of four sessions on the forms and development of the Indian temple",
+   "description": "An introduction to the parts of a temple, the regional styles and their chronology, and the methods scholars use to study architecture. A certificate of completion can be issued.\n\nThe course is run for your batch on dates you choose. Timings, pace and assessment are agreed before it begins.",
    "type": "course",
    "kind": "Course",
    "price_paise": 0,
@@ -1328,8 +1343,8 @@
     "When": "Dates and timings are set with your batch.",
     "Led by": "An art historian",
     "Language": "English, Hindi or both",
-    "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
-    "You need": "A computer or phone with a steady connection.",
+    "Group size": "About 15 is suggested. Smaller and larger groups are welcome.",
+    "You need": "A computer or phone with a stable internet connection.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1355,8 +1370,8 @@
    "id": "req-remote-sensing-in-archaeology-and-heritage-management",
    "slug": "remote-sensing-in-archaeology-and-heritage-management",
    "title": "Remote sensing in archaeology and heritage management",
-   "subtitle": "A three-month certificate course",
-   "description": "How satellite images, aerial photographs and mapping software are used to find, map and monitor sites. Live weekend sessions, with recordings for anyone who misses one.\n\nWe run it for your batch on dates you choose. Timing, pace and assessment are agreed before it starts.",
+   "subtitle": "A three-month online certificate course, taught in live weekend sessions",
+   "description": "The course covers how satellite imagery, aerial photographs and mapping software are used to find, map and monitor sites. Each live session is recorded for participants who miss it.\n\nThe course is run for your batch on dates you choose. Timings, pace and assessment are agreed before it begins.",
    "type": "course",
    "kind": "Course",
    "price_paise": 0,
@@ -1375,8 +1390,8 @@
     "When": "Dates and timings are set with your batch.",
     "Led by": "A remote sensing specialist",
     "Language": "English, Hindi or both",
-    "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
-    "You need": "A computer or phone with a steady connection.",
+    "Group size": "About 15 is suggested. Smaller and larger groups are welcome.",
+    "You need": "A computer or phone with a stable internet connection.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1401,8 +1416,8 @@
    "id": "req-martial-arts-and-society",
    "slug": "martial-arts-and-society",
    "title": "Martial arts and society",
-   "subtitle": "Three evenings on wrestling, combat and culture in Indian history",
-   "description": "What sculpture, texts and living traditions tell us about wrestling and combat sports in India, and what they meant to the people who practised and paid for them.\n\nWe run it for your batch on dates you choose. Timing, pace and assessment are agreed before it starts.",
+   "subtitle": "An online course of three sessions on wrestling and combat in Indian history",
+   "description": "The course examines what sculpture, texts and living traditions reveal about wrestling and combat sports in India, and what they meant to those who practised and patronised them.\n\nThe course is run for your batch on dates you choose. Timings, pace and assessment are agreed before it begins.",
    "type": "course",
    "kind": "Course",
    "price_paise": 0,
@@ -1421,8 +1436,8 @@
     "When": "Dates and timings are set with your batch.",
     "Led by": "A historian of sport",
     "Language": "English, Hindi or both",
-    "Group size": "About 15 works well. Smaller and larger groups can be discussed.",
-    "You need": "A computer or phone with a steady connection.",
+    "Group size": "About 15 is suggested. Smaller and larger groups are welcome.",
+    "You need": "A computer or phone with a stable internet connection.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1446,8 +1461,8 @@
    "id": "req-museum-field-school-documentation-and-conservation",
    "slug": "museum-field-school-documentation-and-conservation",
    "title": "Museum field school: documentation and conservation",
-   "subtitle": "A week of supervised work on a real collection",
-   "description": "Participants document, clean and rehouse objects from a museum collection under conservators and documentation specialists, with daily laboratory sessions, lectures and visits to nearby sites. It suits students of conservation, museology, archaeology and related fields.\n\nDates, location and syllabus are agreed with your institution. You receive a day-by-day plan and a quotation before you commit.",
+   "subtitle": "A week-long field school of supervised work on a museum collection",
+   "description": "Participants document, clean and rehouse objects from a museum collection under the supervision of conservators and documentation specialists, with daily laboratory sessions, lectures and visits to nearby sites. It is suited to students of conservation, museology, archaeology and related subjects.\n\nDates, location and syllabus are agreed with your institution. A day-by-day plan and a quotation are shared before you commit.",
    "type": "experience",
    "kind": "Field school",
    "price_paise": 0,
@@ -1466,9 +1481,9 @@
     "When": "Dates agreed with your institution.",
     "Led by": "Conservators and documentation specialists",
     "Language": "English, Hindi or both",
-    "Group size": "About 35 works well. Smaller and larger groups can be discussed.",
-    "Itinerary": "A day-by-day plan reaches you before you commit.",
-    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Group size": "About 35 is suggested. Smaller and larger groups are welcome.",
+    "Itinerary": "A day-by-day plan is shared before you commit.",
+    "Travel, stay and meals": "The quotation states exactly what is included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1491,9 +1506,9 @@
   {
    "id": "req-prehistory-field-workshop",
    "slug": "prehistory-field-workshop",
-   "title": "Prehistory field workshop",
-   "subtitle": "Three days of survey, stone tools, rock art and megaliths",
-   "description": "A field introduction to prehistory: reading the local landscape, finding and classifying stone tools, documenting rock art and megaliths, and taking samples.\n\nDates, location and syllabus are agreed with your institution. You receive a day-by-day plan and a quotation before you commit.",
+   "title": "Prehistory field school",
+   "subtitle": "A three-day field school in survey, stone tools, rock art and megaliths",
+   "description": "A field introduction to prehistory: reading the local landscape, locating and classifying stone tools, documenting rock art and megaliths, and taking samples.\n\nDates, location and syllabus are agreed with your institution. A day-by-day plan and a quotation are shared before you commit.",
    "type": "experience",
    "kind": "Field school",
    "price_paise": 0,
@@ -1512,9 +1527,9 @@
     "When": "Dates agreed with your institution.",
     "Led by": "Prehistorians",
     "Language": "English, Hindi or both",
-    "Group size": "About 25 works well. Smaller and larger groups can be discussed.",
-    "Itinerary": "A day-by-day plan reaches you before you commit.",
-    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Group size": "About 25 is suggested. Smaller and larger groups are welcome.",
+    "Itinerary": "A day-by-day plan is shared before you commit.",
+    "Travel, stay and meals": "The quotation states exactly what is included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1538,8 +1553,8 @@
    "id": "req-three-capitals-delhi-agra-and-jaipur",
    "slug": "three-capitals-delhi-agra-and-jaipur",
    "title": "Three capitals: Delhi, Agra and Jaipur",
-   "subtitle": "The Golden Triangle as a study tour",
-   "description": "An archaeologist travels with the group and uses Delhi's Sultanate monuments, Mughal Agra and Fatehpur Sikri, and eighteenth-century Jaipur to show how three courts built their capitals.\n\nYou receive a day-by-day itinerary and a quotation before you commit. Route, pace, stay and budget are adjusted until they suit your group.",
+   "subtitle": "A study tour of five to six days, led by an archaeologist",
+   "description": "An archaeologist travels with the group and uses the Sultanate monuments of Delhi, Mughal Agra and Fatehpur Sikri, and eighteenth-century Jaipur to show how three courts planned and built their capitals.\n\nA day-by-day itinerary and a quotation are shared before you commit. Route, pace, accommodation and budget are adjusted to suit your group.",
    "type": "experience",
    "kind": "Study tour",
    "price_paise": 0,
@@ -1558,9 +1573,9 @@
     "When": "Any dates you choose. October to March is the most comfortable season for this route.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 12 works well. Smaller and larger groups can be discussed.",
-    "Itinerary": "A day-by-day plan reaches you before you commit.",
-    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Group size": "About 12 is suggested. Smaller and larger groups are welcome.",
+    "Itinerary": "A day-by-day plan is shared before you commit.",
+    "Travel, stay and meals": "The quotation states exactly what is included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1588,8 +1603,8 @@
    "id": "req-forts-of-rajasthan",
    "slug": "forts-of-rajasthan",
    "title": "Forts of Rajasthan",
-   "subtitle": "A study tour of the hill forts and the states that built them",
-   "description": "Six of Rajasthan's hill forts are on the World Heritage list. The tour covers how the forts were sited, supplied with water and defended, with a historian travelling alongside.\n\nYou receive a day-by-day itinerary and a quotation before you commit. Route, pace, stay and budget are adjusted until they suit your group.",
+   "subtitle": "A study tour of six to eight days, accompanied by a historian",
+   "description": "Six of Rajasthan's hill forts are inscribed together as a World Heritage Site. The tour examines how the forts were sited, supplied with water and defended, with a historian accompanying the group throughout.\n\nA day-by-day itinerary and a quotation are shared before you commit. Route, pace, accommodation and budget are adjusted to suit your group.",
    "type": "experience",
    "kind": "Study tour",
    "price_paise": 0,
@@ -1608,9 +1623,9 @@
     "When": "Any dates you choose. October to March is the most comfortable season for this route.",
     "Led by": "A historian",
     "Language": "English, Hindi or both",
-    "Group size": "About 12 works well. Smaller and larger groups can be discussed.",
-    "Itinerary": "A day-by-day plan reaches you before you commit.",
-    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Group size": "About 12 is suggested. Smaller and larger groups are welcome.",
+    "Itinerary": "A day-by-day plan is shared before you commit.",
+    "Travel, stay and meals": "The quotation states exactly what is included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1635,8 +1650,8 @@
    "id": "req-stupas-caves-and-temples-of-central-india",
    "slug": "stupas-caves-and-temples-of-central-india",
    "title": "Stupas, caves and temples of central India",
-   "subtitle": "Sanchi, Udayagiri, Bhimbetka and Khajuraho",
-   "description": "Four sites in Madhya Pradesh that cover rock art, early Buddhist architecture, Gupta sculpture and the medieval temple at its height. An archaeologist leads, and reading is sent in advance.\n\nYou receive a day-by-day itinerary and a quotation before you commit. Route, pace, stay and budget are adjusted until they suit your group.",
+   "subtitle": "A study tour of six to seven days to Bhimbetka, Sanchi, Udayagiri and Khajuraho",
+   "description": "Four sites in Madhya Pradesh that together span prehistoric rock art, early Buddhist architecture, Gupta sculpture and the medieval temple at its height. An archaeologist leads the tour, and reading is sent in advance.\n\nA day-by-day itinerary and a quotation are shared before you commit. Route, pace, accommodation and budget are adjusted to suit your group.",
    "type": "experience",
    "kind": "Study tour",
    "price_paise": 0,
@@ -1655,9 +1670,9 @@
     "When": "Any dates you choose. October to March is the most comfortable season for this route.",
     "Led by": "An archaeologist",
     "Language": "English, Hindi or both",
-    "Group size": "About 12 works well. Smaller and larger groups can be discussed.",
-    "Itinerary": "A day-by-day plan reaches you before you commit.",
-    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Group size": "About 12 is suggested. Smaller and larger groups are welcome.",
+    "Itinerary": "A day-by-day plan is shared before you commit.",
+    "Travel, stay and meals": "The quotation states exactly what is included.",
     "Price": "Quoted for your group"
    },
    "highlights": [
@@ -1681,9 +1696,9 @@
   {
    "id": "req-a-study-tour-built-for-your-group",
    "slug": "a-study-tour-built-for-your-group",
-   "title": "A study tour built for your group",
-   "subtitle": "Tell us the region and the syllabus",
-   "description": "For schools, colleges and societies that want another region: Gujarat, Odisha, Varanasi and Sarnath, the Deccan or the south. We design the route around what your group is studying and send an expert in that period.\n\nYou receive a day-by-day itinerary and a quotation before you commit. Route, pace, stay and budget are adjusted until they suit your group.",
+   "title": "Study tour to a region of your choice",
+   "subtitle": "A study tour planned around your region and syllabus",
+   "description": "For schools, colleges and societies interested in other regions, such as Gujarat, Odisha, Varanasi and Sarnath, the Deccan or the south. The route is designed around what your group is studying, and an expert in that period accompanies you.\n\nA day-by-day itinerary and a quotation are shared before you commit. Route, pace, accommodation and budget are adjusted to suit your group.",
    "type": "experience",
    "kind": "Study tour",
    "price_paise": 0,
@@ -1702,9 +1717,9 @@
     "When": "Any dates you choose. We advise on the best season for the region.",
     "Led by": "An expert chosen for the region",
     "Language": "English, Hindi or both",
-    "Group size": "About 12 works well. Smaller and larger groups can be discussed.",
-    "Itinerary": "A day-by-day plan reaches you before you commit.",
-    "Travel, stay and meals": "Your quotation states exactly what is covered.",
+    "Group size": "About 12 is suggested. Smaller and larger groups are welcome.",
+    "Itinerary": "A day-by-day plan is shared before you commit.",
+    "Travel, stay and meals": "The quotation states exactly what is included.",
     "Price": "Quoted for your group"
    },
    "highlights": [

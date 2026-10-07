@@ -8,13 +8,13 @@ LANG = "English, Hindi or both"
 
 # Second paragraph of every description: how the programme bends to the group.
 FLEX = {
-    "lecture": "Length, level and language are set with you. It runs online or at your venue, for a class, a department or a whole team.",
-    "workshop": "We bring the materials and fit the session to your space, your timetable and the age of the group.",
-    "walk": "Give us your date and your group, and we set the start time, the pace and the language to suit.",
-    "visit": "Give us your date and your group, and we choose the gallery, the pace and the language to suit.",
-    "course": "We run it for your batch on dates you choose. Timing, pace and assessment are agreed before it starts.",
-    "field": "Dates, location and syllabus are agreed with your institution. You receive a day-by-day plan and a quotation before you commit.",
-    "tour": "You receive a day-by-day itinerary and a quotation before you commit. Route, pace, stay and budget are adjusted until they suit your group.",
+    "lecture": "Length, level and language are agreed with you. The lecture can be given online or at your venue, for a single class, a department or a whole organisation.",
+    "workshop": "All materials are provided. The session is adapted to your space, your timetable and the age of the participants.",
+    "walk": "The date, start time, pace and language are arranged to suit your group.",
+    "visit": "The gallery, date, pace and language are arranged to suit your group.",
+    "course": "The course is run for your batch on dates you choose. Timings, pace and assessment are agreed before it begins.",
+    "field": "Dates, location and syllabus are agreed with your institution. A day-by-day plan and a quotation are shared before you commit.",
+    "tour": "A day-by-day itinerary and a quotation are shared before you commit. Route, pace, accommodation and budget are adjusted to suit your group.",
 }
 KIND = {"lecture": "Lecture", "workshop": "Workshop", "walk": "Heritage walk", "visit": "Museum visit", "course": "Course", "field": "Field school", "tour": "Study tour"}
 TYPE = {"lecture": "live", "workshop": "experience", "walk": "walk", "visit": "experience", "course": "course", "field": "experience", "tour": "experience"}
@@ -106,31 +106,145 @@ H = {
  "A study tour built for your group": ["A region you choose", "A route built around what your group is studying", "An expert in that period travelling with you", "An itinerary and a quotation before you commit"],
 }
 
+# Public name, subtitle and opening paragraph for each programme, keyed by its internal title.
+# Subtitles always open with the format, so a lecture, a workshop and a course cannot be confused.
+COPY = {
+ "Mehrauli Archaeological Park": ("Mehrauli Archaeological Park",
+   "A guided heritage walk through ten centuries of building, from the Sultanate to the British period",
+   "The park holds standing remains from the eleventh century to the nineteenth, among them Rajon ki Baoli, the tomb of Balban and the mosque and tomb of Jamali Kamali. An archaeologist shows how masonry, arches and decoration distinguish one period from the next."),
+ "The Qutb complex": ("The Qutb complex",
+   "A guided heritage walk through a World Heritage Site, read from its inscriptions and masonry",
+   "The Qutb Minar stands beside a mosque built with reused temple pillars, an iron pillar of the Gupta period and the Alai Darwaza of 1311. The walk uses the inscriptions and the joints in the masonry to trace how the complex grew under successive rulers."),
+ "Purana Qila": ("Purana Qila",
+   "A guided heritage walk around a sixteenth-century fort and the excavations within it",
+   "The fort was built under Humayun and Sher Shah Suri. Excavations inside it since the 1950s have found settlement going back more than two thousand years. The walk covers the walls, gateways and mosque, and what each excavation revealed."),
+ "Hauz Khas": ("Hauz Khas",
+   "A guided heritage walk around a fourteenth-century madrasa, tomb and reservoir",
+   "Alauddin Khalji had the reservoir dug for his city of Siri. Firoz Shah Tughlaq later built a madrasa along its edge and his own tomb at the corner. The walk explains how the madrasa functioned and how to recognise Tughlaq architecture."),
+ "Museum morning with an archaeologist": ("Museum gallery study",
+   "A guided museum visit that studies one gallery in depth, object by object",
+   "Rather than a rapid tour of a whole museum, this visit concentrates on a single gallery chosen with you. An archaeologist takes the group through about a dozen objects: what each is, how it was made and found, and what it tells us."),
+
+ "Culture and heritage: what we inherit and why it matters": ("Culture and heritage",
+   "An illustrated lecture on tangible and intangible heritage, and on who protects it",
+   "The lecture explains what counts as culture and what counts as heritage, and how the two differ. It works through tangible and intangible heritage with Indian examples, then looks at the institutions and communities that protect it, from UNESCO and the Archaeological Survey of India to the people who live beside a monument."),
+ "What archaeologists actually do": ("Archaeology in practice",
+   "An illustrated lecture on how sites are found, excavated, recorded and cared for",
+   "The lecture follows an archaeological site from the first survey to the museum shelf: how a site is located, how a trench is laid out and recorded, what happens to finds in the laboratory, and what becomes of a site once excavation ends."),
+ "From stone tools to the first villages": ("From stone tools to the first villages",
+   "An illustrated lecture on human origins and the Stone Age in South Asia",
+   "The lecture traces how early people lived in the subcontinent through the tools they left behind, from handaxes to microliths to the first farming settlements, using photographs of excavated material."),
+ "The first cities: Harappa among the early civilisations": ("The first cities: the Indus and its contemporaries",
+   "An illustrated lecture comparing the Indus cities with Mesopotamia, Egypt and early China",
+   "The lecture examines what made a city more than four thousand years ago: planning, drainage, standard weights, seals and trade. Setting the Harappan cities beside their contemporaries shows what the early civilisations shared and what was distinctive to the Indus."),
+ "Reading India's scripts: Brāhmī to Śāradā": ("India's scripts: from Brāhmī to Śāradā",
+   "An illustrated lecture, with a reading demonstration, on the Brāhmī family of scripts",
+   "Most scripts used in India today descend from Brāhmī, the script of most of Aśoka's edicts. The lecture traces that family, reads a line of an edict with the audience, and shows how epigraphists date an inscription from the shapes of its letters."),
+ "How to read a temple": ("Reading a temple",
+   "A single illustrated lecture on the Nāgara, Drāviḍa and Vesara traditions",
+   "A plan, an elevation and a small set of terms are enough to begin reading a temple. The lecture compares the northern, southern and Deccan traditions through photographs and drawings. For a fuller treatment, see the four-session course on Indian temple architecture."),
+ "India's linguistic heritage": ("India's linguistic heritage",
+   "An illustrated lecture on the language families of the subcontinent and their history",
+   "India's languages belong to several families that have influenced one another for thousands of years. The lecture maps those families, explains how linguists reconstruct their history, and considers what is lost when a language ceases to be spoken."),
+ "Rock art of India": ("Rock art of India",
+   "An illustrated lecture on India's painted shelters and rock engravings",
+   "India has one of the world's largest bodies of rock art, from the painted shelters of Bhimbetka to the engravings of the Konkan coast. The lecture looks at what the images depict, how they are dated, and how researchers document them before they fade."),
+ "The goddess in text and image: the Devīmāhātmya": ("The Devīmāhātmya: the Goddess in text and image",
+   "An illustrated lecture on the Devīmāhātmya and the Śākta tradition",
+   "The Devīmāhātmya is the best-known Sanskrit text on the Goddess and is still recited during Navarātri. The lecture reads key passages in translation and sets them beside sculpture and painting to show how the Śākta tradition took shape."),
+ "Careers in archaeology, museums and heritage": ("Careers in archaeology, museums and heritage",
+   "A guidance lecture for students choosing what to study",
+   "The lecture sets out what the work involves, which degrees lead to it and where the employment is. Students leave with an outline of courses, entrance routes and first steps, and time is given to their own questions."),
+
+ "Mock trench: a practice excavation": ("Mock excavation",
+   "A hands-on workshop in which students excavate and record a prepared trench",
+   "A trench is prepared in advance with layers and planted finds. Students excavate it with real tools, record each find and its position, and then interpret what happened at the site."),
+ "Clay and the past: a pottery workshop": ("Pottery: making and identification",
+   "A hands-on workshop in shaping pottery and in sorting sherds as archaeologists do",
+   "Pottery is the most common find on an excavation. Participants shape a vessel by hand, then sort replica sherds by fabric, form and decoration, as archaeologists do in the field."),
+ "Reading sculpture": ("Identifying sculpture",
+   "A half-day workshop combining a short lecture, a gallery or temple visit and a quiz",
+   "After a short illustrated lecture on how figures are identified, participants study sculpture in a museum gallery or at a temple, identify figures from their attributes and dress, and finish with a quiz."),
+ "Write like Aśoka's scribes: a Brāhmī workshop": ("Introduction to Brāhmī script",
+   "A hands-on workshop in reading and writing the script of Aśoka's edicts",
+   "Brāhmī is more than two thousand years old and can be learnt to a basic level in a single session. Participants learn the letters, write their own names, and read a few words from an Aśokan edict."),
+ "Recording the past: a documentation workshop": ("Archaeological documentation",
+   "A hands-on workshop in recording sites and objects to a professional standard",
+   "A find without a record is only an old object. Participants complete a context sheet, draw and photograph an object to scale, and write a catalogue entry, using the formats applied in field and museum practice."),
+ "Caring for collections: preventive conservation basics": ("Preventive conservation",
+   "A one- or two-day workshop on caring for paper, textiles and metal",
+   "Most damage to a collection is caused by light, damp, pests and handling, and much of it can be prevented at little cost. A conservator shows how to assess, store and handle paper, textiles and metal, with practice on sample materials."),
+ "Stone tools up close": ("Stone tools: making and classification",
+   "A hands-on workshop on how prehistoric stone tools were made, used and classified",
+   "A prehistorian demonstrates how stone tools were struck and what the scars on them reveal. Participants sort tool types, handle replicas and learn the first steps of lithic analysis."),
+ "The dig: an archaeology team challenge": ("Team excavation challenge",
+   "A half-day hands-on workshop for workplace teams",
+   "Teams excavate, record and interpret a prepared trench, then present their reading of the evidence. The exercise rewards careful observation and clear reporting rather than speed."),
+
+ "Prakrit: a first course": ("Introductory Prakrit",
+   "An online course of six sessions in Prakrit grammar and reading",
+   "Prakrit was the everyday speech of much of ancient India and the language of Aśoka's edicts. The course covers the essentials of grammar, with guided reading of short passages."),
+ "Pali: a first course": ("Introductory Pali",
+   "An online course in Pali pronunciation, grammar and reading",
+   "Pali is the language of the Theravāda Buddhist canon. The course covers pronunciation, basic grammar and the reading of short passages, and ends with an optional assessment."),
+ "Śāradā script": ("Reading Śāradā script",
+   "An online course of about ten sessions in reading Śāradā manuscripts",
+   "Śāradā was the principal script of Kashmir for centuries, and many manuscripts from the region are written in it. Participants learn the alphabet, conjuncts and numerals, practise transliteration, and read from manuscript pages."),
+ "Understanding Indian temple architecture": ("Understanding Indian temple architecture",
+   "An online course of four sessions on the forms and development of the Indian temple",
+   "An introduction to the parts of a temple, the regional styles and their chronology, and the methods scholars use to study architecture. A certificate of completion can be issued."),
+ "Remote sensing in archaeology and heritage management": ("Remote sensing in archaeology and heritage management",
+   "A three-month online certificate course, taught in live weekend sessions",
+   "The course covers how satellite imagery, aerial photographs and mapping software are used to find, map and monitor sites. Each live session is recorded for participants who miss it."),
+ "Martial arts and society": ("Martial arts and society",
+   "An online course of three sessions on wrestling and combat in Indian history",
+   "The course examines what sculpture, texts and living traditions reveal about wrestling and combat sports in India, and what they meant to those who practised and patronised them."),
+
+ "Museum field school: documentation and conservation": ("Museum field school: documentation and conservation",
+   "A week-long field school of supervised work on a museum collection",
+   "Participants document, clean and rehouse objects from a museum collection under the supervision of conservators and documentation specialists, with daily laboratory sessions, lectures and visits to nearby sites. It is suited to students of conservation, museology, archaeology and related subjects."),
+ "Prehistory field workshop": ("Prehistory field school",
+   "A three-day field school in survey, stone tools, rock art and megaliths",
+   "A field introduction to prehistory: reading the local landscape, locating and classifying stone tools, documenting rock art and megaliths, and taking samples."),
+ "Three capitals: Delhi, Agra and Jaipur": ("Three capitals: Delhi, Agra and Jaipur",
+   "A study tour of five to six days, led by an archaeologist",
+   "An archaeologist travels with the group and uses the Sultanate monuments of Delhi, Mughal Agra and Fatehpur Sikri, and eighteenth-century Jaipur to show how three courts planned and built their capitals."),
+ "Forts of Rajasthan": ("Forts of Rajasthan",
+   "A study tour of six to eight days, accompanied by a historian",
+   "Six of Rajasthan's hill forts are inscribed together as a World Heritage Site. The tour examines how the forts were sited, supplied with water and defended, with a historian accompanying the group throughout."),
+ "Stupas, caves and temples of central India": ("Stupas, caves and temples of central India",
+   "A study tour of six to seven days to Bhimbetka, Sanchi, Udayagiri and Khajuraho",
+   "Four sites in Madhya Pradesh that together span prehistoric rock art, early Buddhist architecture, Gupta sculpture and the medieval temple at its height. An archaeologist leads the tour, and reading is sent in advance."),
+ "A study tour built for your group": ("Study tour to a region of your choice",
+   "A study tour planned around your region and syllabus",
+   "For schools, colleges and societies interested in other regions, such as Gujarat, Odisha, Varanasi and Sarnath, the Deccan or the south. The route is designed around what your group is studying, and an expert in that period accompanies you."),
+}
+
 # Practical rows shown under each programme, by format.
-MEET = "Agreed with you and sent with a map pin once the date is fixed."
-COVERED = "Your quotation states exactly what is covered."
+MEET = "Agreed with you. A map location is shared once the date is confirmed."
+COVERED = "The quotation states exactly what is included."
 PRACTICAL = {
     "walk": {"When": "Any day you choose. Early morning is best in the warmer months.", "Meeting point": MEET,
-             "Bring": "Comfortable shoes, water and a cap. The ground is uneven in places.",
-             "Tickets": "Entry tickets, where the site charges them, are not part of our fee."},
-    "visit": {"When": "Any day the museum is open. We check its weekly closing day before fixing the date.", "Meeting point": MEET,
-              "Tickets": "Museum entry is not part of our fee."},
-    "lecture": {"When": "Any date you choose, in the daytime or the evening.",
-                "You arrange": "At your venue, a room with a screen or projector. Online, nothing: we send the link."},
-    "workshop": {"When": "Any date you choose.", "We bring": "What the session needs, for the number of people you confirm.",
-                 "You arrange": "A room or open space with tables. We tell you exactly what is needed once we know the group."},
-    "course": {"When": "Dates and timings are set with your batch.", "You need": "A computer or phone with a steady connection."},
-    "field": {"When": "Dates agreed with your institution.", "Itinerary": "A day-by-day plan reaches you before you commit.",
+             "What to bring": "Comfortable shoes, water and a hat. The ground is uneven in places.",
+             "Entry fees": "Monument entry fees, where charged, are not included."},
+    "visit": {"When": "Any day the museum is open. Its weekly closing day is checked before the date is fixed.", "Meeting point": MEET,
+              "Entry fees": "Museum entry fees are not included."},
+    "lecture": {"When": "Any date you choose, daytime or evening.",
+                "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you."},
+    "workshop": {"When": "Any date you choose.", "We provide": "All materials, for the confirmed number of participants.",
+                 "You arrange": "A room or open space with tables. Exact requirements are confirmed once the group is known."},
+    "course": {"When": "Dates and timings are set with your batch.", "You need": "A computer or phone with a stable internet connection."},
+    "field": {"When": "Dates agreed with your institution.", "Itinerary": "A day-by-day plan is shared before you commit.",
               "Travel, stay and meals": COVERED},
     "tour": {"When": "Any dates you choose. October to March is the most comfortable season for this route.",
-             "Itinerary": "A day-by-day plan reaches you before you commit.", "Travel, stay and meals": COVERED},
+             "Itinerary": "A day-by-day plan is shared before you commit.", "Travel, stay and meals": COVERED},
 }
 # Where one programme differs from the rest of its format.
 PRACTICAL_FOR = {
-    "Mock trench: a practice excavation": {"You arrange": "An open patch of ground, or a room if we use sand trays."},
-    "The dig: an archaeology team challenge": {"You arrange": "An open patch of ground, or a room if we use sand trays."},
-    "Reading sculpture": {"You arrange": "A room with a screen for the talk. Entry tickets for the visit, where charged, are not part of our fee."},
-    "Write like Aśoka's scribes: a Brāhmī workshop": {"You arrange": "A room with tables and a screen. Online, nothing: we send the link."},
+    "Mock trench: a practice excavation": {"You arrange": "An open area of ground, or a room if sand trays are used."},
+    "The dig: an archaeology team challenge": {"You arrange": "An open area of ground, or a room if sand trays are used."},
+    "Reading sculpture": {"You arrange": "A room with a screen for the lecture. Entry fees for the visit, where charged, are not included."},
+    "Write like Aśoka's scribes: a Brāhmī workshop": {"You arrange": "A room with tables and a screen. Online, nothing; the link is sent to you."},
     "Stone tools up close": {"You arrange": "A room with tables and a screen."},
     "Caring for collections: preventive conservation basics": {"You arrange": "A room with tables and a screen."},
     "Recording the past: a documentation workshop": {"You arrange": "A room with tables and a screen."},
@@ -161,11 +275,13 @@ def illustration(out_path, slug):
 
 
 def programme(i, row):
-    f, title, sub, desc, aud, length, where, by, group, extra = row
-    slug = slugify(title)
-    practical = {**PRACTICAL[f], **PRACTICAL_FOR.get(title, {})}
+    f, key, _sub, _desc, aud, length, where, by, group, extra = row
+    slug = slugify(key)  # from the internal title, so links and image files stay stable
+    title, sub, desc = COPY[key]
+    title_for_lookup = key
+    practical = {**PRACTICAL[f], **PRACTICAL_FOR.get(title_for_lookup, {})}
     details = {"For": aud, "Length": length, "When": practical.pop("When"), "Led by": by, "Language": LANG,
-               "Group size": f"About {group} works well. Smaller and larger groups can be discussed.",
+               "Group size": f"About {group} is suggested. Smaller and larger groups are welcome.",
                **practical, "Price": "Quoted for your group"}
     return {
         "id": f"req-{slug}", "slug": slug, "title": title, "subtitle": sub,
@@ -173,7 +289,7 @@ def programme(i, row):
         "type": TYPE[f], "kind": KIND[f], "price_paise": 0, "compare_at_paise": None, "currency": "INR",
         "stock": None, "requires_shipping": False, "image_url": illustration(sys.argv[1], slug), "starts_at": None, "duration_minutes": None,
         "speaker": None, "venue": where, "details": details,
-        "highlights": H[title], "audience": audiences(aud),
+        "highlights": H[title_for_lookup], "audience": audiences(aud),
         "tags": ["on-request", f] + [t for t in extra if t != "featured"],
         "is_active": True, "is_featured": "featured" in extra, "sort_order": BASE[f] + i,
     }
@@ -188,15 +304,44 @@ catalogue = {
         "counselling-archaeology-careers": {
             "tags": ["on-request", "counselling"], "kind": "One-to-one counselling", "is_featured": False, "sort_order": 900,
             "image_url": illustration(sys.argv[1], "counselling-archaeology-careers"),
+            "title": "Career counselling in archaeology and heritage",
+            "subtitle": "A private online session on study and career choices",
+            "description": "A one-to-one conversation about your next step: which master's or doctoral programmes suit you, how entrance examinations and fieldwork applications work, and what roles exist in museums, survey, conservation and heritage management.\n\nThe session is held online at a time agreed with you. Its length and fee are confirmed when you enquire.",
+            "duration_minutes": None, "speaker": None, "venue": "Online video call",
             "details": {"For": "Students and early-career professionals", "Language": "English or Hindi",
-                        "How it works": "Tell us what you want to discuss and we agree a time that suits you", "Fee": "Shared when you enquire"},
+                        "Scheduling": "A time is agreed with you", "Length and fee": "Confirmed when you enquire"},
         },
-        "sakta-ethos-devimahatmya-recording": {"tags": ["coming-soon"], "is_featured": False, "sort_order": 910,
-            "details": {"Language": "English", "Includes": "Slides and reading list"}},
-        "brahmi-script-chart-a3": {"tags": ["coming-soon"], "is_featured": False, "sort_order": 920, "details": {"Size": "A3, 297 × 420 mm", "Paper": "250 gsm matte"}},
-        "trench-field-notebook": {"tags": ["coming-soon"], "is_featured": False, "sort_order": 930, "details": {"Size": "A6, 96 pages", "Paper": "100 gsm, 5 mm grid"}},
-        "monuments-postcard-set": {"tags": ["coming-soon"], "is_featured": False, "sort_order": 940, "details": {"Contents": "12 postcards, 105 × 148 mm", "Paper": "300 gsm uncoated"}},
-        "harappan-seals-reading-pack": {"tags": ["coming-soon"], "is_featured": False, "sort_order": 950, "details": {"Booklet": "48 pages, A5", "Recording": "60 minutes"}},
+        "sakta-ethos-devimahatmya-recording": {
+            "tags": ["coming-soon"], "is_featured": False, "sort_order": 910,
+            "title": "The Śākta ethos in the Devīmāhātmya",
+            "subtitle": "A lecture recording on the Goddess and the Śākta tradition",
+            "description": "A lecture on how the Devīmāhātmya presents the Goddess, and what the text reveals about the Śākta and tantric traditions that developed around it.",
+            "duration_minutes": None, "speaker": None, "venue": "Online", "details": {},
+        },
+        "brahmi-script-chart-a3": {
+            "tags": ["coming-soon"], "is_featured": False, "sort_order": 920,
+            "title": "Brāhmī script chart", "subtitle": "A wall chart of Aśokan Brāhmī with Devanāgarī and roman equivalents",
+            "description": "Each letter of Aśokan Brāhmī set beside its Devanāgarī and IAST equivalent, at a size that can be read across a classroom.",
+            "details": {"Size": "A3"},
+        },
+        "trench-field-notebook": {
+            "tags": ["coming-soon"], "is_featured": False, "sort_order": 930,
+            "title": "Field notebook", "subtitle": "A gridded pocket notebook for site visits",
+            "description": "A pocket notebook for site visits, with gridded pages for plans and sections and a printed scale along the cover edge.",
+            "details": {"Size": "A6"},
+        },
+        "monuments-postcard-set": {
+            "tags": ["coming-soon"], "is_featured": False, "sort_order": 940,
+            "title": "Indian monuments postcard set", "subtitle": "Twelve postcards of measured monument drawings",
+            "description": "Twelve postcards, each with a measured elevation drawing of an Indian monument on the front and a short note on its date and features on the back.",
+            "details": {"Contents": "12 postcards"},
+        },
+        "harappan-seals-reading-pack": {
+            "tags": ["coming-soon"], "is_featured": False, "sort_order": 950,
+            "title": "Harappan seals reading pack", "subtitle": "A printed booklet with a recorded introduction",
+            "description": "A booklet on how Harappan seals were made, used and excavated, illustrated with drawings of seals, accompanied by a recorded introduction.",
+            "details": {},
+        },
     },
     "programmes": [programme(i, row) for i, row in enumerate(P)],
 }
@@ -205,6 +350,9 @@ slugs = [p["slug"] for p in catalogue["programmes"]]
 assert len(slugs) == len(set(slugs)) == 35, (len(slugs), len(set(slugs)))
 assert sum(p["is_featured"] for p in catalogue["programmes"]) == 1
 assert set(H) == {row[1] for row in P}, set(H) ^ {row[1] for row in P}
+assert set(COPY) == {row[1] for row in P}, set(COPY) ^ {row[1] for row in P}
+assert all(sub.split()[0] in ("A", "An") for _, sub, _ in COPY.values())
+assert len({t for t, _, _ in COPY.values()}) == len(COPY)
 assert set(PRACTICAL_FOR) <= set(H)
 assert all(p["audience"] and 3 <= len(p["highlights"]) <= 4 for p in catalogue["programmes"])
 out = sys.argv[1]
