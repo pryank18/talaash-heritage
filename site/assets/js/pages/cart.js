@@ -1,7 +1,7 @@
 import { CONFIG } from "../config.js";
 import { getProducts, getShippingRule } from "../api.js";
 import { getCart, setQty, removeFromCart, MAX_QTY } from "../store.js";
-import { $, esc, money, productArt, shippingFor, typeLine } from "../ui.js";
+import { $, esc, isRequest, isSoon, money, productArt, shippingFor, typeLine } from "../ui.js";
 
 const root = $("#cart-root");
 
@@ -11,7 +11,8 @@ export async function pricedCart() {
   const lines = [];
   for (const l of getCart()) {
     const p = products.find((x) => x.id === l.id);
-    if (!p) { removeFromCart(l.id); continue; }
+    // Programmes on request and things not yet on sale are never sold through the cart.
+    if (!p || isRequest(p) || isSoon(p)) { removeFromCart(l.id); continue; }
     const max = Math.min(MAX_QTY, p.stock ?? MAX_QTY);
     if (max <= 0) { lines.push({ p, qty: l.qty, max, soldOut: true, total: 0 }); continue; }
     const qty = Math.min(l.qty, max);

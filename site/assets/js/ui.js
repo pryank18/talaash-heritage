@@ -40,8 +40,34 @@ export function formatDuration(minutes) {
   return m ? `${h} hr ${m} min` : `${h} ${h === 1 ? "hour" : "hours"}`;
 }
 
+/** Run for a group that asks, at a time and place agreed with them. Never goes in the cart. */
+export const isRequest = (p) => Boolean(p.tags?.includes("on-request"));
+/** Listed so people can ask to be told when it is ready. Never goes in the cart. */
+export const isSoon = (p) => Boolean(p.tags?.includes("coming-soon"));
+/** True for anything the cart can sell right now. */
+export const canBuy = (p) => !isRequest(p) && !isSoon(p) && !CONFIG.sampleNotice && !stockFlag(p)?.soldOut;
+export const kindLabel = (p) => p.kind || typeLabel(p.type);
+
+const waLink = (text) => `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`;
+/** WhatsApp and email links that open with the programme already named. Nothing about the visitor is put in the link. */
+export function requestLinks(p) {
+  const soon = isSoon(p);
+  const text = soon
+    ? `Hello ${CONFIG.brand}, please tell me when "${p.title}" is available.`
+    : p.tags?.includes("counselling")
+    ? `Hello ${CONFIG.brand}, I would like to book a counselling session.\n\nWhat I want to discuss: \nWhen I am free: `
+    : `Hello ${CONFIG.brand}, I would like to request "${p.title}".\n\nGroup size: \nPreferred dates: \nCity or online: \nAnything you would like changed: `;
+  const subject = soon ? `Tell me when it is ready: ${p.title}` : `Request: ${p.title}`;
+  return {
+    whatsapp: waLink(text),
+    email: `mailto:${CONFIG.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`,
+  };
+}
+
 /** What the card says under the picture: type, plus the date for dated things. */
 export function typeLine(p) {
+  if (isRequest(p)) return `${kindLabel(p)}, on request`;
+  if (isSoon(p)) return typeLabel(p.type);
   const when = p.starts_at ? formatWhen(p.starts_at) : "";
   if (p.type === "course" && when) return `Course, starts ${when}`;
   if (p.type === "counselling") return `${typeLabel(p.type)}, ${formatDuration(p.duration_minutes) || "book your own time"}`;
@@ -122,7 +148,9 @@ export function priceHtml(p) {
 }
 
 export function productCard(p) {
-  const flag = stockFlag(p);
+  const request = isRequest(p);
+  const soon = isSoon(p);
+  const flag = request ? null : soon ? { text: "Coming soon", low: false, soldOut: true } : stockFlag(p);
   const href = `product.html?slug=${encodeURIComponent(p.slug)}`;
   return `
   <article class="card">
@@ -134,9 +162,11 @@ export function productCard(p) {
     <h3><a href="${href}">${esc(p.title)}</a></h3>
     ${p.seller_name ? `<p class="card-seller">With ${esc(p.seller_name)}</p>` : ""}
     <div class="card-foot">
-      <span class="price">${priceHtml(p)}</span>
+      <span class="price">${request ? "On request" : soon ? "" : priceHtml(p)}</span>
       ${
-        flag?.soldOut || CONFIG.sampleNotice
+        request
+          ? `<a class="btn btn-outline btn-small" href="${href}">View and request</a>`
+          : flag?.soldOut || CONFIG.sampleNotice
           ? `<a class="btn btn-outline btn-small" href="${href}">View details</a>`
           : `<button class="btn btn-outline btn-small" type="button" data-add="${esc(p.id)}">Add to cart</button>`
       }

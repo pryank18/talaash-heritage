@@ -1,5 +1,5 @@
 import { getProducts } from "../api.js";
-import { $, $$, esc, productCard } from "../ui.js";
+import { $, $$, esc, isRequest, productCard } from "../ui.js";
 
 const FILTERS = {
   all: { label: "Everything", types: null, title: "Everything we offer" },
@@ -35,10 +35,11 @@ async function render() {
     const products = await getProducts();
     const types = FILTERS[active].types;
     const list = sorted(types ? products.filter((p) => types.includes(p.type)) : products);
-    count.textContent = `${list.length} ${list.length === 1 ? "item" : "items"}`;
+    const onRequest = list.filter(isRequest).length;
+    count.textContent = `${list.length} listed${onRequest ? `. ${onRequest === list.length ? "All" : onRequest} arranged on request, on dates that suit you.` : ""}`;
     grid.innerHTML = list.length
       ? list.map(productCard).join("")
-      : `<div class="empty"><h2>Nothing listed here yet</h2><p>We add new sessions and prints every month. <a href="shop.html">See everything in the shop</a>.</p></div>`;
+      : `<div class="empty"><h2>Nothing listed here yet</h2><p>Tell us what you are looking for and we will arrange it. <a href="contact.html">Contact us</a> or <a href="shop.html">see everything we offer</a>.</p></div>`;
   } catch (e) {
     grid.innerHTML = `<p class="form-error">${esc(e.message)}</p>`;
   }
