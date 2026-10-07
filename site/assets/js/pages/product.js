@@ -1,7 +1,7 @@
 import { getProduct } from "../api.js";
 import { CONFIG } from "../config.js";
 import { addToCart, getCart, MAX_QTY } from "../store.js";
-import { $, esc, formatDuration, formatWhen, isIllustration, isRequest, isSoon, kindLabel, priceHtml, productArt, requestLinks, stockFlag, toast } from "../ui.js";
+import { $, esc, formatDuration, formatWhen, isRequest, isSoon, kindLabel, priceHtml, productArt, requestLinks, stockFlag, toast } from "../ui.js";
 
 const root = $("#product-root");
 const slug = new URLSearchParams(location.search).get("slug");
@@ -25,17 +25,17 @@ function requestPanel(p) {
   const counselling = tags.includes("counselling");
   const travels = tags.includes("tour") || tags.includes("field");
   const how = counselling
-    ? "Tell us what you want to discuss and when you are free. We agree a time and share the fee before you confirm."
+    ? "Share what you would like to discuss and when you are available. We confirm a time and the fee before you commit."
     : travels
-    ? "Tell us your dates, your group and where you are starting from. We send a day-by-day itinerary and a quotation, and adjust both until they suit you. Group sizes are a guide, so ask whatever your numbers."
-    : "Tell us your dates, your group and where you are. We set the length, level and language to suit and send a quotation. Group sizes are a guide, so ask whatever your numbers.";
+    ? "Send your preferred dates, group size and starting point. We prepare a day-by-day itinerary and a quotation, and revise both until they suit you. The suggested group size is a guide, not a requirement."
+    : "Send your preferred dates, group size and location. We adapt the length, level and language, and prepare a quotation. The suggested group size is a guide, not a requirement.";
   return `<div class="request">
-      <p><strong>${counselling ? "Booked around your diary." : "Arranged around your group."}</strong> ${how}</p>
+      <p><strong>${counselling ? "Scheduled at a time that suits you." : "Arranged for your group."}</strong> ${how}</p>
       <div class="buy-row">
         <a class="btn btn-primary" href="${esc(links.whatsapp)}" target="_blank" rel="noopener">${counselling ? "Request a session on WhatsApp" : "Request on WhatsApp"}</a>
         <a class="btn btn-outline" href="${esc(links.email)}">Request by email</a>
       </div>
-      <p class="small muted">Nothing is charged until you approve the plan. <a href="about.html#questions">Common questions</a></p>
+      <p class="small muted">${counselling ? "No payment is taken until you confirm the session." : "No payment is taken until you approve the plan."} <a href="about.html#questions">Common questions</a></p>
     </div>`;
 }
 
@@ -43,10 +43,10 @@ function requestPanel(p) {
 function soonPanel(p) {
   const links = requestLinks(p);
   return `<div class="request">
-      <p><strong>Coming soon.</strong> Tell us you are interested and we will message you the day it is ready.</p>
+      <p><strong>Coming soon.</strong> Register your interest and we will let you know as soon as it is available.</p>
       <div class="buy-row">
-        <a class="btn btn-primary" href="${esc(links.whatsapp)}" target="_blank" rel="noopener">Tell me on WhatsApp</a>
-        <a class="btn btn-outline" href="${esc(links.email)}">Tell me by email</a>
+        <a class="btn btn-primary" href="${esc(links.whatsapp)}" target="_blank" rel="noopener">Notify me on WhatsApp</a>
+        <a class="btn btn-outline" href="${esc(links.email)}">Notify me by email</a>
       </div>
     </div>`;
 }
@@ -60,7 +60,7 @@ async function render() {
     return;
   }
   if (!p) {
-    root.innerHTML = `<div class="empty"><h1>This item is not in the shop</h1><p>It may have been removed, or the link is incomplete. <a href="shop.html">Browse everything we have</a>.</p></div>`;
+    root.innerHTML = `<div class="empty"><h1>This listing is not available</h1><p>It may have been withdrawn, or the link may be incomplete. <a href="shop.html">Browse everything we have</a>.</p></div>`;
     return;
   }
 
@@ -75,12 +75,9 @@ async function render() {
   const unit = p.requires_shipping ? "Quantity" : p.type === "counselling" ? "Sessions" : p.type === "recording" ? "Copies" : "Seats";
 
   root.innerHTML = `
-    <p class="crumbs"><a href="shop.html">Shop</a> / ${esc(kindLabel(p))}</p>
+    <p class="crumbs"><a href="shop.html">Everything we offer</a> / ${esc(kindLabel(p))}</p>
     <div class="product">
-      <div>
-        <div class="product-art">${productArt(p, "(min-width: 760px) 50vw, 100vw")}</div>
-        ${isIllustration(p) ? `<p class="art-note">Illustration, not a photograph.</p>` : ""}
-      </div>
+      <div class="product-art">${productArt(p, "(min-width: 760px) 50vw, 100vw")}</div>
       <div>
         <h1>${esc(p.title)}</h1>
         ${p.subtitle ? `<p class="product-sub">${esc(p.subtitle)}</p>` : ""}

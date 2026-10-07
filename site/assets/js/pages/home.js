@@ -7,14 +7,14 @@ function featureCard(p) {
   const flag = stockFlag(p);
   const href = `product.html?slug=${encodeURIComponent(p.slug)}`;
   if (isRequest(p)) {
-    const meta = [[kindLabel(p), p.details?.Length?.toLowerCase()].filter(Boolean).join(", "), p.venue, "On the date and for the group you choose"].filter(Boolean);
+    const meta = [[kindLabel(p), p.details?.Length?.toLowerCase()].filter(Boolean).join(", "), p.venue, "Dates and group size set by you"].filter(Boolean);
     return `
-    <p class="feature-kicker">Run on request</p>
+    <p class="feature-kicker">Arranged on request</p>
     <h2><a href="${href}">${esc(p.title)}</a></h2>
     <ul class="feature-meta">${meta.map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
     <div class="feature-foot">
       <span class="price">On request</span>
-      <a class="btn btn-primary" href="${href}">View and request</a>
+      <a class="btn btn-primary" href="${href}">View details</a>
     </div>`;
   }
   const meta = [

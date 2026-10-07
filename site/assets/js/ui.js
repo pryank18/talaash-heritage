@@ -53,11 +53,11 @@ const waLink = (text) => `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeUR
 export function requestLinks(p) {
   const soon = isSoon(p);
   const text = soon
-    ? `Hello ${CONFIG.brand}, please tell me when "${p.title}" is available.`
+    ? `Hello ${CONFIG.brand}, please let me know when "${p.title}" is available.`
     : p.tags?.includes("counselling")
     ? `Hello ${CONFIG.brand}, I would like to book a counselling session.\n\nWhat I want to discuss: \nWhen I am free: `
     : `Hello ${CONFIG.brand}, I would like to request "${p.title}".\n\nWho it is for (school, college, workplace or private group): \nGroup size: \nPreferred dates: \nCity or online: \nAnything you would like changed: `;
-  const subject = soon ? `Tell me when it is ready: ${p.title}` : `Request: ${p.title}`;
+  const subject = soon ? `Notify me: ${p.title}` : `Request: ${p.title}`;
   return {
     whatsapp: waLink(text),
     email: `mailto:${CONFIG.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`,
@@ -66,7 +66,7 @@ export function requestLinks(p) {
 
 /** What the card says under the picture: type, plus the date for dated things. */
 export function typeLine(p) {
-  if (isRequest(p)) return `${kindLabel(p)}, on request`;
+  if (isRequest(p)) return `${kindLabel(p)} · On request`;
   if (isSoon(p)) return typeLabel(p.type);
   const when = p.starts_at ? formatWhen(p.starts_at) : "";
   if (p.type === "course" && when) return `Course, starts ${when}`;
@@ -174,7 +174,7 @@ export function productCard(p) {
       <span class="price">${request ? "On request" : soon ? "" : priceHtml(p)}</span>
       ${
         request
-          ? `<a class="btn btn-outline btn-small" href="${href}">View and request</a>`
+          ? `<a class="btn btn-outline btn-small" href="${href}">View details</a>`
           : flag?.soldOut || CONFIG.sampleNotice
           ? `<a class="btn btn-outline btn-small" href="${href}">View details</a>`
           : `<button class="btn btn-outline btn-small" type="button" data-add="${esc(p.id)}">Add to cart</button>`

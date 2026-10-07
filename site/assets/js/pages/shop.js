@@ -52,7 +52,8 @@ async function render() {
     $$("[data-for]", forRow).forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.for === forWho)));
     const list = sorted(forWho ? inSection.filter((p) => p.audience?.includes(forWho)) : inSection);
     const onRequest = list.filter(isRequest).length;
-    count.textContent = `${list.length} listed${forWho ? ` for ${AUDIENCES[forWho].toLowerCase()}` : ""}${onRequest ? `. ${onRequest === list.length ? "All" : onRequest} arranged on request, on dates that suit you.` : ""}`;
+    const noun = list.length === 1 ? "listing" : "listings";
+    count.textContent = `${list.length} ${noun}${forWho ? ` suitable for ${AUDIENCES[forWho].toLowerCase()}` : ""}${!onRequest ? "." : list.length === 1 ? ", arranged on request, on dates you choose." : `. ${onRequest === list.length ? "All" : onRequest} arranged on request, on dates you choose.`}`;
     grid.innerHTML = list.length
       ? list.map(productCard).join("")
       : `<div class="empty"><h2>Nothing listed here yet</h2><p>Tell us what you are looking for and we will arrange it. <a href="contact.html">Contact us</a> or <a href="shop.html">see everything we offer</a>.</p></div>`;
@@ -75,8 +76,8 @@ chips.innerHTML =
   </label>`;
 
 forRow.innerHTML =
-  `<span class="filters-label" id="shop-for-label">Planning for</span>` +
-  [["", "Anyone"], ...Object.entries(AUDIENCES)]
+  `<span class="filters-label" id="shop-for-label">Suitable for</span>` +
+  [["", "All"], ...Object.entries(AUDIENCES)]
     .map(([key, label]) => `<button class="chip chip-quiet" type="button" data-for="${key}" aria-pressed="false">${label}</button>`)
     .join("");
 
