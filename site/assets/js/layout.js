@@ -24,12 +24,8 @@ function renderHeader() {
     ${isLive() && CONFIG.sampleNotice ? `<div class="demo-banner">This site is being set up. The listings shown are examples; bookings open soon.</div>` : ""}
     <div class="site-header">
       <a class="wordmark" href="index.html" aria-label="${esc(CONFIG.brand)} home">
-        ${
-          CONFIG.logo
-            ? `<img class="wordmark-logo" src="${esc(CONFIG.logo)}" alt="" width="44" height="44">`
-            : `<span class="wordmark-deva" lang="hi" aria-hidden="true">तलाश</span>`
-        }
-        <span class="wordmark-latin">${esc(CONFIG.brand)}</span>
+        <img class="wordmark-badge" src="${esc(CONFIG.logo || "assets/img/logo-192.png")}" alt="" width="48" height="48">
+        <span class="wordmark-text"><span class="wordmark-latin">${esc(CONFIG.brand)}</span><span class="wordmark-tag">lost in the mists of time</span></span>
       </a>
       <nav class="site-nav" aria-label="Main">
         ${navLink("shop.html?type=walk", "Walks and experiences")}
@@ -51,7 +47,8 @@ function renderFooter() {
     <div class="scale-bar" aria-hidden="true"></div>
     <div class="site-footer">
       <div>
-        <span class="wordmark-deva" lang="hi" aria-hidden="true">तलाश</span>
+        <img class="footer-badge" src="assets/img/logo-192.png" alt="" width="72" height="72">
+        <p class="footer-tag">lost in the mists of time</p>
         <p>Team for Archaeology, Linguistics, Anthropology, Arts, Sanskrit, History and Heritage.</p>
       </div>
       <div>
