@@ -5,6 +5,7 @@ import { getProducts } from "../api.js";
 import { CONFIG } from "../config.js";
 import { getVisitor } from "../store.js";
 import { $, $$, esc, kindLabel, productCard } from "../ui.js";
+import { lang, t } from "../i18n.js";
 
 const WHO = {
   school: "A school class",
@@ -94,13 +95,24 @@ function why(p, a) {
   const place = a.place && p.find.places.includes(a.place) ? a.place : p.find.places[0];
   parts.push(PLACE_FIT[place]);
   if (p.details?.Length) parts.push(p.details.Length);
-  const topics = a.topics.filter((t) => p.find.topics.includes(t)).map((t) => TOPIC[t]);
+  const topics = a.topics.filter((k) => p.find.topics.includes(k)).map((k) => TOPIC[k]);
+  if (lang === "hi") {
+    const hi = parts.map(t);
+    if (topics.length) hi.push(`विषय: ${topics.map(t).join(", ")}`);
+    return hi.join(" · ");
+  }
   if (topics.length) parts.push(`Covers ${topics.join(" and ").toLowerCase()}`);
   return parts.join(" · ");
 }
 
 function relaxedNote(relaxed) {
   if (!relaxed.length) return "";
+  if (lang === "hi") {
+    const hiNames = { length: "उपलब्ध समय", place: "स्थान", topics: "चुनी हुई रुचियाँ" };
+    const list = relaxed.map((k) => hiNames[k]);
+    const text = list.length > 1 ? `${list.slice(0, -1).join(", ")} और ${list.at(-1)}` : list[0];
+    return `<p class="note" data-no-translate>कोई भी कार्यक्रम आपके सभी उत्तरों से पूरी तरह मेल नहीं खाता, इसलिए ये सबसे निकट के विकल्प हैं; इनमें ${esc(text)} को छोड़कर मिलान किया गया है। अधिकांश कार्यक्रमों में बदलाव संभव है, इसलिए नीचे पूछताछ में अपनी ज़रूरत बताएँ।</p>`;
+  }
   const names = { length: "the time you have", place: "where you would like it", topics: "the interests you chose" };
   const list = relaxed.map((k) => names[k]);
   const text = list.length > 1 ? `${list.slice(0, -1).join(", ")} and ${list.at(-1)}` : list[0];
@@ -108,6 +120,20 @@ function relaxedNote(relaxed) {
 }
 
 function enquiryText(chosen, a, f) {
+  if (lang === "hi") {
+    const hi = [`नमस्ते ${CONFIG.brand}, कृपया इन कार्यक्रमों के बारे में जानकारी दें:`];
+    for (const p of chosen) hi.push(`- ${p.title} (${t(kindLabel(p))})`);
+    hi.push("");
+    hi.push(`किसके लिए: ${t(WHO[a.who])}`);
+    if (a.place) hi.push(`स्थान: ${t(PLACE[a.place])}`);
+    if (a.length) hi.push(`उपलब्ध समय: ${t(LENGTH[a.length])}`);
+    if (a.topics.length) hi.push(`रुचियाँ: ${a.topics.map((k) => t(TOPIC[k])).join(", ")}`);
+    hi.push(`समूह का अनुमानित आकार: ${f.size || ""}`);
+    hi.push(`पसंदीदा तिथियाँ: ${f.dates || ""}`);
+    hi.push(`शहर या स्थान: ${f.city || ""}`);
+    if (f.notes) hi.push(`अन्य जानकारी: ${f.notes}`);
+    return hi.join("\n");
+  }
   const lines = [`Hello ${CONFIG.brand}, I would like to enquire about:`];
   for (const p of chosen) lines.push(`- ${p.title} (${kindLabel(p)})`);
   lines.push("");
@@ -137,7 +163,7 @@ function renderResults(products, a) {
     <h2>Suggested programmes</h2>
     ${relaxedNote(relaxed)}
     <div class="grid finder-grid">
-      ${list.map((p) => `<div class="finder-pick"><p class="finder-why"><span class="visually-hidden">Why it fits: </span>${esc(why(p, a))}</p>${productCard(p)}</div>`).join("")}
+      ${list.map((p) => `<div class="finder-pick"><p class="finder-why"><span class="visually-hidden">Why it fits: </span><span>${esc(why(p, a))}</span></p>${productCard(p)}</div>`).join("")}
     </div>
 
     <form id="enquiry" class="form finder-enquiry" novalidate>
@@ -145,7 +171,7 @@ function renderResults(products, a) {
       <p class="muted">Tick the programmes you are interested in and add a few details. Nothing is booked or charged; we reply with a plan and a quotation.</p>
       <fieldset>
         <legend class="visually-hidden">Programmes to enquire about</legend>
-        ${list.map((p, i) => `<label class="check"><input type="checkbox" name="pick" value="${esc(p.id)}"${i === 0 ? " checked" : ""}><span>${esc(p.title)} <span class="muted">(${esc(kindLabel(p))})</span></span></label>`).join("")}
+        ${list.map((p, i) => `<label class="check"><input type="checkbox" name="pick" value="${esc(p.id)}"${i === 0 ? " checked" : ""}><span>${esc(p.title)} <span class="muted">(${esc(t(kindLabel(p)))})</span></span></label>`).join("")}
       </fieldset>
       <div class="form-row">
         <div class="field"><label for="f-size">Approximate group size</label><input id="f-size" name="size" type="number" min="1" inputmode="numeric"></div>
@@ -174,7 +200,7 @@ function renderResults(products, a) {
     const f = Object.fromEntries(["size", "dates", "city", "notes"].map((k) => [k, enquiry.elements[k].value.trim()]));
     const text = enquiryText(chosen, a, f);
     if (e.submitter?.value === "email") {
-      const subject = `Enquiry: ${chosen.map((p) => p.title).join(", ")}`;
+      const subject = `${t("Enquiry")}: ${chosen.map((p) => p.title).join(", ")}`;
       location.href = `mailto:${CONFIG.contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
     } else {
       window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
