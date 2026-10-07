@@ -3,7 +3,7 @@ import { CONFIG, isLive } from "./config.js";
 import { cartCount, getVisitor, addToCart } from "./store.js";
 import { initGate, openGate } from "./gate.js";
 import { getProducts } from "./api.js";
-import { $, esc, toast, stockFlag } from "./ui.js";
+import { $, esc, toast, canBuy } from "./ui.js";
 
 const page = location.pathname.split("/").pop() || "index.html";
 const filter = new URLSearchParams(location.search).get("type");
@@ -105,7 +105,7 @@ document.addEventListener("click", async (e) => {
   if (!btn || CONFIG.sampleNotice) return;
   const products = await getProducts();
   const p = products.find((x) => x.id === btn.dataset.add);
-  if (!p || stockFlag(p)?.soldOut) return;
+  if (!p || !canBuy(p)) return;
   addToCart(p.id, 1, p.stock ?? undefined);
   toast("Added to cart", { href: "cart.html", label: "View cart" });
 });

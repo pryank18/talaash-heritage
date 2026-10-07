@@ -7,3 +7,5 @@ Configuration: `site/assets/js/config.js` (public values only, never the Supabas
 Live site: https://talaash-heritage.pages.dev (auto-deploys from main via Cloudflare Pages).
 
 Every push to `main` goes live automatically.
+
+Programmes run on request are listed in `site/data/catalogue.json`. The same file hides or relabels database listings that are not on sale yet. Dated, paid events are added in the admin page.

@@ -1,11 +1,22 @@
 import { getProducts } from "../api.js";
-import { $, esc, formatWhen, formatDuration, money, productCard, stockFlag, typeLabel } from "../ui.js";
+import { $, esc, formatWhen, formatDuration, isRequest, kindLabel, money, productCard, stockFlag, typeLabel } from "../ui.js";
 
 const SESSION_TYPES = ["live", "course", "walk", "experience", "counselling", "recording"];
 
 function featureCard(p) {
   const flag = stockFlag(p);
   const href = `product.html?slug=${encodeURIComponent(p.slug)}`;
+  if (isRequest(p)) {
+    const meta = [[kindLabel(p), p.details?.Length?.toLowerCase()].filter(Boolean).join(", "), p.venue, "On the date and for the group you choose"].filter(Boolean);
+    return `
+    <p class="feature-kicker">Run on request</p>
+    <h2><a href="${href}">${esc(p.title)}</a></h2>
+    <ul class="feature-meta">${meta.map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
+    <div class="feature-foot">
+      <span class="price">On request</span>
+      <a class="btn btn-primary" href="${href}">View and request</a>
+    </div>`;
+  }
   const meta = [
     p.starts_at ? formatWhen(p.starts_at) : null,
     [formatDuration(p.duration_minutes), p.venue].filter(Boolean).join(", ") || null,
@@ -35,8 +46,9 @@ async function render() {
     if (pick) feature.innerHTML = featureCard(pick);
     else feature.hidden = true;
 
-    const sessionList = products.filter((p) => SESSION_TYPES.includes(p.type) && p.id !== pick?.id).slice(0, 6);
-    sessions.innerHTML = sessionList.length ? sessionList.map(productCard).join("") : `<p class="muted">New sessions are being scheduled. Check back soon.</p>`;
+    const chosen = products.filter((p) => p.tags?.includes("home") && p.id !== pick?.id);
+    const sessionList = (chosen.length ? chosen : products.filter((p) => SESSION_TYPES.includes(p.type) && p.id !== pick?.id)).slice(0, 6);
+    sessions.innerHTML = sessionList.length ? sessionList.map(productCard).join("") : `<p class="muted">Tell us what your group wants to study and we will build it. <a href="contact.html">Contact us</a>.</p>`;
 
     const goodsList = products.filter((p) => p.type === "physical").slice(0, 4);
     if (goodsList.length) goods.innerHTML = goodsList.map(productCard).join("");

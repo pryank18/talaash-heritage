@@ -48,7 +48,7 @@ export const CONFIG = {
 
   // Shows a bar saying the listings are examples. Turn off once real
   // listings are in.
-  sampleNotice: true,
+  sampleNotice: false,
 
   // --- Business details ----------------------------------------------------
   brand: "Talaash Heritage",

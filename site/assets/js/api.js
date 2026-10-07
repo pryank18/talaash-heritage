@@ -66,7 +66,26 @@ export async function getProducts() {
     if (!res.ok) throw new ApiError("catalogue", "The catalogue could not be loaded. Reload the page.");
     productCache = (await res.json()).filter((p) => p.is_active).sort((a, b) => a.sort_order - b.sort_order);
   }
+  productCache = await withCatalogue(productCache);
   return productCache;
+}
+
+// Programmes we run on request live in data/catalogue.json, in the repository.
+// The same file says which database listings to hide and which to show as
+// enquiry-only. If it cannot be read, the database listings are shown as they are.
+async function withCatalogue(listings) {
+  let cat;
+  try {
+    const res = await fetch("data/catalogue.json");
+    if (!res.ok) return listings;
+    cat = await res.json();
+  } catch {
+    return listings;
+  }
+  const hidden = new Set(cat.hide || []);
+  const overrides = cat.overrides || {};
+  const kept = listings.filter((p) => !hidden.has(p.slug)).map((p) => (overrides[p.slug] ? { ...p, ...overrides[p.slug] } : p));
+  return [...kept, ...(cat.programmes || []).filter((p) => p.is_active)].sort((a, b) => a.sort_order - b.sort_order);
 }
 
 export async function getProduct(slug) {
