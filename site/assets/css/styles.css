@@ -462,3 +462,11 @@ a.chip:hover, a.chip:focus-visible { border-color: var(--ink); }
 .faq summary:hover { text-decoration: underline; text-decoration-thickness: 1px; }
 .faq details p { margin: 0 0 1rem; }
 .filters label { white-space: nowrap; }
+
+/* ---------- shop: introduction, sections, card actions ---------- */
+.shop-intro { font-size: var(--step-1); line-height: 1.45; max-width: 46rem; margin: 0.75rem 0 0.5rem; }
+.shop-pricing { max-width: 46rem; color: var(--ink-soft); margin: 0 0 1rem; }
+.shop-block + .shop-block { margin-top: clamp(2.5rem, 6vw, 4rem); }
+.shop-block > h2 { margin: 0 0 1.25rem; padding-top: 1rem; border-top: 2px solid var(--ink); }
+.shop-block-note { margin: -0.5rem 0 1.5rem; max-width: 46rem; }
+.card-foot-wide .btn { width: 100%; text-align: center; }

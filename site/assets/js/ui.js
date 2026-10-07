@@ -67,7 +67,7 @@ export function requestLinks(p) {
 /** What the card says under the picture: type, plus the date for dated things. */
 export function typeLine(p) {
   if (isRequest(p)) return `${kindLabel(p)} · On request`;
-  if (isSoon(p)) return typeLabel(p.type);
+  if (isSoon(p)) return `${p.type === "physical" ? "Printed item" : typeLabel(p.type)} · Coming soon`;
   const when = p.starts_at ? formatWhen(p.starts_at) : "";
   if (p.type === "course" && when) return `Course, starts ${when}`;
   if (p.type === "counselling") return `${typeLabel(p.type)}, ${formatDuration(p.duration_minutes) || "book your own time"}`;
@@ -76,6 +76,19 @@ export function typeLine(p) {
 
 /** Length and place for programmes run on request, so a card can be judged without opening it. */
 export const cardMeta = (p) => (isRequest(p) ? [p.details?.Length, p.venue].filter(Boolean).join(" · ") : "");
+
+/** The card's call to action, named for the format so visitors know what the next step is. */
+const ACTION = {
+  "Heritage walk": "Enquire about this walk",
+  "Museum visit": "Enquire about this visit",
+  "Lecture": "Request this lecture",
+  "Workshop": "Request this workshop",
+  "Course": "Request this course",
+  "Field school": "Enquire about this field school",
+  "Study tour": "Plan this study tour",
+  "One-to-one counselling": "Request a session",
+};
+export const requestAction = (p) => ACTION[kindLabel(p)] || "Enquire";
 
 /** null = no flag. Seats and stock are only called out when it changes a decision. */
 export function stockFlag(p) {
@@ -170,16 +183,20 @@ export function productCard(p) {
     <h3><a href="${href}">${esc(p.title)}</a></h3>
     ${cardMeta(p) ? `<p class="card-meta">${esc(cardMeta(p))}</p>` : ""}
     ${p.seller_name ? `<p class="card-seller">With ${esc(p.seller_name)}</p>` : ""}
-    <div class="card-foot">
-      <span class="price">${request ? "On request" : soon ? "" : priceHtml(p)}</span>
+    ${
+      request
+        ? `<div class="card-foot card-foot-wide"><a class="btn btn-outline btn-small" href="${href}">${esc(requestAction(p))}</a></div>`
+        : soon
+        ? `<div class="card-foot card-foot-wide"><a class="btn btn-outline btn-small" href="${href}">Notify me when available</a></div>`
+        : `<div class="card-foot">
+      <span class="price">${priceHtml(p)}</span>
       ${
-        request
-          ? `<a class="btn btn-outline btn-small" href="${href}">View details</a>`
-          : flag?.soldOut || CONFIG.sampleNotice
+        flag?.soldOut || CONFIG.sampleNotice
           ? `<a class="btn btn-outline btn-small" href="${href}">View details</a>`
           : `<button class="btn btn-outline btn-small" type="button" data-add="${esc(p.id)}">Add to cart</button>`
       }
-    </div>
+    </div>`
+    }
   </article>`;
 }
 
