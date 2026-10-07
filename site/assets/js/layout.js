@@ -34,8 +34,32 @@ function renderHeader() {
         ${navLink("shop.html", "Everything")}
         ${navLink("about.html", "About")}
       </nav>
-      <a class="cart-link" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span><span class="visually-hidden"> items</span></a>
+      <button class="theme-toggle" type="button" data-theme-toggle>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+        <span class="visually-hidden" data-theme-label></span>
+      </button>
+      <a class="cart-link" href="cart.html"><svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="cart-word">Cart</span> <span class="cart-count" data-cart-count>0</span><span class="visually-hidden"> items</span></a>
     </div>`;
+}
+
+/** The header switch between light and dark. The choice is kept for later visits. */
+function initThemeToggle() {
+  const btn = $("[data-theme-toggle]");
+  if (!btn) return;
+  const sync = () => {
+    const dark = document.documentElement.getAttribute("data-theme") === "dark";
+    const label = dark ? "Switch to light theme" : "Switch to dark theme";
+    btn.setAttribute("title", label);
+    $("[data-theme-label]", btn).textContent = label;
+  };
+  btn.addEventListener("click", () => {
+    const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("th_theme", next); } catch { /* storage blocked: the switch still works for this page */ }
+    sync();
+  });
+  sync();
 }
 
 function renderFooter() {
@@ -117,6 +141,7 @@ document.addEventListener("th:visitor", renderFooter);
 window.addEventListener("storage", updateCartCount);
 
 renderHeader();
+initThemeToggle();
 renderFooter();
 updateCartCount();
 initGate();
