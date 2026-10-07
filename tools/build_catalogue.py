@@ -220,6 +220,51 @@ COPY = {
    "For schools, colleges and societies interested in other regions, such as Gujarat, Odisha, Varanasi and Sarnath, the Deccan or the south. The route is designed around what your group is studying, and an expert in that period accompanies you."),
 }
 
+# What the programme finder matches on, keyed by internal title.
+# topics:  heritage, monuments, archaeology, ancient, scripts, art, museums, careers
+# places:  delhi (a Delhi site or museum), local (your venue, or a site near you), online, travel (a trip of several days)
+# lengths: short (up to about 2 hours), half (about half a day), long (a full day or more), series (several sessions)
+FIND = {
+ "Mehrauli Archaeological Park": (["monuments"], ["delhi"], ["half"]),
+ "The Qutb complex": (["monuments"], ["delhi"], ["half"]),
+ "Purana Qila": (["monuments", "archaeology"], ["delhi"], ["half"]),
+ "Hauz Khas": (["monuments"], ["delhi"], ["short"]),
+ "Museum morning with an archaeologist": (["museums", "art"], ["delhi"], ["half"]),
+ "Culture and heritage: what we inherit and why it matters": (["heritage"], ["local", "online"], ["short"]),
+ "What archaeologists actually do": (["archaeology"], ["local", "online"], ["short"]),
+ "From stone tools to the first villages": (["ancient", "archaeology"], ["local", "online"], ["short"]),
+ "The first cities: Harappa among the early civilisations": (["ancient", "archaeology"], ["local", "online"], ["short"]),
+ "Reading India's scripts: Brāhmī to Śāradā": (["scripts"], ["local", "online"], ["short"]),
+ "How to read a temple": (["monuments", "art"], ["local", "online"], ["short"]),
+ "India's linguistic heritage": (["scripts", "heritage"], ["local", "online"], ["short"]),
+ "Rock art of India": (["ancient", "art"], ["local", "online"], ["short"]),
+ "The goddess in text and image: the Devīmāhātmya": (["art", "scripts"], ["local", "online"], ["short"]),
+ "Careers in archaeology, museums and heritage": (["careers"], ["local", "online"], ["short"]),
+ "Mock trench: a practice excavation": (["archaeology"], ["local"], ["half"]),
+ "Clay and the past: a pottery workshop": (["archaeology", "art"], ["local"], ["half"]),
+ "Reading sculpture": (["art", "museums"], ["local"], ["half"]),
+ "Write like Aśoka's scribes: a Brāhmī workshop": (["scripts"], ["local", "online"], ["short"]),
+ "Recording the past: a documentation workshop": (["archaeology", "museums"], ["local"], ["half", "long"]),
+ "Caring for collections: preventive conservation basics": (["museums"], ["local"], ["long"]),
+ "Stone tools up close": (["ancient", "archaeology"], ["local"], ["half"]),
+ "The dig: an archaeology team challenge": (["archaeology"], ["local"], ["half"]),
+ "Prakrit: a first course": (["scripts"], ["online"], ["series"]),
+ "Pali: a first course": (["scripts"], ["online"], ["series"]),
+ "Śāradā script": (["scripts"], ["online"], ["series"]),
+ "Understanding Indian temple architecture": (["monuments", "art"], ["online"], ["series"]),
+ "Remote sensing in archaeology and heritage management": (["archaeology", "careers"], ["online"], ["series"]),
+ "Martial arts and society": (["heritage"], ["online"], ["series"]),
+ "Museum field school: documentation and conservation": (["museums", "archaeology"], ["travel"], ["long"]),
+ "Prehistory field workshop": (["ancient", "archaeology"], ["travel"], ["long"]),
+ "Three capitals: Delhi, Agra and Jaipur": (["monuments"], ["travel"], ["long"]),
+ "Forts of Rajasthan": (["monuments"], ["travel"], ["long"]),
+ "Stupas, caves and temples of central India": (["monuments", "art", "ancient"], ["travel"], ["long"]),
+ "A study tour built for your group": (["monuments", "art", "ancient", "heritage"], ["travel"], ["long"]),
+}
+TOPICS = {"heritage", "monuments", "archaeology", "ancient", "scripts", "art", "museums", "careers"}
+PLACES = {"delhi", "local", "online", "travel"}
+LENGTHS = {"short", "half", "long", "series"}
+
 # Practical rows shown under each programme, by format.
 MEET = "Agreed with you. A map location is shared once the date is confirmed."
 COVERED = "The quotation states exactly what is included."
@@ -290,6 +335,7 @@ def programme(i, row):
         "stock": None, "requires_shipping": False, "image_url": illustration(sys.argv[1], slug), "starts_at": None, "duration_minutes": None,
         "speaker": None, "venue": where, "details": details,
         "highlights": H[title_for_lookup], "audience": audiences(aud),
+        "find": dict(zip(("topics", "places", "lengths"), FIND[title_for_lookup])),
         "tags": ["on-request", f] + [t for t in extra if t != "featured"],
         "is_active": True, "is_featured": "featured" in extra, "sort_order": BASE[f] + i,
     }
@@ -308,6 +354,8 @@ catalogue = {
             "subtitle": "A private online session on study and career choices",
             "description": "A one-to-one conversation about your next step: which master's or doctoral programmes suit you, how entrance examinations and fieldwork applications work, and what roles exist in museums, survey, conservation and heritage management.\n\nThe session is held online at a time agreed with you. Its length and fee are confirmed when you enquire.",
             "duration_minutes": None, "speaker": None, "venue": "Online video call",
+            "audience": ["college", "public"],
+            "find": {"topics": ["careers"], "places": ["online"], "lengths": ["short"]},
             "details": {"For": "Students and early-career professionals", "Language": "English or Hindi",
                         "Scheduling": "A time is agreed with you", "Length and fee": "Confirmed when you enquire"},
         },
@@ -356,6 +404,9 @@ assert len(slugs) == len(set(slugs)) == 35, (len(slugs), len(set(slugs)))
 assert sum(p["is_featured"] for p in catalogue["programmes"]) == 1
 assert set(H) == {row[1] for row in P}, set(H) ^ {row[1] for row in P}
 assert set(COPY) == {row[1] for row in P}, set(COPY) ^ {row[1] for row in P}
+assert set(FIND) == {row[1] for row in P}, set(FIND) ^ {row[1] for row in P}
+for _t, _p, _l in FIND.values():
+    assert _t and _p and _l and set(_t) <= TOPICS and set(_p) <= PLACES and set(_l) <= LENGTHS, (_t, _p, _l)
 assert all(sub.split()[0] in ("A", "An") for _, sub, _ in COPY.values())
 assert len({t for t, _, _ in COPY.values()}) == len(COPY)
 assert set(PRACTICAL_FOR) <= set(H)
@@ -364,5 +415,52 @@ out = sys.argv[1]
 with open(out, "w", encoding="utf-8") as fh:
     json.dump(catalogue, fh, ensure_ascii=False, indent=1)
     fh.write("\n")
+
+
+# ---------------------------------------------------------------------------
+# Static copies for readers that do not run JavaScript (search engines, link
+# previews). The shop page ships with every programme card already in its HTML;
+# the page script replaces it with the full, filterable catalogue on load.
+from html import escape as h
+
+SITE_URL = "https://talaash-heritage.pages.dev/"
+ACTION = {"Heritage walk": "Enquire about this walk", "Museum visit": "Enquire about this visit", "Lecture": "Request this lecture",
+          "Workshop": "Request this workshop", "Course": "Request this course", "Field school": "Enquire about this field school",
+          "Study tour": "Plan this study tour"}  # same wording as requestAction() in assets/js/ui.js
+SIZES = "(min-width: 1000px) 25vw, (min-width: 640px) 50vw, 100vw"
+
+
+def static_card(p):
+    href = f"product.html?slug={p['slug']}"
+    if p["image_url"]:
+        small = p["image_url"].replace(".jpg", "-s.jpg")
+        art = (f'<img src="{h(small)}" srcset="{h(small)} 560w, {h(p["image_url"])} 1040w" sizes="{SIZES}" '
+               f'alt="{h("Illustration for " + p["title"])}" loading="lazy" width="1040" height="780">')
+    else:
+        art = ""
+    meta = " · ".join(x for x in (p["details"].get("Length"), p["venue"]) if x)
+    return (f'<article class="card"><a class="card-art" href="{h(href)}" tabindex="-1" aria-hidden="true">{art}</a>'
+            f'<p class="card-type">{h(p["kind"])} · On request</p><h3><a href="{h(href)}">{h(p["title"])}</a></h3>'
+            f'<p class="card-meta">{h(meta)}</p><p class="visually-hidden">{h(p["subtitle"])}</p>'
+            f'<div class="card-foot card-foot-wide"><a class="btn btn-outline btn-small" href="{h(href)}">{h(ACTION[p["kind"]])}</a></div></article>')
+
+
+site = os.path.dirname(os.path.dirname(os.path.abspath(out)))
+shop_path = os.path.join(site, "shop.html")
+START, END = "<!-- catalogue:start -->", "<!-- catalogue:end -->"
+shop = open(shop_path, encoding="utf-8").read()
+assert shop.count(START) == 1 and shop.count(END) == 1, "shop.html must contain the catalogue markers once"
+cards = "\n".join(static_card(p) for p in catalogue["programmes"])
+block = f'{START}\n<section class="shop-block"><h2>All programmes</h2><div class="grid">\n{cards}\n</div></section>\n{END}'
+shop = shop[:shop.index(START)] + block + shop[shop.index(END) + len(END):]
+open(shop_path, "w", encoding="utf-8").write(shop)
+
+pages = ["", "shop.html", "finder.html", "about.html", "contact.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html"]
+listed = [p["slug"] for p in catalogue["programmes"]] + list(catalogue["overrides"])
+urls = [SITE_URL + x for x in pages] + [f"{SITE_URL}product.html?slug={x}" for x in listed]
+assert all("&" not in u and "<" not in u for u in urls)
+sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + \
+    "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n"
+open(os.path.join(site, "sitemap.xml"), "w", encoding="utf-8").write(sitemap)
 print(len(slugs), "programmes written to", out)
 print("home picks:", [p["title"] for p in catalogue["programmes"] if "home" in p["tags"]])

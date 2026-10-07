@@ -7,7 +7,7 @@ const root = $("#cart-root");
 
 /** Join the stored cart with the live catalogue; drop anything that has disappeared. */
 export async function pricedCart() {
-  const [products, rule] = await Promise.all([getProducts(), getShippingRule()]);
+  const [products, rule] = await Promise.all([getProducts({ requireDatabase: true }), getShippingRule()]);
   const lines = [];
   for (const l of getCart()) {
     const p = products.find((x) => x.id === l.id);

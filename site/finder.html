@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help me choose a programme | Talaash Heritage</title>
+<meta name="description" content="Answer four short questions and get suggestions from the Talaash Heritage catalogue, with an enquiry ready to send.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Talaash Heritage">
+<meta property="og:title" content="Help me choose a programme | Talaash Heritage">
+<meta property="og:description" content="Answer four short questions and get suggestions from the Talaash Heritage catalogue, with an enquiry ready to send.">
+<meta name="theme-color" content="#2a2926">
+<meta property="og:image" content="https://talaash-heritage.pages.dev/assets/img/logo-badge.png">
+<link rel="icon" href="assets/img/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/logo-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+<div class="wrap finder">
+  <header class="page-head">
+    <h1>Help me choose a programme</h1>
+    <p class="shop-intro">Answer four short questions. We suggest programmes from our catalogue and prepare an enquiry you can send on WhatsApp or by email.</p>
+  </header>
+
+  <form id="finder-form" class="finder-form" novalidate>
+      <fieldset class="finder-q">
+        <legend>1. Who is it for?</legend>
+        
+        <div class="options">
+          <label class="option"><input type="radio" name="who" value="school"><span>A school class</span></label>
+          <label class="option"><input type="radio" name="who" value="college"><span>A college or university group</span></label>
+          <label class="option"><input type="radio" name="who" value="work"><span>A workplace team</span></label>
+          <label class="option"><input type="radio" name="who" value="public"><span>Myself, or a private group</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="finder-q">
+        <legend>2. Where would you like it?</legend>
+        
+        <div class="options">
+          <label class="option"><input type="radio" name="place" value="delhi"><span>In Delhi, at a monument or museum</span></label>
+          <label class="option"><input type="radio" name="place" value="local"><span>At our own venue: a school, college or office</span></label>
+          <label class="option"><input type="radio" name="place" value="online"><span>Online</span></label>
+          <label class="option"><input type="radio" name="place" value="travel"><span>A trip of several days</span></label>
+          <label class="option"><input type="radio" name="place" value="" checked><span>No preference</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="finder-q">
+        <legend>3. How much time do you have?</legend>
+        
+        <div class="options">
+          <label class="option"><input type="radio" name="length" value="short"><span>Up to about 2 hours</span></label>
+          <label class="option"><input type="radio" name="length" value="half"><span>About half a day</span></label>
+          <label class="option"><input type="radio" name="length" value="long"><span>A full day or more</span></label>
+          <label class="option"><input type="radio" name="length" value="series"><span>Several sessions</span></label>
+          <label class="option"><input type="radio" name="length" value="" checked><span>No preference</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="finder-q">
+        <legend>4. What interests the group?</legend>
+        <p class="finder-hint">Choose any that apply, or none.</p>
+        <div class="options">
+          <label class="option"><input type="checkbox" name="topic" value="monuments"><span>Monuments and architecture</span></label>
+          <label class="option"><input type="checkbox" name="topic" value="archaeology"><span>Archaeology and fieldwork</span></label>
+          <label class="option"><input type="checkbox" name="topic" value="ancient"><span>Prehistory and the first cities</span></label>
+          <label class="option"><input type="checkbox" name="topic" value="scripts"><span>Scripts, languages and texts</span></label>
+          <label class="option"><input type="checkbox" name="topic" value="art"><span>Art, sculpture and religion</span></label>
+          <label class="option"><input type="checkbox" name="topic" value="museums"><span>Museums and conservation</span></label>
+          <label class="option"><input type="checkbox" name="topic" value="heritage"><span>Culture, heritage and society</span></label>
+          <label class="option"><input type="checkbox" name="topic" value="careers"><span>Careers and further study</span></label>
+        </div>
+      </fieldset>
+    <p class="form-error" id="finder-error" role="alert"></p>
+    <div><button class="btn btn-primary" type="submit">Show suggestions</button></div>
+  </form>
+
+  <section id="finder-results" class="finder-results" aria-live="polite" hidden></section>
+</div>
+</main>
+<div id="site-footer"></div>
+<noscript><p style="padding:1rem;text-align:center">The programme finder needs JavaScript. You can <a href="shop.html">browse every programme</a> or write to talaashheritage@gmail.com.</p></noscript>
+<script type="module" src="assets/js/layout.js"></script>
+<script type="module" src="assets/js/pages/finder.js"></script>
+</body>
+</html>
