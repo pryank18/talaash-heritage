@@ -74,8 +74,9 @@ function seeded(str) {
   };
 }
 
-const STRATA = ["#0e463e", "#2c7a6b", "#6fa698", "#b9c6ba", "#e2a61f", "#8a7550", "#d9ded2", "#35443e", "#a9b7aa"];
-const TOP = { live: "#e2a61f", recording: "#6fa698", course: "#2c7a6b", walk: "#b9c6ba", experience: "#8a7550", counselling: "#0e463e", physical: "#d9ded2" };
+// Strata in the brand's stone greys, earth and gold.
+const STRATA = ["#2a2926", "#7f7e7e", "#a8a39a", "#cfc9bd", "#dda638", "#8a7550", "#e8e3d9", "#565550", "#b9b2a5"];
+const TOP = { live: "#dda638", recording: "#a8a39a", course: "#7f7e7e", walk: "#cfc9bd", experience: "#8a7550", counselling: "#2a2926", physical: "#e8e3d9" };
 
 export function stratArt(p) {
   const rnd = seeded(p.slug || p.title || "talaash");

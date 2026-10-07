@@ -8,7 +8,7 @@
 export const CONFIG = {
   // --- Supabase (Project settings > API) ---------------------------------
   supabaseUrl: "https://qeaoamlowfrljkayzulq.supabase.co",          // e.g. "https://abcdefghijkl.supabase.co"
-  supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFlYW9hbWxvd2ZybGprYXl6dWxxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEzMTA3MjYsImV4cCI6MjEwNjg4NjcyNn0.0qQj3l1V_KR3Svutf2JoyMNJIjEzlRnys0YmraxiQ0w",      // the anon / publishable key, NOT the secret one
+  supabaseAnonKey: "sb_publishable_fTF_qEUJvtWVmtybKfn8BQ_nzo2AXXL",      // the anon / publishable key, NOT the secret one
 
   // --- Registration gate ---------------------------------------------------
   // "hard"     every visitor must register before seeing any page

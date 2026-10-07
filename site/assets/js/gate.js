@@ -40,7 +40,7 @@ function currentPage() {
 function template(hard, v) {
   return `
   <div class="gate-top">
-    <span class="wordmark-deva" lang="hi" aria-hidden="true">तलाश</span>
+    <img class="gate-badge" src="assets/img/logo-192.png" alt="" width="56" height="56">
     <h2 id="gate-title">${v && hard ? "Our privacy notice changed. Confirm your details" : v ? "Update your details" : hard ? "Register to enter Talaash Heritage" : "Register with Talaash Heritage"}</h2>
     <p>We ask every visitor for their contact details and location. We use them to send lecture links and order updates, and to plan sessions and walks near you.</p>
   </div>
