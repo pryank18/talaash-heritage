@@ -136,7 +136,7 @@ export function productCard(p) {
     <div class="card-foot">
       <span class="price">${priceHtml(p)}</span>
       ${
-        flag?.soldOut
+        flag?.soldOut || CONFIG.sampleNotice
           ? `<a class="btn btn-outline btn-small" href="${href}">View details</a>`
           : `<button class="btn btn-outline btn-small" type="button" data-add="${esc(p.id)}">Add to cart</button>`
       }
