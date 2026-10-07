@@ -312,6 +312,7 @@ catalogue = {
                         "Scheduling": "A time is agreed with you", "Length and fee": "Confirmed when you enquire"},
         },
         "sakta-ethos-devimahatmya-recording": {
+            "image_url": illustration(sys.argv[1], "sakta-ethos-devimahatmya-recording"),
             "tags": ["coming-soon"], "is_featured": False, "sort_order": 910,
             "title": "The Śākta ethos in the Devīmāhātmya",
             "subtitle": "A lecture recording on the Goddess and the Śākta tradition",
@@ -319,24 +320,28 @@ catalogue = {
             "duration_minutes": None, "speaker": None, "venue": "Online", "details": {},
         },
         "brahmi-script-chart-a3": {
+            "image_url": illustration(sys.argv[1], "brahmi-script-chart-a3"),
             "tags": ["coming-soon"], "is_featured": False, "sort_order": 920,
             "title": "Brāhmī script chart", "subtitle": "A wall chart of Aśokan Brāhmī with Devanāgarī and roman equivalents",
             "description": "Each letter of Aśokan Brāhmī set beside its Devanāgarī and IAST equivalent, at a size that can be read across a classroom.",
             "details": {"Size": "A3"},
         },
         "trench-field-notebook": {
+            "image_url": illustration(sys.argv[1], "trench-field-notebook"),
             "tags": ["coming-soon"], "is_featured": False, "sort_order": 930,
             "title": "Field notebook", "subtitle": "A gridded pocket notebook for site visits",
             "description": "A pocket notebook for site visits, with gridded pages for plans and sections and a printed scale along the cover edge.",
             "details": {"Size": "A6"},
         },
         "monuments-postcard-set": {
+            "image_url": illustration(sys.argv[1], "monuments-postcard-set"),
             "tags": ["coming-soon"], "is_featured": False, "sort_order": 940,
             "title": "Indian monuments postcard set", "subtitle": "Twelve postcards of measured monument drawings",
             "description": "Twelve postcards, each with a measured elevation drawing of an Indian monument on the front and a short note on its date and features on the back.",
             "details": {"Contents": "12 postcards"},
         },
         "harappan-seals-reading-pack": {
+            "image_url": illustration(sys.argv[1], "harappan-seals-reading-pack"),
             "tags": ["coming-soon"], "is_featured": False, "sort_order": 950,
             "title": "Harappan seals reading pack", "subtitle": "A printed booklet with a recorded introduction",
             "description": "A booklet on how Harappan seals were made, used and excavated, illustrated with drawings of seals, accompanied by a recorded introduction.",
