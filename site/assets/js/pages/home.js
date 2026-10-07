@@ -1,5 +1,5 @@
 import { getProducts } from "../api.js";
-import { $, esc, formatWhen, formatDuration, isRequest, kindLabel, money, productCard, stockFlag, typeLabel } from "../ui.js";
+import { $, esc, formatWhen, formatDuration, isRequest, kindLabel, money, productCard, requestAction, stockFlag, typeLabel } from "../ui.js";
 
 const SESSION_TYPES = ["live", "course", "walk", "experience", "counselling", "recording"];
 
@@ -14,7 +14,7 @@ function featureCard(p) {
     <ul class="feature-meta">${meta.map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
     <div class="feature-foot">
       <span class="price">On request</span>
-      <a class="btn btn-primary" href="${href}">View details</a>
+      <a class="btn btn-primary" href="${href}">${esc(requestAction(p))}</a>
     </div>`;
   }
   const meta = [

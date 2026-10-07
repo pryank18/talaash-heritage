@@ -1,5 +1,5 @@
 import { getProducts } from "../api.js";
-import { $, $$, esc, isRequest, productCard } from "../ui.js";
+import { $, $$, esc, isRequest, isSoon, productCard } from "../ui.js";
 
 const FILTERS = {
   all: { label: "Everything", types: null, title: "Everything we offer" },
@@ -23,7 +23,7 @@ let active = FILTERS[params.get("type")] ? params.get("type") : "all";
 let who = AUDIENCES[params.get("for")] ? params.get("for") : "";
 let sort = "featured";
 
-const grid = $("#shop-grid");
+const shopRoot = $("#shop-grid");
 const chips = $("#shop-filters");
 const forRow = $("#shop-for");
 const heading = $("#shop-title");
@@ -51,14 +51,31 @@ async function render() {
     const forWho = asks && who ? who : "";
     $$("[data-for]", forRow).forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.for === forWho)));
     const list = sorted(forWho ? inSection.filter((p) => p.audience?.includes(forWho)) : inSection);
-    const onRequest = list.filter(isRequest).length;
-    const noun = list.length === 1 ? "listing" : "listings";
-    count.textContent = `${list.length} ${noun}${forWho ? ` suitable for ${AUDIENCES[forWho].toLowerCase()}` : ""}${!onRequest ? "." : list.length === 1 ? ", arranged on request, on dates you choose." : `. ${onRequest === list.length ? "All" : onRequest} arranged on request, on dates you choose.`}`;
-    grid.innerHTML = list.length
-      ? list.map(productCard).join("")
-      : `<div class="empty"><h2>Nothing listed here yet</h2><p>Tell us what you are looking for and we will arrange it. <a href="contact.html">Contact us</a> or <a href="shop.html">see everything we offer</a>.</p></div>`;
+    const available = list.filter((p) => !isSoon(p));
+    const soon = list.filter(isSoon);
+    const onRequest = available.filter(isRequest).length;
+
+    const parts = [];
+    if (onRequest) parts.push(`${onRequest} arranged on request`);
+    if (available.length > onRequest) parts.push(`${available.length - onRequest} available to book`);
+    if (soon.length) parts.push(`${soon.length} coming soon`);
+    count.textContent = list.length
+      ? `${forWho ? `Suitable for ${AUDIENCES[forWho].toLowerCase()}: ` : ""}${parts.join(", ")}.`
+      : "";
+
+    const grid = (items) => `<div class="grid">${items.map(productCard).join("")}</div>`;
+    // On the full catalogue, open with a short selection before everything else.
+    const showFeatured = active === "all" && !forWho && sort === "featured";
+    const featured = showFeatured ? available.filter((p) => p.tags?.includes("home")) : [];
+    const rest = featured.length ? available.filter((p) => !featured.includes(p)) : available;
+
+    let html = "";
+    if (featured.length) html += `<section class="shop-block" aria-labelledby="featured-title"><h2 id="featured-title">Featured programmes</h2>${grid(featured)}</section>`;
+    if (rest.length) html += `<section class="shop-block"${featured.length ? ' aria-labelledby="all-title"' : ""}>${featured.length ? '<h2 id="all-title">All programmes</h2>' : ""}${grid(rest)}</section>`;
+    if (soon.length) html += `<section class="shop-block" aria-labelledby="soon-title"><h2 id="soon-title">Coming soon</h2><p class="muted shop-block-note">Not yet available. Register your interest on any of these and we will let you know when it is ready.</p>${grid(soon)}</section>`;
+    shopRoot.innerHTML = html || `<div class="empty"><h2>Nothing listed here yet</h2><p>Tell us what you are looking for and we will arrange it. <a href="contact.html">Contact us</a> or <a href="shop.html">see everything we offer</a>.</p></div>`;
   } catch (e) {
-    grid.innerHTML = `<p class="form-error">${esc(e.message)}</p>`;
+    shopRoot.innerHTML = `<p class="form-error">${esc(e.message)}</p>`;
   }
 }
 
