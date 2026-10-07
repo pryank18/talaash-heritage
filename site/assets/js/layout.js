@@ -102,7 +102,7 @@ function updateCartCount() {
 // One "Add to cart" handler for every product card on every page.
 document.addEventListener("click", async (e) => {
   const btn = e.target.closest("[data-add]");
-  if (!btn) return;
+  if (!btn || CONFIG.sampleNotice) return;
   const products = await getProducts();
   const p = products.find((x) => x.id === btn.dataset.add);
   if (!p || stockFlag(p)?.soldOut) return;
