@@ -42,18 +42,41 @@ async function request(path, options = {}) {
 }
 
 // ---- catalogue -------------------------------------------------------------
+const withTimeout = (promise, ms) =>
+  Promise.race([promise, new Promise((_, reject) => setTimeout(() => reject(new ApiError("timeout", "The server took too long to answer.")), ms))]);
+
 let productCache = null;
+let loading = null;
+let databaseMissing = false; // true when the page fell back to the catalogue file alone
 
 const PRODUCT_COLUMNS =
   "id,slug,title,subtitle,description,type,price_paise,compare_at_paise,currency,stock,requires_shipping," +
   "image_url,starts_at,duration_minutes,speaker,venue,details,tags,is_active,is_featured,sort_order,seller_id";
 
-export async function getProducts() {
-  if (productCache) return productCache;
+/**
+ * Every active listing. Browsing pages accept the catalogue file alone when the
+ * database cannot be reached; the cart and checkout pass requireDatabase so that
+ * nobody's cart is emptied or priced during an outage.
+ */
+export async function getProducts({ requireDatabase = false } = {}) {
+  if (!productCache) await (loading ||= loadProducts()); // one request even when several parts of the page ask at once
+  if (requireDatabase && databaseMissing) {
+    throw new ApiError("network", "We could not reach the booking system just now. Your cart is safe; please try again in a minute.");
+  }
+  return productCache;
+}
+
+async function loadProducts() {
   if (isLive()) {
+    // Programmes in data/catalogue.json do not depend on the database. If the
+    // database is slow or unreachable, show those rather than an error.
     const [products, sellers] = await Promise.all([
-      request(`/rest/v1/products?select=${PRODUCT_COLUMNS}&is_active=eq.true&order=sort_order.asc,created_at.desc`),
-      request("/rest/v1/public_sellers?select=id,name,city,bio").catch(() => []),
+      withTimeout(request(`/rest/v1/products?select=${PRODUCT_COLUMNS}&is_active=eq.true&order=sort_order.asc,created_at.desc`), 8000).catch((e) => {
+        console.warn("Database listings unavailable; showing the catalogue only.", e);
+        databaseMissing = true;
+        return [];
+      }),
+      withTimeout(request("/rest/v1/public_sellers?select=id,name,city,bio"), 8000).catch(() => []),
     ]);
     // Listings run by partners carry the partner's public name, city and bio.
     const byId = new Map((sellers || []).map((s) => [s.id, s]));
@@ -67,7 +90,6 @@ export async function getProducts() {
     productCache = (await res.json()).filter((p) => p.is_active).sort((a, b) => a.sort_order - b.sort_order);
   }
   productCache = await withCatalogue(productCache);
-  return productCache;
 }
 
 // Programmes we run on request live in data/catalogue.json, in the repository.

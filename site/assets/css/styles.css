@@ -470,3 +470,23 @@ a.chip:hover, a.chip:focus-visible { border-color: var(--ink); }
 .shop-block > h2 { margin: 0 0 1.25rem; padding-top: 1rem; border-top: 2px solid var(--ink); }
 .shop-block-note { margin: -0.5rem 0 1.5rem; max-width: 46rem; }
 .card-foot-wide .btn { width: 100%; text-align: center; }
+
+/* ---------- programme finder ---------- */
+.shop-finder { margin: 0 0 1rem; font-weight: 600; }
+.finder-form { display: grid; gap: 1.75rem; padding-bottom: 2rem; max-width: 60rem; }
+.finder-q legend { font-size: var(--step-1); margin-bottom: 0.6rem; }
+.finder-hint { margin: -0.3rem 0 0.7rem; color: var(--ink-soft); font-size: var(--step--1); }
+.options { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.option { position: relative; cursor: pointer; }
+.option input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.option span { display: inline-block; padding: 0.5rem 0.95rem; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); }
+.option input:checked + span { background: var(--patina); border-color: var(--patina); color: #fff; }
+.option input:focus-visible + span { outline: 3px solid var(--haldi); outline-offset: 2px; }
+.option:hover span { border-color: var(--ink); }
+.finder-results { border-top: 2px solid var(--ink); padding: 1.5rem 0 4rem; }
+.finder-results > h2 { margin-top: 0; }
+.finder-pick { display: flex; flex-direction: column; }
+.finder-why { margin: 0 0 0.6rem; padding-left: 0.6rem; border-left: 3px solid var(--haldi); font-size: var(--step--1); color: var(--ink); font-weight: 600; min-height: 3.6em; }
+.finder-enquiry { margin-top: clamp(2.5rem, 6vw, 3.5rem); max-width: 46rem; padding: 1.25rem 1.4rem 1.5rem; background: var(--paper); border: 1px solid var(--line); border-top: 6px solid var(--haldi); border-radius: 4px; }
+.finder-enquiry h2 { margin: 0; }
+.finder-enquiry fieldset { display: grid; gap: 0.5rem; }

@@ -5,3 +5,5 @@ Disallow: /checkout.html
 Disallow: /order.html
 Disallow: /seller.html
 Disallow: /admin.html
+
+Sitemap: https://talaash-heritage.pages.dev/sitemap.xml

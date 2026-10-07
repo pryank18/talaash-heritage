@@ -64,6 +64,7 @@ function renderFooter() {
       <div>
         <h2>Help</h2>
         <ul>
+          <li><a href="finder.html">Help me choose a programme</a></li>
           <li><a href="contact.html">Contact us</a></li>
           <li><a href="about.html#questions">Common questions</a></li>
           <li><a href="sell.html">Sell with us</a></li>
