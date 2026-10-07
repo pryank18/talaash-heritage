@@ -1,3 +1,4 @@
+import { CONFIG } from "../config.js";
 import { getProducts, getShippingRule } from "../api.js";
 import { getCart, setQty, removeFromCart, MAX_QTY } from "../store.js";
 import { $, esc, money, productArt, shippingFor, typeLine } from "../ui.js";
@@ -76,7 +77,9 @@ async function render() {
         </dl>
         ${freeGap > 0 ? `<p class="small muted">Add ${money(freeGap)} more for free delivery.</p>` : ""}
         ${
-          cart.buyable.length
+          CONFIG.sampleNotice
+            ? `<p class="note">Bookings open soon. These listings are examples and cannot be ordered yet.</p>`
+            : cart.buyable.length
             ? `<a class="btn btn-primary btn-block" href="checkout.html">Go to checkout</a>`
             : `<p class="form-error">Nothing in your cart can be ordered right now.</p>`
         }
