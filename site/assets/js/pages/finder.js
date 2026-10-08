@@ -266,5 +266,59 @@ form.addEventListener("submit", async (e) => {
   if (who && q.get("go") === "1") form.requestSubmit();
 })();
 
+// Phones and portrait tablets: one question per screen. A tap on an answer
+// moves on; Back and Next are there for keyboard users and second thoughts.
+// The form itself is unchanged, so desktop keeps all four questions on one page.
+(function stepper() {
+  const mq = matchMedia("(max-width: 899px)");
+  const qs = $$(".finder-q", form);
+  const submitRow = $(".finder-submit", form);
+  const nav = document.createElement("div");
+  nav.className = "finder-steps";
+  nav.innerHTML = `
+    <div class="finder-steps-top">
+      <button type="button" class="finder-back" data-step-back>‹ ${t("Back")}</button>
+      <span class="finder-count" aria-live="polite"></span>
+      <button type="button" class="finder-next" data-step-next>${t("Next")} ›</button>
+    </div>
+    <div class="finder-bar" aria-hidden="true"><span></span></div>`;
+  form.prepend(nav);
+  const back = $("[data-step-back]", nav);
+  const next = $("[data-step-next]", nav);
+  const count = $(".finder-count", nav);
+  const fill = $(".finder-bar span", nav);
+  let step = $('input[name="who"]:checked', form) ? 1 : 0;
+
+  const show = (i, focus) => {
+    step = Math.max(0, Math.min(qs.length - 1, i));
+    qs.forEach((q, n) => q.classList.toggle("is-current", n === step));
+    const last = step === qs.length - 1;
+    submitRow.classList.toggle("is-current", last);
+    back.disabled = step === 0;
+    next.hidden = last;
+    next.disabled = step === 0 && !$('input[name="who"]:checked', form);
+    count.textContent = lang === "hi" ? `प्रश्न ${step + 1} / ${qs.length}` : `Question ${step + 1} of ${qs.length}`;
+    fill.style.width = `${((step + 1) / qs.length) * 100}%`;
+    if (focus) $("legend", qs[step]).scrollIntoView({ block: "nearest" });
+  };
+  const apply = () => {
+    form.classList.toggle("is-steps", mq.matches);
+    if (mq.matches) show(step);
+  };
+  back.addEventListener("click", () => show(step - 1, true));
+  next.addEventListener("click", () => show(step + 1, true));
+  form.addEventListener("click", (e) => {
+    const input = e.target.closest('input[type="radio"]');
+    if (!input || !mq.matches) return;
+    next.disabled = false;
+    // Only a tap or a mouse click moves on; arrow keys also "click" a radio,
+    // and a keyboard user should stay on the question while choosing.
+    if (e.detail === 0 || input.closest(".finder-q") !== qs[step]) return;
+    setTimeout(() => show(step + 1, true), 180);
+  });
+  mq.addEventListener("change", apply);
+  apply();
+})();
+
 // Start loading the catalogue while the visitor answers.
 getProducts().catch(() => {});

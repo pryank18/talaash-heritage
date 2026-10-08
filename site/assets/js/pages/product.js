@@ -115,6 +115,20 @@ async function render() {
       </div>
     </div>`;
 
+  // Phones: keep the request buttons in reach at the foot of the screen.
+  if (request || soon) {
+    const links = requestLinks(p);
+    const counselling = (p.tags || []).includes("counselling");
+    const bar = document.createElement("div");
+    bar.className = "app-action";
+    bar.innerHTML = `
+      <a class="btn btn-primary" href="${esc(links.whatsapp)}" target="_blank" rel="noopener">${soon ? "Notify me on WhatsApp" : counselling ? "Request a session on WhatsApp" : "Request on WhatsApp"}</a>
+      <a class="btn btn-outline" href="${esc(links.email)}">Email</a>`;
+    document.querySelector(".app-action")?.remove();
+    document.body.append(bar);
+    document.body.classList.add("has-action");
+  }
+
   if (request || soon || flag?.soldOut || CONFIG.sampleNotice) return;
   let qty = 1;
   const out = $("[data-qty]", root);

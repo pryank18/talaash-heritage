@@ -163,7 +163,7 @@ export function stratArt(p) {
 export const isIllustration = (p) => /^assets\/img\/programmes\/[a-z0-9-]+\.jpg$/.test(p.image_url || "");
 
 /** `sizes` tells the browser how wide the picture is shown, so phones fetch the small file. */
-export function productArt(p, sizes = "(min-width: 1000px) 25vw, (min-width: 640px) 50vw, 100vw") {
+export function productArt(p, sizes = "(min-width: 1000px) 25vw, (min-width: 560px) 33vw, 50vw") {
   if (!p.image_url) return stratArt(p);
   if (!isIllustration(p)) return `<img src="${esc(p.image_url)}" alt="${esc(p.title)}" loading="lazy" width="400" height="300">`;
   const small = p.image_url.replace(/\.jpg$/, "-s.jpg");

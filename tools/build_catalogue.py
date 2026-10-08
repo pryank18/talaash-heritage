@@ -427,7 +427,7 @@ SITE_URL = "https://talaash-heritage.pages.dev/"
 ACTION = {"Heritage walk": "Enquire about this walk", "Museum visit": "Enquire about this visit", "Lecture": "Request this lecture",
           "Workshop": "Request this workshop", "Course": "Request this course", "Field school": "Enquire about this field school",
           "Study tour": "Plan this study tour"}  # same wording as requestAction() in assets/js/ui.js
-SIZES = "(min-width: 1000px) 25vw, (min-width: 640px) 50vw, 100vw"
+SIZES = "(min-width: 1000px) 25vw, (min-width: 560px) 33vw, 50vw"
 
 
 def static_card(p):

@@ -46,6 +46,7 @@ function renderHeader() {
         ${navLink("shop.html", "Everything")}
         ${navLink("about.html", "About")}
       </nav>
+      <button type="button" class="lang-quick" data-no-translate data-lang-set="${lang === "hi" ? "en" : "hi"}" lang="${lang === "hi" ? "en" : "hi"}">${lang === "hi" ? "English" : "हिन्दी"}</button>
       <button class="theme-toggle" type="button" data-theme-toggle>
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
@@ -132,6 +133,98 @@ function renderFooter() {
   });
 }
 
+// ---- phone app shell: bottom tabs and the "More" sheet -----------------------
+// Shown by CSS on phones and portrait tablets only; desktop keeps the header nav.
+const NO_TABS = new Set(["admin.html", "seller.html", "checkout.html"]);
+const MORE_PAGES = new Set(["about.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html", "cart.html", "order.html"]);
+const ICON = {
+  home: '<path d="M3.5 10.5 12 4l8.5 6.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/>',
+  shop: '<rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"/>',
+  find: '<circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/><path d="M8.5 11h5M11 8.5v5"/>',
+  contact: '<path d="M4.5 18.5 5.6 15A7.5 7.5 0 1 1 9 18.4z"/><path d="M9 10.5h6M9 13.5h3.5"/>',
+  more: '<circle cx="5.5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="18.5" cy="12" r="1.4"/>',
+};
+const svg = (name) => `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">${ICON[name]}</svg>`;
+
+function renderAppShell() {
+  if (NO_TABS.has(page) || $(".tabbar")) return;
+  const current = page === "index.html" ? "home" : page === "shop.html" || page === "product.html" ? "shop" : page === "finder.html" ? "find" : page === "contact.html" ? "contact" : MORE_PAGES.has(page) ? "more" : "";
+  const tab = (key, href, label, extra = "") =>
+    `<a class="tab${extra}" href="${href}"${current === key ? ' aria-current="page"' : ""}>${svg(key)}<span>${label}</span></a>`;
+  const bar = document.createElement("nav");
+  bar.className = "tabbar";
+  bar.setAttribute("aria-label", "App");
+  bar.innerHTML = `
+    ${tab("home", "index.html", "Home")}
+    ${tab("shop", "shop.html", "Programmes")}
+    ${tab("find", "finder.html", "Choose", " tab-main")}
+    ${tab("contact", "contact.html", "Contact")}
+    <button class="tab" type="button" data-more aria-haspopup="dialog"${current === "more" ? ' aria-current="page"' : ""}>${svg("more")}<span>More</span></button>`;
+  document.body.append(bar);
+  document.body.classList.add("has-tabbar");
+
+  const sheet = document.createElement("dialog");
+  sheet.className = "sheet";
+  sheet.setAttribute("aria-labelledby", "sheet-title");
+  const v = getVisitor();
+  sheet.innerHTML = `
+    <div class="sheet-head"><h2 id="sheet-title">More</h2><button class="sheet-close" type="button" data-close-sheet aria-label="Close">×</button></div>
+    <div class="sheet-body">
+      <h3>Programmes</h3>
+      <ul>
+        <li><a href="shop.html?type=walk">Walks and experiences</a></li>
+        <li><a href="shop.html?type=live">Courses and lectures</a></li>
+        <li><a href="shop.html?type=counselling">Counselling</a></li>
+        <li><a href="shop.html?type=recording">Recordings</a></li>
+        <li><a href="shop.html?type=physical">Books and prints</a></li>
+      </ul>
+      <h3>Talaash Heritage</h3>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html#questions">Common questions</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="sell.html">Sell with us</a></li>
+        <li><a href="seller.html">Partner sign-in</a></li>
+      </ul>
+      <h3>Policies</h3>
+      <ul>
+        <li><a href="shipping-returns.html">Shipping, cancellations and refunds</a></li>
+        <li><a href="privacy.html">Privacy notice</a></li>
+        <li><a href="terms.html">Terms of sale</a></li>
+      </ul>
+      <div class="sheet-theme">
+        <h3>Display</h3>
+        <ul><li><button class="btn-plain" type="button" data-sheet-theme></button></li></ul>
+      </div>
+      <h3>Your details</h3>
+      <ul>
+        ${v ? `<li>Registered as ${esc(v.email)}</li><li><button class="btn-plain" type="button" data-sheet-details>Update my details</button></li>` : `<li><button class="btn-plain" type="button" data-sheet-details>Register</button></li>`}
+      </ul>
+    </div>`;
+  document.body.append(sheet);
+  const close = () => sheet.close();
+  $("[data-more]", bar).addEventListener("click", () => sheet.showModal());
+  $("[data-close-sheet]", sheet).addEventListener("click", close);
+  // A tap on the dimmed area outside the sheet closes it.
+  sheet.addEventListener("click", (e) => { if (e.target === sheet) close(); });
+  // Mirrors the header switch, which is hidden on narrow phones.
+  const themeBtn = $("[data-sheet-theme]", sheet);
+  const syncTheme = () => {
+    const dark = document.documentElement.getAttribute("data-theme") === "dark";
+    themeBtn.textContent = t(dark ? "Switch to light theme" : "Switch to dark theme");
+  };
+  themeBtn.addEventListener("click", () => {
+    $("[data-theme-toggle]")?.click();
+    syncTheme();
+  });
+  syncTheme();
+  $("[data-sheet-details]", sheet).addEventListener("click", async () => {
+    close();
+    const saved = await openGate({ edit: Boolean(getVisitor()) });
+    if (saved) renderFooter();
+  });
+}
+
 function updateCartCount() {
   const el = $("[data-cart-count]");
   if (el) el.textContent = String(cartCount());
@@ -160,5 +253,6 @@ document.addEventListener("click", (e) => {
   if (b && b.dataset.langSet !== lang) setLang(b.dataset.langSet);
 });
 renderFooter();
+renderAppShell();
 updateCartCount();
 initGate();
