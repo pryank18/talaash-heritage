@@ -1,5 +1,6 @@
 import { getProducts } from "../api.js";
 import { lang } from "../i18n.js";
+import { getVisitor } from "../store.js";
 import { $, $$, esc, formatWhen, formatDuration, isRequest, kindLabel, money, productCard, requestAction, stockFlag, typeLabel } from "../ui.js";
 
 const SESSION_TYPES = ["live", "course", "walk", "experience", "counselling", "recording"];
@@ -71,4 +72,16 @@ async function render() {
   }
 }
 
+// A returning, registered visitor is asked the planner's question by name.
+// The heading is replaced in place, so nothing on the page moves.
+function greet() {
+  const first = (getVisitor()?.full_name || "").trim().split(/\s+/)[0]?.slice(0, 24);
+  const title = $("#planner-title");
+  if (!first || !title) return;
+  title.setAttribute("data-no-translate", "");
+  title.textContent = lang === "hi" ? `${first}, आप किसके लिए योजना बना रहे हैं?` : `${first}, who are you planning for?`;
+}
+
+greet();
+document.addEventListener("th:visitor", greet);
 render();

@@ -5,6 +5,7 @@ import { initGate, openGate } from "./gate.js";
 import { getProducts } from "./api.js";
 import { $, esc, toast, canBuy } from "./ui.js";
 import { lang, setLang, startTranslating, t } from "./i18n.js";
+import "./magic.js";
 
 const page = location.pathname.split("/").pop() || "index.html";
 const filter = new URLSearchParams(location.search).get("type");
