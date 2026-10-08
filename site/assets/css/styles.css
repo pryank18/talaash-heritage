@@ -165,6 +165,35 @@ p { margin: 0 0 1em; }
   .hero-inner { grid-template-columns: 1fr; }
 }
 
+/* ---------- programme finder in the hero (home) ---------- */
+.hero-inner:has(.planner) { align-items: center; }
+.planner {
+  background: var(--paper); color: var(--ink); border-radius: 4px; padding: 1.4rem 1.5rem 1.25rem;
+  border: 1px solid var(--line); border-top: 6px solid var(--haldi);
+  box-shadow: 0 18px 40px -24px rgba(28, 27, 25, 0.35);
+}
+.planner-kicker { font-weight: 600; color: var(--verdigris-dark); margin: 0 0 0.3rem; }
+.planner h2 { font-size: var(--step-2); margin: 0 0 1rem; text-transform: none; letter-spacing: 0; }
+.planner-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+.planner-tile {
+  display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: 0.7rem; align-items: center;
+  height: 100%; align-content: center; row-gap: 0.15rem; padding: 0.8rem 0.85rem; border: 1px solid var(--line); border-radius: 4px;
+  background: var(--plaster); color: var(--ink); text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.planner-tile svg { grid-row: 1 / 3; width: 1.7rem; height: 1.7rem; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; color: var(--verdigris-dark); }
+.planner-tile strong { font-weight: 600; line-height: 1.25; }
+.planner-count { font-size: var(--step--1); color: var(--ink-soft); }
+.planner-count:empty { display: none; }
+.planner-tile:hover { border-color: var(--ink); transform: translateY(-1px); }
+.planner-tile:focus-visible { outline: 3px solid var(--haldi); outline-offset: 2px; }
+.planner-foot { margin: 0.9rem 0 0; font-size: var(--step--1); color: var(--ink-soft); }
+.section-next { padding-block: clamp(1.5rem, 4vw, 2.5rem) 0; }
+.section-next .feature { max-width: 34rem; }
+@media (max-width: 420px) { .planner-tiles { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .planner-tile { transition: none; } .planner-tile:hover { transform: none; } }
+html[data-theme="dark"] .planner { box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.8); }
+
 /* ---------- sections ---------- */
 .section { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
 .section-tint { background: var(--plaster-deep); }

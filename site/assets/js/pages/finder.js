@@ -249,5 +249,22 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
+// Answers can arrive in the address, so any page can open the finder already
+// filled in: finder.html?who=school&place=delhi&length=short&topic=monuments,art
+// Add &go=1 to show the suggestions straight away. Unknown values are ignored.
+(function prefill() {
+  const q = new URLSearchParams(location.search);
+  const pick = (name, value) => {
+    const box = value && $$(`input[name="${name}"]`, form).find((x) => x.value === value);
+    if (box) box.checked = true;
+    return Boolean(box);
+  };
+  const who = pick("who", q.get("who"));
+  pick("place", q.get("place"));
+  pick("length", q.get("length"));
+  for (const topic of (q.get("topic") || "").split(",")) pick("topic", topic.trim());
+  if (who && q.get("go") === "1") form.requestSubmit();
+})();
+
 // Start loading the catalogue while the visitor answers.
 getProducts().catch(() => {});
