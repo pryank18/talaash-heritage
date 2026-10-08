@@ -588,7 +588,7 @@ html[data-theme="dark"] .card-art, html[data-theme="dark"] .product-art { box-sh
 @media (min-width: 1181px) {
   .site-header { gap: 1rem; }
   .site-nav { gap: 1.05rem; }
-  .site-nav + .theme-toggle { margin-left: 0.25rem; }
+  .site-nav ~ .theme-toggle { margin-left: 0.25rem; }
 }
 
 .cart-icon { display: none; width: 1.2rem; height: 1.2rem; }
@@ -625,3 +625,229 @@ html[lang="hi"] body { line-height: 1.7; }
 .gate-lang .lang-option[aria-pressed="true"] { color: #fff; }
 .lang-notice { background: #fff7df; color: #1c1b19; border-bottom: 1px solid #e9cf86; font-size: var(--step--1); padding: 0.5rem var(--gutter); text-align: center; }
 html[data-theme="dark"] .lang-notice { background: #2d2717; color: var(--ink); border-color: #6e5a26; }
+
+/* =====================================================================
+   Phone and portrait-tablet app mode (up to 899px).
+   A slim sticky top bar, a bottom tab bar, a "More" sheet, swipeable
+   rows and a two-column catalogue. Desktop is untouched: everything
+   below is hidden or inert above 899px.
+   ===================================================================== */
+.tabbar, .lang-quick, .app-action { display: none; }
+
+.sheet {
+  border: 0; padding: 0; margin: auto 0 0; width: 100%; max-width: 100%; max-height: 85vh;
+  background: var(--paper); color: var(--ink); border-radius: 16px 16px 0 0;
+  box-shadow: 0 -12px 40px -12px rgba(0, 0, 0, 0.35);
+}
+.sheet::backdrop { background: rgba(20, 19, 17, 0.45); }
+.sheet-head {
+  display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0;
+  background: var(--paper); padding: 0.9rem var(--gutter) 0.6rem; border-bottom: 1px solid var(--line);
+}
+.sheet-head::before {
+  content: ""; position: absolute; top: 0.4rem; left: 50%; width: 2.5rem; height: 4px;
+  margin-left: -1.25rem; border-radius: 4px; background: var(--line);
+}
+.sheet-head h2 { margin: 0; font-size: var(--step-1); }
+.sheet-close { font: inherit; font-size: 1.6rem; line-height: 1; width: 2.6rem; height: 2.6rem; border: 0; background: none; color: var(--ink); cursor: pointer; }
+.sheet-body { padding: 0.25rem var(--gutter) calc(1.5rem + env(safe-area-inset-bottom)); }
+.sheet-body h3 { font-family: var(--font-body); font-size: var(--step--1); font-weight: 600; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.06em; margin: 1.1rem 0 0.2rem; }
+.sheet-body ul { list-style: none; margin: 0; padding: 0; }
+.sheet-body li { border-bottom: 1px solid var(--line); }
+.sheet-body li > a, .sheet-body li > .btn-plain { display: block; width: 100%; text-align: left; padding: 0.8rem 0; color: var(--ink); text-decoration: none; }
+.sheet-body li:not(:has(a, button)) { padding: 0.8rem 0; color: var(--ink-soft); font-size: var(--step--1); }
+@media (prefers-reduced-motion: no-preference) {
+  .sheet[open] { animation: sheet-up 0.22s ease-out; }
+  @keyframes sheet-up { from { transform: translateY(100%); } to { transform: none; } }
+}
+
+@media (max-width: 899px) {
+  /* -- top bar: one slim row that stays put -- */
+  #site-header { display: contents; }
+  .lang-bar { display: none; }
+  .site-header {
+    position: sticky; top: 0; z-index: 30; flex-wrap: nowrap; gap: 0.5rem;
+    background: var(--paper); border-bottom: 1px solid var(--line);
+    padding: calc(0.45rem + env(safe-area-inset-top)) var(--gutter) 0.45rem;
+  }
+  .site-nav { display: none; }
+  .wordmark { gap: 0.5rem; min-width: 0; margin-right: auto; }
+  .wordmark-badge { width: 34px; height: 34px; }
+  .wordmark-latin { font-size: 0.92rem; letter-spacing: 0.05em; white-space: nowrap; }
+  .wordmark-tag { display: none; }
+  .lang-quick {
+    display: inline-grid; place-items: center; flex: none; height: 2.4rem; padding: 0 0.6rem;
+    font: inherit; font-size: 0.85rem; color: var(--ink); background: var(--paper);
+    border: 1px solid var(--line); border-radius: 6px; cursor: pointer;
+  }
+  .lang-quick[lang="hi"] { font-family: "Noto Sans Devanagari", var(--font-body); }
+  .theme-toggle { margin-left: 0; width: 2.4rem; height: 2.4rem; }
+  .site-header .cart-link { margin-left: 0; padding: 0.4rem 0.55rem; gap: 0.35rem; height: 2.4rem; }
+  .cart-icon { display: block; }
+  .cart-word { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* -- bottom tab bar -- */
+  .tabbar {
+    display: grid; grid-template-columns: repeat(5, 1fr); position: fixed; inset: auto 0 0 0; z-index: 35;
+    background: var(--paper); border-top: 1px solid var(--line);
+    padding: 0.3rem 0.25rem calc(0.3rem + env(safe-area-inset-bottom));
+    box-shadow: 0 -6px 20px -14px rgba(0, 0, 0, 0.35);
+  }
+  .tab {
+    display: grid; justify-items: center; align-content: center; gap: 0.15rem; min-height: 3.1rem;
+    font: inherit; font-size: 0.7rem; font-weight: 500; line-height: 1.1; color: var(--ink-soft);
+    text-decoration: none; background: none; border: 0; padding: 0.2rem 0; cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .tab svg { width: 1.45rem; height: 1.45rem; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .tab[aria-current="page"] { color: var(--ink); font-weight: 700; }
+  .tab[aria-current="page"] svg { stroke-width: 2; }
+  .tab-main svg { width: 2.6rem; height: 2.6rem; padding: 0.55rem; margin-top: -1.1rem; border-radius: 50%; background: var(--haldi); color: #1c1b19; box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.45); stroke-width: 1.9; }
+  .tab:focus-visible { outline: 3px solid var(--haldi); outline-offset: -3px; border-radius: 8px; }
+  body.has-tabbar { padding-bottom: calc(4.2rem + env(safe-area-inset-bottom)); }
+  body.has-tabbar .toast { bottom: calc(5rem + env(safe-area-inset-bottom)); }
+
+  /* -- programme page: request buttons stay at the foot of the screen -- */
+  .app-action {
+    display: flex; gap: 0.5rem; position: fixed; inset: auto 0 0 0; z-index: 36;
+    background: var(--paper); border-top: 1px solid var(--line);
+    padding: 0.6rem var(--gutter) calc(0.6rem + env(safe-area-inset-bottom));
+    box-shadow: 0 -6px 20px -14px rgba(0, 0, 0, 0.35);
+  }
+  .app-action .btn-primary { flex: 1; text-align: center; }
+  body.has-action .tabbar { display: none; }
+  body.has-action { padding-bottom: calc(4.6rem + env(safe-area-inset-bottom)); }
+  body.has-action .toast { bottom: calc(5.4rem + env(safe-area-inset-bottom)); }
+
+  /* -- general rhythm: less air, app-sized type -- */
+  .section { padding-block: 2rem; }
+  h2 { font-size: 1.45rem; }
+  .page-head { padding-block: 1.25rem 0; }
+  .page-head h1 { font-size: 1.85rem; }
+  .section-head { margin-bottom: 1rem; }
+
+  /* -- swipeable rows (home programmes, books, "made to fit") -- */
+  #home-sessions, #home-goods, .fit {
+    display: flex; gap: 0.9rem; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+    margin-inline: calc(-1 * var(--gutter)); padding: 0 var(--gutter) 0.5rem; scroll-padding-inline: var(--gutter);
+    scrollbar-width: none;
+  }
+  #home-sessions::-webkit-scrollbar, #home-goods::-webkit-scrollbar, .fit::-webkit-scrollbar { display: none; }
+  #home-sessions > .card, #home-goods > .card { flex: 0 0 72%; scroll-snap-align: start; }
+  .fit > li { flex: 0 0 78%; scroll-snap-align: start; background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--haldi); border-radius: 6px; padding: 0.85rem 1rem 1rem; }
+  .fit-lede { font-size: var(--step-0); margin-bottom: 1rem; }
+
+  /* -- home -- */
+  .hero { background-position: right -90px top 0; background-size: auto 240px; }
+  .hero-inner, .hero-inner:has(.planner) { display: flex; flex-direction: column; align-items: stretch; gap: 1.25rem; padding-block: 1.25rem 1.75rem; }
+  .hero-inner > div:first-child { display: contents; }
+  .hero-badge { display: none; }
+  .hero-tag { font-size: var(--step-0); margin: 0 0 -0.75rem; }
+  .hero h1 { font-size: 2rem; max-width: 13ch; margin: 0; }
+  .hero-lede { font-size: var(--step-0); margin: 0; }
+  .planner { order: 1; padding: 1rem 1rem 0.9rem; }
+  .planner h2 { font-size: 1.3rem; margin-bottom: 0.75rem; }
+  .planner-tiles { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .planner-tile { grid-template-columns: 1fr; grid-template-rows: auto; align-content: start; row-gap: 0.2rem; padding: 0.75rem; min-height: 6.4rem; }
+  .planner-tile svg { grid-row: auto; width: 1.6rem; height: 1.6rem; margin-bottom: 0.25rem; }
+  .planner-tile strong { font-size: 0.92rem; }
+  .planner-foot { display: none; }
+  .hero-actions { order: 2; margin: 0; gap: 0.75rem 1.25rem; }
+  /* The planner already does what the gold button does. */
+  .hero-inner:has(.planner) .hero-actions .btn-primary { display: none; }
+  .doors { grid-template-columns: 1fr 1fr; gap: 0.6rem; border-top: 0; }
+  .door { padding: 0.85rem; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); }
+  .door strong { font-size: 1.05rem; }
+  .door span { font-size: 0.82rem; }
+  .steps { gap: 1rem; }
+  .steps li::before { font-size: var(--step-2); }
+
+  /* -- catalogue: two columns, compact cards, filters in one swipeable row -- */
+  .shop-block .grid, #shop-grid > .grid { grid-template-columns: 1fr 1fr; gap: 1.4rem 0.75rem; }
+  .shop-block .card h3, #shop-grid .card h3 { font-size: 1rem; line-height: 1.25; }
+  .shop-block .card-type, #shop-grid .card-type { font-size: 0.72rem; margin-top: 0.55rem; }
+  .shop-block .card-meta, #shop-grid .card-meta { font-size: 0.76rem; }
+  .shop-block .card .btn-small, #shop-grid .card .btn-small { font-size: 0.76rem; padding: 0.45rem 0.4rem; white-space: normal; line-height: 1.2; }
+  .shop-block > h2 { font-size: 1.2rem; margin-bottom: 0.9rem; }
+  .shop-pricing { font-size: var(--step--1); }
+  /* The heading says it; the pricing note below is what a visitor needs. */
+  #shop-title + .shop-intro { display: none; }
+  .filters {
+    flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-bottom: 1rem;
+    margin-inline: calc(-1 * var(--gutter)); padding: 0.1rem var(--gutter) 0.4rem;
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .filters .chip, .filters label, .filters-label { flex: none; white-space: nowrap; }
+  .filters-for { margin-top: -0.5rem; }
+
+  /* -- footer: the menu lives in the More sheet, so keep it short -- */
+  .site-footer > div:nth-child(2) { display: none; }
+  .site-footer { gap: 1.25rem; padding-top: 1.75rem; }
+  .footer-badge { width: 52px; height: 52px; }
+}
+
+/* Two-column cards need the smaller picture on phones. */
+@media (max-width: 899px) and (min-width: 560px) {
+  #home-sessions > .card, #home-goods > .card { flex-basis: 42%; }
+  .fit > li { flex-basis: 46%; }
+  .shop-block .grid, #shop-grid > .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Narrow phones: the theme switch moves into the More sheet to give the name room. */
+.sheet-theme { display: none; }
+@media (max-width: 479px) {
+  .site-header .theme-toggle { display: none; }
+  .sheet-theme { display: block; }
+}
+
+/* ---------- finder, one question per screen (phones and portrait tablets) ---------- */
+.finder-steps { display: none; }
+.finder-form.is-steps { gap: 1rem; }
+.finder-form.is-steps .finder-steps { display: block; position: sticky; top: calc(3.3rem + env(safe-area-inset-top)); z-index: 5; background: var(--plaster); padding: 0.5rem 0 0.35rem; }
+.finder-steps-top { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.finder-back, .finder-next { font: inherit; font-weight: 600; font-size: var(--step--1); color: var(--ink); background: none; border: 0; padding: 0.5rem 0; min-width: 4.5rem; cursor: pointer; }
+.finder-next { text-align: right; }
+.finder-back:disabled, .finder-next:disabled { color: var(--ink-soft); opacity: 0.45; cursor: default; }
+.finder-count { font-size: var(--step--1); color: var(--ink-soft); }
+.finder-bar { height: 4px; background: var(--line); border-radius: 4px; overflow: hidden; margin-top: 0.3rem; }
+.finder-bar span { display: block; height: 100%; width: 25%; background: var(--haldi); transition: width 0.25s ease-out; }
+.finder-form.is-steps .finder-q, .finder-form.is-steps .finder-submit { display: none; }
+.finder-form.is-steps .finder-q.is-current, .finder-form.is-steps .finder-submit.is-current { display: block; }
+.finder-form.is-steps .finder-q legend { font-size: 1.5rem; line-height: 1.25; margin-bottom: 0.4rem; }
+.finder-form.is-steps .options { display: grid; grid-template-columns: 1fr; gap: 0.55rem; margin-top: 0.6rem; }
+.finder-form.is-steps .option span {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
+  padding: 0.95rem 1rem; border-radius: 10px; font-size: 1.02rem; background: var(--paper); color: var(--ink); border-color: var(--line);
+}
+.finder-form.is-steps .option input:checked + span { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.finder-form.is-steps .option input[type="checkbox"] + span::after { content: ""; flex: none; width: 1.15rem; height: 1.15rem; border: 1.5px solid currentColor; border-radius: 4px; opacity: 0.5; }
+.finder-form.is-steps .option input[type="checkbox"]:checked + span::after { content: "✓"; display: grid; place-items: center; font-size: 0.8rem; font-weight: 700; opacity: 1; background: var(--haldi); color: #1c1b19; border-color: var(--haldi); }
+.finder-form.is-steps .finder-submit .btn { width: 100%; padding-block: 0.9rem; }
+.finder-form.is-steps .finder-submit.is-current {
+  position: sticky; bottom: calc(4.2rem + env(safe-area-inset-bottom)); z-index: 5;
+  background: var(--plaster); padding: 0.6rem 0; margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter);
+  box-shadow: 0 -8px 16px -12px rgba(0, 0, 0, 0.3);
+}
+.finder-form.is-steps + .form-error, .finder-form.is-steps .form-error:empty { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .finder-form.is-steps .finder-q.is-current { animation: step-in 0.22s ease-out; }
+  @keyframes step-in { from { opacity: 0; transform: translateX(14px); } to { opacity: 1; transform: none; } }
+}
+/* The steps explain themselves on a phone; the results explain the enquiry. */
+.finder:has(.finder-form.is-steps) .shop-intro { display: none; }
+
+@media (max-width: 899px) {
+  /* Scrolled-to sections clear the sticky top bar. */
+  .finder-results, .finder-enquiry { scroll-margin-top: calc(4rem + env(safe-area-inset-top)); }
+  /* Finder results as list rows: picture on the left, details on the right. */
+  .finder-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .finder-pick { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 0.75rem; }
+  .finder-why { min-height: 0; margin-bottom: 0.6rem; }
+  .finder-grid .card { display: grid; grid-template-columns: 6.5rem 1fr; column-gap: 0.8rem; align-items: start; }
+  .finder-grid .card > * { grid-column: 2; }
+  .finder-grid .card-art { grid-column: 1; grid-row: 1 / span 3; aspect-ratio: 1; border-radius: 8px; }
+  .finder-grid .card-type { margin-top: 0; font-size: 0.74rem; }
+  .finder-grid .card h3 { font-size: 1.02rem; }
+  .finder-grid .card-meta { font-size: 0.78rem; margin-bottom: 0; }
+  .finder-grid .card-foot { grid-column: 1 / -1; margin-top: 0.6rem; }
+}
