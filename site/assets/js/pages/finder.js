@@ -15,7 +15,7 @@ const WHO = {
 };
 const PLACE = {
   delhi: "In Delhi, at a monument or museum",
-  local: "At our own venue",
+  local: "At your school, college or office",
   online: "Online",
   travel: "A trip of several days",
 };
@@ -32,7 +32,7 @@ const TOPIC = {
   scripts: "Scripts, languages and texts",
   art: "Art, sculpture and religion",
   museums: "Museums and conservation",
-  heritage: "Culture, heritage and society",
+  heritage: "Living traditions and culture",
   careers: "Careers and further study",
 };
 // Short wording for the "why it fits" line.
@@ -84,7 +84,11 @@ export function suggest(products, a, limit = 5) {
       (a.length && p.find.lengths.includes(a.length) ? 1 : 0);
     // Ties go to the programme whose subject is most fully about what was asked.
     const focus = (p) => (a.topics.length ? a.topics.filter((t) => p.find.topics.includes(t)).length / p.find.topics.length : 0);
-    found.sort((x, y) => score(y) - score(x) || focus(y) - focus(x) || x.sort_order - y.sort_order);
+    // A visitor who gave no place and did not ask for a full day or more most
+    // likely wants something nearby, so trips of several days come last.
+    const tripLast = !a.place && a.length !== "long";
+    const away = (p) => (tripLast && p.find.places.every((x) => x === "travel") ? 1 : 0);
+    found.sort((x, y) => away(x) - away(y) || score(y) - score(x) || focus(y) - focus(x) || x.sort_order - y.sort_order);
     return { list: found.slice(0, limit), relaxed };
   }
   return { list: [], relaxed: [] };
@@ -179,6 +183,7 @@ function renderResults(products, a) {
         <div class="field"><label for="f-city">City or venue</label><input id="f-city" name="city" type="text" value="${esc(city)}"></div>
       </div>
       <div class="field"><label for="f-notes">Anything else <span class="hint">(optional)</span></label><textarea id="f-notes" name="notes" rows="3" placeholder="Class or level, language, anything you would like changed"></textarea></div>
+      <p class="visually-hidden" id="enquiry-status" role="status"></p>
       <p class="form-error" id="enquiry-error" role="alert"></p>
       <div class="buy-row">
         <button class="btn btn-primary" type="submit" name="via" value="whatsapp">Send on WhatsApp</button>
@@ -187,6 +192,24 @@ function renderResults(products, a) {
     </form>`;
 
   const enquiry = $("#enquiry", out);
+  // A card's own button ticks that programme in the enquiry below instead of
+  // leaving the page, so the answers given above travel with the enquiry.
+  // The title and picture still open the programme page.
+  $$(".finder-pick", out).forEach((pick, i) => {
+    const btn = $(".card-foot .btn", pick);
+    const box = $$('input[name="pick"]', enquiry)[i];
+    if (!btn || !box) return;
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      box.checked = true;
+      $("#enquiry-error", out).textContent = "";
+      const status = $("#enquiry-status", out);
+      status.textContent = "";
+      enquiry.scrollIntoView({ behavior: "smooth", block: "start" });
+      $("#f-size", enquiry).focus({ preventScroll: true });
+      status.textContent = t("Added to your enquiry below.");
+    });
+  });
   enquiry.addEventListener("submit", (e) => {
     e.preventDefault();
     const err = $("#enquiry-error", out);

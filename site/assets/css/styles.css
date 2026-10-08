@@ -489,6 +489,7 @@ a.chip:hover, a.chip:focus-visible { border-color: var(--ink); }
 .finder-pick { display: flex; flex-direction: column; }
 .finder-why { margin: 0 0 0.6rem; padding-left: 0.6rem; border-left: 3px solid var(--haldi); font-size: var(--step--1); color: var(--ink); font-weight: 600; min-height: 3.6em; }
 .finder-enquiry { margin-top: clamp(2.5rem, 6vw, 3.5rem); max-width: 46rem; padding: 1.25rem 1.4rem 1.5rem; background: var(--paper); border: 1px solid var(--line); border-top: 6px solid var(--haldi); border-radius: 4px; }
+.finder-enquiry { scroll-margin-top: 1rem; }
 .finder-enquiry h2 { margin: 0; }
 .finder-enquiry fieldset { display: grid; gap: 0.5rem; }
 
