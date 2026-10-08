@@ -230,6 +230,7 @@ const text = {
  "Request this lecture": "यह व्याख्यान आयोजित करवाएँ",
  "Request this workshop": "यह कार्यशाला आयोजित करवाएँ",
  "Requesting a programme": "कार्यक्रम का अनुरोध",
+ "Required. Choose one.": "आवश्यक। कोई एक चुनें।",
  "Review the items in your cart.": "अपने कार्ट की वस्तुएँ देखें।",
  "Save my details": "मेरा विवरण सहेजें",
  "Saving…": "सहेजा जा रहा है…",

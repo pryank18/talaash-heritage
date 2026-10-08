@@ -347,6 +347,7 @@ TEXT = {
     "Culture, heritage and society": "संस्कृति, धरोहर और समाज",
     "Careers and further study": "करियर और उच्च शिक्षा",
     "Choose any that apply, or none.": "जो लागू हों, चुनें, या कोई भी नहीं।",
+    "Required. Choose one.": "आवश्यक। कोई एक चुनें।",
     "Show suggestions": "सुझाव देखें",
     "Choose who the programme is for.": "चुनें कि कार्यक्रम किसके लिए है।",
     "Suggested programmes": "सुझाए गए कार्यक्रम",

@@ -473,6 +473,7 @@ a.chip:hover, a.chip:focus-visible { border-color: var(--ink); }
 
 /* ---------- programme finder ---------- */
 .shop-finder { margin: 0 0 1rem; font-weight: 600; }
+.finder .page-head { margin-bottom: 1.5rem; }
 .finder-form { display: grid; gap: 1.75rem; padding-bottom: 2rem; max-width: 60rem; }
 .finder-q legend { font-size: var(--step-1); margin-bottom: 0.6rem; }
 .finder-hint { margin: -0.3rem 0 0.7rem; color: var(--ink-soft); font-size: var(--step--1); }
