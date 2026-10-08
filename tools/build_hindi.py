@@ -40,6 +40,7 @@ TEXT = {
     "Books and prints": "पुस्तकें और प्रिंट",
     "Help": "सहायता",
     "Help me choose a programme": "कार्यक्रम चुनने में मदद",
+    "Who are you planning for?": "आप किसके लिए योजना बना रहे हैं?",
     "Contact us": "संपर्क करें",
     "Common questions": "सामान्य प्रश्न",
     "Sell with us": "हमारे साथ साझेदारी करें",

@@ -1,5 +1,6 @@
 import { getProducts } from "../api.js";
-import { $, esc, formatWhen, formatDuration, isRequest, kindLabel, money, productCard, requestAction, stockFlag, typeLabel } from "../ui.js";
+import { lang } from "../i18n.js";
+import { $, $$, esc, formatWhen, formatDuration, isRequest, kindLabel, money, productCard, requestAction, stockFlag, typeLabel } from "../ui.js";
 
 const SESSION_TYPES = ["live", "course", "walk", "experience", "counselling", "recording"];
 
@@ -34,6 +35,7 @@ function featureCard(p) {
 
 async function render() {
   const feature = $("#feature");
+  const featureSection = $("#feature-section");
   const sessions = $("#home-sessions");
   const goods = $("#home-goods");
   try {
@@ -42,9 +44,19 @@ async function render() {
     const upcoming = products
       .filter((p) => p.starts_at && new Date(p.starts_at).getTime() > now && !stockFlag(p)?.soldOut)
       .sort((a, b) => new Date(a.starts_at) - new Date(b.starts_at));
-    const pick = upcoming[0] || products.find((p) => p.is_featured) || products[0];
-    if (pick) feature.innerHTML = featureCard(pick);
-    else feature.hidden = true;
+    // Only a real dated event earns the slot under the hero; the hero itself
+    // belongs to the programme finder.
+    const pick = upcoming[0];
+    if (pick) {
+      feature.innerHTML = featureCard(pick);
+      featureSection.hidden = false;
+    }
+
+    // How many programmes the finder can suggest for each audience.
+    for (const el of $$(".planner-count")) {
+      const n = products.filter((p) => p.find && p.audience?.includes(el.dataset.for)).length;
+      if (n) el.textContent = lang === "hi" ? `${n} कार्यक्रम` : `${n} programme${n === 1 ? "" : "s"}`;
+    }
 
     const chosen = products.filter((p) => p.tags?.includes("home") && p.id !== pick?.id);
     const sessionList = (chosen.length ? chosen : products.filter((p) => SESSION_TYPES.includes(p.type) && p.id !== pick?.id)).slice(0, 6);
@@ -54,7 +66,6 @@ async function render() {
     if (goodsList.length) goods.innerHTML = goodsList.map(productCard).join("");
     else $("#home-goods-section").hidden = true;
   } catch (e) {
-    feature.hidden = true;
     sessions.innerHTML = `<p class="form-error">${esc(e.message)}</p>`;
     goods.innerHTML = "";
   }

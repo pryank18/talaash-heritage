@@ -312,6 +312,7 @@ const text = {
  "What we offer": "हम क्या प्रदान करते हैं",
  "When": "कब",
  "Where": "स्थान",
+ "Who are you planning for?": "आप किसके लिए योजना बना रहे हैं?",
  "Who it is for: a school class, a college department, a workplace team or a private group.": "किसके लिए: विद्यालय की कक्षा, महाविद्यालय का विभाग, कार्यस्थल की टीम या कोई निजी समूह।",
  "Why it fits:": "यह क्यों उपयुक्त है:",
  "Workplaces": "कार्यस्थल",
