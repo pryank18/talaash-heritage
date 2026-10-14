@@ -58,12 +58,14 @@ const PRODUCT_COLUMNS =
  * database cannot be reached; the cart and checkout pass requireDatabase so that
  * nobody's cart is emptied or priced during an outage.
  */
-export async function getProducts({ requireDatabase = false } = {}) {
+export async function getProducts({ requireDatabase = false, includeUnlisted = false } = {}) {
   if (!productCache) await (loading ||= loadProducts()); // one request even when several parts of the page ask at once
   if (requireDatabase && databaseMissing) {
     throw new ApiError("network", "We could not reach the booking system just now. Your cart is safe; please try again in a minute.");
   }
-  return productCache;
+  // Listings tagged "unlisted" (tests, private links) open by their own link
+  // and can be bought, but never appear in the catalogue, home or finder.
+  return includeUnlisted ? productCache : productCache.filter((p) => !p.tags?.includes("unlisted"));
 }
 
 async function loadProducts() {
@@ -111,7 +113,7 @@ async function withCatalogue(listings) {
 }
 
 export async function getProduct(slug) {
-  const all = await getProducts();
+  const all = await getProducts({ includeUnlisted: true });
   return all.find((p) => p.slug === slug) || null;
 }
 
@@ -219,7 +221,7 @@ export async function createOrder(payload) {
     }
   }
   // Demo mode: price the cart locally so the flow can be clicked through.
-  const products = await getProducts();
+  const products = await getProducts({ includeUnlisted: true });
   let subtotal = 0;
   let needsShipping = false;
   const items = payload.items.map((it) => {
