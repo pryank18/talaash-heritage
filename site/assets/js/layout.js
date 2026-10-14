@@ -37,7 +37,7 @@ function renderHeader() {
     </div></div>
     ${isLive() ? "" : `<div class="demo-banner">Demo mode: registrations and orders are not saved anywhere. Add your Supabase keys in <code>assets/js/config.js</code> to go live.</div>`}
     ${isLive() && CONFIG.sampleNotice ? `<div class="demo-banner">This site is being set up. The listings shown are examples; bookings open soon.</div>` : ""}
-    ${lang === "hi" && ENGLISH_ONLY.has(page) ? `<div class="lang-notice" lang="hi" data-no-translate>यह पृष्ठ अभी केवल अंग्रेज़ी में उपलब्ध है। किसी भी जानकारी के लिए आप हमें WhatsApp पर हिन्दी में लिख सकते हैं।</div>` : ""}
+    ${lang === "hi" && (ENGLISH_ONLY.has(page) || document.body.dataset.englishOnly) ? `<div class="lang-notice" lang="hi" data-no-translate>यह पृष्ठ अभी केवल अंग्रेज़ी में उपलब्ध है। किसी भी जानकारी के लिए आप हमें WhatsApp पर हिन्दी में लिख सकते हैं।</div>` : ""}
     ${lang === "hi" && isProgramme ? `<div class="lang-notice" lang="hi" data-no-translate>कार्यक्रम का विस्तृत विवरण अभी अंग्रेज़ी में है। हिन्दी में जानकारी के लिए आप हमें WhatsApp पर लिख सकते हैं।</div>` : ""}
     <div class="site-header">
       <a class="wordmark" href="index.html" aria-label="${esc(CONFIG.brand)} home">
@@ -50,6 +50,7 @@ function renderHeader() {
         ${navLink("shop.html?type=counselling", "Counselling")}
         ${navLink("shop.html", "Everything")}
         ${navLink("journeys.html", "Journeys")}
+        ${navLink("learn.html", "Learn")}
         ${navLink("about.html", "About")}
       </nav>
       <button type="button" class="lang-quick" data-no-translate data-lang-set="${lang === "hi" ? "en" : "hi"}" lang="${lang === "hi" ? "en" : "hi"}">${lang === "hi" ? "English" : "हिन्दी"}</button>
@@ -106,6 +107,19 @@ function renderFooter() {
         </ul>
       </div>
       <div>
+        <h2>Learn</h2>
+        <ul>
+          <li><a href="learn.html">All guides</a></li>
+          <li><a href="unesco-world-heritage-sites-in-india.html">UNESCO sites in India</a></li>
+          <li><a href="ancient-indian-history.html">Ancient Indian history</a></li>
+          <li><a href="archaeology-in-india.html">Archaeology in India</a></li>
+          <li><a href="indian-temple-architecture.html">Temple architecture</a></li>
+          <li><a href="sanskrit-and-indian-knowledge-systems.html">Sanskrit and scripts</a></li>
+          <li><a href="learn.html#cities">Heritage walks by city</a></li>
+          <li><a href="learn.html#states">Heritage sites by state</a></li>
+        </ul>
+      </div>
+      <div>
         <h2>Help</h2>
         <ul>
           <li><a href="about.html">About us</a></li>
@@ -145,7 +159,7 @@ function renderFooter() {
 // ---- phone app shell: bottom tabs and the "More" sheet -----------------------
 // Shown by CSS on phones and portrait tablets only; desktop keeps the header nav.
 const NO_TABS = new Set(["admin.html", "seller.html", "checkout.html"]);
-const MORE_PAGES = new Set(["about.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html", "cart.html", "order.html"]);
+const MORE_PAGES = new Set(["learn.html", "about.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html", "cart.html", "order.html"]);
 const ICON = {
   home: '<path d="M3.5 10.5 12 4l8.5 6.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/>',
   shop: '<rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"/>',
@@ -187,6 +201,12 @@ function renderAppShell() {
         <li><a href="shop.html?type=recording">Recordings</a></li>
         <li><a href="shop.html?type=physical">Books and prints</a></li>
         <li><a href="journeys.html">TALAASHH journeys</a></li>
+      </ul>
+      <h3>Learn</h3>
+      <ul>
+        <li><a href="learn.html">Guides to India's heritage</a></li>
+        <li><a href="learn.html#cities">Heritage walks by city</a></li>
+        <li><a href="learn.html#states">Heritage sites by state</a></li>
       </ul>
       <h3>Talaash Heritage</h3>
       <ul>

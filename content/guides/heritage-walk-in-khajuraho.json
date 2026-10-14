@@ -1,0 +1,86 @@
+{
+  "slug": "heritage-walk-in-khajuraho",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Khajuraho",
+  "state": "Madhya Pradesh",
+  "title": "Heritage walk in Khajuraho: the Chandela temples, group by group",
+  "seo_title": "Heritage Walk in Khajuraho: Temples, Routes and Museum",
+  "meta_description": "Plan a heritage walk in Khajuraho: the Western, Eastern and Southern temple groups, Kandariya Mahadeva, Lakshmana, the Jain temples and the museum, for groups.",
+  "keywords": ["heritage walk in khajuraho", "historical places in khajuraho", "heritage sites in khajuraho", "museums in khajuraho", "khajuraho heritage walk for schools", "khajuraho temples history", "kandariya mahadeva temple", "lakshmana temple khajuraho", "khajuraho jain temples", "khajuraho unesco"],
+  "summary": "A heritage walk in Khajuraho covers the Chandela temples built between about 950 and 1050 CE, a UNESCO World Heritage Site since 1986. Around 25 of an original 80 or so temples survive, in three groups: the Western group with Lakshmana and Kandariya Mahadeva, the Eastern group with the Jain temples, and the Southern group.",
+  "sections": [
+    {"h2": "Why Khajuraho matters", "paras": [
+      "Khajuraho is the best place in India to study the mature Nagara temple: a high platform, a sequence of halls leading to the sanctum, and a main tower (shikhara) surrounded by smaller towers that build up like a mountain range. The Chandela rulers and their courtiers built Hindu and Jain temples side by side here, in fine buff sandstone from the Ken river quarries.",
+      "The sculpture is famous, and the small number of erotic panels has shaped the site's popular image. They are a minority of the thousands of figures on the walls, which mostly show deities, celestial women, attendants, animals, armies and scenes of daily life. Scholars have offered several explanations for the erotic imagery, from tantric ideas to auspicious symbolism and courtly culture, and there is no single agreed answer; a walk sets these out fairly."
+    ]},
+    {"h2": "Layers of Khajuraho's history", "paras": [
+      "The Chandelas rose as feudatories of the Pratiharas and became independent in the 10th century. The Lakshmana temple, dedicated to Vishnu, carries an inscription dated 954 CE in the reign of Yashovarman's son Dhanga. The Vishvanatha temple dates to about 1002, and the Kandariya Mahadeva, the largest and most elaborate, to about 1025 to 1050, often linked to King Vidyadhara.",
+      "The Jain temples of the Eastern group include the Parshvanatha temple, with an inscription of the 950s. The Chaturbhuj and Duladeo temples of the Southern group date to about the late 11th and early 12th centuries. The Chandelas moved their military centres to hill forts such as Kalinjar and Ajaigarh, and Khajuraho declined after the 13th century. The site was brought to wider attention by T. S. Burt in 1838 and surveyed by Alexander Cunningham.",
+      "The [Indian temple architecture](indian-temple-architecture.html) pillar explains the terms, and the [Nagara temple architecture](nagara-temple-architecture.html) course goes deeper."
+    ]},
+    {"h2": "What you see on a walk", "paras": [
+      "In the Western group, students walk the platform around each temple and read the plan from the outside: projecting balconies, bands of sculpture, and the rising roof line. Inside the Kandariya Mahadeva, they move from the entrance porch through the halls to the dark sanctum and see how light falls away. The Varaha shrine holds a single large boar image covered in small carved figures.",
+      "The [Khajuraho architecture deep dive](khajuraho-architecture-deep-dive.html) is built for exactly this visit, and [Temple sculpture and iconography](temple-sculpture-iconography.html) helps students name what they see on the walls. Architecture students can add the [Temple architectural documentation lab](temple-architectural-documentation-lab.html)."
+    ]},
+    {"h2": "Khajuraho for school and college groups", "paras": [
+      "Khajuraho sits within [Stupas, caves and temples of central India](stupas-caves-and-temples-of-central-india.html), and any plan can be arranged as a [study tour built for your group](a-study-tour-built-for-your-group.html), often with Orchha, Gwalior or Panna.",
+      "The Western group is a fenced, ticketed park and is easy to manage with a class. The Eastern group is about 2 km away and the Southern group a little further, so a coach or e-rickshaws help between groups; each group itself is walkable. Teachers usually brief students in advance on the sculpture and frame it historically. Check ASI rules on group entry and photography before you go."
+    ]}
+  ],
+  "stops": [
+    {"name": "Lakshmana Temple", "period": "about 954 CE", "note": "Vishnu temple with a dated inscription, complete subsidiary shrines at its corners and a battle and procession frieze."},
+    {"name": "Kandariya Mahadeva Temple", "period": "about 1025 to 1050", "note": "The largest Shiva temple, with a tower of over 80 smaller shikhara forms rising to about 31 metres."},
+    {"name": "Devi Jagadambi Temple", "period": "early 11th century", "note": "Smaller temple on the same platform as Kandariya, with fine figure sculpture."},
+    {"name": "Chitragupta Temple", "period": "early 11th century", "note": "Temple dedicated to Surya, the sun god, with a standing image of Surya in the sanctum."},
+    {"name": "Vishvanatha Temple", "period": "about 1002", "note": "Shiva temple with a Nandi pavilion facing it, built under Dhanga."},
+    {"name": "Varaha shrine", "period": "about 10th century", "note": "Open pavilion with a monolithic boar image carved with many small figures."},
+    {"name": "Matangeshvara Temple", "period": "about 10th century", "note": "Simple, still active Shiva temple beside the Western group, with a large linga."},
+    {"name": "Parshvanatha Temple", "period": "about 950s", "note": "Largest of the Jain temples in the Eastern group, with fine sculpture of celestial figures."},
+    {"name": "Adinatha Temple", "period": "late 11th century", "note": "Jain temple with a well-preserved shikhara and wall sculpture."},
+    {"name": "Ghantai Temple", "period": "late 10th century", "note": "Jain temple ruin named after the bell-and-chain motif on its pillars."},
+    {"name": "Duladeo Temple", "period": "about 1100 to 1150", "note": "Shiva temple of the Southern group, among the last Chandela temples, with crowded ornament."},
+    {"name": "Chaturbhuj Temple, Khajuraho", "period": "about 1100", "note": "Southern group temple with a large four-armed image and no erotic sculpture."}
+  ],
+  "routes": [
+    {"name": "The Western group on foot", "length": "About 3 hours", "stops": ["Lakshmana Temple", "Varaha shrine", "Matangeshvara Temple", "Kandariya Mahadeva Temple", "Devi Jagadambi Temple", "Chitragupta Temple", "Vishvanatha Temple"]},
+    {"name": "The Jain and Eastern group", "length": "About 2 hours, short ride from the Western group", "stops": ["Ghantai Temple", "Parshvanatha Temple", "Adinatha Temple"]},
+    {"name": "The Southern group", "length": "About 1 to 2 hours, by vehicle", "stops": ["Duladeo Temple", "Chaturbhuj Temple, Khajuraho"]}
+  ],
+  "museums": [
+    {"name": "Archaeological Museum, Khajuraho", "note": "ASI museum opposite the Western group with sculptures removed from the temples, including a dancing Ganesha."},
+    {"name": "Jain Museum, Khajuraho", "note": "Jain images collected from the area, near the Eastern group."},
+    {"name": "Adivart Tribal and Folk Art Museum", "note": "State museum on the living arts and house forms of Madhya Pradesh's communities."}
+  ],
+  "best_time": "October to March. Summers are very hot; visit the Western group soon after it opens.",
+  "faq": [
+    {"q": "When were the Khajuraho temples built?", "a": "Mostly between about 950 and 1050 CE under the Chandela dynasty, with a few later temples into the early 12th century. The Lakshmana temple has an inscription dated 954 CE."},
+    {"q": "How many temples are there at Khajuraho?", "a": "About 25 survive, out of an original number usually estimated at around 80. They are in three groups: Western, Eastern and Southern."},
+    {"q": "Is a Khajuraho heritage walk suitable for schools?", "a": "Yes, with preparation. The Western group is a safe, fenced site. Teachers usually brief students on the sculpture beforehand and the guide frames it historically, focusing on architecture, deities and daily life."},
+    {"q": "Which museums are there in Khajuraho?", "a": "The ASI Archaeological Museum opposite the Western group, the Jain Museum near the Eastern group, and the Adivart Tribal and Folk Art Museum."},
+    {"q": "Can Talaash Heritage arrange a Khajuraho study tour?", "a": "Yes, on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi, often with Orchha and Gwalior."}
+  ],
+  "related_programmes": ["khajuraho-architecture-deep-dive.html", "stupas-caves-and-temples-of-central-india.html", "nagara-temple-architecture.html", "temple-sculpture-iconography.html", "temple-architectural-documentation-lab.html", "a-study-tour-built-for-your-group.html", "understanding-indian-temple-architecture.html"],
+  "related_guides": ["indian-temple-architecture", "heritage-sites-in-madhya-pradesh", "unesco-world-heritage-sites-in-india", "heritage-walk-in-orchha", "heritage-walk-in-gwalior"],
+  "bundle": {"title": "Read it, then see it", "pitch": "A Nagara temple architecture session in class, then the Khajuraho deep dive on site, so students arrive knowing what a shikhara and mandapa are.", "items": ["nagara-temple-architecture.html", "khajuraho-architecture-deep-dive.html"]},
+  "audience_hooks": ["Schools: Khajuraho within a central India study tour, with a temple lecture in class first.", "Colleges: the Khajuraho architecture deep dive and a documentation lab for architecture students.", "Travellers: a private day in the three temple groups with an archaeologist."],
+  "sem": {
+    "ad_group": "Heritage walk Khajuraho",
+    "keywords": ["heritage walk in khajuraho", "khajuraho guided tour archaeologist", "khajuraho study tour for students", "khajuraho temple architecture tour", "khajuraho school trip", "central india temples study tour", "khajuraho orchha tour with historian"],
+    "negatives": ["free", "pdf", "essay", "hotel", "ticket price", "light show", "jobs"],
+    "headlines": ["Khajuraho With Archaeologists", "Chandela Temples, Explained", "Study Tours for Students", "Western, Eastern, Southern", "In English or Hindi"],
+    "descriptions": ["Khajuraho temple walks and study tours with archaeologists, arranged for your group.", "Lakshmana, Kandariya Mahadeva and the Jain temples, for schools, colleges and families."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Khajuraho's temples are mostly not erotic.", "caption": "The famous panels are a small share of the thousands of carved figures. Most show deities, celestial women, soldiers, musicians and animals."},
+      {"angle": "tip", "hook": "Walk the platform before you go in.", "caption": "Circle the Kandariya Mahadeva on its high platform first. Watch the roof climb in waves of small towers to the top, then go inside and feel the light fade toward the sanctum."},
+      {"angle": "offer", "hook": "Khajuraho, read like an architect.", "caption": "Our Khajuraho deep dive and central India study tours are arranged for schools, colleges, companies and families, with an archaeologist, in English or Hindi."}
+    ],
+    "reel": "Slow tilt up the Kandariya Mahadeva tower, close-ups of musicians and elephants on the frieze, then the Parshvanatha temple. Line: a mountain range in stone. End card: Khajuraho study tours, arranged on request.",
+    "hashtags": ["#Khajuraho", "#KandariyaMahadeva", "#TempleArchitecture", "#Chandela", "#UNESCO", "#MadhyaPradesh", "#HeritageWalk", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Khajuraho heritage walk: temples, group by group",
+  "og_description": "Lakshmana, Kandariya Mahadeva, the Jain temples and the museum, explained for groups and schools.",
+  "cta": "We arrange Khajuraho heritage walks and study tours on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi."
+}

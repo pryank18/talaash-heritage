@@ -1,0 +1,105 @@
+{
+  "slug": "heritage-walk-in-chhatrapati-sambhajinagar",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Chhatrapati Sambhajinagar",
+  "state": "Maharashtra",
+  "title": "Heritage walk in Chhatrapati Sambhajinagar (Aurangabad)",
+  "seo_title": "Heritage Walk in Aurangabad: Ajanta, Ellora, Bibi ka Maqbara",
+  "meta_description": "Plan a heritage walk in Chhatrapati Sambhajinagar (Aurangabad): Bibi ka Maqbara, the Aurangabad Caves, city gates, Panchakki, Daulatabad, Ellora and Ajanta.",
+  "keywords": ["heritage walk in chhatrapati sambhajinagar", "heritage walk in aurangabad", "historical places in aurangabad", "heritage sites in chhatrapati sambhajinagar", "museums in aurangabad", "aurangabad heritage walk for schools", "ajanta ellora tour", "bibi ka maqbara history", "daulatabad fort", "aurangabad caves"],
+  "summary": "Chhatrapati Sambhajinagar (formerly Aurangabad) is the base for Ajanta and Ellora, both UNESCO sites since 1983. In the city a heritage walk covers Bibi ka Maqbara (1660s), the Aurangabad Caves, Panchakki and the old gates; Daulatabad Fort and Khuldabad lie on the road to Ellora.",
+  "sections": [
+    {
+      "h2": "Why Chhatrapati Sambhajinagar matters for heritage",
+      "paras": [
+        "Few cities in India have so much rock-cut architecture within reach. Ajanta's Buddhist caves, with the best surviving ancient Indian painting, and Ellora's Buddhist, Hindu and Jain caves, including the monolithic Kailasa temple, were among the first Indian sites inscribed by UNESCO in 1983. Between them and the city stand Daulatabad, a hill fort that was briefly the capital of the Delhi Sultanate, and Khuldabad, where Aurangzeb is buried.",
+        "The city was renamed Chhatrapati Sambhajinagar in 2023 (the district followed). Many people still search for it as Aurangabad, and the railway station, airport and older books use that name. On this page we use the new name with the old one where it helps."
+      ]
+    },
+    {
+      "h2": "Layers of history: from caves to a Mughal city",
+      "paras": [
+        "The oldest monuments are the Ajanta caves, cut in two phases: an early group of about the 2nd century BCE to 1st century CE under the Satavahanas, and a second, larger group of the later 5th century CE, often linked with the Vakataka king Harishena. The city's own Aurangabad Caves, on the hill behind Bibi ka Maqbara, are Buddhist caves of about the 6th and 7th centuries. Our guide to [Buddhist caves in India](buddhist-caves-in-india.html) covers how these were planned and paid for.",
+        "Ellora's 34 or so main caves date from about the 6th to the 10th century: Buddhist caves first, then Hindu caves (Cave 16, the Kailasa, was carved largely under the Rashtrakuta king Krishna I in the 8th century), then Jain caves. Nearby Daulatabad, ancient Devagiri, was the Yadava capital until the Delhi Sultanate took it; in 1327 Muhammad bin Tughluq ordered the court and much of Delhi's population to move there, a decision reversed within a few years. See the [Delhi Sultanate](delhi-sultanate.html) explainer.",
+        "The city itself was founded as Khadki around 1610 by Malik Ambar, the Ethiopian-born regent of the Ahmadnagar Sultanate, and renamed Aurangabad after Aurangzeb, who governed the Deccan from here and spent his last decades fighting in the region. Bibi ka Maqbara, the tomb of his wife Dilras Banu Begum, was built by their son Azam Shah around 1660, its plan modelled on the Taj Mahal. Under the Nizams of Hyderabad the city kept its walls and 52 gates, some of which survive."
+      ]
+    },
+    {
+      "h2": "What you see on a heritage walk in the city",
+      "paras": [
+        "A city day usually starts at Bibi ka Maqbara, comparing its proportions, materials (marble only on the lower parts, stucco above) and garden with the Taj Mahal; our explainer on [Mughal architecture](mughal-architecture.html) is good preparation. From there a short drive reaches the Aurangabad Caves, where Cave 7 has some of the finest sculpture of Buddhist goddesses in western India.",
+        "Back in town, Panchakki is a 17th century water mill driven by water channelled from a spring several kilometres away, a good subject for science classes. The old city gates (Bhadkal Gate, Delhi Gate and others), the Soneri Mahal museum, and the Himroo and Paithani weaving workshops round off the day."
+      ]
+    },
+    {
+      "h2": "Ajanta, Ellora and Daulatabad: planning the caves",
+      "paras": [
+        "Ellora is about 30 kilometres north-west of the city, with Daulatabad and Khuldabad on the same road: a full day. Ajanta is about 100 kilometres north and needs a full day on its own, with a shuttle bus from the visitor centre. Both caves are usually closed on one weekday each, so check the ASI site before you go. Daulatabad's climb to the top is steep and dark in places, best for older students.",
+        "For college groups, the [Rock-cut sacred architecture lecture](rock-cut-sacred-architecture.html) before the trip and [Deccan temple forms and Vesara debates](deccan-temple-forms-vesara-debates.html) on site make the caves much easier to read. We arrange visits here for your group, often as a [study tour built for your group](a-study-tour-built-for-your-group.html)."
+      ]
+    },
+    {
+      "h2": "Heritage walk for schools in Chhatrapati Sambhajinagar",
+      "paras": [
+        "A three-day school trip works well: city monuments on day one, Ellora with Daulatabad on day two, Ajanta on day three. Students can be given simple tasks: count the pillars in a vihara, find the stupa in a chaitya hall, sketch a gateway at Daulatabad, or compare the Maqbara's dome with a photo of the Taj. Carry torches for the caves and water for the long walks."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Bibi ka Maqbara", "period": "About 1660", "note": "Tomb of Dilras Banu Begum, built by Azam Shah on the model of the Taj Mahal, with a charbagh garden."},
+    {"name": "Aurangabad Caves", "period": "About 6th to 7th century CE", "note": "Buddhist caves in two groups on the hill north of the city; Cave 7 has fine sculpture."},
+    {"name": "Panchakki", "period": "17th century", "note": "Water mill fed by an underground channel, beside the dargah of Baba Shah Musafir."},
+    {"name": "Bhadkal Gate", "period": "1612", "note": "Gate built by Malik Ambar, one of the few surviving from his time."},
+    {"name": "Delhi Gate", "period": "Late 17th century", "note": "Large gate on the old city walls built under Aurangzeb."},
+    {"name": "Soneri Mahal", "period": "17th century", "note": "Small palace of a Bundela chief, now a museum."},
+    {"name": "Himroo weaving workshops", "period": "Craft with Mughal-era roots", "note": "Workshops weaving Himroo and Paithani fabric; good for a living heritage session."},
+    {"name": "Daulatabad Fort", "period": "Yadava, about 12th century; later Sultanate and Mughal", "note": "Hill fort with moat, dark tunnel and Chand Minar (15th century); vehicle needed."},
+    {"name": "Khuldabad", "period": "14th century onward", "note": "Town of Sufi shrines with the plain grave of Aurangzeb (died 1707); vehicle needed."},
+    {"name": "Ellora Caves", "period": "About 6th to 10th century CE", "note": "Buddhist, Hindu and Jain caves including the Kailasa temple; UNESCO site; vehicle needed."},
+    {"name": "Grishneshwar Temple", "period": "Rebuilt 18th century", "note": "Temple near Ellora rebuilt under Ahilyabai Holkar; vehicle needed."},
+    {"name": "Ajanta Caves", "period": "About 2nd century BCE to 5th century CE", "note": "Buddhist caves with murals and sculpture in a river gorge; UNESCO site; vehicle needed."}
+  ],
+  "routes": [
+    {"name": "The Mughal city (short drives between stops)", "length": "About 4 hours", "stops": ["Bibi ka Maqbara", "Aurangabad Caves", "Panchakki", "Bhadkal Gate", "Delhi Gate", "Soneri Mahal", "Himroo weaving workshops"]},
+    {"name": "Daulatabad, Khuldabad and Ellora (vehicle needed)", "length": "A full day", "stops": ["Daulatabad Fort", "Khuldabad", "Ellora Caves", "Grishneshwar Temple"]},
+    {"name": "Ajanta (vehicle needed)", "length": "A full day", "stops": ["Ajanta Caves"]}
+  ],
+  "museums": [
+    {"name": "Soneri Mahal Museum", "note": "Sculpture, pottery and textiles from the region in a 17th century palace."},
+    {"name": "Chhatrapati Shivaji Maharaj Museum", "note": "Arms, coins and documents on Maratha history."},
+    {"name": "Ellora and Ajanta visitor centres", "note": "Interpretation centres with replicas and models; useful before entering the caves."},
+    {"name": "Bibi ka Maqbara site displays", "note": "Panels on construction and conservation at the tomb."}
+  ],
+  "best_time": "July to March. Ajanta and Ellora are at their best just after the monsoon when the waterfalls run; avoid April to June heat.",
+  "faq": [
+    {"q": "Is Aurangabad the same as Chhatrapati Sambhajinagar?", "a": "Yes. The city was officially renamed Chhatrapati Sambhajinagar in 2023. Many maps, bookings and older books still use Aurangabad."},
+    {"q": "What are the main historical places in Chhatrapati Sambhajinagar?", "a": "In the city: Bibi ka Maqbara, the Aurangabad Caves, Panchakki, the old gates and Soneri Mahal. Nearby: Ellora, Ajanta, Daulatabad Fort and Khuldabad."},
+    {"q": "How many days do you need for Ajanta and Ellora?", "a": "At least two: one full day for Ellora with Daulatabad, and one for Ajanta, which is about 100 kilometres away. A third day for the city monuments makes a comfortable school trip."},
+    {"q": "Why is Bibi ka Maqbara called the Taj of the Deccan?", "a": "It was built around 1660 by Aurangzeb's son Azam Shah for his mother and copies the Taj Mahal's plan. It is smaller and uses marble only on the lower parts, with fine stucco above."},
+    {"q": "Are Ajanta and Ellora suitable for school students?", "a": "Yes. Paths are paved, and Ajanta has a shuttle from the visitor centre. Students should carry water and torches. Both sites are closed one day a week, so check the ASI website."}
+  ],
+  "related_programmes": ["rock-cut-sacred-architecture.html", "deccan-temple-forms-vesara-debates.html", "a-study-tour-built-for-your-group.html", "temple-sculpture-iconography.html", "elephanta-shiva-and-rock-cut-architecture.html", "mumbai-caves-city-and-living-traditions.html", "sacred-architecture-across-communities.html"],
+  "related_guides": ["heritage-sites-in-maharashtra", "buddhist-caves-in-india", "mughal-architecture", "delhi-sultanate", "unesco-world-heritage-sites-in-india", "heritage-walk-in-pune"],
+  "bundle": {"title": "Read the caves before you go", "pitch": "A lecture on rock-cut architecture and a session on temple sculpture make Ajanta and Ellora readable; the study tour then takes the group to both sites with an archaeologist.", "items": ["rock-cut-sacred-architecture.html", "temple-sculpture-iconography.html", "a-study-tour-built-for-your-group.html"]},
+  "audience_hooks": ["Schools: a three-day trip to the city, Ellora and Ajanta, arranged on request.", "Colleges: lectures on rock-cut architecture and Deccan temple forms, then the caves on site.", "Travellers: a private study tour of the Deccan caves with an archaeologist."],
+  "sem": {
+    "ad_group": "Heritage walk Aurangabad",
+    "keywords": ["heritage walk in aurangabad", "ajanta ellora guided tour", "ajanta ellora school trip", "aurangabad heritage tour with historian", "ellora caves archaeologist guide", "chhatrapati sambhajinagar heritage walk"],
+    "negatives": ["free", "pdf", "hotel", "essay", "drawing", "wikipedia"],
+    "headlines": ["Ajanta and Ellora Study Trip", "Aurangabad Heritage Walk", "Caves With an Archaeologist", "Ellora for School Groups", "Bibi ka Maqbara Explained"],
+    "descriptions": ["Ajanta, Ellora, Daulatabad and the city with an archaeologist or historian.", "Arranged on request for schools, colleges, companies and private groups."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Ellora's Kailasa was carved from the top down.", "caption": "Under the Rashtrakutas in the 8th century, carvers cut a whole temple out of a basalt hill, starting from above. Nothing was added; everything was taken away."},
+      {"angle": "tip", "hook": "Look up at Bibi ka Maqbara.", "caption": "Marble ends partway up; the rest is fine stucco finished to look like marble. It is a good way to talk about budgets and choices in Mughal building."},
+      {"angle": "offer", "hook": "Ajanta and Ellora with an archaeologist.", "caption": "We arrange heritage trips to Chhatrapati Sambhajinagar, Ellora and Ajanta for schools, colleges and private groups, in English or Hindi."}
+    ],
+    "reel": "Wide shot of the Kailasa from the rim above, cut to an Ajanta mural detail under soft light. On-screen line: 'Carved, then painted, 1,500 years ago.' End card: 'Ajanta and Ellora study trips, on request.'",
+    "hashtags": ["#Ajanta", "#Ellora", "#AurangabadHeritage", "#BibiKaMaqbara", "#Daulatabad", "#RockCutArchitecture", "#MaharashtraHeritage", "#IndianHeritage", "#UNESCOIndia"]
+  },
+  "og_title": "Chhatrapati Sambhajinagar: a base for Ajanta and Ellora",
+  "og_description": "Bibi ka Maqbara, Daulatabad, Ellora and Ajanta: how to plan heritage days from the former Aurangabad.",
+  "cta": "We arrange heritage walks in Chhatrapati Sambhajinagar and trips to Ellora, Ajanta and Daulatabad on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."
+}

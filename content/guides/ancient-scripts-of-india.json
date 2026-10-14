@@ -1,0 +1,105 @@
+{
+  "slug": "ancient-scripts-of-india",
+  "type": "explainer",
+  "pillar": "sanskrit",
+  "title": "Ancient scripts of India: from the Indus to Nagari",
+  "seo_title": "Ancient Scripts of India: Indus, Brahmi, Kharosthi, Sharada",
+  "meta_description": "The ancient scripts of India in order: the undeciphered Indus script, Brahmi, Kharosthi, Tamil-Brahmi, Gupta, Siddhamatrika, Sharada, Grantha and Nagari.",
+  "keywords": ["ancient scripts of india", "ancient indian scripts", "oldest script of india", "indus script", "brahmi and kharosthi", "sharada script", "grantha script", "tamil brahmi", "history of indian scripts", "siddhamatrika script"],
+  "summary": "India's oldest known writing is the Indus script of the Harappan civilisation, still undeciphered. After a long gap, Brahmi and Kharosthi appear in the 3rd century BCE. Brahmi then divided into regional forms, including Tamil-Brahmi, Gupta Brahmi, Siddhamatrika, Sharada, Grantha and Nagari, the ancestors of most scripts used in South and Southeast Asia today.",
+  "sections": [
+    {
+      "h2": "The Indus script: India's oldest, still undeciphered",
+      "paras": [
+        "The earliest writing in South Asia comes from the Harappan or [Indus Valley Civilization](indus-valley-civilization.html), mainly in its mature phase of about 2600 to 1900 BCE. Signs appear on stamp seals, sealings, tablets, pottery and copper objects. Several hundred distinct signs have been identified, with estimates varying by how scholars group them.",
+        "The script remains undeciphered. Inscriptions are very short (most have fewer than six signs), there is no bilingual text, and the language behind them is unknown. Proposals link it to a Dravidian language, to an Indo-Aryan language, or to a lost language; some scholars have even questioned whether it encodes language at all, a view most specialists reject. Treat any claim of a full decipherment with caution until it is accepted in peer review.",
+        "Between the end of the Harappan cities and the 3rd century BCE there is no securely dated, readable writing in India. Graffiti marks on megalithic and early historic pottery exist, but they are not a script in the full sense."
+      ]
+    },
+    {
+      "h2": "Brahmi and Kharosthi (3rd century BCE onward)",
+      "paras": [
+        "Writing reappears on a large scale with the edicts of Ashoka in the mid 3rd century BCE. Two scripts are used. [Brahmi](brahmi-script.html), written left to right, appears across most of the subcontinent. Kharosthi, written right to left and derived from Aramaic, was used in Gandhara and the north-west, in present-day Pakistan and Afghanistan, and later in Central Asia, until about the 3rd or 4th century CE, after which it fell out of use.",
+        "Both scripts mostly record Prakrit languages, not Sanskrit. Kharosthi is also the script of the Gandharan Buddhist manuscripts on birch bark, among the oldest surviving Indian manuscripts, dated to around the 1st century CE."
+      ]
+    },
+    {
+      "h2": "Tamil-Brahmi in the south",
+      "paras": [
+        "In Tamil Nadu and Kerala, a variety of Brahmi adapted for Tamil appears in cave inscriptions, often in natural rock shelters used by Jain and other ascetics, and on potsherds from sites such as Arikamedu, Kodumanal and Keeladi. Tamil-Brahmi has extra letters for sounds Tamil has and northern Prakrits lack, such as ḻ, ṟ and ṉ. Its earliest dates are debated, with proposals from around the 3rd century BCE and some excavators arguing for earlier. It developed into the Vatteluttu script and, with influence from Grantha, the modern Tamil script."
+      ]
+    },
+    {
+      "h2": "Gupta Brahmi and Siddhamatrika",
+      "paras": [
+        "By the 4th to 6th centuries CE, Brahmi in northern India had changed into what scholars call Gupta Brahmi. Letters became more rounded and ornamental, and the top of each letter often carried a small head mark. Inscriptions such as the Allahabad (Prayagraj) pillar inscription of Samudragupta were written in it, in Sanskrit.",
+        "From about the 6th century CE a further development, Siddhamatrika (also called Siddham or Kutila), spread widely. Buddhist monks carried it to China, Korea and Japan, where the Siddham script is still used in some Buddhist traditions for writing sacred syllables. The [scripts lecture](reading-india-s-scripts-brahmi-to-sarada.html) follows these changes letter by letter."
+      ]
+    },
+    {
+      "h2": "Sharada, Grantha and Nagari",
+      "paras": [
+        "Three regional scripts of the early medieval period matter especially for Sanskrit. Sharada developed from Siddhamatrika in Kashmir and the north-west from around the 8th or 9th century CE and was used for Sanskrit and Kashmiri; many key Kashmiri Sanskrit manuscripts, including copies of Kalhana's Rajatarangini, are in Sharada. It gave rise to Takri and influenced Gurmukhi. Our [Sharada script course](sarada-script.html) teaches it from scratch.",
+        "Grantha developed in the Tamil country from southern Brahmi forms used under the Pallavas, from around the 6th century CE, for writing Sanskrit, which needed letters Tamil script did not have. It influenced the Malayalam script and is still used in some traditional settings. Nagari (with Nandinagari in the Deccan and south) developed from Siddhamatrika and by around the 10th to 11th centuries CE had taken the recognisable form of Devanagari."
+      ],
+      "table": {
+        "head": ["Script", "Approximate period", "Region", "Main languages"],
+        "rows": [
+          ["Indus script", "about 2600 to 1900 BCE (mature phase)", "Indus and Ghaggar valleys, Gujarat", "unknown"],
+          ["Brahmi", "3rd century BCE onward", "most of South Asia", "Prakrit, later Sanskrit"],
+          ["Kharosthi", "3rd century BCE to about 4th century CE", "Gandhara, Central Asia", "Gandhari Prakrit"],
+          ["Tamil-Brahmi", "around the last centuries BCE", "Tamil Nadu, Kerala", "Old Tamil"],
+          ["Gupta Brahmi", "4th to 6th centuries CE", "northern India", "Sanskrit"],
+          ["Siddhamatrika", "about 6th to 10th centuries CE", "northern India, carried to East Asia", "Sanskrit"],
+          ["Sharada", "from about the 8th or 9th century CE", "Kashmir, north-west", "Sanskrit, Kashmiri"],
+          ["Grantha", "from about the 6th century CE", "Tamil Nadu", "Sanskrit"],
+          ["Nagari", "from about the 8th century CE, mature by the 11th", "northern and western India", "Sanskrit, later many languages"]
+        ]
+      }
+    },
+    {
+      "h2": "How to start reading ancient Indian scripts",
+      "paras": [
+        "Because nearly every historic Indian script after the Indus descends from Brahmi, learning Brahmi first makes all the others easier: you are learning the shapes from which later letters grew. A short [Brahmi workshop](write-like-asoka-s-scribes-a-brahmi-workshop.html) is the usual entry point. Many early inscriptions are in Prakrit or Pali rather than Sanskrit, so a first course in [Prakrit](prakrit-a-first-course.html) or Pali pays off quickly. The [what is epigraphy](what-is-epigraphy.html) guide explains how scholars date and edit inscriptions."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "Which is the oldest script of India?", "a": "The Indus script of the Harappan civilisation, from around the 3rd millennium BCE, is the oldest known, but it is undeciphered. The oldest deciphered scripts are Brahmi and Kharosthi, both securely attested in Ashoka's edicts of the 3rd century BCE."},
+    {"q": "What is the difference between Brahmi and Kharosthi?", "a": "Brahmi is written left to right and was used across most of South Asia; it is the ancestor of most later Indian scripts. Kharosthi is written right to left, derives from Aramaic, was used mainly in Gandhara and Central Asia, and died out by around the 4th century CE without descendants."},
+    {"q": "Has the Indus script been deciphered?", "a": "No. Despite many proposals, no decipherment is accepted by specialists. The inscriptions are very short, there is no bilingual text, and the underlying language is unknown, which makes verification very difficult."},
+    {"q": "Which scripts were used to write Sanskrit?", "a": "Many. Sanskrit was written in Brahmi, Gupta Brahmi, Siddhamatrika, Sharada, Grantha, Nandinagari, Nagari and Devanagari, and in regional scripts such as Bengali, Odia, Telugu, Kannada and Malayalam. Devanagari became the usual choice in printed books."},
+    {"q": "What is Sharada script?", "a": "Sharada is a script that developed in Kashmir from around the 8th or 9th century CE, out of Siddhamatrika. It was the main script for Sanskrit and Kashmiri there for centuries and survives today mainly in manuscripts and among a small number of traditional users."}
+  ],
+  "related_programmes": ["reading-india-s-scripts-brahmi-to-sarada.html", "write-like-asoka-s-scribes-a-brahmi-workshop.html", "sarada-script.html", "prakrit-a-first-course.html", "pali-a-first-course.html", "india-s-linguistic-heritage.html", "the-first-cities-harappa-among-the-early-civilisations.html"],
+  "related_guides": ["brahmi-script", "what-is-epigraphy", "indus-valley-civilization", "indian-manuscripts", "sanskrit-alphabet", "prakrit-and-pali"],
+  "cta": "Talaash Heritage runs a lecture on India's scripts from Brahmi to Sharada, plus a hands-on Brahmi workshop and a Sharada course, for groups online or in person.",
+  "bundle": {
+    "title": "From Brahmi to Sharada",
+    "pitch": "Start with the scripts lecture for the overview, learn the ancestor letters in the Brahmi workshop, then read medieval Kashmiri manuscripts in the Sharada course.",
+    "items": ["reading-india-s-scripts-brahmi-to-sarada.html", "write-like-asoka-s-scribes-a-brahmi-workshop.html", "sarada-script.html"]
+  },
+  "audience_hooks": [
+    "Schools: a lecture on India's scripts and a Brahmi writing workshop.",
+    "Colleges: the scripts lecture with a Sharada or Prakrit course for history students.",
+    "Adult learners: small online groups learning Brahmi and Sharada."
+  ],
+  "sem": {
+    "ad_group": "Ancient Indian scripts",
+    "keywords": ["ancient indian scripts course", "indian scripts lecture", "brahmi script workshop", "sharada script course", "learn ancient scripts online", "epigraphy course india", "scripts workshop for schools"],
+    "negatives": ["free", "pdf", "font", "keyboard", "download", "unicode", "tattoo"],
+    "headlines": ["India's Ancient Scripts", "From Brahmi to Sharada", "Learn Brahmi Script", "Sharada Script Course", "Online or In Person"],
+    "descriptions": ["A lecture and hands-on courses on India's ancient scripts, from Brahmi to Sharada.", "Arrange a scripts lecture, workshop or course for your school, college or adult group."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Thai, Tibetan and Tamil scripts share one ancestor.", "caption": "Nearly every script of South and Southeast Asia grew out of Brahmi, the script of Ashoka's edicts. The shapes changed; the sound order did not."},
+      {"angle": "tip", "hook": "Look at the top of the letters.", "caption": "Gupta-period inscriptions often have small head marks on each letter; centuries later these joined into the continuous top line of Devanagari. It is a quick clue to date an inscription."},
+      {"angle": "offer", "hook": "From Brahmi to Sharada in one lecture.", "caption": "Our scripts lecture traces how India's letters changed over 1,500 years, with a hands-on Brahmi workshop and a Sharada course to follow. For schools, colleges and adult groups."}
+    ],
+    "reel": "The letter 'ka' morphs on screen from Brahmi to Gupta to Siddhamatrika to Sharada to Devanagari, with a date under each. On-screen line: 'One letter, fifteen centuries.' End card: 'India's scripts, a lecture for your group.'",
+    "hashtags": ["#AncientScripts", "#IndianScripts", "#Brahmi", "#Kharosthi", "#SharadaScript", "#IndusScript", "#Epigraphy", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "India's ancient scripts, from the Indus to Nagari",
+  "og_description": "How India wrote, from the undeciphered Indus signs to Brahmi, Sharada, Grantha and Nagari."
+}

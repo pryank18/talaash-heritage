@@ -1,0 +1,118 @@
+{
+  "slug": "heritage-walk-in-mysuru",
+  "type": "city",
+  "pillar": "heritage",
+  "title": "Heritage walk in Mysuru: the palace, the markets and Srirangapatna",
+  "seo_title": "Heritage Walk in Mysuru: Historical Places and Routes",
+  "meta_description": "Plan a heritage walk in Mysuru: Mysore Palace, Devaraja Market, Chamundi Hill, Srirangapatna and Somanathapura, with museums and routes for schools.",
+  "keywords": ["heritage walk in mysuru", "heritage walk in mysore", "historical places in mysuru", "heritage sites in mysuru", "museums in mysuru", "mysuru heritage walk for schools", "mysore palace guided tour", "srirangapatna heritage walk", "somanathapura temple visit"],
+  "summary": "A heritage walk in Mysuru (Mysore) covers the Wodeyar capital rebuilt after 1799: Mysore Palace, finished in 1912, the Devaraja Market and the civic buildings around it. Most groups add Srirangapatna, Tipu Sultan's island capital 15 km away, and the Hoysala temple at Somanathapura, which needs a vehicle and about an hour by road.",
+  "city": "Mysuru",
+  "state": "Karnataka",
+  "sections": [
+    {
+      "h2": "Why Mysuru matters for heritage",
+      "paras": [
+        "The Wodeyar kings of Mysore ruled from Mysuru from the late 14th century, moved their capital to Srirangapatna in 1610, and lost real power to Hyder Ali and his son Tipu Sultan in the 1760s. After Tipu's death in 1799 the British restored the Wodeyars and the capital returned to Mysuru. The present city, with its broad roads, circles, palaces and public buildings, is largely the work of the late 19th and early 20th centuries, when Mysore was known as a well-run princely state.",
+        "That makes Mysuru a good place to study how an Indian court used architecture to present itself as both traditional and modern. The Dasara procession, the palace durbar hall and the city plan all served that purpose."
+      ]
+    },
+    {
+      "h2": "Historical places in and around Mysuru by period",
+      "paras": [
+        "Some of the oldest evidence is outside the city. Somanathapura's Keshava Temple was built in 1268 under the Hoysalas, and inscriptions on Chamundi Hill and around Srirangapatna go back many centuries. Srirangapatna's Ranganathaswamy Temple has origins in the Ganga and Hoysala periods, with Vijayanagara additions.",
+        "Srirangapatna is the 18th century layer: Tipu Sultan's fort, the Jama Masjid of 1784, the Daria Daulat Bagh summer palace (1784) and the Gumbaz where Hyder Ali and Tipu are buried. The 1799 siege ended Tipu's rule. Mysuru's own monuments are mainly later: the palace (1897 to 1912, by Henry Irwin), Jaganmohan Palace (1861), the Devaraja Market and Crawford Hall of the University of Mysore."
+      ],
+      "table": {
+        "head": ["Period", "Examples"],
+        "rows": [
+          ["Hoysala, 12th to 13th century", "Keshava Temple, Somanathapura"],
+          ["Vijayanagara and early Wodeyar", "Ranganathaswamy Temple additions, Chamundeshwari Temple tradition"],
+          ["Hyder Ali and Tipu Sultan", "Srirangapatna fort, Daria Daulat Bagh, Gumbaz, Jama Masjid"],
+          ["Later Wodeyar, 1799 to 1947", "Mysore Palace, Jaganmohan Palace, Devaraja Market, Lalitha Mahal"]
+        ]
+      }
+    },
+    {
+      "h2": "What you see on a heritage walk in Mysuru",
+      "paras": [
+        "Inside the palace, look at the Kalyana Mantapa with its stained glass ceiling and the paintings of the Dasara procession, which record the order of the parade around 1930. The architecture mixes Hindu, Mughal, Rajput and Gothic forms, the style historians call Indo-Saracenic. Outside the gates, the Devaraja Market sells flowers, betel leaves and kumkum in an arcaded building whose 19th century structure has been the subject of conservation debate.",
+        "At Srirangapatna the story is military and political. The Daria Daulat Bagh's painted walls show the Battle of Pollilur (1780), where Hyder Ali and Tipu defeated a British force. Students can see where the walls were breached in 1799 and where Tipu's body was found.",
+        "At Somanathapura, the star-shaped plan, lathe-turned pillars and signed sculpture panels make the Keshava Temple one of the best places to teach Hoysala architecture. The [lecture on reading a temple](how-to-read-a-temple.html) prepares groups well, and Somanathapura is close in style to Belur and Halebidu, inscribed by UNESCO in 2023."
+      ]
+    },
+    {
+      "h2": "Museums in Mysuru",
+      "paras": [
+        "Jaganmohan Palace houses the Jayachamarajendra Art Gallery, with paintings by Raja Ravi Varma and traditional Mysore paintings. The Regional Museum of Natural History and the Folklore Museum at the University of Mysore (in Jayalakshmi Vilas) add other angles. The Daria Daulat Bagh at Srirangapatna has a small museum on Tipu's period. For a focused session, a [museum gallery study with an archaeologist](museum-morning-with-an-archaeologist.html) works in any of these."
+      ]
+    },
+    {
+      "h2": "Mysuru heritage walk for schools and colleges",
+      "paras": [
+        "For schools, a two-day plan works well: the palace and market on day one, Srirangapatna and Somanathapura by bus on day two. It covers the Anglo-Mysore wars, princely states and Hoysala art in one trip. Colleges in architecture and history can add the Hoysala sites further north.",
+        "We plan Mysuru walks with you, sized to your group and your time. The [south India temple architecture study tour](south-india-temple-architecture.html) and a [study tour built for your group](a-study-tour-built-for-your-group.html) can include Mysuru, Belur, Halebidu and Hampi."
+      ]
+    },
+    {
+      "h2": "Practical advice for groups",
+      "paras": [
+        "The palace is crowded on weekends and during Dasara (September or October), when it is lit up in the evenings. Photography rules inside the palace change, so check before you go. Srirangapatna's monuments are spread across the island; use a bus and walk between clusters. Check the ASI or site website for timings. For the wider state, see [heritage sites in Karnataka](heritage-sites-in-karnataka.html)."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Mysore Palace", "period": "1897 to 1912", "note": "Rebuilt after a fire, designed by Henry Irwin. See the Kalyana Mantapa and the Dasara procession paintings."},
+    {"name": "Devaraja Market", "period": "Late 19th century", "note": "Arcaded market near the palace. A good place to talk about everyday trade and conservation of working buildings."},
+    {"name": "Jaganmohan Palace", "period": "1861", "note": "Used by the royal family while the main palace was rebuilt. Now an art gallery."},
+    {"name": "Crawford Hall", "period": "Early 20th century", "note": "Administrative building of the University of Mysore, founded in 1916."},
+    {"name": "St Philomena's Church", "period": "1936 to 1956", "note": "Neo-Gothic church with tall twin spires, built with royal support."},
+    {"name": "Chamundi Hill", "period": "Temple tradition centuries old, gopuram 19th century", "note": "The Chamundeshwari Temple and a 17th century monolithic Nandi on the steps. Reached by vehicle."},
+    {"name": "Srirangapatna Fort", "period": "18th century", "note": "Tipu Sultan's island fortress. Look for the breach point of 1799 and the dungeons."},
+    {"name": "Ranganathaswamy Temple, Srirangapatna", "period": "9th century origins, later additions", "note": "Vaishnava temple at the heart of the island town, older than the fort around it."},
+    {"name": "Jama Masjid, Srirangapatna", "period": "1784", "note": "Mosque built by Tipu Sultan with two tall minarets and Persian inscriptions."},
+    {"name": "Daria Daulat Bagh", "period": "1784", "note": "Tipu's summer palace in teak, with painted walls showing the Battle of Pollilur."},
+    {"name": "Gumbaz", "period": "1784", "note": "Mausoleum of Hyder Ali, his wife and Tipu Sultan, with lacquered doors inlaid with ivory."},
+    {"name": "Keshava Temple, Somanathapura", "period": "1268", "note": "Hoysala temple on a star-shaped plan, with three shrines and signed sculpture panels."}
+  ],
+  "routes": [
+    {"name": "Palace and market on foot", "length": "About 3 hours", "stops": ["Mysore Palace", "Devaraja Market", "Jaganmohan Palace", "Crawford Hall"]},
+    {"name": "Srirangapatna island", "length": "Half day, vehicle needed between clusters", "stops": ["Srirangapatna Fort", "Ranganathaswamy Temple, Srirangapatna", "Jama Masjid, Srirangapatna", "Daria Daulat Bagh", "Gumbaz"]},
+    {"name": "Somanathapura and Chamundi Hill", "length": "Half day by vehicle", "stops": ["Keshava Temple, Somanathapura", "Chamundi Hill"]}
+  ],
+  "museums": [
+    {"name": "Jayachamarajendra Art Gallery, Jaganmohan Palace", "note": "Raja Ravi Varma paintings, Mysore paintings and court objects."},
+    {"name": "Folklore Museum, University of Mysore", "note": "Folk objects, puppets and crafts in Jayalakshmi Vilas Mansion."},
+    {"name": "Daria Daulat Bagh Museum", "note": "Tipu Sultan's period objects and paintings at Srirangapatna."}
+  ],
+  "best_time": "October to February. Dasara (September or October) is spectacular but very crowded; plan school groups outside the festival week.",
+  "faq": [
+    {"q": "What are the main historical places in Mysuru?", "a": "Mysore Palace, Jaganmohan Palace, the Devaraja Market, St Philomena's Church and Chamundi Hill in the city, with Srirangapatna (15 km) and the Keshava Temple at Somanathapura (about 35 km) as day trips."},
+    {"q": "When was Mysore Palace built?", "a": "The present palace was built between 1897 and 1912, designed by the British architect Henry Irwin, after the earlier wooden palace burned in 1897."},
+    {"q": "Is Somanathapura part of the UNESCO Hoysala listing?", "a": "Yes. The Sacred Ensembles of the Hoysalas, inscribed in 2023, include the temples at Belur, Halebidu and Somanathapura."},
+    {"q": "How many days do school groups need in Mysuru?", "a": "Two days is comfortable: the palace and market on one, Srirangapatna and Somanathapura by bus on the other. One day is possible if you drop Somanathapura."}
+  ],
+  "related_programmes": ["south-india-temple-architecture.html", "how-to-read-a-temple.html", "museum-morning-with-an-archaeologist.html", "a-study-tour-built-for-your-group.html", "temple-sculpture-iconography.html", "deccan-temple-forms-vesara-debates.html"],
+  "related_guides": ["heritage-sites-in-karnataka", "heritage-walk-in-bengaluru", "heritage-walk-in-hampi", "indian-temple-architecture", "forts-of-india", "unesco-world-heritage-sites-in-india"],
+  "bundle": {"title": "Palace to Hoysala temple", "pitch": "A temple sculpture lecture before the trip, then the palace walk and a day at Srirangapatna and Somanathapura with the same archaeologist.", "items": ["temple-sculpture-iconography.html", "south-india-temple-architecture.html"]},
+  "audience_hooks": ["Schools: a two-day trip across the palace, Srirangapatna and Somanathapura.", "Colleges: Hoysala temple analysis for architecture and history students.", "Travellers: a private day in Mysuru and Srirangapatna with an archaeologist."],
+  "sem": {
+    "ad_group": "Heritage walk Mysuru",
+    "keywords": ["heritage walk in mysuru", "heritage walk in mysore", "mysore heritage tour for schools", "srirangapatna guided tour", "somanathapura guided visit", "mysore palace tour with historian", "private heritage tour mysore"],
+    "negatives": ["free", "pdf", "essay", "jobs", "palace tickets", "wikipedia"],
+    "headlines": ["Heritage Walk in Mysuru", "Palace to Srirangapatna", "Walk With an Archaeologist", "For Schools and Colleges", "Arranged on Request"],
+    "descriptions": ["Mysuru heritage walks led by archaeologists and historians, in English or Hindi.", "For schools, colleges, companies and private groups. Share your dates and group size."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Mysore Palace is younger than the Eiffel Tower.", "caption": "The present palace was finished in 1912, after a fire in 1897 destroyed the older wooden one. Its style is a deliberate blend, built to present a modern princely state."},
+      {"angle": "tip", "hook": "At Somanathapura, look for the sculptors' names.", "caption": "Many panels on the Keshava Temple carry the signature of the artist who carved them. Ask your guide to point out Mallitamma's name."},
+      {"angle": "offer", "hook": "Mysuru, Srirangapatna and Somanathapura with an archaeologist.", "caption": "We arrange heritage walks and day trips for schools, colleges and private groups, in English or Hindi."}
+    ],
+    "reel": "A slow pan across the Daria Daulat Bagh battle mural, cut to the Somanathapura star plan from above. On-screen line: 'Three centuries in one day out of Mysuru.' End card: 'Arranged on request.'",
+    "hashtags": ["#Mysuru", "#Mysore", "#MysorePalace", "#Srirangapatna", "#Hoysala", "#HeritageWalk", "#KarnatakaHeritage", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Mysuru and Srirangapatna with an archaeologist",
+  "og_description": "A royal palace, Tipu Sultan's island capital and a signed Hoysala temple, in one well-planned trip.",
+  "cta": "We arrange Mysuru heritage walks on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi, with other languages through partners."
+}

@@ -1,0 +1,79 @@
+{
+  "slug": "rock-art-in-india",
+  "type": "explainer",
+  "pillar": "archaeology",
+  "title": "Rock art in India: Bhimbetka and beyond",
+  "seo_title": "Rock Art in India: Bhimbetka, Major Sites and How to Read It",
+  "meta_description": "Rock art in India explained: paintings and engravings from Bhimbetka to Ladakh, how they are dated, what they show, and how to look at a painted shelter.",
+  "keywords": ["rock art in india", "rock paintings in india", "bhimbetka rock paintings", "prehistoric rock art india", "rock art sites in india", "petroglyphs in india", "cave paintings in india", "rock shelters of bhimbetka"],
+  "summary": "Rock art in India includes paintings and engravings on rock surfaces, made over thousands of years from the Stone Age into recent centuries. India has one of the world's largest concentrations, with major clusters in central India around Bhimbetka, as well as sites in the Deccan, the south, Odisha and Ladakh. It shows animals, hunting, dance, daily life and symbols.",
+  "sections": [
+    {
+      "h2": "What is rock art?",
+      "paras": [
+        "Rock art is any image made on natural rock: on cliff faces, boulders or the walls and ceilings of rock shelters. It comes in two main forms. Pictographs are paintings, usually in red or white, sometimes in other colours. Petroglyphs are engravings, made by pecking, scratching or bruising the rock surface.",
+        "In India most rock art is found in rock shelters, natural overhangs in sandstone and other rocks that gave people protection from rain and sun. The term cave painting is often used loosely, but most Indian rock art is in shallow shelters rather than deep caves, and it is quite different from the painted Buddhist caves of Ajanta, which belong to a later architectural tradition covered in our guide to [Buddhist caves in India](buddhist-caves-in-india.html)."
+      ]
+    },
+    {
+      "h2": "Bhimbetka: India's best-known rock art site",
+      "paras": [
+        "Bhimbetka, in the Vindhyan hills south of Bhopal in Madhya Pradesh, holds hundreds of rock shelters, many of them painted. V. S. Wakankar recognised the importance of the site in 1957, and it was inscribed as a UNESCO World Heritage Site in 2003.",
+        "Excavations in the shelters found long sequences of stone tools, from the Lower Palaeolithic through the Mesolithic, showing people used the area for a very long time. The paintings include many phases, with later images often painted over earlier ones. Hunting scenes, animals such as bison, deer and elephants, dancers and, in later phases, riders on horses and elephants with weapons all appear.",
+        "Bhimbetka also has some of the oldest known rock markings in India: cupules (small cup-shaped hollows pounded into rock) in the Auditorium Cave, thought to be associated with Lower Palaeolithic tools, though their exact age is debated. A visit with an archaeologist to [Bhimbetka's painted shelters](bhimbetka-painted-shelters-and-prehistoric-landscapes.html) helps you read the overlapping layers of images."
+      ]
+    },
+    {
+      "h2": "Other major rock art regions in India",
+      "paras": [
+        "Rock art is found in most Indian states, but some regions are especially rich."
+      ],
+      "list": [
+        "Central India: the Raisen, Sehore and Narmadapuram (Hoshangabad) areas of Madhya Pradesh, including Bhimbetka and the Pachmarhi hills.",
+        "Chambal and Kaimur ranges: shelters in Rajasthan, Uttar Pradesh and Bihar, including the Mirzapur area, where early surveys of Indian rock art took place.",
+        "Deccan and the south: painted and engraved sites in Karnataka and Andhra Pradesh, including around Hampi and the Kurnool region, and the Edakkal caves in Wayanad, Kerala, with engravings.",
+        "Odisha and Jharkhand: painted shelters in the Sundargarh area of Odisha and in the Hazaribagh area of Jharkhand.",
+        "Ladakh and Kashmir: petroglyphs on boulders along the Indus and its tributaries, showing ibex, hunters and symbols, made across a long span of time.",
+        "Konkan: large engravings on laterite plateaus in Ratnagiri and Sindhudurg districts of Maharashtra, and in Goa, drawing new research attention in recent years."
+      ]
+    },
+    {
+      "h2": "How old is Indian rock art? Dating the images",
+      "paras": [
+        "Dating rock art is notoriously difficult. Most Indian paintings use mineral pigments such as red and yellow ochre and white kaolin, which contain no carbon that radiocarbon can date. Archaeologists therefore use indirect methods.",
+        "The order of superimposition shows which images are earlier and which later in a single shelter. Style and subject also help: scenes of horse riders, chariots or iron weapons must date from periods when these were known. Stone tools and ochre pieces found in excavated shelter floors give a broad date for the use of the shelter. Scientific methods applied to mineral crusts that form over the paint can sometimes give a minimum age. Our guide to [how archaeologists date artifacts](how-archaeologists-date-artifacts.html) explains these methods more generally.",
+        "The safest summary is that Indian rock art spans an enormous period, with many images belonging to the Mesolithic and later, and that the oldest claims remain under study."
+      ]
+    },
+    {
+      "h2": "What the paintings show",
+      "paras": [
+        "The earliest phases at many central Indian sites are dominated by large animals, sometimes filled with patterns. Later phases show people hunting with bows and spears, gathering honey, dancing in lines, carrying children and burying the dead. Still later images show horse and elephant riders, battles and, in historic periods, symbols and short inscriptions.",
+        "Interpretation needs care. Some scholars connect certain images with rituals or beliefs, while others focus on what they show about animals and environment. Several Adivasi communities in central India continue to paint walls today, and researchers have looked at those living traditions cautiously as one possible source of insight, not as direct proof of ancient meaning."
+      ]
+    },
+    {
+      "h2": "Looking at rock art responsibly",
+      "paras": [
+        "Rock art is fragile. Touching paintings transfers oils, wetting them to improve photographs damages pigment, and graffiti has ruined many panels. Stay behind barriers where they exist, avoid flash and never chalk or trace over images.",
+        "The best way to understand a painted shelter is to learn what to look for before you arrive. Our lecture on [rock art of India](rock-art-of-india.html) prepares groups for a visit, and the [prehistory field school](prehistory-field-workshop.html) adds the stone tools and excavated evidence that give the paintings their context."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "Which is the oldest rock art in India?", "a": "The oldest proposed rock markings in India are cupules at Bhimbetka and at Daraki-Chattan in Madhya Pradesh, associated by some researchers with Lower Palaeolithic tools, though their age is debated. Most paintings that can be dated with reasonable confidence are from the Mesolithic period onward."},
+    {"q": "Why is Bhimbetka famous?", "a": "Bhimbetka has hundreds of rock shelters, many painted, and a long sequence of human use from the Palaeolithic onward, shown by stone tools found in excavation. Its paintings span many periods and show hunting, animals, dance and later warfare. It was inscribed as a UNESCO World Heritage Site in 2003."},
+    {"q": "What colours were used in Indian rock paintings?", "a": "Red and white are the most common colours. Red came from haematite and red ochre, white from kaolin or limestone, and yellow from yellow ochre. Green and other colours occur occasionally. The pigments were probably ground and mixed with water or another binder and applied with fingers, brushes or fibres."},
+    {"q": "Who discovered Bhimbetka?", "a": "The archaeologist V. S. Wakankar identified the significance of the Bhimbetka shelters in 1957, and later led surveys and excavations there. Local communities had always known the shelters, and earlier references exist, but Wakankar's work brought them to scholarly attention."},
+    {"q": "Is rock art the same as cave painting?", "a": "Not exactly. Rock art includes both paintings and engravings on any rock surface, including open boulders and rock shelters. Cave painting refers to images in caves. In India most prehistoric paintings are in shallow rock shelters, while painted caves such as Ajanta belong to later, built or rock-cut traditions."}
+  ],
+  "related_programmes": ["rock-art-of-india.html", "bhimbetka-painted-shelters-and-prehistoric-landscapes.html", "prehistory-field-workshop.html", "bhimbetka-bhojpur-art-stone-and-landscape.html", "central-india-rock-art-and-buddhist-archaeology.html", "stone-tools-up-close.html"],
+  "related_guides": ["stone-age-in-india", "famous-archaeological-sites-in-india", "how-archaeologists-date-artifacts", "archaeology-in-india", "tribes-of-india", "unesco-world-heritage-sites-in-india"],
+  "bundle": {"title": "From classroom to shelter", "pitch": "A lecture on Indian rock art prepares the eye, and a guided day at Bhimbetka lets the group find the same images and layers on the rock.", "items": ["rock-art-of-india.html", "bhimbetka-painted-shelters-and-prehistoric-landscapes.html"]},
+  "audience_hooks": ["Schools: a rock art lecture with images to identify, online or at your school.", "Colleges: a prehistory field school combining stone tools and rock art.", "Travellers: a private journey through central India's rock art and Buddhist sites."],
+  "sem": {"ad_group": "Rock art tours and lectures", "keywords": ["bhimbetka guided tour", "rock art tour madhya pradesh", "bhimbetka visit with archaeologist", "rock art lecture for students", "prehistory field school india", "central india archaeology tour"], "negatives": ["free", "pdf", "drawing", "easy painting", "class 6 notes", "wallpaper"], "headlines": ["Bhimbetka with an Expert", "Rock Art of India Lecture", "Prehistory Field School", "Guided Visits for Groups", "Central India Study Tours"], "descriptions": ["Learn to read India's rock paintings, then see them at Bhimbetka with an archaeologist.", "Lectures, field schools and guided visits planned for schools, colleges and groups."]},
+  "social": {"posts": [{"angle": "fact", "hook": "Many Bhimbetka paintings are painted over older ones.", "caption": "Layer by layer, different groups added images to the same shelter walls over thousands of years. Reading the order of the layers is how archaeologists sort early from late."}, {"angle": "tip", "hook": "At a painted shelter, step back before you step in.", "caption": "Look at the whole panel first and find the largest animals, then the smaller human figures. Avoid flash and never touch or wet the paint."}, {"angle": "offer", "hook": "Planning a trip to Bhimbetka?", "caption": "We run a rock art lecture before the visit and a guided day at the shelters with an archaeologist, for schools, colleges and private groups."}], "reel": "Slow pan across a painted shelter wall, pausing on a bison, then a line of dancers, then a horse rider. On-screen line: 'Three periods, one wall.' End card: 'Read rock art with an archaeologist.'", "hashtags": ["#RockArt", "#Bhimbetka", "#PrehistoricArt", "#IndianArchaeology", "#MadhyaPradesh", "#StoneAge", "#UNESCOWorldHeritage", "#TalaashHeritage"]},
+  "og_title": "Rock art in India: reading Bhimbetka's painted walls",
+  "og_description": "Hunters, dancers and riders painted over thousands of years: how to see and understand India's rock art.",
+  "cta": "Talaash Heritage gives a rock art lecture and leads guided visits to Bhimbetka and other central Indian shelters, arranged on request for groups."
+}

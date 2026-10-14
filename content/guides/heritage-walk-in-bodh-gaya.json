@@ -1,0 +1,116 @@
+{
+  "slug": "heritage-walk-in-bodh-gaya",
+  "type": "city",
+  "pillar": "heritage",
+  "title": "Heritage walk in Bodh Gaya: the Mahabodhi Temple and the monasteries",
+  "seo_title": "Heritage Walk in Bodh Gaya: Mahabodhi Temple and Museums",
+  "meta_description": "Plan a heritage walk in Bodh Gaya: the Mahabodhi Temple, Bodhi tree, railings, international monasteries, the ASI museum and Sujata Stupa, with tips.",
+  "keywords": ["heritage walk in bodh gaya", "historical places in bodh gaya", "heritage sites in bodh gaya", "museums in bodh gaya", "bodh gaya heritage walk for schools", "mahabodhi temple history", "bodh gaya archaeological museum", "sujata stupa", "buddhist heritage tour bihar"],
+  "summary": "A heritage walk in Bodh Gaya centres on the Mahabodhi Temple complex, a UNESCO World Heritage Site since 2002, where the Buddha is said to have attained enlightenment. The walk covers the temple, the Bodhi tree and the Vajrasana, the early stone railings, the ASI museum, the international monasteries and, across the Niranjana river, the Sujata Stupa.",
+  "city": "Bodh Gaya",
+  "state": "Bihar",
+  "sections": [
+    {
+      "h2": "Why Bodh Gaya matters for Indian heritage",
+      "paras": [
+        "Bodh Gaya is the most important place in the Buddhist world: the site where Siddhartha Gautama is said to have attained enlightenment, around the 5th century BCE. Ashoka is credited with building the first shrine here in the 3rd century BCE. The temple that stands now dates in its core to around the 5th to 6th century CE, with many later repairs, and is one of the earliest brick temples in India still standing.",
+        "The site also has a modern history worth teaching: its decline after the 13th century, its restoration in the 1880s under Alexander Cunningham and J. D. Beglar, the campaign by Anagarika Dharmapala from 1891 for Buddhist control of the temple, and the Bodh Gaya Temple Act of 1949, which set up a joint management committee. Our explainer on [Ashoka and his edicts](ashoka-and-his-edicts.html) gives the early background."
+      ]
+    },
+    {
+      "h2": "Historical places in Bodh Gaya by period",
+      "paras": [
+        "The oldest surviving pieces are parts of the stone railing around the temple, from about the 1st century BCE (Shunga period), with later Gupta period railings in granite; many originals are now in the site museum and in Kolkata, with replicas on site. The Vajrasana, a stone throne slab, marks the place of enlightenment. The present Bodhi tree is believed to descend from the original through cuttings.",
+        "Pilgrims from Sri Lanka, Myanmar, China and Tibet recorded visits through the 1st millennium CE, and Burmese missions repaired the temple in the 11th to 13th centuries and again in the 19th. From the 20th century, Buddhist countries built monasteries around the temple, so modern Bodh Gaya is a living museum of Asian Buddhist architecture."
+      ],
+      "table": {
+        "head": ["Period", "Examples"],
+        "rows": [
+          ["Mauryan, 3rd century BCE", "Tradition of Ashoka's first shrine, Vajrasana"],
+          ["Shunga and Gupta", "Sandstone and granite railings, temple core about 5th to 6th century CE"],
+          ["Pala and Burmese repairs", "Votive stupas, sculpture, 11th to 13th century restorations"],
+          ["Modern", "1880s restoration, international monasteries, Great Buddha Statue (1989)"]
+        ]
+      }
+    },
+    {
+      "h2": "What you see on a heritage walk in Bodh Gaya",
+      "paras": [
+        "Inside the complex, walk the circumambulatory paths and stop at the Bodhi tree, the Vajrasana, the Animeshlochana Chaitya (where the Buddha is said to have gazed at the tree for a week), the Chankramana (the jewel walk) and the Lotus Tank. Look closely at the railing replicas, then compare them with the originals in the museum. The rows of small votive stupas around the temple were given by pilgrims over centuries. The [reading sculpture session](reading-sculpture.html) helps students identify scenes and figures.",
+        "Outside, walk past the Thai, Tibetan, Bhutanese, Japanese and Myanmar monasteries, each built in its own national style. Across the Niranjana (Phalgu) river, Bakraur village has the Sujata Stupa, an excavated brick stupa associated with the woman who offered the Buddha a meal of milk and rice."
+      ]
+    },
+    {
+      "h2": "Museums in Bodh Gaya",
+      "paras": [
+        "The ASI Archaeological Museum holds original railing pillars and crossbars, Pala bronzes and stone sculpture. The Gaya museum adds regional material. A [museum gallery study with an archaeologist](museum-morning-with-an-archaeologist.html) at the ASI museum is the best way for groups to see the original railings before walking the complex."
+      ]
+    },
+    {
+      "h2": "Bodh Gaya heritage walk for schools and colleges",
+      "paras": [
+        "We arrange Bodh Gaya visits for each group, usually as part of a Bihar circuit with Rajgir and Nalanda. Our programme [Nalanda: monastic university landscape](nalanda-monastic-university-landscape.html) is about 80 km away by road, and Rajgir lies in between. For travel, a [study tour built for your group](a-study-tour-built-for-your-group.html) can link Bodh Gaya, Rajgir, Nalanda and Patna; the [introductory Pali course](pali-a-first-course.html) suits students who want to read early Buddhist texts. See also [heritage sites in Bihar](heritage-sites-in-bihar.html)."
+      ]
+    },
+    {
+      "h2": "Practical advice for groups",
+      "paras": [
+        "The temple is an active place of worship and meditation. Shoes are removed at the entrance, and visitors should keep their voices low. Mobile phones are generally not allowed inside the complex and cameras may need a separate permit, so check current rules with the Bodhgaya Temple Management Committee before you go. The peak pilgrimage season, roughly December to February, is busy, especially during Tibetan teaching events. Gaya airport and railway station are about 15 km away."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Mahabodhi Temple", "period": "Core about 5th to 6th century CE, later restorations", "note": "Brick temple with a tall pyramidal tower and four corner towers. One of the earliest brick temples standing in India."},
+    {"name": "Bodhi tree", "period": "Descendant of the original", "note": "The tree under which the Buddha is said to have meditated, behind the temple."},
+    {"name": "Vajrasana", "period": "Tradition 3rd century BCE", "note": "The stone seat of enlightenment between the tree and the temple wall."},
+    {"name": "Stone railings", "period": "About 1st century BCE and Gupta period", "note": "Replica railings on site; originals in the museum. Look for medallions and narrative scenes."},
+    {"name": "Animeshlochana Chaitya", "period": "Later shrine on traditional site", "note": "Marks where the Buddha is said to have stood gazing at the tree for a week."},
+    {"name": "Chankramana", "period": "Tradition early, platform later", "note": "Raised walkway with stone lotuses marking the Buddha's walking meditation."},
+    {"name": "Lotus Tank", "period": "Traditional site", "note": "Tank south of the temple, linked to the sixth week after enlightenment."},
+    {"name": "ASI Archaeological Museum", "period": "Collection 1st century BCE onwards", "note": "Original railing pillars and Pala sculpture."},
+    {"name": "Royal Thai Monastery", "period": "1957", "note": "First of the national monasteries, in Thai temple style with a curved roof."},
+    {"name": "Tibetan monastery", "period": "20th century", "note": "Monastery with a large prayer wheel and painted interiors."},
+    {"name": "Great Buddha Statue", "period": "1989", "note": "Large seated Buddha built by a Japanese sect, a modern landmark."},
+    {"name": "Sujata Stupa", "period": "Brick stupa, about 2nd century BCE onwards", "note": "Excavated stupa at Bakraur across the river. Short drive or walk across the bridge."}
+  ],
+  "routes": [
+    {"name": "The Mahabodhi complex", "length": "About 2 hours", "stops": ["Mahabodhi Temple", "Bodhi tree", "Vajrasana", "Stone railings", "Animeshlochana Chaitya", "Chankramana", "Lotus Tank"]},
+    {"name": "Museum and monasteries", "length": "About 2.5 hours on foot", "stops": ["ASI Archaeological Museum", "Royal Thai Monastery", "Tibetan monastery", "Great Buddha Statue"]},
+    {"name": "Across the river", "length": "About 1.5 hours, vehicle helpful", "stops": ["Sujata Stupa"]}
+  ],
+  "museums": [
+    {"name": "ASI Archaeological Museum, Bodh Gaya", "note": "Original railings, Pala bronzes and stone sculpture."},
+    {"name": "Gaya Museum", "note": "Regional sculpture and archaeological finds in Gaya town."},
+    {"name": "Nalanda Archaeological Museum", "note": "Finds from the Nalanda excavations, about 80 km away."}
+  ],
+  "best_time": "October to March. Summers are extremely hot, and December to February is peak pilgrimage season, so book early.",
+  "faq": [
+    {"q": "What are the main historical places in Bodh Gaya?", "a": "The Mahabodhi Temple complex with the Bodhi tree, Vajrasana and railings, the ASI Archaeological Museum, the national monasteries, the Great Buddha Statue and the Sujata Stupa at Bakraur."},
+    {"q": "How old is the Mahabodhi Temple?", "a": "Tradition links the first shrine to Ashoka in the 3rd century BCE. The present brick temple dates in its core to around the 5th to 6th century CE, with many later repairs, including major work in the 1880s."},
+    {"q": "Is Bodh Gaya a UNESCO World Heritage Site?", "a": "Yes. The Mahabodhi Temple Complex was inscribed in 2002. Nalanda Mahavihara, nearby in Bihar, was inscribed in 2016."},
+    {"q": "Can I combine Bodh Gaya with Nalanda and Rajgir?", "a": "Yes. Rajgir is about 70 km and Nalanda about 80 km by road. Most groups spend two or three days covering all three, with Patna as the start or end point."}
+  ],
+  "related_programmes": ["nalanda-monastic-university-landscape.html", "a-study-tour-built-for-your-group.html", "museum-morning-with-an-archaeologist.html", "reading-sculpture.html", "pali-a-first-course.html", "sanchi-stupas-gateways-and-buddhist-art.html", "central-india-rock-art-and-buddhist-archaeology.html"],
+  "related_guides": ["heritage-sites-in-bihar", "heritage-walk-in-patna", "ashoka-and-his-edicts", "buddhist-caves-in-india", "prakrit-and-pali", "unesco-world-heritage-sites-in-india"],
+  "bundle": {"title": "The Buddhist circuit in Bihar", "pitch": "A Pali taster session before you travel, then Bodh Gaya and the Nalanda programme on a short study tour through Bihar.", "items": ["pali-a-first-course.html", "nalanda-monastic-university-landscape.html", "a-study-tour-built-for-your-group.html"]},
+  "audience_hooks": ["Schools: a Mahabodhi walk with a museum session on the original railings.", "Colleges: Bodh Gaya, Rajgir and Nalanda on a study tour, with an introductory Pali course.", "Travellers: a private Buddhist circuit with an archaeologist."],
+  "sem": {
+    "ad_group": "Heritage walk Bodh Gaya",
+    "keywords": ["heritage walk in bodh gaya", "bodh gaya guided tour for schools", "buddhist circuit study tour bihar", "bodh gaya and nalanda tour", "mahabodhi temple guided visit", "private buddhist heritage tour bihar", "bodh gaya tour with archaeologist"],
+    "negatives": ["free", "pdf", "essay", "jobs", "hotel", "wikipedia"],
+    "headlines": ["Heritage Walk in Bodh Gaya", "With an Archaeologist", "Bodh Gaya and Nalanda", "For Schools and Colleges", "Arranged on Request"],
+    "descriptions": ["Bodh Gaya visits led by archaeologists and historians, in English or Hindi.", "For schools, colleges, companies and private groups. Share your dates and group size."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "The Mahabodhi Temple is one of India's oldest standing brick temples.", "caption": "Its core dates to about the 5th to 6th century CE. Burmese missions repaired it in the medieval period, and it was restored again in the 1880s."},
+      {"angle": "tip", "hook": "See the railings in the museum first.", "caption": "The railings around the temple are mostly replicas. The originals, carved around the 1st century BCE, are in the ASI museum next door. Visit them before the complex."},
+      {"angle": "offer", "hook": "Bodh Gaya and Nalanda with an archaeologist.", "caption": "We arrange Buddhist heritage visits in Bihar for schools, colleges and private groups, in English or Hindi."}
+    ],
+    "reel": "Dawn at the Mahabodhi Temple, monks circling, then a slow close-up of a railing medallion in the museum. On-screen line: 'Two thousand years of pilgrims, one tree.' End card: 'Bodh Gaya visits, arranged on request.'",
+    "hashtags": ["#BodhGaya", "#Mahabodhi", "#BuddhistHeritage", "#Bihar", "#UNESCO", "#Nalanda", "#HeritageWalk", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Bodh Gaya with an archaeologist",
+  "og_description": "The Mahabodhi Temple, its ancient railings and the monasteries of Asia, explained on foot.",
+  "cta": "We arrange Bodh Gaya heritage walks on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi, with other languages through partners."
+}

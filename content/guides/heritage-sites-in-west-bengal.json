@@ -1,0 +1,273 @@
+{
+  "slug": "heritage-sites-in-west-bengal",
+  "type": "state",
+  "pillar": "heritage",
+  "state": "West Bengal",
+  "title": "Heritage sites in West Bengal: Santiniketan, Bishnupur and Kolkata",
+  "seo_title": "Heritage Sites in West Bengal: Santiniketan and Bishnupur",
+  "meta_description": "Heritage sites in West Bengal: Santiniketan, the Darjeeling railway and Sundarbans (UNESCO), plus Bishnupur, Gaur, Pandua, Chandraketugarh and Kolkata.",
+  "keywords": [
+    "heritage sites in west bengal",
+    "historical places in west bengal",
+    "unesco sites in west bengal",
+    "ancient temples in west bengal",
+    "archaeological sites in west bengal",
+    "santiniketan unesco",
+    "bishnupur terracotta temples",
+    "gaur and pandua",
+    "chandraketugarh",
+    "darjeeling himalayan railway"
+  ],
+  "summary": "West Bengal shares in three UNESCO listings: Santiniketan (2023), the Darjeeling Himalayan Railway within the Mountain Railways of India, and the Sundarbans, a natural site. Its other heritage includes the terracotta temples of Bishnupur, the Sultanate cities of Gaur and Pandua, the early historic site of Chandraketugarh, Murshidabad, the European towns on the Hooghly and Kolkata.",
+  "sections": [
+    {
+      "h2": "Bengal's history in its monuments",
+      "paras": [
+        "Bengal's history is written in brick and clay, because the delta has little building stone. Early historic sites such as Chandraketugarh and Pandu Rajar Dhibi produced terracottas and pottery, the Pala kings of the 8th to 12th centuries supported great Buddhist monasteries, and from the 13th century the Bengal Sultans built mosques with curved cornices and brick ornament at Gaur and Pandua.",
+        "Later, the Malla kings of Bishnupur raised terracotta temples, the Nawabs ruled from Murshidabad, and Portuguese, Dutch, Danish, French and British traders founded towns along the Hooghly. Kolkata became the capital of British India until 1911. Our explainer on [indo-islamic architecture](indo-islamic-architecture.html) covers the Sultanate layer."
+      ]
+    },
+    {
+      "h2": "UNESCO World Heritage Sites in West Bengal",
+      "paras": [
+        "Santiniketan, inscribed in 2023, was founded by Rabindranath Tagore as an ashram school in 1901 and grew into Visva-Bharati. It is listed for its experiment in education and for buildings and murals by artists such as Nandalal Bose, Ramkinkar Baij and Benode Behari Mukherjee, which drew on Asian traditions and local materials.",
+        "The Darjeeling Himalayan Railway, opened in 1881, was the first of the Mountain Railways of India listed by UNESCO, in 1999. Its loops and zigzags climb to Darjeeling on a two-foot gauge. The Sundarbans National Park, listed in 1987, is a natural site, the mangrove delta home to the Bengal tiger. Our lecture [Culture and heritage](culture-and-heritage-what-we-inherit-and-why-it-matters.html) uses Santiniketan to explain why modern places can be world heritage."
+      ]
+    },
+    {
+      "h2": "Bishnupur and Bengal's temple styles",
+      "paras": [
+        "Bishnupur, in Bankura district, was the capital of the Malla kings, who built temples in the 17th and 18th centuries covered in terracotta panels showing epics, daily life, hunting and European ships. The Rasmancha, the Jor Bangla temple and the Shyam Rai temple are the best known. They use roof forms copied from Bengali thatched huts, such as the curved do-chala and the char-chala, and spires called ratnas.",
+        "Kalna, Baranagar near Azimganj and Antpur have more terracotta temples. Our lecture on [temple sculpture and iconography](temple-sculpture-iconography.html) helps students read the panels, and [Reading sculpture](reading-sculpture.html) teaches the basics."
+      ]
+    },
+    {
+      "h2": "Archaeological sites: Chandraketugarh to Gaur",
+      "paras": [
+        "Chandraketugarh, north-east of Kolkata, is an early historic site famous for its fine moulded terracotta plaques of the last centuries BCE and early centuries CE, many now in Kolkata's museums. Pandu Rajar Dhibi on the Ajay river revealed a Chalcolithic settlement. Mogalmari and Karnasubarna have Buddhist monasteries of the early medieval period.",
+        "Gaur and Pandua, near Malda, were the capitals of the Bengal Sultanate. The Adina Mosque at Pandua, built in the 1370s, was among the largest mosques in the subcontinent. At Gaur, the Baro Sona Masjid, Dakhil Darwaza, Firoz Minar and the Lattan Masjid with its glazed tiles survive. Murshidabad's Hazarduari Palace and Katra Masjid show the Nawabi period."
+      ]
+    },
+    {
+      "h2": "Kolkata and the Hooghly towns",
+      "paras": [
+        "Kolkata has the Victoria Memorial, St John's Church, Writers' Building, the old Chinese and Armenian quarters and the north Kolkata rajbaris with their courtyard thakurdalans. Upriver, Chinsurah was Dutch, Chandannagar French, Serampore Danish and Bandel Portuguese. Our [Kolkata heritage walk guide](heritage-walk-in-kolkata.html) suggests routes.",
+        "For a longer trip, our tour [Temples of eastern India](temples-of-eastern-india.html) covers Bengal alongside Odisha, and we build a [study tour for your group](a-study-tour-built-for-your-group.html) to Bishnupur, Santiniketan or Gaur."
+      ]
+    }
+  ],
+  "sites": [
+    {
+      "name": "Santiniketan",
+      "note": "Tagore's ashram school and university town, with murals and sculpture; UNESCO 2023.",
+      "unesco": true
+    },
+    {
+      "name": "Darjeeling Himalayan Railway",
+      "note": "Two-foot gauge hill railway opened in 1881; part of the Mountain Railways of India.",
+      "unesco": true
+    },
+    {
+      "name": "Sundarbans National Park",
+      "note": "Mangrove delta and tiger habitat; natural World Heritage Site since 1987.",
+      "unesco": true
+    },
+    {
+      "name": "Bishnupur temples",
+      "note": "17th and 18th century Malla terracotta temples, including Rasmancha and Jor Bangla.",
+      "unesco": false
+    },
+    {
+      "name": "Chandraketugarh",
+      "note": "Early historic site famous for moulded terracotta plaques.",
+      "unesco": false
+    },
+    {
+      "name": "Pandu Rajar Dhibi",
+      "note": "Chalcolithic settlement on the Ajay river.",
+      "unesco": false
+    },
+    {
+      "name": "Adina Mosque, Pandua",
+      "note": "Huge 1370s mosque of the Bengal Sultanate.",
+      "unesco": false
+    },
+    {
+      "name": "Gaur",
+      "note": "Sultanate capital with the Baro Sona Masjid, Dakhil Darwaza and Firoz Minar.",
+      "unesco": false
+    },
+    {
+      "name": "Hazarduari Palace, Murshidabad",
+      "note": "19th century palace and museum in the Nawabi capital.",
+      "unesco": false
+    },
+    {
+      "name": "Katra Masjid, Murshidabad",
+      "note": "Early 18th century mosque of Murshid Quli Khan.",
+      "unesco": false
+    },
+    {
+      "name": "Kalna temples",
+      "note": "Terracotta temples including the 108 Shiva temple circles.",
+      "unesco": false
+    },
+    {
+      "name": "Mogalmari",
+      "note": "Early medieval Buddhist monastery in Paschim Medinipur.",
+      "unesco": false
+    },
+    {
+      "name": "Victoria Memorial, Kolkata",
+      "note": "Marble memorial hall completed in 1921, now a museum.",
+      "unesco": false
+    },
+    {
+      "name": "Bandel Church",
+      "note": "Portuguese church on the Hooghly, founded in the late 16th century.",
+      "unesco": false
+    },
+    {
+      "name": "Chandannagar",
+      "note": "Former French settlement with a riverfront strand.",
+      "unesco": false
+    },
+    {
+      "name": "Serampore",
+      "note": "Former Danish town with Serampore College and St Olav's Church.",
+      "unesco": false
+    }
+  ],
+  "cities": [
+    "heritage-walk-in-kolkata"
+  ],
+  "museums": [
+    {
+      "name": "Indian Museum, Kolkata",
+      "note": "India's oldest museum, with the Bharhut railings and major sculpture."
+    },
+    {
+      "name": "Asutosh Museum of Indian Art, Kolkata",
+      "note": "Bengal terracottas, sculpture and folk art."
+    },
+    {
+      "name": "Victoria Memorial Hall",
+      "note": "Paintings and documents of colonial Kolkata."
+    },
+    {
+      "name": "Hazarduari Palace Museum, Murshidabad",
+      "note": "Arms, paintings and Nawabi objects."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How many UNESCO World Heritage Sites are in West Bengal?",
+      "a": "West Bengal shares in three listings: Santiniketan (2023), the Darjeeling Himalayan Railway as part of the Mountain Railways of India (1999), and the Sundarbans National Park (1987), which is a natural site."
+    },
+    {
+      "q": "Why is Bishnupur famous?",
+      "a": "Bishnupur is famous for the terracotta temples built by the Malla kings in the 17th and 18th centuries. Their walls are covered in clay panels showing epics, daily life and hunting, and their roofs copy Bengali thatched huts."
+    },
+    {
+      "q": "What are the main archaeological sites in West Bengal?",
+      "a": "Chandraketugarh for early historic terracottas, Pandu Rajar Dhibi for its Chalcolithic settlement, Mogalmari for a Buddhist monastery, and Gaur and Pandua for the monuments of the Bengal Sultanate."
+    },
+    {
+      "q": "Why is Santiniketan a World Heritage Site?",
+      "a": "Santiniketan was inscribed in 2023 as the place where Rabindranath Tagore built a school and then a university, Visva-Bharati, around ideas of education in nature and the unity of cultures. Its buildings and murals by Bengal artists are part of the listing."
+    }
+  ],
+  "related_programmes": [
+    "temples-of-eastern-india.html",
+    "a-study-tour-built-for-your-group.html",
+    "temple-sculpture-iconography.html",
+    "reading-sculpture.html",
+    "culture-and-heritage-what-we-inherit-and-why-it-matters.html",
+    "clay-and-the-past-a-pottery-workshop.html",
+    "cemeteries-epitaphs-and-public-memory.html"
+  ],
+  "related_guides": [
+    "heritage-walk-in-kolkata",
+    "indo-islamic-architecture",
+    "unesco-world-heritage-sites-in-india",
+    "traditional-crafts-of-india",
+    "heritage-sites-in-odisha",
+    "heritage-sites-in-bihar"
+  ],
+  "bundle": {
+    "title": "Clay country",
+    "pitch": "A pottery workshop shows how clay is worked and fired, then a sculpture session teaches students to read the terracotta panels of Bishnupur.",
+    "items": [
+      "clay-and-the-past-a-pottery-workshop.html",
+      "reading-sculpture.html"
+    ]
+  },
+  "audience_hooks": [
+    "Schools: a pottery workshop that explains Bengal's terracotta tradition.",
+    "Colleges: a temple sculpture and iconography lecture before a Bishnupur visit.",
+    "Travellers: the Temples of eastern India tour, or a private Santiniketan trip."
+  ],
+  "cta": "Our Temples of eastern India tour includes Bengal's terracotta temples, and we build custom study tours to Bishnupur, Santiniketan and Gaur.",
+  "sem": {
+    "ad_group": "West Bengal heritage tour",
+    "keywords": [
+      "west bengal heritage tour",
+      "bishnupur temple tour",
+      "santiniketan study tour",
+      "bengal terracotta temples tour",
+      "west bengal educational tour",
+      "gaur pandua heritage tour"
+    ],
+    "negatives": [
+      "free",
+      "pdf",
+      "map",
+      "jobs",
+      "wikipedia",
+      "hotel"
+    ],
+    "headlines": [
+      "West Bengal Heritage Tours",
+      "Bishnupur Terracotta Temples",
+      "Santiniketan Study Visits",
+      "Temples of Eastern India",
+      "Tours Built for Your Group"
+    ],
+    "descriptions": [
+      "Bishnupur, Santiniketan, Gaur and Kolkata, explained by heritage specialists.",
+      "Study tours and lectures for schools, colleges and private groups."
+    ]
+  },
+  "social": {
+    "posts": [
+      {
+        "angle": "fact",
+        "hook": "Bengal built its temples in clay.",
+        "caption": "With little stone in the delta, the Malla kings of Bishnupur covered temples in terracotta panels of epics, hunts and even European ships."
+      },
+      {
+        "angle": "tip",
+        "hook": "At Bishnupur, read one wall slowly.",
+        "caption": "Pick a single panel row at the Shyam Rai temple and follow it end to end. The scenes are arranged like a storyboard."
+      },
+      {
+        "angle": "offer",
+        "hook": "Bengal's temples with a specialist.",
+        "caption": "Our Temples of eastern India tour covers Bishnupur, and we build custom trips to Santiniketan and Gaur. Ask about dates."
+      }
+    ],
+    "reel": "Close-ups of Bishnupur terracotta panels, cut to a Santiniketan mural and the Darjeeling toy train. On-screen line: 'Clay, art and railways.' End card: 'West Bengal study tours, on request.'",
+    "hashtags": [
+      "#WestBengal",
+      "#Bishnupur",
+      "#Santiniketan",
+      "#Terracotta",
+      "#Kolkata",
+      "#UNESCO",
+      "#IndianHeritage",
+      "#BengalTemples"
+    ]
+  },
+  "og_title": "West Bengal: terracotta temples and Tagore's Santiniketan",
+  "og_description": "Bishnupur's clay temples, Sultanate Gaur, the Hooghly's European towns and UNESCO-listed Santiniketan."
+}

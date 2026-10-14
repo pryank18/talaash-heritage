@@ -1,0 +1,103 @@
+{
+  "slug": "heritage-sites-in-uttar-pradesh",
+  "type": "state",
+  "pillar": "heritage",
+  "state": "Uttar Pradesh",
+  "title": "Heritage sites in Uttar Pradesh: Taj Mahal, Sarnath and Varanasi",
+  "seo_title": "Heritage Sites in Uttar Pradesh: Taj, Sarnath and 4 UNESCO",
+  "meta_description": "Heritage sites in Uttar Pradesh: the Taj Mahal, Agra Fort, Fatehpur Sikri and Sarnath (UNESCO 2026), plus Varanasi, Lucknow, Mathura, Kaushambi and Kushinagar.",
+  "keywords": ["heritage sites in uttar pradesh", "historical places in uttar pradesh", "unesco sites in uttar pradesh", "ancient temples in uttar pradesh", "archaeological sites in uttar pradesh", "sarnath unesco", "taj mahal agra fort fatehpur sikri", "heritage of varanasi", "lucknow monuments", "buddhist sites in uttar pradesh"],
+  "summary": "Uttar Pradesh has four UNESCO World Heritage Sites: the Taj Mahal, Agra Fort, Fatehpur Sikri and the Ancient Buddhist Site of Sarnath, inscribed in July 2026. It also holds Varanasi's ghats, the Nawabi monuments of Lucknow, the sculpture of Mathura, the ancient cities of Kaushambi and Shravasti, Kushinagar, and the Gupta temple at Deogarh.",
+  "sections": [
+    {
+      "h2": "Why Uttar Pradesh is central to Indian history",
+      "paras": [
+        "The Ganga and Yamuna plains of Uttar Pradesh have been settled and farmed for thousands of years, and the state covers several of the sixteen mahajanapadas, including Kashi, Kosala and Vatsa. The Buddha gave his first sermon at Sarnath and died at Kushinagar. Mathura was a great centre of Kushan sculpture, and the Gupta temple at Deogarh is one of the earliest stone temples in north India.",
+        "Later, Agra was the Mughal capital under Akbar, Jahangir and Shah Jahan, and Lucknow became the seat of the Nawabs of Awadh in the 18th century. The 1857 uprising left its mark at Lucknow, Kanpur and Meerut. Our explainers on [major dynasties of ancient India](major-dynasties-of-ancient-india.html) and the [Mughal empire](mughal-empire.html) give the background."
+      ]
+    },
+    {
+      "h2": "The four UNESCO World Heritage Sites",
+      "paras": [
+        "Agra Fort and the Taj Mahal were among India's first World Heritage Sites, inscribed in 1983. The red sandstone fort was rebuilt by Akbar from 1565, with later marble palaces by Shah Jahan. The Taj Mahal, built by Shah Jahan as a tomb for Mumtaz Mahal from about 1632, is the most famous Mughal building. Fatehpur Sikri (1986), Akbar's short-lived capital of the 1570s and 1580s, keeps its palaces, Jama Masjid and the Buland Darwaza almost complete.",
+        "The Ancient Buddhist Site of Sarnath was inscribed in July 2026 at the 48th session of the World Heritage Committee in Busan, making it India's 45th World Heritage Site. It includes the Dhamekh stupa, the remains of monasteries and the stump of the Ashokan pillar, whose lion capital is now the national emblem and is shown in the site museum. See our [Agra heritage walk guide](heritage-walk-in-agra.html) and the programme [Fatehpur Sikri: Mughal urban vision](fatehpur-sikri-mughal-urban-vision.html)."
+      ]
+    },
+    {
+      "h2": "Varanasi, Sarnath and the Buddhist circuit",
+      "paras": [
+        "Varanasi's ghats, lanes and temples make it one of the oldest continuously lived-in cities in the world, with excavations at Rajghat showing occupation from about the early 1st millennium BCE. Our [Varanasi heritage walk guide](heritage-walk-in-varanasi.html) describes routes along the river.",
+        "Beyond Sarnath, the Buddhist sites of Uttar Pradesh include Shravasti, where the Buddha spent many rainy seasons at the Jetavana monastery, Kushinagar with its Mahaparinirvana temple and Ramabhar stupa, Kaushambi with its ramparts and Ghoshitarama monastery, and Sankisa. Our [Pali course](pali-a-first-course.html) is a good way to read the texts that name these places."
+      ]
+    },
+    {
+      "h2": "Ancient temples and sculpture",
+      "paras": [
+        "The Dashavatara temple at Deogarh in Lalitpur district, of about the 6th century, is one of the earliest surviving stone temples in north India, with famous panels of Vishnu on the serpent Shesha. Bhitargaon near Kanpur has a Gupta-period brick temple. Mathura's Government Museum holds the great collection of Kushan and Gupta sculpture made in the local red sandstone.",
+        "Later temples include those of Vrindavan, such as the 16th century Govinddev temple built under Raja Man Singh. Our lecture on [early structural temples](early-structural-temples.html) covers Deogarh and Bhitargaon in detail."
+      ]
+    },
+    {
+      "h2": "Lucknow, Prayagraj and colonial sites",
+      "paras": [
+        "Lucknow's Bara Imambara, built in 1784 with its vaulted hall and bhulbhulaiya, the Rumi Darwaza and the Chhota Imambara show Nawabi architecture at its height. The ruined Residency recalls the siege of 1857. Prayagraj (Allahabad) has an Ashokan pillar inside Akbar's fort, Khusrau Bagh and the Anand Bhawan museum. Jhansi fort is linked with Rani Lakshmibai.",
+        "Our city guides cover walks in [Lucknow](heritage-walk-in-lucknow.html) and [Prayagraj](heritage-walk-in-prayagraj.html), and the tour [Three capitals: Delhi, Agra and Jaipur](three-capitals-delhi-agra-and-jaipur.html) adds Agra to a north India itinerary."
+      ]
+    }
+  ],
+  "sites": [
+    {"name": "Taj Mahal, Agra", "note": "Shah Jahan's marble tomb for Mumtaz Mahal, begun about 1632; UNESCO 1983.", "unesco": true},
+    {"name": "Agra Fort", "note": "Akbar's red sandstone fort with Shah Jahan's marble palaces; UNESCO 1983.", "unesco": true},
+    {"name": "Fatehpur Sikri", "note": "Akbar's capital of the 1570s and 1580s, with Buland Darwaza and Jama Masjid; UNESCO 1986.", "unesco": true},
+    {"name": "Ancient Buddhist Site of Sarnath", "note": "Dhamekh stupa, monasteries and Ashokan pillar where the Buddha first taught; UNESCO 2026.", "unesco": true},
+    {"name": "Itmad-ud-Daulah's tomb, Agra", "note": "Early 17th century marble tomb with fine inlay, built by Nur Jahan.", "unesco": false},
+    {"name": "Akbar's tomb, Sikandra", "note": "Tomb of Akbar completed under Jahangir.", "unesco": false},
+    {"name": "Varanasi ghats", "note": "Riverfront of steps, temples and palaces along the Ganga.", "unesco": false},
+    {"name": "Kushinagar", "note": "Site of the Buddha's death, with the Mahaparinirvana temple and Ramabhar stupa.", "unesco": false},
+    {"name": "Shravasti", "note": "Jetavana monastery and the ancient city of Kosala.", "unesco": false},
+    {"name": "Kaushambi", "note": "Ancient capital of Vatsa with ramparts and the Ghoshitarama monastery.", "unesco": false},
+    {"name": "Dashavatara Temple, Deogarh", "note": "6th century Gupta stone temple with Vishnu panels.", "unesco": false},
+    {"name": "Bhitargaon Temple", "note": "Gupta-period brick temple near Kanpur.", "unesco": false},
+    {"name": "Bara Imambara, Lucknow", "note": "Nawabi imambara of 1784 with a vaulted hall and maze.", "unesco": false},
+    {"name": "The Residency, Lucknow", "note": "Ruined British Residency, scene of the 1857 siege.", "unesco": false},
+    {"name": "Allahabad Fort and Ashokan pillar, Prayagraj", "note": "Akbar's fort holding an Ashokan pillar with later inscriptions.", "unesco": false},
+    {"name": "Govinddev Temple, Vrindavan", "note": "16th century red sandstone temple built under Raja Man Singh.", "unesco": false},
+    {"name": "Jhansi Fort", "note": "Fort associated with Rani Lakshmibai and 1857.", "unesco": false}
+  ],
+  "cities": ["heritage-walk-in-agra", "heritage-walk-in-varanasi", "heritage-walk-in-lucknow", "heritage-walk-in-prayagraj"],
+  "museums": [
+    {"name": "Sarnath Museum", "note": "Holds the Ashokan lion capital and Gupta Buddha images."},
+    {"name": "Government Museum, Mathura", "note": "Major collection of Kushan and Gupta sculpture."},
+    {"name": "State Museum, Lucknow", "note": "Sculpture, coins and paintings from across the state."},
+    {"name": "Allahabad Museum, Prayagraj", "note": "Sculpture, terracottas and modern history collections."}
+  ],
+  "faq": [
+    {"q": "How many UNESCO World Heritage Sites are in Uttar Pradesh?", "a": "Four: Agra Fort and the Taj Mahal (both 1983), Fatehpur Sikri (1986) and the Ancient Buddhist Site of Sarnath, inscribed in July 2026 at the 48th session of the World Heritage Committee in Busan."},
+    {"q": "When did Sarnath become a UNESCO World Heritage Site?", "a": "Sarnath was inscribed in July 2026 as the Ancient Buddhist Site of Sarnath, India's 45th World Heritage Site. The listing covers the Dhamekh stupa, monastic remains and the Ashokan pillar at the place where the Buddha gave his first sermon."},
+    {"q": "Which are the oldest temples in Uttar Pradesh?", "a": "The Dashavatara temple at Deogarh, of about the 6th century, and the brick temple at Bhitargaon near Kanpur, of the Gupta period, are among the oldest surviving temples in north India."},
+    {"q": "What are the main Buddhist sites in Uttar Pradesh?", "a": "Sarnath, where the Buddha first taught, Kushinagar, where he died, Shravasti, with the Jetavana monastery, Kaushambi and Sankisa. With Bodh Gaya in Bihar they form the core of the Buddhist pilgrimage circuit."}
+  ],
+  "related_programmes": ["fatehpur-sikri-mughal-urban-vision.html", "three-capitals-delhi-agra-and-jaipur.html", "the-golden-triangle-with-an-archaeologist.html", "early-structural-temples.html", "pali-a-first-course.html", "write-like-asoka-s-scribes-a-brahmi-workshop.html", "a-study-tour-built-for-your-group.html"],
+  "related_guides": ["heritage-walk-in-agra", "heritage-walk-in-varanasi", "heritage-walk-in-lucknow", "heritage-walk-in-prayagraj", "mughal-architecture", "unesco-world-heritage-sites-in-india", "ashoka-and-his-edicts"],
+  "bundle": {"title": "Agra and Fatehpur Sikri in context", "pitch": "The Fatehpur Sikri session explains Akbar's city plan, and the Golden Triangle tour places it alongside the Taj, Agra Fort and Delhi.", "items": ["fatehpur-sikri-mughal-urban-vision.html", "the-golden-triangle-with-an-archaeologist.html"]},
+  "audience_hooks": ["Schools: a Brahmi workshop before a Sarnath visit, so students can read Ashoka's script.", "Colleges: an early structural temples lecture covering Deogarh and Bhitargaon.", "Travellers: the Golden Triangle with an archaeologist, or a custom Buddhist circuit."],
+  "cta": "Our Golden Triangle and Three capitals tours cover Agra and Fatehpur Sikri with an archaeologist, and we build custom Varanasi and Sarnath study tours.",
+  "sem": {
+    "ad_group": "Uttar Pradesh heritage tour",
+    "keywords": ["agra heritage tour with historian", "fatehpur sikri guided tour", "sarnath study tour", "uttar pradesh educational tour", "varanasi sarnath tour for students", "golden triangle tour with archaeologist", "buddhist circuit tour for groups"],
+    "negatives": ["free", "pdf", "map", "jobs", "wikipedia", "cheap"],
+    "headlines": ["Agra with an Archaeologist", "Fatehpur Sikri Explained", "Sarnath Study Tours", "Golden Triangle Tours", "Tours Built for Your Group"],
+    "descriptions": ["Taj Mahal, Agra Fort, Fatehpur Sikri and Sarnath, explained by specialists.", "Study tours and private journeys for schools, colleges and families."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "India's newest World Heritage Site is in Uttar Pradesh.", "caption": "The Ancient Buddhist Site of Sarnath was inscribed in July 2026. It is where the Buddha gave his first sermon."},
+      {"angle": "tip", "hook": "At Fatehpur Sikri, read the plan.", "caption": "Walk from the Diwan-i-Am to the palace courtyards, then to the Jama Masjid. Akbar's city is laid out as public, private and sacred zones."},
+      {"angle": "offer", "hook": "Agra and Sarnath with an archaeologist.", "caption": "We run Golden Triangle tours and build custom Buddhist circuit trips for schools and families. Ask about dates."}
+    ],
+    "reel": "Dawn at the Taj, cut to the Buland Darwaza, then the Dhamekh stupa. On-screen line: 'Four UNESCO sites, one state.' End card: 'Uttar Pradesh study tours, on request.'",
+    "hashtags": ["#UttarPradesh", "#TajMahal", "#Sarnath", "#FatehpurSikri", "#AgraFort", "#UNESCO", "#IndianHeritage", "#Varanasi", "#BuddhistHeritage"]
+  },
+  "og_title": "Uttar Pradesh: Taj, Fatehpur Sikri and new UNESCO Sarnath",
+  "og_description": "Four UNESCO sites, the ghats of Varanasi, Lucknow's imambaras and the Buddha's first sermon at Sarnath."
+}

@@ -1,0 +1,237 @@
+{
+  "slug": "heritage-sites-in-tripura",
+  "type": "state",
+  "pillar": "heritage",
+  "state": "Tripura",
+  "title": "Heritage sites in Tripura: Unakoti, Pilak and the Manikya palaces",
+  "seo_title": "Heritage Sites in Tripura: Unakoti, Pilak and Neermahal",
+  "meta_description": "Heritage sites in Tripura: the Unakoti rock reliefs, Pilak's Buddhist and Hindu remains, Ujjayanta Palace, Neermahal and the Tripura Sundari temple.",
+  "keywords": [
+    "heritage sites in tripura",
+    "historical places in tripura",
+    "archaeological sites in tripura",
+    "ancient temples in tripura",
+    "unakoti rock carvings",
+    "pilak archaeological site",
+    "ujjayanta palace",
+    "neermahal",
+    "unesco sites in tripura",
+    "chhabimura"
+  ],
+  "summary": "Tripura's best known heritage sites are Unakoti, a hillside of giant rock-cut Shaiva reliefs of about the 8th to 9th centuries, and Pilak, where Buddhist and Hindu sculpture and a brick stupa base have been found. The Manikya kings left Ujjayanta Palace in Agartala and Neermahal, a water palace on Rudrasagar lake. Tripura has no UNESCO site.",
+  "sections": [
+    {
+      "h2": "What makes Tripura's heritage distinctive",
+      "paras": [
+        "Tripura lies between Bangladesh and the hills of Mizoram and Assam, and its history reflects both. It was ruled for centuries by the Manikya dynasty, whose chronicle, the Rajmala, traces a long royal line, though its early parts are legendary. The plains around Udaipur and Agartala connected to Bengal, and the art at Pilak and Unakoti shows close links with eastern Bengal in the early medieval period.",
+        "Tripura also has nineteen recognised Scheduled Tribe communities, including the Tripuri, Reang and Jamatia, whose languages, weaving and festivals are a large part of the state's living heritage. Our guide to [tribes of India](tribes-of-india.html) gives the wider picture."
+      ]
+    },
+    {
+      "h2": "Unakoti: rock reliefs in the forest",
+      "paras": [
+        "Unakoti, in Unakoti district in the north of the state, is a forested hillside with huge reliefs carved into the rock faces and many smaller stone images. The best known is a giant head of Shiva, many metres high, with an elaborate headdress, flanked by female figures. Images of Ganesha, Durga and other deities are carved nearby. The work is usually dated to about the 8th to 9th centuries and is protected by the ASI.",
+        "The name means 'one less than a crore', from a legend that the images number just short of ten million. A spring festival, Ashokastami, draws pilgrims each year. Our lecture on [rock-cut sacred architecture](rock-cut-sacred-architecture.html) places Unakoti in the wider Indian tradition, and [Reading sculpture](reading-sculpture.html) teaches how to identify the figures."
+      ]
+    },
+    {
+      "h2": "Pilak: Buddhist and Hindu sculpture in south Tripura",
+      "paras": [
+        "Pilak, near Jolaibari in South Tripura district, is spread over a wide area of mounds and fields. Excavation has exposed the brick base of a stupa at Shyamsundar Tilla and found terracotta plaques and stone sculpture of both Buddhist and Hindu deities, including images of the Buddha, Avalokiteshvara, Surya and Vishnu. The finds are generally dated from about the 8th to the 12th centuries.",
+        "The mix of traditions at one site is the main lesson of Pilak. Our lecture on [sacred architecture across communities](sacred-architecture-across-communities.html) uses examples like this to show how religious life overlapped in early medieval eastern India."
+      ]
+    },
+    {
+      "h2": "Palaces and temples of the Manikya kings",
+      "paras": [
+        "Ujjayanta Palace in Agartala, completed in 1901 for Maharaja Radhakishore Manikya, is a large white palace in an Indo-European style. It now houses the Tripura State Museum, with galleries on the state's history, communities and archaeology. Neermahal, built in the 1930s on Rudrasagar lake at Melaghar for Maharaja Bir Bikram Kishore Manikya, combines Hindu and Mughal elements and is reached by boat.",
+        "The Tripura Sundari temple at Udaipur, the old capital, dates from the early 16th century and is an important Shakta pilgrimage site. Bhuvaneshwari temple, also at Udaipur, is linked with Tagore's writings on Tripura. Chhabimura, on the Gomati river, has rock carvings of deities on cliff faces seen from a boat."
+      ]
+    },
+    {
+      "h2": "Planning a heritage visit to Tripura",
+      "paras": [
+        "No Inner Line Permit is needed for Indian visitors. Agartala has an airport and rail link, Unakoti is a long drive north, and Pilak and Udaipur are to the south, so two or three bases work best. October to March is the comfortable season.",
+        "We build a [study tour for your group](a-study-tour-built-for-your-group.html) covering Agartala, Unakoti, Pilak and Neermahal, with a sculpture identification session beforehand."
+      ]
+    }
+  ],
+  "sites": [
+    {
+      "name": "Unakoti",
+      "note": "Hillside of giant rock-cut Shaiva reliefs of about the 8th to 9th centuries, ASI protected.",
+      "unesco": false
+    },
+    {
+      "name": "Pilak",
+      "note": "Spread of mounds with a stupa base, terracottas and Buddhist and Hindu sculpture.",
+      "unesco": false
+    },
+    {
+      "name": "Shyamsundar Tilla, Pilak",
+      "note": "Excavated brick base of a stupa within the Pilak area.",
+      "unesco": false
+    },
+    {
+      "name": "Ujjayanta Palace, Agartala",
+      "note": "Royal palace completed in 1901; now the Tripura State Museum.",
+      "unesco": false
+    },
+    {
+      "name": "Neermahal, Melaghar",
+      "note": "Water palace on Rudrasagar lake built for Maharaja Bir Bikram Kishore Manikya.",
+      "unesco": false
+    },
+    {
+      "name": "Tripura Sundari Temple, Udaipur",
+      "note": "Early 16th century Shakta temple in the old Manikya capital.",
+      "unesco": false
+    },
+    {
+      "name": "Bhuvaneshwari Temple, Udaipur",
+      "note": "Temple on the Gomati, linked with Tagore's writing on Tripura.",
+      "unesco": false
+    },
+    {
+      "name": "Chhabimura",
+      "note": "Rock carvings of deities on cliffs above the Gomati river.",
+      "unesco": false
+    },
+    {
+      "name": "Devtamura",
+      "note": "Cliff carvings on the Gomati, close to Chhabimura.",
+      "unesco": false
+    },
+    {
+      "name": "Kunjaban Palace, Agartala",
+      "note": "Royal residence of the early 20th century.",
+      "unesco": false
+    },
+    {
+      "name": "Boxanagar",
+      "note": "Buddhist site in Sepahijala district with a brick stupa and monastery remains.",
+      "unesco": false
+    }
+  ],
+  "cities": [],
+  "museums": [
+    {
+      "name": "Tripura State Museum, Ujjayanta Palace",
+      "note": "History, communities and archaeology of Tripura, including sculpture from Pilak."
+    },
+    {
+      "name": "Pilak site area",
+      "note": "Sculpture is displayed locally near the excavated mounds; check arrangements before visiting."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is Unakoti famous for?",
+      "a": "Unakoti is famous for its giant rock-cut reliefs on a forested hillside in north Tripura, including a huge head of Shiva flanked by female figures and images of Ganesha and Durga. They are usually dated to about the 8th to 9th centuries and are protected by the ASI."
+    },
+    {
+      "q": "What has been found at Pilak?",
+      "a": "Pilak in South Tripura has the brick base of a stupa and many terracotta plaques and stone sculptures of Buddhist and Hindu deities, including the Buddha, Avalokiteshvara, Surya and Vishnu, mostly of about the 8th to 12th centuries."
+    },
+    {
+      "q": "Are there UNESCO World Heritage Sites in Tripura?",
+      "a": "No. Tripura has no UNESCO World Heritage Site. Its major heritage places are Unakoti, Pilak, Ujjayanta Palace, Neermahal and the temples of Udaipur."
+    },
+    {
+      "q": "What is Neermahal?",
+      "a": "Neermahal is a water palace in the middle of Rudrasagar lake at Melaghar, built in the 20th century for Maharaja Bir Bikram Kishore Manikya. It mixes Hindu and Mughal architectural ideas and is reached by boat."
+    }
+  ],
+  "related_programmes": [
+    "a-study-tour-built-for-your-group.html",
+    "reading-sculpture.html",
+    "rock-cut-sacred-architecture.html",
+    "sacred-architecture-across-communities.html",
+    "temple-sculpture-iconography.html",
+    "museum-object-identification-lab.html"
+  ],
+  "related_guides": [
+    "tribes-of-india",
+    "buddhist-caves-in-india",
+    "rock-art-in-india",
+    "heritage-sites-in-mizoram",
+    "heritage-sites-in-assam",
+    "heritage-sites-in-west-bengal"
+  ],
+  "bundle": {
+    "title": "Read the rock before you see it",
+    "pitch": "A sculpture identification session, then a lecture on temple iconography, prepares a group to recognise every figure at Unakoti and Pilak.",
+    "items": [
+      "reading-sculpture.html",
+      "temple-sculpture-iconography.html"
+    ]
+  },
+  "audience_hooks": [
+    "Schools: a sculpture identification session with images from Unakoti and Pilak.",
+    "Colleges: a temple iconography lecture before fieldwork in Tripura.",
+    "Travellers: a study tour to Agartala, Unakoti and Pilak built around your group."
+  ],
+  "cta": "We build Tripura study tours to Unakoti, Pilak and the Manikya palaces, with a sculpture identification session before your group sets out.",
+  "sem": {
+    "ad_group": "Tripura heritage tour",
+    "keywords": [
+      "tripura heritage tour",
+      "unakoti tour for groups",
+      "tripura study tour for students",
+      "pilak archaeological site visit",
+      "tripura educational tour",
+      "northeast heritage tour"
+    ],
+    "negatives": [
+      "free",
+      "pdf",
+      "map",
+      "jobs",
+      "wikipedia",
+      "hotel"
+    ],
+    "headlines": [
+      "Tripura Heritage Study Tour",
+      "Unakoti Rock Reliefs",
+      "Pilak with an Archaeologist",
+      "Tours Built for Your Group",
+      "North-East Heritage Tours"
+    ],
+    "descriptions": [
+      "Unakoti, Pilak, Ujjayanta Palace and Neermahal, explained by specialists.",
+      "Study tours for schools, colleges and private groups, planned around your dates."
+    ]
+  },
+  "social": {
+    "posts": [
+      {
+        "angle": "fact",
+        "hook": "A head of Shiva several storeys high, carved in a forest.",
+        "caption": "At Unakoti in north Tripura, giant reliefs were cut into the rock around the 8th to 9th centuries. Legend says the images number one less than a crore."
+      },
+      {
+        "angle": "tip",
+        "hook": "At Pilak, look for both traditions.",
+        "caption": "Buddha images and Vishnu images come from the same site. Note which mound each came from and you see how communities lived side by side."
+      },
+      {
+        "angle": "offer",
+        "hook": "Bring your group to Tripura.",
+        "caption": "We plan study tours to Unakoti, Pilak, Agartala and Neermahal. Tell us your dates and group size."
+      }
+    ],
+    "reel": "Walk down the steps at Unakoti to the giant Shiva head, cut to Neermahal from a boat. On-screen line: 'Tripura's rock reliefs and water palace.' End card: 'Tripura study tours, on request.'",
+    "hashtags": [
+      "#Tripura",
+      "#Unakoti",
+      "#Pilak",
+      "#Neermahal",
+      "#NortheastIndia",
+      "#IndianHeritage",
+      "#RockCut",
+      "#Archaeology"
+    ]
+  },
+  "og_title": "Tripura: Unakoti's giant reliefs and a lake palace",
+  "og_description": "Rock-cut reliefs in the forest, Buddhist and Hindu Pilak, Ujjayanta Palace and the water palace of Neermahal."
+}

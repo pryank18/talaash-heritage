@@ -1,0 +1,99 @@
+{
+  "slug": "heritage-walk-in-hampi",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Hampi",
+  "state": "Karnataka",
+  "title": "Heritage walk in Hampi: the ruins of Vijayanagara",
+  "seo_title": "Heritage Walk in Hampi: Historical Places, Routes and Museums",
+  "meta_description": "Plan a heritage walk in Hampi: Virupaksha and Vittala temples, Hemakuta hill, the Royal Centre, Lotus Mahal, the Mahanavami platform, stepped tank and museum.",
+  "keywords": ["heritage walk in hampi", "historical places in hampi", "heritage sites in hampi", "museums in hampi", "hampi heritage walk for schools", "hampi ruins history", "vittala temple stone chariot", "vijayanagara empire ruins", "hampi royal enclosure", "hampi itinerary 2 days"],
+  "summary": "A heritage walk in Hampi explores Vijayanagara, capital of the Vijayanagara empire from the 14th century until 1565. It falls into two zones: the Sacred Centre along the Tungabhadra (Virupaksha temple, Hemakuta hill, Vittala temple) and the Royal Centre (Mahanavami platform, stepped tank, Lotus Mahal). Hampi has been a UNESCO site since 1986.",
+  "sections": [
+    {
+      "h2": "Why Hampi matters for heritage",
+      "paras": [
+        "The ruins at Hampi cover about 25 square kilometres of granite boulders, river and paddy fields, and include more than a thousand recorded structures: temples, bazaars, palaces, waterworks, gateways and fortifications. They are what remains of Vijayanagara, one of the largest cities in the world in the early 16th century, described by Portuguese and Persian visitors who were impressed by its markets and wealth.",
+        "Hampi was inscribed by UNESCO in 1986 as the Group of Monuments at Hampi. For students it is an excellent place to understand a whole medieval city: how sacred and royal zones were separated, how water was brought in, and how a city was abandoned after a military defeat. The story of the empire is in our explainer on the [Vijayanagara empire](vijayanagara-empire.html)."
+      ]
+    },
+    {
+      "h2": "Layers of history at Hampi",
+      "paras": [
+        "The place was sacred long before the empire. Hampi takes its name from Pampa, a local river goddess linked with the Tungabhadra, and the Virupaksha shrine has origins well before the 14th century. The landscape is also associated in local tradition with Kishkindha of the Ramayana. Prehistoric rock art and Neolithic sites are known in the surrounding hills.",
+        "Brothers Harihara and Bukka of the Sangama dynasty founded the Vijayanagara kingdom around 1336. Under the Sangama, Saluva and Tuluva dynasties the city grew; Krishnadevaraya (ruled 1509 to 1529) built or enlarged many of the great temples, including additions at Vittala and the Krishna temple of 1513. In 1565 an alliance of Deccan sultanates defeated Vijayanagara at the Battle of Talikota (also called Rakkasa Tangadi), and the city was sacked and abandoned.",
+        "The temples follow the Dravida tradition with tall gopuras, pillared mandapas and carved composite pillars. Our lecture on [Dravida temple architecture](dravida-temple-architecture.html) is good preparation. The Royal Centre shows mixed forms too: the Lotus Mahal and Elephant Stables use arches and domes drawn from Deccan sultanate building."
+      ]
+    },
+    {
+      "h2": "What you see on a Hampi heritage walk",
+      "paras": [
+        "In the Sacred Centre, start at the Virupaksha temple, still in worship, with its tall eastern gopura and the long Hampi Bazaar street in front. Climb Hemakuta hill for early temples and a view, pass the monolithic Kadalekalu and Sasivekalu Ganesha images and the large Narasimha (Ugra Narasimha) monolith. A riverside path leads past the Achyutaraya temple to the Vittala temple, with its stone chariot and musical pillars.",
+        "The Royal Centre is a different world: the Mahanavami platform with friezes of processions, hunting and festivals, the stepped tank uncovered in the 1980s, the Queen's Bath, the Hazara Rama temple with Ramayana reliefs, the Lotus Mahal in the Zenana enclosure, and the Elephant Stables. Students can follow the stone aqueducts and channels that brought water from the river. A [temple sculpture and iconography lecture](temple-sculpture-iconography.html) helps them read the reliefs."
+      ]
+    },
+    {
+      "h2": "Planning a Hampi heritage walk for schools and groups",
+      "paras": [
+        "Hampi needs at least two days. The Sacred Centre can be walked, about 6 to 7 kilometres from Virupaksha to Vittala; the Royal Centre is a few kilometres south and is best reached by vehicle, then walked. Battery vehicles and cycles are available at some sites. There is little shade; start at sunrise, carry water and hats, and rest through midday.",
+        "We build each Hampi trip around the group that asks for it. The [South India temple architecture tour](south-india-temple-architecture.html) and a [study tour built for your group](a-study-tour-built-for-your-group.html) can include Hampi with Badami and Pattadakal; the [Pattadakal and Aihole Temple Design Laboratory](pattadakal-and-aihole-temple-design-laboratory.html) is a good second stop to show how temple building looked eight centuries earlier."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Virupaksha Temple", "period": "Shrine older than the empire; gopura and halls 14th to 16th century", "note": "Living temple with a tall gopura; look for the inverted shadow of the gopura in a dark chamber."},
+    {"name": "Hampi Bazaar", "period": "16th century", "note": "Long colonnaded street of shop pavilions in front of the Virupaksha temple."},
+    {"name": "Hemakuta Hill temples", "period": "About 9th to 14th century", "note": "Early temples with stepped stone roofs and views over the Sacred Centre."},
+    {"name": "Sasivekalu and Kadalekalu Ganesha", "period": "15th to 16th century", "note": "Two monolithic Ganesha images on Hemakuta's slopes."},
+    {"name": "Krishna Temple", "period": "1513", "note": "Built by Krishnadevaraya after a campaign in Odisha, with its own bazaar street."},
+    {"name": "Ugra Narasimha monolith", "period": "1528", "note": "Huge monolithic image of Narasimha with Lakshmi (the Lakshmi figure is now lost)."},
+    {"name": "Achyutaraya Temple", "period": "1534", "note": "Temple in a valley between hills, with a long bazaar street and fine pillars."},
+    {"name": "Vittala Temple", "period": "15th to 16th century", "note": "The stone chariot and pillared halls with slender musical pillars; do not tap them."},
+    {"name": "Hazara Rama Temple", "period": "15th century", "note": "Royal chapel with Ramayana reliefs and processions on its outer walls."},
+    {"name": "Mahanavami Platform", "period": "14th to 16th century", "note": "Large stepped platform with friezes of festivals, hunting and court life."},
+    {"name": "Stepped Tank", "period": "15th to 16th century", "note": "Symmetrical tank of finely cut granite blocks, excavated in the 1980s."},
+    {"name": "Queen's Bath", "period": "15th to 16th century", "note": "Pool in an arcaded building with a surrounding water channel."},
+    {"name": "Lotus Mahal", "period": "15th to 16th century", "note": "Pavilion with lobed arches in the Zenana enclosure, mixing Deccan and Dravida forms."},
+    {"name": "Elephant Stables", "period": "15th to 16th century", "note": "Row of eleven domed chambers, each with a different dome."}
+  ],
+  "routes": [
+    {"name": "Sacred Centre on foot", "length": "About 4 hours", "stops": ["Virupaksha Temple", "Hampi Bazaar", "Hemakuta Hill temples", "Sasivekalu and Kadalekalu Ganesha", "Krishna Temple", "Ugra Narasimha monolith"]},
+    {"name": "Riverside to Vittala", "length": "About 3 hours", "stops": ["Hampi Bazaar", "Achyutaraya Temple", "Vittala Temple"]},
+    {"name": "Royal Centre (vehicle to reach, then on foot)", "length": "About 3.5 hours", "stops": ["Hazara Rama Temple", "Mahanavami Platform", "Stepped Tank", "Queen's Bath", "Lotus Mahal", "Elephant Stables"]}
+  ],
+  "museums": [
+    {"name": "ASI Archaeological Museum, Kamalapura", "note": "Sculpture, coins, copper plates and arms from Hampi, with a large model of the site."},
+    {"name": "Hampi interpretation centre", "note": "Panels and models on the city plan and the excavations; check whether it is open before visiting."}
+  ],
+  "best_time": "October to February. From March the boulders radiate heat; the monsoon (June to September) is green but humid.",
+  "faq": [
+    {"q": "What are the main historical places in Hampi?", "a": "The Virupaksha temple, Hampi Bazaar, Hemakuta hill, the Krishna and Achyutaraya temples, the Ugra Narasimha monolith, the Vittala temple, and in the Royal Centre the Hazara Rama temple, Mahanavami platform, stepped tank, Lotus Mahal and Elephant Stables."},
+    {"q": "How many days do you need in Hampi?", "a": "At least two: one for the Sacred Centre and Vittala, one for the Royal Centre and the museum. Three days lets you add Anegondi across the river or a side trip towards Badami."},
+    {"q": "Why was Hampi abandoned?", "a": "After the Vijayanagara army was defeated at the Battle of Talikota in 1565, the capital was sacked over several months and the court moved south. The city never recovered."},
+    {"q": "Is Hampi suitable for school trips?", "a": "Yes, with planning. Distances are long and there is little shade, so schedule walking for early morning and late afternoon and use vehicles between the Sacred and Royal centres."},
+    {"q": "Is Hampi a UNESCO site?", "a": "Yes. The Group of Monuments at Hampi was inscribed by UNESCO in 1986."}
+  ],
+  "related_programmes": ["south-india-temple-architecture.html", "a-study-tour-built-for-your-group.html", "pattadakal-and-aihole-temple-design-laboratory.html", "dravida-temple-architecture.html", "temple-sculpture-iconography.html", "understanding-indian-temple-architecture.html"],
+  "related_guides": ["vijayanagara-empire", "heritage-sites-in-karnataka", "indian-temple-architecture", "heritage-walk-in-badami", "heritage-walk-in-vijayapura", "unesco-world-heritage-sites-in-india"],
+  "bundle": {"title": "Read Hampi before you walk it", "pitch": "A lecture on Dravida temples and another on sculpture make the ruins readable; the South India temple architecture tour then takes you there.", "items": ["dravida-temple-architecture.html", "temple-sculpture-iconography.html", "south-india-temple-architecture.html"]},
+  "audience_hooks": ["Schools: a two-day Hampi trip built on request, with a lecture beforehand.", "Colleges: Dravida architecture and iconography lectures, then the Sacred and Royal centres on site.", "Travellers: the South India temple architecture tour with an archaeologist."],
+  "sem": {
+    "ad_group": "Heritage walk Hampi",
+    "keywords": ["heritage walk in hampi", "hampi guided tour with archaeologist", "hampi school trip", "hampi heritage tour", "vijayanagara ruins study tour", "hampi badami study tour"],
+    "negatives": ["free", "pdf", "hippie island", "hotel", "bouldering", "wikipedia"],
+    "headlines": ["Heritage Walk in Hampi", "Hampi With an Archaeologist", "Vijayanagara Ruins Explained", "Hampi Trips for Schools", "South India Temple Tours"],
+    "descriptions": ["The Sacred and Royal centres of Vijayanagara with an archaeologist or historian.", "Arranged on request for schools, colleges, companies and private groups."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "The stepped tank at Hampi was found in the 1980s.", "caption": "Excavations in the Royal Centre uncovered a perfectly symmetrical tank of cut granite. Marks on the blocks suggest they were assembled to a plan, possibly brought from elsewhere."},
+      {"angle": "tip", "hook": "Find the upside-down gopura.", "caption": "Inside the Virupaksha temple a small opening throws an inverted image of the tower onto a wall, like a pinhole camera. Go mid-morning when the light is strong."},
+      {"angle": "offer", "hook": "Hampi with an archaeologist.", "caption": "We arrange Hampi trips for schools, colleges and private groups, often with Badami and Pattadakal, in English or Hindi."}
+    ],
+    "reel": "Sunrise over the boulders from Hemakuta, cut to the stone chariot at Vittala, then the stepped tank from above. On-screen line: 'A capital that fell in a single season.' End card: 'Hampi study trips, on request.'",
+    "hashtags": ["#Hampi", "#Vijayanagara", "#HampiRuins", "#VittalaTemple", "#KarnatakaHeritage", "#HeritageWalk", "#UNESCOIndia", "#IndianHeritage", "#TempleArchitecture"]
+  },
+  "og_title": "A heritage walk in Hampi, the capital of Vijayanagara",
+  "og_description": "Temples, bazaars, palaces and waterworks among the boulders: how to plan two days in Hampi.",
+  "cta": "We arrange heritage walks in Hampi on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."
+}

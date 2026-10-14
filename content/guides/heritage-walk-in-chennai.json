@@ -1,0 +1,122 @@
+{
+  "slug": "heritage-walk-in-chennai",
+  "type": "city",
+  "pillar": "heritage",
+  "title": "Heritage walk in Chennai: Fort St George, Mylapore and the Marina",
+  "seo_title": "Heritage Walk in Chennai: Historical Places and Routes",
+  "meta_description": "Plan a heritage walk in Chennai: Fort St George, George Town, Mylapore and Triplicane, the Government Museum, routes and advice for school groups.",
+  "keywords": ["heritage walk in chennai", "historical places in chennai", "heritage sites in chennai", "museums in chennai", "chennai heritage walk for schools", "mylapore heritage walk", "fort st george heritage walk", "george town chennai walk", "chennai walking tour with historian"],
+  "summary": "A heritage walk in Chennai usually covers Fort St George and George Town, where the English East India Company settled in 1640; the Marina and its Indo-Saracenic university buildings; and the older temple towns of Mylapore and Triplicane, whose temples are far older than the colonial city. The Government Museum at Egmore holds the Amaravati sculptures and Chola bronzes.",
+  "city": "Chennai",
+  "state": "Tamil Nadu",
+  "sections": [
+    {
+      "h2": "Why Chennai matters for Indian heritage",
+      "paras": [
+        "Chennai (Madras) is a colonial city built around much older settlements. In 1639 to 1640 the English East India Company got a grant of land on the coast and built Fort St George, its first major fortified base in India. Around it grew Black Town (later George Town) for Indian merchants, weavers and dubashes (interpreters), and to the south lay the temple towns of Mylapore and Triplicane, both praised by Tamil devotional poets more than a thousand years earlier.",
+        "That mix lets a single morning move from the Tamil bhakti tradition to Company trade and the Madras Presidency's law courts. The [Dravida temple architecture lecture](dravida-temple-architecture.html) is a useful companion for students before they reach the gopurams of Mylapore."
+      ]
+    },
+    {
+      "h2": "Historical places in Chennai by period",
+      "paras": [
+        "The Parthasarathy Temple at Triplicane and the Kapaleeshwarar Temple at Mylapore are named in the hymns of the Alvars and Nayanars (roughly 6th to 9th centuries CE). The present Kapaleeshwarar buildings are much later, largely 16th century onwards, after an earlier shore temple is believed to have been lost. The Portuguese were at San Thome from the 16th century, and the tradition that St Thomas the Apostle was buried there gives the basilica its name.",
+        "Fort St George grew through the 17th and 18th centuries. St Mary's Church inside it (consecrated 1680) is the oldest Anglican church in India. The 19th century added the great public buildings: the Madras High Court (1892), the Senate House of the University of Madras (1879) and the buildings along the Marina, which mix Mughal, Deccani and Gothic features in the style called Indo-Saracenic."
+      ],
+      "table": {
+        "head": ["Period", "Examples"],
+        "rows": [
+          ["Pallava and Chola era roots", "Parthasarathy Temple, Triplicane; Kapaleeshwarar tradition, Mylapore"],
+          ["16th to 17th century", "San Thome, Fort St George, St Mary's Church"],
+          ["18th century", "Fort Museum building, Armenian Church, George Town grid"],
+          ["19th century", "Senate House, High Court, Chepauk Palace, Ripon Building"]
+        ]
+      }
+    },
+    {
+      "h2": "What you see on a heritage walk in Chennai",
+      "paras": [
+        "Inside Fort St George, the walk takes in St Mary's Church with its 17th and 18th century tombstones, the Fort Museum and the Secretariat, which still houses the Tamil Nadu Assembly. In George Town the street names (Armenian Street, Coral Merchant Street) record who traded there, and the Armenian Church of 1772 is a quiet courtyard in a crowded quarter.",
+        "In Mylapore the walk moves round the Kapaleeshwarar tank and through the market lanes to the temple gateway, then to San Thome Basilica (rebuilt in 1896 in neo-Gothic style). Reading the sculpture on the gopuram is easier with some background; the [lecture on reading a temple](how-to-read-a-temple.html) works well for school groups the week before.",
+        "Along the Marina, Chepauk Palace (1768, built for the Nawab of Arcot) and the Senate House show how architects such as Robert Chisholm blended Indian and European forms."
+      ]
+    },
+    {
+      "h2": "Museums in Chennai",
+      "paras": [
+        "The Government Museum at Egmore, founded in 1851, is one of the oldest in India. It holds the Amaravati stupa sculptures (about the 2nd century BCE to 3rd century CE) and one of the best collections of Chola bronzes anywhere. A [museum gallery study with an archaeologist](museum-morning-with-an-archaeologist.html) is the best way to use the building with a group, because the galleries are large and labels are brief.",
+        "The Fort Museum inside Fort St George holds Company period weapons, coins, uniforms and portraits."
+      ]
+    },
+    {
+      "h2": "Chennai heritage walk for schools and colleges",
+      "paras": [
+        "Fort St George suits younger students: it is enclosed, quieter than the city outside and tied to the arrival of European trading companies in the syllabus. Mylapore suits older students and colleges, who can discuss temples as social institutions, the tank as public space and the coexistence of temple, church and market.",
+        "Chennai walks are planned for your group, with the route and pace agreed in advance. Many groups combine the city with Mahabalipuram, about 55 km south; see our [Mamallapuram programme](mamallapuram-rock-cut-and-structural-temples.html) and the [south India temple architecture study tour](south-india-temple-architecture.html)."
+      ]
+    },
+    {
+      "h2": "Practical advice for groups",
+      "paras": [
+        "Chennai is hot almost all year, so start by 7.30 am and finish before noon. Fort St George is a working government complex and has security checks; carry identity documents for adults. Temples have their own dress and photography rules, and the inner sanctum may be closed to non-Hindus at some shrines. Check the ASI, museum or temple website before you go.",
+        "The three areas are several kilometres apart. Use a hired bus between them and walk within each. For the wider state, see our page on [heritage sites in Tamil Nadu](heritage-sites-in-tamil-nadu.html)."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Fort St George", "period": "1640 onwards", "note": "The Company's first major fort in India. Walk the ramparts' line and note how the later Secretariat sits inside the old walls."},
+    {"name": "St Mary's Church", "period": "1680", "note": "Oldest Anglican church in India. Robert Clive married here; the tombstones in the yard date from the 17th century."},
+    {"name": "Fort Museum", "period": "Building 18th century", "note": "Housed in a former exchange building. Look for coins, Company uniforms and a statue of Cornwallis."},
+    {"name": "Madras High Court", "period": "1892", "note": "Red Indo-Saracenic court complex with domes and minarets. The old lighthouse tower stands in its grounds."},
+    {"name": "Armenian Church", "period": "1772", "note": "A small church in George Town with a separate bell tower and Armenian gravestones set into the courtyard."},
+    {"name": "George Town lanes", "period": "17th century onwards", "note": "The old Black Town. Street names record the trades and communities who settled here."},
+    {"name": "Government Museum, Egmore", "period": "Founded 1851", "note": "Amaravati sculptures and Chola bronzes. The red Museum Theatre and the Connemara Library share the campus."},
+    {"name": "Chepauk Palace", "period": "1768", "note": "Built for the Nawab of Arcot and an early example of Indo-Saracenic design. Seen from outside."},
+    {"name": "Senate House, University of Madras", "period": "1879", "note": "Robert Chisholm's building mixing Byzantine and Indian forms, on the Marina."},
+    {"name": "Parthasarathy Temple", "period": "Origins about 8th century CE, rebuilt later", "note": "Vaishnava temple in Triplicane praised by the Alvars. Look at the tank and the long axis to the gateway."},
+    {"name": "Kapaleeshwarar Temple", "period": "Present buildings mainly 16th century onwards", "note": "Shaiva temple with a tall painted gopuram and a large tank, the centre of Mylapore."},
+    {"name": "San Thome Basilica", "period": "Rebuilt 1896", "note": "Neo-Gothic church over the traditional tomb of St Thomas. A small museum explains the site's history."},
+    {"name": "Ripon Building", "period": "1913", "note": "White Neoclassical home of the Greater Chennai Corporation, seen from outside near Chennai Central."}
+  ],
+  "routes": [
+    {"name": "Fort St George and George Town", "length": "About 3 hours", "stops": ["Fort St George", "St Mary's Church", "Fort Museum", "Madras High Court", "Armenian Church", "George Town lanes"]},
+    {"name": "Mylapore and San Thome", "length": "About 2.5 hours", "stops": ["Kapaleeshwarar Temple", "San Thome Basilica"]},
+    {"name": "Marina and Triplicane", "length": "About 2.5 hours", "stops": ["Chepauk Palace", "Senate House, University of Madras", "Parthasarathy Temple"]}
+  ],
+  "museums": [
+    {"name": "Government Museum, Egmore", "note": "Amaravati sculpture gallery and the bronze gallery. Allow two to three hours."},
+    {"name": "Fort Museum", "note": "Company period objects inside Fort St George, run by the ASI."},
+    {"name": "DakshinaChitra", "note": "Open-air museum of south Indian houses and crafts on the road to Mahabalipuram. Needs a vehicle."}
+  ],
+  "best_time": "November to February. Avoid the northeast monsoon peak (late October to early December can be very wet) and plan early mornings in every season.",
+  "faq": [
+    {"q": "What are the main historical places in Chennai?", "a": "Fort St George with St Mary's Church, the Madras High Court, George Town, the Government Museum at Egmore, the Senate House on the Marina, and the temple towns of Mylapore and Triplicane with the Kapaleeshwarar and Parthasarathy temples."},
+    {"q": "Which is the oldest part of Chennai?", "a": "The temple settlements of Mylapore and Triplicane are much older than the colonial city; both are praised in Tamil devotional hymns of about the 7th to 9th centuries. The colonial city began with Fort St George in 1640."},
+    {"q": "Can schools do a heritage walk in Chennai?", "a": "Yes. Fort St George is the easiest for younger students because it is enclosed and less crowded. Adults need identity documents at the security check. Mylapore suits older students and colleges."},
+    {"q": "Can I combine a Chennai walk with Mahabalipuram?", "a": "Yes. Mahabalipuram is about 55 km south and makes a full day trip by road. Many groups spend one day in the city and one at Mahabalipuram and DakshinaChitra."},
+    {"q": "What is special about the Government Museum in Chennai?", "a": "It holds the Amaravati stupa sculptures and one of the largest collections of Chola bronzes in the world, along with prehistoric tools from Tamil Nadu sites such as Attirampakkam."}
+  ],
+  "related_programmes": ["mamallapuram-rock-cut-and-structural-temples.html", "south-india-temple-architecture.html", "museum-morning-with-an-archaeologist.html", "dravida-temple-architecture.html", "how-to-read-a-temple.html", "sacred-architecture-across-communities.html", "temples-as-social-institutions.html"],
+  "related_guides": ["heritage-sites-in-tamil-nadu", "heritage-walk-in-mahabalipuram", "chola-dynasty", "indian-temple-architecture", "best-archaeology-museums-in-india", "heritage-walk-in-puducherry"],
+  "bundle": {"title": "City and shore temple", "pitch": "A morning in the Egmore museum among the bronzes, then a day at Mahabalipuram to see where south Indian stone temples began.", "items": ["museum-morning-with-an-archaeologist.html", "mamallapuram-rock-cut-and-structural-temples.html"]},
+  "audience_hooks": ["Schools: a Fort St George walk or a museum gallery study, with a temple lecture in class if you want one.", "Colleges: a Mylapore walk on temples, tanks and neighbourhoods, or a south India study tour.", "Travellers: a private day in Chennai and Mahabalipuram with an archaeologist."],
+  "sem": {
+    "ad_group": "Heritage walk Chennai",
+    "keywords": ["heritage walk in chennai", "chennai heritage walk for schools", "mylapore heritage walk booking", "fort st george guided walk", "chennai walking tour with historian", "private heritage tour chennai", "chennai heritage tour for college students"],
+    "negatives": ["free", "pdf", "essay", "jobs", "wikipedia", "drawing"],
+    "headlines": ["Heritage Walk in Chennai", "Walk With an Archaeologist", "Fort St George to Mylapore", "For Schools and Colleges", "Arranged on Request"],
+    "descriptions": ["Chennai heritage walks led by archaeologists and historians, in English or Hindi.", "For schools, colleges, companies and private groups. Share your dates and group size."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "St Mary's Church in Chennai is the oldest Anglican church in India.", "caption": "Consecrated in 1680 inside Fort St George, it still has tombstones from the 17th century. Robert Clive was married here."},
+      {"angle": "tip", "hook": "Walk round the tank before you enter the temple.", "caption": "At Kapaleeshwarar in Mylapore, the tank, the market and the gopuram work as one public space. Start at the steps and watch how people use them."},
+      {"angle": "offer", "hook": "A Chennai heritage walk with an archaeologist.", "caption": "We arrange walks at Fort St George, Mylapore and the Marina for schools, colleges, companies and private groups. Add a day at Mahabalipuram if you like."}
+    ],
+    "reel": "Open on the Kapaleeshwarar gopuram at dawn, cut to the bronze gallery at Egmore. On-screen line: 'Chennai is older than Madras.' End card: 'Heritage walks in Chennai, arranged on request.'",
+    "hashtags": ["#Chennai", "#ChennaiHeritage", "#Madras", "#HeritageWalk", "#Mylapore", "#FortStGeorge", "#TamilNaduHeritage", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "A heritage walk in Chennai with an archaeologist",
+  "og_description": "Fort St George, George Town, Mylapore and the Chola bronzes: Chennai on foot with people who study it.",
+  "cta": "We arrange Chennai heritage walks on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi, with other languages through partners."
+}

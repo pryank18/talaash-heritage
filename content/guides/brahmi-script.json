@@ -1,0 +1,97 @@
+{
+  "slug": "brahmi-script",
+  "type": "explainer",
+  "pillar": "sanskrit",
+  "title": "Brahmi script: Ashoka's letters and their descendants",
+  "seo_title": "Brahmi Script: History, Decipherment and Descendant Scripts",
+  "meta_description": "Brahmi script explained: Ashokan inscriptions, how James Prinsep deciphered it in the 1830s, how it works, and the many Asian scripts that descend from it.",
+  "keywords": ["brahmi script", "what is brahmi script", "brahmi lipi", "ashokan brahmi", "who deciphered brahmi script", "james prinsep brahmi", "brahmi script alphabet", "scripts derived from brahmi", "history of brahmi script"],
+  "summary": "Brahmi is the oldest securely deciphered script of the Indian subcontinent in wide use, best known from the edicts of the Mauryan emperor Ashoka in the 3rd century BCE. James Prinsep deciphered it in the 1830s. Almost every modern script of South and Southeast Asia, from Devanagari and Bengali to Tamil, Tibetan and Thai, descends from it.",
+  "sections": [
+    {
+      "h2": "What is Brahmi script?",
+      "paras": [
+        "Brahmi (Brāhmī lipi) is a writing system in which each consonant sign carries an inherent vowel a, and other vowels are added as small marks attached to the consonant. Linguists call this type of script an abugida. Brahmi is written left to right, and its letters are arranged in the same phonetic order used by Sanskrit grammarians, the order you still see in the [Sanskrit alphabet](sanskrit-alphabet.html).",
+        "The name comes from later Buddhist and Jain lists of scripts, where brāhmī appears first. The script itself was used for many languages, above all the Prakrits, and later Sanskrit, Tamil and others."
+      ]
+    },
+    {
+      "h2": "Ashokan Brahmi: the earliest securely dated examples",
+      "paras": [
+        "The earliest large, securely dated body of Brahmi writing is the set of edicts of Ashoka (Aśoka), who ruled the Mauryan empire in the mid 3rd century BCE. His Major and Minor Rock Edicts and Pillar Edicts are found from Karnataka to Uttarakhand and from Gujarat to Odisha. Most are in Prakrit written in Brahmi. In the north-west, at Shahbazgarhi and Mansehra (in present-day Pakistan), the same edicts are in Kharosthi script, and a few texts near Kandahar are in Greek and Aramaic. The [Ashoka and his edicts](ashoka-and-his-edicts.html) guide covers what they say.",
+        "A small number of inscribed potsherds from sites in Sri Lanka (Anuradhapura) and Tamil Nadu (such as Keeladi and Kodumanal) have been dated by their excavators to before Ashoka's reign. These dates are debated, and the question of exactly when and where Brahmi first appeared remains open."
+      ]
+    },
+    {
+      "h2": "Where did Brahmi come from?",
+      "paras": [
+        "This is one of the long-running debates in Indian epigraphy. Many scholars think Brahmi was adapted, at least in outline, from a Semitic script such as Aramaic, which was used across the Achaemenid Persian empire on India's north-western border; Kharosthi is clearly Aramaic-derived. Others argue for an independent Indian origin, and some have suggested a link with the Indus script, though that script is undeciphered and the gap of well over a thousand years makes the link hard to demonstrate. What is not disputed is that Brahmi was shaped very precisely to fit the sounds of Indian languages, with a systematic vowel notation that Semitic scripts did not have."
+      ]
+    },
+    {
+      "h2": "How James Prinsep deciphered Brahmi in the 1830s",
+      "paras": [
+        "By the early 19th century nobody in India could read Brahmi. James Prinsep, assay master of the Calcutta mint and secretary of the Asiatic Society of Bengal, worked on it through the 1830s using copies of inscriptions sent by many correspondents. He grouped repeated letter shapes, identified the vowel marks, and used short donor inscriptions on the railings of the Sanchi stupa, many ending with the same word, which he read as dānaṃ, 'gift'. Bilingual Indo-Greek coins, with Greek on one side and Kharosthi on the other, helped with the related Kharosthi script.",
+        "By 1837 and 1838 Prinsep could read the Ashokan edicts. The king called himself devānaṃpiya piyadasi, 'beloved of the gods, Piyadasi'; the identification of Piyadasi with Ashoka was confirmed much later, in 1915, when a Minor Rock Edict at Maski in Karnataka was found naming him as Asoka. Prinsep's decipherment opened ancient Indian history to dated, first-hand evidence, as the [what is epigraphy](what-is-epigraphy.html) guide explains."
+      ]
+    },
+    {
+      "h2": "Scripts that descend from Brahmi",
+      "paras": [
+        "Over the centuries, regional styles of Brahmi drifted apart, helped by changes in writing materials (stone, copper, birch bark, palm leaf) and tools. The result is a large family of scripts across Asia, all sharing the same basic structure and sound order. The [ancient scripts of India](ancient-scripts-of-india.html) guide sets out the main stages."
+      ],
+      "table": {
+        "head": ["Branch", "Intermediate stages", "Modern descendants"],
+        "rows": [
+          ["Northern", "Gupta Brahmi, Siddhamatrika, Nagari, Sharada", "Devanagari, Gujarati, Gurmukhi, Bengali, Assamese, Odia, Tibetan"],
+          ["Southern", "Kadamba, Pallava Grantha, Tamil-Brahmi, Vatteluttu", "Kannada, Telugu, Malayalam, Tamil, Sinhala"],
+          ["Southeast Asian", "Pallava-derived scripts, Kawi", "Khmer, Thai, Lao, Burmese, Javanese, Balinese"]
+        ]
+      }
+    },
+    {
+      "h2": "Learning to read Brahmi today",
+      "paras": [
+        "Brahmi is one of the easier ancient scripts to start with: about forty basic signs, regular vowel marks, and clear, mostly geometric shapes. A beginner can read short donor inscriptions within a few sessions and recognise words in Ashoka's edicts soon after. Talaash Heritage runs a hands-on [Brahmi workshop](write-like-asoka-s-scribes-a-brahmi-workshop.html) in which participants learn the letters and write their own names. For the bigger picture, the [scripts lecture](reading-india-s-scripts-brahmi-to-sarada.html) follows Brahmi through to Sharada and Nagari, and the [Prakrit course](prakrit-a-first-course.html) teaches the language most early Brahmi records were written in."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "Who deciphered the Brahmi script?", "a": "James Prinsep, an official of the Calcutta mint and secretary of the Asiatic Society of Bengal, deciphered Brahmi in the 1830s, completing the work around 1837 to 1838. He drew on short donor inscriptions from Sanchi and earlier work by other scholars."},
+    {"q": "Which language is written in Brahmi on Ashoka's edicts?", "a": "Mostly Prakrit, the spoken Middle Indo-Aryan language of the time, in several regional varieties. Ashoka's edicts in Brahmi are not in Sanskrit. In the north-west the same Prakrit texts were written in Kharosthi, and a few edicts near Kandahar are in Greek and Aramaic."},
+    {"q": "Is Devanagari derived from Brahmi?", "a": "Yes. Brahmi developed into Gupta Brahmi, then Siddhamatrika and the Nagari scripts, which led to Devanagari by around the end of the first millennium CE. Most South Asian and many Southeast Asian scripts share this ancestry."},
+    {"q": "How old is Brahmi script?", "a": "Its earliest securely dated large body of inscriptions is Ashoka's, from the mid 3rd century BCE. Some potsherds from Sri Lanka and Tamil Nadu have been dated earlier by excavators, but those dates are still debated."},
+    {"q": "Is Brahmi hard to learn?", "a": "Not especially. It has a small set of regular signs and a logical vowel system. Most people who already read an Indian script can recognise Brahmi letters within a few hours and read simple inscriptions after a short course."}
+  ],
+  "related_programmes": ["write-like-asoka-s-scribes-a-brahmi-workshop.html", "reading-india-s-scripts-brahmi-to-sarada.html", "prakrit-a-first-course.html", "sarada-script.html", "pali-a-first-course.html", "india-s-linguistic-heritage.html", "sanchi-stupas-gateways-and-buddhist-art.html"],
+  "related_guides": ["ancient-scripts-of-india", "ashoka-and-his-edicts", "what-is-epigraphy", "sanskrit-alphabet", "prakrit-and-pali", "mauryan-empire"],
+  "cta": "Talaash Heritage runs a two-part offer on Brahmi: a hands-on workshop where you learn to read and write the script, and a lecture tracing it to Sharada, online or in person.",
+  "bundle": {
+    "title": "Read Ashoka in his own words",
+    "pitch": "Learn the letters in the Brahmi workshop, then the language of the edicts in the Prakrit course. Together they let you read an Ashokan inscription line by line.",
+    "items": ["write-like-asoka-s-scribes-a-brahmi-workshop.html", "prakrit-a-first-course.html"]
+  },
+  "audience_hooks": [
+    "Schools: a Brahmi workshop where every student writes their name in Ashoka's script.",
+    "Colleges: a scripts lecture from Brahmi to Sharada for history and archaeology students.",
+    "Adult learners: Brahmi and Prakrit together, online in small groups."
+  ],
+  "sem": {
+    "ad_group": "Brahmi script workshop",
+    "keywords": ["brahmi script workshop", "learn brahmi script", "brahmi script course online", "brahmi workshop for schools", "ashokan inscriptions course", "ancient indian scripts class", "epigraphy workshop india"],
+    "negatives": ["free", "pdf", "font", "keyboard", "translator", "unicode", "download"],
+    "headlines": ["Learn Brahmi Script", "Read Ashoka's Edicts", "Hands-On Brahmi Workshop", "For Schools and Colleges", "Online or In Person"],
+    "descriptions": ["Learn to read and write Brahmi, the script of Ashoka's edicts, in a hands-on workshop.", "Arrange a Brahmi workshop or a scripts lecture for your group, online or in person."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "For centuries, nobody could read Ashoka.", "caption": "Brahmi was forgotten until James Prinsep cracked it in the 1830s, helped by a word repeated on the Sanchi railings: dānaṃ, 'gift'. Ancient Indian history changed overnight."},
+      {"angle": "tip", "hook": "At Sanchi, look low, not up.", "caption": "Beside the famous gateways, the stone railings carry short Brahmi donor inscriptions. Many end with the same few letters, the very word that helped crack the script."},
+      {"angle": "offer", "hook": "Write your name the way Ashoka's scribes did.", "caption": "Our Brahmi workshop teaches the letters in one hands-on session, for schools, colleges and adult groups, online or in person."}
+    ],
+    "reel": "A hand traces the Brahmi letters for 'dānaṃ' on paper, then the camera cuts to a photo of a Sanchi railing inscription with the same word. On-screen line: 'This one word cracked a script.' End card: 'Brahmi workshop for your group.'",
+    "hashtags": ["#BrahmiScript", "#Brahmi", "#Ashoka", "#Epigraphy", "#AncientScripts", "#IndianHistory", "#Inscriptions", "#Sanchi", "#TalaashHeritage"]
+  },
+  "og_title": "Brahmi: the script behind India's alphabets",
+  "og_description": "Ashoka's letters, how Prinsep cracked them, and the scripts from Devanagari to Thai that grew from Brahmi."
+}

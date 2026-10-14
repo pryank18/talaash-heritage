@@ -1,0 +1,395 @@
+{
+  "slug": "sanskrit-alphabet",
+  "type": "explainer",
+  "pillar": "sanskrit",
+  "title": "Sanskrit alphabet: vowels and consonants with IAST",
+  "seo_title": "Sanskrit Alphabet: Vowels, Consonants, Devanagari and IAST",
+  "meta_description": "The Sanskrit alphabet in full: vowel and consonant tables in Devanagari with IAST, how the letters are ordered by sound, vowel signs and common conjuncts.",
+  "keywords": [
+    "sanskrit alphabet",
+    "sanskrit varnamala",
+    "sanskrit vowels and consonants",
+    "sanskrit alphabet with english",
+    "devanagari alphabet",
+    "iast transliteration",
+    "sanskrit letters",
+    "how many letters in sanskrit alphabet",
+    "sanskrit swar and vyanjan"
+  ],
+  "summary": "The Sanskrit alphabet (varṇamālā) is usually listed as 13 core vowels plus anusvāra and visarga, and 33 basic consonants. Letters are ordered by where in the mouth they are pronounced, from the throat to the lips. Today Sanskrit is mostly written in Devanagari and romanised with IAST, which marks long vowels and retroflex sounds precisely.",
+  "sections": [
+    {
+      "h2": "How the Sanskrit alphabet is organised",
+      "paras": [
+        "The Sanskrit alphabet is not arranged at random like the Latin ABC. Ancient Indian phoneticians, whose work survives in texts called the Prātiśākhyas and Śikṣā, ordered sounds by how they are made: vowels first, then consonants grouped by the place of articulation, moving from the back of the mouth (velar) to the lips (labial). Within each group the order is fixed: unvoiced, unvoiced aspirated, voiced, voiced aspirated, nasal.",
+        "Sanskrit is a language and Devanagari is only one of the scripts used for it. The same sound order underlies Brahmi and nearly all its descendants, from Sharada to Tamil and Thai, which is why the alphabets of so many Asian scripts follow the same sequence. You can see the ancestor letters in the [Brahmi script](brahmi-script.html) guide.",
+        "IAST, the International Alphabet of Sanskrit Transliteration, writes each sound with one Latin letter plus diacritics: a macron for long vowels (ā), a dot below for retroflex sounds (ṭ) and an acute or dot for some sibilants and nasals (ś, ṣ, ṅ, ñ)."
+      ]
+    },
+    {
+      "h2": "Sanskrit vowels (svara)",
+      "paras": [
+        "The vowels come in short and long pairs. The diphthongs e, ai, o and au count as long. The vowel ḹ is listed in grammar but occurs in hardly any real words. Anusvāra (a nasal) and visarga (a breathy h) are not true vowels but are traditionally recited with them."
+      ],
+      "table": {
+        "head": [
+          "Devanagari",
+          "IAST",
+          "Type",
+          "Sign after a consonant (with k)"
+        ],
+        "rows": [
+          [
+            "अ",
+            "a",
+            "short",
+            "क ka"
+          ],
+          [
+            "आ",
+            "ā",
+            "long",
+            "का kā"
+          ],
+          [
+            "इ",
+            "i",
+            "short",
+            "कि ki"
+          ],
+          [
+            "ई",
+            "ī",
+            "long",
+            "की kī"
+          ],
+          [
+            "उ",
+            "u",
+            "short",
+            "कु ku"
+          ],
+          [
+            "ऊ",
+            "ū",
+            "long",
+            "कू kū"
+          ],
+          [
+            "ऋ",
+            "ṛ",
+            "short (vocalic r)",
+            "कृ kṛ"
+          ],
+          [
+            "ॠ",
+            "ṝ",
+            "long (vocalic r)",
+            "कॄ kṝ"
+          ],
+          [
+            "ऌ",
+            "ḷ",
+            "short (vocalic l)",
+            "कॢ kḷ"
+          ],
+          [
+            "ए",
+            "e",
+            "long",
+            "के ke"
+          ],
+          [
+            "ऐ",
+            "ai",
+            "diphthong",
+            "कै kai"
+          ],
+          [
+            "ओ",
+            "o",
+            "long",
+            "को ko"
+          ],
+          [
+            "औ",
+            "au",
+            "diphthong",
+            "कौ kau"
+          ],
+          [
+            "अं",
+            "ṃ",
+            "anusvāra",
+            "कं kaṃ"
+          ],
+          [
+            "अः",
+            "ḥ",
+            "visarga",
+            "कः kaḥ"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Sanskrit consonants (vyañjana)",
+      "paras": [
+        "The 25 'stop' consonants form a five by five grid. Each row is one place in the mouth; each column is one manner of pronunciation. After the grid come four semivowels, three sibilants and h. Every consonant letter carries an inherent short a, so क is read ka, not k."
+      ],
+      "table": {
+        "head": [
+          "Group",
+          "Unvoiced",
+          "Unvoiced aspirated",
+          "Voiced",
+          "Voiced aspirated",
+          "Nasal"
+        ],
+        "rows": [
+          [
+            "Velar (throat)",
+            "क ka",
+            "ख kha",
+            "ग ga",
+            "घ gha",
+            "ङ ṅa"
+          ],
+          [
+            "Palatal",
+            "च ca",
+            "छ cha",
+            "ज ja",
+            "झ jha",
+            "ञ ña"
+          ],
+          [
+            "Retroflex",
+            "ट ṭa",
+            "ठ ṭha",
+            "ड ḍa",
+            "ढ ḍha",
+            "ण ṇa"
+          ],
+          [
+            "Dental",
+            "त ta",
+            "थ tha",
+            "द da",
+            "ध dha",
+            "न na"
+          ],
+          [
+            "Labial (lips)",
+            "प pa",
+            "फ pha",
+            "ब ba",
+            "भ bha",
+            "म ma"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Semivowels, sibilants and h",
+      "paras": [
+        "The remaining eight consonants complete the basic set of 33. In IAST, c is always the sound in 'church', never 'cat', and the h in kh, th or ph marks breath after the consonant, not an English th or ph sound."
+      ],
+      "table": {
+        "head": [
+          "Devanagari",
+          "IAST",
+          "Class",
+          "Rough guide to sound"
+        ],
+        "rows": [
+          [
+            "य",
+            "ya",
+            "semivowel, palatal",
+            "y in yes"
+          ],
+          [
+            "र",
+            "ra",
+            "semivowel, retroflex",
+            "a tapped r"
+          ],
+          [
+            "ल",
+            "la",
+            "semivowel, dental",
+            "l in love"
+          ],
+          [
+            "व",
+            "va",
+            "semivowel, labial",
+            "between v and w"
+          ],
+          [
+            "श",
+            "śa",
+            "sibilant, palatal",
+            "sh in shut"
+          ],
+          [
+            "ष",
+            "ṣa",
+            "sibilant, retroflex",
+            "sh with the tongue curled back"
+          ],
+          [
+            "स",
+            "sa",
+            "sibilant, dental",
+            "s in sun"
+          ],
+          [
+            "ह",
+            "ha",
+            "aspirate",
+            "a voiced h"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Virama and conjunct consonants",
+      "paras": [
+        "To write a consonant with no vowel, Devanagari adds a small stroke called the virāma (्): क् is k alone. When two or more consonants meet without a vowel between them, they are usually joined into a conjunct letter. Most conjuncts are easy to recognise from their parts, but a few look quite different and are taught as separate shapes.",
+        "Some traditional charts add क्ष kṣa, त्र tra and ज्ञ jña to the end of the alphabet because they are so common, which is why you may see counts higher than 33. They are conjuncts, not extra sounds."
+      ],
+      "list": [
+        "क्ष kṣa: k + ṣa, as in क्षत्रिय kṣatriya.",
+        "ज्ञ jña: j + ña, as in ज्ञान jñāna (knowledge).",
+        "त्र tra: t + ra, as in मित्र mitra (friend).",
+        "श्र śra: ś + ra, as in श्री śrī.",
+        "द्ध ddha: d + dha, as in बुद्ध buddha."
+      ]
+    },
+    {
+      "h2": "How to learn the Sanskrit alphabet quickly",
+      "paras": [
+        "Learn the consonant grid as a grid, row by row, saying each letter aloud. Once you know one row, the pattern of the others follows. Write each letter ten times, then write short words such as राम rāma, देव deva, गुरु guru and कमल kamala. Learn IAST in parallel, since dictionaries and grammars use it. The [learn Sanskrit for beginners](learn-sanskrit-for-beginners.html) guide sets out what comes after the script.",
+        "If you enjoy the shapes themselves, try reading the same letters in older scripts. Our [Brahmi workshop](write-like-asoka-s-scribes-a-brahmi-workshop.html) teaches the letters of Ashoka's edicts, and the [Sharada course](sarada-script.html) teaches the script of medieval Kashmir, both organised in exactly this order."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "How many letters are in the Sanskrit alphabet?",
+      "a": "It depends on how you count. A common count is 13 vowels plus anusvāra and visarga, and 33 basic consonants. Some charts add the rare long vocalic ḹ, and many add the conjuncts kṣa, tra and jña, giving totals of 48 to 50 or more."
+    },
+    {
+      "q": "What is the Sanskrit alphabet called?",
+      "a": "It is traditionally called the varṇamālā, 'garland of sounds' or 'garland of letters'. Vowels are svara and consonants are vyañjana. The term refers to the sound order, which is shared by many scripts, rather than to Devanagari alone."
+    },
+    {
+      "q": "Is the Sanskrit alphabet the same as Hindi?",
+      "a": "Largely, since both use Devanagari in the same order. Hindi rarely uses ṝ and ḷ, pronounces some letters differently (for example ṣa often like śa), and adds dotted letters such as ज़ for z and फ़ for f that Sanskrit does not have."
+    },
+    {
+      "q": "What is IAST?",
+      "a": "IAST is the International Alphabet of Sanskrit Transliteration, a standard way to write Sanskrit in Latin letters with diacritics. Each Devanagari sound has one fixed equivalent, so ā is long a, ṭ is retroflex t and ś is the palatal sh sound."
+    },
+    {
+      "q": "Why does every consonant include 'a'?",
+      "a": "Devanagari, like other Brahmi-derived scripts, is an abugida: each consonant sign carries an inherent short a. Other vowels are shown by marks attached to the consonant, and the virāma removes the vowel entirely."
+    }
+  ],
+  "related_programmes": [
+    "write-like-asoka-s-scribes-a-brahmi-workshop.html",
+    "sarada-script.html",
+    "reading-india-s-scripts-brahmi-to-sarada.html",
+    "india-s-linguistic-heritage.html",
+    "prakrit-a-first-course.html",
+    "pali-a-first-course.html"
+  ],
+  "related_guides": [
+    "learn-sanskrit-for-beginners",
+    "sanskrit-grammar-basics",
+    "brahmi-script",
+    "ancient-scripts-of-india",
+    "what-is-sanskrit"
+  ],
+  "cta": "Talaash Heritage runs a hands-on Brahmi workshop and a Sharada script course that teach the ancestors of Devanagari in this same sound order, online or in person.",
+  "bundle": {
+    "title": "One alphabet, three scripts",
+    "pitch": "Learn the sound order once, then see it written in Ashoka's Brahmi and in Kashmir's Sharada. The comparison makes each script easier to remember.",
+    "items": [
+      "write-like-asoka-s-scribes-a-brahmi-workshop.html",
+      "sarada-script.html",
+      "reading-india-s-scripts-brahmi-to-sarada.html"
+    ]
+  },
+  "audience_hooks": [
+    "Schools: a Brahmi workshop where students write their names in Ashoka's script.",
+    "Colleges: a lecture tracing Indian scripts from Brahmi to Sharada.",
+    "Adult learners: a Sharada script course online in small groups."
+  ],
+  "sem": {
+    "ad_group": "Indian script workshops",
+    "keywords": [
+      "brahmi script workshop",
+      "learn brahmi script",
+      "sharada script course",
+      "ancient indian scripts class",
+      "brahmi workshop for schools",
+      "learn old indian scripts online",
+      "indian scripts lecture"
+    ],
+    "negatives": [
+      "free",
+      "pdf",
+      "chart download",
+      "font",
+      "keyboard",
+      "printable",
+      "worksheet"
+    ],
+    "headlines": [
+      "Learn Brahmi Script",
+      "Read Sharada Script",
+      "From Brahmi to Devanagari",
+      "Online or In Person",
+      "For Schools and Colleges"
+    ],
+    "descriptions": [
+      "Hands-on workshops in Brahmi and Sharada, the ancestors of Devanagari.",
+      "Arrange a workshop or short course for your school, college or adult group."
+    ]
+  },
+  "social": {
+    "posts": [
+      {
+        "angle": "fact",
+        "hook": "The Sanskrit alphabet runs from your throat to your lips.",
+        "caption": "Ka, ca, ṭa, ta, pa: each row moves the point of contact further forward in the mouth. Ancient Indian phoneticians worked this out more than two thousand years ago."
+      },
+      {
+        "angle": "tip",
+        "hook": "Say the five rows aloud and feel your tongue move.",
+        "caption": "Velar, palatal, retroflex, dental, labial. Once you feel the pattern, the whole consonant grid falls into place, and the long and short vowels follow."
+      },
+      {
+        "angle": "offer",
+        "hook": "Can you write your name in Ashoka's script?",
+        "caption": "Our Brahmi workshop uses the same sound order as Devanagari, so students recognise letters within minutes. We bring it to schools, colleges and adult groups."
+      }
+    ],
+    "reel": "A hand writes ka, kha, ga, gha, ṅa in Devanagari, then the same five letters in Brahmi beside them. On-screen line: 'Same order for 2,000 years.' End card: 'Brahmi workshop for your group.'",
+    "hashtags": [
+      "#SanskritAlphabet",
+      "#Varnamala",
+      "#Devanagari",
+      "#Sanskrit",
+      "#Brahmi",
+      "#IndianScripts",
+      "#LearnSanskrit",
+      "#TalaashHeritage"
+    ]
+  },
+  "og_title": "The Sanskrit alphabet, laid out clearly",
+  "og_description": "Every vowel and consonant in Devanagari with IAST, and the logic behind the order."
+}

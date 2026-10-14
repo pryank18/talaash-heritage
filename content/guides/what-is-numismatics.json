@@ -1,0 +1,84 @@
+{
+  "slug": "what-is-numismatics",
+  "type": "explainer",
+  "pillar": "archaeology",
+  "title": "What is numismatics? Coins as evidence for Indian history",
+  "seo_title": "What is Numismatics? Meaning and Indian Coins in History",
+  "meta_description": "What is numismatics? The study of coins explained, from punch-marked coins to Gupta gold and Mughal rupees, and how coins help historians date the past.",
+  "keywords": ["numismatics", "what is numismatics", "numismatics meaning", "numismatics in indian history", "ancient indian coins", "punch marked coins", "importance of coins in history", "study of coins", "numismatist"],
+  "summary": "Numismatics is the study of coins, and more broadly of money, tokens, medals and the moulds and dies used to make them. Numismatists study a coin's metal, weight, design, script and findspot. In India, coins from punch-marked silver to Gupta gold and Mughal rupees name rulers, date layers and reveal trade and religion.",
+  "sections": [
+    {
+      "h2": "Numismatics meaning: more than collecting coins",
+      "paras": [
+        "The word comes from the Latin numisma, a coin, from Greek nomisma, something established by custom or law. Numismatics today covers coins, paper money, tokens, medals and the tools of minting such as dies and moulds.",
+        "Collecting and numismatics overlap but are not the same. A collector values rarity and condition. A numismatist treats each coin as a document: who issued it, from which mint, to what weight standard, in what metal, with which images and words, and where it was found. The last question matters most to archaeologists, because a coin's findspot connects it to a site and a layer.",
+        "Numismatics sits beside [epigraphy](what-is-epigraphy.html) as one of the two key sources for early Indian chronology. Many coins carry short inscriptions, so the two specialisms often meet."
+      ]
+    },
+    {
+      "h2": "What coins tell historians",
+      "paras": [
+        "A single coin can carry a surprising amount of information. Read together, thousands of them build a picture no text provides."
+      ],
+      "list": [
+        "Rulers and dynasties: many Indo-Greek and some other kings are known almost only from their coins.",
+        "Dates: coins help date the layers and hoards they are found in, and some carry dates in an era.",
+        "Political reach: where a ruler's coins are found shows roughly where his authority or trade reached.",
+        "Economy: metal purity and weight reveal prosperity or strain; debasement often signals pressure on a state.",
+        "Trade: Roman coins in south India point to long-distance commerce in the early centuries CE.",
+        "Religion and ideas: images of deities, the Buddha, symbols and royal portraits show what rulers chose to display.",
+        "Language and script: legends in Greek, Kharosthi, Brahmi, Sanskrit, Persian and regional scripts trace changing official languages."
+      ]
+    },
+    {
+      "h2": "A short history of Indian coins",
+      "paras": [
+        "The earliest Indian coins are punch-marked coins, mostly silver, made by stamping symbols such as suns, wheels, animals and hills onto pieces of metal of a fixed weight. They appear around the middle of the first millennium BCE, the time of the Mahajanapadas, and circulated widely under the [Mauryan Empire](mauryan-empire.html). Uninscribed cast copper coins and local tribal issues followed.",
+        "From the 2nd century BCE the Indo-Greek kings of the north-west issued finely made coins with portraits and bilingual legends in Greek and Kharosthi, a model later followed by the Shakas, Kushanas and others. The Kushanas issued substantial gold coinage, and the Guptas produced the gold coins most people picture when they think of ancient Indian money, showing kings as archers, lion-slayers and musicians.",
+        "In the south, the Satavahanas issued coins in lead and other metals, and Roman gold and silver coins arrived through trade. The Delhi Sultanate standardised silver tankas, Muhammad bin Tughluq experimented with token currency in copper and brass, and Sher Shah Suri issued the silver rupiya that the Mughals continued. The word rupee descends from it."
+      ],
+      "table": {
+        "head": ["Coinage", "Approximate period", "What to notice"],
+        "rows": [
+          ["Punch-marked silver", "About 6th to 2nd century BCE", "Symbols stamped one by one; no names"],
+          ["Indo-Greek", "2nd to 1st century BCE", "Portraits; Greek and Kharosthi legends"],
+          ["Kushana", "1st to 3rd century CE", "Gold coins; mix of Greek, Iranian and Indian deities"],
+          ["Gupta gold", "4th to 6th century CE", "King in action poses; Sanskrit legends in Brahmi"],
+          ["Sultanate tanka", "13th to 16th century", "Arabic and Persian legends; no images"],
+          ["Mughal rupee", "16th to 19th century", "Mint names and regnal years; fine calligraphy"]
+        ]
+      }
+    },
+    {
+      "h2": "How coins help archaeologists date sites",
+      "paras": [
+        "A coin found sealed in a layer gives a date before which that layer cannot have formed. If a floor contains a Kushana copper coin, the floor was laid during or after that ruler's reign. Coins could stay in circulation for generations, so archaeologists use them as one strand among several. Our guide to [how archaeologists date artifacts](how-archaeologists-date-artifacts.html) explains how coins combine with pottery and scientific dating.",
+        "Hoards are a special case. A pot full of coins buried and never recovered is a snapshot of money in use at one moment, and the latest coin in it gives the earliest possible date of burial. Hoards are often found by chance, and under Indian law treasure finds must be reported to the authorities."
+      ]
+    },
+    {
+      "h2": "Where to see and study Indian coins",
+      "paras": [
+        "Large coin collections are held at the National Museum in New Delhi, the Indian Museum in Kolkata and the Chhatrapati Shivaji Maharaj Vastu Sangrahalaya in Mumbai, among others. Our list of the [best archaeology museums in India](best-archaeology-museums-in-india.html) covers more.",
+        "Coins are small and hard to see properly in a case. Handling good replicas is the quickest way to learn: weighing them, looking at the punch marks, reading a legend. That is the idea behind our [introduction to numismatics with replicas](introduction-to-numismatics-with-replicas.html), which works well before a [museum gallery study](museum-morning-with-an-archaeologist.html)."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "What is the oldest coin in India?", "a": "The oldest Indian coins are punch-marked coins, mostly of silver, which appear around the middle of the first millennium BCE. Exact dates are debated, but they are generally placed from about the 6th or 5th century BCE onward. They carry stamped symbols rather than names or inscriptions."},
+    {"q": "Which dynasty issued the most gold coins in ancient India?", "a": "The Kushanas and the Guptas are best known for gold coinage. Gupta gold coins, from about the 4th to 6th century CE, are especially varied in design, showing kings as archers, horsemen, lion-slayers and even playing the veena, with Sanskrit legends in Brahmi."},
+    {"q": "Why is numismatics important for history?", "a": "Coins name rulers, help date archaeological layers, show the extent of trade and political power, reveal the state of the economy through metal and weight, and record religious images and languages. For some dynasties, such as many Indo-Greek kings, coins are almost the only evidence that they existed."},
+    {"q": "Is it legal to keep old coins found in India?", "a": "Under the Indian Treasure Trove Act of 1878, finds of treasure above a set value must be reported to the district authorities. Antiquities more than 100 years old are also covered by the Antiquities and Art Treasures Act, 1972. If you find old coins, report them rather than selling or cleaning them."},
+    {"q": "How do I start learning numismatics?", "a": "Start with a good introduction to Indian coinage, visit museum coin galleries, and learn to read basic scripts such as Brahmi and Kharosthi. Handling replicas builds familiarity with weights, designs and legends. Numismatic societies in several Indian cities hold talks and publish journals."}
+  ],
+  "related_programmes": ["introduction-to-numismatics-with-replicas.html", "museum-morning-with-an-archaeologist.html", "chronology-and-archaeological-dating.html", "write-like-asoka-s-scribes-a-brahmi-workshop.html", "museum-object-identification-lab.html", "archaeology-for-families-object-detective-lab.html"],
+  "related_guides": ["what-is-epigraphy", "how-archaeologists-date-artifacts", "gupta-empire", "mauryan-empire", "best-archaeology-museums-in-india", "mughal-empire"],
+  "bundle": {"title": "Handle it, then find it", "pitch": "Learn to read coins with replicas in a workshop, then visit a museum gallery with an archaeologist to spot the same coinages in the cases.", "items": ["introduction-to-numismatics-with-replicas.html", "museum-morning-with-an-archaeologist.html"]},
+  "audience_hooks": ["Schools: a coin workshop with replicas, at your school or online.", "Families: an object detective lab where children identify coins and other finds.", "Colleges: a lecture on chronology and how coins date archaeological layers."],
+  "sem": {"ad_group": "Numismatics workshop", "keywords": ["numismatics workshop for students", "ancient indian coins workshop", "coin history session for schools", "numismatics course online india", "learn numismatics in delhi", "museum coin gallery tour"], "negatives": ["free", "pdf", "sell old coins", "coin price", "buy coins", "value"], "headlines": ["Numismatics with Replicas", "Read Ancient Indian Coins", "Workshops for Schools", "Led by Archaeologists", "Online or In Person"], "descriptions": ["Handle replica punch-marked, Kushana, Gupta and Mughal coins and learn to read them.", "Coin workshops and museum visits for schools, colleges and adult groups."]},
+  "social": {"posts": [{"angle": "fact", "hook": "The word rupee goes back to Sher Shah Suri.", "caption": "His silver rupiya of the 16th century set a standard the Mughals kept. The name has outlived every empire that used it."}, {"angle": "tip", "hook": "In a museum coin case, look for the legend first.", "caption": "The writing around the edge often names the ruler and sometimes the mint and year. Even if you cannot read it, notice the script: Greek, Brahmi, Persian or a regional script tells you a lot."}, {"angle": "offer", "hook": "Want to hold a Gupta gold coin? Well, a good replica.", "caption": "Our numismatics workshop uses replicas so groups can weigh, compare and read India's coins from punch-marked silver to Mughal rupees. Online or in person."}], "reel": "A tray of replica coins: hands pick up a punch-marked coin, a Kushana gold coin and a Mughal rupee in turn. On-screen line: '2,500 years of Indian money in one hand.' End card: 'Numismatics workshops for groups.'", "hashtags": ["#Numismatics", "#AncientCoins", "#IndianCoins", "#CoinHistory", "#IndianHistory", "#GuptaEmpire", "#MuseumLearning", "#TalaashHeritage"]},
+  "og_title": "What is numismatics? India's history in its coins",
+  "og_description": "Punch-marked silver to Mughal rupees: how coins name kings, date sites and trace trade across India.",
+  "cta": "Talaash Heritage runs an introduction to numismatics using replica coins, for schools, colleges and adult groups, online or in person."
+}

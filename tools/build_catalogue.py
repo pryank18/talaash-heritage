@@ -777,6 +777,72 @@ def extras_html(p):
     return "".join(out)
 
 
+# Cross-selling on programme pages, from the guides in content/guides:
+# which guides recommend this programme, and which programmes pair with it.
+GUIDE_DIR = os.path.join(os.path.dirname(site), "content", "guides")
+GUIDE_FOR, PAIRS = {}, {}
+if os.path.isdir(GUIDE_DIR):
+    for f in sorted(os.listdir(GUIDE_DIR)):
+        if not f.endswith(".json"):
+            continue
+        g = json.load(open(os.path.join(GUIDE_DIR, f), encoding="utf-8"))
+        name = g["title"].split(":")[0]
+        for page in g.get("related_programmes", []) + g.get("bundle", {}).get("items", []):
+            GUIDE_FOR.setdefault(page, {})[g["slug"]] = (name, g["type"])
+        items = g.get("bundle", {}).get("items", [])
+        for a in items:
+            for b in items:
+                if a != b:
+                    PAIRS.setdefault(a, []).append(b)
+BY_PAGE = {p["page"]: p for p in catalogue["programmes"]}
+GUIDE_RANK = {"city": 0, "state": 1, "pillar": 2, "list": 2, "explainer": 3}
+
+
+def xsell_html(p):
+    """Guides to read and programmes to add, shown under the programme. It sits outside
+    #product-root, so the live redraw by product.js leaves it in place."""
+    reads = sorted(GUIDE_FOR.get(p["page"], {}).items(), key=lambda kv: (GUIDE_RANK.get(kv[1][1], 9), kv[1][0]))[:8]
+    pairs = []
+    for x in PAIRS.get(p["page"], []):
+        if x in BY_PAGE and x not in pairs and x != p["page"]:
+            pairs.append(x)
+    if len(pairs) < 4:
+        same = [q["page"] for q in catalogue["programmes"] if q["page"] != p["page"] and q["page"] not in pairs and q.get("region") == p.get("region") and q.get("region")]
+        other_kind = [x for x in same if BY_PAGE[x]["kind"] != p["kind"]] + [x for x in same if BY_PAGE[x]["kind"] == p["kind"]]
+        pairs += other_kind[: 4 - len(pairs)]
+    pairs = pairs[:4]
+    out = []
+    if pairs:
+        out.append('<div class="section-head"><h2>Pairs well with</h2><a href="shop.html">Everything we offer</a></div><div class="grid">' +
+                   "".join(static_card(BY_PAGE[x]) for x in pairs) + "</div>")
+    if reads:
+        out.append('<h2>Read before you go</h2><ul class="xsell-reads">' + "".join(f'<li><a href="{s}.html">{h(n)}</a></li>' for s, (n, t) in reads) + "</ul>")
+    return f'<section class="wrap xsell" aria-label="More to explore">{"".join(out)}</section>' if out else ""
+
+
+TRIP_KINDS = {"Heritage walk", "Museum visit", "Day trip", "Study tour", "Private journey", "Field school"}
+
+
+def programme_ld(p, url, image):
+    org = {"@type": "Organization", "@id": SITE_URL + "#org", "name": "Talaash Heritage", "url": SITE_URL}
+    desc = p["description"].split("\n\n")[0]
+    if p["kind"] in TRIP_KINDS:
+        main = {"@type": "TouristTrip", "name": p["title"], "description": desc, "url": url, "image": image, "provider": org,
+                "touristType": [a.capitalize() for a in p.get("audience", [])] or None}
+        if p.get("highlights"):
+            main["itinerary"] = {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": x} for i, x in enumerate(p["highlights"])]}
+    else:
+        main = {"@type": "Course", "name": p["title"], "description": desc, "url": url, "image": image, "provider": org,
+                "inLanguage": ["en", "hi"],
+                "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online" if "Online" in p["venue"] and "venue" not in p["venue"] else "Blended",
+                                      "location": p["venue"]}}
+    main = {k: v for k, v in main.items() if v}
+    crumbs = {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Everything we offer", "item": SITE_URL + "shop.html"},
+        {"@type": "ListItem", "position": 2, "name": p["title"], "item": url}]}
+    return json.dumps({"@context": "https://schema.org", "@graph": [main, crumbs]}, ensure_ascii=False).replace("</", "<\\/")
+
+
 def lower(x):
     return x[0].lower() + x[1:] if x and not x[:2].isupper() else x
 
@@ -830,6 +896,7 @@ def static_page(p):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@400;600&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">{programme_ld(p, url, image)}</script>
 </head>
 <body data-gate="open" data-slug="{h(p["slug"])}">
 <div id="site-header"></div>
@@ -857,6 +924,7 @@ def static_page(p):
     </div>
   </div>
 </div>
+{xsell_html(p)}
 </main>
 <div id="site-footer"></div>
 <script type="module" src="assets/js/layout.js"></script>

@@ -1,0 +1,97 @@
+{
+  "slug": "famous-archaeological-sites-in-india",
+  "type": "explainer",
+  "pillar": "archaeology",
+  "title": "Famous archaeological sites in India, from Bhimbetka to Hampi",
+  "seo_title": "Famous Archaeological Sites in India: Period-wise List",
+  "meta_description": "Famous archaeological sites in India listed by period, from Stone Age Bhimbetka and Harappan Dholavira to Sanchi, Nalanda and Hampi, with what to see at each.",
+  "keywords": ["famous archaeological sites in india", "archaeological sites in india", "important archaeological sites in india", "list of archaeological sites in india", "harappan sites in india", "ancient sites in india", "archaeological places in india", "excavated sites in india"],
+  "summary": "India's most famous archaeological sites span the whole human past: Stone Age rock shelters at Bhimbetka, Harappan cities such as Dholavira, Lothal and Rakhigarhi, early historic sites including Sanchi and Sarnath, monastic Nalanda, rock-cut Ajanta and Ellora, and the ruined imperial city of Hampi. Many are protected by the Archaeological Survey of India.",
+  "sections": [
+    {
+      "h2": "What makes an archaeological site famous?",
+      "paras": [
+        "Some sites are famous because they look spectacular: the caves of Ellora or the boulder-strewn ruins of Hampi. Others are famous because of what excavation revealed there, even if a visitor sees little more than low brick walls. Rakhigarhi and Burzahom matter enormously to archaeologists while drawing modest crowds.",
+        "The list below picks sites that are both important for understanding Indian history and possible to visit. It runs in rough chronological order. For a broader overview of the discipline in India, see our pillar on [archaeology in India](archaeology-in-india.html)."
+      ]
+    },
+    {
+      "h2": "Period-wise list of famous archaeological sites",
+      "paras": [
+        "This table gives each site's state, period and the main reason it matters. Several are UNESCO World Heritage Sites; check the ASI or site website for visiting arrangements before you go."
+      ],
+      "table": {
+        "head": ["Site", "State", "Period", "Why it matters"],
+        "rows": [
+          ["Attirampakkam", "Tamil Nadu", "Lower Palaeolithic", "Acheulian stone tools dated to well over a million years ago"],
+          ["Bhimbetka", "Madhya Pradesh", "Palaeolithic to historic", "Hundreds of painted rock shelters; UNESCO site"],
+          ["Burzahom", "Jammu and Kashmir", "Neolithic", "Pit dwellings and burials in the Kashmir valley"],
+          ["Dholavira", "Gujarat", "Harappan", "Planned city with elaborate water management; UNESCO site"],
+          ["Lothal", "Gujarat", "Harappan", "Bead-making, a large brick basin often read as a dock"],
+          ["Rakhigarhi", "Haryana", "Harappan", "One of the largest Harappan settlements; ancient DNA study"],
+          ["Kalibangan", "Rajasthan", "Pre-Harappan and Harappan", "Ploughed field surface and fire altars"],
+          ["Inamgaon", "Maharashtra", "Chalcolithic", "Village life of early farmers in the Deccan"],
+          ["Sanchi", "Madhya Pradesh", "Mauryan to medieval", "Stupas and carved gateways; UNESCO site"],
+          ["Sarnath", "Uttar Pradesh", "Mauryan onward", "Ashokan pillar and lion capital; UNESCO site since 2026"],
+          ["Sisupalgarh", "Odisha", "Early historic", "Fortified city with gateways"],
+          ["Keeladi", "Tamil Nadu", "Early historic", "Urban settlement linked to the Sangam age"],
+          ["Arikamedu", "Puducherry", "Early historic", "Port with Mediterranean pottery and beads"],
+          ["Nalanda", "Bihar", "Gupta to Pala", "Monastic university; UNESCO site"],
+          ["Ajanta and Ellora", "Maharashtra", "2nd century BCE to 10th century CE", "Rock-cut caves and paintings; UNESCO sites"],
+          ["Hampi", "Karnataka", "Vijayanagara", "Ruined imperial capital; UNESCO site"]
+        ]
+      }
+    },
+    {
+      "h2": "Prehistoric sites: Bhimbetka and the Stone Age",
+      "paras": [
+        "Bhimbetka, south of Bhopal, is the best place in India to sense the depth of human time. Its sandstone shelters hold paintings of hunts, dancers and animals from many periods, and excavations in the shelters found stone tools reaching back into the Palaeolithic. Our guide to [rock art in India](rock-art-in-india.html) covers the paintings, and a guided visit to [Bhimbetka's painted shelters](bhimbetka-painted-shelters-and-prehistoric-landscapes.html) helps you tell the layers of painting apart.",
+        "Attirampakkam near Chennai, excavated by the Sharma Centre for Heritage Education, has produced Acheulian hand axes dated to around 1.5 million years ago, among the oldest in South Asia. For more, see our guide to the [Stone Age in India](stone-age-in-india.html)."
+      ]
+    },
+    {
+      "h2": "Harappan sites in India",
+      "paras": [
+        "Most famous Harappan sites in the Republic of India lie in Gujarat, Rajasthan and Haryana. Dholavira, on an island in the Rann of Kachchh, is remarkable for its reservoirs and its division into citadel, middle town and lower town. Lothal, near Ahmedabad, shows bead workshops and a large brick-lined basin whose function is still debated. Kalibangan in Rajasthan preserved a ploughed field beneath a later settlement.",
+        "Rakhigarhi in Haryana is among the largest Harappan sites, and a burial excavated there produced ancient DNA that has fed a lively scholarly debate. A day at [Rakhigarhi](rakhigarhi.html) with an archaeologist puts the mounds and the debate in context. See our guide to the [Indus Valley Civilization](indus-valley-civilization.html) for the wider story."
+      ]
+    },
+    {
+      "h2": "Early historic and Buddhist sites",
+      "paras": [
+        "Sanchi and Sarnath are the classic early Buddhist sites. Sanchi's Great Stupa, begun under Ashoka and enlarged later, has some of the finest early Indian relief carving on its gateways. Sarnath, where the Buddha is said to have given his first sermon, has the Dhamek stupa and the site of the Ashokan pillar whose lion capital is now India's national emblem.",
+        "Excavated cities tell a parallel story of urban life. Sisupalgarh near Bhubaneswar has a fortified plan with well-built gateways; Keeladi near Madurai and Arikamedu near Puducherry show trade, crafts and literacy in the early historic south. Nalanda in Bihar, with its rows of monasteries and temples, shows what a large Buddhist teaching centre looked like."
+      ]
+    },
+    {
+      "h2": "Rock-cut caves and medieval cities",
+      "paras": [
+        "Rock-cut architecture is one of India's great contributions to world archaeology. Ajanta's Buddhist caves preserve paintings of the 5th century CE, and Ellora brings together Buddhist, Hindu and Jain caves, including the Kailasa temple carved from a single mass of rock. Our guide to [Buddhist caves in India](buddhist-caves-in-india.html) explores the western Indian caves in detail.",
+        "Hampi, the Vijayanagara capital in Karnataka, is a vast archaeological landscape of temples, bazaars, water channels and royal enclosures, abandoned after 1565. Excavation and survey there continue to reveal how a medieval Indian capital worked."
+      ]
+    },
+    {
+      "h2": "Visiting archaeological sites with a group",
+      "paras": [
+        "Many of these sites make little sense without someone to explain the evidence: which walls are early, what a mound hides, how the date was worked out. Pairing a site visit with a short lecture beforehand helps students and adult groups get far more from a day.",
+        "For travellers, a [study tour built for your group](a-study-tour-built-for-your-group.html) can combine several sites in one region, such as Sanchi, Bhimbetka and Udayagiri in central India, or Dholavira and Lothal in Gujarat."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "Which is the oldest archaeological site in India?", "a": "Among the oldest dated sites is Attirampakkam in Tamil Nadu, where Acheulian stone tools have been dated to around 1.5 million years ago. Other early Stone Age sites include Isampur in Karnataka and sites in the Hunsgi valley. Dates for such sites depend on scientific methods and are refined as research continues."},
+    {"q": "What are the main Harappan sites in India?", "a": "The main Harappan sites in present-day India include Dholavira and Lothal in Gujarat, Kalibangan in Rajasthan, Rakhigarhi and Banawali in Haryana, and Ropar in Punjab. Harappa and Mohenjo-daro themselves lie in Pakistan. Dholavira is a UNESCO World Heritage Site."},
+    {"q": "Which archaeological sites in India are UNESCO World Heritage Sites?", "a": "Archaeological sites on India's UNESCO list include Bhimbetka, Dholavira, Sanchi, Nalanda, Ajanta, Ellora, Elephanta, Hampi, Pattadakal, the Mahabodhi Temple at Bodh Gaya, Champaner-Pavagadh and, since July 2026, the Ancient Buddhist Site of Sarnath. India has 45 World Heritage Sites in all."},
+    {"q": "Can I visit active excavations in India?", "a": "Excavations are licensed by the Archaeological Survey of India and usually run for a few weeks or months each year. Visiting depends on the team leading the dig; some welcome students by arrangement. Most visitors see excavated remains at protected sites, along with finds in site museums."},
+    {"q": "Which archaeological site is best for school trips?", "a": "Sites close to cities with a site museum work best, such as Sanchi near Bhopal, Sarnath near Varanasi, Nalanda near Patna or Lothal near Ahmedabad. Bhimbetka is excellent for older students interested in prehistory. A short classroom session before the visit helps students know what to look for."}
+  ],
+  "related_programmes": ["bhimbetka-painted-shelters-and-prehistoric-landscapes.html", "rakhigarhi.html", "sanchi-stupas-gateways-and-buddhist-art.html", "dholavira-harappan-urbanism-in-kachchh.html", "nalanda-monastic-university-landscape.html", "a-study-tour-built-for-your-group.html", "central-india-rock-art-and-buddhist-archaeology.html", "harappan-gujarat-cities-water-and-trade.html"],
+  "related_guides": ["archaeology-in-india", "indus-valley-civilization", "rock-art-in-india", "buddhist-caves-in-india", "stone-age-in-india", "unesco-world-heritage-sites-in-india"],
+  "bundle": {"title": "Central India in two days", "pitch": "Bhimbetka's painted shelters and the stupas of Sanchi lie close enough to see together, moving from the Stone Age to early Buddhist art in one trip.", "items": ["bhimbetka-painted-shelters-and-prehistoric-landscapes.html", "sanchi-stupas-gateways-and-buddhist-art.html"]},
+  "audience_hooks": ["Schools: a guided day at Rakhigarhi, Sanchi or Bhimbetka with an archaeologist.", "Colleges: a study tour built around excavated sites in one region.", "Travellers: a private multi-day journey through Harappan Gujarat or central India."],
+  "sem": {"ad_group": "Archaeological site tours", "keywords": ["archaeological site tour india", "guided tour of harappan sites", "rakhigarhi guided visit", "bhimbetka guided tour", "sanchi guided tour with archaeologist", "archaeology study tour for students", "dholavira tour with guide"], "negatives": ["free", "pdf", "wikipedia", "map pdf", "list pdf"], "headlines": ["Archaeological Site Tours", "Visit with an Archaeologist", "Harappan Sites in Gujarat", "Study Tours for Students", "Sanchi, Bhimbetka and More"], "descriptions": ["Guided visits and study tours to India's excavated sites, led by archaeologists.", "Day visits and multi-day journeys planned for your school, college or group."]},
+  "social": {"posts": [{"angle": "fact", "hook": "Some of the world's oldest hand axes were found near Chennai.", "caption": "Acheulian tools from Attirampakkam have been dated to around 1.5 million years ago. India's archaeological record starts far earlier than most people imagine."}, {"angle": "tip", "hook": "At a Harappan site, look down, not up.", "caption": "The walls are low, but the drains, wells and street lines are the real story. Trace where water went and you understand how the city worked."}, {"angle": "offer", "hook": "Planning a trip to Sanchi, Bhimbetka or Dholavira?", "caption": "We plan guided visits and study tours with archaeologists for schools, colleges and private groups, built around the sites you want to see."}], "reel": "Quick cuts across five sites in date order: Bhimbetka shelter, Dholavira reservoir, Sanchi gateway, Ajanta cave, Hampi ruins. On-screen line: 'A million years of India in 25 seconds.' End card: 'Visit with an archaeologist.'", "hashtags": ["#ArchaeologicalSites", "#IndianArchaeology", "#Harappan", "#Bhimbetka", "#Sanchi", "#Dholavira", "#IncredibleIndia", "#IndianHeritage", "#TalaashHeritage"]},
+  "og_title": "India's famous archaeological sites, period by period",
+  "og_description": "From Bhimbetka's painted shelters to Hampi's ruins: India's key archaeological sites and why they matter.",
+  "cta": "Talaash Heritage leads guided visits and study tours to excavated sites such as Rakhigarhi, Sanchi and Bhimbetka, arranged on request for groups."
+}

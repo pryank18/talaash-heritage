@@ -1,0 +1,116 @@
+{
+  "slug": "heritage-walk-in-madurai",
+  "type": "city",
+  "pillar": "heritage",
+  "title": "Heritage walk in Madurai: Meenakshi Temple, Nayak palace and the old streets",
+  "seo_title": "Heritage Walk in Madurai: Historical Places and Routes",
+  "meta_description": "Plan a heritage walk in Madurai: the Meenakshi Temple, Thirumalai Nayak Palace, the Masi streets, Keeladi and museums, with routes for school groups.",
+  "keywords": ["heritage walk in madurai", "historical places in madurai", "heritage sites in madurai", "museums in madurai", "madurai heritage walk for schools", "meenakshi temple guided walk", "thirumalai nayak palace", "keeladi excavation site visit", "madurai temple town walk"],
+  "summary": "A heritage walk in Madurai follows the concentric streets around the Meenakshi Sundareshwarar Temple, whose present form is largely Nayak work of the 16th and 17th centuries, then moves to the Thirumalai Nayak Palace (1636) and the market lanes. Many groups add Keeladi, an early historic settlement 12 km away, and the Gandhi Memorial Museum.",
+  "city": "Madurai",
+  "state": "Tamil Nadu",
+  "sections": [
+    {
+      "h2": "Why Madurai matters for Indian heritage",
+      "paras": [
+        "Madurai is one of the oldest continuously inhabited cities in south India. It was the capital of the Pandya kings, mentioned by Greek and Roman writers and closely tied to the Sangam literature of early Tamil. Excavations at Keeladi on the Vaigai river, from 2015 onwards, have revealed an urban settlement with brick structures, pottery inscribed in Tamil-Brahmi and other finds that the excavators date to the last centuries BCE, with some claims of earlier dates that scholars still discuss.",
+        "The city you walk today is laid out as concentric rectangles around the temple, named after Tamil months (Chithirai, Avani Moola, Masi), along which festival processions move. That plan makes Madurai one of the clearest examples of a temple city in India. Our [Dravida temple architecture lecture](dravida-temple-architecture.html) gives the vocabulary of gopurams, mandapams and vimanas."
+      ]
+    },
+    {
+      "h2": "Historical places in Madurai by period",
+      "paras": [
+        "The early historic layer is mostly underground or in museums: Keeladi, the Jain cave beds with Tamil-Brahmi inscriptions on hills such as Mangulam and Thiruparankundram, and coins. The Pandyas built rock-cut shrines at Thiruparankundram around the 8th century. The city was sacked during the Delhi Sultanate's southern campaigns in the early 14th century and briefly became the seat of the Madurai Sultanate.",
+        "The Nayaks, governors under Vijayanagara who became independent rulers, rebuilt Madurai from the 16th century. Most of the Meenakshi Temple's gopurams and halls, the Pudu Mandapam and the palace are their work. The British demolished the old fort walls in the 1840s, and the Masi streets follow their line."
+      ],
+      "table": {
+        "head": ["Period", "Examples"],
+        "rows": [
+          ["Early historic, about 6th century BCE to 3rd century CE", "Keeladi settlement, Tamil-Brahmi cave inscriptions"],
+          ["Pandya, 6th to 13th century", "Thiruparankundram rock-cut shrine, earliest temple core"],
+          ["Nayak, 16th to 18th century", "Meenakshi Temple gopurams, Thousand Pillar Hall, Pudu Mandapam, Thirumalai Nayak Palace"],
+          ["Colonial and modern", "Masi streets on the old wall line, Gandhi Memorial Museum (Tamukkam Palace)"]
+        ]
+      }
+    },
+    {
+      "h2": "What you see on a heritage walk in Madurai",
+      "paras": [
+        "The walk starts at the Pudu Mandapam, a pillared hall built under Thirumalai Nayak, now full of tailors and stalls, then enters the temple by the east gateway. Inside, the Ashta Shakti Mandapam, the Golden Lotus Tank and the Thousand Pillar Hall (now a temple art museum) are the main stops. The gopurams carry thousands of painted stucco figures, repainted regularly in festival cycles. A [temple sculpture and iconography lecture](temple-sculpture-iconography.html) helps students identify what they are looking at.",
+        "After the temple, walk down the Masi streets to the Thirumalai Nayak Palace, whose giant pillars and domed hall mix Dravida and Indo-Islamic forms, a reminder that the Nayak court drew on several traditions. End at a street of brass workers or flower sellers to talk about how the temple economy still shapes the city."
+      ]
+    },
+    {
+      "h2": "Museums in Madurai",
+      "paras": [
+        "The Gandhi Memorial Museum, in the 17th century Tamukkam Palace, holds the blood-stained cloth Gandhi wore when he was assassinated in 1948, and galleries on the freedom movement. The Keeladi Museum at the excavation site displays the finds in a building designed in the style of a Chettinad house. The Thousand Pillar Hall inside the temple has bronzes and sculpture."
+      ]
+    },
+    {
+      "h2": "Madurai heritage walk for schools and colleges",
+      "paras": [
+        "Madurai works for every level. For schools, the temple walk links to medieval kingdoms and religion as social practice; Keeladi links to the early historic period and archaeology itself. Colleges can study the temple as an institution, and archaeology students can visit the excavation museum with a guide who explains how dating works.",
+        "Madurai walks are arranged for your group, with the route agreed with you. The [south India temple architecture study tour](south-india-temple-architecture.html) includes Madurai with Thanjavur and the Chola temples, and the lecture on [temples as social institutions](temples-as-social-institutions.html) fits before a visit."
+      ]
+    },
+    {
+      "h2": "Practical advice for groups",
+      "paras": [
+        "The temple is in active use and very crowded, especially on festival days such as the Chithirai festival in April or May. Non-Hindus may enter the complex but not the inner sanctums. Mobile phones and cameras are not allowed inside the temple; leave them at the counters or on the bus. Dress modestly. Start by 7 am to avoid the heat. Keeladi is about 12 km from the city and needs a vehicle. Check the temple, ASI or museum website for current rules. See also [heritage sites in Tamil Nadu](heritage-sites-in-tamil-nadu.html)."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Pudu Mandapam", "period": "1630s", "note": "Pillared hall built by Thirumalai Nayak facing the temple's east gateway, now used by tailors and shops."},
+    {"name": "Meenakshi Sundareshwarar Temple", "period": "Mainly 16th to 17th century, older core", "note": "Twin temple with fourteen gopurams. The south gopuram is the tallest, around 52 metres."},
+    {"name": "Golden Lotus Tank", "period": "Nayak period", "note": "Temple tank linked to legends of the Sangam poets. Look at the painted corridors around it."},
+    {"name": "Thousand Pillar Hall", "period": "1569", "note": "Built under the Nayak minister Ariyanatha Mudaliar. Now the temple's art museum, with musical pillars nearby."},
+    {"name": "Masi streets", "period": "19th century on older lines", "note": "The outer processional streets, laid along the line of the demolished fort walls."},
+    {"name": "Thirumalai Nayak Palace", "period": "1636", "note": "Surviving portion of the Nayak palace, with huge stucco-covered pillars and a central dome."},
+    {"name": "Gandhi Memorial Museum", "period": "Building 17th century, museum 1959", "note": "Housed in Rani Mangammal's Tamukkam Palace. Galleries on Gandhi and the freedom movement."},
+    {"name": "Vandiyur Mariamman Teppakulam", "period": "1645", "note": "Huge square temple tank with a central island shrine, used for the float festival."},
+    {"name": "Thiruparankundram", "period": "Rock-cut shrine about 8th century", "note": "Hill temple with Pandya rock-cut work and nearby Jain beds. Reached by vehicle."},
+    {"name": "Keeladi excavation site and museum", "period": "Early historic", "note": "Excavated settlement on the Vaigai with a museum of pottery, beads and inscribed sherds. About 12 km away."}
+  ],
+  "routes": [
+    {"name": "The temple and its streets", "length": "About 3 hours", "stops": ["Pudu Mandapam", "Meenakshi Sundareshwarar Temple", "Golden Lotus Tank", "Thousand Pillar Hall", "Masi streets"]},
+    {"name": "Palace and tank", "length": "About 2.5 hours, short drive to the tank", "stops": ["Thirumalai Nayak Palace", "Vandiyur Mariamman Teppakulam", "Gandhi Memorial Museum"]},
+    {"name": "Early Madurai by vehicle", "length": "Half day", "stops": ["Thiruparankundram", "Keeladi excavation site and museum"]}
+  ],
+  "museums": [
+    {"name": "Keeladi Museum", "note": "Finds from the Keeladi excavations, displayed near the site."},
+    {"name": "Gandhi Memorial Museum", "note": "Freedom movement galleries in the Tamukkam Palace."},
+    {"name": "Temple Art Museum, Thousand Pillar Hall", "note": "Sculpture and bronzes inside the Meenakshi Temple."}
+  ],
+  "best_time": "November to February. Summers are very hot; plan only early mornings between March and June.",
+  "faq": [
+    {"q": "What are the main historical places in Madurai?", "a": "The Meenakshi Sundareshwarar Temple, the Pudu Mandapam, the Thirumalai Nayak Palace, the Vandiyur Teppakulam, the Gandhi Memorial Museum, Thiruparankundram and the Keeladi excavation site."},
+    {"q": "How old is the Meenakshi Temple?", "a": "The temple's tradition is very old and linked to the Pandya city, but most of the present buildings, including the gopurams and halls, were built or rebuilt under the Nayak rulers in the 16th and 17th centuries."},
+    {"q": "Can I carry a phone into the Meenakshi Temple?", "a": "No. Phones and cameras are not allowed inside the temple. There are deposit counters at the entrances, but for school groups it is easier to leave them on the bus."},
+    {"q": "What is Keeladi and can students visit it?", "a": "Keeladi is an early historic settlement on the Vaigai river, excavated since 2015. Its finds include brick structures, pottery and Tamil-Brahmi inscriptions. A museum near the site is open to visitors; check timings first."},
+    {"q": "Is Madurai a UNESCO World Heritage Site?", "a": "No. The Meenakshi Temple is not inscribed. The nearest UNESCO cultural sites are the Great Living Chola Temples at Thanjavur, Gangaikonda Cholapuram and Darasuram."}
+  ],
+  "related_programmes": ["south-india-temple-architecture.html", "dravida-temple-architecture.html", "temple-sculpture-iconography.html", "temples-as-social-institutions.html", "how-to-read-a-temple.html", "excavation-headlines-evidence-or-exaggeration.html", "chronology-and-archaeological-dating.html"],
+  "related_guides": ["heritage-sites-in-tamil-nadu", "heritage-walk-in-thanjavur", "indian-temple-architecture", "what-is-epigraphy", "how-archaeologists-date-artifacts", "brahmi-script"],
+  "bundle": {"title": "Temple city and excavation", "pitch": "A lecture on how archaeologists date sites, then a morning at the Meenakshi Temple and an afternoon at Keeladi to see the evidence for yourself.", "items": ["chronology-and-archaeological-dating.html", "south-india-temple-architecture.html"]},
+  "audience_hooks": ["Schools: a temple street walk and a Keeladi visit, with a dating lecture beforehand.", "Colleges: the temple as an institution, and a critical look at excavation headlines.", "Travellers: Madurai as part of a south India temple study tour."],
+  "sem": {
+    "ad_group": "Heritage walk Madurai",
+    "keywords": ["heritage walk in madurai", "madurai heritage walk for schools", "meenakshi temple guided walk", "keeladi guided visit", "madurai temple tour with historian", "private heritage tour madurai", "south india temple tour madurai"],
+    "negatives": ["free", "pdf", "darshan tickets", "jobs", "essay", "wikipedia"],
+    "headlines": ["Heritage Walk in Madurai", "Temple City With a Historian", "Meenakshi Temple and Keeladi", "For Schools and Colleges", "Arranged on Request"],
+    "descriptions": ["Madurai heritage walks led by archaeologists and historians, in English or Hindi.", "For schools, colleges, companies and private groups. Share your dates and group size."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Madurai's streets are named after Tamil months.", "caption": "Chithirai, Avani Moola and Masi streets ring the temple, and festivals process along the street of their month. The city plan is a calendar."},
+      {"angle": "tip", "hook": "Leave your phone on the bus.", "caption": "Phones are not allowed in the Meenakshi Temple. Without one, groups actually look at the ceilings, the painted corridors and the pillars."},
+      {"angle": "offer", "hook": "Madurai and Keeladi with an archaeologist.", "caption": "We arrange heritage walks in Madurai for schools, colleges and private groups, with a visit to the Keeladi excavations, in English or Hindi."}
+    ],
+    "reel": "Drone-style view (or high terrace shot) of the gopurams at sunrise, cut to a hand holding a replica Tamil-Brahmi sherd. On-screen line: 'Madurai, before the temple you see.' End card: 'Arranged on request.'",
+    "hashtags": ["#Madurai", "#MeenakshiTemple", "#Keeladi", "#TempleCity", "#HeritageWalk", "#TamilNaduHeritage", "#Archaeology", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Madurai's temple city with an archaeologist",
+  "og_description": "Nayak gopurams, a palace of giant pillars and the Keeladi excavations, explained on foot.",
+  "cta": "We arrange Madurai heritage walks on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi, with other languages through partners."
+}

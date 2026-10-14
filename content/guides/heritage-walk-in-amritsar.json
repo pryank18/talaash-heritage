@@ -1,0 +1,86 @@
+{
+  "slug": "heritage-walk-in-amritsar",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Amritsar",
+  "state": "Punjab",
+  "title": "Heritage walk in Amritsar: the walled city, Golden Temple and 1919",
+  "seo_title": "Heritage Walk in Amritsar: Historical Places, Routes, Museums",
+  "meta_description": "Plan a heritage walk in Amritsar: Harmandir Sahib, Jallianwala Bagh, the katras of the walled city, Gobindgarh Fort and museums, with tips for school groups.",
+  "keywords": ["heritage walk in amritsar", "historical places in amritsar", "heritage sites in amritsar", "museums in amritsar", "amritsar heritage walk for schools", "amritsar heritage walk", "golden temple history", "jallianwala bagh history", "amritsar walled city walk", "partition museum amritsar"],
+  "summary": "A heritage walk in Amritsar covers the walled city that grew around Harmandir Sahib (the Golden Temple) from the 1570s: the Akal Takht, the bazaars and katras, Jallianwala Bagh where British troops fired on a crowd in April 1919, Ranjit Singh's Gobindgarh Fort and the Partition Museum in the Town Hall.",
+  "sections": [
+    {"h2": "Why Amritsar matters", "paras": [
+      "Amritsar is the central city of Sikh history. Guru Ram Das, the fourth Guru, founded the settlement around a sacred tank in the 1570s, and Guru Arjan Dev, the fifth Guru, built Harmandir Sahib in its centre and installed the Adi Granth there in 1604. The Akal Takht, facing it, was established by Guru Hargobind as the seat of temporal authority.",
+      "The city is also essential for the history of colonial rule and the freedom movement. The Jallianwala Bagh massacre of 13 April 1919 changed Indian opinion of British rule, and Amritsar, 30 km from the Wagah border, was deeply affected by Partition in 1947. A walk here moves from religious architecture to political memory within a few hundred metres."
+    ]},
+    {"h2": "Layers of Amritsar's history", "paras": [
+      "The early town grew as a pilgrimage and trading centre under the Gurus in the late 16th and 17th centuries. In the 18th century Harmandir Sahib was damaged more than once in fighting with Afghan armies, including by Ahmad Shah Abdali in the 1760s, and rebuilt by the Sikh misls. Each misl built a katra, a walled trading quarter, around the temple, which is why the old city is a mosaic of neighbourhoods named after their founders.",
+      "Maharaja Ranjit Singh (ruled 1801 to 1839) covered the upper storeys of Harmandir Sahib in gilded copper, rebuilt Gobindgarh Fort, and laid out the Ram Bagh garden with its summer palace. After the British annexed Punjab in 1849 they added the Town Hall, the railway and the cantonment. The 20th century layers are 1919, Partition in 1947 and Operation Blue Star in 1984, which damaged the Akal Takht; that last event is handled historically and with care on a walk.",
+      "The [Indian history timeline](indian-history-timeline.html) places these events in a wider sequence, and the lecture [Sacred architecture across communities](sacred-architecture-across-communities.html) helps students compare a gurdwara with temples, mosques and churches."
+    ]},
+    {"h2": "What you see on a walk", "paras": [
+      "At Harmandir Sahib, look at the plan: a temple in the middle of a tank, reached by a causeway, with four entrances open to all directions, and the community kitchen (langar) serving thousands. The marble inlay on the lower storey shows Mughal-era craft traditions adapted for a Sikh building.",
+      "In the walled city, students see how katras, bazaars and havelis were organised by trade and community. At Jallianwala Bagh, bullet marks on the walls and the well make the 1919 event concrete. A short [oral history and neighbourhood memory lab](oral-history-and-neighbourhood-memory-lab.html) is a good way to pair Amritsar's Partition memory with fieldwork."
+    ]},
+    {"h2": "Amritsar for school and college groups", "paras": [
+      "Groups visit Amritsar on a [study tour built for your group](a-study-tour-built-for-your-group.html), which can also take in Pinjore and other Punjab and Haryana sites such as [Sheikh Chilli's Tomb at Thanesar](sheikh-chilli-tomb-thanesar.html) on the way from Delhi. The [Kashmere Gate and 1857](kashmere-gate-1857.html) walk in Delhi makes a good companion for a unit on colonial rule and resistance.",
+      "The walled city around Harmandir Sahib and Jallianwala Bagh is pedestrianised near the temple and easy to walk. Gobindgarh Fort, Ram Bagh and the Wagah ceremony need a vehicle. At the gurdwara everyone covers their head and removes shoes; plan for this with a class, and keep the group quiet and together inside the complex."
+    ]}
+  ],
+  "stops": [
+    {"name": "Harmandir Sahib", "period": "founded 1580s to 1604, rebuilt 1760s, gilded 1830s", "note": "The Golden Temple in its tank; look at the causeway, the marble inlay and the four entrances."},
+    {"name": "Akal Takht", "period": "1606, rebuilt", "note": "Seat of Sikh temporal authority facing Harmandir Sahib, rebuilt after 1984."},
+    {"name": "Guru Ka Langar", "period": "continuing tradition", "note": "Community kitchen of Harmandir Sahib; a lesson in how a religious institution organises food and labour."},
+    {"name": "Jallianwala Bagh", "period": "13 April 1919", "note": "Walled garden where General Dyer's troops fired on an unarmed crowd; memorial, well and bullet-marked walls."},
+    {"name": "Partition Museum", "period": "Town Hall 1860s, museum 2017", "note": "Museum of oral histories and objects from 1947, in the colonial Town Hall."},
+    {"name": "Town Hall", "period": "1860s to 1870s", "note": "Colonial administrative building on the edge of the walled city."},
+    {"name": "Katra Jaimal Singh and the old bazaars", "period": "18th to 19th century", "note": "Misl-era trading quarters with havelis, gateways and specialist markets."},
+    {"name": "Durgiana Temple", "period": "rebuilt 1921", "note": "Hindu temple in a tank, built on a plan that echoes Harmandir Sahib."},
+    {"name": "Gobindgarh Fort", "period": "18th century, rebuilt 1805 to 1809", "note": "Brick fort strengthened by Ranjit Singh, later a British and Indian Army post."},
+    {"name": "Ram Bagh and Maharaja Ranjit Singh Panorama", "period": "1818 onward", "note": "Ranjit Singh's summer palace garden; the palace now houses a museum."},
+    {"name": "Khalsa College", "period": "1892", "note": "Indo-Saracenic college building by Ram Singh, a landmark of late 19th century Punjab."},
+    {"name": "Saragarhi Gurdwara", "period": "1902", "note": "Memorial gurdwara near Harmandir Sahib for the soldiers killed at Saragarhi in 1897."}
+  ],
+  "routes": [
+    {"name": "The walled city on foot", "length": "About 3 hours", "stops": ["Harmandir Sahib", "Akal Takht", "Guru Ka Langar", "Jallianwala Bagh", "Saragarhi Gurdwara", "Katra Jaimal Singh and the old bazaars", "Town Hall", "Partition Museum"]},
+    {"name": "Ranjit Singh's Amritsar", "length": "Half a day, by vehicle", "stops": ["Gobindgarh Fort", "Ram Bagh and Maharaja Ranjit Singh Panorama", "Durgiana Temple"]},
+    {"name": "Colonial and modern Amritsar", "length": "About 2 hours, by vehicle", "stops": ["Khalsa College", "Town Hall", "Partition Museum"]}
+  ],
+  "museums": [
+    {"name": "Partition Museum", "note": "Oral histories, refugee objects and documents on the Partition of 1947."},
+    {"name": "Central Sikh Museum", "note": "Paintings, weapons and manuscripts on Sikh history, inside the Harmandir Sahib complex."},
+    {"name": "Maharaja Ranjit Singh Museum, Ram Bagh", "note": "Arms, coins and paintings of Ranjit Singh's court in his summer palace."}
+  ],
+  "best_time": "October to March. Winter mornings are cold and foggy; summer days are very hot.",
+  "faq": [
+    {"q": "What are the main historical places in Amritsar?", "a": "Harmandir Sahib and the Akal Takht, Jallianwala Bagh, the Partition Museum in the Town Hall, the old katras and bazaars, Durgiana Temple, Gobindgarh Fort, Ram Bagh and Khalsa College."},
+    {"q": "Who built the Golden Temple?", "a": "Guru Arjan Dev built Harmandir Sahib and installed the Adi Granth there in 1604, in a tank begun by Guru Ram Das. It was rebuilt after 18th century attacks, and Maharaja Ranjit Singh added the gilded copper in the early 19th century."},
+    {"q": "Is an Amritsar heritage walk suitable for schools?", "a": "Yes. The walled city is compact, and Jallianwala Bagh and the Partition Museum link directly to the history syllabus. Prepare students for head covering and shoe rules at the gurdwara."},
+    {"q": "Which museums in Amritsar are worth visiting?", "a": "The Partition Museum, the Central Sikh Museum inside the Harmandir Sahib complex, and the Maharaja Ranjit Singh Museum at Ram Bagh."},
+    {"q": "Can Talaash Heritage arrange an Amritsar visit?", "a": "Yes, as a study tour on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi."}
+  ],
+  "related_programmes": ["a-study-tour-built-for-your-group.html", "sacred-architecture-across-communities.html", "oral-history-and-neighbourhood-memory-lab.html", "kashmere-gate-1857.html", "sheikh-chilli-tomb-thanesar.html", "pinjore-gardens-landscape-design.html"],
+  "related_guides": ["heritage-sites-in-punjab", "indian-history-timeline", "heritage-walk-in-chandigarh", "heritage-walk-in-delhi", "what-is-cultural-heritage"],
+  "bundle": {"title": "Memory, from 1857 to 1947", "pitch": "Walk Kashmere Gate in Delhi, then Jallianwala Bagh and the Partition Museum in Amritsar, with an oral history session so students collect memories themselves.", "items": ["kashmere-gate-1857.html", "a-study-tour-built-for-your-group.html", "oral-history-and-neighbourhood-memory-lab.html"]},
+  "audience_hooks": ["Schools: an Amritsar study tour on the Gurus, 1919 and Partition, planned around your syllabus.", "Colleges: an oral history lab paired with the Partition Museum.", "Families: a walled city walk with a historian, in English or Hindi."],
+  "sem": {
+    "ad_group": "Heritage walk Amritsar",
+    "keywords": ["heritage walk in amritsar", "amritsar heritage walk for schools", "amritsar study tour", "amritsar heritage tour with historian", "amritsar walled city guided walk", "jallianwala bagh guided visit", "punjab heritage study tour"],
+    "negatives": ["free", "pdf", "essay", "drawing", "hotel", "ticket price", "jobs"],
+    "headlines": ["Heritage Walks in Amritsar", "Walled City With a Historian", "Study Tours for Schools", "1919 and 1947, On Site", "In English or Hindi"],
+    "descriptions": ["Amritsar study tours with archaeologists and historians, arranged for your group.", "Harmandir Sahib, Jallianwala Bagh, the katras and the Partition Museum, for groups."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Amritsar is a city of katras.", "caption": "In the 18th century each Sikh misl built its own walled trading quarter around Harmandir Sahib. Many bazaars still carry the names of those founders."},
+      {"angle": "tip", "hook": "At Jallianwala Bagh, find the marked walls.", "caption": "The bullet marks of 13 April 1919 are outlined on the brick. Stand at the narrow entrance and the reason so few could escape becomes clear."},
+      {"angle": "offer", "hook": "Amritsar with a historian.", "caption": "We arrange Amritsar study tours for schools, colleges, companies and families, from the Gurus to Partition, in English or Hindi."}
+    ],
+    "reel": "Reflection of Harmandir Sahib in the tank, then the narrow lane into Jallianwala Bagh and a quiet frame in the Partition Museum. Line: one walk, four centuries. End card: Amritsar study tours, arranged on request.",
+    "hashtags": ["#Amritsar", "#GoldenTemple", "#JallianwalaBagh", "#PartitionMuseum", "#Punjab", "#HeritageWalk", "#IndianHistory", "#TalaashHeritage"]
+  },
+  "og_title": "Amritsar heritage walk: temple, katras and memory",
+  "og_description": "Harmandir Sahib, Jallianwala Bagh, the old bazaars and the Partition Museum, with routes for groups.",
+  "cta": "We arrange Amritsar heritage walks and study tours on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."
+}

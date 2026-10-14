@@ -1,0 +1,84 @@
+{
+  "slug": "heritage-walk-in-orchha",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Orchha",
+  "state": "Madhya Pradesh",
+  "title": "Heritage walk in Orchha: Bundela palaces, temples and chhatris",
+  "seo_title": "Heritage Walk in Orchha: Palaces, Temples, Chhatris, Museum",
+  "meta_description": "Plan a heritage walk in Orchha: Jahangir Mahal, Raja Mahal, Chaturbhuj Temple, Ram Raja Temple and the Betwa chhatris, with routes and tips for school groups.",
+  "keywords": ["heritage walk in orchha", "historical places in orchha", "heritage sites in orchha", "museums in orchha", "orchha heritage walk for schools", "orchha fort complex", "jahangir mahal orchha", "chaturbhuj temple orchha", "orchha chhatris", "bundela architecture"],
+  "summary": "A heritage walk in Orchha covers the 16th and 17th century capital of the Bundela Rajputs on the Betwa river: the fort island with Raja Mahal and Jahangir Mahal, the tall Chaturbhuj Temple, the Ram Raja Temple, Lakshminarayan Temple with its murals, and the riverside chhatris. Almost everything is within a 2 km walk.",
+  "sections": [
+    {"h2": "Why Orchha matters", "paras": [
+      "Orchha is a small town today, but from 1531 to the late 18th century it was the capital of the Bundela kingdom in Bundelkhand. Its rulers allied with and sometimes fought the Mughals, and their buildings show a mix of Rajput and Mughal ideas: domes and chhatris, palace courtyards, painted interiors and temples raised on tall platforms.",
+      "Because the capital moved to Tikamgarh in 1783, Orchha was not rebuilt by later rulers. Its palaces, temples, gardens and cenotaphs survive close together, which makes it one of the easiest places in India to see a complete 16th and 17th century royal town on foot."
+    ]},
+    {"h2": "Layers of Orchha's history", "paras": [
+      "Rudra Pratap Singh founded Orchha in 1531 on a bend of the Betwa. His successor Madhukar Shah built much of the Raja Mahal and, according to local tradition, brought an image of Rama from Ayodhya; the palace where it was placed became the Ram Raja Temple, unusual because Rama is worshipped there as a king.",
+      "Bir Singh Deo (ruled 1605 to 1627) was close to Jahangir, whom he had helped before his accession, and built the Jahangir Mahal to receive him, along with the Chaturbhuj Temple's later stages and the Phool Bagh garden. He also built the Bir Singh Palace at Datia nearby. Later rulers added the Lakshminarayan Temple (1622, with 19th century murals) and the chhatris on the river, the cenotaphs of the Bundela kings.",
+      "Shah Jahan's armies took Orchha in the 1630s for a time, and Bundela power later shifted to Panna under Chhatrasal. The [Mughal architecture](mughal-architecture.html) and [forts of India](forts-of-india.html) guides help place Orchha in its wider world."
+    ]},
+    {"h2": "What you see on a walk", "paras": [
+      "In the Jahangir Mahal, students read a square palace plan built around a courtyard, with corner towers, domes, hanging balconies and blue tile traces. In Raja Mahal, painted ceilings and walls show Ramayana and Bhagavata scenes and courtly life. The Chaturbhuj Temple, on a high plinth, mixes a temple plan with palace-like scale and Mughal-style domes and arches.",
+      "At the chhatris, look at how memorials for kings borrow the temple's tower shape. A lecture such as [Reading a temple](how-to-read-a-temple.html) or [Temple superstructures](temple-superstructures.html) gives students the vocabulary, and [Heritage photography](heritage-photography-evidence-led-photo-walk.html) suits the riverside."
+    ]},
+    {"h2": "Orchha for school and college groups", "paras": [
+      "Orchha is offered within [Stupas, caves and temples of central India](stupas-caves-and-temples-of-central-india.html) or as a [study tour built for your group](a-study-tour-built-for-your-group.html), usually with Gwalior and Khajuraho.",
+      "Orchha is about 16 km from Jhansi, which has a railway junction and the Jhansi Fort of Rani Lakshmibai. The town itself is compact and walkable. The fort island, temples and chhatris are within easy reach, and stairs in the palaces are steep and dark in places, so keep groups small inside. The Ram Raja Temple is an active temple; check timings and dress rules."
+    ]}
+  ],
+  "stops": [
+    {"name": "Raja Mahal", "period": "16th to 17th century", "note": "Main palace of the Bundela kings with painted ceilings and walls."},
+    {"name": "Jahangir Mahal", "period": "early 17th century", "note": "Bir Singh Deo's palace built to host Jahangir, with domes, balconies and a courtyard."},
+    {"name": "Rai Praveen Mahal", "period": "late 16th to 17th century", "note": "Smaller palace and garden linked to the court poet and musician Rai Praveen."},
+    {"name": "Sheesh Mahal, Orchha", "period": "18th century", "note": "Later palace building on the fort complex, now a hotel."},
+    {"name": "Ram Raja Temple", "period": "16th century", "note": "Palace turned temple, where Rama is worshipped as king."},
+    {"name": "Chaturbhuj Temple", "period": "late 16th to early 17th century", "note": "Tall temple on a high plinth with spires, a cross-shaped plan and steep stairs."},
+    {"name": "Phool Bagh", "period": "17th century", "note": "Palace garden with a summer pavilion and water channels."},
+    {"name": "Lakshminarayan Temple", "period": "1622, murals 19th century", "note": "Fort-like temple on a hill with murals of myths, battles and the 1857 era."},
+    {"name": "Chhatris on the Betwa", "period": "17th to 18th century", "note": "Cenotaphs of the Bundela rulers in a row along the river."},
+    {"name": "Saawan Bhadon pillars", "period": "17th century", "note": "Pair of towers near Phool Bagh, thought to have helped cool the palace."},
+    {"name": "Betwa river and bridge", "period": "landscape", "note": "Viewpoint over the chhatris and the fort island."}
+  ],
+  "routes": [
+    {"name": "The fort island", "length": "About 2 to 3 hours", "stops": ["Raja Mahal", "Jahangir Mahal", "Rai Praveen Mahal", "Sheesh Mahal, Orchha"]},
+    {"name": "Temples and garden", "length": "About 2 hours", "stops": ["Ram Raja Temple", "Chaturbhuj Temple", "Phool Bagh", "Saawan Bhadon pillars", "Lakshminarayan Temple"]},
+    {"name": "The river at sunset", "length": "About 1 to 2 hours", "stops": ["Chhatris on the Betwa", "Betwa river and bridge"]}
+  ],
+  "museums": [
+    {"name": "Jahangir Mahal galleries", "note": "Small ASI and state displays inside the palace on Bundela history and finds."},
+    {"name": "Government Museum, Jhansi", "note": "Regional museum in Jhansi with sculpture and Bundelkhand history, a short drive away."}
+  ],
+  "best_time": "October to March. The light on the chhatris is best in the late afternoon.",
+  "faq": [
+    {"q": "What are the main historical places in Orchha?", "a": "Raja Mahal and Jahangir Mahal on the fort island, Rai Praveen Mahal, the Ram Raja Temple, Chaturbhuj Temple, Lakshminarayan Temple, Phool Bagh and the chhatris on the Betwa."},
+    {"q": "Who built Orchha?", "a": "The Bundela Rajputs. Rudra Pratap Singh founded the town in 1531, and Madhukar Shah and Bir Singh Deo built most of the palaces and temples in the late 16th and early 17th centuries."},
+    {"q": "Is Orchha good for a school heritage walk?", "a": "Yes. It is compact, quiet and walkable, with palaces, temples and memorials close together. Keep groups small on the dark palace stairs and visit the chhatris late in the day."},
+    {"q": "Are there museums in Orchha?", "a": "There are small displays inside Jahangir Mahal. For a fuller collection, add the Government Museum in Jhansi, about 16 km away, with Jhansi Fort."},
+    {"q": "Can Talaash Heritage arrange an Orchha visit?", "a": "Yes, on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi, often with Gwalior and Khajuraho."}
+  ],
+  "related_programmes": ["stupas-caves-and-temples-of-central-india.html", "a-study-tour-built-for-your-group.html", "how-to-read-a-temple.html", "temple-superstructures.html", "heritage-photography-evidence-led-photo-walk.html", "khajuraho-architecture-deep-dive.html"],
+  "related_guides": ["heritage-sites-in-madhya-pradesh", "mughal-architecture", "forts-of-india", "heritage-walk-in-gwalior", "heritage-walk-in-khajuraho"],
+  "bundle": {"title": "Bundelkhand in three stops", "pitch": "A temple superstructures session in class, then Orchha and Khajuraho on the central India study tour, to compare 11th and 17th century building.", "items": ["temple-superstructures.html", "stupas-caves-and-temples-of-central-india.html", "khajuraho-architecture-deep-dive.html"]},
+  "audience_hooks": ["Schools: Orchha within a central India study tour, with Gwalior and Khajuraho.", "Colleges: palace and temple architecture with an archaeologist.", "Families: a quiet riverside private journey with a historian."],
+  "sem": {
+    "ad_group": "Heritage walk Orchha",
+    "keywords": ["heritage walk in orchha", "orchha guided tour historian", "orchha study tour for schools", "orchha khajuraho study tour", "bundelkhand heritage tour", "central india school trip", "orchha fort guided walk"],
+    "negatives": ["free", "pdf", "essay", "hotel", "ticket price", "light show", "jobs"],
+    "headlines": ["Heritage Walks in Orchha", "Bundela Palaces on Foot", "Study Tours for Schools", "Orchha, Gwalior, Khajuraho", "In English or Hindi"],
+    "descriptions": ["Orchha heritage walks with archaeologists and historians, arranged for your group.", "Jahangir Mahal, Raja Mahal, Chaturbhuj Temple and the chhatris, for schools and families."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "A palace built for one guest.", "caption": "Bir Singh Deo built Orchha's Jahangir Mahal in the early 17th century to host his ally, the Mughal emperor Jahangir. Domes, balconies and towers frame a single courtyard."},
+      {"angle": "tip", "hook": "Go to the chhatris at sunset.", "caption": "The cenotaphs of the Bundela kings line the Betwa. Late light shows their temple-like towers best, and it is the quietest time of day."},
+      {"angle": "offer", "hook": "Orchha with an archaeologist.", "caption": "We arrange Orchha visits within central India study tours, with Gwalior and Khajuraho, for schools, colleges, companies and families, in English or Hindi."}
+    ],
+    "reel": "Climb through Jahangir Mahal to a balcony view, then the Chaturbhuj spires and the chhatris at dusk. Line: a whole 17th century royal town, still standing. End card: Orchha study tours, arranged on request.",
+    "hashtags": ["#Orchha", "#JahangirMahal", "#Bundelkhand", "#Chhatris", "#MadhyaPradesh", "#HeritageWalk", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Orchha heritage walk: a Bundela capital on foot",
+  "og_description": "Jahangir Mahal, Raja Mahal, Chaturbhuj Temple and the chhatris on the Betwa, with routes for groups.",
+  "cta": "We arrange Orchha heritage walks on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi."
+}

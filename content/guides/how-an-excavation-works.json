@@ -1,0 +1,80 @@
+{
+  "slug": "how-an-excavation-works",
+  "type": "explainer",
+  "pillar": "archaeology",
+  "title": "How an archaeological excavation works, step by step",
+  "seo_title": "How an Archaeological Excavation Works: Step by Step",
+  "meta_description": "How an archaeological excavation works in India: survey, permits, laying out trenches, digging by layers, recording, finds processing, dating and publication.",
+  "keywords": ["how an excavation works", "archaeological excavation", "excavation process in archaeology", "steps of excavation", "methods of excavation in archaeology", "trench excavation", "excavation in india", "how archaeologists excavate", "archaeological dig"],
+  "summary": "An archaeological excavation begins with a research question and a survey, then a permit. The team lays out a grid of trenches and removes soil layer by layer, recording every layer, feature and find with drawings, photographs and notes. Finds are cleaned and catalogued, samples are dated, and the results are analysed and published.",
+  "sections": [
+    {
+      "h2": "Before the dig: questions, survey and permits",
+      "paras": [
+        "No serious excavation starts with a spade. It starts with a question: when was this mound first settled, how did this town's water supply work, what did people eat here? The question decides where to dig and how much.",
+        "Survey comes next. Archaeologists walk the area, collect surface pottery, study maps and satellite imagery, and sometimes use geophysical methods to see what lies below without digging. Our lecture on [remote sensing in archaeology](remote-sensing-in-archaeology-and-heritage-management.html) explains how satellite and aerial data help choose where to excavate.",
+        "In India, excavation needs a licence. The Archaeological Survey of India grants permission each season through its Central Advisory Board of Archaeology process, and protected sites have additional rules. Universities, state departments and the ASI itself all excavate under this system."
+      ]
+    },
+    {
+      "h2": "Laying out the site: grids and trenches",
+      "paras": [
+        "The site is mapped and a fixed reference point, called a datum, is established so every measurement can be tied to it. A grid is then laid out over the area, usually in squares of a set size, each with a code. Trenches are opened within the grid, often leaving balks (narrow unexcavated strips) between squares so that the layers can be seen in section.",
+        "Two broad approaches are used. Vertical excavation cuts deep through a small area to establish the full sequence of occupation. Horizontal or open-area excavation exposes a wide area of one period to reveal house plans, streets and workshops. Many Indian projects use a deep trench first, then open up chosen levels."
+      ]
+    },
+    {
+      "h2": "Digging by layers",
+      "paras": [
+        "The basic rule is to dig in the order things were deposited, in reverse: remove the latest layer first and work down. Each distinct deposit, called a layer or context, is excavated separately so that its finds stay together. Changes in soil colour, texture and content mark the boundaries.",
+        "Tools are mostly small. A pointing trowel does much of the work, with brushes, dental picks and bamboo spatulas for delicate finds, and pickaxes and shovels only for clearing. Soil is often sieved, and samples are taken for flotation, a method that floats out charred seeds and charcoal from soil in water. The steady, careful pace is something you can try for yourself in a [practice excavation in a mock trench](mock-trench-a-practice-excavation.html).",
+        "Features, such as walls, pits, hearths, floors and drains, are cleaned, recorded and only then removed or left in place. A pit cut into older layers has to be emptied as its own context, or its later material will be mixed into the earlier layers and confuse the dating."
+      ]
+    },
+    {
+      "h2": "Recording: the real work of excavation",
+      "paras": [
+        "Excavation destroys the thing it studies. Once a layer is dug, the only record of it is what the team wrote, drew and photographed. That is why recording takes up so much of the day."
+      ],
+      "list": [
+        "Context sheets or a site notebook describing each layer: soil, colour, inclusions, relationships to other layers.",
+        "Plans drawn to scale showing the layout of each layer and feature from above.",
+        "Section drawings of trench walls showing the sequence of layers from the side.",
+        "Photographs with scale bars and north arrows, increasingly supplemented by photogrammetry and 3D models.",
+        "Three-dimensional coordinates for important finds, measured from the datum.",
+        "A finds register giving every object a number linked to its context."
+      ]
+    },
+    {
+      "h2": "After the dig: finds, dating and analysis",
+      "paras": [
+        "Pottery is washed, marked, sorted and counted. Diagnostic sherds such as rims, bases and decorated pieces are drawn and classified. Bones go to archaeozoologists, seeds to archaeobotanists, human remains to bioarchaeologists, and metal objects to conservators before they corrode further.",
+        "Samples of charcoal, seeds and bone are sent for radiocarbon dating, and pottery or sediments may go for luminescence dating. Combined with the stratigraphy and any coins or inscriptions, these give the site's chronology. Our guide to [how archaeologists date artifacts](how-archaeologists-date-artifacts.html) explains each method.",
+        "Finally the results are published, first as short reports and then as a full excavation report. In India, summaries of each season's work appear in the ASI's annual review Indian Archaeology: A Review. Good publication is part of the job: an excavation that is never written up has destroyed evidence for nothing."
+      ]
+    },
+    {
+      "h2": "Who works on an excavation team",
+      "paras": [
+        "A typical Indian excavation has a director, trench supervisors (often research scholars), students, draughtspersons, photographers, surveyors and local workers who often bring years of digging experience. Specialists may be on site or work on samples afterwards.",
+        "For students thinking of joining a dig, field schools and university excavations are the usual entry point. Our guide to [how to become an archaeologist in India](how-to-become-an-archaeologist-in-india.html) covers the routes, and a workshop in [archaeological documentation](recording-the-past-a-documentation-workshop.html) builds the recording skills every director looks for."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "How long does an archaeological excavation take?", "a": "A single field season in India usually lasts a few weeks to a few months, typically in the cooler, drier months. Major sites are often excavated over many seasons spread across years. Analysis and publication after the fieldwork usually take much longer than the digging itself."},
+    {"q": "Who gives permission for excavation in India?", "a": "Excavation in India requires a licence from the Archaeological Survey of India, applied for each season. Proposals are reviewed through the Central Advisory Board of Archaeology process. Work at protected monuments and sites is also governed by the Ancient Monuments and Archaeological Sites and Remains Act."},
+    {"q": "What tools do archaeologists use in an excavation?", "a": "The most used tool is a small pointing trowel. Others include brushes, dental picks, spatulas, buckets, sieves, measuring tapes, string lines, a total station or GPS for surveying, cameras, drawing boards and labelled bags. Pickaxes and shovels are used only to clear disturbed soil."},
+    {"q": "Can students join an archaeological excavation in India?", "a": "Yes. University departments and institutes regularly take their own students on excavations, and some accept volunteers or students from other institutions by arrangement. Field schools offer a structured introduction. Having basic training in recording and drawing makes you far more useful on site."},
+    {"q": "What is the difference between vertical and horizontal excavation?", "a": "Vertical excavation digs deep in a small area to reveal the full sequence of layers and periods at a site. Horizontal excavation opens a wide area at one level to expose house plans, streets or workshops of a single period. Many projects combine the two."}
+  ],
+  "related_programmes": ["mock-trench-a-practice-excavation.html", "recording-the-past-a-documentation-workshop.html", "the-dig-an-archaeology-team-challenge.html", "site-mapping-measured-drawing.html", "prehistory-field-workshop.html", "remote-sensing-in-archaeology-and-heritage-management.html", "chronology-and-archaeological-dating.html"],
+  "related_guides": ["what-is-archaeology", "how-archaeologists-date-artifacts", "archaeological-survey-of-india", "how-to-become-an-archaeologist-in-india", "famous-archaeological-sites-in-india", "archaeology-in-india"],
+  "bundle": {"title": "Field-ready in two sessions", "pitch": "Learn to record layers and draw plans in a documentation workshop, then put those skills to work in a mock excavation.", "items": ["recording-the-past-a-documentation-workshop.html", "mock-trench-a-practice-excavation.html"]},
+  "audience_hooks": ["Schools: a mock excavation where students dig, record and interpret a practice trench.", "Colleges: workshops in documentation, site mapping and measured drawing before fieldwork.", "Companies: a team excavation challenge as a group outing."],
+  "sem": {"ad_group": "Mock excavation and field skills", "keywords": ["mock excavation for schools", "archaeology field school india", "excavation workshop for students", "archaeological documentation workshop", "site mapping workshop", "archaeology team building activity"], "negatives": ["free", "pdf", "jcb", "excavator machine", "construction", "rental"], "headlines": ["Try a Mock Excavation", "Archaeology Field Skills", "Documentation Workshops", "Led by Archaeologists", "For Schools and Colleges"], "descriptions": ["Students dig, record and interpret a practice trench, guided by archaeologists.", "Field skills workshops in recording, drawing and site mapping, at your campus."]},
+  "social": {"posts": [{"angle": "fact", "hook": "Excavation destroys the thing it studies.", "caption": "Once a layer is dug, it is gone. The only record left is what the team drew, photographed and wrote down. That is why archaeologists spend more time recording than digging."}, {"angle": "tip", "hook": "The most used tool on an Indian dig costs very little.", "caption": "It is a small pointing trowel. Most excavation is slow scraping, layer by layer, watching for changes in soil colour that mark the edge of a pit or floor."}, {"angle": "offer", "hook": "Let your students run their own dig.", "caption": "Our mock excavation gives a class a practice trench to excavate, record and interpret, with no harm to a real site. At your school or a venue nearby."}], "reel": "Time-lapse of a student team excavating a practice trench, then a close-up of a section drawing being made. On-screen line: 'Digging is the easy part. Recording is the job.' End card: 'Mock excavations for schools and colleges.'", "hashtags": ["#Excavation", "#Archaeology", "#ArchaeologicalDig", "#FieldArchaeology", "#IndianArchaeology", "#STEMforKids", "#ArchaeologyStudents", "#TalaashHeritage"]},
+  "og_title": "How an archaeological excavation works",
+  "og_description": "Survey, trenches, layers and a lot of recording: what really happens on an Indian dig, step by step.",
+  "cta": "Talaash Heritage runs mock excavations and field-skills workshops for schools and colleges, led by archaeologists with real excavation experience."
+}

@@ -1,0 +1,103 @@
+{
+  "slug": "sanskrit-literature",
+  "type": "explainer",
+  "pillar": "sanskrit",
+  "title": "Sanskrit literature: epics, poetry, drama and sciences",
+  "seo_title": "Sanskrit Literature: Main Genres, Famous Works and Authors",
+  "meta_description": "A clear guide to Sanskrit literature: Vedic texts, the epics, Puranas, kavya poetry, Kalidasa's drama, story collections, the sciences and history writing.",
+  "keywords": ["sanskrit literature", "history of sanskrit literature", "famous sanskrit literature", "sanskrit poets and their works", "kalidasa works", "sanskrit drama", "kavya literature", "ramayana and mahabharata", "classical sanskrit literature", "sanskrit shastra texts"],
+  "summary": "Sanskrit literature spans more than three thousand years, from the Vedic hymns to medieval commentaries. Its main bodies are the Vedic texts, the two epics (Mahabharata and Ramayana), the Puranas, courtly poetry and drama (kavya) by writers such as Kalidasa, story collections like the Panchatantra, and technical treatises (shastra) on grammar, law, medicine, astronomy, politics and the arts.",
+  "sections": [
+    {
+      "h2": "Vedic literature",
+      "paras": [
+        "The oldest layer is the literature of the four Vedas: hymn collections, ritual prose, Aranyakas and Upanishads, composed over roughly a thousand years from the second millennium BCE. These texts were transmitted orally long before they were written. The [Vedas and Upanishads](vedas-and-upanishads.html) guide sets out the four Vedas and their layers.",
+        "Attached to the Vedas are the Vedāṅgas, six auxiliary sciences for preserving and using them: phonetics, metre, grammar, etymology, astronomy for timing ritual, and ritual procedure. Panini's grammar grew out of this tradition and is discussed in [Sanskrit grammar basics](sanskrit-grammar-basics.html)."
+      ]
+    },
+    {
+      "h2": "The epics: Mahabharata and Ramayana",
+      "paras": [
+        "The Mahabharata, traditionally attributed to Vyasa, is one of the longest poems in the world, around 100,000 verses in its larger versions, in eighteen books (parvans). It grew over many centuries, roughly between the mid first millennium BCE and the early centuries CE, and contains the Bhagavad Gita in its sixth book. The critical edition prepared at the Bhandarkar Oriental Research Institute in Pune, completed in 1966, compared hundreds of manuscripts to reconstruct its oldest recoverable form.",
+        "The Ramayana, attributed to Valmiki and called the ādikāvya ('first poem'), tells the story of Rama in seven books and about 24,000 verses. Like the Mahabharata it was composed in stages. Both epics were retold in nearly every Indian language and across Southeast Asia, and scenes from them fill temple walls, which is why they matter to anyone who wants to [read a temple's sculpture](temple-sculpture-iconography.html)."
+      ]
+    },
+    {
+      "h2": "Kavya: court poetry and drama",
+      "paras": [
+        "Kāvya is refined literary composition in verse and prose, judged by the theory of rasa (aesthetic emotion) and alaṅkāra (figures of speech). The Buddhist poet Ashvaghosha, around the 1st or 2nd century CE, wrote some of the earliest surviving examples, including the Buddhacarita. Kalidasa, usually placed around the 4th to 5th centuries CE, is the most celebrated author: the plays Abhijñānaśākuntalam, Vikramorvaśīyam and Mālavikāgnimitram, the long poems Raghuvaṃśa and Kumārasambhava, and the lyric Meghadūta ('Cloud Messenger').",
+        "Other major names include the dramatists Bhasa, Shudraka (Mṛcchakaṭika, 'The Little Clay Cart') and Bhavabhuti; Bana, whose prose romance Kādambarī and biography of King Harsha (Harṣacarita) date to the 7th century; and the poets Bharavi, Magha and Shriharsha. Jayadeva's Gītagovinda, of the 12th century, closes the classical period and shaped later devotional poetry and music."
+      ]
+    },
+    {
+      "h2": "Story literature and the Puranas",
+      "paras": [
+        "Sanskrit has a large narrative tradition. The Panchatantra frames animal fables as lessons in statecraft for princes; it travelled through Middle Persian and Arabic (as Kalīla wa Dimna) into dozens of languages. The Hitopadesha is a later reworking. Somadeva's Kathāsaritsāgara ('Ocean of the Streams of Story'), composed in 11th-century Kashmir, is a vast collection of tales. The Jatakas, stories of the Buddha's previous lives, are in Pali rather than Sanskrit; see [Prakrit and Pali](prakrit-and-pali.html).",
+        "The Puranas are encyclopaedic texts covering creation, genealogies of gods and kings, sacred geography, ritual and devotion. There are traditionally eighteen major (mahā) Puranas. They were composed and revised over many centuries, mostly in the first millennium CE, and historians use their king-lists with care."
+      ]
+    },
+    {
+      "h2": "Shastra: the technical and scientific literature",
+      "paras": [
+        "Much of what was written in Sanskrit is not poetry at all. Shastra means a systematic body of knowledge, and nearly every field had one."
+      ],
+      "table": {
+        "head": ["Field", "Examples", "Rough period"],
+        "rows": [
+          ["Grammar", "Panini's Aṣṭādhyāyī; Patañjali's Mahābhāṣya", "about 5th to 2nd centuries BCE"],
+          ["Politics and economy", "Kauṭilya's Arthaśāstra", "compiled over several centuries, around the turn of the era"],
+          ["Law and social order", "Manusmṛti and other Dharmaśāstras", "early centuries CE"],
+          ["Medicine (Ayurveda)", "Caraka Saṃhitā, Suśruta Saṃhitā", "early centuries CE, revised later"],
+          ["Mathematics and astronomy", "Āryabhaṭīya (499 CE); Brahmagupta's Brāhmasphuṭasiddhānta (628 CE)", "5th to 7th centuries CE"],
+          ["Performing arts", "Bharata's Nāṭyaśāstra", "around the early centuries CE"],
+          ["Architecture", "Mānasāra, Mayamata, Samarāṅgaṇasūtradhāra", "later first millennium to 11th century CE"]
+        ]
+      }
+    },
+    {
+      "h2": "History writing and how the texts survive",
+      "paras": [
+        "It is sometimes said that Sanskrit has no history writing. That is not quite right. Kalhana's Rājataraṅgiṇī (1148 to 1149 CE), a verse chronicle of the kings of Kashmir, uses inscriptions, earlier works and documents and is the closest Sanskrit comes to history in the modern sense. Royal biographies such as Bana's Harṣacarita and Bilhana's Vikramāṅkadevacarita, and the long praise-poems (praśastis) carved in inscriptions, add more.",
+        "Almost all of this survives through hand-copied manuscripts on birch bark, palm leaf and later paper, explained in the [Indian manuscripts](indian-manuscripts.html) guide. Kalhana's chronicle survives in manuscripts written in [Sharada script](sarada-script.html), the script Talaash Heritage teaches in a short course. The [linguistic heritage lecture](india-s-linguistic-heritage.html) places Sanskrit literature beside Tamil, Prakrit and Pali literature."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "Who is the greatest poet in Sanskrit literature?", "a": "Kalidasa, usually dated to around the 4th to 5th centuries CE, is most often given that title. His play Abhijñānaśākuntalam and his poem Meghadūta have been admired in India for centuries and were widely translated in Europe from the late 18th century."},
+    {"q": "What are the main genres of Sanskrit literature?", "a": "Vedic texts; the epics (itihāsa); the Puranas; kāvya, meaning court poetry and drama; narrative and fable collections; and shastra, the technical literature on grammar, law, politics, medicine, mathematics, astronomy and the arts. Commentaries on all of these form a large body of their own."},
+    {"q": "Is the Bhagavad Gita part of the Mahabharata?", "a": "Yes. The Bhagavad Gita forms chapters 23 to 40 of the Bhishma Parvan, the sixth book of the Mahabharata, in the critical edition. It is a dialogue of about 700 verses between Krishna and Arjuna before the battle at Kurukshetra."},
+    {"q": "Is there history writing in Sanskrit?", "a": "Yes. Kalhana's Rajatarangini, composed in 1148 to 1149 CE, is a chronicle of Kashmir's kings that draws on earlier sources and inscriptions. Royal biographies and inscriptional praise-poems also record events, though often with a court's point of view."},
+    {"q": "What is kavya?", "a": "Kāvya is refined literary composition in Sanskrit, in verse, prose or a mix, governed by theories of aesthetic emotion (rasa) and ornament (alaṅkāra). Long court epics, lyric poems, prose romances and dramas all count as kāvya."}
+  ],
+  "related_programmes": ["india-s-linguistic-heritage.html", "sarada-script.html", "prakrit-a-first-course.html", "pali-a-first-course.html", "reading-india-s-scripts-brahmi-to-sarada.html", "the-goddess-in-text-and-image-the-devimahatmya.html"],
+  "related_guides": ["vedas-and-upanishads", "what-is-sanskrit", "prakrit-and-pali", "indian-manuscripts", "sanskrit-and-indian-knowledge-systems", "classical-languages-of-india"],
+  "cta": "Talaash Heritage runs a lecture on India's linguistic heritage and a Sharada script course for reading Kashmiri Sanskrit manuscripts, for groups online or in person.",
+  "bundle": {
+    "title": "Texts and the hands that copied them",
+    "pitch": "The linguistic heritage lecture maps the literatures of ancient India; the Sharada course then shows you how a Kashmiri scribe actually wrote them down.",
+    "items": ["india-s-linguistic-heritage.html", "sarada-script.html"]
+  },
+  "audience_hooks": [
+    "Colleges: a lecture on India's languages and literatures for literature and history departments.",
+    "Adult learners: a Sharada course to read medieval Sanskrit manuscripts.",
+    "Schools: a lecture connecting the epics, scripts and languages of India."
+  ],
+  "sem": {
+    "ad_group": "Sanskrit literature lecture",
+    "keywords": ["sanskrit literature lecture", "indian literature history talk", "linguistic heritage of india lecture", "sharada script course", "ancient indian texts course", "kalidasa lecture for students", "prakrit literature course"],
+    "negatives": ["free", "pdf", "notes", "summary", "mcq", "ugc net", "book download"],
+    "headlines": ["Sanskrit Literature Explained", "India's Linguistic Heritage", "Read Sharada Manuscripts", "Lectures for Colleges", "Online or In Person"],
+    "descriptions": ["A lecture on Sanskrit, Prakrit, Pali and Tamil literature in their historical setting.", "Arrange a lecture or a Sharada script course for your college or adult group."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "The Panchatantra reached Europe through Persian and Arabic.", "caption": "As Kalīla wa Dimna, these Sanskrit fables for young princes were translated into dozens of languages. Some of the animal stories you know may have started in ancient India."},
+      {"angle": "tip", "hook": "Reading Kalidasa in translation? Start with the Meghadūta.", "caption": "It is short, and the cloud's route north across India is a little travel poem in itself. Look for an edition that notes the places named."},
+      {"angle": "offer", "hook": "Kalhana's history of Kashmir was copied in Sharada.", "caption": "Our Sharada course teaches the script of medieval Kashmir, so you can look at these manuscripts directly. For colleges and adult groups, online or in person."}
+    ],
+    "reel": "Pages turn on screen: a Vedic hymn, an epic scene, a Kalidasa verse, an astronomy table, a Kashmir chronicle. On-screen line: 'Sanskrit was never only scripture.' End card: 'India's linguistic heritage, a lecture for your group.'",
+    "hashtags": ["#SanskritLiterature", "#Kalidasa", "#Mahabharata", "#Ramayana", "#Panchatantra", "#IndianLiterature", "#Sanskrit", "#TalaashHeritage"]
+  },
+  "og_title": "Sanskrit literature, far beyond scripture",
+  "og_description": "Epics, Kalidasa's plays, fables, science and history: a clear map of what was written in Sanskrit."
+}

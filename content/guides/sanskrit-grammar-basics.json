@@ -1,0 +1,323 @@
+{
+  "slug": "sanskrit-grammar-basics",
+  "type": "explainer",
+  "pillar": "sanskrit",
+  "title": "Sanskrit grammar basics: sandhi, nouns, verbs and Panini",
+  "seo_title": "Sanskrit Grammar Basics: Sandhi, Declension and Panini",
+  "meta_description": "Sanskrit grammar basics explained: sandhi rules, noun declension, verb conjugation and Panini's Ashtadhyayi, with correct worked examples for beginners.",
+  "keywords": [
+    "sanskrit grammar basics",
+    "sanskrit grammar",
+    "sanskrit sandhi rules",
+    "sanskrit declension",
+    "sanskrit verb conjugation",
+    "panini ashtadhyayi",
+    "sanskrit vibhakti",
+    "sanskrit grammar for beginners",
+    "what is sandhi in sanskrit"
+  ],
+  "summary": "Sanskrit grammar rests on three ideas: sandhi, the regular sound changes where words and parts of words meet; declension, in which nouns take endings for eight cases and three numbers; and conjugation, in which verbs mark person, number, tense and mood. Panini's Ashtadhyayi, about 4,000 rules from around the 5th or 4th century BCE, describes the whole system.",
+  "sections": [
+    {
+      "h2": "Panini and the Ashtadhyayi",
+      "paras": [
+        "Pāṇini, traditionally said to come from Shalatura near the Indus in the north-west of the subcontinent, composed the Aṣṭādhyāyī ('eight chapters') around the 5th or 4th century BCE. It contains close to 4,000 sūtras, very short rules, arranged in eight chapters of four sections each. It is preceded by the fourteen Śiva Sūtras, a list of sounds arranged so that Panini could name whole groups of them with short labels, and supported by lists of verb roots (Dhātupāṭha) and word groups (Gaṇapāṭha).",
+        "The rules are extremely compressed. Rule 6.1.87, ād guṇaḥ, says in three syllables that a or ā followed by a vowel of the i or u type combines into the 'guṇa' vowel e or o. Later scholars explained and extended the system: Kātyāyana added supplementary notes (vārttikas), and Patañjali's Mahābhāṣya, usually placed in the 2nd century BCE, is a great commentary on both.",
+        "Modern linguists still study the Ashtadhyayi as one of the earliest generative grammars: a finite set of rules that produces every correct form of a language. That is why Panini's influence reaches well beyond India, a point the [linguistic heritage lecture](india-s-linguistic-heritage.html) explores."
+      ]
+    },
+    {
+      "h2": "What is sandhi in Sanskrit?",
+      "paras": [
+        "Sandhi ('joining') is the set of regular sound changes that happen when sounds meet, either inside a word or between words. Spoken languages do this naturally (English 'don't you' often sounds like 'donchu'), but Sanskrit writes the changes down. That is why a printed line can look like one long word: neighbouring words fuse.",
+        "There are three main kinds: vowel sandhi, consonant sandhi and visarga sandhi. Beginners should learn the vowel rules first, because they appear in almost every sentence."
+      ],
+      "table": {
+        "head": [
+          "Meeting sounds",
+          "Result",
+          "Example"
+        ],
+        "rows": [
+          [
+            "a or ā + a or ā",
+            "ā",
+            "na + asti = nāsti (is not)"
+          ],
+          [
+            "a or ā + i or ī",
+            "e",
+            "deva + indra = devendra"
+          ],
+          [
+            "a or ā + u or ū",
+            "o",
+            "sūrya + udaya = sūryodaya (sunrise)"
+          ],
+          [
+            "a or ā + e or ai",
+            "ai",
+            "sadā + eva = sadaiva (always)"
+          ],
+          [
+            "i + unlike vowel",
+            "y + vowel",
+            "iti + api = ity api"
+          ],
+          [
+            "u + unlike vowel",
+            "v + vowel",
+            "su + āgatam = svāgatam (welcome)"
+          ],
+          [
+            "aḥ + voiced consonant",
+            "o",
+            "rāmaḥ + gacchati = rāmo gacchati"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Noun declension: eight cases, three numbers",
+      "paras": [
+        "A Sanskrit noun changes its ending to show its job in the sentence. There are eight cases (vibhakti), three numbers (singular, dual for exactly two, and plural) and three genders. Because the ending carries the meaning, word order is free: rāmaḥ phalaṃ khādati and phalaṃ rāmaḥ khādati both mean 'Rama eats the fruit'.",
+        "The table shows deva ('god'), a masculine noun ending in -a, the most common pattern. Other stem types (-ā, -i, -u, consonant stems) follow related but different patterns."
+      ],
+      "table": {
+        "head": [
+          "Case",
+          "Role",
+          "Singular",
+          "Dual",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "Nominative",
+            "subject",
+            "devaḥ",
+            "devau",
+            "devāḥ"
+          ],
+          [
+            "Accusative",
+            "object",
+            "devam",
+            "devau",
+            "devān"
+          ],
+          [
+            "Instrumental",
+            "by, with",
+            "devena",
+            "devābhyām",
+            "devaiḥ"
+          ],
+          [
+            "Dative",
+            "to, for",
+            "devāya",
+            "devābhyām",
+            "devebhyaḥ"
+          ],
+          [
+            "Ablative",
+            "from",
+            "devāt",
+            "devābhyām",
+            "devebhyaḥ"
+          ],
+          [
+            "Genitive",
+            "of",
+            "devasya",
+            "devayoḥ",
+            "devānām"
+          ],
+          [
+            "Locative",
+            "in, on",
+            "deve",
+            "devayoḥ",
+            "deveṣu"
+          ],
+          [
+            "Vocative",
+            "O!",
+            "deva",
+            "devau",
+            "devāḥ"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Verb conjugation: persons, tenses and moods",
+      "paras": [
+        "Sanskrit verbs are built from roots (dhātu), such as bhū 'be, become', gam 'go' and kṛ 'do, make'. Each root belongs to one of ten classes that shape its present stem. Verbs mark three persons and three numbers, and use two sets of endings: parasmaipada (often called active) and ātmanepada (often called middle, originally 'for oneself').",
+        "Note that Sanskrit grammar counts persons the other way round from English: the 'first person' (prathama puruṣa) is 'he, she, it, they'. The forms below are the present tense of bhū."
+      ],
+      "table": {
+        "head": [
+          "Person",
+          "Singular",
+          "Dual",
+          "Plural"
+        ],
+        "rows": [
+          [
+            "Third (he, she, they)",
+            "bhavati",
+            "bhavataḥ",
+            "bhavanti"
+          ],
+          [
+            "Second (you)",
+            "bhavasi",
+            "bhavathaḥ",
+            "bhavatha"
+          ],
+          [
+            "First (I, we)",
+            "bhavāmi",
+            "bhavāvaḥ",
+            "bhavāmaḥ"
+          ]
+        ]
+      },
+      "list": [
+        "Tenses and moods include present, imperfect, perfect, aorist, future, imperative and optative.",
+        "Participles and the absolutive (gatvā, 'having gone') do much of the work that clauses do in English.",
+        "Prefixes change meaning: gacchati 'goes', āgacchati 'comes'."
+      ]
+    },
+    {
+      "h2": "Compounds (samasa)",
+      "paras": [
+        "Sanskrit joins words into compounds very freely, sometimes many words long. Only the last member takes case endings. The main types are tatpuruṣa, where one word qualifies another (rājapuruṣa, 'king's man'), dvandva, a list of equals (rāmalakṣmaṇau, 'Rama and Lakshmana'), bahuvrīhi, which describes something else (mahābāhu, 'one whose arms are great'), and avyayībhāva, adverbial compounds (yathāśakti, 'as far as one is able'). Reading long compounds in inscriptions and court poetry is a skill of its own."
+      ]
+    },
+    {
+      "h2": "How to study Sanskrit grammar",
+      "paras": [
+        "Most learners do not start with the Ashtadhyayi. They use a modern textbook that teaches the same grammar in a graded order, and return to Panini later. Learn the script first using our [Sanskrit alphabet](sanskrit-alphabet.html) tables, then follow the stages in [learn Sanskrit for beginners](learn-sanskrit-for-beginners.html).",
+        "The Prakrits and Pali are simplified, regionally varied relatives of Sanskrit: fewer cases in practice, consonant clusters smoothed out. Studying one of them after some Sanskrit is a quick way to see how the grammar loosened in everyday speech. Talaash Heritage runs short introductory courses in [Prakrit](prakrit-a-first-course.html) and [Pali](pali-a-first-course.html) that do exactly this."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "How many cases are there in Sanskrit?",
+      "a": "Eight: nominative, accusative, instrumental, dative, ablative, genitive, locative and vocative. Indian grammar counts seven vibhaktis and treats the vocative as a form of the nominative. Each case has singular, dual and plural forms."
+    },
+    {
+      "q": "How many sutras are in Panini's Ashtadhyayi?",
+      "a": "Close to 4,000; the commonly cited figure is 3,959, with slight variation between traditions. They are arranged in eight chapters (adhyāya) of four sections (pāda) each, which is what the name Aṣṭādhyāyī, 'eight chapters', refers to."
+    },
+    {
+      "q": "Is sandhi compulsory in Sanskrit?",
+      "a": "Inside words and compounds, yes. Between separate words in a sentence, classical writers apply it consistently in verse and formal prose, though grammarians allow some optionality. Beginners' readers often print words with sandhi undone to make reading easier."
+    },
+    {
+      "q": "What is the dual number in Sanskrit?",
+      "a": "A form used for exactly two of something, between singular and plural. Devaḥ is one god, devau two, devāḥ three or more. Verbs have dual forms too, such as bhavataḥ, 'the two of them are'."
+    },
+    {
+      "q": "Do I need to learn Panini to learn Sanskrit?",
+      "a": "No. Modern textbooks teach the same grammar step by step. Students who continue to advanced levels, or who study traditional commentaries, usually read Panini's system with a teacher later."
+    }
+  ],
+  "related_programmes": [
+    "india-s-linguistic-heritage.html",
+    "prakrit-a-first-course.html",
+    "pali-a-first-course.html",
+    "sarada-script.html",
+    "write-like-asoka-s-scribes-a-brahmi-workshop.html",
+    "reading-india-s-scripts-brahmi-to-sarada.html"
+  ],
+  "related_guides": [
+    "learn-sanskrit-for-beginners",
+    "sanskrit-alphabet",
+    "what-is-sanskrit",
+    "prakrit-and-pali",
+    "sanskrit-and-indian-knowledge-systems"
+  ],
+  "cta": "Talaash Heritage runs a lecture on India's linguistic heritage, including Panini's place in it, and introductory Prakrit and Pali courses for groups, online or in person.",
+  "bundle": {
+    "title": "Grammar in its living context",
+    "pitch": "The linguistic heritage lecture places Panini in the history of Indian languages; a first course in Prakrit then shows how everyday speech bent his rules.",
+    "items": [
+      "india-s-linguistic-heritage.html",
+      "prakrit-a-first-course.html"
+    ]
+  },
+  "audience_hooks": [
+    "Colleges: a lecture on Panini and India's linguistic heritage for language and history departments.",
+    "Adult learners: introductory Prakrit or Pali courses online in small groups.",
+    "Schools: a lecture on how Indian languages and scripts developed."
+  ],
+  "sem": {
+    "ad_group": "Indian linguistics lecture",
+    "keywords": [
+      "panini lecture for students",
+      "indian linguistics lecture",
+      "linguistic heritage of india talk",
+      "prakrit course online",
+      "pali course online",
+      "ancient indian grammar course",
+      "sanskrit linguistics lecture"
+    ],
+    "negatives": [
+      "free",
+      "pdf",
+      "notes",
+      "ncert",
+      "solutions",
+      "class 10",
+      "worksheet"
+    ],
+    "headlines": [
+      "Panini and Indian Grammar",
+      "India's Linguistic Heritage",
+      "Prakrit and Pali Courses",
+      "Lectures for Colleges",
+      "Online or On Campus"
+    ],
+    "descriptions": [
+      "A lecture on Panini, Sanskrit and the languages of ancient India, for your group.",
+      "Introductory Prakrit and Pali courses, online or in person, for students and adults."
+    ]
+  },
+  "social": {
+    "posts": [
+      {
+        "angle": "fact",
+        "hook": "Three syllables, one whole rule.",
+        "caption": "Panini's sutra ād guṇaḥ explains why deva + indra becomes devendra. His grammar of close to 4,000 such rules is still studied by modern linguists."
+      },
+      {
+        "angle": "tip",
+        "hook": "Stuck on a long Sanskrit word? Undo the sandhi.",
+        "caption": "Look for e, o and ā at the joins: they often hide two words. Na + asti becomes nāsti; sūrya + udaya becomes sūryodaya."
+      },
+      {
+        "angle": "offer",
+        "hook": "Why do linguists still read Panini?",
+        "caption": "Our lecture on India's linguistic heritage explains, and our Prakrit and Pali courses show how grammar changed in everyday speech. For colleges and adult groups."
+      }
+    ],
+    "reel": "Two word cards, 'deva' and 'indra', slide together on screen and morph into 'devendra'. On-screen line: 'Panini wrote the rule for this 2,400 years ago.' End card: 'India's linguistic heritage, a lecture for your group.'",
+    "hashtags": [
+      "#SanskritGrammar",
+      "#Panini",
+      "#Ashtadhyayi",
+      "#Sandhi",
+      "#Sanskrit",
+      "#Linguistics",
+      "#IndianKnowledgeSystems",
+      "#TalaashHeritage"
+    ]
+  },
+  "og_title": "Sanskrit grammar, the basics made clear",
+  "og_description": "Sandhi, cases, verbs and Panini's famous grammar, with simple worked examples."
+}
