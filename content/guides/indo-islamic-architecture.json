@@ -1,0 +1,109 @@
+{
+  "slug": "indo-islamic-architecture",
+  "type": "explainer",
+  "pillar": "architecture",
+  "title": "Indo-Islamic architecture: features, styles and examples",
+  "seo_title": "Indo-Islamic Architecture: Features, Styles and Examples",
+  "meta_description": "Indo-Islamic architecture explained: its features, the Delhi Sultanate phases, regional styles from Gujarat to Bijapur and Bengal, with examples and student notes.",
+  "keywords": ["indo-islamic architecture", "indo islamic architecture", "features of indo-islamic architecture", "indo-islamic architecture examples", "delhi sultanate architecture", "provincial styles of indo-islamic architecture", "true arch and dome in india", "indo-islamic architecture for students", "indo-islamic architecture notes"],
+  "summary": "Indo-Islamic architecture is the building tradition that grew in India from the late 12th century, when ideas from the Islamic world such as the true arch, dome, minaret and mosque plan met Indian masonry and ornament. It runs from the Qutb complex in Delhi through Sultanate and regional styles in Gujarat, Bengal, Malwa and the Deccan to Mughal buildings.",
+  "sections": [
+    {
+      "h2": "What is Indo-Islamic architecture?",
+      "paras": [
+        "The term describes buildings made for Muslim patrons in South Asia, mostly mosques, tombs, palaces, forts and madrasas, that combine forms from Iran, Central Asia and the wider Islamic world with Indian materials, craft and design. It is not one style but a family of styles that changed over six centuries and differed from region to region.",
+        "Some scholars prefer terms such as Sultanate architecture or simply the architecture of a particular dynasty, because Indo-Islamic can suggest two separate traditions mixing. In practice the term is standard in Indian textbooks and exams, and it is useful as long as you remember that Indian builders were part of the process from the start."
+      ]
+    },
+    {
+      "h2": "Features of Indo-Islamic architecture",
+      "list": [
+        "True arch and dome: built with radiating voussoirs and a keystone, replacing the earlier Indian method of corbelling (stepped horizontal courses).",
+        "Lime mortar: used widely as a binding material, allowing larger spans.",
+        "Mosque plan: a courtyard with a prayer hall facing west towards Mecca, a mihrab marking the direction of prayer, and often minarets.",
+        "Tombs: square or octagonal chambers under a dome, later set in gardens.",
+        "Decoration: geometric patterns, arabesque and calligraphy, since figural images were avoided in religious buildings.",
+        "Indian elements: carved brackets, lotus motifs, bell and chain designs, chhatris and chhajjas, local stone."
+      ]
+    },
+    {
+      "h2": "Delhi Sultanate architecture: the first phase",
+      "paras": [
+        "The story usually begins at the Qutb complex in Delhi. The Quwwat-ul-Islam mosque, begun in the 1190s under Qutbuddin Aibak, reused pillars from earlier temples on the site, and its stone screen of arches was built by Indian masons who corbelled them rather than using true arches. The Qutb Minar, begun by Aibak and completed by Iltutmish, was later repaired and heightened under Firoz Shah Tughlaq. A walk at [the Qutb complex](the-qutb-complex.html) shows these layers clearly.",
+        "The tomb of Balban (late 13th century) has some of the first true arches in India. The Alai Darwaza, built in 1311 under Alauddin Khalji, has a true dome and arches, with red sandstone and white marble decoration. The Tughlaqs (14th century) built in rubble masonry with sloping walls, as at Tughlaqabad and Ghiyasuddin Tughlaq's tomb. The Lodis and Sayyids added octagonal tombs with verandahs and the double dome, which you can see in Delhi's [Lodhi Garden monuments](lodhi-garden-monuments.html)."
+      ],
+      "table": {
+        "head": ["Dynasty", "Period", "Example in Delhi"],
+        "rows": [
+          ["Mamluk (Slave)", "1206 to 1290", "Qutb Minar, Iltutmish's tomb, Sultan Ghari"],
+          ["Khalji", "1290 to 1320", "Alai Darwaza, Siri, Hauz Khas reservoir"],
+          ["Tughlaq", "1320 to 1414", "Tughlaqabad Fort, Firoz Shah Kotla, Begumpur and Khirki mosques"],
+          ["Sayyid", "1414 to 1451", "Muhammad Shah Sayyid's tomb, Lodhi Garden"],
+          ["Lodi", "1451 to 1526", "Sikandar Lodi's tomb, Bara Gumbad"]
+        ]
+      }
+    },
+    {
+      "h2": "Provincial styles of Indo-Islamic architecture",
+      "paras": [
+        "When regional sultanates broke away from Delhi in the 14th and 15th centuries, each developed its own style using local materials and craft traditions."
+      ],
+      "list": [
+        "Gujarat (Ahmedabad): stone mosques with carved pillars, brackets and jali screens close to local temple craft, such as the Jama Masjid and Sidi Saiyyed mosque.",
+        "Bengal (Gaur, Pandua): brick and terracotta, curved cornices copying thatched roofs, as at the Adina mosque.",
+        "Malwa (Mandu): large plain masonry, coloured tile work and water palaces such as the Jahaz Mahal.",
+        "Jaunpur: massive gateway screens in front of prayer halls, as at the Atala Masjid.",
+        "Deccan (Bahmani and successors): large domes and Persian influence; the Gol Gumbaz at Vijayapura (Bijapur) has one of the largest domes in the world, and Golconda and Hyderabad have Qutb Shahi tombs and the Charminar."
+      ]
+    },
+    {
+      "h2": "From the Sultanates to the Mughals",
+      "paras": [
+        "The Mughals, arriving in 1526, inherited this long tradition and added Timurid ideas: garden tombs, more refined double domes and later white marble with inlay. Our guide to [Mughal architecture](mughal-architecture.html) picks up the story from there.",
+        "Delhi is the best place to see the whole sequence in one city, from the Qutb complex through Tughlaqabad and the Lodi tombs to Humayun's Tomb. The journey [Delhi through seven cities](delhi-through-seven-cities.html) follows that order, and our explainer on the [Delhi Sultanate](delhi-sultanate.html) gives the political history."
+      ]
+    },
+    {
+      "h2": "Indo-Islamic architecture: notes for students",
+      "list": [
+        "Begins in the 1190s with the Quwwat-ul-Islam mosque and Qutb Minar in Delhi.",
+        "Key innovation: the true arch and dome, with lime mortar.",
+        "Earliest true arches: Balban's tomb; first true dome with fine decoration: Alai Darwaza (1311).",
+        "Tughlaq style: rubble masonry, sloping (battered) walls.",
+        "Lodi style: octagonal tombs, double domes.",
+        "Provincial styles: Gujarat, Bengal, Malwa, Jaunpur, Deccan.",
+        "Gol Gumbaz, Vijayapura: Adil Shahi tomb with a huge dome and whispering gallery."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "What are the main features of Indo-Islamic architecture?", "a": "The true arch and dome, lime mortar, the courtyard mosque with a mihrab facing Mecca, minarets, domed tombs, and decoration with geometric patterns, arabesque and calligraphy. These were combined with Indian elements such as brackets, lotus motifs, chhatris and local stone."},
+    {"q": "Which is the first example of Indo-Islamic architecture in India?", "a": "The Quwwat-ul-Islam mosque and the Qutb Minar in Delhi, begun in the 1190s, are usually treated as the first major examples. Earlier mosques existed in coastal trading towns, but the Delhi buildings began the continuous tradition."},
+    {"q": "Which building has the first true arch in India?", "a": "The tomb of Balban in Mehrauli, Delhi, from the late 13th century, is generally said to have the earliest true arches in India. The Alai Darwaza at the Qutb complex, built in 1311, shows a mature true dome and arches."},
+    {"q": "What is the difference between Indo-Islamic and Mughal architecture?", "a": "Indo-Islamic architecture is the whole tradition from about 1190 onward, including the Delhi Sultanate and regional sultanates. Mughal architecture is its later phase, from 1526, known for charbagh garden tombs, refined double domes and white marble with inlay."},
+    {"q": "What are the provincial styles of Indo-Islamic architecture?", "a": "The main ones are Gujarat, with carved stone mosques; Bengal, with brick and terracotta; Malwa at Mandu; Jaunpur, with huge gateway screens; and the Deccan, with the Bahmani, Adil Shahi and Qutb Shahi buildings of Kalaburagi (Gulbarga), Vijayapura and Golconda."}
+  ],
+  "related_programmes": ["the-qutb-complex.html", "mehrauli-archaeological-park.html", "lodhi-garden-monuments.html", "tughlaqabad-fort.html", "bara-gumbad-and-shish-gumbad-architecture-lab.html", "begumpur-mosque.html", "mandu-fortified-plateau-and-water-architecture.html", "delhi-through-seven-cities.html"],
+  "bundle": {"title": "Three centuries in two mornings", "pitch": "See the first Sultanate buildings at the Qutb complex, then the Lodi tombs and the Bara Gumbad in Lodhi Garden to trace how arches and domes developed.", "items": ["the-qutb-complex.html", "bara-gumbad-and-shish-gumbad-architecture-lab.html"]},
+  "audience_hooks": ["Schools: a Qutb complex walk that explains arches, domes and inscriptions.", "Architecture students: a Bara Gumbad and Shish Gumbad architecture lab.", "Travellers: a Delhi through seven cities journey with an archaeologist."],
+  "related_guides": ["mughal-architecture", "delhi-sultanate", "seven-cities-of-delhi", "forts-of-india", "heritage-walk-in-delhi", "heritage-walk-in-vijayapura"],
+  "cta": "Talaash Heritage runs walks at the Qutb complex, Mehrauli and Lodhi Garden that trace Indo-Islamic architecture from its first arches to the Lodi domes.",
+  "sem": {
+    "ad_group": "Sultanate architecture walks",
+    "keywords": ["qutb minar guided walk", "mehrauli archaeological park walk", "lodhi garden heritage walk", "delhi sultanate monuments tour", "indo islamic architecture walk delhi", "architecture students heritage walk delhi"],
+    "negatives": ["free", "pdf", "drawing", "wallpaper", "tickets online", "jobs"],
+    "headlines": ["Qutb Complex Walks", "Sultanate Delhi with Experts", "Lodhi Garden Monuments", "Architecture Labs for Students", "For Schools and Groups"],
+    "descriptions": ["Trace India's first arches and domes on a walk with an archaeologist in Delhi.", "Walks and architecture labs at the Qutb, Mehrauli and Lodhi Garden."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "The first Qutb arches are not real arches.", "caption": "The screen of the Quwwat-ul-Islam mosque was built by corbelling, stepping stones inward. True arches arrived a few decades later, at Balban's tomb."},
+      {"angle": "tip", "hook": "Check the walls for a slope.", "caption": "Sloping, battered walls of rubble masonry are a giveaway of Tughlaq building. Spot them at Tughlaqabad and Ghiyasuddin Tughlaq's tomb."},
+      {"angle": "offer", "hook": "From the first arch to the Lodi dome.", "caption": "Walk the Qutb complex and Lodhi Garden with an archaeologist. For schools, architecture students and adult groups."}
+    ],
+    "reel": "Close-ups in order: a corbelled arch at the Qutb, a true arch at the Alai Darwaza, a Lodi double dome. On screen: How India learned to build the arch. End card: Indo-Islamic architecture, Talaash Heritage.",
+    "hashtags": ["#IndoIslamicArchitecture", "#QutbMinar", "#DelhiSultanate", "#LodhiGarden", "#IslamicArchitecture", "#IndianArchitecture", "#DelhiHeritage", "#Mehrauli", "#TalaashHeritage"]
+  },
+  "og_title": "Indo-Islamic architecture, from Qutb to Gol Gumbaz",
+  "og_description": "Arches, domes and minarets: how Indo-Islamic architecture grew in India, with Delhi and regional examples."
+}

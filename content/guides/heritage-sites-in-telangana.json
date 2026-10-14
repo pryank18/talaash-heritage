@@ -1,0 +1,263 @@
+{
+  "slug": "heritage-sites-in-telangana",
+  "type": "state",
+  "pillar": "heritage",
+  "state": "Telangana",
+  "title": "Heritage sites in Telangana: Ramappa, Warangal and Golconda",
+  "seo_title": "Heritage Sites in Telangana: Ramappa, Warangal and Golconda",
+  "meta_description": "Heritage sites in Telangana: the UNESCO Ramappa Temple, Warangal Fort, the Thousand Pillar Temple, Golconda, the Qutb Shahi tombs and Charminar.",
+  "keywords": [
+    "heritage sites in telangana",
+    "historical places in telangana",
+    "ancient temples in telangana",
+    "unesco sites in telangana",
+    "archaeological sites in telangana",
+    "ramappa temple",
+    "warangal fort",
+    "thousand pillar temple",
+    "golconda fort",
+    "qutb shahi tombs"
+  ],
+  "summary": "Telangana's UNESCO World Heritage Site is the Ramappa (Kakatiya Rudreshwara) Temple at Palampet, inscribed in 2021. Around it lie the Kakatiya capital of Warangal with its fort and Thousand Pillar Temple, and in Hyderabad the Qutb Shahi city of Golconda, the Qutb Shahi tombs and Charminar. Buddhist sites such as Nelakondapalli and Phanigiri and the megaliths of the Deccan add older layers.",
+  "sections": [
+    {
+      "h2": "Telangana's heritage in layers",
+      "paras": [
+        "Telangana sits on the Deccan plateau, and its history follows the great Deccan powers. Megalithic burials of the Iron Age are scattered across the state. Satavahana and Ikshvaku rulers presided over a Buddhist world in the Krishna valley in the early centuries CE. From the 12th to 14th centuries the Kakatiyas ruled from Warangal, building temples, forts and the tanks that still water the countryside. After them came the Bahmanis, the Qutb Shahis of Golconda and finally the Asaf Jahi Nizams of Hyderabad.",
+        "Each layer left a distinct architecture, so a short trip can cover star-shaped temples, a circular fort, royal tombs and an 18th to 20th century palace city. Our explainer on [indo-islamic architecture](indo-islamic-architecture.html) helps with the later monuments."
+      ]
+    },
+    {
+      "h2": "Ramappa Temple: Telangana's UNESCO site",
+      "paras": [
+        "The Ramappa temple at Palampet, in Mulugu district, was built in the early 13th century under the Kakatiya ruler Ganapatideva by his general Recherla Rudra. It was inscribed as a World Heritage Site in 2021. It stands on a raised star-shaped platform, and its bracket figures of dancers, made in polished black stone, are among the finest of the period. The temple's tower is built with light bricks that reduce the load on the walls.",
+        "The temple is still part of a working landscape: the large Ramappa lake nearby was built as part of the same Kakatiya irrigation system. Our lecture [Deccan temple forms and Vesara debates](deccan-temple-forms-vesara-debates.html) explains where Kakatiya temples fit in the story of Deccan architecture."
+      ]
+    },
+    {
+      "h2": "Warangal: the Kakatiya capital",
+      "paras": [
+        "Warangal Fort had concentric circular walls of earth and stone, and at its centre stand four carved stone gateways, the Kakatiya Kala Thoranam, which have become the state emblem. The Thousand Pillar Temple at Hanamkonda, of the 12th century, is a triple shrine with a richly carved pillared hall. Nearby, the Bhadrakali temple and the forts and temples at Ghanpur add to the Kakatiya group.",
+        "A day in Warangal paired with Ramappa makes a strong study visit for architecture students. Our session on [temple inscriptions and patrons](temple-inscriptions-patrons.html) uses Kakatiya inscriptions to show who paid for temples and why."
+      ]
+    },
+    {
+      "h2": "Hyderabad: Golconda, the tombs and Charminar",
+      "paras": [
+        "Golconda Fort, on a granite hill west of Hyderabad, grew under the Qutb Shahi kings from the 16th century into a fortified city known for the diamond trade and for its acoustics, a clap at the entrance being said to carry to the summit. Below it lie the Qutb Shahi tombs, a royal necropolis of domed tombs and mosques now restored with gardens and stepwells.",
+        "Hyderabad itself was founded in 1591 around the Charminar, with the Mecca Masjid, Chowmahalla Palace and the Salar Jung Museum nearby. See our [Hyderabad heritage walk guide](heritage-walk-in-hyderabad.html) for routes through the old city."
+      ]
+    },
+    {
+      "h2": "Buddhist and prehistoric sites",
+      "paras": [
+        "Nelakondapalli in Khammam district has the remains of a large Buddhist stupa and monastery. Phanigiri, in Suryapet district, has yielded fine limestone sculpture and inscriptions of the Ikshvaku period. Kondapur, near Sangareddy, was an early historic Satavahana town. Megalithic burials, including stone circles, are known across the state, and our lecture on [burials and bioarchaeology](burials-and-bioarchaeology.html) explains how they are studied.",
+        "In Telangana we build a [study tour for your group](a-study-tour-built-for-your-group.html) around Hyderabad, Warangal and Ramappa."
+      ]
+    }
+  ],
+  "sites": [
+    {
+      "name": "Ramappa (Kakatiya Rudreshwara) Temple, Palampet",
+      "note": "Early 13th century Kakatiya temple with black stone bracket figures; UNESCO 2021.",
+      "unesco": true
+    },
+    {
+      "name": "Warangal Fort",
+      "note": "Kakatiya capital with concentric walls and four carved stone gateways.",
+      "unesco": false
+    },
+    {
+      "name": "Thousand Pillar Temple, Hanamkonda",
+      "note": "12th century Kakatiya triple shrine with a carved pillared hall.",
+      "unesco": false
+    },
+    {
+      "name": "Bhadrakali Temple, Warangal",
+      "note": "Temple beside a lake, associated with the Kakatiya period.",
+      "unesco": false
+    },
+    {
+      "name": "Ghanpur temples",
+      "note": "Group of Kakatiya temples in Mulugu district.",
+      "unesco": false
+    },
+    {
+      "name": "Ramappa lake",
+      "note": "Large Kakatiya irrigation tank near the temple.",
+      "unesco": false
+    },
+    {
+      "name": "Golconda Fort, Hyderabad",
+      "note": "Qutb Shahi fortified city on a granite hill.",
+      "unesco": false
+    },
+    {
+      "name": "Qutb Shahi Tombs, Hyderabad",
+      "note": "Royal necropolis of domed tombs and mosques of the 16th and 17th centuries.",
+      "unesco": false
+    },
+    {
+      "name": "Charminar, Hyderabad",
+      "note": "Gateway monument built in 1591 at the heart of the new city.",
+      "unesco": false
+    },
+    {
+      "name": "Mecca Masjid, Hyderabad",
+      "note": "Large congregational mosque begun under the Qutb Shahis.",
+      "unesco": false
+    },
+    {
+      "name": "Chowmahalla Palace, Hyderabad",
+      "note": "Palace of the Asaf Jahi Nizams with courtyards and durbar hall.",
+      "unesco": false
+    },
+    {
+      "name": "Nelakondapalli",
+      "note": "Buddhist stupa and monastery remains in Khammam district.",
+      "unesco": false
+    },
+    {
+      "name": "Phanigiri",
+      "note": "Buddhist site with Ikshvaku-period sculpture and inscriptions.",
+      "unesco": false
+    },
+    {
+      "name": "Kondapur",
+      "note": "Early historic Satavahana-period town near Sangareddy.",
+      "unesco": false
+    },
+    {
+      "name": "Bhongir Fort",
+      "note": "Fort on a single monolithic rock east of Hyderabad.",
+      "unesco": false
+    }
+  ],
+  "cities": [
+    "heritage-walk-in-hyderabad"
+  ],
+  "museums": [
+    {
+      "name": "Salar Jung Museum, Hyderabad",
+      "note": "Large private collection of art and objects from India and abroad."
+    },
+    {
+      "name": "Telangana State Archaeology Museum, Hyderabad",
+      "note": "Sculpture, coins and finds from sites across the state."
+    },
+    {
+      "name": "Kondapur Site Museum",
+      "note": "Finds from the early historic town."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the UNESCO World Heritage Site in Telangana?",
+      "a": "The Ramappa Temple, officially the Kakatiya Rudreshwara Temple, at Palampet in Mulugu district. Built in the early 13th century, it was inscribed in 2021 for its architecture, sculpture and its place in a Kakatiya landscape of tanks and fields."
+    },
+    {
+      "q": "What are the main historical places in Hyderabad?",
+      "a": "Golconda Fort, the Qutb Shahi tombs, Charminar, the Mecca Masjid, Chowmahalla Palace and the Salar Jung Museum. Together they cover the Qutb Shahi and Nizam periods."
+    },
+    {
+      "q": "What is special about the Thousand Pillar Temple?",
+      "a": "It is a 12th century Kakatiya temple at Hanamkonda with three shrines arranged around a central hall, raised on a star-shaped platform and richly carved. The name refers to the many pillars of the complex rather than an exact count."
+    },
+    {
+      "q": "Are there Buddhist sites in Telangana?",
+      "a": "Yes. Nelakondapalli, Phanigiri and Dhulikatta are among the main Buddhist sites, belonging to the early centuries CE when the Krishna and Godavari valleys were an important Buddhist region."
+    }
+  ],
+  "related_programmes": [
+    "a-study-tour-built-for-your-group.html",
+    "deccan-temple-forms-vesara-debates.html",
+    "temple-inscriptions-patrons.html",
+    "burials-and-bioarchaeology.html",
+    "sacred-architecture-across-communities.html",
+    "temple-architectural-documentation-lab.html"
+  ],
+  "related_guides": [
+    "heritage-walk-in-hyderabad",
+    "indo-islamic-architecture",
+    "indian-temple-architecture",
+    "forts-of-india",
+    "unesco-world-heritage-sites-in-india",
+    "heritage-sites-in-andhra-pradesh"
+  ],
+  "bundle": {
+    "title": "Kakatiya temples up close",
+    "pitch": "A lecture on Deccan temple forms sets the scene, then a documentation lab teaches students to record a temple like Ramappa properly.",
+    "items": [
+      "deccan-temple-forms-vesara-debates.html",
+      "temple-architectural-documentation-lab.html"
+    ]
+  },
+  "audience_hooks": [
+    "Schools: a lecture on sacred architecture across communities using Hyderabad examples.",
+    "Colleges: a temple documentation lab for architecture and history students.",
+    "Travellers: a study tour to Hyderabad, Warangal and Ramappa built for your group."
+  ],
+  "cta": "We build Telangana study tours around Ramappa, Warangal and Golconda, with a Deccan temple architecture lecture before your group travels.",
+  "sem": {
+    "ad_group": "Telangana heritage tour",
+    "keywords": [
+      "telangana heritage tour",
+      "ramappa temple tour",
+      "warangal heritage tour",
+      "hyderabad study tour for students",
+      "telangana educational tour",
+      "golconda guided tour for groups"
+    ],
+    "negatives": [
+      "free",
+      "pdf",
+      "map",
+      "jobs",
+      "wikipedia",
+      "hotel"
+    ],
+    "headlines": [
+      "Telangana Heritage Tours",
+      "Ramappa and Warangal Visits",
+      "Golconda with a Specialist",
+      "Tours Built for Your Group",
+      "Deccan Temple Lectures"
+    ],
+    "descriptions": [
+      "Ramappa, Warangal and Golconda, explained by heritage specialists.",
+      "Study tours and lectures for schools, colleges and private groups."
+    ]
+  },
+  "social": {
+    "posts": [
+      {
+        "angle": "fact",
+        "hook": "Ramappa's tower is made of light bricks.",
+        "caption": "The Kakatiya builders used bricks light enough to reduce the weight on the walls below. It is one reason the temple has lasted eight centuries."
+      },
+      {
+        "angle": "tip",
+        "hook": "Pair Ramappa with Warangal.",
+        "caption": "See the temple and lake in the morning, then the fort gateways and Thousand Pillar Temple in the afternoon. You get the whole Kakatiya story."
+      },
+      {
+        "angle": "offer",
+        "hook": "Telangana with a heritage specialist.",
+        "caption": "We build study tours to Hyderabad, Warangal and Ramappa. Tell us your group and dates."
+      }
+    ],
+    "reel": "Close-up of a Ramappa bracket dancer, cut to the Kakatiya Kala Thoranam, then Golconda at sunset. On-screen line: 'Kakatiya to Qutb Shahi in one state.' End card: 'Telangana study tours, on request.'",
+    "hashtags": [
+      "#Telangana",
+      "#Ramappa",
+      "#Warangal",
+      "#Golconda",
+      "#Hyderabad",
+      "#UNESCO",
+      "#IndianHeritage",
+      "#IndianTemples"
+    ]
+  },
+  "og_title": "Telangana: Ramappa, Warangal and Golconda",
+  "og_description": "A UNESCO Kakatiya temple, a circular fort, Qutb Shahi tombs and the Charminar, all a short drive apart."
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "heritage-sites-in-mizoram",
+  "type": "state",
+  "pillar": "heritage",
+  "state": "Mizoram",
+  "title": "Heritage sites in Mizoram: menhirs, memorial stones and Mizo culture",
+  "seo_title": "Heritage Sites in Mizoram: Vangchhia, Museums and Culture",
+  "meta_description": "Heritage sites in Mizoram: the Vangchhia menhirs, Mizo memorial stones, Reiek heritage village, the State Museum and living traditions such as Chapchar Kut.",
+  "keywords": ["heritage sites in mizoram", "historical places in mizoram", "archaeological sites in mizoram", "vangchhia menhirs", "kawtchhuah ropui", "mizoram heritage", "mizo culture", "memorial stones mizoram", "unesco sites in mizoram", "mizoram state museum"],
+  "summary": "Mizoram's heritage is less about grand monuments and more about stone and story. The key archaeological site is Vangchhia (Kawtchhuah Ropui) in Champhai district, a field of carved menhirs. Add memorial stones such as Sibuta Lung, the Mizoram State Museum in Aizawl, Reiek heritage village and living traditions like Chapchar Kut and the Cheraw dance.",
+  "sections": [
+    {
+      "h2": "What kind of heritage does Mizoram have?",
+      "paras": [
+        "Visitors who expect forts and temple towns will not find them in Mizoram. The state's past survives mainly in standing stones, village sites, oral tradition, textiles, songs and festivals. That makes it a good place to learn how heritage works when there are few inscriptions and almost no monumental architecture, and how archaeologists and anthropologists read a society through memorials, settlement patterns and remembered genealogies.",
+        "Mizoram has no UNESCO World Heritage Site. Its importance lies in the north-east's megalithic tradition, which links it to Nagaland, Meghalaya, Manipur and the hills of Myanmar, and in a strong living culture that changed fast after the arrival of Christian missions at the end of the 19th century. Our guide to [tribes of India](tribes-of-india.html) gives the wider context."
+      ]
+    },
+    {
+      "h2": "Vangchhia: the menhirs of Kawtchhuah Ropui",
+      "paras": [
+        "Vangchhia, close to the Myanmar border in Champhai district, is Mizoram's most important archaeological site and is protected by the Archaeological Survey of India. Rows of upright stones stand on a ridge, many carved with human figures, animals such as mithun, gongs, weapons and geometric motifs. Excavation and survey have also recorded terraces, possible ponds and stone-lined features, which suggest a settled village with organised ritual space.",
+        "The stones are best read as memorials. Across the north-east, menhirs were raised to commemorate the dead or to mark feasts of merit, where a person gained status by hosting the community. The carvings are a record of what mattered: animals sacrificed, wealth displayed, enemies and hunts. Dating is still being worked out, so treat any single date you read online with caution. Our lecture on [burials and bioarchaeology](burials-and-bioarchaeology.html) explains how such memorial sites are studied and dated."
+      ]
+    },
+    {
+      "h2": "Memorial stones and places of legend",
+      "paras": [
+        "Scattered across the state are named memorial stones (lung) tied to particular people. Sibuta Lung near Aizawl and Mangkahia Lung in Champhai district are the best known. Places such as Lianchhiari Lunglen Tlang, a cliff linked to a famous love story, and Thasiama Seno Neihna, associated with a feast-giving hero, show how landscape and memory work together. These are folk traditions, not historical records, and that is exactly why they interest anthropologists.",
+        "A useful way to visit is to pair a stone with the story told about it locally, then compare that story with what survey and excavation can and cannot confirm. Our [oral history and neighbourhood memory lab](oral-history-and-neighbourhood-memory-lab.html) teaches this method to students."
+      ]
+    },
+    {
+      "h2": "Living heritage: festivals, dance and weaving",
+      "paras": [
+        "Chapchar Kut, the spring festival held after the clearing of jhum fields, is the largest public celebration. Cheraw, the bamboo dance in which dancers step between clapping poles, is performed at festivals and cultural events across the state. The puan, the handwoven wrap cloth, carries patterns that signal community and occasion, and Aizawl's markets are the easiest place to see weaving traditions in use.",
+        "Reiek heritage village, a short drive from Aizawl, has reconstructed traditional houses including a zawlbuk, the bachelors' dormitory that once trained young men for village defence and work. It is a reconstruction, not an excavated site, but it helps visitors picture pre-colonial village life."
+      ]
+    },
+    {
+      "h2": "Visiting Mizoram's heritage with a group",
+      "paras": [
+        "Indian visitors need an Inner Line Permit, and foreigners must check current permit rules before travel. Distances are long and roads are hilly, so plan Aizawl and Champhai as separate bases. The dry months from October to March are the easiest.",
+        "We build a [study tour for your group](a-study-tour-built-for-your-group.html) around Vangchhia, Aizawl and Champhai, with a briefing lecture before departure. Schools elsewhere can start with our lecture on [culture and heritage](culture-and-heritage-what-we-inherit-and-why-it-matters.html), which uses north-east examples."
+      ]
+    }
+  ],
+  "sites": [
+    {"name": "Vangchhia (Kawtchhuah Ropui)", "note": "ASI-protected field of carved menhirs, terraces and stone features in Champhai district.", "unesco": false},
+    {"name": "Sibuta Lung", "note": "Named memorial stone near Aizawl, tied to a local chief in oral tradition.", "unesco": false},
+    {"name": "Mangkahia Lung", "note": "Memorial stone in Champhai district, linked in tradition to a village chief.", "unesco": false},
+    {"name": "Lianchhiari Lunglen Tlang", "note": "Cliff near Champhai linked to one of the best known Mizo love legends.", "unesco": false},
+    {"name": "Thasiama Seno Neihna", "note": "Site remembered in Mizo tradition for a legendary feast of merit.", "unesco": false},
+    {"name": "Mizoram State Museum, Aizawl", "note": "Textiles, ornaments, tools and ethnographic objects from Mizo communities.", "unesco": false},
+    {"name": "Reiek heritage village", "note": "Reconstructed traditional houses, including a zawlbuk dormitory, near Aizawl.", "unesco": false},
+    {"name": "Serkawn, Lunglei", "note": "Early Baptist mission station of the early 20th century, key to Mizo literacy history.", "unesco": false},
+    {"name": "Solomon's Temple, Aizawl", "note": "Large modern church, useful for discussing how Christianity reshaped Mizo society.", "unesco": false},
+    {"name": "Chapchar Kut", "note": "Spring festival after jhum clearing, with dance, song and community feasting.", "unesco": false},
+    {"name": "Cheraw bamboo dance", "note": "Dance between clapping bamboo poles, performed at festivals statewide.", "unesco": false},
+    {"name": "Puan weaving", "note": "Handwoven wrap cloths whose patterns mark community and occasion.", "unesco": false}
+  ],
+  "cities": [],
+  "museums": [
+    {"name": "Mizoram State Museum, Aizawl", "note": "The best single introduction to Mizo material culture."},
+    {"name": "Reiek heritage village", "note": "Open-air reconstruction of a traditional village."}
+  ],
+  "faq": [
+    {"q": "What is the most important archaeological site in Mizoram?", "a": "Vangchhia, also called Kawtchhuah Ropui, in Champhai district. It is a field of carved menhirs protected by the Archaeological Survey of India, with figures of people, animals, gongs and weapons. Survey has also found terraces and stone features that point to an organised settlement."},
+    {"q": "Are there any UNESCO World Heritage Sites in Mizoram?", "a": "No. Mizoram has no UNESCO World Heritage Site. Its heritage value lies in its megalithic memorial stones, which belong to a wider north-east Indian tradition, and in living culture such as Chapchar Kut, the Cheraw dance and puan weaving."},
+    {"q": "Why were menhirs raised in Mizoram?", "a": "Across north-east India, standing stones were usually raised to commemorate the dead or to mark feasts of merit, where a person gained status by feeding the community. Carvings on the stones record sacrificed animals, wealth and deeds, so they work as memorials rather than calendars."},
+    {"q": "Do I need a permit to visit heritage sites in Mizoram?", "a": "Indian visitors need an Inner Line Permit to enter Mizoram, and foreign visitors should check the current rules before travel. Permits are arranged in advance or at entry points, so build this into any group plan."}
+  ],
+  "related_programmes": ["a-study-tour-built-for-your-group.html", "culture-and-heritage-what-we-inherit-and-why-it-matters.html", "burials-and-bioarchaeology.html", "oral-history-and-neighbourhood-memory-lab.html", "community-archaeology-and-heritage-stewardship.html", "india-s-linguistic-heritage.html"],
+  "related_guides": ["tribes-of-india", "anthropology-and-tribal-india", "what-is-intangible-cultural-heritage", "folklore-of-india", "heritage-sites-in-nagaland", "heritage-sites-in-tripura"],
+  "bundle": {"title": "Stones and stories", "pitch": "A lecture on how memorial sites are studied, then an oral history session that teaches students to record the stories told about them.", "items": ["burials-and-bioarchaeology.html", "oral-history-and-neighbourhood-memory-lab.html"]},
+  "audience_hooks": ["Schools: a culture and heritage lecture with north-east examples, online or on campus.", "Colleges: an oral history lab for anthropology and history students.", "Travellers: a study tour to Aizawl and Champhai built around your group."],
+  "cta": "We build study tours to Mizoram around Vangchhia and Aizawl, with a briefing lecture on north-east megaliths before you travel.",
+  "sem": {
+    "ad_group": "Mizoram heritage tour",
+    "keywords": ["mizoram heritage tour", "vangchhia study tour", "mizoram study tour for students", "northeast india heritage tour", "mizoram cultural tour for groups", "champhai heritage visit"],
+    "negatives": ["free", "pdf", "map", "jobs", "wikipedia", "hotel"],
+    "headlines": ["Mizoram Heritage Study Tour", "See the Vangchhia Menhirs", "Tours Built for Your Group", "Led by Archaeologists", "North-East Heritage Tours"],
+    "descriptions": ["Carved menhirs, memorial stones and Mizo culture, explained by specialists.", "Study tours to Aizawl and Champhai for schools, colleges and private groups."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Mizoram's history is carved in stone, not written on it.", "caption": "At Vangchhia, rows of menhirs carry figures of people, mithun, gongs and weapons. They are memorials, and the carvings record what a community valued."},
+      {"angle": "tip", "hook": "How to read a memorial stone.", "caption": "Look first at the animals and objects carved on it. Then ask locally what story is told about the stone, and compare the two."},
+      {"angle": "offer", "hook": "Take your group to Vangchhia.", "caption": "We plan study tours to Aizawl and Champhai with a briefing lecture on north-east megaliths. Tell us your dates and group size."}
+    ],
+    "reel": "Slow pan along the Vangchhia menhirs, close-ups of a carved mithun and a gong. On-screen line: 'These stones are memorials, not ruins.' End card: 'Study tours to Mizoram, arranged on request.'",
+    "hashtags": ["#Mizoram", "#Vangchhia", "#NortheastIndia", "#Megaliths", "#IndianHeritage", "#Archaeology", "#MizoCulture", "#ChapcharKut"]
+  },
+  "og_title": "Mizoram's carved menhirs and memorial stones",
+  "og_description": "Vangchhia's carved stones, Mizo memorial lung, Reiek village and the festivals that keep Mizo culture alive."
+}

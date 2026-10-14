@@ -1,0 +1,283 @@
+{
+  "slug": "vedas-and-upanishads",
+  "type": "explainer",
+  "pillar": "sanskrit",
+  "title": "Vedas and Upanishads: the four Vedas and their layers",
+  "seo_title": "Vedas and Upanishads: Four Vedas, Layers and Dates Explained",
+  "meta_description": "The Vedas and Upanishads explained historically: the four Vedas, Samhita, Brahmana, Aranyaka and Upanishad layers, the principal Upanishads and cautious dates.",
+  "keywords": [
+    "vedas and upanishads",
+    "four vedas",
+    "what are the vedas",
+    "difference between vedas and upanishads",
+    "principal upanishads",
+    "rigveda samaveda yajurveda atharvaveda",
+    "samhita brahmana aranyaka upanishad",
+    "how old are the vedas",
+    "vedic literature"
+  ],
+  "summary": "The Vedas are the oldest body of Sanskrit texts: four collections called the Rigveda, Samaveda, Yajurveda and Atharvaveda. Each grew in layers: hymn collections (Samhitas), ritual prose (Brahmanas), forest texts (Aranyakas) and philosophical dialogues (Upanishads). The earliest hymns probably date to the second millennium BCE, and the oldest Upanishads to around the mid first millennium BCE.",
+  "sections": [
+    {
+      "h2": "What are the Vedas?",
+      "paras": [
+        "The word veda means 'knowledge'. Within the tradition the Vedas are called śruti, 'what was heard', and are regarded as not composed by human authors; the individual hymns are nonetheless linked to named poet families (ṛṣis). Historians treat them as texts composed and compiled over many centuries by priestly lineages in north-western and then northern India.",
+        "What makes the Vedas unusual is how they survived. For well over a thousand years they were transmitted orally, with memorisation techniques (pāṭhas) that recite the same text in several patterns so that errors could be detected. The oldest surviving Vedic manuscripts are far younger than the texts themselves. UNESCO recognised the tradition of Vedic chanting as intangible cultural heritage in 2008 (originally proclaimed in 2003).",
+        "The texts are also the main evidence for the [Vedic period](vedic-period.html), alongside archaeology. Matching the two is difficult, because the Vedas describe few objects that archaeologists can identify with certainty."
+      ]
+    },
+    {
+      "h2": "The four Vedas",
+      "paras": [
+        "Each Veda served a different role in ritual, which is the clearest way to tell them apart."
+      ],
+      "table": {
+        "head": [
+          "Veda",
+          "Content",
+          "Ritual role"
+        ],
+        "rows": [
+          [
+            "Rigveda",
+            "1,028 hymns in ten books (maṇḍalas), mostly praise of deities such as Agni, Indra and Soma",
+            "Recited by the hotṛ priest"
+          ],
+          [
+            "Samaveda",
+            "Chants, most of whose verses are drawn from the Rigveda and set to melodies",
+            "Sung by the udgātṛ priest"
+          ],
+          [
+            "Yajurveda",
+            "Prose formulas and verses for performing sacrifice; Black (Kṛṣṇa) and White (Śukla) branches",
+            "Spoken by the adhvaryu, who carries out the actions"
+          ],
+          [
+            "Atharvaveda",
+            "Hymns and charms for healing, protection, household life and kingship, plus speculative hymns",
+            "Associated with the brahman priest who oversees the rite"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Samhita, Brahmana, Aranyaka, Upanishad: the four layers",
+      "paras": [
+        "Each Veda is not a single book but a body of texts that built up over time. Scholars usually describe four layers, though the boundaries blur and some texts sit between categories.",
+        "Different schools (śākhās) preserved their own versions of each layer, and many of these are now lost. What survives is a selection, not the full original body of Vedic literature."
+      ],
+      "list": [
+        "Samhitas: the collections of hymns, verses and formulas. The oldest layer.",
+        "Brahmanas: prose texts explaining the meaning and correct performance of ritual, such as the Shatapatha Brahmana of the White Yajurveda.",
+        "Aranyakas: 'forest' texts on the more esoteric aspects of ritual, often transitional towards the Upanishads.",
+        "Upanishads: dialogues and teachings on the self (ātman), ultimate reality (brahman), death and rebirth. Later called Vedānta, 'the end of the Veda'."
+      ]
+    },
+    {
+      "h2": "How old are the Vedas? Dating with caution",
+      "paras": [
+        "No Vedic text carries a date, so all dates are inferred from language, internal references and links to archaeology. Most scholars place the Rigveda around 1500 to 1200 BCE, the other Samhitas and the Brahmanas between about 1200 and 600 BCE, and the oldest Upanishads around the 7th to 5th centuries BCE. Some researchers argue for earlier dates; others prefer slightly later ones. The [Indian history timeline](indian-history-timeline.html) shows where these estimates sit against the archaeological record.",
+        "The Rigveda itself contains different layers. Books 2 to 7, the 'family books', are generally considered older; books 1 and 10 are usually thought to be later additions. Treat any precise year you see online with care."
+      ]
+    },
+    {
+      "h2": "The principal Upanishads",
+      "paras": [
+        "More than a hundred texts call themselves Upanishads, many composed long after the Vedic period. A smaller group, often counted as ten to thirteen, is regarded as principal, partly because the philosopher Shankara (around the 8th century CE) wrote commentaries on most of them. The oldest, the Bṛhadāraṇyaka and Chāndogya, are prose; others such as the Kaṭha and Śvetāśvatara are in verse."
+      ],
+      "table": {
+        "head": [
+          "Upanishad",
+          "Attached to",
+          "Form"
+        ],
+        "rows": [
+          [
+            "Brihadaranyaka",
+            "White Yajurveda",
+            "prose, the longest"
+          ],
+          [
+            "Chandogya",
+            "Samaveda",
+            "prose"
+          ],
+          [
+            "Aitareya",
+            "Rigveda",
+            "prose"
+          ],
+          [
+            "Taittiriya",
+            "Black Yajurveda",
+            "prose"
+          ],
+          [
+            "Kaushitaki",
+            "Rigveda",
+            "prose"
+          ],
+          [
+            "Kena",
+            "Samaveda",
+            "verse and prose"
+          ],
+          [
+            "Katha",
+            "Black Yajurveda",
+            "verse"
+          ],
+          [
+            "Isha",
+            "White Yajurveda",
+            "verse, very short"
+          ],
+          [
+            "Shvetashvatara",
+            "Black Yajurveda",
+            "verse"
+          ],
+          [
+            "Mundaka",
+            "Atharvaveda",
+            "verse"
+          ],
+          [
+            "Prashna",
+            "Atharvaveda",
+            "prose"
+          ],
+          [
+            "Mandukya",
+            "Atharvaveda",
+            "prose, very short"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Difference between the Vedas and the Upanishads",
+      "paras": [
+        "The Upanishads are part of the Vedas, not separate from them: they are the latest layer of each Vedic school. The difference is in focus. The Samhitas and Brahmanas centre on hymns and sacrifice; the Upanishads turn inward and ask what the self is and how it relates to the whole of reality. Many ideas that shaped later Indian thought, including karma and rebirth as worked-out doctrines, appear clearly for the first time in the older Upanishads, around the same centuries in which the Buddha and Mahavira taught.",
+        "To see how these texts fit into the wider history of Indian languages, from Vedic Sanskrit to the Prakrits in which early Buddhist and Jain teachings were preserved, try the [linguistic heritage lecture](india-s-linguistic-heritage.html) or one of our short courses in [Pali](pali-a-first-course.html) and [Prakrit](prakrit-a-first-course.html)."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What are the four Vedas?",
+      "a": "The Rigveda (hymns), Samaveda (chants set to melody), Yajurveda (sacrificial formulas, in Black and White branches) and Atharvaveda (hymns and charms for daily life, healing and kingship). Each has its own Samhita, Brahmanas, and in most cases Aranyakas and Upanishads."
+    },
+    {
+      "q": "Who wrote the Vedas?",
+      "a": "Within the tradition they are śruti, not authored by humans. Historically, the hymns were composed by poet-priest families over several centuries and later arranged into collections. Many hymns of the Rigveda are linked to specific lineages such as the Vasishthas and Vishvamitras."
+    },
+    {
+      "q": "How many Upanishads are there?",
+      "a": "Over a hundred texts carry the name, and a traditional list counts 108. Scholars usually single out ten to thirteen principal Upanishads, the oldest of which, such as the Brihadaranyaka and Chandogya, probably date to around the 7th to 5th centuries BCE."
+    },
+    {
+      "q": "When were the Vedas written down?",
+      "a": "They were composed and transmitted orally for many centuries before being written. Writing them down came much later, and the oldest surviving Vedic manuscripts are from roughly the last thousand years, since birch bark and palm leaf rarely last longer."
+    },
+    {
+      "q": "Are the Upanishads part of the Vedas?",
+      "a": "Yes. Each principal Upanishad belongs to a particular Vedic school and forms the final layer of that Veda. That is why they are called Vedanta, 'the end of the Veda'."
+    }
+  ],
+  "related_programmes": [
+    "india-s-linguistic-heritage.html",
+    "pali-a-first-course.html",
+    "prakrit-a-first-course.html",
+    "reading-india-s-scripts-brahmi-to-sarada.html",
+    "sarada-script.html",
+    "write-like-asoka-s-scribes-a-brahmi-workshop.html"
+  ],
+  "related_guides": [
+    "vedic-period",
+    "what-is-sanskrit",
+    "sanskrit-literature",
+    "indian-manuscripts",
+    "prakrit-and-pali",
+    "sanskrit-and-indian-knowledge-systems"
+  ],
+  "cta": "Talaash Heritage runs a lecture on India's linguistic heritage that places the Vedas beside the Prakrits, Pali and Tamil, for groups online or in person.",
+  "bundle": {
+    "title": "From the Veda to the Buddha's words",
+    "pitch": "The linguistic heritage lecture follows Vedic Sanskrit into later speech; a first course in Pali then lets you read the language of early Buddhist texts composed in the same centuries as the Upanishads.",
+    "items": [
+      "india-s-linguistic-heritage.html",
+      "pali-a-first-course.html"
+    ]
+  },
+  "audience_hooks": [
+    "Colleges: a lecture placing Vedic texts in the history of Indian languages.",
+    "Adult learners: introductory Pali or Prakrit courses, online in small groups.",
+    "UPSC aspirants: a historical, source-based view of Vedic literature."
+  ],
+  "sem": {
+    "ad_group": "Vedic texts history lecture",
+    "keywords": [
+      "vedic literature lecture",
+      "vedas history lecture for students",
+      "ancient indian texts course",
+      "linguistic heritage of india talk",
+      "pali course online",
+      "prakrit course online",
+      "indian knowledge systems lecture"
+    ],
+    "negatives": [
+      "free",
+      "pdf",
+      "download",
+      "mantra",
+      "chanting audio",
+      "astrology",
+      "puja"
+    ],
+    "headlines": [
+      "Vedic Texts in History",
+      "India's Linguistic Heritage",
+      "Lectures for Colleges",
+      "Pali and Prakrit Courses",
+      "Online or In Person"
+    ],
+    "descriptions": [
+      "A historical lecture on Vedic literature and the languages of ancient India.",
+      "Arrange a lecture or a short language course for your college or adult group."
+    ]
+  },
+  "social": {
+    "posts": [
+      {
+        "angle": "fact",
+        "hook": "The Vedas survived for centuries without being written down.",
+        "caption": "Priests memorised them in several recitation patterns, so a single slip would be caught. UNESCO lists Vedic chanting as intangible cultural heritage."
+      },
+      {
+        "angle": "tip",
+        "hook": "Vedas or Upanishads? They are not separate.",
+        "caption": "Each Veda has four layers: hymns, ritual prose, forest texts and Upanishads. The Upanishads are the last layer, which is why they are called Vedanta, 'the end of the Veda'."
+      },
+      {
+        "angle": "offer",
+        "hook": "How did Vedic Sanskrit become the languages of the Buddha and Mahavira?",
+        "caption": "Our lecture on India's linguistic heritage traces that change, and our Pali and Prakrit courses let you read the results. For colleges and adult groups."
+      }
+    ],
+    "reel": "A stack of four labelled blocks (Samhita, Brahmana, Aranyaka, Upanishad) builds up on screen, repeated for each of the four Vedas. On-screen line: 'Not four books. Four libraries.' End card: 'India's linguistic heritage, a lecture for your group.'",
+    "hashtags": [
+      "#Vedas",
+      "#Upanishads",
+      "#Rigveda",
+      "#VedicLiterature",
+      "#AncientIndia",
+      "#Sanskrit",
+      "#IndianHistory",
+      "#TalaashHeritage"
+    ]
+  },
+  "og_title": "The Vedas and Upanishads, explained clearly",
+  "og_description": "The four Vedas, their four layers and the principal Upanishads, with honest, careful dates."
+}

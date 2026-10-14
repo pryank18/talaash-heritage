@@ -1,0 +1,242 @@
+{
+  "slug": "heritage-sites-in-nagaland",
+  "type": "state",
+  "pillar": "heritage",
+  "state": "Nagaland",
+  "title": "Heritage sites in Nagaland: Kohima, Dimapur ruins and Naga villages",
+  "seo_title": "Heritage Sites in Nagaland: Kohima, Dimapur and Villages",
+  "meta_description": "Heritage sites in Nagaland: Kohima War Cemetery, the Kachari ruins at Dimapur, Kisama heritage village, Khonoma and the State Museum, with tips for groups.",
+  "keywords": [
+    "heritage sites in nagaland",
+    "historical places in nagaland",
+    "archaeological sites in nagaland",
+    "kohima war cemetery",
+    "dimapur kachari ruins",
+    "naga heritage village kisama",
+    "khonoma village",
+    "nagaland state museum",
+    "unesco sites in nagaland",
+    "naga culture"
+  ],
+  "summary": "Nagaland's heritage sits in three layers. The Kachari ruins at Dimapur, with their carved mushroom-shaped pillars, belong to a medieval Dimasa capital. Kohima War Cemetery marks the 1944 battle that stopped the Japanese advance into India. Naga villages such as Khonoma and the Kisama heritage village keep the architecture, crafts and customs of more than a dozen Naga peoples.",
+  "sections": [
+    {
+      "h2": "Why visit Nagaland for heritage?",
+      "paras": [
+        "Nagaland is home to many distinct Naga peoples, among them the Angami, Ao, Konyak, Sumi, Lotha, Chakhesang and Sangtam, each with its own language, dress, house forms and village organisation. Most of the state's heritage is living heritage: morungs (village dormitories), carved log drums, memorial stones, terraced fields and festivals tied to the farming year. Our page on [tribes of India](tribes-of-india.html) sets this in a national frame.",
+        "There is no UNESCO World Heritage Site in Nagaland. What the state offers instead is the chance to see how archaeology, oral history and colonial records each tell part of a story, and where they disagree."
+      ]
+    },
+    {
+      "h2": "Dimapur: the Kachari ruins",
+      "paras": [
+        "In the middle of Dimapur town stands a group of tall carved stone pillars with rounded, mushroom-like tops, along with the remains of a brick gateway and enclosure. They are associated with the Dimasa Kachari kingdom, which had its capital here before Ahom attacks in the 16th century pushed the court south to Maibong. The site is protected by the Archaeological Survey of India.",
+        "The pillars carry carved motifs of animals, plants and geometric designs, but their exact purpose is debated. Some scholars read them as memorials, others as markers linked to fertility or royal ritual. It is a good site for students to practise separating what the stones show from what is later claimed about them. Our lecture [Excavation headlines: evidence or exaggeration?](excavation-headlines-evidence-or-exaggeration.html) builds exactly that habit."
+      ]
+    },
+    {
+      "h2": "Kohima: the 1944 battle and its memory",
+      "paras": [
+        "In April to June 1944, Kohima saw one of the hardest fought battles of the Second World War in Asia, as British and Indian troops halted the Japanese advance towards India. The Kohima War Cemetery, maintained by the Commonwealth War Graves Commission, is laid out on the slopes of Garrison Hill where much of the fighting took place, including the area around the Deputy Commissioner's tennis court.",
+        "The memorial to the 2nd British Division carries the well known epitaph beginning 'When you go home, tell them of us and say'. It is a place to discuss how war is remembered, whose names are carved and whose are missing, including the Naga villagers who carried supplies and guided troops. Our lecture on [cemeteries, epitaphs and public memory](cemeteries-epitaphs-and-public-memory.html) uses sites like this one."
+      ]
+    },
+    {
+      "h2": "Villages, morungs and the Hornbill Festival",
+      "paras": [
+        "Khonoma, an Angami village near Kohima, is known for its terraced rice fields, stone gateways and its record of resistance to British forces in 1879 to 1880. It later became known for community conservation of its forests. Touphema, also near Kohima, runs a village tourism model with traditional houses. In Mon district, Konyak villages such as Longwa straddle the Myanmar border.",
+        "The Naga Heritage Village at Kisama, south of Kohima, has a morung for each major Naga people and hosts the Hornbill Festival in the first ten days of December. It is a showcase rather than a living village, but it lets a group compare house forms and carvings from across the state in one afternoon."
+      ]
+    },
+    {
+      "h2": "Planning a heritage visit to Nagaland",
+      "paras": [
+        "Indian visitors need an Inner Line Permit, and rules for foreign visitors should be checked before travel. Dimapur has the railway station and airport, and Kohima is a few hours' drive uphill. October to May is the comfortable season.",
+        "For Nagaland we design a [study tour for your group](a-study-tour-built-for-your-group.html) covering Dimapur, Kohima, Khonoma and Kisama, with a pre-departure lecture on Naga history and the 1944 battle."
+      ]
+    }
+  ],
+  "sites": [
+    {
+      "name": "Kachari ruins, Dimapur",
+      "note": "Carved mushroom-topped stone pillars and a brick gateway of the medieval Dimasa Kachari capital; ASI protected.",
+      "unesco": false
+    },
+    {
+      "name": "Kohima War Cemetery",
+      "note": "Commonwealth war cemetery on Garrison Hill, site of the 1944 battle of Kohima.",
+      "unesco": false
+    },
+    {
+      "name": "2nd Division memorial, Kohima",
+      "note": "Memorial with the epitaph 'When you go home, tell them of us and say'.",
+      "unesco": false
+    },
+    {
+      "name": "Naga Heritage Village, Kisama",
+      "note": "Morungs of the major Naga peoples; venue of the Hornbill Festival each December.",
+      "unesco": false
+    },
+    {
+      "name": "Khonoma village",
+      "note": "Angami village with terraced fields, stone gates and a history of resistance in 1879 to 1880.",
+      "unesco": false
+    },
+    {
+      "name": "Touphema village",
+      "note": "Angami village near Kohima with traditional houses and community-run visits.",
+      "unesco": false
+    },
+    {
+      "name": "Nagaland State Museum, Kohima",
+      "note": "Ethnographic collections: textiles, ornaments, log drum models and house carvings.",
+      "unesco": false
+    },
+    {
+      "name": "Kohima village (Bara Basti)",
+      "note": "One of the large old Angami villages, with gateways and memorial stones.",
+      "unesco": false
+    },
+    {
+      "name": "Longwa, Mon district",
+      "note": "Konyak village on the India-Myanmar border, known for its chief's house.",
+      "unesco": false
+    },
+    {
+      "name": "Mopungchuket, Mokokchung",
+      "note": "Ao village associated with well known Ao folk legends.",
+      "unesco": false
+    },
+    {
+      "name": "Chungliyimti, Tuensang district",
+      "note": "Remembered in Ao and Sangtam tradition as an ancestral settlement.",
+      "unesco": false
+    },
+    {
+      "name": "Kohima Cathedral",
+      "note": "Modern Catholic cathedral whose design draws on Naga house forms.",
+      "unesco": false
+    }
+  ],
+  "cities": [],
+  "museums": [
+    {
+      "name": "Nagaland State Museum, Kohima",
+      "note": "The best overview of Naga material culture in one building."
+    },
+    {
+      "name": "World War II Museum, Kisama",
+      "note": "Objects and records from the 1944 campaign, beside the heritage village."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What are the Kachari ruins in Dimapur?",
+      "a": "They are carved stone pillars with rounded tops and the remains of a brick gateway, linked to the Dimasa Kachari kingdom that had its capital at Dimapur before the 16th century. Their exact purpose is debated, with memorial and ritual readings both proposed. The site is protected by the ASI."
+    },
+    {
+      "q": "Why is Kohima War Cemetery important?",
+      "a": "It marks the battle of Kohima in 1944, when British and Indian troops halted the Japanese advance into India. The cemetery lies on Garrison Hill where the fighting took place, and its memorial epitaph is one of the best known war inscriptions in the world."
+    },
+    {
+      "q": "Are there UNESCO World Heritage Sites in Nagaland?",
+      "a": "No. Nagaland has no UNESCO World Heritage Site. Its heritage is mainly in the Dimapur ruins, Second World War sites at Kohima and the living culture of Naga villages, morungs and festivals."
+    },
+    {
+      "q": "When is the Hornbill Festival held?",
+      "a": "The Hornbill Festival is held at the Naga Heritage Village, Kisama, near Kohima, usually from 1 to 10 December. It brings together dance, music, crafts and food from across the Naga peoples. Book transport and stays well ahead."
+    }
+  ],
+  "related_programmes": [
+    "a-study-tour-built-for-your-group.html",
+    "cemeteries-epitaphs-and-public-memory.html",
+    "excavation-headlines-evidence-or-exaggeration.html",
+    "culture-and-heritage-what-we-inherit-and-why-it-matters.html",
+    "oral-history-and-neighbourhood-memory-lab.html",
+    "community-archaeology-and-heritage-stewardship.html"
+  ],
+  "related_guides": [
+    "tribes-of-india",
+    "anthropology-and-tribal-india",
+    "what-is-ethnography",
+    "heritage-sites-in-mizoram",
+    "heritage-sites-in-manipur",
+    "heritage-sites-in-assam"
+  ],
+  "bundle": {
+    "title": "Memory and evidence",
+    "pitch": "A lecture on how war cemeteries shape memory, then one on testing claims against evidence, prepares a group for both Kohima and Dimapur.",
+    "items": [
+      "cemeteries-epitaphs-and-public-memory.html",
+      "excavation-headlines-evidence-or-exaggeration.html"
+    ]
+  },
+  "audience_hooks": [
+    "Schools: a lecture on war memorials and public memory, online or on campus.",
+    "Colleges: an oral history lab for anthropology students before fieldwork.",
+    "Travellers: a study tour to Dimapur, Kohima and Khonoma for your group."
+  ],
+  "cta": "We design Nagaland study tours around Dimapur, Kohima and Khonoma, with a lecture on Naga history and the 1944 battle before you go.",
+  "sem": {
+    "ad_group": "Nagaland heritage tour",
+    "keywords": [
+      "nagaland heritage tour",
+      "kohima study tour",
+      "nagaland study tour for students",
+      "hornbill festival group tour",
+      "dimapur heritage visit",
+      "northeast heritage tour for colleges"
+    ],
+    "negatives": [
+      "free",
+      "pdf",
+      "jobs",
+      "wikipedia",
+      "hotel",
+      "map"
+    ],
+    "headlines": [
+      "Nagaland Heritage Study Tour",
+      "Kohima and Dimapur Visits",
+      "Tours Built for Your Group",
+      "Led by Heritage Specialists",
+      "Naga Villages and Museums"
+    ],
+    "descriptions": [
+      "Kachari ruins, Kohima War Cemetery and Naga villages, explained by specialists.",
+      "Study tours for schools, colleges and private groups, planned around your dates."
+    ]
+  },
+  "social": {
+    "posts": [
+      {
+        "angle": "fact",
+        "hook": "Dimapur has a medieval capital in the middle of town.",
+        "caption": "The Kachari ruins are carved stone pillars with rounded tops, linked to the Dimasa kings. What they were for is still debated."
+      },
+      {
+        "angle": "tip",
+        "hook": "At Kohima, start on Garrison Hill.",
+        "caption": "The war cemetery is laid out where the 1944 battle was fought. Find the tennis court area first, then read the 2nd Division epitaph."
+      },
+      {
+        "angle": "offer",
+        "hook": "Bring your group to Nagaland.",
+        "caption": "We plan study tours to Dimapur, Kohima and Khonoma with a briefing lecture. Tell us your group and dates."
+      }
+    ],
+    "reel": "Cut between the Kachari pillars in Dimapur and the terraces of Kohima War Cemetery. On-screen line: 'Two pasts, one state.' End card: 'Nagaland study tours, arranged on request.'",
+    "hashtags": [
+      "#Nagaland",
+      "#Kohima",
+      "#Dimapur",
+      "#NortheastIndia",
+      "#IndianHeritage",
+      "#HornbillFestival",
+      "#NagaCulture",
+      "#WW2History"
+    ]
+  },
+  "og_title": "Nagaland: Kachari pillars, Kohima and Naga villages",
+  "og_description": "Medieval stone pillars in Dimapur, the 1944 battlefield at Kohima and the morungs of Naga villages."
+}

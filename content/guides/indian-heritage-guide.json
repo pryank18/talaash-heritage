@@ -1,0 +1,154 @@
+{
+  "slug": "indian-heritage-guide",
+  "type": "pillar",
+  "pillar": "heritage",
+  "title": "Indian heritage: a complete guide to India's cultural heritage",
+  "seo_title": "Indian Heritage: A Complete Guide to India's Cultural Heritage",
+  "meta_description": "A complete guide to Indian heritage: tangible and intangible, monuments by period, UNESCO sites, the ASI, crafts, performing arts, conservation and tourism.",
+  "keywords": ["indian heritage", "cultural heritage of india", "indian culture and heritage", "heritage of india", "types of heritage in india", "tangible and intangible heritage of india", "indian heritage sites", "heritage monuments of india", "natural heritage of india", "living heritage india", "heritage conservation in india", "heritage tourism in india"],
+  "summary": "Indian heritage is everything inherited from India's past that people choose to keep: monuments, archaeological sites and historic cities (tangible heritage), forests and mountains of outstanding value (natural heritage), and languages, crafts, music, dance, festivals and knowledge carried by living communities (intangible heritage). It is protected by the ASI, state departments, UNESCO listing and, above all, by the communities who use it.",
+  "sections": [
+    {
+      "h2": "What is Indian heritage?",
+      "paras": [
+        "Heritage is not simply anything old. It is the part of the past that a society decides is worth keeping, studying and handing on. A ruined stepwell becomes heritage when people recognise that it explains how a town once lived with water; a weaving technique becomes heritage when a community, a museum or the state decides it should not disappear. Our explainer on [what cultural heritage means](what-is-cultural-heritage.html) sets out the definitions used by UNESCO and by Indian law.",
+        "India has an unusually deep and continuous record. Stone tools in the Siwalik hills and at Attirampakkam in Tamil Nadu go back well over a million years. Painted rock shelters at Bhimbetka record tens of thousands of years of human activity. The cities of the Indus Valley Civilization were planned around 2600 BCE. After that come Buddhist stupas, rock-cut caves, temples in a dozen regional styles, mosques and tombs, forts and palaces, colonial railway stations and modernist capitals. All of it sits beside languages, scripts, crafts and performance traditions that are still practised.",
+        "Heritage is also different from history, though the two are often confused. History asks what happened and why. Heritage asks what we keep from it and how we use it today, which brings in questions of ownership, memory and money. The page on the [difference between heritage and history](difference-between-heritage-and-history.html) works through examples."
+      ]
+    },
+    {
+      "h2": "Types of heritage: tangible, intangible, built, natural and living",
+      "paras": [
+        "Heritage professionals in India use a few overlapping categories. They are useful because each type needs different kinds of protection.",
+        "Living heritage deserves special mention in India. A temple where rituals still take place, a dargah with an annual urs, a historic bazaar still trading in the same lanes, or a stepwell still used by a village is not a museum piece. Conservation here has to work with the people who use the place, not around them."
+      ],
+      "list": [
+        "Tangible built heritage: monuments, archaeological sites, temples, mosques, churches, forts, palaces, wells, bridges, historic houses and whole historic towns.",
+        "Movable tangible heritage: sculptures, coins, manuscripts, paintings, textiles, inscriptions and everyday objects held in museums, libraries and private homes.",
+        "Natural heritage: landscapes, ecosystems and geological features of outstanding value, such as the Western Ghats, the Sundarbans or the Valley of Flowers.",
+        "Intangible heritage: languages, oral traditions, performing arts, rituals, festivals, craft knowledge and traditional knowledge about nature. See [intangible cultural heritage explained](what-is-intangible-cultural-heritage.html).",
+        "Mixed and cultural landscapes: places where natural and cultural values cannot be separated, such as Khangchendzonga National Park in Sikkim, sacred groves, or terraced fields shaped over centuries."
+      ]
+    },
+    {
+      "h2": "Who protects heritage in India: ASI, states and UNESCO",
+      "paras": [
+        "The [Archaeological Survey of India](archaeological-survey-of-india.html), founded in 1861 with Alexander Cunningham as its first Director General, protects over 3,600 monuments of national importance under the Ancient Monuments and Archaeological Sites and Remains Act of 1958. The Act sets a protected area around each monument and a regulated area beyond it, where new construction needs permission. State archaeology departments protect thousands more sites of state importance, and municipal heritage lists cover historic buildings in cities such as Mumbai, Delhi and Kolkata.",
+        "Museums under the Ministry of Culture, the National Archives, the National Mission for Manuscripts and the Indira Gandhi National Centre for the Arts look after collections and records. The Sangeet Natak Akademi works with the performing arts and nominates elements for UNESCO's intangible lists. Non-governmental bodies, universities and local trusts carry out much of the documentation and awareness work.",
+        "UNESCO does not own or manage sites. Its World Heritage List recognises places of outstanding universal value, and the national government remains responsible for them. India has 45 World Heritage Sites as of October 2026, 37 cultural, 7 natural and 1 mixed, with the Ancient Buddhist Site of Sarnath the most recent. Our [list of UNESCO World Heritage Sites in India](unesco-world-heritage-sites-in-india.html) gives every site with its state and year."
+      ]
+    },
+    {
+      "h2": "Indian monuments by period",
+      "paras": [
+        "The easiest way to make sense of India's built heritage is by period. Each phase added new building types and techniques, and older buildings were often reused rather than replaced.",
+        "In Delhi alone you can walk through most of this sequence in a day, from the Ashokan edict at the Ridge to the Qutb complex, Tughlaq forts, Mughal tombs and Lutyens' New Delhi. Our [Delhi through seven cities](delhi-through-seven-cities.html) journey and the [seven cities of Delhi](seven-cities-of-delhi.html) explainer follow that layering."
+      ],
+      "table": {
+        "head": ["Period", "Approximate dates", "What survives", "Examples"],
+        "rows": [
+          ["Prehistoric", "Over 1.5 million years ago to about 3000 BCE", "Stone tools, rock art, early villages", "Bhimbetka, Attirampakkam, Mehrgarh (now in Pakistan)"],
+          ["Harappan", "About 2600 to 1900 BCE (mature phase)", "Planned cities, drains, reservoirs, seals", "Dholavira, Rakhigarhi, Lothal, Kalibangan"],
+          ["Early historic", "About 600 BCE to 300 CE", "Stupas, rock edicts, early caves, city walls", "Sanchi, Bharhut, Barabar caves, Karla"],
+          ["Classical and early medieval", "About 300 to 1200 CE", "Rock-cut caves, structural temples", "Ajanta, Ellora, Mahabalipuram, Pattadakal, Khajuraho"],
+          ["Sultanate and regional kingdoms", "About 1200 to 1550 CE", "Mosques, tombs, forts, stepwells, temple cities", "Qutb Minar, Hampi, Champaner, Mandu, Chittorgarh"],
+          ["Mughal and Rajput", "About 1526 to 1800 CE", "Garden tombs, palaces, forts, observatories", "Humayun's Tomb, Taj Mahal, Amber, Jantar Mantar"],
+          ["Colonial", "About 1700 to 1947", "Churches, railway stations, civic buildings", "Old Goa, Chhatrapati Shivaji Terminus, Kolkata"],
+          ["Modern", "1947 onwards", "Modernist capitals and institutions", "Chandigarh Capitol Complex"]
+        ]
+      }
+    },
+    {
+      "h2": "Architecture: temples, forts, tombs and stepwells",
+      "paras": [
+        "Temples are the most numerous historic buildings in India and the most regionally varied. Texts and scholars group them into the northern Nagara, southern Dravida and the mixed Deccan forms often called Vesara. Our [guide to Indian temple architecture](indian-temple-architecture.html) explains how to read the plan, the superstructure and the sculpture.",
+        "Islamic architecture in India grew from the late 12th century in Delhi and developed distinct regional styles in Gujarat, Bengal, the Deccan, Jaunpur and Malwa before the Mughal synthesis. The explainers on [Indo-Islamic architecture](indo-islamic-architecture.html) and [Mughal architecture](mughal-architecture.html) trace that story, and a [walk at Humayun's Tomb](humayuns-tomb.html) is the clearest place to see where the Mughal garden tomb begins.",
+        "Two building types are especially Indian. [Stepwells](stepwells-of-india.html), found mostly in Gujarat, Rajasthan and Delhi, were built to reach groundwater in dry regions and were often richly carved. [Forts](forts-of-india.html), from hilltop citadels in Rajasthan and the Deccan to sea forts on the Konkan coast, record centuries of warfare and statecraft."
+      ]
+    },
+    {
+      "h2": "Traditional crafts of India",
+      "paras": [
+        "Crafts are where tangible and intangible heritage meet. The object is tangible; the skill to make it lives in hands and families. India's craft traditions include handloom weaving (Banarasi, Kanchipuram, Patola, Jamdani, Pashmina), block printing, bandhani tie-dye, metal casting by the lost-wax method in Bastar and Swamimalai, stone carving, terracotta, lacquerware, papier mache in Kashmir and painting traditions such as Madhubani, Pattachitra, Warli and Gond.",
+        "Many crafts are protected by Geographical Indication tags, which link a product to its place of origin. The pressure on them is economic: cheap machine-made copies, changing tastes and young people leaving the craft. Museums such as the National Crafts Museum in Delhi show what is at stake, and our [visit to the National Crafts Museum](national-crafts-museum-living-traditions.html) looks at objects and makers together. The [traditional crafts of India](traditional-crafts-of-india.html) explainer gives a state-by-state overview."
+      ]
+    },
+    {
+      "h2": "Performing arts: classical and folk traditions",
+      "paras": [
+        "The Sangeet Natak Akademi recognises eight [classical dance forms](classical-dances-of-india.html): Bharatanatyam, Kathak, Kathakali, Kuchipudi, Odissi, Manipuri, Mohiniyattam and Sattriya. Each has its own history of patronage, from temples and courts to the modern stage, and each was reshaped in the 20th century revival. Indian classical music runs in two main systems, Hindustani in the north and Carnatic in the south.",
+        "Beside these sit hundreds of [folk dances](folk-dances-of-india-state-wise.html), theatre forms and ballad traditions, many tied to harvests, seasons and community festivals. UNESCO's Representative List of the Intangible Cultural Heritage of Humanity includes several Indian elements, among them Kutiyattam Sanskrit theatre, Vedic chanting, Ramlila, Chhau dance, the Kalbelia songs and dances of Rajasthan, Yoga, Kumbh Mela, Durga Puja in Kolkata and Garba of Gujarat."
+      ]
+    },
+    {
+      "h2": "Heritage conservation in India",
+      "paras": [
+        "Conservation is the careful work of keeping a place or object for as long as possible while changing it as little as possible. In India this means dealing with monsoon damp, salt, vegetation, pollution, flooding, earthquakes, urban pressure and, sometimes, well-meant but harmful restoration with cement and fresh paint.",
+        "Good practice follows a few principles: document before you touch anything, use compatible materials such as lime rather than cement on historic masonry, keep repairs reversible where possible, and respect later additions that have their own history. The National Policy for Conservation of the ASI (2014) brought these principles into Indian practice. Our explainer on [heritage conservation in India](heritage-conservation-in-india.html) goes further, and the [preventive conservation workshop](caring-for-collections-preventive-conservation-basics.html) shows how museums and families can care for objects at home.",
+        "Conservation is also a social question. Who decides what is restored, who benefits from tourism, and what happens to people who live inside a protected area? These debates are lively in Indian cities, and they are the subject of our talk [Who owns the past?](who-owns-the-past-heritage-and-urban-development.html)."
+      ]
+    },
+    {
+      "h2": "Heritage tourism in India",
+      "paras": [
+        "Heritage is one of the main reasons people travel within India and to it. The challenge is to make visits meaningful and to keep the pressure of crowds from damaging fragile sites. A guided visit with someone who can read the building, the inscription or the sculpture changes what you take away from a place.",
+        "For schools, colleges and companies, heritage visits work best when they are planned around a question: how did this city get its water, who paid for this temple, what does this tomb say about its patron? Our [heritage tourism in India](heritage-tourism-in-india.html) explainer covers the practical side, and city guides such as the [heritage walk in Delhi](heritage-walk-in-delhi.html) or the [heritage walk in Hampi](heritage-walk-in-hampi.html) suggest routes."
+      ]
+    },
+    {
+      "h2": "Heritage across India's regions",
+      "paras": [
+        "Every region has its own heritage character. Gujarat has Harappan cities, stepwells and the wooden pol houses of Ahmedabad. Rajasthan has hill forts, havelis and painted towns. Karnataka holds Hampi, Badami, Aihole, Pattadakal and the Hoysala temples. Tamil Nadu has the great Chola temples and the shore monuments at Mahabalipuram. Odisha has the Kalinga temple tradition from Bhubaneswar to Konark. The Northeast has the Ahom moidams of Assam, monasteries in Sikkim and Arunachal Pradesh, and some of India's strongest living craft and textile traditions.",
+        "State guides such as [heritage sites in Karnataka](heritage-sites-in-karnataka.html), [heritage sites in Rajasthan](heritage-sites-in-rajasthan.html) and [heritage sites in Tamil Nadu](heritage-sites-in-tamil-nadu.html) list the main places and museums region by region. For travel, a [study tour built for your group](a-study-tour-built-for-your-group.html) can be planned around one region and one theme, such as temples, forts or Buddhist sites, so that each day builds on the last."
+      ]
+    },
+    {
+      "h2": "How to start learning about Indian heritage",
+      "paras": [
+        "Start close to home. Almost every Indian town has a protected monument, an old market, a temple tank, a church or a dargah with a story. Visit it, look closely, and ask who built it and who uses it now. Then read one good regional history and visit the nearest state museum.",
+        "From there, choose a thread that interests you: architecture, scripts, coins, crafts, prehistory or a single city. The pillar guides on [ancient Indian history](ancient-indian-history.html), [archaeology in India](archaeology-in-india.html), [anthropology and tribal India](anthropology-and-tribal-india.html) and [Sanskrit and Indian knowledge systems](sanskrit-and-indian-knowledge-systems.html) each lead to a set of shorter explainers.",
+        "If you want to make a career of it, there are paths in archaeology, museums, conservation, heritage management and tourism. Talaash Heritage runs a session on [careers in archaeology, museums and heritage](careers-in-archaeology-museums-and-heritage.html) for students and parents, and an introductory lecture on [culture and heritage](culture-and-heritage-what-we-inherit-and-why-it-matters.html) for schools and colleges."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "What is meant by Indian heritage?", "a": "Indian heritage is the body of monuments, sites, objects, landscapes, languages, crafts, arts and practices inherited from India's past that people today value and choose to protect. It includes tangible heritage such as the Taj Mahal and intangible heritage such as Kutiyattam theatre or Kalbelia dance."},
+    {"q": "What are the types of heritage in India?", "a": "The main types are tangible built heritage (monuments and historic towns), movable heritage (objects in museums and homes), natural heritage (landscapes and ecosystems), intangible heritage (languages, performing arts, rituals and craft knowledge) and mixed or cultural landscapes where nature and culture are bound together."},
+    {"q": "How many UNESCO World Heritage Sites are there in India?", "a": "India has 45 UNESCO World Heritage Sites as of October 2026: 37 cultural, 7 natural and 1 mixed. The most recent is the Ancient Buddhist Site of Sarnath in Uttar Pradesh, inscribed in July 2026."},
+    {"q": "Who looks after heritage monuments in India?", "a": "The Archaeological Survey of India protects monuments of national importance under the 1958 Act. State archaeology departments protect sites of state importance, and city heritage committees list historic buildings. Many religious sites are managed by trusts or boards, and communities play a large part in everyday care."},
+    {"q": "What is the difference between tangible and intangible heritage?", "a": "Tangible heritage is physical: buildings, sites, objects and landscapes you can touch. Intangible heritage is knowledge and practice carried by people: songs, dances, rituals, languages and craft skills. The two usually go together, since a craft object is tangible but the skill to make it is intangible."},
+    {"q": "Why is heritage conservation important in India?", "a": "Heritage holds evidence of how people lived, built, worshipped and traded over thousands of years. Once a site is bulldozed or badly restored, that evidence is lost for good. Conservation also supports local livelihoods through crafts and tourism, and keeps places meaningful for the communities who use them."},
+    {"q": "Which is the oldest heritage site in India?", "a": "The oldest are prehistoric sites. Attirampakkam in Tamil Nadu has Acheulian stone tools dated to around 1.5 million years ago, and Bhimbetka in Madhya Pradesh has rock shelters used over a very long period, with paintings from many phases."}
+  ],
+  "related_programmes": ["culture-and-heritage-what-we-inherit-and-why-it-matters.html", "humayuns-tomb.html", "delhi-through-seven-cities.html", "national-crafts-museum-living-traditions.html", "who-owns-the-past-heritage-and-urban-development.html", "careers-in-archaeology-museums-and-heritage.html", "a-study-tour-built-for-your-group.html"],
+  "related_guides": ["what-is-cultural-heritage", "what-is-intangible-cultural-heritage", "difference-between-heritage-and-history", "heritage-conservation-in-india", "heritage-tourism-in-india", "unesco-world-heritage-sites-in-india", "traditional-crafts-of-india", "classical-dances-of-india", "indian-temple-architecture", "mughal-architecture"],
+  "bundle": {
+    "title": "From classroom to monument",
+    "pitch": "Start with a lecture on what heritage is and why we keep it, then test those ideas on site at Humayun's Tomb, a monument that has been built, neglected, used and restored over five centuries.",
+    "items": ["culture-and-heritage-what-we-inherit-and-why-it-matters.html", "humayuns-tomb.html"]
+  },
+  "audience_hooks": [
+    "Schools: a lecture on culture and heritage at your school or online, followed by a monument walk.",
+    "Colleges: a careers session on archaeology, museums and heritage for students deciding on courses.",
+    "Groups and families: a study tour built around the region and the questions you choose."
+  ],
+  "cta": "We run lectures, monument walks and study tours on Indian heritage for schools, colleges, companies and private groups, arranged on request anywhere in India or online.",
+  "sem": {
+    "ad_group": "Indian heritage education",
+    "keywords": ["heritage walk for school groups", "indian heritage tour with expert", "heritage education programme india", "heritage lecture for schools", "heritage study tour india", "guided heritage walk delhi", "heritage workshop for students"],
+    "negatives": ["free", "pdf", "essay", "drawing", "wallpaper", "quiz answers"],
+    "headlines": ["Heritage Walks With Experts", "Lectures On Indian Heritage", "School Heritage Programmes", "Study Tours Across India", "Learn From Archaeologists"],
+    "descriptions": ["Monument walks, lectures and study tours on Indian heritage, arranged for your group.", "Archaeologists and historians lead every session. Online or on site across India."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "India's oldest heritage is about 1.5 million years old.", "caption": "Stone hand axes from Attirampakkam near Chennai are among the oldest evidence of humans in South Asia. Heritage does not start with the Taj Mahal; it starts with a shaped stone."},
+      {"angle": "tip", "hook": "Look at the repairs, not just the monument.", "caption": "Next time you visit a monument, find where it has been repaired. Lime or cement? Matching stone or not? Repairs tell you how a building has been cared for, and sometimes how it was harmed."},
+      {"angle": "offer", "hook": "Bring your class to a monument with an archaeologist.", "caption": "We pair a short lecture on what heritage means with a walk at a monument near you. Arranged for schools, colleges and private groups, on request."}
+    ],
+    "reel": "Quick cuts from a hand axe, a Harappan drain, a temple spire, a Mughal dome, a railway station clock and a handloom. On-screen line: 'One country, a million and a half years of heritage.' Ending card: Talaash Heritage, walks, lectures and study tours.",
+    "hashtags": ["#IndianHeritage", "#IncredibleIndia", "#HeritageIndia", "#CulturalHeritage", "#IntangibleHeritage", "#HeritageWalk", "#IndianHistory", "#Monuments", "#HeritageConservation", "#TalaashHeritage"]
+  },
+  "og_title": "Indian heritage, from hand axes to handlooms",
+  "og_description": "Monuments, crafts, dance, UNESCO sites and how India looks after its past, in one clear guide."
+}

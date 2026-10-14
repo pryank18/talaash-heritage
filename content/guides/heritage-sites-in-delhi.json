@@ -1,0 +1,107 @@
+{
+  "slug": "heritage-sites-in-delhi",
+  "type": "state",
+  "pillar": "heritage",
+  "state": "Delhi",
+  "title": "Heritage sites in Delhi: Qutb Minar, Humayun's Tomb and Red Fort",
+  "seo_title": "Heritage Sites in Delhi: 3 UNESCO Sites and Historic Places",
+  "meta_description": "Heritage sites in Delhi: Qutb Minar, Humayun's Tomb and the Red Fort (UNESCO), plus Mehrauli, Tughlaqabad, Purana Qila, Lodhi Garden and Shahjahanabad walks.",
+  "keywords": ["heritage sites in delhi", "historical places in delhi", "unesco sites in delhi", "monuments in delhi", "archaeological sites in delhi", "ancient monuments of delhi", "heritage walk in delhi", "seven cities of delhi", "qutb minar", "humayuns tomb", "red fort"],
+  "summary": "Delhi has three UNESCO World Heritage Sites: the Qutb Minar and its monuments, Humayun's Tomb and the Red Fort Complex. Around them lie the remains of many earlier capitals, from Lal Kot and Mehrauli to Siri, Tughlaqabad, Jahanpanah, Firozabad, Purana Qila and Shahjahanabad, plus Lodi tombs, stepwells, an Ashokan edict and the colonial capital of New Delhi.",
+  "sections": [
+    {
+      "h2": "Why Delhi has so many monuments",
+      "paras": [
+        "Delhi sits where the Aravalli ridge meets the Yamuna, a place that controlled the route between the north-west and the Ganga plains. Ruler after ruler built a new citadel nearby, which is why historians speak of the seven (or more) cities of Delhi. The ASI protects well over a hundred monuments in the city, and many more are protected by the state.",
+        "Older layers survive too. Painted Grey Ware has been found at Purana Qila, and an Ashokan rock edict is carved on a rock near the East of Kailash area. Our guide to the [seven cities of Delhi](seven-cities-of-delhi.html) explains the sequence, and the [Delhi heritage walk guide](heritage-walk-in-delhi.html) turns it into routes."
+      ]
+    },
+    {
+      "h2": "Delhi's three UNESCO World Heritage Sites",
+      "paras": [
+        "The Qutb Minar and its monuments (1993) include the minar begun by Qutbuddin Aibak around 1199 and completed by Iltutmish, the Quwwat-ul-Islam mosque, the iron pillar of about the 4th to 5th century and Alauddin Khalji's Alai Darwaza. Our programme [The Qutb complex](the-qutb-complex.html) reads the inscriptions and reused temple pillars with your group.",
+        "Humayun's Tomb (1993), built in the 1560s, was the first great garden tomb of the Mughals and a model for the Taj Mahal. Our [Humayun's Tomb](humayuns-tomb.html) walk covers the tomb, Isa Khan's tomb and the Arab Serai. The Red Fort Complex (2007), Shah Jahan's palace-fort of the 1640s, includes the Diwan-i-Am, Diwan-i-Khas and the earlier Salimgarh fort; see [Red Fort Complex](red-fort-complex.html)."
+      ]
+    },
+    {
+      "h2": "The Sultanate cities: Mehrauli to Firozabad",
+      "paras": [
+        "Mehrauli has the densest cluster of monuments in Delhi: Jamali Kamali, Balban's tomb, Rajon ki Baoli, the Hauz-i-Shamsi tank and Jahaz Mahal, Adham Khan's tomb and Zafar Mahal. Our [Mehrauli Archaeological Park](mehrauli-archaeological-park.html) walk is the best introduction. Sultan Ghari, the first Islamic tomb in India, lies to the west.",
+        "The Khaljis built Siri, the Tughlaqs built Tughlaqabad, Jahanpanah and Firozabad. See [Tughlaqabad Fort](tughlaqabad-fort.html), the [Begumpur Mosque](begumpur-mosque.html), [Khirki Mosque](khirki-mosque.html) and [Firoz Shah Kotla](firoz-shah-kotla.html), where an Ashokan pillar brought from Topra stands on a stepped palace building. Hauz Khas, with its madrasa and reservoir, is covered on our [Hauz Khas](hauz-khas.html) walk."
+      ]
+    },
+    {
+      "h2": "Lodis, Mughals and Shahjahanabad",
+      "paras": [
+        "The Lodi tombs, Bara Gumbad and Shish Gumbad stand in Lodhi Garden, and Safdarjung's tomb of the 1750s is one of the last Mughal garden tombs. Purana Qila, built by Humayun and Sher Shah, has the Qila-i-Kuhna mosque and the Sher Mandal. The Nizamuddin dargah precinct, Chausath Khamba and Ghalib's tomb make a strong walk.",
+        "Shahjahanabad, the walled city of the 1640s, keeps the Jama Masjid, Chandni Chowk, Fatehpuri Masjid, havelis and gates such as Kashmere Gate. Walks include [Jama Masjid and Shahjahanabad](jama-masjid-shahjahanabad.html), [Lodhi Garden monuments](lodhi-garden-monuments.html) and [Purana Qila](purana-qila.html)."
+      ]
+    },
+    {
+      "h2": "Colonial and modern Delhi, and planning visits",
+      "paras": [
+        "After 1911 the British built New Delhi, designed by Edwin Lutyens and Herbert Baker, with Rashtrapati Bhavan, the Secretariat, India Gate and Kartavya Path (formerly Rajpath). Connaught Place, St James' Church and the Mutiny Memorial on the Ridge, along with Nicholson Cemetery, record the colonial period and 1857.",
+        "Most monuments are open daily, but check the ASI website for timings before you go. October to March is the best season. For a multi-day trip, [Delhi through seven cities](delhi-through-seven-cities.html) covers the full sequence."
+      ]
+    }
+  ],
+  "sites": [
+    {"name": "Qutb Minar and its monuments", "note": "Minar begun about 1199, Quwwat-ul-Islam mosque, iron pillar and Alai Darwaza; UNESCO 1993.", "unesco": true},
+    {"name": "Humayun's Tomb", "note": "First great Mughal garden tomb, built in the 1560s; UNESCO 1993.", "unesco": true},
+    {"name": "Red Fort Complex", "note": "Shah Jahan's palace-fort of the 1640s with Salimgarh; UNESCO 2007.", "unesco": true},
+    {"name": "Mehrauli Archaeological Park", "note": "Jamali Kamali, Balban's tomb, Rajon ki Baoli and many more monuments.", "unesco": false},
+    {"name": "Tughlaqabad Fort", "note": "Massive 14th century fort-city of Ghiyasuddin Tughlaq.", "unesco": false},
+    {"name": "Ghiyasuddin Tughlaq's tomb", "note": "Sloping-walled tomb in its own fortified enclosure.", "unesco": false},
+    {"name": "Purana Qila", "note": "16th century citadel of Humayun and Sher Shah; earlier layers excavated below.", "unesco": false},
+    {"name": "Firoz Shah Kotla", "note": "Palace-citadel of Firozabad with an Ashokan pillar from Topra.", "unesco": false},
+    {"name": "Hauz Khas complex", "note": "Firoz Shah's madrasa and tomb beside a Khalji reservoir.", "unesco": false},
+    {"name": "Begumpur Mosque", "note": "Large 14th century mosque of Jahanpanah.", "unesco": false},
+    {"name": "Khirki Mosque", "note": "Unusual covered Tughlaq mosque with latticed windows.", "unesco": false},
+    {"name": "Lodhi Garden", "note": "Lodi and Sayyid tombs, Bara Gumbad and Shish Gumbad.", "unesco": false},
+    {"name": "Safdarjung's Tomb", "note": "Mid-18th century garden tomb, one of the last of its kind.", "unesco": false},
+    {"name": "Nizamuddin Dargah precinct", "note": "Sufi shrine with Chausath Khamba and Ghalib's tomb nearby.", "unesco": false},
+    {"name": "Jama Masjid, Shahjahanabad", "note": "Shah Jahan's great congregational mosque of the 1650s.", "unesco": false},
+    {"name": "Agrasen ki Baoli", "note": "Stepwell near Connaught Place, probably of the Tughlaq or Lodi period.", "unesco": false},
+    {"name": "Sultan Ghari", "note": "Tomb of Iltutmish's son, the first Islamic tomb in India.", "unesco": false},
+    {"name": "Ashokan rock edict, East of Kailash", "note": "Minor rock edict of Ashoka on an outcrop of the ridge.", "unesco": false},
+    {"name": "Jantar Mantar, Delhi", "note": "Early 18th century observatory of Sawai Jai Singh II.", "unesco": false},
+    {"name": "India Gate and Kartavya Path", "note": "Lutyens' war memorial arch and ceremonial axis of New Delhi.", "unesco": false}
+  ],
+  "cities": ["heritage-walk-in-delhi"],
+  "museums": [
+    {"name": "National Museum, New Delhi", "note": "Harappan objects, sculpture, manuscripts and the Katarmal doors."},
+    {"name": "Purana Qila Site Museum", "note": "Finds from excavations from Painted Grey Ware to Mughal levels."},
+    {"name": "National Crafts Museum", "note": "Living craft traditions from across India."},
+    {"name": "Red Fort museums", "note": "Several museums inside the fort, including one on 1857."}
+  ],
+  "faq": [
+    {"q": "How many UNESCO World Heritage Sites are in Delhi?", "a": "Three: the Qutb Minar and its monuments (1993), Humayun's Tomb (1993) and the Red Fort Complex (2007). Each is managed by the Archaeological Survey of India."},
+    {"q": "What are the seven cities of Delhi?", "a": "A traditional list of Delhi's historic capitals: Lal Kot and Qila Rai Pithora, Siri, Tughlaqabad, Jahanpanah, Firozabad, Dinpanah (Purana Qila) and Shahjahanabad. Historians now count more, including New Delhi, but the seven remain a useful way to read the city."},
+    {"q": "Which are the oldest monuments in Delhi?", "a": "The Ashokan rock edict near East of Kailash (3rd century BCE), the iron pillar at the Qutb, of about the 4th to 5th century but brought here later, and the Qutb Minar and mosque from around 1192 to 1199 onward. Purana Qila's lower layers are older still."},
+    {"q": "What is the best heritage walk in Delhi for first-time visitors?", "a": "Mehrauli Archaeological Park or the Qutb complex for the Sultanate period, Humayun's Tomb with Nizamuddin for the Mughals, and Shahjahanabad for the old city. Each takes two to three hours with a guide."},
+    {"q": "When are Delhi's monuments open?", "a": "Most ASI monuments open daily, from sunrise to sunset, but timings and rules change. Check the ASI website or the site's own page before you go, especially for evening visits or photography."}
+  ],
+  "related_programmes": ["the-qutb-complex.html", "humayuns-tomb.html", "red-fort-complex.html", "mehrauli-archaeological-park.html", "delhi-through-seven-cities.html", "tughlaqabad-fort.html", "jama-masjid-shahjahanabad.html", "lodhi-garden-monuments.html"],
+  "related_guides": ["heritage-walk-in-delhi", "seven-cities-of-delhi", "delhi-sultanate", "mughal-architecture", "unesco-world-heritage-sites-in-india", "indo-islamic-architecture", "stepwells-of-india"],
+  "bundle": {"title": "Delhi's three UNESCO sites", "pitch": "Three walks, one for each World Heritage Site, take a group from the first Sultanate mosque to the last great Mughal palace in a weekend.", "items": ["the-qutb-complex.html", "humayuns-tomb.html", "red-fort-complex.html"]},
+  "audience_hooks": ["Schools: a two-hour monument walk at the Qutb or Humayun's Tomb with a worksheet.", "Companies: a weekend Mehrauli or Lodhi Garden walk as a team outing.", "Travellers: Delhi through seven cities, a multi-day journey with an archaeologist."],
+  "cta": "We run walks at all three of Delhi's UNESCO sites and at many other monuments across the city, arranged on request for schools, companies and private groups.",
+  "sem": {
+    "ad_group": "Delhi heritage walk",
+    "keywords": ["heritage walk in delhi", "delhi monument walk for schools", "qutb minar guided walk", "humayuns tomb guided tour", "mehrauli heritage walk", "delhi heritage tour for groups", "delhi walking tour with historian", "corporate heritage walk delhi"],
+    "negatives": ["free", "pdf", "map", "jobs", "wikipedia", "ticket price"],
+    "headlines": ["Delhi Heritage Walks", "Qutb Minar Guided Walks", "Humayun's Tomb Walks", "Walks for Schools and Teams", "Led by Archaeologists"],
+    "descriptions": ["Qutb, Humayun's Tomb, Red Fort and Mehrauli, explained by heritage specialists.", "Walks for schools, companies and private groups, arranged on your date."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Delhi has an Ashokan edict in a residential colony.", "caption": "Near East of Kailash, a rock outcrop of the ridge carries a minor rock edict of Ashoka, more than two thousand years old."},
+      {"angle": "tip", "hook": "At the Qutb, look at the pillars, not just the minar.", "caption": "The mosque's colonnades reuse temple pillars. Read their carvings and the inscription over the east gate to see how the first Sultanate mosque was built."},
+      {"angle": "offer", "hook": "Delhi's three UNESCO sites in one weekend.", "caption": "We run walks at the Qutb, Humayun's Tomb and the Red Fort with an archaeologist. Tell us your group and dates."}
+    ],
+    "reel": "Look up the Qutb Minar, cut to Humayun's Tomb through its gateway, then the Lahori Gate of the Red Fort. On-screen line: 'Three UNESCO sites, eight cities, one Delhi.' End card: 'Delhi heritage walks, on request.'",
+    "hashtags": ["#Delhi", "#DelhiHeritage", "#QutbMinar", "#HumayunsTomb", "#RedFort", "#UNESCO", "#HeritageWalk", "#Mehrauli", "#IndianHeritage"]
+  },
+  "og_title": "Delhi: three UNESCO sites and eight historic cities",
+  "og_description": "Qutb Minar, Humayun's Tomb and the Red Fort, plus Mehrauli, Tughlaqabad and the lanes of Shahjahanabad."
+}

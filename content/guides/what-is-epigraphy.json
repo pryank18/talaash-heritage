@@ -1,0 +1,79 @@
+{
+  "slug": "what-is-epigraphy",
+  "type": "explainer",
+  "pillar": "archaeology",
+  "title": "What is epigraphy? Reading India's inscriptions",
+  "seo_title": "What is Epigraphy? Meaning, Types and Indian Examples",
+  "meta_description": "What is epigraphy? The study of inscriptions explained: what epigraphists do, the main scripts and types of Indian inscriptions, and why they matter.",
+  "keywords": ["epigraphy", "what is epigraphy", "epigraphy meaning", "epigraphy in indian history", "indian inscriptions", "types of inscriptions", "epigraphy and palaeography", "importance of inscriptions", "epigraphist"],
+  "summary": "Epigraphy is the study of inscriptions: writing cut, engraved or painted on durable materials such as stone, metal, clay and pottery. Epigraphists read, date and interpret these texts. In India, inscriptions from Ashoka's edicts to medieval temple grants are among the most reliable sources for kings, dates, languages, land, trade and religion.",
+  "sections": [
+    {
+      "h2": "Epigraphy meaning: the study of inscriptions",
+      "paras": [
+        "The word comes from the Greek epi (upon) and graphein (to write): writing upon something. An inscription differs from a manuscript because it was made on a hard surface meant to last, such as a rock face, a pillar, a temple wall, a copper plate, a seal or a pot.",
+        "Epigraphy covers the whole process of working with such texts: finding and recording them, reading the script, translating the language, fixing the date and placing the text in its historical setting. It is closely linked to palaeography, the study of how scripts change over time, which helps date an inscription even when it carries no date of its own.",
+        "Epigraphy sits between history and archaeology, as our page on the [difference between archaeology and history](difference-between-archaeology-and-history.html) explains. The text is a historical source; the object that carries it is an archaeological find."
+      ]
+    },
+    {
+      "h2": "Why inscriptions matter so much in Indian history",
+      "paras": [
+        "Early India produced a great deal of literature, but much of it is hard to date and was copied and revised over centuries. Inscriptions are different: they are usually contemporary with the events they record and have not been recopied. That makes them the backbone of early Indian chronology.",
+        "India also has an enormous number of them. Tens of thousands of inscriptions have been recorded, with especially large numbers from the south. They name kings, queens, ministers, merchants, guilds, monks and donors, and they record gifts of land and villages, temple endowments, victories, tax arrangements and building works. Many people in early Indian history are known only because someone cut their name into stone."
+      ]
+    },
+    {
+      "h2": "Types of inscriptions found in India",
+      "paras": [
+        "Indian inscriptions can be grouped by purpose. The categories overlap, and a single text may combine several."
+      ],
+      "list": [
+        "Royal edicts and proclamations, such as Ashoka's rock and pillar edicts of the 3rd century BCE.",
+        "Prashastis (eulogies) that praise a ruler and list his achievements, such as the Allahabad (Prayagraj) pillar inscription of Samudragupta.",
+        "Land grants, often on copper plates, recording gifts of land or villages to Brahmins, temples or monasteries.",
+        "Donative inscriptions recording gifts to stupas, caves and temples, common at Sanchi, Bharhut and the western Indian caves.",
+        "Memorial stones (hero stones and sati stones), very numerous in Karnataka and Tamil Nadu.",
+        "Short labels and graffiti on pottery, seals, coins and sculptures, including the Tamil-Brahmi potsherds from sites such as Keeladi."
+      ]
+    },
+    {
+      "h2": "Scripts and languages epigraphists read",
+      "paras": [
+        "The oldest readable Indian script is Brahmi, used for Ashoka's edicts in the northern and central parts of his empire, with Kharosthi used in the north-west. Almost all later Indian scripts, including Devanagari, Bengali, Tamil, Telugu and Kannada, as well as Sharada in Kashmir, descend from Brahmi. Our guides to [Brahmi script](brahmi-script.html) and [ancient scripts of India](ancient-scripts-of-india.html) trace that history.",
+        "The languages change too. The earliest inscriptions are in Prakrit; Sanskrit becomes dominant in royal inscriptions from around the early centuries CE; regional languages such as Tamil, Kannada and Telugu appear in inscriptions early and grow in importance. Later centuries add Persian and Arabic inscriptions on mosques, tombs and forts. An epigraphist working on Indian material may need several scripts and languages.",
+        "Reading Brahmi is easier than most people expect. A short [Brahmi workshop](write-like-asoka-s-scribes-a-brahmi-workshop.html) gets a group reading Ashokan letters within a couple of hours."
+      ]
+    },
+    {
+      "h2": "How epigraphists work",
+      "paras": [
+        "The first step is recording. Traditionally this means making an estampage: damp paper is pressed into the carved letters and inked, giving an accurate copy. Photography, raking light and 3D imaging now add to this. The text is then transcribed letter by letter, gaps and damaged letters are marked, and the epigraphist prepares an edition with translation and notes.",
+        "Dating comes from several sources: an explicit date in an era such as the Shaka or Vikrama era, the name of a ruler, the style of the letters, and the context in which the inscription was found. Inscriptions are published in journals and series such as Epigraphia Indica and the Corpus Inscriptionum Indicarum. In India the Epigraphy Branch of the Archaeological Survey of India, headquartered in Mysuru, copies and publishes inscriptions."
+      ]
+    },
+    {
+      "h2": "Famous Indian inscriptions to know",
+      "paras": [
+        "A few inscriptions every student of Indian history meets: Ashoka's Major Rock Edicts, including the 13th, which speaks of the Kalinga war; the Hathigumpha inscription of Kharavela at Udayagiri near Bhubaneswar; the Junagadh rock inscription of Rudradaman, an early long text in Sanskrit; Samudragupta's Allahabad pillar prashasti; the Aihole inscription of Pulakeshin II; and the Uttaramerur inscriptions of the Chola period, which describe village assembly elections.",
+        "If you want to see inscriptions in their setting, temple walls are the best classroom. Our lecture on [temple inscriptions and patrons](temple-inscriptions-patrons.html) shows how to read who paid for a building and why."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "What is the difference between epigraphy and palaeography?", "a": "Epigraphy is the study of inscriptions as a whole: reading, translating, dating and interpreting texts on durable materials. Palaeography is the study of the forms of letters and how scripts develop over time. Palaeography is one of the epigraphist's main tools, especially for dating inscriptions that carry no explicit date."},
+    {"q": "What is the oldest inscription in India?", "a": "The oldest securely readable and dated inscriptions in India are Ashoka's edicts of the 3rd century BCE, written mainly in Brahmi and Kharosthi. Some short Brahmi inscriptions on pottery from south India have been claimed as earlier, but their dates are debated. The Harappan seals are older still but remain undeciphered."},
+    {"q": "Who deciphered the Brahmi script?", "a": "James Prinsep, an official of the East India Company mint and secretary of the Asiatic Society in Calcutta, completed the decipherment of Brahmi in 1837, building on work by earlier scholars. Reading Brahmi allowed Ashoka's edicts to be understood and opened up early Indian history."},
+    {"q": "How can I study epigraphy in India?", "a": "Epigraphy is taught as part of MA courses in ancient Indian history, culture and archaeology at several universities, and through short courses at institutes. Learning Brahmi and Sanskrit or Prakrit is a good start. Short workshops in Brahmi and Sharada are a practical way to begin before formal study."},
+    {"q": "Why are copper plate inscriptions important?", "a": "Copper plates usually record grants of land or villages, with the donor's genealogy, the boundaries of the land, the recipients and the date. They show how kings rewarded Brahmins and institutions, how land was measured and taxed, and how dynasties presented their own history."}
+  ],
+  "related_programmes": ["write-like-asoka-s-scribes-a-brahmi-workshop.html", "reading-india-s-scripts-brahmi-to-sarada.html", "temple-inscriptions-patrons.html", "sarada-script.html", "prakrit-a-first-course.html", "the-qutb-complex.html"],
+  "related_guides": ["brahmi-script", "ancient-scripts-of-india", "ashoka-and-his-edicts", "what-is-numismatics", "prakrit-and-pali", "how-archaeologists-date-artifacts"],
+  "bundle": {"title": "From letters to language", "pitch": "Learn to read Brahmi in a workshop, then take the introductory Prakrit course to understand what Ashoka's scribes actually wrote.", "items": ["write-like-asoka-s-scribes-a-brahmi-workshop.html", "prakrit-a-first-course.html"]},
+  "audience_hooks": ["Schools: a Brahmi workshop where students write their names in Ashoka's script.", "Colleges: a lecture on India's scripts from Brahmi to Sharada, online or on campus.", "Adult learners: introductory courses in Prakrit and Sharada, run online."],
+  "sem": {"ad_group": "Epigraphy and Brahmi courses", "keywords": ["learn brahmi script course", "brahmi workshop for students", "epigraphy course online india", "learn to read inscriptions", "sharada script course", "prakrit course online", "epigraphy lecture for college"], "negatives": ["free", "pdf", "font", "translator", "keyboard", "wikipedia"], "headlines": ["Learn to Read Brahmi", "Epigraphy for Beginners", "Read Ashoka's Edicts", "Online or On Campus", "Taught by Specialists"], "descriptions": ["Workshops and courses in Brahmi, Sharada and Prakrit for students and adult groups.", "Learn how India's inscriptions are read, dated and used as historical sources."]},
+  "social": {"posts": [{"angle": "fact", "hook": "Nearly every script in India descends from one ancestor.", "caption": "Devanagari, Tamil, Bengali, Kannada, Telugu and Sharada all grew out of Brahmi, the script of Ashoka's edicts. Look closely at a modern letter and you can sometimes still see its ancestor."}, {"angle": "tip", "hook": "Visiting an old temple? Look at the walls, not just the shrine.", "caption": "Many temples carry inscriptions recording who paid for a lamp, a pillar or a whole hall. They are often in plain view and rarely read by visitors."}, {"angle": "offer", "hook": "Can you write your name in Brahmi?", "caption": "In our Brahmi workshop, groups learn the script of Ashoka's edicts and leave able to read simple words. Online or at your school or college."}], "reel": "A hand tracing Brahmi letters on a printed copy of an Ashokan edict, then writing a student's name in the same letters. On-screen line: 'This script is 2,200 years old. You can learn it in an afternoon.' End card: 'Brahmi workshops for groups.'", "hashtags": ["#Epigraphy", "#Inscriptions", "#BrahmiScript", "#AshokanEdicts", "#AncientIndia", "#IndianHistory", "#Palaeography", "#TalaashHeritage"]},
+  "og_title": "What is epigraphy? How India's inscriptions are read",
+  "og_description": "Edicts, copper plates and temple walls: how epigraphists read India's inscriptions and why they matter.",
+  "cta": "Talaash Heritage runs Brahmi and Sharada workshops and an introductory Prakrit course for groups, online or in person, taught by specialists in Indian scripts."
+}

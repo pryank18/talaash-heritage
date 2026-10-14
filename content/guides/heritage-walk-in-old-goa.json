@@ -1,0 +1,98 @@
+{
+  "slug": "heritage-walk-in-old-goa",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Old Goa",
+  "state": "Goa",
+  "title": "Heritage walk in Old Goa: churches, convents and a lost capital",
+  "seo_title": "Heritage Walk in Old Goa: Churches, Historical Places, Museums",
+  "meta_description": "Plan a heritage walk in Old Goa: Basilica of Bom Jesus, Se Cathedral, St Augustine tower, the convents, the ASI museum, and Panaji's Fontainhas quarter nearby.",
+  "keywords": ["heritage walk in old goa", "historical places in old goa", "heritage sites in goa", "museums in goa", "old goa heritage walk for schools", "churches and convents of goa", "basilica of bom jesus history", "se cathedral goa", "fontainhas walk", "st augustine tower goa"],
+  "summary": "A heritage walk in Old Goa covers the Churches and Convents of Goa, a UNESCO site since 1986: the Basilica of Bom Jesus, Se Cathedral, the Church of St Francis of Assisi, the ruined tower of St Augustine and the ASI museum. Old Goa was the capital of Portuguese India until the 18th century; Panaji's Fontainhas quarter is a short drive away.",
+  "sections": [
+    {
+      "h2": "Why Old Goa matters for heritage",
+      "paras": [
+        "Today Old Goa is a quiet cluster of churches in green lawns beside the Mandovi river. In the 16th century it was one of the largest cities in Asia, the capital of the Portuguese Estado da India and the base for a trading network from Mozambique to Macau. Disease, silting of the river and the shift of government to Panaji emptied it over the 17th and 18th centuries, leaving the churches standing in an otherwise vanished city.",
+        "The Churches and Convents of Goa were inscribed by UNESCO in 1986, recognised for spreading Manueline, Mannerist and Baroque styles across Asia and for the way local laterite, lime plaster and craftsmen shaped them. A walk here is also a way to discuss colonial history honestly, including conversion, the Inquisition established in Goa in 1560, and the Indian communities who built and used these buildings."
+      ]
+    },
+    {
+      "h2": "Layers of history in and around Old Goa",
+      "paras": [
+        "Before the Portuguese, Goa was ruled by the Kadambas of Goa (roughly 10th to 14th centuries), then by the Vijayanagara empire and the Bahmani and Bijapur sultanates. Ela, on the site of Old Goa, was a port of the Adil Shahi rulers of Bijapur; the gateway of Yusuf Adil Shah's palace survives as a single basalt doorway. The Kadamba-era Mahadev temple at Tambdi Surla, in the east of the state, is one of the few surviving temples of the period. Our guide to [Vijayapura](heritage-walk-in-vijayapura.html) covers the Adil Shahi capital itself.",
+        "Afonso de Albuquerque captured the city in 1510. Missionary orders (Franciscans, Dominicans, Jesuits, Augustinians and Theatines) built churches and convents through the 16th and 17th centuries. Francis Xavier arrived in 1542; his body has been kept in the Basilica of Bom Jesus since the 17th century and is shown at an exposition about once a decade. The capital moved formally to Panaji (Nova Goa) in 1843, and Goa joined India in 1961.",
+        "The ruins themselves are a lesson in [heritage conservation](heritage-conservation-in-india.html). The Church of St Augustine (1602) collapsed in the 19th century, leaving a single tower; laterite and lime plaster need constant care in the heavy monsoon."
+      ]
+    },
+    {
+      "h2": "What you see on an Old Goa heritage walk",
+      "paras": [
+        "The walk is compact. It starts at the Basilica of Bom Jesus, a Jesuit church consecrated in 1605, with bare laterite walls (the plaster was removed in the 20th century) and a carved and gilded altar. Across the road stands Se Cathedral, completed in the early 17th century, one of the largest churches in Asia, with the Golden Bell in its surviving tower. Next door, the Church and Convent of St Francis of Assisi houses the ASI museum.",
+        "From there the route passes the Viceroy's Arch, a gate on the old waterfront rebuilt in the 1950s, the Adil Shah palace gateway, and climbs the Holy Hill to the Chapel of St Catherine, the Church of Our Lady of the Rosary (one of the oldest, with Manueline details) and the St Augustine tower. Looking at how altars, side chapels and tombstones were arranged makes the walk a good companion to the lecture on [cemeteries, epitaphs and public memory](cemeteries-epitaphs-and-public-memory.html)."
+      ]
+    },
+    {
+      "h2": "Planning an Old Goa heritage walk for schools and groups",
+      "paras": [
+        "The main churches are within a few hundred metres; Holy Hill adds a short climb. The whole walk takes about 2.5 hours and suits classes 4 and above. The churches are places of worship, so visitors should dress modestly, keep quiet during services and avoid Sunday morning masses. Panaji's Fontainhas, with Indo-Portuguese houses, and the Goa State Museum are a 20 minute drive away.",
+        "We arrange Old Goa walks with a historian, often as part of a [study tour built for your group](a-study-tour-built-for-your-group.html). The lecture [Sacred architecture across communities](sacred-architecture-across-communities.html) works well before the visit, comparing churches with the temples and mosques students already know. For southern Konkan and Karnataka, the [Badami guide](heritage-walk-in-badami.html) is the natural next trip."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Basilica of Bom Jesus", "period": "1594 to 1605", "note": "Jesuit church with the tomb of Francis Xavier and an exposed laterite facade."},
+    {"name": "Se Cathedral", "period": "1562 to 1619 (consecrated 1640)", "note": "Large Portuguese-Manueline cathedral with a gilded main altar and the Golden Bell."},
+    {"name": "Church and Convent of St Francis of Assisi", "period": "1661 rebuilding of an earlier church", "note": "Manueline doorway, painted panels and a carved interior; the convent houses the ASI museum."},
+    {"name": "Chapel of St Catherine", "period": "1550, rebuilt 1952", "note": "Marks the spot where the Portuguese entered the city in 1510."},
+    {"name": "Viceroy's Arch", "period": "1599, rebuilt 1954", "note": "Ceremonial gate on the old riverfront through which new viceroys entered."},
+    {"name": "Gate of the Adil Shah Palace", "period": "Late 15th or early 16th century", "note": "A basalt doorway, the main surviving fragment of the Bijapur-era palace."},
+    {"name": "Church of St Cajetan", "period": "1661", "note": "Theatine church modelled loosely on St Peter's in Rome, with a dome."},
+    {"name": "Church of Our Lady of the Rosary", "period": "1544 to 1549", "note": "One of the oldest churches, on Holy Hill, with Manueline and local details."},
+    {"name": "St Augustine Tower", "period": "1602", "note": "The surviving tower of a vast Augustinian church that collapsed in the 19th century."},
+    {"name": "Convent of St Monica", "period": "1607 onward", "note": "Large convent on Holy Hill, now a centre for Christian art and study; check access."},
+    {"name": "Fontainhas, Panaji", "period": "18th to 19th century", "note": "Latin quarter of Panaji with Indo-Portuguese houses; vehicle needed from Old Goa."},
+    {"name": "Reis Magos Fort", "period": "1551, rebuilt 1707", "note": "Riverside fort on the north bank of the Mandovi, now a cultural centre; vehicle needed."}
+  ],
+  "routes": [
+    {"name": "The church square on foot", "length": "About 1.5 hours", "stops": ["Basilica of Bom Jesus", "Se Cathedral", "Church and Convent of St Francis of Assisi", "Chapel of St Catherine", "Church of St Cajetan", "Gate of the Adil Shah Palace", "Viceroy's Arch"]},
+    {"name": "Holy Hill and the ruins", "length": "About 1 hour", "stops": ["Church of Our Lady of the Rosary", "Convent of St Monica", "St Augustine Tower"]},
+    {"name": "Panaji and the river forts (vehicle needed)", "length": "Half a day", "stops": ["Fontainhas, Panaji", "Reis Magos Fort"]}
+  ],
+  "museums": [
+    {"name": "ASI Archaeological Museum, Old Goa", "note": "In the convent of St Francis, with portraits of the viceroys, sculpture from pre-Portuguese temples, and hero stones."},
+    {"name": "Goa State Museum, Panaji", "note": "Sculpture, Christian art, coins and furniture from across the state."},
+    {"name": "Museum of Christian Art", "note": "At the Convent of St Monica, with silverware, textiles and ivory objects from Goan churches."}
+  ],
+  "best_time": "November to February is dry and pleasant. The monsoon (June to September) is very wet but the churches are open and quiet.",
+  "faq": [
+    {"q": "What are the main historical places in Old Goa?", "a": "The Basilica of Bom Jesus, Se Cathedral, the Church and Convent of St Francis of Assisi, the Church of St Cajetan, the Viceroy's Arch, Holy Hill with Our Lady of the Rosary and St Augustine Tower, and the ASI museum."},
+    {"q": "Why is Old Goa a UNESCO World Heritage Site?", "a": "The Churches and Convents of Goa were inscribed in 1986 as a group of monuments that spread European Manueline, Mannerist and Baroque styles across Asia, adapted with local laterite, lime plaster and craftsmanship."},
+    {"q": "Why was Old Goa abandoned?", "a": "Repeated epidemics, silting of the Mandovi, and the decline of Portuguese trade drove people away through the 17th and 18th centuries. The government moved to Panaji, which became the capital in 1843."},
+    {"q": "Is Old Goa good for a school heritage walk?", "a": "Yes. The monuments are close together on level lawns with one short climb to Holy Hill. Students should dress modestly and stay quiet inside the churches, which are in active use."},
+    {"q": "Which museums in Goa are worth visiting for history?", "a": "The ASI museum in Old Goa, the Museum of Christian Art at St Monica, and the Goa State Museum in Panaji."}
+  ],
+  "related_programmes": ["a-study-tour-built-for-your-group.html", "sacred-architecture-across-communities.html", "cemeteries-epitaphs-and-public-memory.html", "heritage-photography-evidence-led-photo-walk.html", "foods-as-historical-evidence-coconut-spice-and-exchange.html", "museums-and-the-stories-objects-tell.html"],
+  "related_guides": ["heritage-sites-in-goa", "unesco-world-heritage-sites-in-india", "heritage-conservation-in-india", "heritage-walk-in-kochi", "heritage-walk-in-vijayapura", "heritage-walk-in-badami"],
+  "bundle": {"title": "Spice, faith and empire", "pitch": "A lecture on food as historical evidence explains why the Portuguese came for pepper; the walk through Old Goa then shows what they built.", "items": ["foods-as-historical-evidence-coconut-spice-and-exchange.html", "sacred-architecture-across-communities.html"]},
+  "audience_hooks": ["Schools: a 2.5 hour walk through the churches and the ASI museum, arranged on request.", "Colleges: lectures on spice trade and sacred architecture before the site visit.", "Travellers: a private study tour of Goa's churches, museums and Fontainhas with a historian."],
+  "sem": {
+    "ad_group": "Heritage walk Old Goa",
+    "keywords": ["heritage walk in old goa", "old goa churches guided tour", "old goa heritage walk for schools", "goa heritage tour with historian", "fontainhas heritage walk", "goa school study tour"],
+    "negatives": ["free", "beach", "casino", "hotel", "pdf", "wikipedia"],
+    "headlines": ["Heritage Walk in Old Goa", "Old Goa With a Historian", "Churches and Convents of Goa", "Goa Study Trips for Schools", "Bom Jesus and Se Cathedral"],
+    "descriptions": ["The churches, convents and museum of Old Goa with a historian. Arranged on request.", "For schools, colleges, companies and private groups, in English or Hindi."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Old Goa was once bigger than Lisbon, by some accounts.", "caption": "In the 16th century it was the capital of Portuguese Asia. Epidemics and a silting river emptied it, and only the churches remained in the fields."},
+      {"angle": "tip", "hook": "Look at the walls of Bom Jesus.", "caption": "The facade is bare red laterite because the lime plaster was stripped in the 20th century. Compare it with Se Cathedral across the road, still plastered white."},
+      {"angle": "offer", "hook": "Old Goa with a historian.", "caption": "We arrange heritage walks in Old Goa for schools, colleges and private groups, in English or Hindi, on a date that suits you."}
+    ],
+    "reel": "Pan from the white Se Cathedral to the red Bom Jesus, then up the St Augustine tower. On-screen line: 'A capital that emptied, and what it left.' End card: 'Old Goa heritage walks, on request.'",
+    "hashtags": ["#OldGoa", "#GoaHeritage", "#HeritageWalk", "#BomJesus", "#SeCathedral", "#ChurchesOfGoa", "#UNESCOIndia", "#IndianHeritage"]
+  },
+  "og_title": "A heritage walk in Old Goa, the lost capital",
+  "og_description": "Bom Jesus, Se Cathedral, the St Augustine tower and more: how to walk Old Goa's churches and ruins.",
+  "cta": "We arrange heritage walks in Old Goa on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."
+}

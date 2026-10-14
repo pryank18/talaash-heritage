@@ -1,0 +1,86 @@
+{
+  "slug": "heritage-walk-in-gwalior",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Gwalior",
+  "state": "Madhya Pradesh",
+  "title": "Heritage walk in Gwalior: the fort, temples and Jain colossi",
+  "seo_title": "Heritage Walk in Gwalior: Fort, Historical Places, Museums",
+  "meta_description": "Plan a heritage walk in Gwalior: Gwalior Fort, Man Singh Palace, Teli ka Mandir, Sas-Bahu temples, the Jain rock-cut images and Jai Vilas, with school tips.",
+  "keywords": ["heritage walk in gwalior", "historical places in gwalior", "heritage sites in gwalior", "museums in gwalior", "gwalior heritage walk for schools", "gwalior fort history", "man singh palace", "teli ka mandir", "sas bahu temple gwalior", "bateshwar temples"],
+  "summary": "A heritage walk in Gwalior centres on the hill fort, with Man Singh Tomar's palace (about 1486 to 1516), the 8th to 9th century Teli ka Mandir, the 11th century Sas-Bahu temples and 15th century Jain images cut into the cliffs. Below are Mohammad Ghaus's tomb, Jai Vilas Palace, and, within an hour, Bateshwar and Mitaoli.",
+  "sections": [
+    {"h2": "Why Gwalior matters", "paras": [
+      "The Gwalior hill, a sandstone plateau about 3 km long rising sharply from the plain, has been fortified for well over a thousand years. Whoever held it controlled the routes between the Ganga plain and central India, so it passed between Pratiharas, Kachchhapaghatas, the Delhi Sultanate, the Tomars, the Mughals, the Marathas and the British.",
+      "Gwalior is also important for the history of numbers: an inscription of 876 CE in the small Chaturbhuj temple on the fort uses a written zero, one of the earliest securely dated examples in India. And it was a centre of music: Tansen, the singer at Akbar's court, trained here and is buried near Mohammad Ghaus's tomb."
+    ]},
+    {"h2": "Layers of Gwalior's history", "paras": [
+      "The Teli ka Mandir, the tallest building on the fort, dates to about the 8th to 9th century, with a barrel-vaulted roof more familiar from south Indian gateways. The Sas-Bahu temples were built in 1093 by the Kachchhapaghata ruler Mahipala. Nearby, at Bateshwar, about 35 km away, around 200 small sandstone temples of the 8th to 10th century were re-erected by the ASI from the 2000s; the [Nagara temple architecture](nagara-temple-architecture.html) course explains how to read them.",
+      "The Tomar rulers held the fort in the 15th century. Man Singh Tomar built the Man Mandir palace with its blue, green and yellow glazed tile friezes, and the Gujari Mahal for his queen Mrignayani. In the same century the Tomars supported the carving of huge Jain tirthankara images in the rock faces of the hill, at Siddhachal and Gopachal.",
+      "The fort fell to Ibrahim Lodi in the 1520s and later passed to the Mughals, who used it as a state prison. Mohammad Ghaus's tomb dates from the 16th century. The Scindias, Maratha rulers, made Gwalior their capital from the early 19th century and built Jai Vilas Palace in 1874. During 1857 Rani Lakshmibai of Jhansi fought and died near Gwalior in June 1858."
+    ]},
+    {"h2": "What you see on a walk", "paras": [
+      "On the fort, students compare a Pratihara-era temple, an 11th century temple with its dense pillared hall and a 15th century Rajput palace. The tilework of Man Mandir, with ducks, elephants and banana trees, shows how colour was used on a palace front. On the Urvai road up to the fort, the cliffs carry rows of Jain images, some about 17 metres tall.",
+      "The lectures [Reading a temple](how-to-read-a-temple.html), [Temple inscriptions and patrons](temple-inscriptions-patrons.html) and [Temple sculpture and iconography](temple-sculpture-iconography.html) prepare a class well. Mitaoli's circular Chausath Yogini temple, about 40 km away, is a strong addition for older students."
+    ]},
+    {"h2": "Gwalior for school and college groups", "paras": [
+      "Gwalior fits naturally into [Stupas, caves and temples of central India](stupas-caves-and-temples-of-central-india.html), and any route can be arranged as a [study tour built for your group](a-study-tour-built-for-your-group.html), often with Orchha and Khajuraho.",
+      "The fort plateau is walkable once you are on top, but reach it by vehicle up the Gwalior Gate or Urvai road. Gujari Mahal museum is at the foot of the fort. Jai Vilas, Mohammad Ghaus's tomb and Tansen's tomb are in the city and need a vehicle. Bateshwar and Mitaoli need a half-day trip each or one long day."
+    ]}
+  ],
+  "stops": [
+    {"name": "Gwalior Fort", "period": "8th century onward", "note": "Hill fort on a sandstone plateau with gates, palaces, temples and tanks."},
+    {"name": "Man Mandir Palace", "period": "about 1486 to 1516", "note": "Man Singh Tomar's palace with glazed tile friezes and underground chambers."},
+    {"name": "Gujari Mahal", "period": "15th century", "note": "Palace at the foot of the fort built for Mrignayani, now the archaeological museum."},
+    {"name": "Teli ka Mandir", "period": "about 8th to 9th century", "note": "The fort's tallest temple, with a barrel-vaulted roof and rich doorway carving."},
+    {"name": "Sas-Bahu Temples", "period": "1093", "note": "Pair of Vishnu temples built by Mahipala, with layered mandapas and carved ceilings."},
+    {"name": "Chaturbhuj Temple", "period": "876 CE", "note": "Small rock-cut shrine with an inscription that uses a written zero."},
+    {"name": "Gurudwara Data Bandi Chhod", "period": "20th century, older memory", "note": "Gurdwara marking Guru Hargobind's release from imprisonment on the fort in the 17th century."},
+    {"name": "Siddhachal Jain caves", "period": "15th century", "note": "Large Jain tirthankara images cut into the cliffs on the Urvai side."},
+    {"name": "Mohammad Ghaus's Tomb", "period": "16th century", "note": "Tomb of the Sufi saint with carved stone screens, in Mughal style."},
+    {"name": "Tansen's Tomb", "period": "late 16th century", "note": "Tomb of Akbar's court singer near Mohammad Ghaus's tomb, the focus of a music festival."},
+    {"name": "Jai Vilas Palace", "period": "1874", "note": "Scindia palace by Michael Filose in European styles, part now a museum."},
+    {"name": "Bateshwar temple group", "period": "8th to 10th century", "note": "About 200 small temples rebuilt from collapsed stones, about 35 km from Gwalior."},
+    {"name": "Mitaoli Chausath Yogini temple", "period": "11th century", "note": "Circular open temple of 64 cells on a hill, about 40 km away."}
+  ],
+  "routes": [
+    {"name": "The fort plateau on foot", "length": "About 3 to 4 hours, by vehicle to the top", "stops": ["Gwalior Fort", "Man Mandir Palace", "Chaturbhuj Temple", "Sas-Bahu Temples", "Teli ka Mandir", "Gurudwara Data Bandi Chhod"]},
+    {"name": "Foot of the fort and the cliffs", "length": "About 2 to 3 hours, short drives", "stops": ["Gujari Mahal", "Siddhachal Jain caves"]},
+    {"name": "City and the countryside temples", "length": "Full day, by vehicle", "stops": ["Mohammad Ghaus's Tomb", "Tansen's Tomb", "Jai Vilas Palace", "Bateshwar temple group", "Mitaoli Chausath Yogini temple"]}
+  ],
+  "museums": [
+    {"name": "Gujari Mahal Archaeological Museum", "note": "Sculpture from Gwalior and the region, including the Shalbhanjika figure from Gyaraspur."},
+    {"name": "Jai Vilas Palace Museum (Jiwaji Rao Scindia Museum)", "note": "Scindia collections, furnishings and the palace interiors."}
+  ],
+  "best_time": "October to March. Summer temperatures are very high, so climb the fort in the morning.",
+  "faq": [
+    {"q": "What are the main historical places in Gwalior?", "a": "Gwalior Fort with Man Mandir Palace, Teli ka Mandir, the Sas-Bahu temples and the Chaturbhuj temple; the Jain rock-cut images; Gujari Mahal museum; Mohammad Ghaus's and Tansen's tombs; Jai Vilas Palace; and nearby Bateshwar and Mitaoli."},
+    {"q": "Why is the Chaturbhuj temple at Gwalior famous?", "a": "Its inscription of 876 CE writes the number zero as a circle, one of the earliest securely dated uses of a written zero in India."},
+    {"q": "Is Gwalior good for a school heritage trip?", "a": "Yes. The fort plateau is open and spacious, the museum is at its foot, and the site covers temples, palaces, Jain art and 1857. Use a coach to reach the top and go in the morning."},
+    {"q": "Which museums can be visited in Gwalior?", "a": "Gujari Mahal Archaeological Museum for regional sculpture, and the Jai Vilas Palace museum for the Scindia period."},
+    {"q": "Can Talaash Heritage arrange a Gwalior visit?", "a": "Yes, as a study tour on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi, often with Orchha and Khajuraho."}
+  ],
+  "related_programmes": ["stupas-caves-and-temples-of-central-india.html", "a-study-tour-built-for-your-group.html", "nagara-temple-architecture.html", "how-to-read-a-temple.html", "temple-inscriptions-patrons.html", "temple-sculpture-iconography.html", "forts-of-rajasthan.html"],
+  "related_guides": ["heritage-sites-in-madhya-pradesh", "forts-of-india", "indian-temple-architecture", "what-is-epigraphy", "heritage-walk-in-orchha", "heritage-walk-in-khajuraho"],
+  "bundle": {"title": "Temples before the trip", "pitch": "A Nagara temple architecture session in class, then Gwalior's fort temples and Bateshwar on site, as part of the central India study tour.", "items": ["nagara-temple-architecture.html", "stupas-caves-and-temples-of-central-india.html"]},
+  "audience_hooks": ["Schools: Gwalior Fort as part of a central India study tour, with a temple lecture in class first.", "Colleges: Bateshwar and Mitaoli for temple architecture and conservation.", "Families: a private Gwalior, Orchha and Khajuraho journey with an archaeologist."],
+  "sem": {
+    "ad_group": "Heritage walk Gwalior",
+    "keywords": ["heritage walk in gwalior", "gwalior fort guided tour", "gwalior study tour for schools", "gwalior heritage tour with archaeologist", "bateshwar temples guided visit", "central india study tour", "madhya pradesh heritage tour for students"],
+    "negatives": ["free", "pdf", "essay", "hotel", "ticket price", "light show", "jobs"],
+    "headlines": ["Heritage Walks in Gwalior", "Gwalior Fort, Read Closely", "Study Tours for Schools", "Temples, Palace, Jain Art", "In English or Hindi"],
+    "descriptions": ["Gwalior heritage visits with archaeologists, arranged on request for your group.", "Gwalior Fort, Teli ka Mandir, Sas-Bahu, Bateshwar and Mitaoli, for schools and colleges."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Gwalior has one of India's earliest dated zeros.", "caption": "An inscription of 876 CE in the small Chaturbhuj temple on Gwalior Fort writes zero as a circle. You can visit it on the fort today."},
+      {"angle": "tip", "hook": "Look for the ducks on Man Mandir.", "caption": "The palace front carries glazed tiles of ducks, elephants and banana trees in blue, green and yellow. Stand back on the road below to see the whole frieze."},
+      {"angle": "offer", "hook": "Gwalior, Orchha and Khajuraho in one tour.", "caption": "We arrange central India study tours for schools, colleges, companies and families, with an archaeologist or historian, in English or Hindi."}
+    ],
+    "reel": "Drive up past the Jain cliff images, then the tiled front of Man Mandir, Teli ka Mandir and Bateshwar's rows of temples. Line: a thousand years on one hill. End card: Gwalior study tours, arranged on request.",
+    "hashtags": ["#Gwalior", "#GwaliorFort", "#TeliKaMandir", "#SasBahuTemple", "#Bateshwar", "#MadhyaPradesh", "#HeritageWalk", "#TempleArchitecture", "#TalaashHeritage"]
+  },
+  "og_title": "Gwalior heritage walk: a thousand years on one hill",
+  "og_description": "Gwalior Fort, Man Mandir, Teli ka Mandir, Jain cliff images and Bateshwar, with routes for groups.",
+  "cta": "We arrange Gwalior heritage visits on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi."
+}

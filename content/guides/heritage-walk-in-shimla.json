@@ -1,0 +1,86 @@
+{
+  "slug": "heritage-walk-in-shimla",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Shimla",
+  "state": "Himachal Pradesh",
+  "title": "Heritage walk in Shimla: the summer capital on the ridge",
+  "seo_title": "Heritage Walk in Shimla: Historical Places, Routes, Museums",
+  "meta_description": "Plan a heritage walk in Shimla: the Ridge, Christ Church, Gaiety Theatre, Viceregal Lodge and the toy train, with walking routes, museums and tips for schools.",
+  "keywords": ["heritage walk in shimla", "historical places in shimla", "heritage sites in shimla", "museums in shimla", "shimla heritage walk for schools", "shimla heritage walk", "viceregal lodge shimla history", "kalka shimla railway unesco", "colonial architecture shimla", "mall road shimla history"],
+  "summary": "A heritage walk in Shimla follows the summer capital of British India (from 1864): the Ridge with Christ Church, the Mall, the Gaiety Theatre, the Town Hall and, at the western end, the Viceregal Lodge, now the Indian Institute of Advanced Study. The Kalka to Shimla railway is part of the UNESCO Mountain Railways of India site.",
+  "sections": [
+    {"h2": "Why Shimla matters", "paras": [
+      "Shimla was a cluster of hill villages under local hill states until the British took an interest after the Anglo-Gorkha War of 1814 to 1816. The first British house was built in the 1820s, and by 1864 Shimla was the official summer capital of British India. For about eight months of the year, the government of a subcontinent ran from a narrow ridge at about 2,200 metres.",
+      "That makes it the best place to study how colonial power organised itself: offices, churches, theatres, clubs and roads built to reproduce an English town, with Indian labour, Indian bazaars below the Mall, and important political meetings such as the Simla Conference of 1945. After independence it became the capital of Himachal Pradesh."
+    ]},
+    {"h2": "Layers of Shimla's history", "paras": [
+      "The hill states, including Keonthal and Patiala territories, held the land before the 1820s, and Jakhoo temple on the highest hill predates the British town. Charles Kennedy's house of 1822 is usually counted as the first British building.",
+      "From the 1840s to the 1880s the Mall and Ridge took shape: Christ Church was consecrated in 1857, the Gaiety Theatre opened in 1887, and the Viceregal Lodge was completed in 1888 for Lord Dufferin. The Kalka to Shimla railway opened in 1903, and in 2008 it was added to the UNESCO Mountain Railways of India site, alongside the Darjeeling and Nilgiri lines.",
+      "After 1947 the Viceregal Lodge became Rashtrapati Niwas and in 1965 the Indian Institute of Advanced Study. The [Indian history timeline](indian-history-timeline.html) and the guide to [heritage conservation in India](heritage-conservation-in-india.html) help place Shimla's colonial buildings in context."
+    ]},
+    {"h2": "What you see on a walk", "paras": [
+      "Shimla's buildings show how the British adapted European styles to a steep, wet, earthquake-prone site. Look for dhajji and timber-framed walls, steep tin roofs, half-timbered Tudor revival fronts and the neo-Gothic of Christ Church. Below the Mall, the Lower Bazaar shows the Indian town that served it.",
+      "Students who like detail can try [Heritage photography: an evidence-led photo walk](heritage-photography-evidence-led-photo-walk.html) on the Mall, or an [oral history and neighbourhood memory lab](oral-history-and-neighbourhood-memory-lab.html) with long-time shopkeepers. In Delhi, [Connaught Place architecture](connaught-place-architecture.html) shows the plains capital built by the same government."
+    ]},
+    {"h2": "Shimla for school and college groups", "paras": [
+      "Shimla is offered through a [study tour built for your group](a-study-tour-built-for-your-group.html), which can include the toy train from Kalka and a stop at Pinjore Gardens.",
+      "The Mall and the Ridge are pedestrian and the main route is easily walked, but it is uphill and at altitude, so plan rests. The Viceregal Lodge is about 3 km west of the Ridge; walk or take a taxi. The Indian Institute of Advanced Study runs its own visits to parts of the building; check timings before you go. Carry warm clothes outside summer."
+    ]}
+  ],
+  "stops": [
+    {"name": "The Ridge", "period": "19th century", "note": "Open plaza at the top of the town, where the Mall meets the main public buildings."},
+    {"name": "Christ Church", "period": "1844 to 1857", "note": "Neo-Gothic Anglican church with stained glass, one of the oldest churches in north India."},
+    {"name": "State Library and Tudor building", "period": "about 1910", "note": "Tudor revival building on the Ridge, a good example of half-timbered style."},
+    {"name": "Scandal Point", "period": "19th century", "note": "Junction of the Mall and the Ridge, named for social gossip of the colonial period."},
+    {"name": "Gaiety Theatre", "period": "1887", "note": "Victorian Gothic theatre restored in the 2000s, part of the Town Hall complex."},
+    {"name": "Town Hall", "period": "about 1908", "note": "Municipal building on the Mall in a mixed Tudor style."},
+    {"name": "General Post Office", "period": "1883", "note": "Timber-framed post office near the Mall."},
+    {"name": "Lower Bazaar", "period": "19th century onward", "note": "Indian market town below the Mall, with steep lanes and shops."},
+    {"name": "Jakhoo Temple", "period": "older shrine, rebuilt", "note": "Temple on Shimla's highest hill, about 2,450 metres, with views of the ranges."},
+    {"name": "Viceregal Lodge", "period": "1888", "note": "Jacobethan summer residence of the Viceroys, now the Indian Institute of Advanced Study."},
+    {"name": "Himachal State Museum", "period": "museum 1974", "note": "Pahari miniatures, sculpture and textiles in a colonial house."},
+    {"name": "Shimla railway station", "period": "1903", "note": "Terminus of the Kalka to Shimla line, part of the Mountain Railways of India UNESCO site."}
+  ],
+  "routes": [
+    {"name": "The Mall and the Ridge", "length": "About 2 to 3 hours on foot, uphill", "stops": ["Shimla railway station", "General Post Office", "Town Hall", "Gaiety Theatre", "Scandal Point", "The Ridge", "Christ Church", "State Library and Tudor building"]},
+    {"name": "Viceregal Lodge and the museum", "length": "Half a day, walk or short taxi", "stops": ["Himachal State Museum", "Viceregal Lodge"]},
+    {"name": "Bazaar and hilltop", "length": "About 3 hours, steep", "stops": ["Lower Bazaar", "The Ridge", "Jakhoo Temple"]}
+  ],
+  "museums": [
+    {"name": "Himachal State Museum", "note": "Pahari paintings, sculpture, coins and textiles of the hill states."},
+    {"name": "Viceregal Lodge", "note": "Rooms and exhibits on the summer capital and the 1945 Simla Conference."},
+    {"name": "Bantony Castle", "note": "Restored 19th century building on the Mall used for heritage exhibitions; check what is open."}
+  ],
+  "best_time": "March to June and September to November. Winters can bring snow and the monsoon brings landslides on the roads.",
+  "faq": [
+    {"q": "What are the main historical places in Shimla?", "a": "The Ridge and Christ Church, the Mall with the Gaiety Theatre, Town Hall and Post Office, the Lower Bazaar, Jakhoo Temple, the Viceregal Lodge and the Himachal State Museum."},
+    {"q": "Is the Kalka to Shimla railway a UNESCO site?", "a": "Yes. It was added in 2008 to the Mountain Railways of India World Heritage Site, which also includes the Darjeeling Himalayan Railway and the Nilgiri Mountain Railway."},
+    {"q": "Is a Shimla heritage walk suitable for schools?", "a": "Yes. The Mall and Ridge are pedestrian and safe for groups, though steep. Plan short stretches with rests, and add the toy train and Viceregal Lodge for a full study day."},
+    {"q": "Which museums are there in Shimla?", "a": "The Himachal State Museum for Pahari art and history, and the Viceregal Lodge for the colonial summer capital."},
+    {"q": "Can Talaash Heritage arrange a Shimla study tour?", "a": "Yes, on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."}
+  ],
+  "related_programmes": ["a-study-tour-built-for-your-group.html", "heritage-photography-evidence-led-photo-walk.html", "oral-history-and-neighbourhood-memory-lab.html", "connaught-place-architecture.html", "pinjore-gardens-landscape-design.html", "st-james-church-and-delhi-s-colonial-crossroads.html"],
+  "related_guides": ["heritage-sites-in-himachal-pradesh", "unesco-world-heritage-sites-in-india", "heritage-conservation-in-india", "heritage-walk-in-chandigarh", "heritage-walk-in-delhi"],
+  "bundle": {"title": "Two capitals of the Raj", "pitch": "See the winter capital at Connaught Place and St James' Church in Delhi, then the summer capital in Shimla, to see how the colonial state moved each year.", "items": ["connaught-place-architecture.html", "st-james-church-and-delhi-s-colonial-crossroads.html", "a-study-tour-built-for-your-group.html"]},
+  "audience_hooks": ["Schools: a Shimla study tour with the toy train and the Viceregal Lodge.", "Colleges: a photo walk or oral history lab on the Mall.", "Families: a private Shimla day with a historian, in English or Hindi."],
+  "sem": {
+    "ad_group": "Heritage walk Shimla",
+    "keywords": ["heritage walk in shimla", "shimla heritage walk for schools", "shimla study tour", "shimla heritage tour with historian", "viceregal lodge guided visit", "shimla school trip history", "colonial shimla walking tour"],
+    "negatives": ["free", "pdf", "essay", "hotel", "snow", "ticket price", "jobs"],
+    "headlines": ["Heritage Walks in Shimla", "The Summer Capital on Foot", "Study Tours for Schools", "Led by Historians", "In English or Hindi"],
+    "descriptions": ["Shimla heritage walks and study tours with historians, arranged for your group.", "The Ridge, the Mall, the Viceregal Lodge and the toy train, for schools and families."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "For eight months a year, India was ruled from a ridge.", "caption": "From 1864 the British government moved to Shimla every summer. Files, clerks and officials came up the hill, first by road and from 1903 by the toy train."},
+      {"angle": "tip", "hook": "Look at the roofs, not just the fronts.", "caption": "Steep tin roofs and timber frames were Shimla's answer to snow, rain and earthquakes. Walk the Mall and count the ways builders handled the slope."},
+      {"angle": "offer", "hook": "Shimla with a historian.", "caption": "We arrange Shimla study tours for schools, colleges, companies and families, with the toy train and the Viceregal Lodge, in English or Hindi."}
+    ],
+    "reel": "Toy train crossing a bridge, then the Ridge, Christ Church and the Viceregal Lodge. Line: the summer capital of an empire. End card: Shimla study tours, arranged on request.",
+    "hashtags": ["#Shimla", "#ShimlaHeritage", "#ViceregalLodge", "#KalkaShimla", "#HimachalPradesh", "#HeritageWalk", "#ColonialArchitecture", "#TalaashHeritage"]
+  },
+  "og_title": "Shimla heritage walk: the summer capital on foot",
+  "og_description": "The Ridge, the Mall, Christ Church and the Viceregal Lodge, with routes and museums for groups.",
+  "cta": "We arrange Shimla heritage walks and study tours on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."
+}

@@ -1,0 +1,87 @@
+{
+  "slug": "heritage-walk-in-chandigarh",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Chandigarh",
+  "state": "Chandigarh (Union Territory)",
+  "title": "Heritage walk in Chandigarh: Le Corbusier's Capitol and the planned city",
+  "seo_title": "Heritage Walk in Chandigarh: Capitol Complex, Places, Museums",
+  "meta_description": "Plan a heritage walk in Chandigarh: Le Corbusier's Capitol Complex, the Rock Garden, Sector 17, museums and nearby Pinjore, with routes and tips for schools.",
+  "keywords": ["heritage walk in chandigarh", "historical places in chandigarh", "heritage sites in chandigarh", "museums in chandigarh", "chandigarh heritage walk for schools", "capitol complex chandigarh", "le corbusier chandigarh", "chandigarh architecture walk", "unesco site chandigarh", "rock garden chandigarh history"],
+  "summary": "A heritage walk in Chandigarh explores India's best-known modernist planned city, designed from 1951 by Le Corbusier with Pierre Jeanneret, Jane Drew and Maxwell Fry after Partition. The Capitol Complex is part of the UNESCO site The Architectural Work of Le Corbusier (2016). Pinjore Gardens, a Mughal-era garden, lies about 20 km away.",
+  "sections": [
+    {"h2": "Why Chandigarh matters", "paras": [
+      "After Partition in 1947, Punjab lost its capital, Lahore, to Pakistan. The Indian government chose to build a new capital at the foot of the Shivalik hills rather than adapt an existing town. Jawaharlal Nehru backed it as a city 'unfettered by the traditions of the past', and the result is the most complete example of modernist planning in India.",
+      "In 2016 the Capitol Complex was inscribed on the UNESCO World Heritage List as one of 17 sites across seven countries in The Architectural Work of Le Corbusier, an Outstanding Contribution to the Modern Movement. That makes Chandigarh the place in India to study 20th century architecture as heritage, and it raises a real question for students: when does a modern building become a monument?"
+    ]},
+    {"h2": "Layers of Chandigarh's history", "paras": [
+      "The first master plan was drawn by the American planner Albert Mayer with Matthew Nowicki. After Nowicki's death in 1950, Le Corbusier took over in 1951 and reworked the plan into a grid of self-contained sectors, each about 800 by 1,200 metres, with a hierarchy of roads he called the 7Vs. Pierre Jeanneret, Jane Drew and Maxwell Fry designed most of the housing, schools and markets, working with Indian architects such as M. N. Sharma and Aditya Prakash.",
+      "Le Corbusier designed the Capitol Complex: the High Court (1955), the Secretariat (1958) and the Legislative Assembly (1962), with the Open Hand monument and other symbolic structures. The land was not empty: villages were acquired for the city, and some, such as Burail, survive inside sectors. Nek Chand began the Rock Garden secretly in the late 1950s from building waste and demolished village material, and it was opened to the public in 1976.",
+      "Older layers sit just outside: [Pinjore Gardens](pinjore-gardens-landscape-design.html), laid out in the 17th century and associated with Fidai Khan in Aurangzeb's reign, and the Harappan sites of Haryana and Punjab. How a modern city is protected as heritage is part of the wider story of [heritage conservation in India](heritage-conservation-in-india.html)."
+    ]},
+    {"h2": "What you see on a walk", "paras": [
+      "At the Capitol, students see raw concrete (béton brut), brise-soleil sunshades, the High Court's great parasol roof and the Assembly's hyperbolic tower, and they can talk about climate, scale and symbolism. In Sector 17 they read a modernist market plaza; at the Pierre Jeanneret Museum and in old government offices they see the famous cane and teak furniture designed for the city, much of which was later sold off at auction, a case study in heritage loss.",
+      "The lecture [Who owns the past? Heritage and urban development](who-owns-the-past-heritage-and-urban-development.html) fits Chandigarh well, as does [Site mapping and measured drawing](site-mapping-measured-drawing.html) for architecture students who want to record a sector."
+    ]},
+    {"h2": "Chandigarh for school and college groups", "paras": [
+      "Chandigarh visits are arranged as a [study tour built for your group](a-study-tour-built-for-your-group.html), often combined with Pinjore and with Haryana sites such as [Rakhigarhi](rakhigarhi.html) or [Sheikh Chilli's Tomb at Thanesar](sheikh-chilli-tomb-thanesar.html).",
+      "The Capitol Complex needs advance permission and usually runs guided group visits from a tourist centre, since the buildings are working government offices and a court; check current rules and carry ID. Sectors are large, so a vehicle is needed between the Capitol, Sector 10 museums, Sector 17 and the Rock Garden, though each cluster is walkable on its own."
+    ]}
+  ],
+  "stops": [
+    {"name": "Capitol Complex", "period": "1951 to 1965", "note": "Le Corbusier's government centre, part of a UNESCO site since 2016."},
+    {"name": "Palace of Assembly", "period": "1962", "note": "Legislative Assembly with a hyperbolic tower and an enamelled ceremonial door."},
+    {"name": "High Court", "period": "1955", "note": "Courts under a huge concrete parasol roof, with coloured pylons at the entrance."},
+    {"name": "Secretariat", "period": "1958", "note": "Long slab block of government offices with a sculpted ramp and sunshades."},
+    {"name": "Open Hand Monument", "period": "completed 1985", "note": "Le Corbusier's symbol of giving and receiving, a metal hand that turns in the wind."},
+    {"name": "Rock Garden", "period": "late 1950s, opened 1976", "note": "Nek Chand's sculpture garden made of broken ceramics, bangles and demolition waste."},
+    {"name": "Sukhna Lake", "period": "1958", "note": "Reservoir created by damming a seasonal stream, planned as the city's open space."},
+    {"name": "Sector 17 Plaza", "period": "1950s to 1960s", "note": "The planned city centre and market, with pedestrian plazas and arcades."},
+    {"name": "Government Museum and Art Gallery", "period": "1968", "note": "Le Corbusier building in Sector 10 housing Gandhara sculpture and Pahari painting."},
+    {"name": "Le Corbusier Centre", "period": "1951 office, museum later", "note": "Le Corbusier's old site office in Sector 19, with drawings, letters and photographs of the city's making."},
+    {"name": "Pierre Jeanneret Museum", "period": "house 1950s", "note": "Jeanneret's own house in Sector 5, showing furniture designed for the city."},
+    {"name": "Pinjore Gardens", "period": "17th century", "note": "Terraced Mughal-style garden about 20 km away, with pavilions and water channels."}
+  ],
+  "routes": [
+    {"name": "The Capitol Complex", "length": "About 2 to 3 hours, by advance permission", "stops": ["Capitol Complex", "High Court", "Secretariat", "Palace of Assembly", "Open Hand Monument"]},
+    {"name": "Sector 10 to Sukhna Lake", "length": "Half a day, by vehicle between clusters", "stops": ["Government Museum and Art Gallery", "Rock Garden", "Sukhna Lake"]},
+    {"name": "Making the city", "length": "About 3 hours, by vehicle", "stops": ["Le Corbusier Centre", "Pierre Jeanneret Museum", "Sector 17 Plaza"]}
+  ],
+  "museums": [
+    {"name": "Government Museum and Art Gallery, Sector 10", "note": "Gandhara sculpture, Pahari and Rajasthani miniatures, and modern Indian art."},
+    {"name": "Chandigarh Architecture Museum, Sector 10", "note": "Plans, drawings and models from the planning of the city."},
+    {"name": "Le Corbusier Centre, Sector 19", "note": "The architect's site office, now a small museum of his Chandigarh work."},
+    {"name": "Pierre Jeanneret Museum, Sector 5", "note": "Jeanneret's home with original furniture and drawings."}
+  ],
+  "best_time": "October to March. Summers are hot; the monsoon brings rain in July and August.",
+  "faq": [
+    {"q": "Is Chandigarh a UNESCO World Heritage Site?", "a": "The Capitol Complex is. It was inscribed in 2016 as part of The Architectural Work of Le Corbusier, a transnational site of 17 works in seven countries."},
+    {"q": "What historical places in Chandigarh can students visit?", "a": "The Capitol Complex, the Rock Garden, Sukhna Lake, Sector 17, the Government Museum and Art Gallery, the Architecture Museum, the Le Corbusier Centre and nearby Pinjore Gardens."},
+    {"q": "Is a Chandigarh heritage walk good for schools?", "a": "Yes, for geography, civics and art as much as history. The Capitol needs advance permission and ID. Use a coach between sectors and keep each walk to two hours."},
+    {"q": "Which museums in Chandigarh are worth visiting?", "a": "The Government Museum and Art Gallery for Gandhara sculpture and Pahari painting, the Architecture Museum and Le Corbusier Centre for the city's planning, and the Pierre Jeanneret Museum for furniture and design."},
+    {"q": "Can Talaash Heritage arrange a Chandigarh study tour?", "a": "Yes, on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi, often combined with Pinjore and Haryana sites."}
+  ],
+  "related_programmes": ["a-study-tour-built-for-your-group.html", "pinjore-gardens-landscape-design.html", "who-owns-the-past-heritage-and-urban-development.html", "site-mapping-measured-drawing.html", "rakhigarhi.html", "connaught-place-architecture.html"],
+  "related_guides": ["unesco-world-heritage-sites-in-india", "heritage-conservation-in-india", "heritage-sites-in-punjab", "heritage-sites-in-haryana", "heritage-walk-in-amritsar", "heritage-walk-in-shimla"],
+  "bundle": {"title": "Two planned capitals", "pitch": "Walk Lutyens' New Delhi at Connaught Place, then Le Corbusier's Chandigarh, and compare how a colonial and a post-independence capital were planned.", "items": ["connaught-place-architecture.html", "a-study-tour-built-for-your-group.html"]},
+  "audience_hooks": ["Schools: a Chandigarh study day on planning and civics, with Pinjore Gardens on the way.", "Colleges: architecture students can add a measured drawing session in a sector.", "Companies: a lecture on heritage and urban development, then the Capitol visit."],
+  "sem": {
+    "ad_group": "Heritage walk Chandigarh",
+    "keywords": ["heritage walk in chandigarh", "chandigarh architecture tour for students", "capitol complex guided visit", "le corbusier chandigarh tour", "chandigarh study tour", "chandigarh school trip heritage", "pinjore gardens guided visit"],
+    "negatives": ["free", "pdf", "essay", "drawing", "hotel", "ticket price", "jobs"],
+    "headlines": ["Heritage Walks in Chandigarh", "Le Corbusier's Capitol", "Study Tours for Students", "Planned City, Read Closely", "In English or Hindi"],
+    "descriptions": ["Chandigarh study tours led by archaeologists and historians, arranged for your group.", "Capitol Complex, Rock Garden, museums and Pinjore Gardens, for schools and colleges."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Chandigarh's first plan was not by Le Corbusier.", "caption": "Albert Mayer and Matthew Nowicki drew the first master plan. Le Corbusier took over in 1951 and turned it into the grid of sectors we see today."},
+      {"angle": "tip", "hook": "Look under the High Court roof.", "caption": "The parasol roof floats above the courtrooms to shade them and let air through. It is climate design in raw concrete."},
+      {"angle": "offer", "hook": "Modern heritage, with a historian.", "caption": "We arrange Chandigarh study tours for schools, colleges, companies and families, often with Pinjore Gardens, in English or Hindi."}
+    ],
+    "reel": "Slow pan along the Assembly, the Open Hand turning, then a cut to broken bangles in the Rock Garden. Line: when does a new city become heritage? End card: Chandigarh study tours, arranged on request.",
+    "hashtags": ["#Chandigarh", "#LeCorbusier", "#CapitolComplex", "#ModernArchitecture", "#RockGarden", "#UNESCO", "#HeritageWalk", "#TalaashHeritage"]
+  },
+  "og_title": "Chandigarh heritage walk: a modern city as heritage",
+  "og_description": "Le Corbusier's Capitol, the Rock Garden, museums and Pinjore, read with a historian.",
+  "cta": "We arrange Chandigarh heritage visits on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."
+}

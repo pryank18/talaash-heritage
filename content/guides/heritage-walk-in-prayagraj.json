@@ -1,0 +1,85 @@
+{
+  "slug": "heritage-walk-in-prayagraj",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Prayagraj",
+  "state": "Uttar Pradesh",
+  "title": "Heritage walk in Prayagraj: Sangam, Khusro Bagh and the colonial city",
+  "seo_title": "Heritage Walk in Prayagraj: Historical Places, Routes, Museums",
+  "meta_description": "Plan a heritage walk in Prayagraj (Allahabad): the Sangam, Akbar's fort, Khusro Bagh, Anand Bhavan, the university and museum, with routes and school tips.",
+  "keywords": ["heritage walk in prayagraj", "historical places in prayagraj", "heritage sites in prayagraj", "museums in prayagraj", "prayagraj heritage walk for schools", "allahabad heritage walk", "khusro bagh history", "allahabad fort ashoka pillar", "anand bhavan history", "kaushambi archaeological site"],
+  "summary": "A heritage walk in Prayagraj (formerly Allahabad) takes in the Sangam of the Ganga and Yamuna, Akbar's fort with the Ashokan pillar inside, the Mughal tombs of Khusro Bagh, the colonial Civil Lines with All Saints Cathedral and the university, Anand Bhavan and the Allahabad Museum. Kaushambi, an early historic city, is about 60 km away.",
+  "sections": [
+    {"h2": "Why Prayagraj matters", "paras": [
+      "Prayagraj stands at the confluence of the Ganga and Yamuna, a place of pilgrimage described in early texts and the site of the Kumbh Mela. Akbar founded a fortified city here in the 1570s and 1580s, naming it Ilahabas, later Allahabad. The city was renamed Prayagraj in 2018.",
+      "It is also central to modern Indian history. The East India Company's rule passed to the Crown by a proclamation read here in 1858, the city was capital of the North-Western Provinces and later the United Provinces, and it was a political and intellectual centre of the freedom movement, home to the Nehru family and to one of India's oldest universities."
+    ]},
+    {"h2": "Layers of Prayagraj's history", "paras": [
+      "The oldest standing object in the city is the Ashokan pillar inside the fort, of the 3rd century BCE. It carries Ashoka's edicts and, later, Samudragupta's long Prayaga Prashasti of the 4th century CE, written by his court poet Harishena, and a Persian inscription of Jahangir. It was probably brought here from Kaushambi, the capital of the Vatsa mahajanapada, about 60 km away, where excavations have found city walls and early historic layers. The [Gupta Empire](gupta-empire.html) and [Ashoka and his edicts](ashoka-and-his-edicts.html) guides explain both inscriptions.",
+      "Akbar's fort, begun in 1583, still dominates the Sangam; much of it is in army use. Khusro Bagh holds the tombs of Jahangir's son Khusrau (died 1622), his mother Shah Begum and his sister, with fine Mughal painted and carved work.",
+      "After 1857 the British built the Civil Lines on a grid, with All Saints Cathedral (1871 onward) by William Emerson, Muir College (now part of Allahabad University, founded 1887) and the High Court. Anand Bhavan and Swaraj Bhavan, the Nehru family homes, became centres of the Congress movement. Chandra Shekhar Azad died in Alfred Park (now Chandra Shekhar Azad Park) in 1931."
+    ]},
+    {"h2": "What you see on a walk", "paras": [
+      "At Khusro Bagh, students compare three Mughal tombs in one garden and look closely at painted ceilings and carved stone. In Civil Lines they see a planned colonial grid with Gothic and Indo-Saracenic buildings. At Anand Bhavan they see how a house became a political headquarters.",
+      "The pillar's inscriptions make Prayagraj an excellent place to introduce [India's scripts from Brahmi to Sarada](reading-india-s-scripts-brahmi-to-sarada.html) or a hands-on [Brahmi workshop](write-like-asoka-s-scribes-a-brahmi-workshop.html). The Allahabad Museum's sculpture and terracotta from Kaushambi suit [Reading sculpture](reading-sculpture.html)."
+    ]},
+    {"h2": "Prayagraj for school and college groups", "paras": [
+      "Prayagraj visits are planned as a [study tour built for your group](a-study-tour-built-for-your-group.html), often combined with Varanasi, Sarnath or Kaushambi.",
+      "Civil Lines, the museum, Chandra Shekhar Azad Park and Anand Bhavan are close together and walkable. Khusro Bagh is in the old city and the Sangam and fort are to the south-east; use a vehicle between them. Access inside the fort is restricted because of army use, and the pillar may not always be open to visitors, so check in advance. During the Kumbh and Magh Mela the Sangam area is very crowded and not suitable for school groups."
+    ]}
+  ],
+  "stops": [
+    {"name": "Triveni Sangam", "period": "ancient tirtha", "note": "Confluence of the Ganga and Yamuna, seen best from a boat; the site of the Kumbh Mela."},
+    {"name": "Allahabad Fort", "period": "1583 onward", "note": "Akbar's riverside fort, largely in army use; see the walls from the river."},
+    {"name": "Ashokan Pillar", "period": "3rd century BCE, later inscriptions", "note": "Pillar inside the fort with edicts of Ashoka, Samudragupta's prashasti and a Jahangir inscription."},
+    {"name": "Khusro Bagh", "period": "1620s", "note": "Walled garden with the tombs of Prince Khusrau, Shah Begum and Sultan Nithar Begum."},
+    {"name": "All Saints Cathedral", "period": "1871 to 1887", "note": "Gothic revival cathedral by William Emerson in Civil Lines."},
+    {"name": "Muir College", "period": "1873 to 1886", "note": "Indo-Saracenic college building by William Emerson, now part of Allahabad University."},
+    {"name": "Allahabad High Court", "period": "1916 building", "note": "Large court building of the High Court, established in 1866."},
+    {"name": "Chandra Shekhar Azad Park", "period": "laid out 1870", "note": "Former Alfred Park, where Azad died in 1931; houses the Allahabad Museum and the Thornhill Mayne Memorial."},
+    {"name": "Thornhill Mayne Memorial", "period": "1878", "note": "Gothic public library building in the park."},
+    {"name": "Anand Bhavan", "period": "1930", "note": "Nehru family home given over to the nation, with rooms kept as they were."},
+    {"name": "Swaraj Bhavan", "period": "older house, donated 1930", "note": "Earlier Nehru home that became the Congress headquarters."},
+    {"name": "Kaushambi", "period": "early first millennium BCE onward", "note": "Ancient Vatsa capital about 60 km away, with city walls and excavated mounds."}
+  ],
+  "routes": [
+    {"name": "Civil Lines and the park on foot", "length": "About 3 hours", "stops": ["All Saints Cathedral", "Allahabad High Court", "Chandra Shekhar Azad Park", "Thornhill Mayne Memorial", "Muir College"]},
+    {"name": "Nehru homes and Khusro Bagh", "length": "About 3 hours, short drive between", "stops": ["Anand Bhavan", "Swaraj Bhavan", "Khusro Bagh"]},
+    {"name": "Sangam and the fort", "length": "Half a day, by vehicle and boat", "stops": ["Triveni Sangam", "Allahabad Fort", "Ashokan Pillar"]}
+  ],
+  "museums": [
+    {"name": "Allahabad Museum", "note": "Sculpture and terracotta from Kaushambi and Bharhut, coins, miniature paintings and freedom movement material."},
+    {"name": "Anand Bhavan", "note": "House museum of the Nehru family and the Congress movement, with a planetarium next door."}
+  ],
+  "best_time": "October to March, avoiding the weeks of the Kumbh or Magh Mela for school groups.",
+  "faq": [
+    {"q": "What are the main historical places in Prayagraj?", "a": "The Sangam, Akbar's fort with the Ashokan pillar, Khusro Bagh, All Saints Cathedral, Muir College, the High Court, Chandra Shekhar Azad Park, Anand Bhavan, Swaraj Bhavan and the Allahabad Museum. Kaushambi is a day trip."},
+    {"q": "What is written on the Allahabad pillar?", "a": "Edicts of Ashoka from the 3rd century BCE, the Prayaga Prashasti of the Gupta king Samudragupta from the 4th century CE, and a Persian inscription of Jahangir."},
+    {"q": "Is a Prayagraj heritage walk good for schools?", "a": "Yes. Civil Lines, the museum and Anand Bhavan are close together and easy to manage. Avoid the Sangam during the Kumbh or Magh Mela, and check access to the fort in advance."},
+    {"q": "Which museums are in Prayagraj?", "a": "The Allahabad Museum in Chandra Shekhar Azad Park, with strong archaeology and painting collections, and Anand Bhavan, the Nehru house museum."},
+    {"q": "Can Talaash Heritage arrange a Prayagraj study tour?", "a": "Yes, on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi, often combined with Varanasi and Kaushambi."}
+  ],
+  "related_programmes": ["a-study-tour-built-for-your-group.html", "write-like-asoka-s-scribes-a-brahmi-workshop.html", "reading-india-s-scripts-brahmi-to-sarada.html", "reading-sculpture.html", "firoz-shah-kotla.html", "museums-and-the-stories-objects-tell.html"],
+  "related_guides": ["ashoka-and-his-edicts", "gupta-empire", "what-is-epigraphy", "heritage-sites-in-uttar-pradesh", "heritage-walk-in-varanasi", "heritage-walk-in-lucknow"],
+  "bundle": {"title": "Ashoka's pillars, two cities", "pitch": "Write Brahmi in class, see the Ashokan pillar Firoz Shah moved to Delhi, then the Allahabad pillar with three empires' inscriptions on one stone.", "items": ["write-like-asoka-s-scribes-a-brahmi-workshop.html", "firoz-shah-kotla.html", "a-study-tour-built-for-your-group.html"]},
+  "audience_hooks": ["Schools: a Brahmi workshop in class, then a Prayagraj study day on Ashoka, the Guptas and the freedom movement.", "Colleges: Kaushambi and the Allahabad Museum for early historic archaeology.", "Families: Khusro Bagh and Civil Lines with a historian."],
+  "sem": {
+    "ad_group": "Heritage walk Prayagraj",
+    "keywords": ["heritage walk in prayagraj", "allahabad heritage walk", "prayagraj study tour for schools", "prayagraj heritage tour with historian", "khusro bagh guided visit", "kaushambi guided visit", "prayagraj educational tour"],
+    "negatives": ["free", "pdf", "kumbh tent", "essay", "hotel", "ticket price", "jobs"],
+    "headlines": ["Heritage Walks in Prayagraj", "Allahabad, Read Closely", "Study Tours for Schools", "Ashoka to Anand Bhavan", "In English or Hindi"],
+    "descriptions": ["Prayagraj study tours with archaeologists and historians, arranged for your group.", "Khusro Bagh, Civil Lines, the museum, Anand Bhavan and Kaushambi, for schools."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "One pillar, three empires.", "caption": "The pillar in Prayagraj's fort carries Ashoka's edicts, Samudragupta's praise poem and a Persian line from Jahangir, written over some 1,900 years."},
+      {"angle": "tip", "hook": "At Khusro Bagh, look up.", "caption": "The ceilings of the tombs have painted and carved Mughal decoration. Bring students into the centre of each tomb and ask them to sketch what is overhead."},
+      {"angle": "offer", "hook": "Prayagraj with a historian.", "caption": "We arrange Prayagraj study tours for schools, colleges, companies and families, with Kaushambi or Varanasi if you like, in English or Hindi."}
+    ],
+    "reel": "Boat at the Sangam, the fort walls, Khusro Bagh's domes and Anand Bhavan's verandah. Line: from Ashoka to the freedom movement in one city. End card: Prayagraj study tours, arranged on request.",
+    "hashtags": ["#Prayagraj", "#Allahabad", "#KhusroBagh", "#Sangam", "#AnandBhavan", "#HeritageWalk", "#UttarPradesh", "#IndianHistory", "#TalaashHeritage"]
+  },
+  "og_title": "Prayagraj heritage walk: Ashoka to Anand Bhavan",
+  "og_description": "The Sangam, Khusro Bagh, Civil Lines, the museum and Kaushambi, with routes for school groups.",
+  "cta": "We arrange Prayagraj heritage walks and study tours on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."
+}

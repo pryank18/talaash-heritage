@@ -1,0 +1,116 @@
+{
+  "slug": "heritage-walk-in-kochi",
+  "type": "city",
+  "pillar": "heritage",
+  "title": "Heritage walk in Kochi: Fort Kochi, Mattancherry and Jew Town",
+  "seo_title": "Heritage Walk in Kochi: Fort Kochi and Mattancherry Guide",
+  "meta_description": "Plan a heritage walk in Kochi: Fort Kochi, St Francis Church, Mattancherry Palace, the Paradesi Synagogue, museums and routes for schools and groups.",
+  "keywords": ["heritage walk in kochi", "fort kochi heritage walk", "historical places in kochi", "heritage sites in kochi", "museums in kochi", "kochi heritage walk for schools", "mattancherry heritage walk", "jew town kochi walk", "muziris heritage site"],
+  "summary": "A heritage walk in Kochi (Cochin) covers Fort Kochi, with St Francis Church, the Chinese fishing nets and the Dutch and Portuguese houses, and Mattancherry, with the Dutch Palace and the Paradesi Synagogue of 1568. The two areas are about 3 km apart and can be walked in a morning. Many groups add the Muziris Heritage sites to the north.",
+  "city": "Kochi",
+  "state": "Kerala",
+  "sections": [
+    {
+      "h2": "Why Kochi matters for Indian heritage",
+      "paras": [
+        "Kochi became a major port after a flood in 1341 is said to have opened its harbour and silted up the older port of Muziris to the north. It was the seat of the Kochi rajas, the site of the first European fort in India (Portuguese, 1503), a Dutch base from 1663 and a British town from 1795. Arab, Jewish, Chinese, Gujarati and Konkani traders lived here alongside Malayali communities. The result is a small area where a church, a synagogue, a mosque and Hindu temples sit within walking distance.",
+        "The pepper trade drove much of this. Our lecture on [foods as historical evidence: coconut, spice and exchange](foods-as-historical-evidence-coconut-spice-and-exchange.html) is the natural companion to a Kochi walk, especially for school groups."
+      ]
+    },
+    {
+      "h2": "Historical places in Kochi by period",
+      "paras": [
+        "The older layer lies at Muziris, the Roman-era port known from Greek and Tamil sources. Excavations at Pattanam, about 30 km north, have found Roman amphorae and Mediterranean glass alongside local pottery; whether Pattanam is Muziris itself is still debated, though many scholars think so. Kodungallur nearby has the Cheraman Juma Masjid, linked by tradition to the arrival of Islam in Kerala, and old Jewish and Christian traditions.",
+        "In Kochi itself, the Portuguese built St Francis Church (first in timber around 1503, rebuilt in stone in the 16th century), where Vasco da Gama was buried in 1524 before his remains were taken to Portugal. The Portuguese also built the Mattancherry Palace for the Kochi raja around 1555; it was renovated by the Dutch, hence its other name. The Paradesi Synagogue was built in 1568. The Dutch and then the British left houses, warehouses and the Santa Cruz Basilica (rebuilt 1905)."
+      ],
+      "table": {
+        "head": ["Period", "Examples"],
+        "rows": [
+          ["Early historic", "Pattanam excavations, Muziris Heritage Project sites"],
+          ["Portuguese, 1503 to 1663", "St Francis Church, Mattancherry Palace, Paradesi Synagogue"],
+          ["Dutch, 1663 to 1795", "Dutch Cemetery, Bastion Bungalow, Mattancherry Palace renovation"],
+          ["British and later", "Santa Cruz Basilica, warehouses and godowns, Pierce Leslie Bungalow"]
+        ]
+      }
+    },
+    {
+      "h2": "What you see on a heritage walk in Kochi",
+      "paras": [
+        "In Fort Kochi the walk starts by the Chinese fishing nets, a cantilevered system probably introduced in the Portuguese period or earlier through Chinese or other traders. It passes the Vasco da Gama Square, St Francis Church with da Gama's original gravestone, the Dutch Cemetery, the Santa Cruz Basilica and colonial bungalows. The [cemeteries, epitaphs and public memory lecture](cemeteries-epitaphs-and-public-memory.html) prepares students to read the Dutch and British gravestones.",
+        "In Mattancherry the Dutch Palace holds 16th and 17th century murals of scenes from the Ramayana and Puranas, among the best Kerala murals anywhere. Jew Town's lane leads to the Paradesi Synagogue, with Chinese hand-painted floor tiles and Belgian chandeliers. Spice warehouses still line the waterfront."
+      ]
+    },
+    {
+      "h2": "Museums in Kochi",
+      "paras": [
+        "The Mattancherry Palace museum, run by the ASI, displays murals, royal costumes and palanquins. The Indo-Portuguese Museum in Fort Kochi shows church art from the Portuguese period. The Hill Palace Museum at Tripunithura, the former seat of the Kochi rajas, is the largest archaeological museum in Kerala and needs a vehicle."
+      ]
+    },
+    {
+      "h2": "Kochi heritage walk for schools and colleges",
+      "paras": [
+        "Kochi is compact and calm compared with most cities, which makes it good for schools. It links to the arrival of Europeans, the spice trade and religious diversity in the syllabus. Colleges can add the Muziris sites for a lesson on how excavation evidence is debated in public; the lecture [Excavation headlines: evidence or exaggeration?](excavation-headlines-evidence-or-exaggeration.html) fits well.",
+        "Kochi walks are planned with your group, on their own or as part of a [study tour built for your group](a-study-tour-built-for-your-group.html). See also [heritage sites in Kerala](heritage-sites-in-kerala.html)."
+      ]
+    },
+    {
+      "h2": "Practical advice for groups",
+      "paras": [
+        "Start at the fishing nets early, then move to Mattancherry. The synagogue and palace close on certain days of the week and for festivals, and the synagogue does not allow photography inside, so check before you go. Dress modestly for the synagogue and churches. Ferries link Fort Kochi with Ernakulam and are a good part of the experience."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Chinese fishing nets", "period": "Probably 15th or 16th century tradition", "note": "Cantilevered shore nets still in use on the Fort Kochi waterfront. Watch how the counterweights work."},
+    {"name": "St Francis Church", "period": "1503, rebuilt in stone 16th century", "note": "One of the oldest European churches in India. Vasco da Gama's original gravestone is inside."},
+    {"name": "Dutch Cemetery", "period": "1724", "note": "Walled cemetery with Dutch and British graves. Usually seen through the gate."},
+    {"name": "Santa Cruz Basilica", "period": "Rebuilt 1905", "note": "Gothic-style cathedral on the site of an earlier Portuguese church."},
+    {"name": "Bastion Bungalow", "period": "1667", "note": "Dutch-period bungalow on the site of a fort bastion, now a museum."},
+    {"name": "Indo-Portuguese Museum", "period": "Collection 16th century onwards", "note": "Church silver, vestments and sculpture from Portuguese period churches."},
+    {"name": "Mattancherry Palace", "period": "About 1555", "note": "Built by the Portuguese for the Kochi raja, renovated by the Dutch. See the Kerala murals."},
+    {"name": "Paradesi Synagogue", "period": "1568", "note": "The synagogue of the Paradesi Jews, with hand-painted Chinese floor tiles and a clock tower."},
+    {"name": "Jew Town", "period": "16th century onwards", "note": "Lane of former Jewish homes and shops, now antique and spice dealers."},
+    {"name": "Mattancherry spice warehouses", "period": "19th to 20th century", "note": "Godowns on the waterfront where pepper and ginger were sorted and stored."},
+    {"name": "Pattanam excavation area", "period": "Early historic", "note": "Excavations linked to the Muziris port debate, about 30 km north. Vehicle needed."}
+  ],
+  "routes": [
+    {"name": "Fort Kochi on foot", "length": "About 2.5 hours", "stops": ["Chinese fishing nets", "St Francis Church", "Dutch Cemetery", "Bastion Bungalow", "Santa Cruz Basilica", "Indo-Portuguese Museum"]},
+    {"name": "Mattancherry and Jew Town", "length": "About 2.5 hours", "stops": ["Mattancherry Palace", "Paradesi Synagogue", "Jew Town", "Mattancherry spice warehouses"]},
+    {"name": "Muziris by vehicle", "length": "Half day", "stops": ["Pattanam excavation area"]}
+  ],
+  "museums": [
+    {"name": "Mattancherry Palace Museum", "note": "Kerala murals and royal objects of the Kochi rajas."},
+    {"name": "Indo-Portuguese Museum", "note": "Church art from the Portuguese period."},
+    {"name": "Hill Palace Museum, Tripunithura", "note": "Former royal palace with archaeology, coins and royal collections. Vehicle needed."}
+  ],
+  "best_time": "October to March. The southwest monsoon (June to September) brings heavy rain, though walks are possible between showers.",
+  "faq": [
+    {"q": "What are the main historical places in Kochi?", "a": "St Francis Church, the Chinese fishing nets, the Dutch Cemetery and Santa Cruz Basilica in Fort Kochi, and the Mattancherry Palace, Paradesi Synagogue and Jew Town in Mattancherry. Pattanam and the Muziris sites are a drive away."},
+    {"q": "How old is the Paradesi Synagogue in Kochi?", "a": "It was built in 1568 and is among the oldest active synagogues in the Commonwealth. Its floor tiles were brought from China in the 18th century."},
+    {"q": "Was Vasco da Gama buried in Kochi?", "a": "Yes. He died in Kochi in 1524 and was buried in St Francis Church. His remains were moved to Portugal in 1539, but the original gravestone is still inside."},
+    {"q": "Is a Kochi heritage walk suitable for schools?", "a": "Yes. Fort Kochi and Mattancherry are compact and calm, and the walk ties to European trade and religious diversity in the syllabus. Check the synagogue and palace closing days before you plan."}
+  ],
+  "related_programmes": ["foods-as-historical-evidence-coconut-spice-and-exchange.html", "sacred-architecture-across-communities.html", "cemeteries-epitaphs-and-public-memory.html", "excavation-headlines-evidence-or-exaggeration.html", "a-study-tour-built-for-your-group.html", "heritage-photography-evidence-led-photo-walk.html"],
+  "related_guides": ["heritage-sites-in-kerala", "heritage-walk-in-old-goa", "heritage-walk-in-puducherry", "heritage-tourism-in-india", "what-is-cultural-heritage", "famous-archaeological-sites-in-india"],
+  "bundle": {"title": "Spice, faith and the sea", "pitch": "A lecture on spice and exchange in class, then a walk through Fort Kochi and Mattancherry looking at the churches, synagogue and warehouses that trade built.", "items": ["foods-as-historical-evidence-coconut-spice-and-exchange.html", "sacred-architecture-across-communities.html"]},
+  "audience_hooks": ["Schools: a Fort Kochi and Mattancherry walk on trade and faith, with a spice lecture beforehand.", "Colleges: Muziris and the debate over excavation evidence.", "Travellers: a private morning in Fort Kochi with a historian."],
+  "sem": {
+    "ad_group": "Heritage walk Kochi",
+    "keywords": ["heritage walk in kochi", "fort kochi heritage walk", "kochi heritage walk for schools", "mattancherry guided walk", "fort kochi walking tour with historian", "private heritage tour kochi", "muziris heritage tour"],
+    "negatives": ["free", "pdf", "essay", "jobs", "homestay", "wikipedia"],
+    "headlines": ["Heritage Walk in Kochi", "Fort Kochi With a Historian", "Mattancherry and Jew Town", "For Schools and Colleges", "Arranged on Request"],
+    "descriptions": ["Kochi heritage walks led by archaeologists and historians, in English or Hindi.", "For schools, colleges, companies and private groups. Share your dates and group size."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Vasco da Gama's gravestone is still in Kochi.", "caption": "He died here in 1524 and was buried in St Francis Church. His body went back to Portugal, but the original stone stayed."},
+      {"angle": "tip", "hook": "Look down in the Paradesi Synagogue.", "caption": "The floor is laid with hand-painted Chinese tiles, each a little different. Photography is not allowed inside, so take your time and look."},
+      {"angle": "offer", "hook": "Fort Kochi and Mattancherry with a historian.", "caption": "We arrange Kochi heritage walks for schools, colleges and private groups, in English or Hindi, and can add the Muziris sites."}
+    ],
+    "reel": "Film the Chinese nets rising at dawn, then walk into Jew Town. On-screen line: 'One square kilometre, five centuries of trade.' End card: 'Kochi heritage walks, arranged on request.'",
+    "hashtags": ["#Kochi", "#FortKochi", "#Mattancherry", "#JewTown", "#Muziris", "#HeritageWalk", "#KeralaHeritage", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Fort Kochi and Mattancherry with a historian",
+  "og_description": "A church, a synagogue, a palace of murals and the spice warehouses: Kochi's trade history on foot.",
+  "cta": "We arrange Kochi heritage walks on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi, with other languages through partners."
+}

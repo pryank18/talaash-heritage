@@ -1,0 +1,116 @@
+{
+  "slug": "heritage-walk-in-thanjavur",
+  "type": "city",
+  "pillar": "heritage",
+  "title": "Heritage walk in Thanjavur: the Brihadisvara Temple and the Maratha palace",
+  "seo_title": "Heritage Walk in Thanjavur: Big Temple, Palace, Museums",
+  "meta_description": "Plan a heritage walk in Thanjavur: the Brihadisvara Temple, the palace complex, Saraswathi Mahal Library, Darasuram and Gangaikonda Cholapuram for groups.",
+  "keywords": ["heritage walk in thanjavur", "historical places in thanjavur", "heritage sites in thanjavur", "museums in thanjavur", "thanjavur heritage walk for schools", "brihadeeswarar temple guided tour", "great living chola temples", "thanjavur palace saraswathi mahal", "darasuram temple visit"],
+  "summary": "A heritage walk in Thanjavur centres on the Brihadisvara (Big) Temple, built by the Chola king Rajaraja I and completed around 1010 CE, then crosses the old town to the Thanjavur Palace of the Nayak and Maratha rulers, with its art gallery and the Saraswathi Mahal Library. Darasuram and Gangaikonda Cholapuram, the other Great Living Chola Temples, need a vehicle.",
+  "city": "Thanjavur",
+  "state": "Tamil Nadu",
+  "sections": [
+    {
+      "h2": "Why Thanjavur matters for Indian heritage",
+      "paras": [
+        "Thanjavur (Tanjore) was the capital of the imperial Cholas, who from the late 9th century built a state that reached across south India and sent naval expeditions to Sri Lanka and Southeast Asia. The Brihadisvara Temple was their statement of power. Its inscriptions list donations, temple staff and villages, so it is as much a historical archive as a monument. It was inscribed by UNESCO in 1987, and the listing was extended in 2004 as the Great Living Chola Temples, adding Gangaikonda Cholapuram and the Airavatesvara Temple at Darasuram.",
+        "After the Cholas the city was ruled by the Nayaks from the 16th century and by a Maratha dynasty from 1674 to 1855. Each added to the palace and to the town's music, painting and scholarship. Our explainer on the [Chola dynasty](chola-dynasty.html) gives the background."
+      ]
+    },
+    {
+      "h2": "Historical places in Thanjavur by period",
+      "paras": [
+        "The Chola layer is the temple and its fort walls with a moat. The Nayak layer is the palace core, the Sivaganga tank and fort and additions inside the temple, such as the Subrahmanya shrine (often dated to the 17th century). The Maratha layer is the palace's later wings, the Saraswathi Mahal Library, much expanded by Serfoji II (ruled 1798 to 1832), and Thanjavur painting with its gold leaf and inlaid glass.",
+        "Serfoji II is a good figure for students: a ruler under British control who collected manuscripts in many languages, ran a printing press and set up a dispensary. The library he built holds tens of thousands of palm-leaf and paper manuscripts; see our page on [Indian manuscripts](indian-manuscripts.html)."
+      ],
+      "table": {
+        "head": ["Period", "Examples"],
+        "rows": [
+          ["Chola, 9th to 13th century", "Brihadisvara Temple (about 1010), Darasuram (12th century), Gangaikonda Cholapuram (about 1035)"],
+          ["Nayak, 16th to 17th century", "Palace core, Sivaganga fort, Subrahmanya shrine"],
+          ["Maratha, 1674 to 1855", "Saraswathi Mahal Library, Sangeetha Mahal, Thanjavur painting"],
+          ["Colonial", "Schwartz Church (1779), administrative buildings"]
+        ]
+      }
+    },
+    {
+      "h2": "What you see on a heritage walk in Thanjavur",
+      "paras": [
+        "At the Brihadisvara Temple, walk the courtyard clockwise before looking up. The vimana rises about 66 metres over the sanctum in granite, and the Nandi in its pavilion is carved from a single stone. Around the base, Chola inscriptions record gifts of land, gold and cattle and the names of temple dancers and musicians. Inside the circumambulatory passage (not usually open to visitors) are Chola murals, partly overpainted in the Nayak period. The [Dravida temple architecture lecture](dravida-temple-architecture.html) and the [temple inscriptions and patrons lecture](temple-inscriptions-patrons.html) make these features easy to follow.",
+        "From the temple, the old town leads to the palace complex: the Sangeetha Mahal hall, the Arsenal Tower, the Saraswathi Mahal Library museum and the Royal Museum. Thanjavur's bronze and painting workshops still work in the streets around it."
+      ]
+    },
+    {
+      "h2": "Museums in Thanjavur",
+      "paras": [
+        "The Thanjavur Art Gallery in the palace has one of the best Chola bronze collections anywhere, along with stone sculpture from temples in the Kaveri delta. The Saraswathi Mahal Library museum shows manuscripts, maps and printed books from Serfoji's collection. A [museum gallery study with an archaeologist](museum-morning-with-an-archaeologist.html) works well in the bronze gallery."
+      ]
+    },
+    {
+      "h2": "Thanjavur heritage walk for schools and colleges",
+      "paras": [
+        "Thanjavur is one of the best places in India to teach a medieval kingdom from its own records. School groups can read a Chola inscription with a guide, then see the bronzes. College students of history, architecture and epigraphy can spend two days across Thanjavur, Darasuram and Gangaikonda Cholapuram.",
+        "Thanjavur is a core stop on our [south India temple architecture study tour](south-india-temple-architecture.html), and walks can be arranged on request. See also [heritage sites in Tamil Nadu](heritage-sites-in-tamil-nadu.html)."
+      ]
+    },
+    {
+      "h2": "Practical advice for groups",
+      "paras": [
+        "The temple is an active place of worship; remove shoes at the gate and dress modestly. The stone courtyard gets very hot by noon, so arrive early or late in the day. Darasuram is about 40 km away near Kumbakonam, and Gangaikonda Cholapuram about 70 km, so plan a vehicle and a full day. Check the ASI website for current rules."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Brihadisvara Temple", "period": "Completed about 1010 CE", "note": "Rajaraja I's temple with a granite vimana about 66 metres high. Read the inscriptions on the base."},
+    {"name": "Nandi Mandapam", "period": "Nayak period, 16th century", "note": "Monolithic Nandi facing the sanctum, one of the largest in India, added by the Nayaks to the Chola temple."},
+    {"name": "Subrahmanya shrine", "period": "About 17th century", "note": "Finely carved Nayak period shrine in the temple courtyard."},
+    {"name": "Sivaganga tank and fort", "period": "Nayak period", "note": "Tank and small fort next to the temple, now in a park."},
+    {"name": "Schwartz Church", "period": "1779", "note": "Built by the missionary Christian Friedrich Schwartz, near the Sivaganga tank."},
+    {"name": "Thanjavur Palace", "period": "16th to 19th century", "note": "Nayak and Maratha palace complex. See the Arsenal Tower and the Sangeetha Mahal."},
+    {"name": "Thanjavur Art Gallery", "period": "Collection 20th century", "note": "Chola bronzes and stone sculpture in the palace's Nayak durbar hall."},
+    {"name": "Saraswathi Mahal Library", "period": "16th century origins, expanded by Serfoji II", "note": "Manuscripts in Tamil, Sanskrit, Marathi and other languages, with a museum gallery."},
+    {"name": "Airavatesvara Temple, Darasuram", "period": "12th century", "note": "Built under Rajaraja II. Look for the chariot-wheel steps and the tiny sculpted panels. Vehicle needed."},
+    {"name": "Gangaikonda Cholapuram", "period": "About 1035 CE", "note": "Rajendra I's capital temple, built after his northern campaign. Vehicle needed."}
+  ],
+  "routes": [
+    {"name": "The Big Temple on foot", "length": "About 2.5 hours", "stops": ["Brihadisvara Temple", "Nandi Mandapam", "Subrahmanya shrine", "Sivaganga tank and fort", "Schwartz Church"]},
+    {"name": "Palace and library", "length": "About 2.5 hours", "stops": ["Thanjavur Palace", "Thanjavur Art Gallery", "Saraswathi Mahal Library"]},
+    {"name": "The other Chola temples by vehicle", "length": "Full day", "stops": ["Airavatesvara Temple, Darasuram", "Gangaikonda Cholapuram"]}
+  ],
+  "museums": [
+    {"name": "Thanjavur Art Gallery", "note": "Chola bronzes and stone sculpture in the palace."},
+    {"name": "Saraswathi Mahal Library Museum", "note": "Manuscripts, maps and early printed books."},
+    {"name": "Royal Museum, Thanjavur Palace", "note": "Objects of the Maratha royal family."}
+  ],
+  "best_time": "November to February. Avoid the hottest months (April to June), and note that the northeast monsoon brings rain from October to December.",
+  "faq": [
+    {"q": "Who built the Brihadisvara Temple in Thanjavur?", "a": "The Chola king Rajaraja I built it; it was completed around 1010 CE. Its inscriptions record the king's gifts and the temple's staff in detail."},
+    {"q": "Is Thanjavur a UNESCO World Heritage Site?", "a": "The Brihadisvara Temple is part of the Great Living Chola Temples, inscribed in 1987 and extended in 2004 to include Gangaikonda Cholapuram and the Airavatesvara Temple at Darasuram."},
+    {"q": "What are the main historical places in Thanjavur?", "a": "The Brihadisvara Temple, the Sivaganga tank, Schwartz Church, the Thanjavur Palace with its Art Gallery and the Saraswathi Mahal Library, plus Darasuram and Gangaikonda Cholapuram by vehicle."},
+    {"q": "How many days do I need for Thanjavur?", "a": "One day covers the temple and palace. Add a second day for Darasuram and Gangaikonda Cholapuram. Many groups base themselves in Thanjavur or Kumbakonam."},
+    {"q": "Does the shadow of the Thanjavur temple vimana never fall on the ground?", "a": "No, that is a popular myth. The vimana casts a shadow like any tall building. Its real achievement is structural: a granite tower about 66 metres high, built over a thousand years ago."}
+  ],
+  "related_programmes": ["south-india-temple-architecture.html", "dravida-temple-architecture.html", "temple-inscriptions-patrons.html", "museum-morning-with-an-archaeologist.html", "temple-superstructures.html", "reading-sculpture.html"],
+  "related_guides": ["chola-dynasty", "heritage-sites-in-tamil-nadu", "indian-temple-architecture", "unesco-world-heritage-sites-in-india", "heritage-walk-in-madurai", "indian-manuscripts"],
+  "bundle": {"title": "Read the temple, then stand in it", "pitch": "A lecture on temple inscriptions and patrons before you travel, then the Big Temple and the bronze gallery with the same specialist.", "items": ["temple-inscriptions-patrons.html", "south-india-temple-architecture.html"]},
+  "audience_hooks": ["Schools: a Big Temple walk with an inscription reading and a bronze gallery visit.", "Colleges: two days across the three Great Living Chola Temples for history and architecture students.", "Travellers: Thanjavur as part of a south India temple study tour."],
+  "sem": {
+    "ad_group": "Heritage walk Thanjavur",
+    "keywords": ["heritage walk in thanjavur", "thanjavur temple guided tour", "brihadeeswarar temple guide for groups", "chola temples study tour", "thanjavur heritage tour for schools", "great living chola temples tour", "private heritage tour thanjavur"],
+    "negatives": ["free", "pdf", "essay", "jobs", "painting buy", "wikipedia"],
+    "headlines": ["Heritage Walk in Thanjavur", "Big Temple With a Specialist", "Chola Temples Study Tour", "For Schools and Colleges", "Arranged on Request"],
+    "descriptions": ["Thanjavur heritage walks led by archaeologists and historians, in English or Hindi.", "For schools, colleges, companies and private groups. Share your dates and group size."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "The Big Temple's walls are a Chola account book.", "caption": "Inscriptions around its base list gifts of land, gold and cattle, and the names of hundreds of temple staff. It is one of the best documented buildings of medieval India."},
+      {"angle": "tip", "hook": "Walk the courtyard before you look up.", "caption": "Start at the gateway and circle clockwise. The vimana is easier to read once you have seen the inscriptions and sculpture at eye level."},
+      {"angle": "offer", "hook": "The Chola temples with an archaeologist.", "caption": "We arrange Thanjavur walks and south India temple study tours for schools, colleges and private groups, in English or Hindi."}
+    ],
+    "reel": "Close-up of a Chola inscription, then pull back to the full vimana. On-screen line: 'Every gift was written on the wall.' End card: 'Thanjavur heritage walks, arranged on request.'",
+    "hashtags": ["#Thanjavur", "#Tanjore", "#BigTemple", "#Brihadisvara", "#Chola", "#HeritageWalk", "#UNESCO", "#TamilNaduHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Thanjavur's Big Temple with an archaeologist",
+  "og_description": "Rajaraja's granite temple, its inscriptions and the Chola bronzes, explained by people who study them.",
+  "cta": "We arrange Thanjavur heritage walks on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi, with other languages through partners."
+}

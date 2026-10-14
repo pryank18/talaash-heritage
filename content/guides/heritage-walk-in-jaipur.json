@@ -1,0 +1,86 @@
+{
+  "slug": "heritage-walk-in-jaipur",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Jaipur",
+  "state": "Rajasthan",
+  "title": "Heritage walk in Jaipur: the walled city, Amber and museums",
+  "seo_title": "Heritage Walk in Jaipur: Historical Places, Routes, Museums",
+  "meta_description": "Plan a heritage walk in Jaipur: Hawa Mahal, City Palace, Jantar Mantar, Amber and Nahargarh, with walking routes, museums and advice for school groups.",
+  "keywords": ["heritage walk in jaipur", "historical places in jaipur", "heritage sites in jaipur", "museums in jaipur", "jaipur heritage walk for schools", "jaipur walled city walk", "jaipur heritage walk", "amber fort history", "unesco sites in jaipur", "pink city heritage walk"],
+  "summary": "A heritage walk in Jaipur explores the planned walled city founded by Sawai Jai Singh II in 1727, a UNESCO World Heritage Site since 2019, with Jantar Mantar (UNESCO, 2010), the City Palace and Hawa Mahal. Amber Fort, part of the Hill Forts of Rajasthan site, sits about 11 km north on the old route into the hills.",
+  "sections": [
+    {"h2": "Why Jaipur matters", "paras": [
+      "Jaipur is one of the clearest examples of a planned early modern city in South Asia. Sawai Jai Singh II, the Kachhwaha ruler, moved his capital from the hill fortress of Amber to the plain in 1727 and laid out a grid of wide bazaars and city blocks (chowkris) inside a wall with gates. The streets, market arcades and temple plots still follow that plan.",
+      "The city is also a meeting point of Rajput and Mughal traditions. The Kachhwahas served the Mughal emperors from Akbar's time onward, and Amber and Jaipur show how Rajput courts adopted Mughal garden planning, audience halls and decoration while keeping their own temples, stepwells and palace layouts."
+    ]},
+    {"h2": "Layers of Jaipur's history", "paras": [
+      "The Kachhwahas held Amber from about the 11th century. Raja Man Singh I, Akbar's general, began the present Amber Fort palace in the late 16th century, and Mirza Raja Jai Singh I added to it in the 17th. Jaigarh, on the ridge above, was built and rebuilt in the same period as the fortress that guarded Amber.",
+      "Sawai Jai Singh II (ruled 1699 to 1743) founded Jaipur, built the City Palace and the Jantar Mantar observatory between about 1728 and 1734, and Nahargarh on the ridge. Sawai Pratap Singh added the Hawa Mahal in 1799 so women of the court could watch street processions. The city was painted its familiar pink in the 19th century, often linked to the 1876 visit of the Prince of Wales, and Sawai Ram Singh II built the Albert Hall, now the city's main museum, in the 1880s.",
+      "The [Forts of India](forts-of-india.html) guide places Amber in the wider story of Rajput hill forts."
+    ]},
+    {"h2": "What you see on a Jaipur walk", "paras": [
+      "Inside the walled city you can read the plan on the ground: straight bazaars, equal blocks, arcaded shopfronts and temples set at junctions. At Jantar Mantar the instruments are large enough to walk through, and students can measure local time with the Samrat Yantra sundial. The [Jaipur Jantar Mantar programme](jaipur-jantar-mantar-instruments-and-observation.html) is built around exactly this.",
+      "At Amber you move from public courtyards to private apartments, reading how a Rajput palace controls access, light and water. Panna Meena ka Kund, a stepwell near Amber, links the walk to the [stepwells of India](stepwells-of-india.html)."
+    ]},
+    {"h2": "Jaipur for school and college groups", "paras": [
+      "Jaipur works well as part of [Three capitals: Delhi, Agra and Jaipur](three-capitals-delhi-agra-and-jaipur.html), and [Forts of Rajasthan](forts-of-rajasthan.html) continues to Chittorgarh, Kumbhalgarh and other hill forts. Families can do [The Golden Triangle with an archaeologist](the-golden-triangle-with-an-archaeologist.html) as a private journey.",
+      "The walled city is crowded and busy with traffic, so school groups should walk early in the morning in small batches with extra adults. Amber Fort, Jaigarh and Nahargarh need a vehicle; Jantar Mantar, the City Palace and Hawa Mahal are close together and can be walked. Check site websites for current rules before you go."
+    ]}
+  ],
+  "stops": [
+    {"name": "Hawa Mahal", "period": "1799", "note": "A five-storey screen of small windows facing Siredeori Bazaar; go round the back to see how thin the building really is."},
+    {"name": "City Palace", "period": "1727 onward", "note": "Royal residence with Mubarak Mahal, Diwan-i-Khas and the Pritam Niwas courtyard gates; parts are a museum."},
+    {"name": "Jantar Mantar", "period": "about 1728 to 1734", "note": "Sawai Jai Singh II's observatory of masonry instruments, a UNESCO site since 2010."},
+    {"name": "Tripolia Bazaar and Chaura Rasta", "period": "1727 plan", "note": "Main grid bazaars of the walled city, with arcades and chowk junctions."},
+    {"name": "Govind Dev Ji Temple", "period": "18th century", "note": "Temple in the City Palace grounds, aligned with the palace, an example of how the plan joined court and worship."},
+    {"name": "Isarlat", "period": "1749", "note": "Tower built by Sawai Ishwari Singh near Tripolia Gate, with a view over the grid."},
+    {"name": "Albert Hall Museum", "period": "1887", "note": "Indo-Saracenic building by Samuel Swinton Jacob, housing the state museum."},
+    {"name": "Amber Fort", "period": "late 16th to 18th century", "note": "Kachhwaha palace of courtyards, the Sheesh Mahal and Ganesh Pol; part of the Hill Forts of Rajasthan UNESCO site."},
+    {"name": "Panna Meena ka Kund", "period": "17th century", "note": "Stepwell near Amber with criss-cross stairs on three sides."},
+    {"name": "Jaigarh Fort", "period": "17th to 18th century", "note": "Ridge fortress above Amber with cannon foundry and large water tanks."},
+    {"name": "Nahargarh Fort", "period": "1734, extended 1868", "note": "Fort on the ridge overlooking the city; the Madhavendra Bhawan suites were added in the 19th century."},
+    {"name": "Gaitore", "period": "18th to 20th century", "note": "Royal cenotaphs (chhatris) of the Jaipur rulers below Nahargarh."}
+  ],
+  "routes": [
+    {"name": "The walled city on foot", "length": "About 3 hours", "stops": ["Hawa Mahal", "Jantar Mantar", "City Palace", "Govind Dev Ji Temple", "Tripolia Bazaar and Chaura Rasta", "Isarlat"]},
+    {"name": "Amber and the ridge", "length": "Half a day, by vehicle", "stops": ["Amber Fort", "Panna Meena ka Kund", "Jaigarh Fort"]},
+    {"name": "Museum and cenotaphs", "length": "About 3 hours, a short drive to Gaitore", "stops": ["Albert Hall Museum", "Gaitore", "Nahargarh Fort"]}
+  ],
+  "museums": [
+    {"name": "Albert Hall Museum", "note": "Rajasthan's oldest museum, with sculpture, metalwork, textiles, paintings and an Egyptian mummy."},
+    {"name": "City Palace museum", "note": "Royal textiles, arms, manuscripts and paintings of the Jaipur court."},
+    {"name": "Amrapali Museum", "note": "Private museum of Indian jewellery and silver objects."}
+  ],
+  "best_time": "October to March. Walk the old city early in the morning before traffic builds; summer afternoons are very hot.",
+  "faq": [
+    {"q": "Which historical places in Jaipur should a heritage walk cover?", "a": "Inside the walled city: Hawa Mahal, Jantar Mantar, the City Palace and the main bazaars. Outside: Amber Fort, Panna Meena ka Kund, Jaigarh and Nahargarh. The Albert Hall Museum is the best single museum stop."},
+    {"q": "How many UNESCO sites are there in Jaipur?", "a": "Three are linked to Jaipur: Jantar Mantar (2010), Amber Fort as part of the Hill Forts of Rajasthan (2013), and the Jaipur walled city itself (2019)."},
+    {"q": "Is a Jaipur heritage walk good for school students?", "a": "Yes. Jantar Mantar is excellent for science and history together, and the City Palace and Hawa Mahal are close by. Walk early, in small groups, and use a coach for Amber and the ridge forts."},
+    {"q": "What are the main museums in Jaipur?", "a": "The Albert Hall Museum is the state museum, with collections across art and archaeology. The City Palace museum covers the royal court. Amber Fort itself works as a museum of palace architecture."},
+    {"q": "Can we combine Jaipur with Delhi and Agra?", "a": "Yes. Talaash Heritage arranges the Three capitals study tour and private journeys linking Delhi, Agra and Jaipur, led by an archaeologist or historian, in English or Hindi."}
+  ],
+  "related_programmes": ["jaipur-jantar-mantar-instruments-and-observation.html", "three-capitals-delhi-agra-and-jaipur.html", "forts-of-rajasthan.html", "the-golden-triangle-with-an-archaeologist.html", "jantar-mantar-delhi.html", "a-study-tour-built-for-your-group.html"],
+  "related_guides": ["heritage-sites-in-rajasthan", "forts-of-india", "stepwells-of-india", "unesco-world-heritage-sites-in-india", "heritage-walk-in-agra", "heritage-walk-in-udaipur"],
+  "bundle": {"title": "Two observatories", "pitch": "Compare Sawai Jai Singh II's observatory in Delhi with the larger one in Jaipur: same builder, different scale and precision.", "items": ["jantar-mantar-delhi.html", "jaipur-jantar-mantar-instruments-and-observation.html"]},
+  "audience_hooks": ["Schools: Jantar Mantar as a science and history session, or Jaipur within the Three capitals study tour.", "Colleges: the Forts of Rajasthan study tour, from Amber to Chittorgarh.", "Families and travellers: The Golden Triangle with an archaeologist as a private journey."],
+  "sem": {
+    "ad_group": "Heritage walk Jaipur",
+    "keywords": ["heritage walk in jaipur", "jaipur walking tour for schools", "jaipur heritage tour with historian", "jantar mantar jaipur guided visit", "jaipur study tour", "amber fort guided tour archaeologist", "rajasthan forts study tour"],
+    "negatives": ["free", "pdf", "essay", "drawing", "hotel", "ticket price", "jobs"],
+    "headlines": ["Heritage Walks in Jaipur", "Led by Archaeologists", "Jantar Mantar for Schools", "Walled City and Amber", "In English or Hindi"],
+    "descriptions": ["Jaipur heritage walks and study tours with archaeologists, arranged for your group.", "Walled city, Jantar Mantar, Amber and the Rajasthan hill forts, for schools and families."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Jaipur was planned on a grid in 1727.", "caption": "Sawai Jai Singh II laid out wide bazaars and equal city blocks inside a wall with gates. Walk down Tripolia Bazaar and you are still following the 18th century plan."},
+      {"angle": "tip", "hook": "Go behind the Hawa Mahal.", "caption": "From the street it looks like a palace. From the back you see it is a screen only a room or so deep, built in 1799 so women of the court could watch processions unseen."},
+      {"angle": "offer", "hook": "Tell time with a sundial the size of a building.", "caption": "Our Jantar Mantar session lets students read the instruments themselves. We arrange it, and full Jaipur walks, for schools, colleges, companies and families, in English or Hindi."}
+    ],
+    "reel": "Shadow moving on the Samrat Yantra, then a drone-free street shot of the grid bazaar and the Hawa Mahal screen. Line: a city planned like an instrument. End card: Jaipur heritage walks, arranged on request.",
+    "hashtags": ["#Jaipur", "#PinkCity", "#JantarMantar", "#HawaMahal", "#AmberFort", "#HeritageWalk", "#Rajasthan", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Jaipur heritage walk: the city planned on a grid",
+  "og_description": "Hawa Mahal, Jantar Mantar, City Palace and Amber, with routes, museums and tips for school groups.",
+  "cta": "We arrange Jaipur heritage walks and study tours on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."
+}

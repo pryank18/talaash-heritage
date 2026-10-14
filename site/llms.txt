@@ -1,0 +1,162 @@
+# Talaash Heritage
+
+> Talaash Heritage (New Delhi, since 2018, registered 2021) is a team for Archaeology, Linguistics, Anthropology, Arts, Sanskrit, History and Heritage. It runs heritage walks, museum visits, lectures, courses, workshops, field schools, study tours and career counselling, arranged on request for schools, colleges, companies and private groups anywhere in India or online. TALAASHH is its travel name for multi-day heritage journeys.
+
+## Programmes
+- [Everything we offer](https://talaash-heritage.pages.dev/shop.html)
+- [Programme finder](https://talaash-heritage.pages.dev/finder.html)
+- [TALAASHH journeys](https://talaash-heritage.pages.dev/journeys.html)
+- [Contact](https://talaash-heritage.pages.dev/contact.html)
+
+## Ancient Indian history
+- [Ancient Indian history](https://talaash-heritage.pages.dev/ancient-indian-history.html): From stone tools to the Cholas: a clear timeline, the sources and the debates, without the jargon.
+- [Ashoka and his edicts](https://talaash-heritage.pages.dev/ashoka-and-his-edicts.html): What Ashoka wrote, where his edicts stand, and how to read a few words of Brahmi yourself.
+- [Chola dynasty](https://talaash-heritage.pages.dev/chola-dynasty.html): How the Cholas ruled south India and the sea, and what to look for at Thanjavur.
+- [Delhi Sultanate](https://talaash-heritage.pages.dev/delhi-sultanate.html): From Aibak to Ibrahim Lodi: who ruled Delhi from 1206 to 1526, and the monuments they left.
+- [Gupta empire](https://talaash-heritage.pages.dev/gupta-empire.html): Who the Guptas were, why their art matters, and where to see the first Indian stone temples.
+- [How to study ancient Indian history for UPSC](https://talaash-heritage.pages.dev/how-to-study-ancient-indian-history-for-upsc.html): NCERTs, one standard book, sources, maps and museums: a calm way to learn ancient history for the exam.
+- [Indian history timeline](https://talaash-heritage.pages.dev/indian-history-timeline.html): Every major period of Indian history on one page, with the dates worth remembering and where to see them.
+- [Indus Valley Civilization](https://talaash-heritage.pages.dev/indus-valley-civilization.html): Planned cities, an unread script and India's own Harappan sites, from Rakhigarhi to Dholavira.
+- [Mahajanapadas](https://talaash-heritage.pages.dev/mahajanapadas.html): Sixteen states, their capitals in one table, and the reasons one of them built an empire.
+- [Major dynasties of ancient India](https://talaash-heritage.pages.dev/major-dynasties-of-ancient-india.html): Founders, capitals, dates and one monument each: the dynasty list you will actually remember.
+- [Mauryan empire](https://talaash-heritage.pages.dev/mauryan-empire.html): Rulers, officials, sources and polished stone: the Mauryas in one clear guide, and where to see them.
+- [Mughal empire](https://talaash-heritage.pages.dev/mughal-empire.html): Six great emperors, how they governed, and the tombs and forts they left in Delhi and Agra.
+- [Seven cities of Delhi](https://talaash-heritage.pages.dev/seven-cities-of-delhi.html): Seven capitals from Lal Kot to Shahjahanabad, what survives of each, and a plan to see them.
+- [Vedic period](https://talaash-heritage.pages.dev/vedic-period.html): How north India changed from herding chiefdoms to farming kingdoms, and what the evidence says.
+- [Vijayanagara empire](https://talaash-heritage.pages.dev/vijayanagara-empire.html): Who built Hampi, how the empire worked, and what happened after Talikota in 1565.
+
+## Archaeology
+- [Archaeology in India](https://talaash-heritage.pages.dev/archaeology-in-india.html): From Prinsep and Cunningham to Rakhigarhi, the story, methods and careers of Indian archaeology.
+- [Archaeological Survey of India (ASI)](https://talaash-heritage.pages.dev/archaeological-survey-of-india.html): Founded in 1861: how the ASI protects India's monuments, what its circles do and what the AMASR Act says.
+- [Archaeology courses in India](https://talaash-heritage.pages.dev/archaeology-courses-in-india.html): BA, MA, PG diploma or PhD: a clear map of how to study archaeology in India and where each step leads.
+- [Best archaeology museums in India and what to see in them](https://talaash-heritage.pages.dev/best-archaeology-museums-in-india.html): From the National Museum to the Sarnath lion capital: where to see India's archaeology up close.
+- [Buddhist caves in India](https://talaash-heritage.pages.dev/buddhist-caves-in-india.html): Prayer halls and monasteries cut into basalt: how to see and understand India's Buddhist caves.
+- [Difference between archaeology and history, with Indian examples](https://talaash-heritage.pages.dev/difference-between-archaeology-and-history.html): Texts against trenches: how historians and archaeologists read India's past, and why they need each other.
+- [Famous archaeological sites in India, from Bhimbetka to Hampi](https://talaash-heritage.pages.dev/famous-archaeological-sites-in-india.html): From Bhimbetka's painted shelters to Hampi's ruins: India's key archaeological sites and why they matter.
+- [How an archaeological excavation works, step by step](https://talaash-heritage.pages.dev/how-an-excavation-works.html): Survey, trenches, layers and a lot of recording: what really happens on an Indian dig, step by step.
+- [How archaeologists date artifacts](https://talaash-heritage.pages.dev/how-archaeologists-date-artifacts.html): Layers, pot styles, carbon-14, glowing pottery, tree rings and coins: the toolkit for dating India's past.
+- [How to become an archaeologist in India](https://talaash-heritage.pages.dev/how-to-become-an-archaeologist-in-india.html): Degrees, fieldwork and the jobs they lead to: an honest map of archaeology careers in India.
+- [Rock art in India](https://talaash-heritage.pages.dev/rock-art-in-india.html): Hunters, dancers and riders painted over thousands of years: how to see and understand India's rock art.
+- [What is archaeology?](https://talaash-heritage.pages.dev/what-is-archaeology.html): Pots, bones, seeds and soil layers: how archaeologists read the human past, with Indian examples.
+- [What is epigraphy?](https://talaash-heritage.pages.dev/what-is-epigraphy.html): Edicts, copper plates and temple walls: how epigraphists read India's inscriptions and why they matter.
+- [What is numismatics?](https://talaash-heritage.pages.dev/what-is-numismatics.html): Punch-marked silver to Mughal rupees: how coins name kings, date sites and trace trade across India.
+
+## Architecture
+- [Indian temple architecture](https://talaash-heritage.pages.dev/indian-temple-architecture.html): Nagara, Dravida and Vesara, the parts of a temple and where to see the best examples, explained clearly.
+- [Forts of India](https://talaash-heritage.pages.dev/forts-of-india.html): Hill, sea and desert forts of India, the UNESCO-listed ones, and what to look for when you visit.
+- [Indo-Islamic architecture](https://talaash-heritage.pages.dev/indo-islamic-architecture.html): Arches, domes and minarets: how Indo-Islamic architecture grew in India, with Delhi and regional examples.
+- [Mughal architecture](https://talaash-heritage.pages.dev/mughal-architecture.html): Charbagh gardens, double domes, marble and inlay: how Mughal architecture began, peaked and ended.
+- [Stepwells of India](https://talaash-heritage.pages.dev/stepwells-of-india.html): How baolis and vavs worked, and where to see the finest, from Rani-ki-Vav to Delhi's Agrasen ki Baoli.
+
+## Indian heritage
+- [Indian heritage](https://talaash-heritage.pages.dev/indian-heritage-guide.html): Monuments, crafts, dance, UNESCO sites and how India looks after its past, in one clear guide.
+- [Classical dances of India](https://talaash-heritage.pages.dev/classical-dances-of-india.html): Bharatanatyam to Sattriya: the eight classical dances, their states and where to see them carved in stone.
+- [Difference between heritage and history, with Indian examples](https://talaash-heritage.pages.dev/difference-between-heritage-and-history.html): One asks what happened. The other asks what it means to us now. A clear guide with Indian examples.
+- [Folk dances of India state-wise](https://talaash-heritage.pages.dev/folk-dances-of-india-state-wise.html): Bhangra to Bihu, Garba to Cheraw: a clear state-wise table of India's folk dances, with notes for students.
+- [Heritage conservation in India](https://talaash-heritage.pages.dev/heritage-conservation-in-india.html): The ASI, the 100 m and 200 m rule, INTACH and communities: heritage conservation in India in one guide.
+- [Heritage tourism in India](https://talaash-heritage.pages.dev/heritage-tourism-in-india.html): Where to go, what to watch for and how to plan a heritage trip in India that actually teaches you something.
+- [Traditional crafts of India](https://talaash-heritage.pages.dev/traditional-crafts-of-india.html): Looms, blocks, bronze and clay: India's traditional crafts by type and state, with GI-tagged examples.
+- [UNESCO World Heritage Sites in India](https://talaash-heritage.pages.dev/unesco-world-heritage-sites-in-india.html): From the Taj Mahal to Sarnath, the newest: every Indian World Heritage Site with state, year and type.
+- [What is cultural heritage?](https://talaash-heritage.pages.dev/what-is-cultural-heritage.html): From the Qutb Minar to Garba: what counts as cultural heritage in India, and why it matters.
+- [What is intangible cultural heritage?](https://talaash-heritage.pages.dev/what-is-intangible-cultural-heritage.html): Songs, dances, crafts and festivals: what intangible heritage means, with India's UNESCO-listed examples.
+
+## Sanskrit and scripts
+- [Sanskrit and Indian knowledge systems](https://talaash-heritage.pages.dev/sanskrit-and-indian-knowledge-systems.html): Panini, the Vedas, scripts, Prakrit and Pali, and what India's sciences really achieved, explained clearly.
+- [Ancient scripts of India](https://talaash-heritage.pages.dev/ancient-scripts-of-india.html): How India wrote, from the undeciphered Indus signs to Brahmi, Sharada, Grantha and Nagari.
+- [Brahmi script](https://talaash-heritage.pages.dev/brahmi-script.html): Ashoka's letters, how Prinsep cracked them, and the scripts from Devanagari to Thai that grew from Brahmi.
+- [Classical languages of India](https://talaash-heritage.pages.dev/classical-languages-of-india.html): From Tamil in 2004 to the five languages added in 2024, with what makes each one classical.
+- [Indian manuscripts](https://talaash-heritage.pages.dev/indian-manuscripts.html): How India's texts were written, copied and kept, and how they are being saved today.
+- [Learn Sanskrit for beginners](https://talaash-heritage.pages.dev/learn-sanskrit-for-beginners.html): Script, grammar and first texts in a sensible order, with free routes and honest timings.
+- [Prakrit and Pali](https://talaash-heritage.pages.dev/prakrit-and-pali.html): The everyday languages of ancient India, in which Ashoka, the Buddha's followers and Jain teachers wrote.
+- [Sanskrit alphabet](https://talaash-heritage.pages.dev/sanskrit-alphabet.html): Every vowel and consonant in Devanagari with IAST, and the logic behind the order.
+- [Sanskrit grammar basics](https://talaash-heritage.pages.dev/sanskrit-grammar-basics.html): Sandhi, cases, verbs and Panini's famous grammar, with simple worked examples.
+- [Sanskrit literature](https://talaash-heritage.pages.dev/sanskrit-literature.html): Epics, Kalidasa's plays, fables, science and history: a clear map of what was written in Sanskrit.
+- [Vedas and Upanishads](https://talaash-heritage.pages.dev/vedas-and-upanishads.html): The four Vedas, their four layers and the principal Upanishads, with honest, careful dates.
+- [What is Sanskrit?](https://talaash-heritage.pages.dev/what-is-sanskrit.html): Where Sanskrit came from, how it changed, what was written in it and why historians still need it.
+
+## Anthropology
+- [Anthropology and tribal India](https://talaash-heritage.pages.dev/anthropology-and-tribal-india.html): What anthropologists do, how India's tribal communities differ, and how to study people respectfully.
+- [Anthropology optional for UPSC](https://talaash-heritage.pages.dev/anthropology-optional-for-upsc.html): What Paper I and Paper II cover, who the subject suits and a practical plan to prepare.
+- [Branches of anthropology](https://talaash-heritage.pages.dev/branches-of-anthropology.html): Social, biological, archaeological and linguistic anthropology, with Indian examples and career pointers.
+- [Difference between anthropology and sociology, explained](https://talaash-heritage.pages.dev/difference-between-anthropology-and-sociology.html): Scope, methods and careers compared in one clear table, plus why the line is so thin in India.
+- [Folklore of India](https://talaash-heritage.pages.dev/folklore-of-india.html): From the Panchatantra to Pabuji ki Phad: India's folk tales, songs and the performers who carry them.
+- [Stone Age in India](https://talaash-heritage.pages.dev/stone-age-in-india.html): Palaeolithic, Mesolithic and Neolithic India, with Attirampakkam, Bhimbetka, Mehrgarh and Burzahom.
+- [Tribes of India](https://talaash-heritage.pages.dev/tribes-of-india.html): Who Scheduled Tribes are, the Fifth and Sixth Schedules, where communities live and what PVTG means.
+- [What is anthropology?](https://talaash-heritage.pages.dev/what-is-anthropology.html): How anthropologists study humans past and present, its four fields, and its long history in India.
+- [What is ethnography?](https://talaash-heritage.pages.dev/what-is-ethnography.html): How ethnographers live, listen and write, with classic and Indian examples and the ethics that matter.
+
+## Heritage walks by city
+- [Agra](https://talaash-heritage.pages.dev/heritage-walk-in-agra.html)
+- [Ahmedabad](https://talaash-heritage.pages.dev/heritage-walk-in-ahmedabad.html)
+- [Amritsar](https://talaash-heritage.pages.dev/heritage-walk-in-amritsar.html)
+- [Badami](https://talaash-heritage.pages.dev/heritage-walk-in-badami.html)
+- [Bengaluru](https://talaash-heritage.pages.dev/heritage-walk-in-bengaluru.html)
+- [Bhopal](https://talaash-heritage.pages.dev/heritage-walk-in-bhopal.html)
+- [Bhubaneswar](https://talaash-heritage.pages.dev/heritage-walk-in-bhubaneswar.html)
+- [Bodh Gaya](https://talaash-heritage.pages.dev/heritage-walk-in-bodh-gaya.html)
+- [Chandigarh](https://talaash-heritage.pages.dev/heritage-walk-in-chandigarh.html)
+- [Chennai](https://talaash-heritage.pages.dev/heritage-walk-in-chennai.html)
+- [Chhatrapati Sambhajinagar](https://talaash-heritage.pages.dev/heritage-walk-in-chhatrapati-sambhajinagar.html)
+- [Delhi](https://talaash-heritage.pages.dev/heritage-walk-in-delhi.html)
+- [Guwahati](https://talaash-heritage.pages.dev/heritage-walk-in-guwahati.html)
+- [Gwalior](https://talaash-heritage.pages.dev/heritage-walk-in-gwalior.html)
+- [Hampi](https://talaash-heritage.pages.dev/heritage-walk-in-hampi.html)
+- [Hyderabad](https://talaash-heritage.pages.dev/heritage-walk-in-hyderabad.html)
+- [Jaipur](https://talaash-heritage.pages.dev/heritage-walk-in-jaipur.html)
+- [Jaisalmer](https://talaash-heritage.pages.dev/heritage-walk-in-jaisalmer.html)
+- [Jodhpur](https://talaash-heritage.pages.dev/heritage-walk-in-jodhpur.html)
+- [Khajuraho](https://talaash-heritage.pages.dev/heritage-walk-in-khajuraho.html)
+- [Kochi](https://talaash-heritage.pages.dev/heritage-walk-in-kochi.html)
+- [Kolkata](https://talaash-heritage.pages.dev/heritage-walk-in-kolkata.html)
+- [Leh](https://talaash-heritage.pages.dev/heritage-walk-in-leh.html)
+- [Lucknow](https://talaash-heritage.pages.dev/heritage-walk-in-lucknow.html)
+- [Madurai](https://talaash-heritage.pages.dev/heritage-walk-in-madurai.html)
+- [Mahabalipuram](https://talaash-heritage.pages.dev/heritage-walk-in-mahabalipuram.html)
+- [Mumbai](https://talaash-heritage.pages.dev/heritage-walk-in-mumbai.html)
+- [Mysuru](https://talaash-heritage.pages.dev/heritage-walk-in-mysuru.html)
+- [Old Goa](https://talaash-heritage.pages.dev/heritage-walk-in-old-goa.html)
+- [Orchha](https://talaash-heritage.pages.dev/heritage-walk-in-orchha.html)
+- [Patna](https://talaash-heritage.pages.dev/heritage-walk-in-patna.html)
+- [Prayagraj](https://talaash-heritage.pages.dev/heritage-walk-in-prayagraj.html)
+- [Puducherry](https://talaash-heritage.pages.dev/heritage-walk-in-puducherry.html)
+- [Pune](https://talaash-heritage.pages.dev/heritage-walk-in-pune.html)
+- [Shimla](https://talaash-heritage.pages.dev/heritage-walk-in-shimla.html)
+- [Srinagar](https://talaash-heritage.pages.dev/heritage-walk-in-srinagar.html)
+- [Thanjavur](https://talaash-heritage.pages.dev/heritage-walk-in-thanjavur.html)
+- [Udaipur](https://talaash-heritage.pages.dev/heritage-walk-in-udaipur.html)
+- [Varanasi](https://talaash-heritage.pages.dev/heritage-walk-in-varanasi.html)
+- [Vijayapura](https://talaash-heritage.pages.dev/heritage-walk-in-vijayapura.html)
+
+## Heritage sites by state
+- [Andhra Pradesh](https://talaash-heritage.pages.dev/heritage-sites-in-andhra-pradesh.html)
+- [Arunachal Pradesh](https://talaash-heritage.pages.dev/heritage-sites-in-arunachal-pradesh.html)
+- [Assam](https://talaash-heritage.pages.dev/heritage-sites-in-assam.html)
+- [Bihar](https://talaash-heritage.pages.dev/heritage-sites-in-bihar.html)
+- [Chhattisgarh](https://talaash-heritage.pages.dev/heritage-sites-in-chhattisgarh.html)
+- [Delhi](https://talaash-heritage.pages.dev/heritage-sites-in-delhi.html)
+- [Goa](https://talaash-heritage.pages.dev/heritage-sites-in-goa.html)
+- [Gujarat](https://talaash-heritage.pages.dev/heritage-sites-in-gujarat.html)
+- [Haryana](https://talaash-heritage.pages.dev/heritage-sites-in-haryana.html)
+- [Himachal Pradesh](https://talaash-heritage.pages.dev/heritage-sites-in-himachal-pradesh.html)
+- [Jammu and Kashmir](https://talaash-heritage.pages.dev/heritage-sites-in-jammu-and-kashmir.html)
+- [Jharkhand](https://talaash-heritage.pages.dev/heritage-sites-in-jharkhand.html)
+- [Karnataka](https://talaash-heritage.pages.dev/heritage-sites-in-karnataka.html)
+- [Kerala](https://talaash-heritage.pages.dev/heritage-sites-in-kerala.html)
+- [Ladakh](https://talaash-heritage.pages.dev/heritage-sites-in-ladakh.html)
+- [Madhya Pradesh](https://talaash-heritage.pages.dev/heritage-sites-in-madhya-pradesh.html)
+- [Maharashtra](https://talaash-heritage.pages.dev/heritage-sites-in-maharashtra.html)
+- [Manipur](https://talaash-heritage.pages.dev/heritage-sites-in-manipur.html)
+- [Meghalaya](https://talaash-heritage.pages.dev/heritage-sites-in-meghalaya.html)
+- [Mizoram](https://talaash-heritage.pages.dev/heritage-sites-in-mizoram.html)
+- [Nagaland](https://talaash-heritage.pages.dev/heritage-sites-in-nagaland.html)
+- [Odisha](https://talaash-heritage.pages.dev/heritage-sites-in-odisha.html)
+- [Puducherry](https://talaash-heritage.pages.dev/heritage-sites-in-puducherry.html)
+- [Punjab](https://talaash-heritage.pages.dev/heritage-sites-in-punjab.html)
+- [Rajasthan](https://talaash-heritage.pages.dev/heritage-sites-in-rajasthan.html)
+- [Sikkim](https://talaash-heritage.pages.dev/heritage-sites-in-sikkim.html)
+- [Tamil Nadu](https://talaash-heritage.pages.dev/heritage-sites-in-tamil-nadu.html)
+- [Telangana](https://talaash-heritage.pages.dev/heritage-sites-in-telangana.html)
+- [Tripura](https://talaash-heritage.pages.dev/heritage-sites-in-tripura.html)
+- [Uttar Pradesh](https://talaash-heritage.pages.dev/heritage-sites-in-uttar-pradesh.html)
+- [Uttarakhand](https://talaash-heritage.pages.dev/heritage-sites-in-uttarakhand.html)
+- [West Bengal](https://talaash-heritage.pages.dev/heritage-sites-in-west-bengal.html)

@@ -1,0 +1,117 @@
+{
+  "slug": "heritage-walk-in-puducherry",
+  "type": "city",
+  "pillar": "heritage",
+  "title": "Heritage walk in Puducherry: the French and Tamil quarters and Arikamedu",
+  "seo_title": "Heritage Walk in Puducherry: White Town, Tamil Quarter",
+  "meta_description": "Plan a heritage walk in Puducherry: White Town, the Tamil quarter, churches and temples, the Pondicherry Museum and Arikamedu, with routes for schools.",
+  "keywords": ["heritage walk in puducherry", "heritage walk in pondicherry", "historical places in puducherry", "heritage sites in puducherry", "museums in puducherry", "puducherry heritage walk for schools", "white town pondicherry walk", "tamil quarter pondicherry", "arikamedu archaeological site"],
+  "summary": "A heritage walk in Puducherry (Pondicherry) covers the planned grid of the former French capital in India: White Town by the sea, with its villas, churches and the promenade, and the Tamil quarter west of the old canal, with its verandah houses and temples. Arikamedu, an Indo-Roman trading site of the early centuries CE, lies about 4 km south.",
+  "city": "Puducherry",
+  "state": "Puducherry",
+  "sections": [
+    {
+      "h2": "Why Puducherry matters for heritage",
+      "paras": [
+        "Puducherry was the headquarters of French possessions in India from the late 17th century until 1954, when it was transferred to India (the formal treaty came into force in 1962). Its town plan, a grid split by a canal into a European quarter by the sea and a Tamil quarter inland, survives better than almost any colonial plan in the country. So does a distinctive local architecture that mixes French classical facades with Tamil verandahs and courtyards.",
+        "Long before the French, the coast here was part of Indian Ocean trade. Arikamedu, excavated by Mortimer Wheeler in 1945 and by later teams, produced Roman amphorae, Arretine ware and beads, evidence of contact with the Mediterranean in roughly the 1st century BCE to the 2nd century CE. Our [lecture on foods as historical evidence](foods-as-historical-evidence-coconut-spice-and-exchange.html) explains what that trade carried."
+      ]
+    },
+    {
+      "h2": "Historical places in Puducherry by period",
+      "paras": [
+        "The French East India Company took Pondichéry in 1674. The Dutch held it between 1693 and 1699, and the British captured it several times in the 18th century wars, destroying much of the town in 1761. Most of what you see was rebuilt after that, on the original grid, by the late 18th and 19th centuries.",
+        "Key layers include the Manakula Vinayagar Temple, older than the French town in tradition; the Jesuit Church of Our Lady of the Immaculate Conception (present building completed 1791); the Basilica of the Sacred Heart (1908); and the 20th century arrival of Sri Aurobindo, whose ashram from 1926 shaped part of White Town."
+      ],
+      "table": {
+        "head": ["Period", "Examples"],
+        "rows": [
+          ["Early historic", "Arikamedu Indo-Roman trading site"],
+          ["French and Tamil town, 1674 to 1761", "Town grid, Manakula Vinayagar Temple tradition"],
+          ["Rebuilt town, 1765 to 1954", "Immaculate Conception Cathedral, Hôtel de Ville, Raj Niwas, Tamil quarter houses"],
+          ["20th century", "Sacred Heart Basilica, Aurobindo Ashram, Auroville nearby"]
+        ]
+      }
+    },
+    {
+      "h2": "What you see on a heritage walk in Puducherry",
+      "paras": [
+        "In White Town the walk follows the beach road (Goubert Avenue) past the old lighthouse, the Gandhi statue on a plinth of pillars that are said to come from Gingee, the French War Memorial and the Hôtel de Ville. Behind them, Rue Romain Rolland and the streets around Bharathi Park show the high walls, gateways and shuttered windows of French villas, with Raj Niwas, the Lieutenant Governor's residence, facing the park.",
+        "Across the canal, the Tamil quarter has a different rhythm: houses with a thinnai (raised verandah) facing the street, a courtyard inside, and Madras terrace roofs. INTACH and local residents have worked to document and conserve these streets. The [heritage photography walk](heritage-photography-evidence-led-photo-walk.html) suits this area, where details such as doorways and pillars tell the story."
+      ]
+    },
+    {
+      "h2": "Museums in Puducherry",
+      "paras": [
+        "The Pondicherry Museum near Bharathi Park displays Arikamedu finds, Chola bronzes, French period furniture and coins. The house of the Tamil poet Subramania Bharati, who lived here in exile from 1908 to 1918, is now a small museum. A [museum gallery study with an archaeologist](museum-morning-with-an-archaeologist.html) works well with the Arikamedu material."
+      ]
+    },
+    {
+      "h2": "Puducherry heritage walk for schools and colleges",
+      "paras": [
+        "Puducherry is flat, shaded in parts and quiet in the early morning, which makes it easy for school groups. The walk links to European trading companies, the Carnatic wars and the freedom movement. Architecture and planning students can study the grid, the canal and the conservation regulations; history students can trace Indo-Roman trade at Arikamedu.",
+        "Puducherry walks are shaped around your group and the time you have. Groups often combine the city with Mahabalipuram and Gingee; see our [Mamallapuram programme](mamallapuram-rock-cut-and-structural-temples.html) and the [south India temple architecture study tour](south-india-temple-architecture.html)."
+      ]
+    },
+    {
+      "h2": "Practical advice for groups",
+      "paras": [
+        "Walk early: by 10 am the sea road fills and the sun is strong. The beach road is closed to traffic in the evenings. Churches and temples have their own rules; the Aurobindo Ashram has fixed visiting hours and asks for silence. Arikamedu is an open site with little to see above ground, so prepare students with the museum first. Check the site or museum website before you go, and see [heritage sites in Puducherry](heritage-sites-in-puducherry.html) for Karaikal and other enclaves."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Goubert Avenue promenade", "period": "French town plan", "note": "The seafront road of White Town. Start here to understand the grid running back from the sea."},
+    {"name": "Old Lighthouse", "period": "1836", "note": "Early lighthouse on the promenade, now disused, beside the old port."},
+    {"name": "Gandhi statue and pillars", "period": "Statue 20th century, pillars older", "note": "The statue stands among carved stone pillars that local accounts say were brought from Gingee."},
+    {"name": "French War Memorial", "period": "1938", "note": "Memorial to soldiers from Pondichéry who died in the First World War."},
+    {"name": "Bharathi Park", "period": "18th to 19th century", "note": "The central square of White Town, with the Aayi Mandapam monument at its centre."},
+    {"name": "Raj Niwas", "period": "18th century origins", "note": "Former residence of the French governors, now the Lieutenant Governor's residence. Seen from outside."},
+    {"name": "Cathedral of Our Lady of the Immaculate Conception", "period": "Completed 1791", "note": "Jesuit cathedral on a site used for churches since the late 17th century."},
+    {"name": "Manakula Vinayagar Temple", "period": "Tradition older than the French town", "note": "Ganesha temple in White Town, a reminder that the town grew around existing shrines."},
+    {"name": "Tamil quarter streets", "period": "18th to 20th century", "note": "Houses with thinnai verandahs and courtyards, west of the old canal. Look at doorways and pillars."},
+    {"name": "Basilica of the Sacred Heart of Jesus", "period": "1908", "note": "Gothic-style church with stained glass, near the railway station."},
+    {"name": "Pondicherry Museum", "period": "Collection 20th century", "note": "Arikamedu finds, bronzes and French period objects."},
+    {"name": "Arikamedu", "period": "About 1st century BCE to 2nd century CE", "note": "Indo-Roman trading site on the Ariyankuppam river, about 4 km south. Vehicle needed."}
+  ],
+  "routes": [
+    {"name": "White Town on foot", "length": "About 2.5 hours", "stops": ["Goubert Avenue promenade", "Old Lighthouse", "Gandhi statue and pillars", "French War Memorial", "Bharathi Park", "Raj Niwas", "Pondicherry Museum"]},
+    {"name": "Across the canal", "length": "About 2.5 hours", "stops": ["Manakula Vinayagar Temple", "Cathedral of Our Lady of the Immaculate Conception", "Tamil quarter streets", "Basilica of the Sacred Heart of Jesus"]},
+    {"name": "Arikamedu by vehicle", "length": "About 2 hours with the museum", "stops": ["Pondicherry Museum", "Arikamedu"]}
+  ],
+  "museums": [
+    {"name": "Pondicherry Museum", "note": "Arikamedu pottery and beads, bronzes, French period objects."},
+    {"name": "Bharathi Memorial Museum", "note": "The house where Subramania Bharati lived in exile."},
+    {"name": "Bharathidasan Memorial Museum", "note": "Home of the Tamil poet Bharathidasan, with manuscripts and photographs."}
+  ],
+  "best_time": "December to February. October and November bring heavy northeast monsoon rain; summers are humid.",
+  "faq": [
+    {"q": "What are the main historical places in Puducherry?", "a": "The promenade, Old Lighthouse, Bharathi Park, Raj Niwas, the Immaculate Conception Cathedral, the Sacred Heart Basilica, the Manakula Vinayagar Temple, the Tamil quarter, the Pondicherry Museum and the Arikamedu site."},
+    {"q": "What is Arikamedu?", "a": "An early historic port near Puducherry where excavations found Roman amphorae, Mediterranean pottery and beads, evidence of trade with the Roman world around the 1st century BCE to the 2nd century CE."},
+    {"q": "When did Puducherry become part of India?", "a": "De facto transfer from France took place on 1 November 1954. The treaty of cession was ratified and came into force in 1962."},
+    {"q": "Is a Puducherry heritage walk good for school groups?", "a": "Yes. White Town is flat and compact, and the walk links to European trading companies and the Carnatic wars. Start early to avoid heat and traffic."}
+  ],
+  "related_programmes": ["foods-as-historical-evidence-coconut-spice-and-exchange.html", "heritage-photography-evidence-led-photo-walk.html", "mamallapuram-rock-cut-and-structural-temples.html", "south-india-temple-architecture.html", "museum-morning-with-an-archaeologist.html", "sacred-architecture-across-communities.html"],
+  "related_guides": ["heritage-sites-in-puducherry", "heritage-walk-in-chennai", "heritage-walk-in-mahabalipuram", "heritage-sites-in-tamil-nadu", "heritage-conservation-in-india", "famous-archaeological-sites-in-india"],
+  "bundle": {"title": "Trade then and now", "pitch": "A lecture on spice and exchange, then a museum session on the Arikamedu finds and a walk through the French and Tamil quarters.", "items": ["foods-as-historical-evidence-coconut-spice-and-exchange.html", "museum-morning-with-an-archaeologist.html"]},
+  "audience_hooks": ["Schools: a White Town and Tamil quarter walk with a museum stop for the Arikamedu finds.", "Colleges: an evidence-led photography walk for architecture and media students.", "Travellers: Puducherry with Mahabalipuram on a south India study tour."],
+  "sem": {
+    "ad_group": "Heritage walk Puducherry",
+    "keywords": ["heritage walk in puducherry", "heritage walk in pondicherry", "pondicherry heritage walk for schools", "white town walking tour with historian", "private heritage tour pondicherry", "arikamedu guided visit", "pondicherry heritage tour for college students"],
+    "negatives": ["free", "pdf", "essay", "jobs", "hotel", "wikipedia"],
+    "headlines": ["Heritage Walk in Puducherry", "White Town and Tamil Quarter", "Walk With a Historian", "For Schools and Colleges", "Arranged on Request"],
+    "descriptions": ["Puducherry heritage walks led by archaeologists and historians, in English or Hindi.", "For schools, colleges, companies and private groups. Share your dates and group size."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Roman pottery was found 4 km from Pondicherry's beach.", "caption": "Excavations at Arikamedu found amphorae and fine Roman tableware, evidence of trade with the Mediterranean about two thousand years ago."},
+      {"angle": "tip", "hook": "Cross the canal.", "caption": "Most visitors stay in White Town. Walk west into the Tamil quarter and look for the thinnai, the raised verandah where neighbours still sit and talk."},
+      {"angle": "offer", "hook": "Puducherry with a historian.", "caption": "We arrange heritage walks in White Town, the Tamil quarter and Arikamedu for schools, colleges and private groups, in English or Hindi."}
+    ],
+    "reel": "Split screen: a French villa gateway and a Tamil quarter thinnai, same street grid. On-screen line: 'One town, two architectures.' End card: 'Puducherry heritage walks, arranged on request.'",
+    "hashtags": ["#Puducherry", "#Pondicherry", "#WhiteTown", "#TamilQuarter", "#Arikamedu", "#HeritageWalk", "#ColonialArchitecture", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Puducherry's two quarters with a historian",
+  "og_description": "French villas, Tamil verandahs and a Roman-era port nearby: Puducherry on foot.",
+  "cta": "We arrange Puducherry heritage walks on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi, with other languages through partners."
+}

@@ -1,0 +1,103 @@
+{
+  "slug": "prakrit-and-pali",
+  "type": "explainer",
+  "pillar": "sanskrit",
+  "title": "Prakrit and Pali: the everyday languages of ancient India",
+  "seo_title": "Prakrit and Pali: Languages of Ashoka, Buddha and Mahavira",
+  "meta_description": "Prakrit and Pali explained: what Middle Indo-Aryan languages are, how they differ from Sanskrit, where they were used, and the texts and inscriptions in them.",
+  "keywords": ["prakrit and pali", "what is prakrit", "what is pali language", "difference between sanskrit and prakrit", "pali language history", "prakrit language", "language of buddha", "language of jain agamas", "ardhamagadhi prakrit", "middle indo-aryan languages"],
+  "summary": "Prakrit is the name for the Middle Indo-Aryan languages that developed from Old Indo-Aryan and were spoken and written across ancient India. Pali is one of them, preserved as the language of the Theravada Buddhist canon. Ashoka's edicts, early Jain scriptures in Ardhamagadhi, and the speech of many characters in Sanskrit drama are all in Prakrit.",
+  "sections": [
+    {
+      "h2": "What is Prakrit?",
+      "paras": [
+        "Prakrit (prākṛta, 'natural' or 'original') covers a group of related languages rather than one. Linguists call them Middle Indo-Aryan, the stage between Old Indo-Aryan (Vedic and Classical Sanskrit) and the New Indo-Aryan languages such as Hindi, Marathi, Bengali and Gujarati. They were in wide use from roughly the middle of the first millennium BCE to the end of the first millennium CE.",
+        "Prakrits simplified Sanskrit sounds and grammar in regular ways. Consonant clusters were assimilated (Sanskrit dharma became dhamma; putra became putta), some final consonants dropped, and the noun system lost the dual and merged some cases. The overlap with Sanskrit is large enough that a Sanskrit reader recognises much of a Prakrit text, but not enough to read it without learning its rules."
+      ]
+    },
+    {
+      "h2": "The main Prakrits and where they were used",
+      "paras": [
+        "Grammarians and later scholars name several literary Prakrits, each linked with a region, though the written forms became partly standardised and did not map exactly onto local speech.",
+        "Later still, Apabhramsha ('fallen' speech) marks the transition into the early forms of the modern North Indian languages, with a literature of its own, much of it Jain."
+      ],
+      "table": {
+        "head": ["Language", "Associated region", "Best known for"],
+        "rows": [
+          ["Ashokan Prakrits", "across the Mauryan empire", "Ashoka's edicts, in several regional varieties"],
+          ["Pali", "debated; often linked with western or central India", "the Theravada Buddhist canon"],
+          ["Ardhamagadhi", "Magadha region (Bihar)", "the canonical Agamas of Shvetambara Jainism"],
+          ["Shauraseni", "Mathura region", "Digambara Jain texts; prose speech in Sanskrit drama"],
+          ["Maharashtri", "Deccan", "lyric poetry such as the Gāhā Sattasaī; verse in drama"],
+          ["Magadhi", "eastern India", "speech of certain characters in drama"],
+          ["Gandhari", "Gandhara (north-west)", "Buddhist texts in Kharosthi script"]
+        ]
+      }
+    },
+    {
+      "h2": "What is Pali?",
+      "paras": [
+        "Pali is the language in which the Theravada Buddhist canon, the Tipiṭaka ('three baskets': Vinaya, Sutta and Abhidhamma), is preserved, together with its commentaries. The word pāli originally meant 'text' or 'canonical line', as opposed to commentary, and only later became the name of the language.",
+        "Theravada tradition calls the language Māgadhī and identifies it with the Buddha's own speech. Most linguists think Pali is not identical with the eastern dialect of Magadha and shows features of several regions, so it is best seen as a literary language shaped as the texts were recited and standardised. The canon was carried to Sri Lanka and, according to the island's chronicles, written down there in the 1st century BCE. From Sri Lanka, Pali Buddhism spread to Myanmar, Thailand, Laos and Cambodia, where Pali is still studied and chanted."
+      ]
+    },
+    {
+      "h2": "Prakrit in inscriptions and drama",
+      "paras": [
+        "For historians, Prakrit is unavoidable. Nearly all of the earliest Indian inscriptions, including Ashoka's edicts in [Brahmi script](brahmi-script.html), the Hathigumpha inscription of Kharavela in Odisha, and the many donor records at Sanchi, Bharhut, Karle and Nashik, are in Prakrit. Sanskrit only becomes the dominant language of inscriptions from around the 2nd to 4th centuries CE.",
+        "In classical Sanskrit drama, such as the plays of Kalidasa, kings, ministers and Brahmin characters usually speak Sanskrit, while most women, children and many other characters speak Prakrit. This convention reflects the social layering of language in courtly literature rather than a simple rule about real speech. The [Sanskrit literature](sanskrit-literature.html) guide covers these plays."
+      ]
+    },
+    {
+      "h2": "Recognition as classical languages",
+      "paras": [
+        "In October 2024 the Government of India granted classical language status to Pali and Prakrit, along with Marathi, Assamese and Bengali, bringing the total to eleven. The [classical languages of India](classical-languages-of-india.html) guide lists them all with their dates of recognition.",
+        "The decision has encouraged new interest in both languages, which had long been taught in only a small number of university departments, Buddhist and Jain institutions and specialist centres."
+      ]
+    },
+    {
+      "h2": "How to start learning Prakrit or Pali",
+      "paras": [
+        "If you know some Sanskrit or Hindi, start by learning the main sound changes; they let you guess a large share of the vocabulary. Then learn the noun and verb endings, which are fewer than in Sanskrit. Pali has the advantage of a large, well-edited canon with many study aids; Prakrit opens Jain literature and early inscriptions. Talaash Heritage runs short introductory courses in [Prakrit](prakrit-a-first-course.html) and [Pali](pali-a-first-course.html), and pairing either with the [Brahmi workshop](write-like-asoka-s-scribes-a-brahmi-workshop.html) lets you read an Ashokan edict in its original script and language."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "What is the difference between Sanskrit and Prakrit?", "a": "Sanskrit is the Old Indo-Aryan language regulated by Panini's grammar and used for learned writing. Prakrits are the Middle Indo-Aryan languages that developed from Old Indo-Aryan, with simplified sounds and grammar: dharma becomes dhamma, putra becomes putta, and the dual number disappears."},
+    {"q": "Is Pali a Prakrit?", "a": "Yes. Linguistically Pali is a Middle Indo-Aryan language and belongs with the Prakrits, though it is often named separately because of its importance as the language of the Theravada Buddhist canon."},
+    {"q": "What language did the Buddha speak?", "a": "We cannot be certain. He taught in the eastern Gangetic plain, so he probably used an eastern Middle Indo-Aryan dialect. Theravada tradition identifies Pali with his language; many linguists see Pali as a later literary standard that mixes features of several dialects."},
+    {"q": "In which language are the Jain scriptures?", "a": "The Shvetambara Jain canon (the Agamas) is mainly in Ardhamagadhi Prakrit. Digambara Jain texts are mainly in Shauraseni Prakrit. Later Jain authors also wrote extensively in Sanskrit, Apabhramsha and regional languages."},
+    {"q": "When did Pali and Prakrit become classical languages?", "a": "In October 2024, when the Government of India extended classical language status to Pali, Prakrit, Marathi, Assamese and Bengali, making eleven classical languages in all."}
+  ],
+  "related_programmes": ["prakrit-a-first-course.html", "pali-a-first-course.html", "write-like-asoka-s-scribes-a-brahmi-workshop.html", "india-s-linguistic-heritage.html", "reading-india-s-scripts-brahmi-to-sarada.html", "sarada-script.html", "sanchi-stupas-gateways-and-buddhist-art.html"],
+  "related_guides": ["what-is-sanskrit", "brahmi-script", "classical-languages-of-india", "ashoka-and-his-edicts", "sanskrit-literature", "buddhist-caves-in-india"],
+  "cta": "Talaash Heritage teaches introductory courses in Prakrit and in Pali, online or in person for groups, with an optional Brahmi workshop to read inscriptions in the original.",
+  "bundle": {
+    "title": "Read an Ashokan edict yourself",
+    "pitch": "The Prakrit course gives you the language of the edicts and the Brahmi workshop gives you the script. Together they let you read a line of Ashoka unaided.",
+    "items": ["prakrit-a-first-course.html", "write-like-asoka-s-scribes-a-brahmi-workshop.html"]
+  },
+  "audience_hooks": [
+    "Colleges: introductory Prakrit or Pali for history, Buddhist studies and language students.",
+    "Adult learners: small online groups in Pali or Prakrit from the first letter.",
+    "Schools: a lecture on India's linguistic heritage, including Pali and Prakrit."
+  ],
+  "sem": {
+    "ad_group": "Prakrit and Pali courses",
+    "keywords": ["prakrit course online", "pali course online", "learn pali language", "learn prakrit language", "pali course for beginners", "prakrit classes", "ancient indian language course"],
+    "negatives": ["free", "pdf", "notes", "translation app", "dictionary download", "ugc net answer key"],
+    "headlines": ["Learn Prakrit From Scratch", "Introductory Pali Course", "Read Ashoka's Language", "Online Group Courses", "For Students and Adults"],
+    "descriptions": ["Introductory Prakrit and Pali courses for students and adult learners.", "Small groups online or in person. Add a Brahmi workshop to read inscriptions."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Ashoka did not write in Sanskrit.", "caption": "His edicts are in Prakrit, the everyday Middle Indo-Aryan speech of the time. Sanskrit only took over royal inscriptions several centuries later."},
+      {"angle": "tip", "hook": "Know Sanskrit? You can guess Pali.", "caption": "Turn clusters into double consonants: dharma to dhamma, putra to putta, sutra to sutta. That single rule opens up a surprising amount of vocabulary."},
+      {"angle": "offer", "hook": "Two newly recognised classical languages. Two first courses.", "caption": "Our introductory Prakrit and Pali courses start from the alphabet and reach real texts. Online or in person, for colleges and adult groups."}
+    ],
+    "reel": "Word pairs flash on screen: dharma / dhamma, putra / putta, karma / kamma. On-screen line: 'Sanskrit, simplified by everyday speech.' End card: 'Prakrit and Pali courses for your group.'",
+    "hashtags": ["#Prakrit", "#Pali", "#PaliLanguage", "#ClassicalLanguages", "#Buddhism", "#Jainism", "#Ashoka", "#IndianLanguages", "#TalaashHeritage"]
+  },
+  "og_title": "Prakrit and Pali: the languages people spoke",
+  "og_description": "The everyday languages of ancient India, in which Ashoka, the Buddha's followers and Jain teachers wrote."
+}

@@ -1,0 +1,205 @@
+{
+  "slug": "what-is-sanskrit",
+  "type": "explainer",
+  "pillar": "sanskrit",
+  "title": "What is Sanskrit? India's classical language explained",
+  "seo_title": "What is Sanskrit? Origin, History and Why It Still Matters",
+  "meta_description": "What is Sanskrit? A clear guide to its origin, Vedic and Classical forms, Panini's grammar, the scripts it was written in and its place in India today.",
+  "keywords": [
+    "what is sanskrit",
+    "sanskrit language",
+    "sanskrit meaning",
+    "origin of sanskrit language",
+    "history of sanskrit",
+    "is sanskrit the oldest language",
+    "vedic sanskrit and classical sanskrit",
+    "sanskrit language family",
+    "who created sanskrit"
+  ],
+  "summary": "Sanskrit is an ancient Indo-Aryan language of the Indo-European family. Its oldest form, Vedic Sanskrit, survives in the Rigveda, composed in the second millennium BCE. Classical Sanskrit, fixed by the grammarian Panini around the 5th or 4th century BCE, became the shared language of learning, literature and inscriptions across South and Southeast Asia.",
+  "sections": [
+    {
+      "h2": "What does the word Sanskrit mean?",
+      "paras": [
+        "The word comes from saṃskṛta, meaning 'put together', 'refined' or 'perfected'. Ancient grammarians used it to describe the carefully regulated language of learned speech, set against the prākṛta, the 'natural' or everyday speech of ordinary people. The two terms describe a relationship rather than two sealed boxes: Sanskrit and the Prakrits grew side by side for well over a thousand years and borrowed from each other constantly.",
+        "Sanskrit was never one person's invention. It developed from an older spoken language, and what we call Sanskrit is really a long chain of stages, from the hymns of the Vedas to the court poetry of the Gupta age and the commentaries of medieval scholars."
+      ]
+    },
+    {
+      "h2": "Where does Sanskrit come from? Its language family",
+      "paras": [
+        "Sanskrit belongs to the Indo-Aryan branch of the Indo-European language family. Its closest ancient relative is Avestan, the language of the oldest Zoroastrian scriptures in Iran. More distant relatives include Greek, Latin, Gothic and the Celtic languages. In 1786 Sir William Jones, speaking at the Asiatic Society in Calcutta, pointed out that Sanskrit, Greek and Latin shared too many roots and grammatical forms to be a coincidence, and suggested a common source. That observation helped found comparative linguistics.",
+        "Simple words show the link: Sanskrit pitṛ (father), Latin pater, Greek patēr; Sanskrit trayaḥ (three), Latin trēs. How and when Indo-Aryan speech reached South Asia is a debated question. Linguists, archaeologists and geneticists weigh different kinds of evidence, and the [Vedic period](vedic-period.html) guide sets out the main positions without taking sides.",
+        "Is Sanskrit the oldest language? It is one of the oldest Indo-European languages with a large surviving body of texts, but Hittite in Anatolia is attested in writing earlier, and languages such as Egyptian and Sumerian were written long before either. Tamil, the other great classical language of India, has its own independent antiquity."
+      ]
+    },
+    {
+      "h2": "Vedic Sanskrit and Classical Sanskrit",
+      "paras": [
+        "Scholars divide the language into two broad stages. Vedic Sanskrit is the language of the four Vedas and the texts that grew around them. The Rigveda, its oldest layer, is usually placed somewhere around 1500 to 1200 BCE, though dates for early texts remain debated. Vedic has more verb forms, a pitch accent marked in some manuscripts, and older word forms that later fell out of use.",
+        "Classical Sanskrit is the form described by Pāṇini in the Aṣṭādhyāyī, a grammar of about 4,000 short rules composed around the 5th or 4th century BCE. Once Panini's description became the standard, the language changed far less than spoken languages normally do. A poet in the 11th century could write in essentially the same grammar as one in the 4th. Our [Sanskrit grammar basics](sanskrit-grammar-basics.html) page explains how that system works."
+      ],
+      "table": {
+        "head": [
+          "Stage",
+          "Rough period",
+          "Typical texts"
+        ],
+        "rows": [
+          [
+            "Early Vedic",
+            "Around 1500 to 1000 BCE",
+            "Rigveda hymns"
+          ],
+          [
+            "Later Vedic",
+            "Around 1000 to 500 BCE",
+            "Other Samhitas, Brahmanas, early Upanishads"
+          ],
+          [
+            "Classical",
+            "From around the 5th century BCE",
+            "Epics, kavya, drama, shastra, commentaries"
+          ]
+        ]
+      }
+    },
+    {
+      "h2": "Which script is Sanskrit written in?",
+      "paras": [
+        "Sanskrit has no script of its own. For centuries the Vedas were passed down orally, with remarkable precision. When Sanskrit was written, scribes used whatever script was current in their region: Brahmi and its later Gupta forms, Siddhamatrika, Sharada in Kashmir, Grantha in the Tamil country, Nandinagari, Bengali, Odia, Telugu, Kannada and Malayalam scripts, and the Nagari family that became Devanagari. Devanagari is the usual choice in printed books today, which is why many people assume it is 'the Sanskrit script'.",
+        "One of the earliest long inscriptions in Classical Sanskrit is the Junagadh rock inscription of the Western Kshatrapa ruler Rudradaman, from the middle of the 2nd century CE. Earlier royal inscriptions, including those of Ashoka, were in Prakrit. You can follow the whole story in [ancient scripts of India](ancient-scripts-of-india.html), or learn to read the oldest of them in our [Brahmi workshop](write-like-asoka-s-scribes-a-brahmi-workshop.html)."
+      ]
+    },
+    {
+      "h2": "What was written in Sanskrit?",
+      "paras": [
+        "Far more than religious texts. Sanskrit carried the epics, the Mahabharata and the Ramayana, and a long tradition of poetry and drama by writers such as Kalidasa and Bana. It was also the language of grammar, logic, law, medicine (the Charaka and Sushruta Samhitas), mathematics and astronomy (Aryabhata's work of 499 CE), statecraft (the Arthashastra), music and theatre (the Natyashastra) and history (Kalhana's Rajatarangini of Kashmir). Buddhist and Jain authors wrote in it too, especially after the early centuries CE.",
+        "The [Sanskrit literature](sanskrit-literature.html) guide walks through these genres. For a sense of how Sanskrit sat beside Tamil, the Prakrits and later languages, the [linguistic heritage lecture](india-s-linguistic-heritage.html) gives a single, connected picture."
+      ]
+    },
+    {
+      "h2": "Is Sanskrit still spoken today?",
+      "paras": [
+        "Sanskrit is one of the 22 languages in the Eighth Schedule of the Indian Constitution and was declared a classical language in 2005. In the census it is reported as a mother tongue by only a small number of people, but it is used far more widely: in ritual, in traditional pathashalas, in university departments, in a daily news bulletin, and in a handful of villages known for promoting spoken Sanskrit. Many Indian languages draw a large share of their vocabulary from it.",
+        "For historians and archaeologists, Sanskrit is above all a key to sources. Inscriptions, copper-plate land grants, manuscripts and temple records are often in Sanskrit, so even a reading knowledge opens up primary evidence that translations only partly convey."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Who created Sanskrit?",
+      "a": "No single person created it. Sanskrit grew out of an older Indo-Aryan speech over many centuries. Panini did not invent the language; around the 5th or 4th century BCE he described its rules so thoroughly that his grammar became the standard for Classical Sanskrit."
+    },
+    {
+      "q": "Is Sanskrit the mother of all languages?",
+      "a": "No. Sanskrit is related to Greek, Latin, Persian and other Indo-European languages as a sibling, not a parent. They share a common ancestor that linguists call Proto-Indo-European. Dravidian languages such as Tamil, Telugu, Kannada and Malayalam belong to a separate family, although they have borrowed many Sanskrit words."
+    },
+    {
+      "q": "Is Devanagari the same as Sanskrit?",
+      "a": "No. Sanskrit is a language and Devanagari is a script. Devanagari is used today for Sanskrit, Hindi, Marathi, Nepali and others. Over two thousand years Sanskrit has been written in many scripts, including Brahmi, Sharada, Grantha, Bengali and Telugu."
+    },
+    {
+      "q": "How old is Sanskrit?",
+      "a": "The oldest Sanskrit text, the Rigveda, is usually dated to the second millennium BCE, most often around 1500 to 1200 BCE. These dates come from linguistic and historical reasoning rather than any dated manuscript, so scholars give them as approximations."
+    },
+    {
+      "q": "Why do historians need Sanskrit?",
+      "a": "A large share of India's inscriptions, land grants, manuscripts and technical treatises are in Sanskrit. Reading even a little lets you check translations, understand names and titles on monuments, and see how ancient authors actually framed their ideas."
+    }
+  ],
+  "related_programmes": [
+    "india-s-linguistic-heritage.html",
+    "reading-india-s-scripts-brahmi-to-sarada.html",
+    "write-like-asoka-s-scribes-a-brahmi-workshop.html",
+    "prakrit-a-first-course.html",
+    "pali-a-first-course.html",
+    "sarada-script.html"
+  ],
+  "related_guides": [
+    "sanskrit-and-indian-knowledge-systems",
+    "sanskrit-grammar-basics",
+    "sanskrit-alphabet",
+    "learn-sanskrit-for-beginners",
+    "prakrit-and-pali",
+    "classical-languages-of-india"
+  ],
+  "cta": "Talaash Heritage runs a lecture on India's linguistic heritage and introductory courses in Prakrit, Pali and Sharada script, online or in person for groups.",
+  "bundle": {
+    "title": "From languages to scripts",
+    "pitch": "Begin with the lecture on how Sanskrit, Tamil and the Prakrits fit together, then see how the same languages were written in the scripts lecture.",
+    "items": [
+      "india-s-linguistic-heritage.html",
+      "reading-india-s-scripts-brahmi-to-sarada.html"
+    ]
+  },
+  "audience_hooks": [
+    "Schools: a lecture on India's languages and scripts, at your school or online.",
+    "Colleges: introductory courses in Prakrit, Pali or Sharada script for history and language students.",
+    "Adult learners: a hands-on Brahmi workshop, online or in person."
+  ],
+  "sem": {
+    "ad_group": "Indian languages lecture",
+    "keywords": [
+      "indian languages lecture for students",
+      "sanskrit history lecture",
+      "linguistic heritage of india talk",
+      "ancient indian languages course",
+      "prakrit course online",
+      "pali course online",
+      "brahmi script workshop"
+    ],
+    "negatives": [
+      "free",
+      "pdf",
+      "notes",
+      "translation app",
+      "keyboard",
+      "font",
+      "wikipedia"
+    ],
+    "headlines": [
+      "India's Linguistic Heritage",
+      "Sanskrit in Its Context",
+      "Prakrit and Pali Courses",
+      "Online or On Campus",
+      "Taught by Specialists"
+    ],
+    "descriptions": [
+      "Lectures and courses on Sanskrit, Prakrit, Pali and the scripts they were written in.",
+      "Arrange a lecture or a short course for your school, college or adult group."
+    ]
+  },
+  "social": {
+    "posts": [
+      {
+        "angle": "fact",
+        "hook": "Sanskrit has no script of its own.",
+        "caption": "For two thousand years it was written in whatever script a region used: Brahmi, Sharada, Grantha, Bengali, Telugu and more. Devanagari became the default only in the age of print."
+      },
+      {
+        "angle": "tip",
+        "hook": "Spot the family resemblance: pitṛ, pater, father.",
+        "caption": "Sanskrit, Latin and English descend from one ancient ancestor. Try 'three' (trayaḥ, trēs) or 'mother' (mātṛ, māter) and the pattern jumps out."
+      },
+      {
+        "angle": "offer",
+        "hook": "How did India's languages grow up together?",
+        "caption": "Our lecture on India's linguistic heritage connects Sanskrit, Tamil, the Prakrits and Pali in one clear story. We bring it to schools, colleges and adult groups, online or in person."
+      }
+    ],
+    "reel": "Close-up of the same Sanskrit word written in Brahmi, Sharada, Grantha and Devanagari, one after another. On-screen line: 'Same language. Four scripts.' End card: 'India's linguistic heritage, a lecture for your group.'",
+    "hashtags": [
+      "#Sanskrit",
+      "#WhatIsSanskrit",
+      "#IndianLanguages",
+      "#IndianHeritage",
+      "#Linguistics",
+      "#AncientIndia",
+      "#Panini",
+      "#TalaashHeritage"
+    ]
+  },
+  "og_title": "What is Sanskrit? A clear, honest introduction",
+  "og_description": "Where Sanskrit came from, how it changed, what was written in it and why historians still need it."
+}

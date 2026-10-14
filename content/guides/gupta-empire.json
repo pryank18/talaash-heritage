@@ -1,0 +1,100 @@
+{
+  "slug": "gupta-empire",
+  "type": "explainer",
+  "pillar": "history",
+  "title": "Gupta empire: rulers, art and architecture",
+  "seo_title": "Gupta Empire: Rulers, Art, Architecture and Temples",
+  "meta_description": "The Gupta empire explained: key rulers from Chandragupta I to Skandagupta, coins and inscriptions, and Gupta art and architecture from Udayagiri to Deogarh.",
+  "keywords": ["gupta empire", "gupta dynasty", "gupta art and architecture", "gupta period temples", "golden age of india gupta", "samudragupta", "chandragupta ii", "gupta coins", "gupta sculpture", "gupta empire upsc"],
+  "summary": "The Gupta empire ruled much of north India from about 320 to 550 CE. Under Samudragupta and Chandragupta II it controlled the Ganga plain and beyond. The period is known for gold coins, Sanskrit literature, scientific work by Aryabhata, the Sarnath and Mathura schools of sculpture, and the first free-standing stone temples.",
+  "sections": [
+    {
+      "h2": "Gupta empire: rulers and dates",
+      "paras": [
+        "The Gupta era begins in 319 to 320 CE, usually linked with the accession of Chandragupta I, who married a Lichchhavi princess, Kumaradevi, and issued coins showing the two together. His son Samudragupta campaigned widely. His conquests are recorded in the Prayaga prashasti, a Sanskrit eulogy by his court poet Harishena, carved on the Ashokan pillar now in the Allahabad Fort at Prayagraj (Allahabad).",
+        "Chandragupta II defeated the Western Kshatrapas of Gujarat and Malwa around the end of the 4th century, giving the empire access to western ports. The Chinese pilgrim Faxian travelled through India during his reign. Kumaragupta I is linked with the founding of Nalanda. Skandagupta held off the Hunas in the mid 5th century, but after him the empire fragmented."
+      ],
+      "table": {
+        "head": ["Ruler", "Approximate reign", "Remember for"],
+        "rows": [
+          ["Chandragupta I", "About 320 to 335 CE", "Gupta era begins; Lichchhavi marriage"],
+          ["Samudragupta", "About 335 to 375 CE", "Prayaga prashasti; campaigns north and south; veena-player coins"],
+          ["Chandragupta II (Vikramaditya)", "About 375 to 415 CE", "Conquest of Western Kshatrapas; Faxian's visit; Udayagiri caves"],
+          ["Kumaragupta I", "About 415 to 455 CE", "Long, stable reign; Nalanda linked to his time"],
+          ["Skandagupta", "About 455 to 467 CE", "Resisted the Hunas; Junagadh inscription on Sudarshana lake"]
+        ]
+      }
+    },
+    {
+      "h2": "Was the Gupta period a golden age?",
+      "paras": [
+        "Older textbooks called the Gupta age India's golden age. Historians now use the label carefully. The achievements were real: Kalidasa's plays and poems, Aryabhata's astronomy and mathematics in the Aryabhatiya (499 CE), a confident Sanskrit court culture and some of India's finest sculpture. But land grants to Brahmins and officials, the growth of untouchability and a fall in urban trade in some regions have led many historians to see the period as the start of early medieval changes rather than a peak of prosperity for all.",
+        "A balanced answer for exams: it was a classical age for court art, literature and science, with uneven benefits across society."
+      ]
+    },
+    {
+      "h2": "Gupta sculpture: Sarnath and Mathura",
+      "paras": [
+        "Two schools dominate Gupta sculpture. Mathura worked in mottled red sandstone and had been producing Buddhist, Jain and Brahmanical images since the Kushana period. Sarnath worked in buff Chunar sandstone and developed a very refined Buddha type: a slim body, clinging transparent robe almost without folds, half-closed eyes and a calm face. The seated Buddha preaching the first sermon, in the Sarnath Museum, is the best-known example.",
+        "Gupta sculptors also gave Brahmanical deities their classic forms. The huge Varaha (boar) panel at Udayagiri near Vidisha, showing Vishnu lifting the earth goddess from the waters, dates to the reign of Chandragupta II. Learning to read these forms is the subject of our [identifying sculpture](reading-sculpture.html) session."
+      ]
+    },
+    {
+      "h2": "Gupta architecture: caves and the first stone temples",
+      "paras": [
+        "The Gupta period is when the Indian stone temple takes shape. Early shrines are small: a flat-roofed square sanctum (garbhagriha) with a pillared porch. Temple 17 at Sanchi is the classic example. Later in the 5th and 6th centuries, temples begin to rise into towers, the start of the Nagara style described in our guide to [Indian temple architecture](indian-temple-architecture.html)."
+      ],
+      "list": [
+        "Udayagiri caves, near Vidisha (early 5th century): rock-cut shrines with the Varaha panel and an inscription of Chandragupta II.",
+        "Temple 17, Sanchi (early 5th century): flat roof, pillared porch, a textbook early temple.",
+        "Dashavatara temple, Deogarh, Uttar Pradesh (about 6th century): raised platform, sculpted panels of Vishnu, remains of a tower.",
+        "Bhitargaon, near Kanpur (5th to 6th century): a brick temple with a tall tower and terracotta panels.",
+        "Ajanta: several later caves belong to the Vakataka kingdom, allied to the Guptas by marriage, in the late 5th century.",
+        "The iron pillar at the Qutb complex, Delhi: carries a Gupta-period inscription of a king named Chandra and has resisted rust for about 1,600 years."
+      ]
+    },
+    {
+      "h2": "Coins, inscriptions and administration",
+      "paras": [
+        "The Guptas issued the largest quantity of gold coins (dinaras) in early India. They show kings as archers, lion-slayers, horsemen or musicians, and are a major source for royal image and chronology. Handling replicas is a good way in: see our [introduction to numismatics with replicas](introduction-to-numismatics-with-replicas.html).",
+        "Administration was less centralised than under the Mauryas. Provinces (bhuktis) and districts (vishayas) were run by officials, often hereditary, and local landed elites had growing power. Copper-plate land grants become common evidence from this time."
+      ]
+    },
+    {
+      "h2": "Where to see Gupta art",
+      "paras": [
+        "In Delhi, the iron pillar stands in [the Qutb complex](the-qutb-complex.html), and the National Museum has major Gupta sculpture and coins. In Madhya Pradesh our [Udayagiri caves visit](udayagiri-caves-gupta-period-sacred-art.html) and [Sanchi and Vidisha immersion](sanchi-and-vidisha-two-day-archaeology-immersion.html) cover the key early sites. See also the [Indian history timeline](indian-history-timeline.html)."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "Who was the greatest Gupta ruler?", "a": "Samudragupta and Chandragupta II are usually considered the greatest. Samudragupta's campaigns are recorded in the Prayaga prashasti, and Chandragupta II extended the empire to the western coast by defeating the Western Kshatrapas. Both issued fine gold coins."},
+    {"q": "What are the main features of Gupta architecture?", "a": "Gupta architecture saw the first free-standing stone temples, with a square sanctum, a pillared porch and, later, a rising tower. Rock-cut shrines at Udayagiri, the flat-roofed Temple 17 at Sanchi and the Dashavatara temple at Deogarh are key examples."},
+    {"q": "What is special about Gupta sculpture?", "a": "Gupta sculpture combines calm, idealised faces with smooth, simplified bodies. The Sarnath school is known for Buddhas in transparent, clinging robes, and Gupta artists set the standard forms for Vishnu, Shiva and other deities that later Indian sculpture followed."},
+    {"q": "Why is the Gupta period called the golden age?", "a": "Because of its achievements in Sanskrit literature, sculpture, temple building, mathematics and astronomy, and its gold coinage. Many historians now qualify the term, since land grants, rigid caste rules and urban decline in some regions suggest the benefits were uneven."},
+    {"q": "Is the iron pillar in Delhi from the Gupta period?", "a": "Yes. Its Sanskrit inscription in a Gupta-period Brahmi script names a king called Chandra, generally identified with Chandragupta II. It was probably moved to Delhi later, and stands in the Qutb complex. It is known for its resistance to rust."}
+  ],
+  "related_programmes": ["udayagiri-caves-gupta-period-sacred-art.html", "the-qutb-complex.html", "reading-sculpture.html", "sanchi-and-vidisha-two-day-archaeology-immersion.html", "introduction-to-numismatics-with-replicas.html", "early-structural-temples.html", "museum-morning-with-an-archaeologist.html", "stupas-caves-and-temples-of-central-india.html"],
+  "related_guides": ["indian-temple-architecture", "ancient-indian-history", "mauryan-empire", "major-dynasties-of-ancient-india", "what-is-numismatics", "indian-history-timeline"],
+  "bundle": {"title": "From the first temples to the gallery", "pitch": "A lecture on early structural temples gives students the vocabulary; a sculpture identification session in the museum puts it to work on Gupta images.", "items": ["early-structural-temples.html", "reading-sculpture.html", "museum-morning-with-an-archaeologist.html"]},
+  "audience_hooks": ["Schools: a museum session on Gupta coins and sculpture.", "Colleges: a two-day Sanchi and Vidisha immersion including Udayagiri.", "Adult learners: a lecture series on early temple architecture."],
+  "sem": {
+    "ad_group": "Gupta art and temples",
+    "keywords": ["udayagiri caves guided visit", "sanchi vidisha study tour", "temple architecture course", "indian sculpture identification course", "qutb complex guided walk", "gupta art lecture"],
+    "negatives": ["pdf", "notes", "mcq", "free", "upsc notes", "wikipedia"],
+    "headlines": ["Gupta Art With an Expert", "Udayagiri Caves Visit", "Temple Architecture Course", "Read Indian Sculpture", "Sanchi and Vidisha Tours"],
+    "descriptions": ["See the first Indian stone temples and Gupta sculpture with an archaeologist.", "Lectures, museum sessions and study tours on Gupta art for your group."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "A Gupta-period iron pillar has stood in the open for about 1,600 years.", "caption": "The iron pillar at the Qutb complex carries an inscription of a king named Chandra. Metallurgists have studied why it rusts so little."},
+      {"angle": "tip", "hook": "How to recognise a Sarnath Buddha in a museum.", "caption": "Look for a robe so thin it barely shows folds, a slim body and lowered eyes. If the stone is buff rather than red, you are probably looking at the Sarnath school."},
+      {"angle": "offer", "hook": "See where the Indian temple began.", "caption": "Our Udayagiri and Sanchi visits cover rock-cut Gupta shrines and one of India's earliest stone temples, with an archaeologist."}
+    ],
+    "reel": "The Varaha panel at Udayagiri filmed from left to right, then a cut to Temple 17 at Sanchi. Line: where Indian temple building began. End card: Gupta art and architecture explained.",
+    "hashtags": ["#GuptaEmpire", "#GuptaArt", "#IndianTemples", "#Udayagiri", "#Sanchi", "#AncientIndia", "#IndianSculpture", "#IndianHistory"]
+  },
+  "og_title": "The Guptas: coins, sculpture and the first temples",
+  "og_description": "Who the Guptas were, why their art matters, and where to see the first Indian stone temples.",
+  "cta": "We run museum sessions on Gupta sculpture and study tours to Udayagiri and Sanchi with archaeologists, for schools, colleges and adult groups."
+}

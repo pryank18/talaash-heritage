@@ -1,0 +1,86 @@
+{
+  "slug": "heritage-walk-in-lucknow",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Lucknow",
+  "state": "Uttar Pradesh",
+  "title": "Heritage walk in Lucknow: imambaras, the Residency and old Awadh",
+  "seo_title": "Heritage Walk in Lucknow: Historical Places, Routes, Museums",
+  "meta_description": "Plan a heritage walk in Lucknow: Bara Imambara, Rumi Darwaza, Chhota Imambara, the Residency and Qaisarbagh, with routes, museums and tips for school groups.",
+  "keywords": ["heritage walk in lucknow", "historical places in lucknow", "heritage sites in lucknow", "museums in lucknow", "lucknow heritage walk for schools", "lucknow heritage walk", "nawabi lucknow monuments", "bara imambara history", "lucknow residency 1857", "old lucknow walk"],
+  "summary": "A heritage walk in Lucknow follows the capital of the Nawabs of Awadh from 1775 to 1856: the Bara Imambara, Rumi Darwaza and Chhota Imambara in Hussainabad, the Shah Najaf and Qaisarbagh by the Gomti, and the ruined Residency, besieged for nearly five months in 1857. Most stops cluster in two walkable areas.",
+  "sections": [
+    {"h2": "Why Lucknow matters", "paras": [
+      "Lucknow is the best place in north India to see the architecture of an 18th and 19th century successor state. When Mughal power weakened, the governors of Awadh became independent rulers in practice. Asaf-ud-Daula moved the capital from Faizabad to Lucknow in 1775, and his successors filled the city with imambaras, mosques, gateways, palaces and gardens over the next eighty years.",
+      "It is also one of the main places to study 1857. The British Residency, where the East India Company's agent lived, was held under siege by Indian forces from June to November 1857, and its shell-scarred ruins have been kept as a memorial ever since. A walk here connects court culture, Shia religious architecture, colonial politics and the uprising in a single city."
+    ]},
+    {"h2": "Layers of Lucknow's history", "paras": [
+      "Lucknow existed as a town under the Delhi Sultanate and the Mughals, and the Machhi Bhawan fort area near the river was its old centre. Little of that early fabric survives, because the Nawabs and later the British rebuilt it.",
+      "Asaf-ud-Daula built the Bara Imambara and Rumi Darwaza in 1784, partly as famine relief work. Saadat Ali Khan added palaces and a closer relationship with the Company. Ghazi-ud-din Haidar, who took the title of king in 1819, built the Shah Najaf Imambara; Muhammad Ali Shah built the Chhota Imambara (Hussainabad Imambara) in 1838; and Wajid Ali Shah built the Qaisarbagh palace complex around 1848 to 1850, before the Company annexed Awadh in 1856 and sent him to Calcutta.",
+      "After 1857 the British cleared large parts of the old city for roads and military lines. The [Mughal empire](mughal-empire.html) and [Indo-Islamic architecture](indo-islamic-architecture.html) guides give the background to the Nawabi style, which mixes Mughal forms with stucco, fish emblems and European details."
+    ]},
+    {"h2": "What you see on a Lucknow walk", "paras": [
+      "At the Bara Imambara, look up at the central hall, one of the largest vaulted halls of its time built without a supporting beam, and then climb into the Bhool Bhulaiya, the maze of passages in its upper storey. The building is made of brick and lime plaster rather than carved stone, which tells you about local materials and the speed of construction.",
+      "At the Residency, students trace the siege on the ground: the Baillie Guard Gate, the banqueting hall, the cemetery and the 1857 museum. A cemetery is a primary source in itself, which is the subject of the lecture [Cemeteries, epitaphs and public memory](cemeteries-epitaphs-and-public-memory.html). For comparison with the fighting in Delhi, see the [Kashmere Gate and 1857](kashmere-gate-1857.html) walk."
+    ]},
+    {"h2": "Lucknow for schools and groups", "paras": [
+      "A Lucknow visit is arranged as a [study tour built for your group](a-study-tour-built-for-your-group.html), with the route, length and focus set around your class or team. A lecture before the visit helps: [Sacred architecture across communities](sacred-architecture-across-communities.html) suits the imambaras, and the [Oral history and neighbourhood memory lab](oral-history-and-neighbourhood-memory-lab.html) works well in the old city lanes of Chowk.",
+      "The Hussainabad group (Bara Imambara, Rumi Darwaza, Chhota Imambara, the clock tower and picture gallery) is walkable as one route. The Residency, Shah Najaf, Sikandar Bagh and Qaisarbagh form a second group about 3 km away; a short drive links the two. La Martiniere needs a vehicle. The imambaras are religious buildings, so dress modestly and check visiting rules, especially during Muharram."
+    ]}
+  ],
+  "stops": [
+    {"name": "Bara Imambara", "period": "1784", "note": "Asaf-ud-Daula's imambara with its great vaulted hall, the Bhool Bhulaiya maze above and a stepwell (baoli) beside it."},
+    {"name": "Asfi Mosque", "period": "1784", "note": "Mosque in the Bara Imambara complex on a high plinth with two minarets."},
+    {"name": "Rumi Darwaza", "period": "1784", "note": "Monumental gateway west of the Bara Imambara, a symbol of the city."},
+    {"name": "Chhota Imambara", "period": "1838", "note": "Muhammad Ali Shah's Hussainabad Imambara with chandeliers, Arabic calligraphy and a gilded dome."},
+    {"name": "Hussainabad Clock Tower", "period": "1881 to 1887", "note": "A tall Victorian-era clock tower beside the Hussainabad tank."},
+    {"name": "Hussainabad Picture Gallery", "period": "1830s to 1840s", "note": "Baradari with portraits of the Nawabs of Awadh, opposite the unfinished Satkhanda tower."},
+    {"name": "Chowk", "period": "18th century onward", "note": "Old market of Lucknow, known for chikan embroidery, food streets and havelis."},
+    {"name": "British Residency", "period": "1780 to 1800, siege of 1857", "note": "Ruined Residency compound with the Baillie Guard Gate, cemetery and 1857 memorial museum."},
+    {"name": "Shah Najaf Imambara", "period": "1816 to 1827", "note": "Ghazi-ud-din Haidar's tomb and imambara by the Gomti, with a white dome."},
+    {"name": "Sikandar Bagh", "period": "early 19th century, fighting of 1857", "note": "Walled garden where heavy fighting took place in November 1857."},
+    {"name": "Qaisarbagh", "period": "about 1848 to 1850", "note": "Surviving gateways and buildings of Wajid Ali Shah's palace complex, with the tomb of Saadat Ali Khan nearby."},
+    {"name": "La Martiniere", "period": "about 1795 to 1802", "note": "Claude Martin's palace Constantia, now a school, mixing European and Indian architectural ideas."}
+  ],
+  "routes": [
+    {"name": "Hussainabad on foot", "length": "About 3 hours", "stops": ["Bara Imambara", "Asfi Mosque", "Rumi Darwaza", "Hussainabad Clock Tower", "Hussainabad Picture Gallery", "Chhota Imambara"]},
+    {"name": "1857 and the Gomti", "length": "About 3 hours, short rides between groups", "stops": ["British Residency", "Shah Najaf Imambara", "Sikandar Bagh", "Qaisarbagh"]},
+    {"name": "Chowk and old Lucknow", "length": "About 2 hours", "stops": ["Rumi Darwaza", "Chowk"]}
+  ],
+  "museums": [
+    {"name": "State Museum, Lucknow", "note": "One of the larger museums in north India, with Mathura and Kushana sculpture, coins and Awadh material."},
+    {"name": "1857 Memorial Museum, Residency", "note": "ASI museum on the siege, with a model of the Residency compound and period objects."},
+    {"name": "Hussainabad Picture Gallery", "note": "Portraits of the rulers of Awadh, useful for linking names to buildings."}
+  ],
+  "best_time": "October to March. Avoid the heat of May and June; check access to the imambaras around Muharram.",
+  "faq": [
+    {"q": "Which historical places in Lucknow should a heritage walk include?", "a": "The Bara Imambara with the Bhool Bhulaiya, Rumi Darwaza and Chhota Imambara in Hussainabad; then the Residency, Shah Najaf Imambara, Sikandar Bagh and Qaisarbagh near the Gomti. Add Chowk for the old market."},
+    {"q": "Why is the Lucknow Residency important?", "a": "It was the seat of the East India Company's agent at the Awadh court and was besieged by Indian forces from June to November 1857. The ruins were kept as they were, so the site shows the uprising on the ground."},
+    {"q": "Is a Lucknow heritage walk good for schools?", "a": "Yes. The Hussainabad monuments suit Class 7 and 8 history, and the Residency suits lessons on 1857. Walk the Hussainabad group in the morning and drive to the Residency group."},
+    {"q": "What museums are in Lucknow?", "a": "The State Museum has a strong sculpture and coin collection, the Residency has an 1857 museum, and the Hussainabad Picture Gallery shows the Nawabs of Awadh."},
+    {"q": "Can a Lucknow heritage walk be arranged in Hindi?", "a": "Yes. Talaash Heritage arranges Lucknow visits on request with an archaeologist or historian, in English or Hindi, for schools, colleges, companies and private groups."}
+  ],
+  "related_programmes": ["a-study-tour-built-for-your-group.html", "sacred-architecture-across-communities.html", "cemeteries-epitaphs-and-public-memory.html", "kashmere-gate-1857.html", "oral-history-and-neighbourhood-memory-lab.html", "museums-and-the-stories-objects-tell.html"],
+  "related_guides": ["heritage-sites-in-uttar-pradesh", "indo-islamic-architecture", "mughal-empire", "heritage-walk-in-delhi", "heritage-walk-in-varanasi", "heritage-walk-in-prayagraj"],
+  "bundle": {"title": "1857 in two cities", "pitch": "Walk Kashmere Gate in Delhi, then the Residency in Lucknow, with a lecture on how cemeteries and memorials shaped memory of the uprising.", "items": ["kashmere-gate-1857.html", "cemeteries-epitaphs-and-public-memory.html", "a-study-tour-built-for-your-group.html"]},
+  "audience_hooks": ["Schools: a Lucknow study day on the Nawabs and 1857, planned around your syllabus.", "Colleges: a lecture on sacred architecture or public memory, then the imambaras and the Residency.", "Families: an old Lucknow walk through Hussainabad and Chowk with a historian."],
+  "sem": {
+    "ad_group": "Heritage walk Lucknow",
+    "keywords": ["heritage walk in lucknow", "lucknow heritage walk for schools", "lucknow heritage tour with historian", "old lucknow guided walk", "bara imambara guided tour", "lucknow residency guided visit", "lucknow study tour"],
+    "negatives": ["free", "pdf", "essay", "drawing", "hotel", "ticket price", "jobs"],
+    "headlines": ["Heritage Walks in Lucknow", "Imambaras and the Residency", "Led by Historians", "Study Days for Schools", "In English or Hindi"],
+    "descriptions": ["Lucknow heritage walks with archaeologists and historians, planned for your group.", "Bara Imambara, Hussainabad, the Residency and 1857, for schools, colleges and families."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "The Bara Imambara was a famine relief project.", "caption": "Asaf-ud-Daula began it in 1784, a famine year, and the building gave paid work to thousands. Its vaulted hall is built in brick and lime, with no beams holding up the roof."},
+      {"angle": "tip", "hook": "At the Residency, read the walls.", "caption": "Shell and bullet marks from 1857 are still on the buildings. Walk from the Baillie Guard Gate to the cemetery and you can trace the five-month siege on the ground."},
+      {"angle": "offer", "hook": "Lucknow, from the Nawabs to 1857.", "caption": "We arrange Lucknow study days for schools, colleges, companies and families, led by an archaeologist or historian, in English or Hindi."}
+    ],
+    "reel": "Walk through the Rumi Darwaza, up into the Bhool Bhulaiya, then a close shot of shell marks at the Residency. Line: one city, two stories. End card: Lucknow heritage walks, arranged on request.",
+    "hashtags": ["#Lucknow", "#BaraImambara", "#RumiDarwaza", "#Awadh", "#1857", "#HeritageWalk", "#UttarPradesh", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Lucknow heritage walk: Nawabs, imambaras and 1857",
+  "og_description": "Bara Imambara, Rumi Darwaza, the Residency and old Chowk, with walking routes and museums.",
+  "cta": "We arrange Lucknow heritage walks on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi."
+}

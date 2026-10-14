@@ -1,0 +1,100 @@
+{
+  "slug": "difference-between-heritage-and-history",
+  "type": "explainer",
+  "pillar": "heritage",
+  "title": "Difference between heritage and history, with Indian examples",
+  "seo_title": "Heritage vs History: The Difference Explained with Examples",
+  "meta_description": "What is the difference between heritage and history? Clear meanings, a comparison table, Indian examples and short notes for students and teachers.",
+  "keywords": ["difference between heritage and history", "heritage vs history", "heritage and history meaning", "history and heritage difference", "heritage and history examples", "what is heritage", "what is history", "heritage and history for students", "heritage and history notes"],
+  "summary": "History is the study of what happened in the past, built from evidence and open to revision. Heritage is the part of the past that people today choose to value, keep and pass on, such as monuments, objects, traditions and stories. History asks what happened and why; heritage asks what the past means to us now.",
+  "sections": [
+    {
+      "h2": "Heritage and history: the meanings",
+      "paras": [
+        "History is a discipline. Historians read inscriptions, coins, chronicles, letters, archives and the findings of archaeology, test them against each other, and write an account of what happened and why. A good historical account states its sources and changes when new evidence turns up.",
+        "Heritage is an inheritance. It is the selection of things from the past that a community decides are worth keeping: a fort, a script, a dance, a festival, a family recipe. Heritage is about use and value in the present. It shapes identity, draws visitors, supports livelihoods and is protected by law.",
+        "The two share material. The same monument is a source for the historian and a heritage site for the visitor. What differs is the question being asked of it."
+      ]
+    },
+    {
+      "h2": "Heritage vs history: a comparison table",
+      "paras": ["The table sets out the main contrasts. They are tendencies, not hard walls."],
+      "table": {
+        "head": ["", "History", "Heritage"],
+        "rows": [
+          ["Main question", "What happened, when and why?", "What from the past do we value and keep?"],
+          ["Looks towards", "The past, on its own terms", "The present and future use of the past"],
+          ["Method", "Evidence, source criticism, argument", "Selection, care, display, celebration"],
+          ["Who makes it", "Historians, archaeologists, researchers", "Communities, states, institutions, families"],
+          ["Changes when", "New evidence or better reasoning appears", "Values, identities or needs change"],
+          ["Typical output", "Books, papers, timelines, explanations", "Protected sites, museums, festivals, walks, listings"],
+          ["Indian example", "Dating the Qutb Minar's storeys from its inscriptions", "Listing the Qutb Minar as a World Heritage Site in 1993"]
+        ]
+      }
+    },
+    {
+      "h2": "Examples from India",
+      "paras": [
+        "Take the Red Fort in Delhi. Its history is the story of Shah Jahan's new capital, the decline of Mughal power, the events of 1857 and British use of the fort as a garrison. Its heritage value includes all of that, plus its role today as the place where the Prime Minister addresses the nation on Independence Day. That second role is heritage, not history: it is a meaning the present has given the building. A visit to the [Red Fort Complex](red-fort-complex.html) shows both layers side by side.",
+        "Or take Kumbh Mela. Historians trace references to bathing festivals at Prayagraj (formerly Allahabad) in older texts and travellers' accounts, and debate when the gathering took its present form. As heritage, it is a living event on UNESCO's intangible list, valued for what it means to millions of people now. The guide to [intangible cultural heritage](what-is-intangible-cultural-heritage.html) explains that category.",
+        "A third case is a modest one: a stepwell in a Delhi neighbourhood. Few written records may describe it. Its history has to be pieced together from architecture and archaeology, while its heritage value depends on whether local people still care about it, clean it and tell stories about it."
+      ]
+    },
+    {
+      "h2": "Where heritage and history pull apart",
+      "paras": [
+        "Because heritage is about present meaning, it can simplify the past. A heritage display may tell one community's story and leave out others, or turn a complicated period into a tale of heroes and villains. History pushes back by returning to the evidence and asking whose account is missing.",
+        "The reverse also happens. Historians sometimes treat a site only as a source, forgetting that people still live around it, pray in it or earn from it. Heritage practice reminds them that the past belongs to communities as well as to scholars. Our lecture [Who owns the past?](who-owns-the-past-heritage-and-urban-development.html) works through real Indian cases where these interests meet.",
+        "Contested monuments sit right in this gap. The sensible approach is to separate the two questions: first establish what the evidence shows about who built what and when, then discuss openly what the site means to different groups today."
+      ]
+    },
+    {
+      "h2": "How heritage and history help each other",
+      "paras": [
+        "Heritage needs history to be honest. Without research, conservation can repair a building wrongly, a museum label can repeat a myth, and a guide can invent a story. History needs heritage to survive. Sites that people value get protected, and protected sites remain available as evidence for future research.",
+        "Archaeology links the two. Excavation produces historical evidence, and the sites it reveals often become heritage. Our guide to the [difference between archaeology and history](difference-between-archaeology-and-history.html) covers that third relationship."
+      ]
+    },
+    {
+      "h2": "Heritage and history notes for students",
+      "paras": ["Short points to use in answers and projects:"],
+      "list": [
+        "History: the evidence-based study and explanation of the past.",
+        "Heritage: what people inherit from the past and choose to value, protect and pass on.",
+        "History is a method and a body of knowledge; heritage is a set of things and practices plus the value given to them.",
+        "Heritage can be tangible (monuments, objects) or intangible (dances, festivals, skills).",
+        "One site can be both a historical source and a heritage site.",
+        "Good heritage practice depends on sound historical research."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "What is the main difference between heritage and history?", "a": "History studies and explains what happened in the past using evidence. Heritage is the part of the past that people today choose to value, protect and pass on. History asks what happened; heritage asks what the past means to us now and what we should keep."},
+    {"q": "Is heritage part of history?", "a": "They overlap but neither contains the other. Heritage draws on history for its facts, and history uses heritage sites and objects as evidence. But heritage also includes present-day values and living traditions, which history studies rather than creates."},
+    {"q": "Can something be heritage without being old?", "a": "Yes. Heritage depends on value, not only age. Le Corbusier's Capitol Complex in Chandigarh dates from the 1950s and 1960s, yet it is a World Heritage Site. A recent festival or craft can also become cherished heritage within a generation or two."},
+    {"q": "Why should students learn the difference between heritage and history?", "a": "It helps them read monuments, museums and public stories critically. Knowing the difference lets a student enjoy a heritage site while still asking what the evidence actually shows, who is telling the story, and whose voices may be missing from it."}
+  ],
+  "related_programmes": ["culture-and-heritage-what-we-inherit-and-why-it-matters.html", "who-owns-the-past-heritage-and-urban-development.html", "red-fort-complex.html", "delhi-through-seven-cities.html", "chor-minar-monuments-and-historical-claims.html"],
+  "bundle": {"title": "Debate in class, test it at the fort", "pitch": "The Who owns the past? lecture sets up the questions; a walk through the Red Fort lets students see history and heritage layered in one building.", "items": ["who-owns-the-past-heritage-and-urban-development.html", "red-fort-complex.html"]},
+  "audience_hooks": ["Schools: a lecture on heritage and history with Indian case studies, online or on campus.", "Colleges: a discussion lecture on who owns the past, followed by a monument walk.", "Travellers: a multi-day Delhi journey through seven cities with an archaeologist."],
+  "related_guides": ["what-is-cultural-heritage", "difference-between-archaeology-and-history", "what-is-intangible-cultural-heritage", "heritage-conservation-in-india", "seven-cities-of-delhi"],
+  "cta": "Our lecture Who owns the past? helps students and adult groups separate evidence from meaning at real Indian sites, online or in person.",
+  "sem": {
+    "ad_group": "Heritage and history lecture",
+    "keywords": ["heritage education lecture for schools", "history and heritage workshop for students", "heritage walk for students delhi", "red fort guided walk for school groups", "heritage lecture for college", "delhi history study tour"],
+    "negatives": ["pdf", "essay", "ppt", "class notes download", "jobs", "wikipedia"],
+    "headlines": ["Heritage and History Lectures", "For Schools and Colleges", "Red Fort Walks for Groups", "Online or On Campus", "Led by Archaeologists"],
+    "descriptions": ["Help students tell evidence from meaning with real Indian monuments and case studies.", "A lecture in class, then a monument walk in Delhi. Arranged for your group."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "The Red Fort has two stories.", "caption": "One is history: Shah Jahan's palace, 1857, a British garrison. The other is heritage: the Independence Day speech. Same walls, different questions."},
+      {"angle": "tip", "hook": "At any monument, ask two questions.", "caption": "What does the evidence say happened here? And what does this place mean to people today? The first is history. The second is heritage."},
+      {"angle": "offer", "hook": "Who owns the past? Bring the debate to class.", "caption": "Our lecture uses real Indian cases to show where heritage and history meet and clash. For schools, colleges and adult groups, online or in person."}
+    ],
+    "reel": "Split screen: an inscription on the Qutb Minar on one side, tourists taking selfies on the other. On screen: History asks what happened. Heritage asks what it means now. End card: Talaash Heritage.",
+    "hashtags": ["#IndianHeritage", "#IndianHistory", "#HeritageVsHistory", "#HistoryTeachers", "#RedFort", "#DelhiHeritage", "#HeritageEducation", "#TalaashHeritage"]
+  },
+  "og_title": "Heritage vs history: what is the difference?",
+  "og_description": "One asks what happened. The other asks what it means to us now. A clear guide with Indian examples."
+}

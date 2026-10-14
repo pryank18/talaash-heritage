@@ -1,0 +1,116 @@
+{
+  "slug": "heritage-walk-in-guwahati",
+  "type": "city",
+  "pillar": "heritage",
+  "title": "Heritage walk in Guwahati: Kamakhya, the Brahmaputra and Ahom Assam",
+  "seo_title": "Heritage Walk in Guwahati: Historical Places and Museums",
+  "meta_description": "Plan a heritage walk in Guwahati: Kamakhya, Umananda, Sukreswar ghat, the Assam State Museum, Madan Kamdev and the Moidams, with advice for groups.",
+  "keywords": ["heritage walk in guwahati", "historical places in guwahati", "heritage sites in guwahati", "museums in guwahati", "guwahati heritage walk for schools", "kamakhya temple history", "assam state museum", "madan kamdev ruins", "ahom heritage tour"],
+  "summary": "A heritage walk in Guwahati follows the Brahmaputra riverfront from Sukreswar ghat and Umananda island to the Assam State Museum and the Dighalipukhuri tank, with Kamakhya on Nilachal Hill as a separate visit. Groups wanting older remains add Madan Kamdev (about 10th to 12th century), and the Ahom Moidams at Charaideo, a UNESCO site since 2024, need a long road trip.",
+  "city": "Guwahati",
+  "state": "Assam",
+  "sections": [
+    {
+      "h2": "Why Guwahati matters for Indian heritage",
+      "paras": [
+        "Guwahati is usually identified with ancient Pragjyotishpura, capital of the early kingdom of Kamarupa, which appears in the Allahabad pillar inscription of Samudragupta (4th century CE) as a frontier kingdom. The Chinese pilgrim Xuanzang visited the court of the Kamarupa king Bhaskaravarman in the 7th century. Later the area was contested between the Ahoms, who ruled much of the Brahmaputra valley from the 13th century to the early 19th, and the Mughals. The Battle of Saraighat (1671), fought on the river at Guwahati, saw the Ahom general Lachit Borphukan defeat a Mughal fleet.",
+        "For students from outside the northeast, Guwahati is a door into a history that most textbooks treat briefly. Our explainer on [tribes of India](tribes-of-india.html) and the lecture on [sacred architecture across communities](sacred-architecture-across-communities.html) help frame the many traditions of the valley."
+      ]
+    },
+    {
+      "h2": "Historical places in Guwahati by period",
+      "paras": [
+        "Early medieval Kamarupa left stone sculpture and temple ruins across the city: at Ambari, excavations near the Dighalipukhuri found pottery and sculpture from roughly the 7th to 12th centuries; the Umananda temple and Kamakhya have earlier carved stones reused in later buildings. Madan Kamdev, about 35 km north, is a large field of sculpture from the Pala period of Kamarupa, roughly the 10th to 12th centuries.",
+        "The present Kamakhya Temple was rebuilt in the 16th century under the Koch king Nara Narayan, and Ahom kings added shrines in the 17th and 18th centuries. Its beehive-shaped spire is a regional form. In the colonial period Guwahati became a district town; Cotton College (1901) and the old Deputy Commissioner's bungalow date from then."
+      ],
+      "table": {
+        "head": ["Period", "Examples"],
+        "rows": [
+          ["Kamarupa, 4th to 12th century", "Ambari finds, Madan Kamdev, reused carvings at Kamakhya and Umananda"],
+          ["Koch and Ahom, 16th to 18th century", "Kamakhya Temple rebuilt, Umananda Temple (1694), Sukreswar Temple"],
+          ["Ahom and Mughal conflict", "Saraighat battle site, Lachit memorials"],
+          ["Colonial and modern", "Cotton College, Assam State Museum, Dighalipukhuri park"]
+        ]
+      }
+    },
+    {
+      "h2": "What you see on a heritage walk in Guwahati",
+      "paras": [
+        "The riverfront walk starts at the Sukreswar ghat and temple, built under the Ahom king Pramatta Singha in the 18th century, then takes the ferry to Umananda, a small island temple built by the Ahom king Gadadhar Singha's officers in 1694. Back on shore, walk to the Dighalipukhuri, an old tank, and the Assam State Museum beside it.",
+        "Kamakhya is a separate climb or drive up Nilachal Hill. Look at the older stone carvings set into the base of the temple, the beehive spire and the cluster of smaller shrines. The temple is an active Shakta pilgrimage site and is treated historically on a walk; the [lecture on the Devimahatmya](the-goddess-in-text-and-image-the-devimahatmya.html) gives the textual background for older students."
+      ]
+    },
+    {
+      "h2": "Museums in Guwahati",
+      "paras": [
+        "The Assam State Museum has sculpture from Kamarupa sites, copper plate inscriptions, Ahom period weapons and manuscripts, and ethnographic galleries on communities of the northeast. Srimanta Sankardev Kalakshetra has galleries on Assamese culture and the Vaishnava tradition founded by Sankardev in the 15th and 16th centuries. A [museum gallery study with an archaeologist](museum-morning-with-an-archaeologist.html) at the State Museum is the best start for school groups."
+      ]
+    },
+    {
+      "h2": "Guwahati heritage walk for schools and colleges",
+      "paras": [
+        "For schools, a riverfront walk and museum session make a full morning and fit the syllabus on regional kingdoms. Colleges can add Madan Kamdev for sculpture, and the Moidams for the Ahom burial landscape, the newest UNESCO site in the region. Anthropology students will find the museum's ethnographic galleries useful before any field visit.",
+        "Guwahati walks are planned with you, around what your group wants to see. For a longer trip through Assam and the northeast, a [study tour built for your group](a-study-tour-built-for-your-group.html) can include Sivasagar and Charaideo; the [burials and bioarchaeology lecture](burials-and-bioarchaeology.html) prepares students for the Moidams. See also [heritage sites in Assam](heritage-sites-in-assam.html)."
+      ]
+    },
+    {
+      "h2": "Practical advice for groups",
+      "paras": [
+        "Kamakhya is very crowded, especially during the Ambubachi Mela in June, when the temple closes for several days. Ferries to Umananda depend on river levels and weather; in the monsoon they may not run. Dress modestly at temples. Charaideo is about 7 to 8 hours by road from Guwahati, so plan it from Sivasagar or Jorhat. Check the site or museum website before you go."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Kamakhya Temple", "period": "Rebuilt 16th century, older carvings", "note": "Shakta temple on Nilachal Hill. Look for older sculpture reused in the base and the beehive spire."},
+    {"name": "Umananda Temple", "period": "1694", "note": "Shiva temple on a small island in the Brahmaputra, reached by ferry. Some carvings are older."},
+    {"name": "Sukreswar Temple and ghat", "period": "18th century", "note": "Riverside temple built under Pramatta Singha. A good place to talk about the river as a highway."},
+    {"name": "Dighalipukhuri", "period": "Old tank, tradition early medieval", "note": "Long rectangular tank in the city centre, now a park."},
+    {"name": "Assam State Museum", "period": "Founded 1940", "note": "Kamarupa sculpture, inscriptions, Ahom objects and ethnographic galleries."},
+    {"name": "Ambari excavation area", "period": "About 7th to 12th century finds", "note": "Excavated area near the museum where early medieval pottery and sculpture were found."},
+    {"name": "Cotton University", "period": "1901", "note": "Assam's oldest college, now a university. Seen from outside."},
+    {"name": "Navagraha Temple", "period": "18th century", "note": "Temple on Chitrachal Hill associated with astronomical study under the Ahoms."},
+    {"name": "Lachit Borphukan memorial, Saraighat", "period": "Battle 1671, memorial modern", "note": "Riverside memorial near the battle site. Vehicle needed."},
+    {"name": "Madan Kamdev", "period": "About 10th to 12th century", "note": "Field of temple ruins and sculpture about 35 km north. Vehicle needed."},
+    {"name": "Srimanta Sankardev Kalakshetra", "period": "Opened 1998", "note": "Cultural centre with galleries on Assamese traditions and the Sattra institutions."}
+  ],
+  "routes": [
+    {"name": "The riverfront and museum", "length": "About 3 hours with the ferry", "stops": ["Sukreswar Temple and ghat", "Umananda Temple", "Dighalipukhuri", "Assam State Museum", "Ambari excavation area"]},
+    {"name": "Hills of Guwahati", "length": "About 3 hours, vehicle needed", "stops": ["Kamakhya Temple", "Navagraha Temple", "Cotton University"]},
+    {"name": "Beyond the city", "length": "Half day by vehicle", "stops": ["Lachit Borphukan memorial, Saraighat", "Madan Kamdev"]}
+  ],
+  "museums": [
+    {"name": "Assam State Museum", "note": "Archaeology, inscriptions and ethnography of Assam."},
+    {"name": "Srimanta Sankardev Kalakshetra", "note": "Galleries on Assamese culture, music and the Vaishnava tradition."},
+    {"name": "Anthropological Museum, Gauhati University", "note": "Material culture of northeast communities; visits need prior permission."}
+  ],
+  "best_time": "October to March, when the river is calmer and skies clear. The monsoon (June to September) brings heavy rain and may stop ferries.",
+  "faq": [
+    {"q": "What are the main historical places in Guwahati?", "a": "Kamakhya Temple, Umananda Temple, Sukreswar Temple, the Navagraha Temple, Dighalipukhuri, the Assam State Museum and the Saraighat battle area, with Madan Kamdev a short drive north."},
+    {"q": "How old is the Kamakhya Temple?", "a": "The site is an old place of worship, and older carvings are built into the temple. The present structure was rebuilt in the 16th century under the Koch king Nara Narayan, with later Ahom additions."},
+    {"q": "Are the Moidams near Guwahati?", "a": "No. The Moidams at Charaideo, inscribed by UNESCO in 2024, are near Sivasagar in upper Assam, about 7 to 8 hours by road. Plan them as part of a longer trip."},
+    {"q": "Is a Guwahati heritage walk suitable for schools?", "a": "Yes. The riverfront walk with the State Museum makes a good morning. Check ferry operation for Umananda in advance, and avoid Kamakhya during the Ambubachi Mela."}
+  ],
+  "related_programmes": ["museum-morning-with-an-archaeologist.html", "a-study-tour-built-for-your-group.html", "sacred-architecture-across-communities.html", "burials-and-bioarchaeology.html", "the-goddess-in-text-and-image-the-devimahatmya.html", "temples-of-eastern-india.html"],
+  "related_guides": ["heritage-sites-in-assam", "tribes-of-india", "unesco-world-heritage-sites-in-india", "heritage-sites-in-meghalaya", "anthropology-and-tribal-india", "heritage-walk-in-kolkata"],
+  "bundle": {"title": "From Kamarupa to the Ahoms", "pitch": "A museum gallery study at the Assam State Museum, then a study tour up the valley to Sivasagar and the Moidams, with a burials lecture before you go.", "items": ["museum-morning-with-an-archaeologist.html", "burials-and-bioarchaeology.html", "a-study-tour-built-for-your-group.html"]},
+  "audience_hooks": ["Schools: a riverfront walk and a State Museum session on the kingdoms of Assam.", "Colleges: Madan Kamdev sculpture and an Ahom study tour for history and anthropology students.", "Travellers: a private day in Guwahati with a historian, or a longer trip to Sivasagar."],
+  "sem": {
+    "ad_group": "Heritage walk Guwahati",
+    "keywords": ["heritage walk in guwahati", "guwahati heritage tour for schools", "guwahati walking tour with historian", "assam heritage study tour", "moidams charaideo guided tour", "private heritage tour guwahati", "assam history tour for college students"],
+    "negatives": ["free", "pdf", "essay", "jobs", "puja booking", "wikipedia"],
+    "headlines": ["Heritage Walk in Guwahati", "Walk With a Historian", "Kamarupa to the Ahoms", "For Schools and Colleges", "Arranged on Request"],
+    "descriptions": ["Guwahati heritage walks led by archaeologists and historians, in English or Hindi.", "For schools, colleges, companies and private groups. Share your dates and group size."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "In 1671 the Ahoms beat a Mughal fleet on the Brahmaputra at Guwahati.", "caption": "The Battle of Saraighat, led by Lachit Borphukan, was fought on the river itself. It is one of the few major river battles in Indian history."},
+      {"angle": "tip", "hook": "Look at the base of the Kamakhya Temple.", "caption": "Older carved stones are set into the lower walls, reused from earlier buildings on the hill. They are clues to a much older temple."},
+      {"angle": "offer", "hook": "Guwahati and Ahom Assam with a historian.", "caption": "We arrange walks in Guwahati and study tours up the Brahmaputra valley for schools, colleges and private groups."}
+    ],
+    "reel": "Ferry ride to Umananda at golden hour, then the museum's Kamarupa sculpture. On-screen line: 'The northeast has a history your textbook skipped.' End card: 'Guwahati heritage walks, arranged on request.'",
+    "hashtags": ["#Guwahati", "#Assam", "#AssamHeritage", "#Kamakhya", "#Ahom", "#Moidams", "#HeritageWalk", "#NortheastIndia", "#TalaashHeritage"]
+  },
+  "og_title": "Guwahati's river and hills with a historian",
+  "og_description": "Kamarupa sculpture, Ahom temples and the Saraighat river battle, explained on a walk.",
+  "cta": "We arrange Guwahati heritage walks on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi, with other languages through partners."
+}

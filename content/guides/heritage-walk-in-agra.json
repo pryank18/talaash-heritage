@@ -1,0 +1,89 @@
+{
+  "slug": "heritage-walk-in-agra",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Agra",
+  "state": "Uttar Pradesh",
+  "title": "Heritage walk in Agra: historical places beyond the Taj Mahal",
+  "seo_title": "Heritage Walk in Agra: Historical Places, Routes, Museums",
+  "meta_description": "Plan a heritage walk in Agra: the Taj Mahal, Agra Fort, Itmad-ud-Daula, Mehtab Bagh and Fatehpur Sikri, with walking routes and advice for school groups.",
+  "keywords": ["heritage walk in agra", "historical places in agra", "heritage sites in agra", "museums in agra", "agra heritage walk for schools", "agra heritage walk", "monuments of agra", "unesco sites in agra", "places to visit in agra for history", "fatehpur sikri heritage walk"],
+  "summary": "A heritage walk in Agra covers the Mughal capital of the 16th and 17th centuries: the Taj Mahal and Agra Fort (both UNESCO sites since 1983), the riverside gardens and tombs on the Yamuna's left bank, the old city around Jama Masjid, and Akbar's tomb at Sikandra. Fatehpur Sikri, a third UNESCO site, is about 40 km away.",
+  "sections": [
+    {"h2": "Why Agra matters", "paras": [
+      "Agra was a Lodi town before it was a Mughal one. Sikandar Lodi made it his base in the early 16th century, and Babur, Humayun and then Akbar held court here. Under Akbar, Jahangir and Shah Jahan, Agra was one of the largest cities in the Mughal empire, until Shah Jahan moved the court to Delhi in 1648.",
+      "Most visitors see the Taj Mahal and leave. The city is better understood as a river city: the Mughal nobility built walled gardens, pavilions and tombs along both banks of the Yamuna, and the Taj is the grandest of them. A walk that follows the river makes sense of why the Taj sits where it does and faces the way it does."
+    ]},
+    {"h2": "Layers of Agra's history", "paras": [
+      "Before the Mughals, Agra was a fortified Lodi settlement, and little of that period survives above ground. Babur laid out the first Mughal garden in India on the left bank in the 1520s, now known as Ram Bagh (Aram Bagh).",
+      "Akbar rebuilt Agra Fort in red sandstone from 1565 and founded Fatehpur Sikri in the 1570s as a new capital, which he left within about 15 years. Jahangir's reign brought the tomb of Itmad-ud-Daula (1622 to 1628), built by Nur Jahan for her father, with fine stone inlay that anticipates the Taj. Shah Jahan built the Taj Mahal (begun 1632) for Mumtaz Mahal, added white marble palaces inside the fort, and had the Jama Masjid built in his daughter Jahanara's name in 1648.",
+      "Later layers include Jat and Maratha control in the 18th century, British cantonment buildings, and the Roman Catholic cemetery with early European graves. The [Mughal architecture](mughal-architecture.html) guide explains how the style developed across these sites."
+    ]},
+    {"h2": "What you see on an Agra walk", "paras": [
+      "At Agra Fort you read three reigns in one place: Akbar's Jahangiri Mahal in carved red sandstone, then Shah Jahan's Khas Mahal and Musamman Burj in white marble. At Itmad-ud-Daula you see pietra dura inlay at small scale before it was used on the Taj. From Mehtab Bagh, across the river, you see the Taj as it was designed to be seen, from a garden on its own axis.",
+      "Students learn to read a char bagh garden plan, to tell red sandstone from marble cladding, and to look at calligraphy and inlay up close. For the broader Indo-Islamic background, see [Indo-Islamic architecture](indo-islamic-architecture.html)."
+    ]},
+    {"h2": "Agra and Fatehpur Sikri for groups", "paras": [
+      "Groups usually see Agra as part of a study tour. [Three capitals: Delhi, Agra and Jaipur](three-capitals-delhi-agra-and-jaipur.html) puts Agra between the two other Mughal and Rajput capitals, and [The Golden Triangle with an archaeologist](the-golden-triangle-with-an-archaeologist.html) is a private journey for families and small groups. A day at Fatehpur Sikri can be added through [Fatehpur Sikri: Mughal urban vision](fatehpur-sikri-mughal-urban-vision.html).",
+      "Schools can prepare with a classroom lecture such as [Reading a temple](how-to-read-a-temple.html) for comparison, or a Delhi walk at [Humayun's Tomb](humayuns-tomb.html), the model the Taj grew from. Any other combination can be arranged through a [study tour built for your group](a-study-tour-built-for-your-group.html)."
+    ]},
+    {"h2": "Practical advice for school groups", "paras": [
+      "Agra is about three to four hours from Delhi by road or under two hours by fast train, so a day trip is possible but long. An overnight stay lets you see the Taj at opening and Fatehpur Sikri the next morning. The Taj is closed on Fridays. Security at the Taj restricts what can be carried in, so check the ASI website for current rules on bags, food and group entry before you go.",
+      "The sites are spread out, so a coach or cabs are needed between Agra Fort, Itmad-ud-Daula, Mehtab Bagh and Sikandra. Walking works within each site and in the old city around Jama Masjid and Kinari Bazaar."
+    ]}
+  ],
+  "stops": [
+    {"name": "Taj Mahal", "period": "1632 to about 1648", "note": "Shah Jahan's tomb for Mumtaz Mahal; look at the inlay, the calligraphy that enlarges as it rises, and the mosque and guest hall on either side."},
+    {"name": "Agra Fort", "period": "1565 onward", "note": "Akbar's red sandstone fort with Jahangiri Mahal, and Shah Jahan's marble Khas Mahal, Diwan-i-Khas and Musamman Burj."},
+    {"name": "Jama Masjid, Agra", "period": "1648", "note": "Congregational mosque commissioned in Jahanara's name, facing the fort across the railway line."},
+    {"name": "Kinari Bazaar", "period": "Mughal period onward", "note": "Old city market lanes behind the Jama Masjid, with havelis and trade streets."},
+    {"name": "Itmad-ud-Daula's Tomb", "period": "1622 to 1628", "note": "Nur Jahan's tomb for her father, often called the Baby Taj, with early white marble and stone inlay."},
+    {"name": "Chini ka Rauza", "period": "about 1635", "note": "Tomb of Afzal Khan Shirazi, notable for glazed tile work in a Persian manner."},
+    {"name": "Ram Bagh", "period": "1520s, later altered", "note": "Associated with Babur's first garden in India, with raised walkways and water channels."},
+    {"name": "Mehtab Bagh", "period": "Shah Jahan's reign", "note": "Moonlight garden on the left bank, aligned with the Taj; excavated and replanted from the 1990s."},
+    {"name": "Akbar's Tomb, Sikandra", "period": "completed about 1613", "note": "Akbar's tomb, finished by Jahangir, with a gateway of inlaid stone and minarets."},
+    {"name": "Mariam-uz-Zamani's Tomb", "period": "1620s", "note": "Tomb of Akbar's wife near Sikandra, in a building that began as a Lodi structure."},
+    {"name": "Roman Catholic Cemetery, Agra", "period": "17th century onward", "note": "Early European graves including the Hessing tomb, a red sandstone tomb in Mughal style."},
+    {"name": "Fatehpur Sikri", "period": "1571 to 1585", "note": "Akbar's walled capital with the Jama Masjid, Buland Darwaza, Panch Mahal and Diwan-i-Khas. About 40 km by road."}
+  ],
+  "routes": [
+    {"name": "Fort and old city", "length": "About 3 hours", "stops": ["Agra Fort", "Jama Masjid, Agra", "Kinari Bazaar"]},
+    {"name": "The left bank gardens", "length": "Half a day, by vehicle between stops", "stops": ["Itmad-ud-Daula's Tomb", "Chini ka Rauza", "Ram Bagh", "Mehtab Bagh"]},
+    {"name": "Taj and Sikandra", "length": "Half a day, by vehicle to Sikandra", "stops": ["Taj Mahal", "Akbar's Tomb, Sikandra", "Mariam-uz-Zamani's Tomb"]}
+  ],
+  "museums": [
+    {"name": "Taj Museum", "note": "Small ASI museum inside the Taj complex with Mughal drawings, documents and objects related to the tomb."},
+    {"name": "Fatehpur Sikri archaeological museum", "note": "ASI museum at Fatehpur Sikri with finds from excavations at the site."}
+  ],
+  "best_time": "October to March. Arrive at the Taj at opening for softer light and smaller crowds; the Taj is closed on Fridays.",
+  "faq": [
+    {"q": "Which historical places in Agra should a heritage walk include?", "a": "The Taj Mahal and Agra Fort first, then Itmad-ud-Daula's tomb and Mehtab Bagh on the opposite bank, Akbar's tomb at Sikandra and the old city around Jama Masjid. Fatehpur Sikri, about 40 km away, needs a separate half day."},
+    {"q": "How many UNESCO sites are there in Agra?", "a": "Three are in or near Agra: Agra Fort and the Taj Mahal, both inscribed in 1983, and Fatehpur Sikri, inscribed in 1986."},
+    {"q": "Is an Agra heritage walk suitable for schools?", "a": "Yes, but plan it as a day trip from Delhi or an overnight study tour. Use a coach between sites, keep each stop to an hour or so, and check the Taj's security rules on bags and food before the visit."},
+    {"q": "What museums are there in Agra?", "a": "The Taj Museum inside the Taj complex and the ASI museum at Fatehpur Sikri are the main ones. For a wider view of Mughal art, combine Agra with the National Museum in Delhi."},
+    {"q": "Can we combine Agra with Delhi and Jaipur?", "a": "Yes. Talaash Heritage arranges study tours and private journeys that link Delhi, Agra and Jaipur with an archaeologist or historian, for schools, colleges, companies and families."}
+  ],
+  "related_programmes": ["three-capitals-delhi-agra-and-jaipur.html", "fatehpur-sikri-mughal-urban-vision.html", "the-golden-triangle-with-an-archaeologist.html", "humayuns-tomb.html", "a-study-tour-built-for-your-group.html", "red-fort-complex.html"],
+  "related_guides": ["mughal-architecture", "mughal-empire", "heritage-sites-in-uttar-pradesh", "unesco-world-heritage-sites-in-india", "heritage-walk-in-delhi", "heritage-walk-in-jaipur"],
+  "bundle": {"title": "From Humayun's Tomb to the Taj", "pitch": "See the first Mughal garden tomb in Delhi, then the Taj and Fatehpur Sikri, to follow how one design idea grew over a century.", "items": ["humayuns-tomb.html", "fatehpur-sikri-mughal-urban-vision.html", "three-capitals-delhi-agra-and-jaipur.html"]},
+  "audience_hooks": ["Schools: Agra as part of the Three capitals study tour, with an archaeologist on every site.", "Families and travellers: The Golden Triangle with an archaeologist, as a private journey.", "Colleges: a day at Fatehpur Sikri on Mughal planning and architecture."],
+  "sem": {
+    "ad_group": "Heritage walk Agra",
+    "keywords": ["heritage walk in agra", "agra study tour for schools", "agra heritage tour with historian", "taj mahal guided tour archaeologist", "fatehpur sikri guided tour", "agra school trip", "golden triangle tour with archaeologist"],
+    "negatives": ["free", "pdf", "essay", "drawing", "hotel", "ticket price", "jobs"],
+    "headlines": ["Agra With an Archaeologist", "Taj, Fort and Fatehpur Sikri", "Study Tours for Schools", "Mughal Agra, Read Closely", "In English or Hindi"],
+    "descriptions": ["Agra heritage visits and study tours led by archaeologists, arranged for your group.", "Taj Mahal, Agra Fort, Itmad-ud-Daula and Fatehpur Sikri for schools and families."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "The Taj was built to be seen from a garden across the river.", "caption": "Mehtab Bagh, on the far bank of the Yamuna, sits on the same axis as the Taj. Excavations found its pools and walkways, and it shows how the tomb belongs to a whole river city of gardens."},
+      {"angle": "tip", "hook": "See the Baby Taj before the Taj.", "caption": "Itmad-ud-Daula's tomb, finished in 1628, has stone inlay at a scale you can study up close. Go there first and you will notice far more at the Taj."},
+      {"angle": "offer", "hook": "Agra with an archaeologist, not a script.", "caption": "We arrange Agra and Fatehpur Sikri as part of study tours and private journeys for schools, colleges, companies and families, in English or Hindi."}
+    ],
+    "reel": "Pan across the Taj from Mehtab Bagh, then cut to inlay at Itmad-ud-Daula and the red sandstone of Agra Fort. Line: the Taj is one garden in a river city. End card: Agra study tours, arranged on request.",
+    "hashtags": ["#Agra", "#TajMahal", "#AgraFort", "#FatehpurSikri", "#MughalArchitecture", "#HeritageWalk", "#IndianHeritage", "#StudyTour", "#TalaashHeritage"]
+  },
+  "og_title": "Agra beyond the Taj: a heritage walk guide",
+  "og_description": "Agra Fort, the riverside tombs, Mehtab Bagh and Fatehpur Sikri, read with an archaeologist's eye.",
+  "cta": "We arrange Agra and Fatehpur Sikri visits on request for schools, colleges, companies and private groups, led by an archaeologist or historian, in English or Hindi."
+}

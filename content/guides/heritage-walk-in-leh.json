@@ -1,0 +1,86 @@
+{
+  "slug": "heritage-walk-in-leh",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Leh",
+  "state": "Ladakh",
+  "title": "Heritage walk in Leh: the old town, palace and monasteries",
+  "seo_title": "Heritage Walk in Leh: Old Town, Monasteries, Museums",
+  "meta_description": "Plan a heritage walk in Leh: Leh Palace, Namgyal Tsemo, the old town, Shey, Thiksey, Hemis and Alchi, with routes, museums and altitude tips for school groups.",
+  "keywords": ["heritage walk in leh", "historical places in leh", "heritage sites in leh", "museums in leh", "leh heritage walk for schools", "leh old town walk", "leh palace history", "monasteries near leh", "alchi monastery history", "ladakh heritage tour"],
+  "summary": "A heritage walk in Leh climbs through the old town below the nine-storey Leh Palace (early 17th century) to Namgyal Tsemo, then visits monasteries along the Indus: Shey, Thiksey, Hemis and, further west, Alchi with its 11th to 12th century murals. Leh lies at about 3,500 metres, so groups need two days to acclimatise first.",
+  "sections": [
+    {"h2": "Why Leh matters", "paras": [
+      "Leh was the capital of the Ladakhi kingdom of the Namgyal dynasty and a key stop on the caravan routes linking Kashmir, Tibet, Central Asia and Punjab. Pashmina wool, salt, tea, textiles and silver passed through its bazaar, and the town grew around the trade.",
+      "It also preserves one of the best-kept Tibetan Buddhist building traditions in India: mud-brick and timber palaces and monasteries, wall paintings, chortens and mani walls. A walk in Leh is a lesson in high-altitude architecture, long-distance trade and Himalayan Buddhism together."
+    ]},
+    {"h2": "Layers of Leh's history", "paras": [
+      "Ladakh has rock art and petroglyphs along the Indus valley, some of them prehistoric, and the [rock art in India](rock-art-in-india.html) guide covers the wider context. Buddhism reached the region early, and the temples of Alchi, painted in about the 11th to 12th century, show strong Kashmiri artistic influence before the later Tibetan style became dominant.",
+      "The first Ladakhi dynasty ruled from about the 10th century. The Namgyal dynasty took power in the 15th and 16th centuries, and Sengge Namgyal (ruled in the early 17th century) built Leh Palace and supported Hemis monastery. Tashi Namgyal is credited with the Namgyal Tsemo fort and temple above the palace in the 16th century.",
+      "In 1834 the Dogra general Zorawar Singh invaded Ladakh for the Raja of Jammu, and the royal family moved to Stok. Ladakh then became part of Jammu and Kashmir state, and since 2019 it has been a separate Union Territory."
+    ]},
+    {"h2": "What you see on a walk", "paras": [
+      "In the old town below the palace, students see flat-roofed mud-brick houses, timber beams, narrow lanes and chortens built for a cold desert climate. At Leh Palace, read how a nine-storey building steps up the rock. In the monasteries, look at the assembly hall, the painted walls and the arrangement of images, and treat them as living religious places.",
+      "Background on Buddhist sites helps: see [Buddhist caves in India](buddhist-caves-in-india.html), or the lecture [Sacred architecture across communities](sacred-architecture-across-communities.html). Students interested in scripts can link Ladakhi inscriptions to [India's scripts from Brahmi to Sarada](reading-india-s-scripts-brahmi-to-sarada.html), since Tibetan script derives from a north Indian Brahmi-based model."
+    ]},
+    {"h2": "Leh for school and college groups", "paras": [
+      "Leh visits are arranged as a [study tour built for your group](a-study-tour-built-for-your-group.html), planned around acclimatisation, travel times and the season. A [heritage photography photo walk](heritage-photography-evidence-led-photo-walk.html) works especially well in the old town.",
+      "Leh is at about 3,500 metres. Groups flying in must rest for at least 36 to 48 hours before any walking, and every student should have a medical check before the trip. The old town, palace and Shanti Stupa are walkable but steep. Shey, Thiksey and Hemis need a vehicle (Hemis is about 45 km away), and Alchi is about 65 km west. Monasteries expect modest dress and quiet behaviour; ask before photographing inside."
+    ]}
+  ],
+  "stops": [
+    {"name": "Leh Palace", "period": "early 17th century", "note": "Nine-storey royal palace of Sengge Namgyal in mud brick and timber, overlooking the town."},
+    {"name": "Namgyal Tsemo", "period": "16th century", "note": "Fort and Gonkhang temple on the peak above the palace, with prayer flags and wide views."},
+    {"name": "Leh old town", "period": "17th century onward", "note": "Mud-brick houses and lanes below the palace, partly restored by conservation projects."},
+    {"name": "Leh Main Bazaar", "period": "caravan era onward", "note": "The old trade street where caravans from Kashmir, Tibet and Central Asia arrived."},
+    {"name": "Jama Masjid, Leh", "period": "17th century, rebuilt", "note": "Mosque in the bazaar linked to the Ladakh and Mughal treaty of the 1660s."},
+    {"name": "Shanti Stupa", "period": "1991", "note": "Modern white stupa built with Japanese support, a good viewpoint over the town."},
+    {"name": "Sankar Gompa", "period": "19th century", "note": "Small monastery in Leh town, a branch of Spituk."},
+    {"name": "Shey Palace", "period": "17th century", "note": "Old royal summer palace with a large seated Buddha image, about 15 km from Leh."},
+    {"name": "Thiksey Monastery", "period": "15th century", "note": "Hilltop monastery of the Gelug school, built in tiers up the slope."},
+    {"name": "Hemis Monastery", "period": "about 1630", "note": "Large Drukpa monastery founded with the support of Sengge Namgyal, known for its summer festival."},
+    {"name": "Alchi Choskor", "period": "about 11th to 12th century", "note": "Temple complex with early murals and painted textiles showing Kashmiri influence."},
+    {"name": "Stok Palace", "period": "1820s", "note": "Residence of the royal family after 1834, with a museum of royal objects."}
+  ],
+  "routes": [
+    {"name": "Old town and palace on foot", "length": "About 3 hours, steep, after acclimatisation", "stops": ["Leh Main Bazaar", "Jama Masjid, Leh", "Leh old town", "Leh Palace", "Namgyal Tsemo"]},
+    {"name": "The Indus monasteries", "length": "Full day, by vehicle", "stops": ["Shey Palace", "Thiksey Monastery", "Hemis Monastery"]},
+    {"name": "Alchi and the west", "length": "Full day, by vehicle", "stops": ["Alchi Choskor", "Stok Palace"]}
+  ],
+  "museums": [
+    {"name": "Central Asian Museum, Leh", "note": "Museum in the old town on Leh's caravan trade links with Central Asia, Tibet and Kashmir."},
+    {"name": "Stok Palace Museum", "note": "Royal thangkas, jewellery, costumes and objects of the Namgyal family."},
+    {"name": "Hemis Monastery museum", "note": "Thangkas, statues and ritual objects held by the monastery."}
+  ],
+  "best_time": "June to September, when roads and flights are reliable. Always plan two days of rest on arrival.",
+  "faq": [
+    {"q": "What are the main historical places in Leh?", "a": "Leh Palace, Namgyal Tsemo, the old town and bazaar, Shanti Stupa and Sankar Gompa in town, then Shey, Thiksey, Hemis, Stok and Alchi along the Indus valley."},
+    {"q": "Who built Leh Palace?", "a": "Sengge Namgyal, ruler of Ladakh in the early 17th century. The royal family left it after the Dogra invasion of 1834 and moved to Stok."},
+    {"q": "Is a Leh heritage walk safe for school students?", "a": "It can be, with careful planning. Leh is at about 3,500 metres, so students need medical checks, two days of rest before walking, plenty of water and short, slow walks."},
+    {"q": "Which museums can be visited in Leh?", "a": "The Central Asian Museum in the old town, the Stok Palace Museum and the museum at Hemis Monastery."},
+    {"q": "Can Talaash Heritage arrange a Ladakh study tour?", "a": "Yes, on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi, planned around altitude and season."}
+  ],
+  "related_programmes": ["a-study-tour-built-for-your-group.html", "sacred-architecture-across-communities.html", "reading-india-s-scripts-brahmi-to-sarada.html", "heritage-photography-evidence-led-photo-walk.html", "rock-art-of-india.html", "climate-change-and-ancient-settlements.html"],
+  "related_guides": ["heritage-sites-in-ladakh", "buddhist-caves-in-india", "rock-art-in-india", "heritage-walk-in-srinagar", "ancient-scripts-of-india"],
+  "bundle": {"title": "Before you go up", "pitch": "Two lectures in class (on rock art and on sacred architecture) during the planning months, then the Leh study tour itself.", "items": ["rock-art-of-india.html", "sacred-architecture-across-communities.html", "a-study-tour-built-for-your-group.html"]},
+  "audience_hooks": ["Schools: a Ladakh study tour planned around acclimatisation, with lectures in class beforehand.", "Colleges: monasteries, rock art and climate history in the cold desert.", "Travellers: a private Leh and Alchi itinerary with an archaeologist."],
+  "sem": {
+    "ad_group": "Heritage walk Leh",
+    "keywords": ["heritage walk in leh", "leh study tour for schools", "ladakh heritage tour with archaeologist", "leh old town guided walk", "ladakh monasteries guided tour", "alchi guided visit", "ladakh educational tour"],
+    "negatives": ["free", "pdf", "bike", "essay", "hotel", "ticket price", "jobs"],
+    "headlines": ["Heritage Walks in Leh", "Ladakh With an Archaeologist", "Study Tours for Schools", "Palace, Old Town, Gompas", "In English or Hindi"],
+    "descriptions": ["Leh and Ladakh study tours with archaeologists, planned around altitude and season.", "Leh Palace, the old town, Thiksey, Hemis and Alchi, arranged for your group."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Leh Palace has nine storeys of mud brick.", "caption": "Sengge Namgyal built it in the early 17th century, stepping up a rock above the caravan town. It was home to Ladakh's kings until 1834."},
+      {"angle": "tip", "hook": "In Alchi, bring a torch and patience.", "caption": "The murals of about the 11th to 12th century are in dim halls. Let your eyes adjust and look for textile patterns painted on the figures' robes."},
+      {"angle": "offer", "hook": "Ladakh, planned properly.", "caption": "We arrange Leh study tours for schools, colleges, companies and families, with acclimatisation built in and an archaeologist or historian, in English or Hindi."}
+    ],
+    "reel": "Prayer flags at Namgyal Tsemo, a pan down to the palace and old town, then Thiksey on its hill. Line: a caravan capital at 3,500 metres. End card: Ladakh study tours, arranged on request.",
+    "hashtags": ["#Leh", "#Ladakh", "#LehPalace", "#Thiksey", "#Alchi", "#HimalayanHeritage", "#HeritageWalk", "#IndianHeritage", "#TalaashHeritage"]
+  },
+  "og_title": "Leh heritage walk: palace, old town and gompas",
+  "og_description": "Leh Palace, Namgyal Tsemo, Thiksey, Hemis and Alchi, with altitude tips for school groups.",
+  "cta": "We arrange Leh and Ladakh study tours on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."
+}

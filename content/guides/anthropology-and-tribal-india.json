@@ -1,0 +1,140 @@
+{
+  "slug": "anthropology-and-tribal-india",
+  "type": "pillar",
+  "pillar": "anthropology",
+  "title": "Anthropology and tribal India: a guide to the discipline",
+  "seo_title": "Anthropology in India: Branches, Ethnography and Tribes",
+  "meta_description": "Anthropology in India explained: the discipline and its branches, ethnography, Scheduled Tribes and their diversity, folklore, prehistory and how to study it.",
+  "keywords": ["anthropology in india", "indian anthropology", "tribal india", "tribes of india", "scheduled tribes of india", "branches of anthropology", "ethnography in india", "history of anthropology in india", "social anthropology india", "anthropology for upsc"],
+  "summary": "Anthropology is the study of human beings in all their variety: bodies, languages, societies and cultures, past and present. In India it grew from colonial ethnography into a modern discipline with four main branches, social and cultural, biological, archaeological and linguistic. Its best known work concerns India's Scheduled Tribes, more than 700 communities with distinct histories, languages and ways of life.",
+  "sections": [
+    {
+      "h2": "What is anthropology?",
+      "paras": [
+        "Anthropology asks what it means to be human, and answers by comparing people across time and place. It studies how we evolved, how our bodies vary, how we speak, how we organise families, work, belief and power, and how all of these change. Our explainer on [what anthropology is](what-is-anthropology.html) gives the basic definitions.",
+        "Its signature method is long-term fieldwork: living with a community, learning its language and taking part in daily life. This makes anthropology different from sociology, which more often works with surveys and large institutions, though the line between them is not sharp in India. The page on the [difference between anthropology and sociology](difference-between-anthropology-and-sociology.html) explains where they meet."
+      ]
+    },
+    {
+      "h2": "Branches of anthropology",
+      "paras": [
+        "Anthropology is usually divided into four fields. Indian universities often teach them together in the first years of a degree and let students specialise later. The [branches of anthropology](branches-of-anthropology.html) explainer covers each in more depth."
+      ],
+      "list": [
+        "Social and cultural anthropology: kinship, marriage, religion, economy, politics, caste, ritual, migration and change, studied mainly through fieldwork.",
+        "Biological or physical anthropology: human evolution, genetics, growth, nutrition, health and human variation, including forensic anthropology.",
+        "Archaeological anthropology: past societies through material remains, including prehistory, which links closely with archaeology.",
+        "Linguistic anthropology: language in social life, multilingualism, endangered languages and oral traditions."
+      ]
+    },
+    {
+      "h2": "How anthropology developed in India",
+      "paras": [
+        "Anthropology in India began in the colonial period. British administrators wrote district gazetteers and multi-volume surveys of 'tribes and castes' to classify the people they governed. H. H. Risley's work for the 1901 Census, which ranked communities and used body measurements, is now widely criticised for treating social groups as fixed races and for hardening caste categories.",
+        "Indian scholars soon changed the field. Sarat Chandra Roy wrote detailed ethnographies of the Munda and Oraon of Chota Nagpur and founded the journal Man in India in 1921. The University of Calcutta started the first Indian department of anthropology in 1920. Verrier Elwin worked among the Baiga, Gond and other communities of central India and later advised on policy in the Northeast. G. S. Ghurye, N. K. Bose, D. N. Majumdar, Irawati Karve and M. N. Srinivas built Indian sociology and anthropology after independence, with Srinivas's village studies and his idea of 'Sanskritisation' becoming widely known.",
+        "The Anthropological Survey of India was set up in 1945, with headquarters in Kolkata, to study the physical and cultural variety of the country's people. Its People of India project in the 1980s and 1990s documented thousands of communities."
+      ]
+    },
+    {
+      "h2": "Ethnography: how anthropologists work",
+      "paras": [
+        "[Ethnography](what-is-ethnography.html) is both the method and the written result of fieldwork. An ethnographer spends months or years in a place, observes and takes part in everyday life, conducts interviews, records genealogies and life histories, and writes field notes every day. The aim is to understand a way of life from the inside before comparing it with others.",
+        "Ethical practice is central. Anthropologists seek informed consent, protect the identities of the people they work with, return research to communities and avoid presenting anyone as a curiosity. Many now work collaboratively, with community members as co-researchers. Our [oral history and neighbourhood memory lab](oral-history-and-neighbourhood-memory-lab.html) teaches students the basics of interviewing and recording people's memories with care."
+      ]
+    },
+    {
+      "h2": "Scheduled Tribes of India",
+      "paras": [
+        "The Constitution of India uses the term Scheduled Tribes for communities listed under Article 342. The 2011 Census counted about 10.4 crore people, around 8.6 percent of the population, in this category. More than 700 communities are notified, some across several states. The largest include the Bhil, Gond, Santhal, Oraon, Munda, Mina and Naga groups, and a separate category covers communities identified as particularly vulnerable.",
+        "These communities are not one group. They speak languages from several families, Austroasiatic (such as Santali and Mundari), Dravidian (such as Gondi and Kurukh), Tibeto-Burman (across the Northeast) and Indo-Aryan (such as Bhili). They live in very different settings, from the Nilgiri hills and the forests of central India to the Andaman Islands and the hills of Nagaland and Mizoram. Their economies range from farming and herding to wage work, government service and business in cities.",
+        "Words matter here. Older writing used labels such as 'primitive' or 'backward' that are inaccurate and hurtful; anthropologists today do not. Communities often prefer their own names, and many people use the word Adivasi, meaning original inhabitants, though it is not used everywhere, especially in the Northeast. Our explainer on [tribes of India](tribes-of-india.html) gives a regional overview."
+      ]
+    },
+    {
+      "h2": "Tribal diversity by region",
+      "paras": [
+        "A regional view helps break stereotypes, because each area has its own history of land, forest, kingship, religion and contact with the state.",
+        "A visit to the [Bhopal Tribal Museum](bhopal-tribal-museum-material-culture-interpretation.html), where communities of Madhya Pradesh helped design the galleries, is one of the best introductions to this variety."
+      ],
+      "table": {
+        "head": ["Region", "Some communities", "Notes"],
+        "rows": [
+          ["Central India", "Gond, Baiga, Bhil, Korku", "Forest and plateau communities; Gond and Bhil painting traditions are now widely known"],
+          ["Eastern India", "Santhal, Munda, Ho, Oraon, Kondh", "Long history of land movements; Santali has its own Ol Chiki script"],
+          ["Western India", "Bhil, Warli, Mina, Dhodia", "Warli painting from Maharashtra; Bhil communities across several states"],
+          ["South India", "Toda, Irula, Kurumba, Soliga, Chenchu", "Nilgiri communities with long-studied pastoral and forest economies"],
+          ["Northeast", "Naga groups, Mizo, Khasi, Garo, Bodo, Adi, Apatani", "Majority populations in several states; matrilineal Khasi and Garo"],
+          ["Islands", "Great Andamanese, Onge, Jarawa, Sentinelese, Nicobarese", "Small populations; contact and protection policies are sensitive"]
+        ]
+      }
+    },
+    {
+      "h2": "Tribal rights, policy and change",
+      "paras": [
+        "The Constitution protects Scheduled Tribes through reserved seats, reservation in education and jobs, and special provisions for Scheduled Areas (Fifth Schedule) and for parts of the Northeast (Sixth Schedule), where autonomous councils govern land and customs. The Panchayats (Extension to Scheduled Areas) Act of 1996 and the Forest Rights Act of 2006 recognise community control over local resources and forest land.",
+        "Many questions remain contested: displacement by dams and mines, forest conservation and its effect on residents, migration to cities, language loss and the place of customary law. Anthropology contributes evidence and the voices of people affected, and good writing on these issues avoids both romantic and dismissive views."
+      ]
+    },
+    {
+      "h2": "Folklore and oral traditions",
+      "paras": [
+        "Anthropologists and folklorists study songs, stories, epics, proverbs, riddles, festivals and performance. India's [folklore](folklore-of-india.html) includes long oral epics such as Pabuji ki Phad in Rajasthan and the Gond Pandvani, ballads, harvest songs and local versions of the Ramayana and Mahabharata that differ from the Sanskrit texts. A. K. Ramanujan's essays showed how many Ramayanas circulate in India.",
+        "Folklore is not a relic of the past. It changes with each telling, moves onto radio, cassette and social media, and is used to make claims about identity. Recording it carefully, with permission and credit to performers, is a growing area of work."
+      ]
+    },
+    {
+      "h2": "Prehistory and biological anthropology",
+      "paras": [
+        "Anthropology also looks deep into the past. Prehistoric archaeology, which grew partly out of anthropology departments in India, studies the [Stone Age in India](stone-age-in-india.html), from Acheulian hand axes to the microliths of the Mesolithic. The skull cap found at Hathnora in the Narmada valley in 1982 remains one of the few hominin fossils from the subcontinent.",
+        "Biological anthropologists study human variation, growth and health, and increasingly genetics. Large DNA studies have shown that most people in India today descend from a mix of ancestral populations, and that marriage within groups has kept many communities genetically distinct for long periods. These findings are often misused in political arguments; read them in the original studies where possible. Our workshop on [stone tools](stone-tools-up-close.html) and our talk on [burials and bioarchaeology](burials-and-bioarchaeology.html) show how this evidence is read."
+      ]
+    },
+    {
+      "h2": "Studying anthropology in India",
+      "paras": [
+        "Anthropology is taught at many universities, including Delhi, Calcutta, Pune, Lucknow, Ranchi, Hyderabad and North-Eastern Hill University, at the BA, MA and PhD levels. Graduates work in research, NGOs, development and public health, museums, market research, user experience research, forensic labs and the Anthropological Survey of India.",
+        "Anthropology is also a popular optional subject for the UPSC civil services examination, partly because its syllabus is well defined and links to Indian society. Our guide to [anthropology optional for UPSC](anthropology-optional-for-upsc.html) covers the syllabus and reading. Talaash Heritage offers a [research methods and academic writing](research-methods-academic-writing.html) course for students starting fieldwork or dissertations."
+      ]
+    }
+  ],
+  "faq": [
+    {"q": "What is anthropology in simple words?", "a": "Anthropology is the study of human beings: how we evolved, how our bodies vary, how we speak and how we live together in families, communities and societies. Anthropologists usually learn by spending long periods with people, observing and taking part in their daily life."},
+    {"q": "What are the four branches of anthropology?", "a": "Social and cultural anthropology, biological or physical anthropology, archaeological anthropology and linguistic anthropology. Some universities add applied anthropology, which uses anthropological knowledge in health, development, business and policy."},
+    {"q": "How many Scheduled Tribes are there in India?", "a": "More than 700 communities are notified as Scheduled Tribes, with some listed in several states. The 2011 Census counted about 10.4 crore people in this category, around 8.6 percent of India's population."},
+    {"q": "Who is known as the father of Indian anthropology?", "a": "Sarat Chandra Roy is often called the father of Indian anthropology for his ethnographies of communities in Chota Nagpur and for founding the journal Man in India in 1921. Others name later figures such as G. S. Ghurye and N. K. Bose."},
+    {"q": "What is ethnography?", "a": "Ethnography is the detailed study of a community through long-term fieldwork, and also the written account that results. It uses participant observation, interviews, genealogies and field notes to understand a way of life from the inside."},
+    {"q": "What is the difference between Adivasi and Scheduled Tribe?", "a": "Scheduled Tribe is a legal and administrative category under the Constitution. Adivasi, meaning original inhabitants, is a self-description used by many communities, especially in central and eastern India. The two overlap but are not identical, and some communities in the Northeast do not use the term Adivasi."},
+    {"q": "Is anthropology a good optional for UPSC?", "a": "Many candidates choose it because the syllabus is compact, overlaps with general studies on society, and suits students from science and humanities backgrounds. Whether it suits you depends on your interest in human evolution, kinship, tribal India and fieldwork-based reading."}
+  ],
+  "related_programmes": ["bhopal-tribal-museum-material-culture-interpretation.html", "oral-history-and-neighbourhood-memory-lab.html", "culture-and-heritage-what-we-inherit-and-why-it-matters.html", "stone-tools-up-close.html", "burials-and-bioarchaeology.html", "national-crafts-museum-living-traditions.html", "research-methods-academic-writing.html", "from-stone-tools-to-the-first-villages.html"],
+  "related_guides": ["what-is-anthropology", "branches-of-anthropology", "difference-between-anthropology-and-sociology", "what-is-ethnography", "tribes-of-india", "anthropology-optional-for-upsc", "stone-age-in-india", "folklore-of-india", "what-is-intangible-cultural-heritage", "traditional-crafts-of-india"],
+  "bundle": {
+    "title": "Listening before writing",
+    "pitch": "The oral history lab teaches students how to interview and record people respectfully; the research methods course then shows them how to turn field notes into a written study.",
+    "items": ["oral-history-and-neighbourhood-memory-lab.html", "research-methods-academic-writing.html"]
+  },
+  "audience_hooks": [
+    "Schools: an oral history lab where students record memories in their own neighbourhood.",
+    "Colleges: research methods and academic writing for students starting fieldwork.",
+    "Groups in Bhopal: a visit to the Tribal Museum with a guide to reading material culture."
+  ],
+  "cta": "We run oral history labs, museum visits and research methods courses that introduce students to anthropology as a careful, respectful way of learning about people.",
+  "sem": {
+    "ad_group": "Anthropology learning India",
+    "keywords": ["anthropology workshop for students", "oral history workshop india", "ethnography training course", "research methods course for students", "bhopal tribal museum guided visit", "anthropology lecture for college"],
+    "negatives": ["pdf", "notes", "upsc mcq", "syllabus pdf", "jobs", "free download"],
+    "headlines": ["Anthropology For Students", "Oral History Workshops", "Research Methods Course", "Guided Tribal Museum Visit", "Learn Fieldwork With Care"],
+    "descriptions": ["Workshops and courses on anthropology, oral history and fieldwork for students.", "Learn how anthropologists listen, record and write about people. Online or on site."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Santali has its own script, and it is only about a hundred years old.", "caption": "Ol Chiki was created by Raghunath Murmu in the 1920s to write Santali. Today it is taught in schools and used in print, and Santali is one of India's scheduled languages."},
+      {"angle": "tip", "hook": "Before you photograph people at a festival, ask.", "caption": "Anthropologists start with consent. A smile and a question changes the picture, and the relationship. Share the photo back if you can."},
+      {"angle": "offer", "hook": "Teach your students to listen like anthropologists.", "caption": "Our oral history lab trains students to interview elders, record memories and write them up with care. Run at schools and colleges on request."}
+    ],
+    "reel": "A student holding a phone recorder sits with an elderly shopkeeper in an old market; cut to handwritten field notes. On-screen line: 'Every neighbourhood is an archive.' Ending card: Oral history labs with Talaash Heritage.",
+    "hashtags": ["#Anthropology", "#IndianAnthropology", "#Ethnography", "#OralHistory", "#Adivasi", "#TribalIndia", "#Folklore", "#AnthropologyUPSC", "#Fieldwork", "#TalaashHeritage"]
+  },
+  "og_title": "Anthropology in India, explained with care",
+  "og_description": "What anthropologists do, how India's tribal communities differ, and how to study people respectfully."
+}

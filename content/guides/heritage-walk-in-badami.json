@@ -1,0 +1,99 @@
+{
+  "slug": "heritage-walk-in-badami",
+  "type": "city",
+  "pillar": "heritage",
+  "city": "Badami",
+  "state": "Karnataka",
+  "title": "Heritage walk in Badami: cave temples, Aihole and Pattadakal",
+  "seo_title": "Heritage Walk in Badami: Cave Temples, Aihole and Pattadakal",
+  "meta_description": "Plan a heritage walk in Badami: the four cave temples, Agastya lake, Bhutanatha temples and the forts, with Aihole and Pattadakal (UNESCO) nearby for groups.",
+  "keywords": ["heritage walk in badami", "historical places in badami", "heritage sites in badami", "badami cave temples", "badami heritage walk for schools", "badami aihole pattadakal tour", "chalukya temples", "pattadakal unesco", "aihole temples", "museums in badami"],
+  "summary": "A heritage walk in Badami, the 6th to 8th century capital of the early Chalukyas (Vatapi), covers four rock-cut cave temples, Agastya lake, the Bhutanatha temples and the North Fort temples. Aihole and Pattadakal (a UNESCO site since 1987) are within about 35 kilometres and complete the story of early Indian temple building.",
+  "sections": [
+    {
+      "h2": "Why Badami matters for heritage",
+      "paras": [
+        "Badami, Aihole and Pattadakal form a small triangle in north Karnataka where you can follow the early development of the Hindu temple over about two centuries. The early Chalukyas of Badami (sometimes called the Chalukyas of Vatapi) ruled much of the Deccan from about 540 to 757 CE, and their builders experimented with cave temples, early structural temples, and both northern (Nagara) and southern (Dravida) forms side by side.",
+        "Badami itself sits in a gorge of red sandstone cliffs around a large tank, Agastya Tirtha. The caves are cut into one cliff, temples line the tank, and forts crown both ridges. It is a compact, walkable town, and the best base for the region. The wider story is in our guide to [Indian temple architecture](indian-temple-architecture.html)."
+      ]
+    },
+    {
+      "h2": "Layers of history in Badami, Aihole and Pattadakal",
+      "paras": [
+        "Pulakeshin I fortified Vatapi (Badami) around 540 CE; an inscription on a boulder records this. His sons and grandson expanded the kingdom, and Pulakeshin II (ruled about 610 to 642) is known for checking the northern king Harsha on the Narmada, and for the Aihole inscription of 634 CE composed by the poet Ravikirti. The Pallavas of Kanchipuram sacked Badami around 642, and the Chalukyas recovered later. In 753 to 757 the Rashtrakutas took over.",
+        "Aihole has more than a hundred temples of different dates, from about the 6th to the 12th century, and is often described as a place where builders tried out ideas. The Durga temple, with its apsidal plan, and the Lad Khan temple are the best known. Pattadakal, where later Chalukya kings were crowned, has a group of 8th century temples including the Virupaksha temple, built around 740 by Queen Lokamahadevi to celebrate a victory over the Pallavas, alongside the Nagara-style Papanatha and Galaganatha temples. It was inscribed by UNESCO in 1987.",
+        "Later layers include the Bhutanatha temples on the tank (7th and 11th centuries), a Tipu Sultan-era treasury on the North Fort, and an 18th century mosque and tombs. A good companion session is the lecture on [early structural temples](early-structural-temples.html), which follows the move from caves to built temples."
+      ]
+    },
+    {
+      "h2": "What you see on a Badami heritage walk",
+      "paras": [
+        "The walk climbs the southern cliff through the four cave temples in order. Cave 1 (Shaiva) has a dancing Shiva with eighteen arms. Cave 2 and Cave 3 are Vaishnava; Cave 3, dated by inscription to 578 CE under Mangalesha, has the largest and finest carving, including Trivikrama and Vishnu seated on the serpent. Cave 4 is Jain, with Mahavira and Tirthankara figures. Natural caves and a small Buddhist shrine lie nearby.",
+        "From the caves you look across Agastya lake to the Bhutanatha temples and the North Fort. Walking round the tank brings you to the Bhutanatha group, then up the North Fort path to the Upper and Lower Shivalaya temples and the Malegitti Shivalaya, an early Dravida temple. The [Reading a temple](how-to-read-a-temple.html) session gives students a vocabulary for plinth, wall, shrine and tower before they arrive."
+      ]
+    },
+    {
+      "h2": "Planning Badami, Aihole and Pattadakal for schools and groups",
+      "paras": [
+        "Badami town can be walked in a full day: caves in the morning, the tank and North Fort in the afternoon. The cave stairs are steep but short; the North Fort path is rocky and best for older students. Aihole (about 35 kilometres) and Pattadakal (about 22 kilometres) need a vehicle and fit together in a second day. The ASI museum in Badami is near the Bhutanatha path.",
+        "Our [Pattadakal and Aihole: Temple Design Laboratory](pattadakal-and-aihole-temple-design-laboratory.html) is built for exactly this trip, taking groups through the temples as a set of design experiments with an archaeologist. College groups can prepare with the lecture on [Deccan temple forms and Vesara debates](deccan-temple-forms-vesara-debates.html). Hampi is about three hours away and Vijayapura about two and a half, so a [South India temple architecture](south-india-temple-architecture.html) tour or a study tour can link all three."
+      ]
+    }
+  ],
+  "stops": [
+    {"name": "Badami Cave 1", "period": "Late 6th century CE", "note": "Shaiva cave with an eighteen-armed dancing Shiva and Ardhanarishvara panels."},
+    {"name": "Badami Cave 2", "period": "Late 6th century CE", "note": "Vaishnava cave with Varaha and Trivikrama panels and carved ceilings."},
+    {"name": "Badami Cave 3", "period": "578 CE (inscribed)", "note": "Largest cave, Vaishnava, with fine sculpture and traces of painting on the ceiling."},
+    {"name": "Badami Cave 4", "period": "About 7th century CE", "note": "Jain cave with Mahavira, Parshvanatha and Bahubali figures."},
+    {"name": "Agastya Tirtha (lake)", "period": "Early Chalukya period", "note": "Tank around which the town is built; ghats and shrines along its banks."},
+    {"name": "Bhutanatha temples", "period": "7th century and about 11th century", "note": "Temple group on the east side of the lake, with a later Jain rock-cut shrine nearby."},
+    {"name": "Badami North Fort", "period": "Chalukya, with 18th century additions", "note": "Ridge with granaries, a treasury and gun points; rocky climb."},
+    {"name": "Upper and Lower Shivalaya", "period": "7th century CE", "note": "Early structural temples on the North Fort, with Dravida towers."},
+    {"name": "Malegitti Shivalaya", "period": "Late 7th century CE", "note": "Small, well-proportioned Dravida temple on a boulder."},
+    {"name": "Durga Temple, Aihole", "period": "About 8th century CE", "note": "Apsidal temple with a surrounding colonnade; vehicle needed."},
+    {"name": "Lad Khan Temple, Aihole", "period": "About 5th to 7th century CE (dates debated)", "note": "Flat-roofed temple once thought very early; good for discussing how we date temples."},
+    {"name": "Meguti Jain Temple, Aihole", "period": "634 CE", "note": "Hilltop temple with the Aihole inscription of Ravikirti."},
+    {"name": "Virupaksha Temple, Pattadakal", "period": "About 740 CE", "note": "Large Dravida temple built by Queen Lokamahadevi; UNESCO site; vehicle needed."},
+    {"name": "Papanatha Temple, Pattadakal", "period": "About 8th century CE", "note": "Combines northern and southern features; good for the Vesara discussion."}
+  ],
+  "routes": [
+    {"name": "The four caves on foot", "length": "About 2 hours", "stops": ["Badami Cave 1", "Badami Cave 2", "Badami Cave 3", "Badami Cave 4"]},
+    {"name": "Lake, temples and North Fort", "length": "About 3 hours", "stops": ["Agastya Tirtha (lake)", "Bhutanatha temples", "Badami North Fort", "Upper and Lower Shivalaya", "Malegitti Shivalaya"]},
+    {"name": "Aihole and Pattadakal (vehicle needed)", "length": "A full day", "stops": ["Durga Temple, Aihole", "Lad Khan Temple, Aihole", "Meguti Jain Temple, Aihole", "Virupaksha Temple, Pattadakal", "Papanatha Temple, Pattadakal"]}
+  ],
+  "museums": [
+    {"name": "ASI Archaeological Museum, Badami", "note": "Chalukya sculpture from the region, including a striking Lajja Gauri image, near the North Fort path."},
+    {"name": "ASI Sculpture Gallery, Aihole", "note": "Sculpture from Aihole's many temples, beside the Durga temple complex."}
+  ],
+  "best_time": "October to February. The rocks get very hot from March; the monsoon brings fewer visitors and a full lake.",
+  "faq": [
+    {"q": "What are the main historical places in Badami?", "a": "The four cave temples, Agastya lake, the Bhutanatha temples, the North Fort with the Upper and Lower Shivalaya and Malegitti Shivalaya, and the ASI museum. Aihole and Pattadakal are nearby."},
+    {"q": "Is Badami a UNESCO World Heritage Site?", "a": "Badami itself is not. Nearby Pattadakal was inscribed in 1987 as the Group of Monuments at Pattadakal. Badami and Aihole are protected by the ASI."},
+    {"q": "How many days do you need for Badami, Aihole and Pattadakal?", "a": "Two days work well: one day for Badami's caves, lake and fort, and one day by vehicle for Aihole and Pattadakal."},
+    {"q": "Which dynasty built the Badami caves?", "a": "The early Chalukyas of Badami (Vatapi), between the late 6th and 7th centuries CE. Cave 3 has an inscription of 578 CE from the reign of Mangalesha."},
+    {"q": "Is Badami suitable for school students?", "a": "Yes. The caves involve a short but steep climb with railings. The North Fort is rocky and best for classes 8 and above. Carry water and hats, as there is little shade."}
+  ],
+  "related_programmes": ["pattadakal-and-aihole-temple-design-laboratory.html", "deccan-temple-forms-vesara-debates.html", "early-structural-temples.html", "rock-cut-sacred-architecture.html", "how-to-read-a-temple.html", "south-india-temple-architecture.html", "a-study-tour-built-for-your-group.html"],
+  "related_guides": ["heritage-sites-in-karnataka", "indian-temple-architecture", "heritage-walk-in-hampi", "heritage-walk-in-vijayapura", "major-dynasties-of-ancient-india", "unesco-world-heritage-sites-in-india"],
+  "bundle": {"title": "From caves to temples", "pitch": "A lecture on Deccan temple forms in class, then Badami's caves and the Pattadakal and Aihole day on site: the whole early history of the temple in two days.", "items": ["deccan-temple-forms-vesara-debates.html", "pattadakal-and-aihole-temple-design-laboratory.html"]},
+  "audience_hooks": ["Schools: a two-day trip to Badami, Aihole and Pattadakal with an archaeologist.", "Colleges: Deccan temple architecture lectures, then the temples as a design laboratory on site.", "Travellers: the South India temple architecture tour, linking Badami with Hampi."],
+  "sem": {
+    "ad_group": "Heritage walk Badami",
+    "keywords": ["heritage walk in badami", "badami aihole pattadakal tour", "badami caves guided tour", "pattadakal guided tour", "chalukya temples study tour", "badami school trip"],
+    "negatives": ["free", "pdf", "hotel", "essay", "wikipedia", "rock climbing"],
+    "headlines": ["Heritage Walk in Badami", "Badami, Aihole, Pattadakal", "Chalukya Temples Explained", "Temple Design Study Day", "Badami Trips for Schools"],
+    "descriptions": ["Caves, temples and forts of the early Chalukyas with an archaeologist.", "Arranged on request for schools, colleges, companies and private groups."]
+  },
+  "social": {
+    "posts": [
+      {"angle": "fact", "hook": "Badami Cave 3 is dated to the year.", "caption": "An inscription in the cave gives 578 CE, under the Chalukya king Mangalesha. Dated monuments this early are rare in India, which makes the cave a fixed point for art historians."},
+      {"angle": "tip", "hook": "See the caves in order, 1 to 4.", "caption": "Shaiva, two Vaishnava, then Jain. Climbing in order lets you compare how each cave handles its pillars, panels and shrine."},
+      {"angle": "offer", "hook": "Two days, two centuries of temple building.", "caption": "Our Pattadakal and Aihole Temple Design Laboratory and Badami walks are arranged for schools, colleges and private groups, in English or Hindi."}
+    ],
+    "reel": "Climb shot up the red cliff stairs, inside Cave 3 with a torch on a panel, then across the lake to the Bhutanatha temples. On-screen line: 'Where Indian temples were invented.' End card: 'Badami, Aihole and Pattadakal, on request.'",
+    "hashtags": ["#Badami", "#Aihole", "#Pattadakal", "#Chalukya", "#TempleArchitecture", "#KarnatakaHeritage", "#HeritageWalk", "#IndianHeritage", "#UNESCOIndia"]
+  },
+  "og_title": "A heritage walk in Badami, with Aihole and Pattadakal",
+  "og_description": "Cave temples, a red sandstone gorge and the Chalukya temple towns nearby: how to plan the trip.",
+  "cta": "We arrange heritage walks in Badami and trips to Aihole and Pattadakal on request for schools, colleges, companies and private groups, with an archaeologist or historian, in English or Hindi."
+}
