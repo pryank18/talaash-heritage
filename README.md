@@ -14,4 +14,8 @@ Programmes run on request are listed in `site/data/catalogue.json`, which is gen
 
 The language switch (English | हिन्दी) sits above the header and on the registration form. The choice is kept in the browser; a visitor whose browser is set to Hindi starts in Hindi.
 The Hindi lives in `tools/build_hindi.py`. Edit it there and run `python3 tools/build_hindi.py` to regenerate `site/assets/js/hi.js`; the build refuses translations that drop a link or tag.
-Phase one covers the interface, home, catalogue, finder, contact, registration and the WhatsApp/email messages. Programme descriptions, About, policies, cart and checkout are still English, with a Hindi notice on those pages.
+Phase one covers the interface, home, catalogue, finder, contact, Journeys, Our work, registration and the WhatsApp/email messages. Programme descriptions, About, policies, cart and checkout are still English, with a Hindi notice on those pages.
+
+## Payments
+
+UPI and WhatsApp orders need no server. Card, netbanking and UPI through Razorpay use three Supabase functions in `supabase/functions`; setup is in `docs/RAZORPAY.md`.

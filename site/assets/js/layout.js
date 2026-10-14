@@ -15,7 +15,7 @@ const isProgramme = page === "product.html" || Boolean(document.body.dataset.slu
 const filter = new URLSearchParams(location.search).get("type");
 
 // Pages whose main text has not been translated yet. Their header, footer and buttons are still in Hindi.
-const ENGLISH_ONLY = new Set(["about.html", "work.html", "journeys.html", "privacy.html", "terms.html", "shipping-returns.html", "sell.html", "seller.html", "cart.html", "checkout.html", "order.html", "admin.html"]);
+const ENGLISH_ONLY = new Set(["about.html", "privacy.html", "terms.html", "shipping-returns.html", "sell.html", "seller.html", "cart.html", "checkout.html", "order.html", "admin.html"]);
 
 function navLink(href, label) {
   const [file, query] = href.split("?");
@@ -145,7 +145,7 @@ function renderFooter() {
 // ---- phone app shell: bottom tabs and the "More" sheet -----------------------
 // Shown by CSS on phones and portrait tablets only; desktop keeps the header nav.
 const NO_TABS = new Set(["admin.html", "seller.html", "checkout.html"]);
-const MORE_PAGES = new Set(["about.html", "work.html", "journeys.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html", "cart.html", "order.html"]);
+const MORE_PAGES = new Set(["about.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html", "cart.html", "order.html"]);
 const ICON = {
   home: '<path d="M3.5 10.5 12 4l8.5 6.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/>',
   shop: '<rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"/>',

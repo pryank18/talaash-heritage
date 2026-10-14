@@ -197,7 +197,11 @@ export async function createOrder(payload) {
     // Card payments need a server to talk to Razorpay. UPI and WhatsApp orders
     // are created by a database function, so they work with no server at all.
     if (payload.payment_method === "razorpay") {
-      return request("/functions/v1/create-order", { method: "POST", body: JSON.stringify(payload) });
+      try {
+        return await request("/functions/v1/create-order", { method: "POST", body: JSON.stringify(payload) });
+      } catch (e) {
+        throw friendly(e);
+      }
     }
     try {
       return await request("/rest/v1/rpc/create_order", {
@@ -323,7 +327,7 @@ const RPC_ERRORS = {
 };
 
 export async function rpc(name, args) {
-  if (!isLive()) throw new ApiError("demo", "This needs the live database. Connect Supabase first (see docs/SETUP.md).");
+  if (!isLive()) throw new ApiError("demo", "This needs the live database. Connect Supabase first.");
   try {
     return await request(`/rest/v1/rpc/${name}`, { method: "POST", body: JSON.stringify(args) });
   } catch (e) {
