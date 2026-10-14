@@ -1,11 +1,13 @@
-// The registration gate. Every visitor gives their name, email, phone number
-// and location before they use the site (gateMode "hard"), or at the latest
-// before they pay ("soft" / "checkout"). See CONFIG.gateMode.
+// The registration gate. In "soft" mode (the default since 15 Oct 2026) the
+// form opens when a visitor arrives, but they can close it and look around
+// first; it opens again on their next visit, and registering is required
+// before paying. "hard" mode allows no browsing until they register.
+// See CONFIG.gateMode.
 
 import { CONFIG } from "./config.js";
 import { registerVisitor } from "./api.js";
 import { getVisitor, setVisitor } from "./store.js";
-import { $, esc, toast } from "./ui.js";
+import { $, $$, esc, toast } from "./ui.js";
 
 const META_KEY = "th_first_touch";
 
@@ -47,9 +49,10 @@ function template(hard, v) {
       <span aria-hidden="true">|</span>
       <button type="button" class="lang-option" data-lang-set="hi" lang="hi" aria-pressed="${document.documentElement.getAttribute("data-lang") === "hi"}">हिन्दी</button>
     </div>
+    ${hard ? "" : `<button type="button" class="gate-x" data-close aria-label="${v ? "Close" : "Close and look around first"}">×</button>`}
     <img class="gate-badge" src="assets/img/logo-192.png" alt="" width="56" height="56">
-    <h2 id="gate-title">${v && hard ? "Our privacy notice changed. Confirm your details" : v ? "Update your details" : hard ? "Welcome to Talaash Heritage" : "Register with Talaash Heritage"}</h2>
-    <p>We ask every visitor for their contact details and location. We use them to send lecture links and order updates, and to plan sessions and walks near you.</p>
+    <h2 id="gate-title">${v && hard ? "Our privacy notice changed. Confirm your details" : v ? "Update your details" : "Welcome to Talaash Heritage"}</h2>
+    <p>${v ? "We use these details to send lecture links and order updates, and to plan sessions and walks near you." : "Register once and we can send you walk dates and lecture links, and plan a programme around you. Or look around first."}</p>
   </div>
   <form class="gate-body form" novalidate>
     <div class="form-row">
@@ -69,30 +72,31 @@ function template(hard, v) {
         <input id="g-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" required maxlength="15" value="${esc(v?.phone_national)}">
       </div>
     </div>
-    <div class="form-row">
-      <div class="field">
-        <label for="g-city">City or town</label>
-        <input id="g-city" name="city" type="text" autocomplete="address-level2" required maxlength="120" value="${esc(v?.city)}">
-      </div>
-      <div class="field">
-        <label for="g-region">State <span class="hint">optional</span></label>
-        <input id="g-region" name="region" type="text" autocomplete="address-level1" maxlength="120" value="${esc(v?.region)}">
-      </div>
+    <div class="field">
+      <label for="g-city">City or town</label>
+      <input id="g-city" name="city" type="text" autocomplete="address-level2" required maxlength="120" value="${esc(v?.city)}">
     </div>
-    <div class="form-row">
-      <div class="field">
-        <label for="g-country">Country</label>
-        <input id="g-country" name="country" type="text" autocomplete="country-name" required maxlength="80" value="${esc(v?.country || CONFIG.defaultCountry)}">
+    <details class="gate-more"${v?.region || v?.postal_code || (v && v.country && v.country !== CONFIG.defaultCountry) ? " open" : ""}>
+      <summary>Country, state and PIN code <span class="hint">India unless you change it</span></summary>
+      <div class="form-row">
+        <div class="field">
+          <label for="g-country">Country</label>
+          <input id="g-country" name="country" type="text" autocomplete="country-name" required maxlength="80" value="${esc(v?.country || CONFIG.defaultCountry)}">
+        </div>
+        <div class="field">
+          <label for="g-region">State <span class="hint">optional</span></label>
+          <input id="g-region" name="region" type="text" autocomplete="address-level1" maxlength="120" value="${esc(v?.region)}">
+        </div>
+        <div class="field">
+          <label for="g-postal">PIN code <span class="hint">optional</span></label>
+          <input id="g-postal" name="postal_code" type="text" autocomplete="postal-code" inputmode="numeric" maxlength="12" value="${esc(v?.postal_code)}">
+        </div>
       </div>
-      <div class="field">
-        <label for="g-postal">PIN code <span class="hint">optional</span></label>
-        <input id="g-postal" name="postal_code" type="text" autocomplete="postal-code" inputmode="numeric" maxlength="12" value="${esc(v?.postal_code)}">
+      <div class="gate-locate">
+        <button type="button" class="btn btn-outline btn-small" data-locate>Add my precise location</button>
+        <span class="muted" data-locate-status>Optional. Your browser will ask for permission.</span>
       </div>
-    </div>
-    <div class="gate-locate">
-      <button type="button" class="btn btn-outline btn-small" data-locate>Add my precise location</button>
-      <span class="muted" data-locate-status>Optional. Your browser will ask for permission.</span>
-    </div>
+    </details>
     <div class="hp" aria-hidden="true">
       <label for="g-website">Leave this empty</label>
       <input id="g-website" name="th_extra_field" type="text" tabindex="-1" autocomplete="off">
@@ -108,7 +112,7 @@ function template(hard, v) {
     <p class="form-error" role="alert" data-error></p>
     <div class="gate-foot">
       <button class="btn btn-primary" type="submit">${v ? "Save my details" : "Register and enter"}</button>
-      ${hard ? "" : `<button class="btn-plain" type="button" data-close>${v ? "Cancel" : "Not now"}</button>`}
+      ${hard ? "" : `<button class="btn-plain" type="button" data-close>${v ? "Cancel" : "Look around first"}</button>`}
     </div>
   </form>`;
 }
@@ -153,7 +157,9 @@ export function openGate({ hard = false, edit = false } = {}) {
       if (!done && hard) dlg.showModal();
       else if (!done) finish(null);
     });
-    $("[data-close]", dlg)?.addEventListener("click", () => finish(null));
+    $$("[data-close]", dlg).forEach((b) => b.addEventListener("click", () => finish(null)));
+    // A tap on the dimmed area outside the form closes it, unless registration is required.
+    dlg.addEventListener("click", (e) => { if (!hard && e.target === dlg) finish(null); });
 
     $("[data-locate]", dlg).addEventListener("click", () => {
       const status = $("[data-locate-status]", dlg);
@@ -195,7 +201,8 @@ export function openGate({ hard = false, edit = false } = {}) {
       const badEmail = !/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(data.email.trim());
       const badPhone = !/^\+[0-9]{8,15}$/.test(phone) || (dial === "+91" && !/^[6-9][0-9]{9}$/.test(national));
       const badCity = data.city.trim().length < 2;
-      const badCountry = data.country.trim().length < 2;
+      const badCountry = data.country.trim().length < 2 || (dial !== CONFIG.defaultDialCode && data.country.trim() === CONFIG.defaultCountry);
+      if (badCountry) $(".gate-more", dlg).open = true;
       mark("full_name", badName);
       mark("email", badEmail);
       mark("phone", badPhone);
@@ -205,7 +212,7 @@ export function openGate({ hard = false, edit = false } = {}) {
       if (badEmail) problems.push("a valid email address");
       if (badPhone) problems.push(dial === "+91" ? "a 10-digit mobile number" : "a valid phone number");
       if (badCity) problems.push("your city");
-      if (badCountry) problems.push("your country");
+      if (badCountry) problems.push("your country (your phone number is from outside India)");
       if (problems.length) {
         errorEl.textContent = `Enter ${problems.join(", ")}.`;
         form.querySelector('[aria-invalid="true"]')?.focus();

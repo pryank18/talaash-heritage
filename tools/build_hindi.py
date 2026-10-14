@@ -112,6 +112,14 @@ TEXT = {
     "Save my details": "मेरा विवरण सहेजें",
     "Cancel": "रद्द करें",
     "Not now": "अभी नहीं",
+    "Look around first": "पहले साइट देखें",
+    "Close and look around first": "बंद करें और पहले साइट देखें",
+    "Register once and we can send you walk dates and lecture links, and plan a programme around you. Or look around first.":
+        "एक बार पंजीकरण करें, ताकि हम आपको भ्रमण की तिथियाँ और व्याख्यान के लिंक भेज सकें और आपके अनुसार कार्यक्रम बना सकें। या पहले साइट देख लें।",
+    "We use these details to send lecture links and order updates, and to plan sessions and walks near you.":
+        "हम इन विवरणों से व्याख्यान के लिंक और ऑर्डर की जानकारी भेजते हैं, और आपके पास सत्र व भ्रमण की योजना बनाते हैं।",
+    "Country, state and PIN code": "देश, राज्य और पिन कोड",
+    "India unless you change it": "बदलें नहीं तो भारत",
     "This browser cannot share a location. City and country are enough.": "यह ब्राउज़र स्थान साझा नहीं कर सकता। शहर और देश पर्याप्त हैं।",
     "Waiting for permission…": "अनुमति की प्रतीक्षा है…",
     "Location added.": "स्थान जोड़ दिया गया।",
@@ -294,6 +302,28 @@ TEXT = {
     "Tughlaqabad, Delhi": "तुग़लक़ाबाद, दिल्ली",
     "Udayagiri, Madhya Pradesh": "उदयगिरि, मध्य प्रदेश",
     "Walkeshwar, Mumbai": "वालकेश्वर, मुंबई",
+
+    # ---- sections and carousels (home and shop)
+    "Explore the programmes": "कार्यक्रम देखें",
+    "Start here": "यहाँ से शुरू करें",
+    "See all": "सभी देखें",
+    "← All sections": "← सभी खंड",
+    "Scroll back": "पीछे जाएँ",
+    "Scroll on": "आगे देखें",
+    "Upcoming dates": "आने वाली तिथियाँ",
+    "Heritage walks in Delhi": "दिल्ली में धरोहर भ्रमण",
+    "Study tours and private journeys": "अध्ययन यात्राएँ और निजी यात्राएँ",
+    "Walks and visits around India": "भारत भर में भ्रमण",
+    "Museum visits": "संग्रहालय भ्रमण",
+    "Lectures and masterclasses": "व्याख्यान और मास्टरक्लास",
+    "Courses": "पाठ्यक्रम",
+    "Workshops": "कार्यशालाएँ",
+    "Discussions": "परिचर्चाएँ",
+    "Career guidance and counselling": "करियर मार्गदर्शन और परामर्श",
+    "Field schools": "फ़ील्ड स्कूल",
+    "More programmes": "अन्य कार्यक्रम",
+    "Day trips and journeys": "एक दिन की यात्राएँ और लंबी यात्राएँ",
+    "Rakhigarhi, study tours and private trips across India, with a specialist.": "राखीगढ़ी, अध्ययन यात्राएँ और भारत भर की निजी यात्राएँ, विशेषज्ञ के साथ।",
 
     # ---- contact: journeys and visitors from abroad
     "Planning a journey or visiting from abroad": "यात्रा की योजना या विदेश से आगमन",
@@ -479,6 +509,8 @@ TEXT = {
     "In Delhi, at a monument or museum": "दिल्ली में, किसी स्मारक या संग्रहालय में",
     "At your school, college or office": "आपके विद्यालय, महाविद्यालय या कार्यालय में",
     "A trip of several days": "कई दिनों की यात्रा",
+    "Out of town: a day trip or a longer journey": "शहर से बाहर: एक दिन की या उससे लंबी यात्रा",
+    "A day trip from Delhi": "दिल्ली से एक दिन की यात्रा",
     "No preference": "कोई वरीयता नहीं",
     "Up to about 2 hours": "लगभग 2 घंटे तक",
     "About half a day": "लगभग आधा दिन",
@@ -585,6 +617,7 @@ const ENTER = {
   "a valid phone number": "सही फ़ोन नंबर",
   "your city": "अपना शहर",
   "your country": "अपना देश",
+  "your country (your phone number is from outside India)": "अपना देश (आपका फ़ोन नंबर भारत के बाहर का है)",
 };
 const AUDIENCE = {
   schools: "विद्यालयों",

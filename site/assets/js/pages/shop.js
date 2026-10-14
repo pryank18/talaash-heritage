@@ -1,5 +1,5 @@
 import { getProducts } from "../api.js";
-import { $, $$, esc, isRequest, isSoon, productCard } from "../ui.js";
+import { $, $$, esc, groupByKey, groupProducts, initRails, isRequest, isSoon, productCard, railHtml } from "../ui.js";
 import { t } from "../i18n.js";
 
 const FILTERS = {
@@ -29,6 +29,8 @@ const WHERE = {
 
 const params = new URLSearchParams(location.search);
 let where = WHERE[params.get("where")] ? params.get("where") : "";
+// One section opened from its "See all" link.
+let group = groupByKey(params.get("group")) ? params.get("group") : "";
 let active = FILTERS[params.get("type")] ? params.get("type") : "all";
 let who = AUDIENCES[params.get("for")] ? params.get("for") : "";
 let sort = "featured";
@@ -49,7 +51,7 @@ function sorted(list) {
 }
 
 async function render() {
-  heading.textContent = FILTERS[active].title;
+  heading.textContent = group ? groupByKey(group).title : FILTERS[active].title;
   document.title = t(`${FILTERS[active].title} | Talaash Heritage`);
   $$("[data-filter]", chips).forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.filter === active)));
   try {
@@ -82,20 +84,58 @@ async function render() {
       : "";
 
     const grid = (items) => `<div class="grid">${items.map(productCard).join("")}</div>`;
-    // On the full catalogue, open with a short selection before everything else.
-    const showFeatured = active === "all" && !forWho && !at && sort === "featured";
-    const featured = showFeatured ? available.filter((p) => p.tags?.includes("home")) : [];
-    const rest = featured.length ? available.filter((p) => !featured.includes(p)) : available;
-
+    const groups = groupProducts(list);
     let html = "";
-    if (featured.length) html += `<section class="shop-block" aria-labelledby="featured-title"><h2 id="featured-title">Featured programmes</h2>${grid(featured)}</section>`;
-    if (rest.length) html += `<section class="shop-block"${featured.length ? ' aria-labelledby="all-title"' : ""}>${featured.length ? '<h2 id="all-title">All programmes</h2>' : ""}${grid(rest)}</section>`;
-    if (soon.length) html += `<section class="shop-block" aria-labelledby="soon-title"><h2 id="soon-title">Coming soon</h2><p class="muted shop-block-note">Not yet available. Register your interest on any of these and we will let you know when it is ready.</p>${grid(soon)}</section>`;
+    if (group) {
+      // One section in full, from a "See all" link.
+      const g = groups.find((x) => x.key === group);
+      html += `<p class="shop-back"><a href="${esc(linkFor(""))}">← All sections</a></p>`;
+      if (g) {
+        html += grid(g.items);
+        count.textContent = `${g.items.length} arranged on request.`;
+      }
+    } else if (sort === "featured" && groups.length > 1) {
+      // Sections, each a row of cards with "See all".
+      const showFeatured = active === "all" && !forWho && !at;
+      const featured = showFeatured ? available.filter((p) => p.tags?.includes("home")) : [];
+      if (featured.length) html += railHtml({ key: "featured", title: "Featured programmes", items: featured });
+      html += groups.map((g) => railHtml(g, { href: linkFor(g.key) })).join("");
+    } else {
+      // One section only, or sorted by date or price: a single grid.
+      html += grid(available);
+      if (soon.length) html += `<section class="shop-block" aria-labelledby="soon-title"><h2 id="soon-title">Coming soon</h2><p class="muted shop-block-note">Not yet available. Register your interest on any of these and we will let you know when it is ready.</p>${grid(soon)}</section>`;
+    }
     shopRoot.innerHTML = html || `<div class="empty"><h2>Nothing listed here yet</h2><p>Tell us what you are looking for and we will arrange it. <a href="contact.html">Contact us</a> or <a href="shop.html">see everything we offer</a>.</p></div>`;
+    initRails(shopRoot);
   } catch (e) {
     shopRoot.innerHTML = `<p class="form-error">${esc(e.message)}</p>`;
   }
 }
+
+/** The shop address with the current filters and one section open (or none). */
+function linkFor(key) {
+  const url = new URL(location.href);
+  if (key) url.searchParams.set("group", key);
+  else url.searchParams.delete("group");
+  return url.pathname.split("/").pop() + url.search;
+}
+
+// "See all" and "All sections" change the view without reloading the page.
+shopRoot.addEventListener("click", (e) => {
+  const a = e.target.closest(".rail-all, .shop-back a");
+  if (!a) return;
+  e.preventDefault();
+  const url = new URL(a.href);
+  group = url.searchParams.get("group") || "";
+  history.pushState(null, "", url);
+  render();
+  window.scrollTo({ top: $("#shop-title").getBoundingClientRect().top + window.scrollY - 80 });
+});
+window.addEventListener("popstate", () => {
+  const q = new URLSearchParams(location.search);
+  group = groupByKey(q.get("group")) ? q.get("group") : "";
+  render();
+});
 
 chips.innerHTML =
   Object.entries(FILTERS)
@@ -126,7 +166,9 @@ whereRow.addEventListener("click", (e) => {
   const chip = e.target.closest("[data-where]");
   if (!chip) return;
   where = chip.dataset.where;
+  group = "";
   const url = new URL(location.href);
+  url.searchParams.delete("group");
   if (where) url.searchParams.set("where", where);
   else url.searchParams.delete("where");
   history.replaceState(null, "", url);
@@ -137,7 +179,9 @@ forRow.addEventListener("click", (e) => {
   const chip = e.target.closest("[data-for]");
   if (!chip) return;
   who = chip.dataset.for;
+  group = "";
   const url = new URL(location.href);
+  url.searchParams.delete("group");
   if (who) url.searchParams.set("for", who);
   else url.searchParams.delete("for");
   history.replaceState(null, "", url);
@@ -148,9 +192,11 @@ chips.addEventListener("click", (e) => {
   const chip = e.target.closest("[data-filter]");
   if (!chip) return;
   active = chip.dataset.filter;
+  group = "";
   const url = new URL(location.href);
   if (active === "all") url.searchParams.delete("type");
   else url.searchParams.set("type", active);
+  url.searchParams.delete("group");
   history.replaceState(null, "", url);
   render();
 });
