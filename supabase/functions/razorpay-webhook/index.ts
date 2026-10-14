@@ -3,7 +3,7 @@
 // Dashboard > Accounts & Settings > Webhooks with the events payment.captured
 // and order.paid, and the same secret as RAZORPAY_WEBHOOK_SECRET.
 
-import { env, hmacHex, safeEqual, settle } from "../_shared/razorpay.ts";
+import { env, hmacHex, logEvent, safeEqual, settle } from "../_shared/razorpay.ts";
 
 const reply = (status: number, text: string) => new Response(text, { status });
 
@@ -23,6 +23,7 @@ Deno.serve(async (req) => {
   }
 
   const payment = event?.payload?.payment?.entity;
+  await logEvent(req.headers.get("x-razorpay-event-id"), String(event?.event || ""), null, event);
   if (!["payment.captured", "order.paid"].includes(event?.event) || !payment?.order_id) {
     return reply(200, "ignored"); // other events are acknowledged so Razorpay stops retrying
   }

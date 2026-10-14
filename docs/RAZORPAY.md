@@ -27,8 +27,9 @@ You get a **Key ID** (`rzp_test_...`) and a **Key Secret**, shown once.
 
 ## 3. Database (once)
 
-Supabase > SQL Editor > New query: paste `supabase/migrations/20261015_razorpay.sql`
-and Run. The last table it prints should say OK on every line.
+Supabase > SQL Editor > New query: paste `supabase/migrations/20261015_create_order_razorpay.sql`
+and Run. The orders table, `mark_order_paid` and `payment_events` already existed;
+this only lets the server create Razorpay orders.
 
 ## 4. The three functions
 

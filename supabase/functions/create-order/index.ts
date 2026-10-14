@@ -19,15 +19,16 @@ Deno.serve(async (req) => {
   }
   const visitor = String(payload.visitor_id || "");
 
-  // 1. Create the order as the public would, passing the buyer's own IP on so
-  //    the per-network rate limit still applies to them, not to this server.
-  const anon = env("SUPABASE_ANON_KEY");
-  const ip = req.headers.get("x-forwarded-for") || req.headers.get("cf-connecting-ip") || "";
+  // 1. Create the order with the same database function as UPI orders. Only
+  //    the service role may create a 'razorpay' order. The buyer's own IP is
+  //    passed on so the per-network rate limit applies to them, not to us.
+  const key = env("SUPABASE_SERVICE_ROLE_KEY");
+  const ip = (req.headers.get("x-forwarded-for") || req.headers.get("cf-connecting-ip") || "").split(",")[0].trim();
   const res = await fetch(`${env("SUPABASE_URL")}/rest/v1/rpc/create_order`, {
     method: "POST",
     headers: {
-      apikey: anon,
-      ...(anon.startsWith("eyJ") ? { Authorization: `Bearer ${anon}` } : {}),
+      apikey: key,
+      ...(key.startsWith("eyJ") ? { Authorization: `Bearer ${key}` } : {}),
       "Content-Type": "application/json",
       ...(ip ? { "x-forwarded-for": ip } : {}),
     },

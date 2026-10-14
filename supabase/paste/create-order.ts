@@ -16,7 +16,7 @@
 //   RAZORPAY_WEBHOOK_SECRET  the secret you type when adding the webhook
 //   SITE_ORIGIN              https://talaash-heritage.pages.dev (comma-separate several)
 //
-// SUPABASE_URL, SUPABASE_ANON_KEY and SUPABASE_SERVICE_ROLE_KEY are provided
+// SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are provided
 // to every function automatically.
 
 const env = (name: string): string => {
@@ -89,7 +89,7 @@ async function db(path: string, init: RequestInit = {}) {
     ...init,
     headers: {
       apikey: key,
-      Authorization: `Bearer ${key}`,
+      ...(key.startsWith("eyJ") ? { Authorization: `Bearer ${key}` } : {}),
       "Content-Type": "application/json",
       Prefer: "return=representation",
       ...(init.headers || {}),
@@ -101,42 +101,47 @@ async function db(path: string, init: RequestInit = {}) {
   return data;
 }
 
+/** Calls a database function as the service role. */
+const rpc = (name: string, args: Record<string, unknown>) =>
+  db(`/rest/v1/rpc/${name}`, { method: "POST", body: JSON.stringify(args) });
+
 /**
  * Marks an order paid once Razorpay has confirmed the money. Called by both
- * verify-payment (the buyer's browser) and the webhook (Razorpay's server);
- * whichever arrives second finds the order already paid and does nothing.
+ * verify-payment (the buyer's browser) and the webhook (Razorpay's server).
  * The payment is fetched from Razorpay itself, so the amount and order cannot
- * be faked by whoever calls us.
+ * be faked by whoever calls us. The database function mark_order_paid locks
+ * the order, ignores a second call, and reduces the seats left.
  */
 async function settle(razorpayOrderId: string, paymentId: string) {
-  const payment = await razorpay(`/payments/${encodeURIComponent(paymentId)}`);
+  let payment = await razorpay(`/payments/${encodeURIComponent(paymentId)}`);
   if (payment.order_id !== razorpayOrderId) throw new Error("mismatch: payment belongs to another order");
-  if (payment.status !== "captured") {
+  if (payment.status === "authorized") {
     // Auto-capture is the Razorpay default. If it is off, capture here.
-    if (payment.status === "authorized") {
-      await razorpay(`/payments/${encodeURIComponent(paymentId)}/capture`, {
-        method: "POST",
-        body: JSON.stringify({ amount: payment.amount, currency: payment.currency }),
-      });
-    } else {
-      return { paid: false, status: payment.status };
-    }
+    payment = await razorpay(`/payments/${encodeURIComponent(paymentId)}/capture`, {
+      method: "POST",
+      body: JSON.stringify({ amount: payment.amount, currency: payment.currency }),
+    });
   }
+  if (payment.status !== "captured") return { paid: false, status: payment.status };
 
   const rows = await db(
-    `/rest/v1/orders?razorpay_order_id=eq.${encodeURIComponent(razorpayOrderId)}&select=id,status,total_paise`,
+    `/rest/v1/orders?razorpay_order_id=eq.${encodeURIComponent(razorpayOrderId)}&select=id,total_paise`,
     { method: "GET" },
   );
   const order = rows?.[0];
   if (!order) throw new Error("order_not_found");
   if (Number(order.total_paise) !== Number(payment.amount)) throw new Error("mismatch: amount");
-  if (order.status === "paid") return { paid: true, order_id: order.id, already: true };
+  const status = await rpc("mark_order_paid", { p_order_id: order.id, p_razorpay_payment_id: paymentId });
+  return { paid: true, order_id: order.id, status };
+}
 
-  await db(`/rest/v1/orders?id=eq.${order.id}&status=eq.pending`, {
-    method: "PATCH",
-    body: JSON.stringify({ status: "paid", razorpay_payment_id: paymentId, paid_at: new Date().toISOString() }),
-  });
-  return { paid: true, order_id: order.id };
+/** Keeps every webhook Razorpay sends, once (event_id is unique). */
+async function logEvent(eventId: string | null, type: string, orderId: string | null, payload: unknown) {
+  await db(`/rest/v1/payment_events${eventId ? "?on_conflict=event_id" : ""}`, {
+    method: "POST",
+    headers: { Prefer: "resolution=ignore-duplicates,return=minimal" },
+    body: JSON.stringify({ provider: "razorpay", event_type: type, event_id: eventId, order_id: orderId, payload }),
+  }).catch((e) => console.error("payment_events", e));
 }
 
 // ---- create-order ----
@@ -153,15 +158,16 @@ Deno.serve(async (req) => {
   }
   const visitor = String(payload.visitor_id || "");
 
-  // 1. Create the order as the public would, passing the buyer's own IP on so
-  //    the per-network rate limit still applies to them, not to this server.
-  const anon = env("SUPABASE_ANON_KEY");
-  const ip = req.headers.get("x-forwarded-for") || req.headers.get("cf-connecting-ip") || "";
+  // 1. Create the order with the same database function as UPI orders. Only
+  //    the service role may create a 'razorpay' order. The buyer's own IP is
+  //    passed on so the per-network rate limit applies to them, not to us.
+  const key = env("SUPABASE_SERVICE_ROLE_KEY");
+  const ip = (req.headers.get("x-forwarded-for") || req.headers.get("cf-connecting-ip") || "").split(",")[0].trim();
   const res = await fetch(`${env("SUPABASE_URL")}/rest/v1/rpc/create_order`, {
     method: "POST",
     headers: {
-      apikey: anon,
-      ...(anon.startsWith("eyJ") ? { Authorization: `Bearer ${anon}` } : {}),
+      apikey: key,
+      ...(key.startsWith("eyJ") ? { Authorization: `Bearer ${key}` } : {}),
       "Content-Type": "application/json",
       ...(ip ? { "x-forwarded-for": ip } : {}),
     },
