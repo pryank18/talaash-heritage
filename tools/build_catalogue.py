@@ -780,13 +780,15 @@ def extras_html(p):
 # Cross-selling on programme pages, from the guides in content/guides:
 # which guides recommend this programme, and which programmes pair with it.
 GUIDE_DIR = os.path.join(os.path.dirname(site), "content", "guides")
-GUIDE_FOR, PAIRS = {}, {}
+GUIDE_FOR, PAIRS, PLACE_GUIDES = {}, {}, []
 if os.path.isdir(GUIDE_DIR):
     for f in sorted(os.listdir(GUIDE_DIR)):
         if not f.endswith(".json"):
             continue
         g = json.load(open(os.path.join(GUIDE_DIR, f), encoding="utf-8"))
         name = g["title"].split(":")[0]
+        if g["type"] in ("city", "state"):
+            PLACE_GUIDES.append((g["slug"], name, g["type"], g.get("city"), g.get("state")))
         for page in g.get("related_programmes", []) + g.get("bundle", {}).get("items", []):
             GUIDE_FOR.setdefault(page, {})[g["slug"]] = (name, g["type"])
         items = g.get("bundle", {}).get("items", [])
@@ -801,7 +803,14 @@ GUIDE_RANK = {"city": 0, "state": 1, "pillar": 2, "list": 2, "explainer": 3}
 def xsell_html(p):
     """Guides to read and programmes to add, shown under the programme. It sits outside
     #product-root, so the live redraw by product.js leaves it in place."""
-    reads = sorted(GUIDE_FOR.get(p["page"], {}).items(), key=lambda kv: (GUIDE_RANK.get(kv[1][1], 9), kv[1][0]))[:8]
+    found = dict(GUIDE_FOR.get(p["page"], {}))
+    venue = p["venue"]
+    cities = [c for slug, n, t, c, st in PLACE_GUIDES if t == "city" and c and re.search(r"\b" + re.escape(c) + r"\b", venue)]
+    for slug, n, t, c, st in PLACE_GUIDES:
+        if (t == "city" and c in cities) or (t == "state" and st and (re.search(r"\b" + re.escape(st) + r"\b", venue) or
+                any(st == st2 for s2, n2, t2, c2, st2 in PLACE_GUIDES if t2 == "city" and c2 in cities))):
+            found.setdefault(slug, (n, t))
+    reads = sorted(found.items(), key=lambda kv: (GUIDE_RANK.get(kv[1][1], 9), kv[1][0]))[:8]
     pairs = []
     for x in PAIRS.get(p["page"], []):
         if x in BY_PAGE and x not in pairs and x != p["page"]:
