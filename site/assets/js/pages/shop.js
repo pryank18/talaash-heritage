@@ -19,7 +19,16 @@ const AUDIENCES = {
   public: "Individuals and private groups",
 };
 
+// A third question: where it happens.
+const WHERE = {
+  delhi: "In Delhi",
+  nearby: "Day trips from Delhi",
+  india: "Around India",
+  anywhere: "Online or at your venue",
+};
+
 const params = new URLSearchParams(location.search);
+let where = WHERE[params.get("where")] ? params.get("where") : "";
 let active = FILTERS[params.get("type")] ? params.get("type") : "all";
 let who = AUDIENCES[params.get("for")] ? params.get("for") : "";
 let sort = "featured";
@@ -27,6 +36,7 @@ let sort = "featured";
 const shopRoot = $("#shop-grid");
 const chips = $("#shop-filters");
 const forRow = $("#shop-for");
+const whereRow = $("#shop-where");
 const heading = $("#shop-title");
 const count = $("#shop-count");
 
@@ -51,7 +61,14 @@ async function render() {
     forRow.hidden = !asks;
     const forWho = asks && who ? who : "";
     $$("[data-for]", forRow).forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.for === forWho)));
-    const list = sorted(forWho ? inSection.filter((p) => p.audience?.includes(forWho)) : inSection);
+    const regions = new Set(inSection.map((p) => p.region).filter(Boolean));
+    whereRow.hidden = regions.size < 2;
+    const at = !whereRow.hidden && regions.has(where) ? where : "";
+    $$("[data-where]", whereRow).forEach((c) => {
+      c.setAttribute("aria-pressed", String(c.dataset.where === at));
+      c.hidden = Boolean(c.dataset.where) && !regions.has(c.dataset.where);
+    });
+    const list = sorted(inSection.filter((p) => (!forWho || p.audience?.includes(forWho)) && (!at || p.region === at)));
     const available = list.filter((p) => !isSoon(p));
     const soon = list.filter(isSoon);
     const onRequest = available.filter(isRequest).length;
@@ -61,12 +78,12 @@ async function render() {
     if (available.length > onRequest) parts.push(`${available.length - onRequest} available to book`);
     if (soon.length) parts.push(`${soon.length} coming soon`);
     count.textContent = list.length
-      ? `${forWho ? `Suitable for ${AUDIENCES[forWho].toLowerCase()}: ` : ""}${parts.join(", ")}.`
+      ? `${[forWho ? `Suitable for ${AUDIENCES[forWho].toLowerCase()}` : "", at ? WHERE[at] : ""].filter(Boolean).join(", ")}${forWho || at ? ": " : ""}${parts.join(", ")}.`
       : "";
 
     const grid = (items) => `<div class="grid">${items.map(productCard).join("")}</div>`;
     // On the full catalogue, open with a short selection before everything else.
-    const showFeatured = active === "all" && !forWho && sort === "featured";
+    const showFeatured = active === "all" && !forWho && !at && sort === "featured";
     const featured = showFeatured ? available.filter((p) => p.tags?.includes("home")) : [];
     const rest = featured.length ? available.filter((p) => !featured.includes(p)) : available;
 
@@ -98,6 +115,23 @@ forRow.innerHTML =
   [["", "All"], ...Object.entries(AUDIENCES)]
     .map(([key, label]) => `<button class="chip chip-quiet" type="button" data-for="${key}" aria-pressed="false">${label}</button>`)
     .join("");
+
+whereRow.innerHTML =
+  `<span class="filters-label" id="shop-where-label">Where</span>` +
+  [["", "Anywhere"], ...Object.entries(WHERE)]
+    .map(([key, label]) => `<button class="chip chip-quiet" type="button" data-where="${key}" aria-pressed="false">${label}</button>`)
+    .join("");
+
+whereRow.addEventListener("click", (e) => {
+  const chip = e.target.closest("[data-where]");
+  if (!chip) return;
+  where = chip.dataset.where;
+  const url = new URL(location.href);
+  if (where) url.searchParams.set("where", where);
+  else url.searchParams.delete("where");
+  history.replaceState(null, "", url);
+  render();
+});
 
 forRow.addEventListener("click", (e) => {
   const chip = e.target.closest("[data-for]");

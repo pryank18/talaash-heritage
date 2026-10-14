@@ -976,3 +976,23 @@ html[data-theme="dark"] .path-travel { border-color: var(--line); border-top-col
   .jump::-webkit-scrollbar { display: none; }
   .jump a { white-space: nowrap; }
 }
+
+/* Programme pages: the plan, options and related programmes. */
+.plan { list-style: none; margin: 0 0 0.4rem; padding: 0; counter-reset: plan; }
+.plan > li { counter-increment: plan; position: relative; padding: 0 0 0.9rem 2.2rem; border-left: 2px solid var(--line); margin-left: 0.75rem; }
+.plan > li:last-child { border-left-color: transparent; }
+.plan > li::before { content: counter(plan); position: absolute; left: -0.8rem; top: 0; width: 1.55rem; height: 1.55rem; border-radius: 50%; background: var(--paper); border: 2px solid var(--haldi); font-size: 0.78rem; font-weight: 700; display: grid; place-items: center; color: var(--ink); }
+.plan-days > li::before { content: ""; width: 0.9rem; height: 0.9rem; left: -0.5rem; top: 0.3rem; background: var(--haldi); border: 0; }
+.plan p { margin: 0 0 0.2rem; }
+.plan-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.6rem; }
+.plan-time { font-size: var(--step--1); color: var(--ink-soft); white-space: nowrap; }
+.plan-do { font-size: var(--step--1); color: var(--verdigris-dark); }
+.options { margin: 0 0 0.5rem; padding-left: 1.15rem; }
+.options li { margin-bottom: 0.45rem; }
+.options li::marker { color: var(--haldi); }
+
+/* Cards for programmes without an illustration (static copies of the shop and the Journeys page). */
+.card-text { align-self: start; border: 1px solid var(--line); border-top: 3px solid var(--haldi); border-radius: 6px; padding: 0 1rem 1rem; background: var(--paper); }
+.card-text .card-type { margin-top: 0.9rem; }
+.journey-sub { font-size: var(--step-1); margin: 2rem 0 1rem; }
+.journey-sub:first-child { margin-top: 0; }

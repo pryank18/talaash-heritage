@@ -1,8 +1,8 @@
-import { getProduct } from "../api.js";
+import { getProduct, getProducts } from "../api.js";
 import { CONFIG } from "../config.js";
 import { addToCart, getCart, MAX_QTY } from "../store.js";
 import { t } from "../i18n.js";
-import { $, esc, formatDuration, formatWhen, isRequest, isSoon, kindLabel, priceHtml, productArt, requestLinks, stockFlag, toast } from "../ui.js";
+import { $, esc, formatDuration, formatWhen, isRequest, isSoon, kindLabel, priceHtml, productArt, productHref, requestLinks, stockFlag, toast } from "../ui.js";
 
 const root = $("#product-root");
 // Static programme pages carry their slug on <body>; the dynamic page takes it from the link.
@@ -25,7 +25,7 @@ function requestPanel(p) {
   const links = requestLinks(p);
   const tags = p.tags || [];
   const counselling = tags.includes("counselling");
-  const travels = tags.includes("tour") || tags.includes("field");
+  const travels = ["tour", "field", "trip", "journey"].some((k) => tags.includes(k));
   const how = counselling
     ? "Share what you would like to discuss and when you are available. We confirm a time and the fee before you commit."
     : travels
@@ -39,6 +39,31 @@ function requestPanel(p) {
       </div>
       <p class="small muted">${counselling ? "No payment is taken until you confirm the session." : "No payment is taken until you approve the plan."} <a href="about.html#questions">Common questions</a></p>
     </div>`;
+}
+
+const PLAN_HEAD = { timed: "How the time is spent", days: "Day by day", outline: "Course outline", steps: "How it is planned" };
+const PLAN_NOTE = {
+  timed: "Timings are a guide. The plan is confirmed with your quotation.",
+  days: "Days can be added, removed or reordered. The final itinerary comes with your quotation.",
+  outline: "The number and length of sessions are agreed with your batch.",
+};
+const lowerFirst = (x) => (x && !/^[A-Z]{2}/.test(x) ? x[0].toLowerCase() + x.slice(1) : x);
+
+/** Plan, aims, take-away, options, notes and related programmes. Mirrors extras_html() in tools/build_catalogue.py. */
+function extrasHtml(p, all) {
+  const out = [];
+  if (p.plan?.length) {
+    const kind = p.plan_kind || "timed";
+    const items = p.plan.map((s) => `<li><p class="plan-head"><strong>${esc(s.title)}</strong>${s.minutes ? ` <span class="plan-time">${s.minutes} min</span>` : ""}</p>${s.detail ? `<p>${esc(s.detail)}</p>` : ""}${s.activity ? `<p class="plan-do">You: ${esc(lowerFirst(s.activity))}</p>` : ""}</li>`);
+    out.push(`<h2 class="covers-title">${PLAN_HEAD[kind]}</h2><ol class="plan plan-${kind}">${items.join("")}</ol>${PLAN_NOTE[kind] ? `<p class="small muted">${PLAN_NOTE[kind]}</p>` : ""}`);
+  }
+  if (p.objectives?.length) out.push(`<h2 class="covers-title">By the end you can</h2><ul class="covers">${p.objectives.map((o) => `<li>${esc(o)}</li>`).join("")}</ul>`);
+  if (p.takeaway) out.push(`<h2 class="covers-title">You take away</h2><p>${esc(p.takeaway)}.</p>`);
+  if (p.options?.length) out.push(`<h2 class="covers-title">Options you can add</h2><ul class="options">${p.options.map(([t, n]) => `<li><strong>${esc(t)}.</strong> ${esc(n)}</li>`).join("")}</ul>`);
+  if (p.notes?.length) out.push(`<h2 class="covers-title">Good to know</h2><ul class="covers">${p.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>`);
+  const related = (p.related || []).map((slug) => all.find((x) => x.slug === slug)).filter(Boolean);
+  if (related.length) out.push(`<h2 class="covers-title">Programmes in this journey</h2><ul class="covers">${related.map((r) => `<li><a href="${esc(productHref(r))}">${esc(r.title)}</a></li>`).join("")}</ul>`);
+  return out.join("");
 }
 
 /** Shown for things that are listed but not ready to sell. */
@@ -76,6 +101,7 @@ async function render() {
   }
   $('meta[name="description"]')?.setAttribute("content", p.subtitle || p.title);
 
+  const all = p.related?.length ? await getProducts().catch(() => []) : [];
   const request = isRequest(p);
   const soon = isSoon(p);
   const flag = request || soon ? null : stockFlag(p);
@@ -114,6 +140,7 @@ async function render() {
         }
         <div class="prose">${(p.description || "").split(/\n{2,}/).map((para) => `<p>${esc(para)}</p>`).join("")}</div>
         ${p.highlights?.length ? `<h2 class="covers-title">What it covers</h2><ul class="covers">${p.highlights.map((h) => `<li>${esc(h)}</li>`).join("")}</ul>` : ""}
+        ${extrasHtml(p, all)}
         ${
           p.seller_name
             ? `<div class="partner-note"><p><strong>Run by ${esc(p.seller_name)}</strong>, an independent partner of Talaash Heritage.${p.seller_bio ? ` ${esc(p.seller_bio)}` : ""}</p><p class="small muted">You book and pay through Talaash Heritage, and our <a href="shipping-returns.html">refund policy</a> applies.</p></div>`
