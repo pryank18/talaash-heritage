@@ -4,7 +4,7 @@ Run: python3 build_catalogue.py <path to site/data/catalogue.json>
 """
 import json, os, re, sys, unicodedata
 
-LANG = "English, Hindi or both"
+LANG = "English, Hindi or both. Other languages on request, through our partners."
 
 # Second paragraph of every description: how the programme bends to the group.
 FLEX = {
@@ -15,10 +15,19 @@ FLEX = {
     "course": "The course is run for your batch on dates you choose. Timings, pace and assessment are agreed before it begins.",
     "field": "Dates, location and syllabus are agreed with your institution. A day-by-day plan and a quotation are shared before you commit.",
     "tour": "A day-by-day itinerary and a quotation are shared before you commit. Route, pace, accommodation and budget are adjusted to suit your group.",
+    "trip": "Transport from Delhi, the start time, meals and pace are arranged with you, and the quotation states exactly what is included.",
+    "masterclass": "Length, level and language are agreed with you. It can be given online or at your venue, as a single session or as part of a series.",
+    "career": "It can be booked by one person or by a class. A short form before the session lets the mentor prepare for you.",
+    "discussion": "It is run as a guided conversation, online or on your campus, and works best with a group that is ready to argue a point.",
+    "journey": "Everything is arranged privately for you: dates, pace, hotels, transport and the language you are guided in. You receive a day-by-day itinerary and an itemised quotation before you commit.",
 }
-KIND = {"lecture": "Lecture", "workshop": "Workshop", "walk": "Heritage walk", "visit": "Museum visit", "course": "Course", "field": "Field school", "tour": "Study tour"}
-TYPE = {"lecture": "live", "workshop": "experience", "walk": "walk", "visit": "experience", "course": "course", "field": "experience", "tour": "experience"}
-BASE = {"walk": 100, "visit": 100, "lecture": 200, "workshop": 300, "course": 400, "field": 500, "tour": 500}
+KIND = {"lecture": "Lecture", "workshop": "Workshop", "walk": "Heritage walk", "visit": "Museum visit", "course": "Course", "field": "Field school",
+        "tour": "Study tour", "trip": "Day trip", "masterclass": "Masterclass", "career": "Career session", "discussion": "Discussion",
+        "journey": "Private journey"}
+TYPE = {"lecture": "live", "workshop": "experience", "walk": "walk", "visit": "experience", "course": "course", "field": "experience", "tour": "experience",
+        "trip": "walk", "masterclass": "live", "career": "counselling", "discussion": "live", "journey": "walk"}
+BASE = {"walk": 100, "visit": 100, "lecture": 200, "workshop": 300, "course": 400, "field": 500, "tour": 500,
+        "trip": 150, "masterclass": 250, "career": 600, "discussion": 270, "journey": 550}
 
 # f, title, subtitle, description, audiences, length, where, led by, suggested group, extra tags
 P = [
@@ -57,7 +66,7 @@ P = [
 
  ("field", "Museum field school: documentation and conservation", "A week of supervised work on a real collection", "Participants document, clean and rehouse objects from a museum collection under conservators and documentation specialists, with daily laboratory sessions, lectures and visits to nearby sites. It suits students of conservation, museology, archaeology and related fields.", "Colleges and university departments", "About 7 days, plus travel", "At a host museum", "Conservators and documentation specialists", 35, []),
  ("field", "Prehistory field workshop", "Three days of survey, stone tools, rock art and megaliths", "A field introduction to prehistory: reading the local landscape, finding and classifying stone tools, documenting rock art and megaliths, and taking samples.", "Colleges and university departments", "About 3 days", "A field area agreed with you", "Prehistorians", 25, []),
- ("tour", "Three capitals: Delhi, Agra and Jaipur", "The Golden Triangle as a study tour", "An archaeologist travels with the group and uses Delhi's Sultanate monuments, Mughal Agra and Fatehpur Sikri, and eighteenth-century Jaipur to show how three courts built their capitals.", "Schools, colleges, companies and the public", "5 to 6 days", "Delhi, Agra and Jaipur", "An archaeologist", 12, ["home"]),
+ ("tour", "Three capitals: Delhi, Agra and Jaipur", "The Golden Triangle as a study tour", "An archaeologist travels with the group and uses Delhi's Sultanate monuments, Mughal Agra and Fatehpur Sikri, and eighteenth-century Jaipur to show how three courts built their capitals.", "Schools, colleges, companies and the public", "5 to 6 days", "Delhi, Agra and Jaipur", "An archaeologist", 12, []),
  ("tour", "Forts of Rajasthan", "A study tour of the hill forts and the states that built them", "Six of Rajasthan's hill forts are on the World Heritage list. The tour covers how the forts were sited, supplied with water and defended, with a historian travelling alongside.", "Schools, colleges and the public", "6 to 8 days", "Rajasthan", "A historian", 12, []),
  ("tour", "Stupas, caves and temples of central India", "Sanchi, Udayagiri, Bhimbetka and Khajuraho", "Four sites in Madhya Pradesh that cover rock art, early Buddhist architecture, Gupta sculpture and the medieval temple at its height. An archaeologist leads, and reading is sent in advance.", "Colleges and the public", "6 to 7 days", "Madhya Pradesh", "An archaeologist", 12, []),
  ("tour", "A study tour built for your group", "Tell us the region and the syllabus", "For schools, colleges and societies that want another region: Gujarat, Odisha, Varanasi and Sarnath, the Deccan or the south. We design the route around what your group is studying and send an expert in that period.", "Schools, colleges and societies", "As long as you need", "Anywhere in India", "An expert chosen for the region", 12, []),
@@ -281,6 +290,15 @@ PRACTICAL = {
     "course": {"When": "Dates and timings are set with your batch.", "You need": "A computer or phone with a stable internet connection."},
     "field": {"When": "Dates agreed with your institution.", "Itinerary": "A day-by-day plan is shared before you commit.",
               "Travel, stay and meals": COVERED},
+    "trip": {"When": "Any day you choose. October to March is the most comfortable season.", "Starting point": "Delhi, or wherever you are staying in the region.",
+             "What to bring": "Comfortable shoes, water, a hat and sun protection. Much of the day is outdoors.",
+             "Travel, meals and entry fees": COVERED},
+    "masterclass": {"When": "Any date you choose, daytime or evening.",
+                    "You arrange": "At your venue, a room with a screen or projector. Online, nothing; the link is sent to you."},
+    "career": {"When": "A time agreed with you.", "Before the session": "A short form about your studies and plans."},
+    "discussion": {"When": "Any date you choose.", "You arrange": "At your campus, a room where the group can face each other. Online, nothing; the link is sent to you."},
+    "journey": {"When": "Any dates you choose. October to March is the most comfortable season for most of India.",
+                "Itinerary": "A day-by-day plan is shared before you commit.", "Hotels, transport and meals": COVERED},
     "tour": {"When": "Any dates you choose. October to March is the most comfortable season for this route.",
              "Itinerary": "A day-by-day plan is shared before you commit.", "Travel, stay and meals": COVERED},
 }
@@ -401,6 +419,7 @@ catalogue = {
 
 slugs = [p["slug"] for p in catalogue["programmes"]]
 assert len(slugs) == len(set(slugs)) == 35, (len(slugs), len(set(slugs)))
+HAND_WRITTEN = len(slugs)
 assert sum(p["is_featured"] for p in catalogue["programmes"]) == 1
 assert set(H) == {row[1] for row in P}, set(H) ^ {row[1] for row in P}
 assert set(COPY) == {row[1] for row in P}, set(COPY) ^ {row[1] for row in P}
@@ -411,6 +430,234 @@ assert all(sub.split()[0] in ("A", "An") for _, sub, _ in COPY.values())
 assert len({t for t, _, _ in COPY.values()}) == len(COPY)
 assert set(PRACTICAL_FOR) <= set(H)
 assert all(p["audience"] and 3 <= len(p["highlights"]) <= 4 for p in catalogue["programmes"])
+
+# ---------------------------------------------------------------------------
+# The programme bank: a plan for each programme above, and the programmes that
+# came from the bank (tools/bank.json, made by tools/import_bank.py).
+BANK = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "bank.json"), encoding="utf-8"))
+
+
+def region_from_places(places):
+    return "delhi" if "delhi" in places else "india" if "travel" in places else "anywhere"
+
+
+for p in catalogue["programmes"]:
+    p["region"] = region_from_places(p["find"]["places"])
+    p.update(BANK["plans"].get(p["slug"], {}))
+
+# Day-by-day outlines for the three study tours, written to match their stated length.
+TOUR_DAYS = {
+    "three-capitals-delhi-agra-and-jaipur": [
+        ("Day 1: Sultanate Delhi", "The Qutb complex and Mehrauli: how Delhi's first Sultanate capitals were built."),
+        ("Day 2: Mughal Delhi", "Humayun's Tomb in the morning; the Red Fort and the streets of Shahjahanabad in the afternoon."),
+        ("Day 3: Agra", "Drive to Agra. Agra Fort, and the Taj Mahal from across the river at sunset."),
+        ("Day 4: The Taj Mahal and Fatehpur Sikri", "The Taj Mahal at opening, then Akbar's city at Fatehpur Sikri on the way to Jaipur."),
+        ("Day 5: Jaipur", "Amber Fort, the City Palace and Jantar Mantar: a planned city of the eighteenth century."),
+        ("Day 6: Departure or an extra day", "A museum, a second fort, or a slower start before you leave."),
+    ],
+    "forts-of-rajasthan": [
+        ("Day 1: Jaipur", "Arrival, and an introduction to how and why Rajasthan's forts were built where they are."),
+        ("Day 2: Amber and Jaigarh", "A palace-fort and the fortress above it: defence, water supply and court life."),
+        ("Day 3: To Chittorgarh", "A long road day, broken with a stop on the way."),
+        ("Day 4: Chittorgarh", "The largest of the hill forts: gates, reservoirs, palaces and towers."),
+        ("Day 5: To Kumbhalgarh", "The drive through the Aravalli hills, and the fort walls at dusk."),
+        ("Day 6: Kumbhalgarh", "The walls, the gateways and the temples inside them."),
+        ("Days 7 and 8: Udaipur, or an extension", "Departure from Udaipur, or on to Ranthambore, Gagron or Jaisalmer to complete the set of six."),
+    ],
+    "stupas-caves-and-temples-of-central-india": [
+        ("Day 1: Bhopal", "Arrival, and the State Museum for the region's archaeology in one place."),
+        ("Day 2: Bhimbetka and Bhojpur", "Painted rock shelters in the morning; the unfinished Bhojeshwar temple in the afternoon."),
+        ("Day 3: Sanchi", "The Great Stupa, its four gateways and the monasteries on the hill."),
+        ("Day 4: Udayagiri and Vidisha", "Gupta-period rock-cut caves and the old city beside them."),
+        ("Day 5: To Khajuraho", "A long road day across Madhya Pradesh."),
+        ("Day 6: Khajuraho", "The Western Group of Chandella temples: plans, towers and sculpture."),
+        ("Day 7: Khajuraho and departure", "The Eastern and Southern groups, then the flight or train home."),
+    ],
+}
+TOUR_DAYS["museum-field-school-documentation-and-conservation"] = [
+    ("Day 1: Arrival and induction", "The host museum, its collection and the rules for handling objects safely."),
+    ("Days 2 to 5: Supervised work on the collection", "Documenting, cleaning and rehousing objects with conservators and documentation specialists, with a laboratory session and a lecture each day."),
+    ("Day 6: Nearby sites", "Visits to sites connected with the collection."),
+    ("Day 7: Reporting and departure", "Each participant presents the records they made, and the work is handed over to the museum."),
+]
+TOUR_DAYS["prehistory-field-workshop"] = [
+    ("Day 1: Reading the landscape", "Maps, geology and survey: how prehistorians decide where to look."),
+    ("Day 2: Stone tools", "Finding, recording and classifying stone tools, and what their scars tell us."),
+    ("Day 3: Rock art and megaliths", "Documenting rock art and megalithic monuments, and how samples are taken and labelled."),
+]
+STEPS = {"a-study-tour-built-for-your-group": [
+    ("Tell us the region and the syllabus", "Where your group wants to go, what it is studying, how many days you have and how many of you there are."),
+    ("We propose a route and an expert", "A route built around the syllabus, with a specialist in the period or region."),
+    ("You receive an itinerary and a quotation", "Day by day, with what is included and what is not, revised until it suits you."),
+    ("You travel with the expert", "The specialist leads the group throughout, with reading sent in advance."),
+]}
+for p in catalogue["programmes"]:
+    if p["slug"] in STEPS:
+        p["plan"] = [{"title": t, "detail": d} for t, d in STEPS[p["slug"]]]
+        p["plan_kind"] = "steps"
+for p in catalogue["programmes"]:
+    if p["slug"] in TOUR_DAYS:
+        p["plan"] = [{"title": t, "detail": d} for t, d in TOUR_DAYS[p["slug"]]]
+        p["plan_kind"] = "days"
+        p.pop("objectives", None)
+# The central India tour matches its day plan: Khajuraho is reached from Bhopal by road.
+for p in catalogue["programmes"]:
+    if p["slug"] == "stupas-caves-and-temples-of-central-india":
+        p["highlights"] = ["Bhimbetka: painted rock shelters", "Bhojpur and Sanchi: an unfinished temple and the Great Stupa",
+                           "Udayagiri: rock-cut caves of the Gupta period", "Khajuraho: the Chandella temples"]
+
+
+def bank_programme(i, b):
+    f = b["f"]
+    details = {"For": b["for"], "Length": b["length"], "When": PRACTICAL[f]["When"], "Led by": b["led_by"], "Language": LANG,
+               "Group size": "Agreed with you. A single person or a small group is welcome." if f == "career" else "Agreed with you. Smaller and larger groups are welcome.",
+               **{k: v for k, v in PRACTICAL[f].items() if k != "When"}, "Price": "Quoted for your group"}
+    return {
+        "id": f"req-{b['slug']}", "slug": b["slug"], "page": f"{b['slug']}.html", "title": b["title"], "subtitle": b["subtitle"],
+        "description": f"{b['description']}\n\n{FLEX[f]}", "type": TYPE[f], "kind": KIND[f], "price_paise": 0, "compare_at_paise": None,
+        "currency": "INR", "stock": None, "requires_shipping": False, "image_url": illustration(sys.argv[1], b["slug"]),
+        "starts_at": None, "duration_minutes": None, "speaker": None, "venue": b["venue"], "details": details,
+        "highlights": b["highlights"], "audience": b["audience"], "find": b["find"], "region": b["region"],
+        "plan": b["plan"], "plan_kind": b["plan_kind"], "takeaway": b["takeaway"], **({"objectives": b["objectives"]} if b.get("objectives") else {}),
+        "tags": ["on-request", f], "is_active": True, "is_featured": False, "sort_order": BASE[f] * 10 + i,
+    }
+
+
+HARAPPA_IMG = illustration(sys.argv[1], "the-first-cities-harappa-among-the-early-civilisations")
+for i, b in enumerate(BANK["programmes"]):
+    p = bank_programme(i, b)
+    if b["bank_id"] == "TH-031":
+        # The flagship day, written by hand from the Rakhigarhi operations plan.
+        p.update({
+            "slug": "rakhigarhi", "id": "req-rakhigarhi", "page": "rakhigarhi.html", "image_url": HARAPPA_IMG,
+            "title": "Rakhigarhi: a Harappan city and a living village",
+            "subtitle": "A day trip from Delhi to one of the largest Harappan sites, with an archaeologist",
+            "description": "Rakhigarhi, in Hisar district of Haryana, is one of the largest settlements of the Harappan civilisation. "
+                           "An archaeologist walks you through the mounds and the published evidence for its streets, crafts, drains and burials, "
+                           "and a local host shows you the village that stands beside them today.\n\n"
+                           "The day is designed to be worth the journey even when no trench is open and the museum is closed. "
+                           "A visit to a live excavation or a gallery can be added only when it is confirmed for your date.\n\n" + FLEX["trip"],
+            "highlights": ["The mounds and what excavation has found in them", "Published finds, pottery and burials, with reproductions",
+                           "Lunch with a local host", "The village today, in conversation with the people who live there"],
+            "plan": [
+                {"title": "Arrival and briefing", "minutes": 35, "detail": "What a mound is, where Rakhigarhi sits in the Harappan story, and how to behave on a protected site."},
+                {"title": "The archaeological landscape", "minutes": 75, "detail": "The accessible parts of selected mounds, read against the published evidence for streets, craft areas, drains and burial grounds.", "activity": "Annotate a site map in your field notebook"},
+                {"title": "Finds and methods", "minutes": 45, "detail": "Excavation photographs, pottery types and burials, with reproductions: what each tells us and what it does not.", "activity": "Sort evidence from reconstruction"},
+                {"title": "Lunch", "minutes": 60, "detail": "A meal arranged with a local host, or a restaurant or packed lunch. Dietary needs are confirmed when you book."},
+                {"title": "The village today", "minutes": 65, "detail": "A walk or a conversation about food and crafts, led by a local host who has agreed to it. No uninvited visits, and photographs only with permission."},
+                {"title": "Wrap-up", "minutes": 30, "detail": "The ancient city and the present village as two different histories, your questions, and options for a second day."},
+            ],
+            "options": [
+                ("A live excavation", "Only when a dig is under way on your date and the site team agrees to a supervised visit."),
+                ("A museum or interpretation centre", "Only if it is open on your date; otherwise a printed research pack."),
+                ("A pottery and craft demonstration", "With a craftsperson, quoted for your group."),
+                ("A research seminar", "With a scholar, for college and research groups."),
+                ("A photography and field-recording workshop", "With permission for every photograph taken."),
+                ("An overnight stay", "A resort, hotel or heritage lodging nearby, quoted by room. Some lodgings have age rules for school groups."),
+                ("A second day nearby", "Hisar, Hansi or Agroha, or a seminar comparing Harappan sites."),
+            ],
+            "notes": [
+                "Travel time from Delhi is added at both ends of the day and depends on where you start.",
+                "We never promise an open trench or a find. The day is planned to be worthwhile without them.",
+                "We do not claim that the people of the village today descend directly from the Harappans. The two histories are told separately.",
+            ],
+            "takeaway": "A field journal and a comparison sheet from the day",
+            "find": {"topics": ["archaeology", "ancient", "heritage"], "places": ["travel"], "lengths": ["long"]},
+            "audience": ["school", "college", "work", "public"], "tags": ["on-request", "trip", "home"], "sort_order": 1490,
+            "details": {**p["details"], "Length": "A full day at the site, plus travel from Delhi", "Led by": "An archaeologist, with a local cultural host",
+                        "For": "Schools, colleges, families, researchers and private groups, including visitors from abroad"},
+        })
+    catalogue["programmes"].append(p)
+
+# Private journeys for visitors from abroad (and anyone else), from the international experience book.
+JOURNEYS = [
+    ("delhi-through-seven-cities", "Delhi through seven cities", "A three-day private journey through Delhi's historic cities", "Delhi", "3 days",
+     "Delhi is a sequence of cities built beside one another over a thousand years. This journey reads them in order, with no more than two major monuments a day.",
+     [("Day 1: The Qutb complex", "Arrival, rest, and an unhurried reading of the Qutb complex."),
+      ("Day 2: Mehrauli and Humayun's Tomb", "Mehrauli Archaeological Park in the morning, Humayun's Tomb in the afternoon, with lunch between."),
+      ("Day 3: Shahjahanabad", "Old Delhi and the Red Fort, then a flexible departure.")],
+     ["the-qutb-complex", "mehrauli-archaeological-park", "humayuns-tomb", "jama-masjid-shahjahanabad", "red-fort-complex"], ["delhi", "travel"]),
+    ("delhi-and-rakhigarhi-the-harappan-world", "Delhi and Rakhigarhi: the Harappan world", "A two-day private journey from a Delhi museum to a Harappan city", "Delhi and Haryana", "2 days",
+     "An introduction to the Harappan civilisation in Delhi, then a day at Rakhigarhi, one of its largest cities.",
+     [("Day 1: Delhi", "A short introduction to Harappan archaeology, and a museum gallery if it is open."),
+      ("Day 2: Rakhigarhi", "An early start for the archaeological landscape, lunch and the village today. Return to Delhi, or stay the night.")],
+     ["rakhigarhi", "museum-morning-with-an-archaeologist", "the-first-cities-harappa-among-the-early-civilisations"], ["delhi", "travel"]),
+    ("the-golden-triangle-with-an-archaeologist", "The Golden Triangle with an archaeologist", "A six-day private journey through Delhi, Agra and Jaipur", "Delhi, Agra and Jaipur", "6 days",
+     "The classic route, paced for understanding rather than ticking off: Sultanate and Mughal Delhi, Agra and Fatehpur Sikri, and the planned city of Jaipur.",
+     [("Day 1: Arrive in Delhi", "A briefing and time to rest."),
+      ("Day 2: Qutb and Mehrauli, or Humayun's Tomb", "Two monuments at a private pace."),
+      ("Day 3: Old Delhi", "The architecture and history of Shahjahanabad."),
+      ("Day 4: To Agra", "The drive to Agra, then its monuments after time to settle in."),
+      ("Day 5: Fatehpur Sikri and on to Jaipur", "Akbar's city on the way."),
+      ("Day 6: Jaipur", "The planned city and Jantar Mantar, then departure.")],
+     ["three-capitals-delhi-agra-and-jaipur", "the-qutb-complex", "humayuns-tomb", "jama-masjid-shahjahanabad", "fatehpur-sikri-mughal-urban-vision"], ["travel"]),
+    ("central-india-rock-art-and-buddhist-archaeology", "Central India: rock art and Buddhist archaeology", "A five-day private journey based in Bhopal", "Bhopal, Madhya Pradesh", "5 days",
+     "Prehistoric painted shelters, an unfinished temple, the stupas of Sanchi and the Gupta caves of Udayagiri, one at a time.",
+     [("Day 1: Bhopal", "Arrival, the lake and the old city."),
+      ("Day 2: Bhimbetka", "The prehistoric painted shelters, with time to rest."),
+      ("Day 3: Bhojpur", "The Bhojeshwar temple and what its stones show about how it was built."),
+      ("Day 4: Sanchi", "The Buddhist monuments on the hill."),
+      ("Day 5: Udayagiri and Vidisha", "The caves and the old city, then departure.")],
+     ["old-bhopal-markets-water-and-city-identity", "bhimbetka-painted-shelters-and-prehistoric-landscapes", "bhojpur-bhojeshwar-temple-the-unfinished-monument", "sanchi-stupas-gateways-and-buddhist-art", "udayagiri-caves-gupta-period-sacred-art"], ["travel"]),
+    ("mumbai-caves-city-and-living-traditions", "Mumbai: caves, city and living traditions", "A four-day private journey in Mumbai", "Mumbai", "4 days",
+     "A port city read through its colonial streets, its rock-cut caves and its living neighbourhoods.",
+     [("Day 1: The Fort precinct", "Arrival, and the architecture of the old Fort area."),
+      ("Day 2: Victorian Gothic and Art Deco", "Two centuries of building along South Mumbai's streets."),
+      ("Day 3: Elephanta", "The island caves, if the ferry is running that day."),
+      ("Day 4: Banganga and Bhuleshwar, or Kanheri", "A sacred tank and a market quarter, or the Buddhist caves in the national park.")],
+     ["mumbai-fort-precinct-colonial-urban-form", "mumbai-art-deco-and-victorian-gothic-walk", "elephanta-shiva-and-rock-cut-architecture", "banganga-tank-sacred-water-and-neighbourhood", "bhuleshwar-living-religious-streetscape", "kanheri-caves-monastic-landscapes"], ["travel"]),
+    ("temples-of-eastern-india", "Temples of eastern India", "A five-day private journey from Bhubaneswar to Konark", "Bhubaneswar, Odisha", "5 days",
+     "Odisha's temple architecture from the old town of Bhubaneswar to the Sun Temple at Konark, with the Jain caves between.",
+     [("Day 1: Bhubaneswar", "Arrival, and how to read a Kalinga temple."),
+      ("Day 2: The Ekamra temples", "The old town and its sacred landscape."),
+      ("Day 3: Udayagiri and Khandagiri", "The Jain caves on the twin hills."),
+      ("Day 4: Konark", "The Sun Temple, then rest by the coast."),
+      ("Day 5: Iconography and departure", "A session comparing the sculpture you have seen.")],
+     ["bhubaneswar-ekamra-temples-and-urban-sacred-landscape", "udayagiri-khandagiri-caves-jain-heritage", "konark-sun-temple-architecture-and-astronomy", "kalinga-temple-architecture"], ["travel"]),
+    ("harappan-gujarat-cities-water-and-trade", "Harappan Gujarat: cities, water and trade", "A six-day private journey to Lothal and Dholavira", "Ahmedabad and Kachchh, Gujarat", "6 days",
+     "Two of the best-known Harappan sites: the dock town of Lothal and the walled city of Dholavira with its reservoirs. The distances are long, so the nights are planned around them.",
+     [("Day 1: Ahmedabad", "Arrival and a briefing on the evidence."),
+      ("Day 2: Lothal", "The site and its interpretations, then back to Ahmedabad."),
+      ("Day 3: To Kachchh", "A travel day with an overnight stop."),
+      ("Day 4: Dholavira", "A full day at the city, its gates and its water system."),
+      ("Day 5: Landscape and crafts", "Water and settlement in Kachchh, and local crafts with makers who have agreed to host you."),
+      ("Day 6: Return", "The drive back and departure.")],
+     ["lothal-harappan-trade-and-its-interpretations", "dholavira-harappan-urbanism-in-kachchh", "the-first-cities-harappa-among-the-early-civilisations"], ["travel"]),
+    ("south-india-temple-architecture", "South India temple architecture", "A six-day private journey from Chennai", "Chennai and Tamil Nadu", "6 days",
+     "From the Pallava rock-cut monuments at Mamallapuram to the temple towns beyond, with time to understand how the southern temple took shape.",
+     [("Day 1: Chennai", "Arrival and an introduction to Pallava art."),
+      ("Day 2: Mamallapuram", "Rock-cut and structural monuments by the sea."),
+      ("Day 3: Kanchipuram", "The temple town, with a local partner."),
+      ("Day 4: Travel or rest", "On to another temple region if you choose one."),
+      ("Day 5: Plans, patrons and inscriptions", "A seminar, or a visit led by a partner specialist."),
+      ("Day 6: Departure", "A session on recording what you saw, then departure.")],
+     ["mamallapuram-rock-cut-and-structural-temples", "dravida-temple-architecture", "understanding-indian-temple-architecture"], ["travel"]),
+]
+known = {p["slug"] for p in catalogue["programmes"]}
+for i, (slug, title, sub, venue, days, desc, plan, related, places) in enumerate(JOURNEYS):
+    missing = [r for r in related if r not in known]
+    assert not missing, (slug, missing)
+    catalogue["programmes"].append({
+        "id": f"req-{slug}", "slug": slug, "page": f"{slug}.html", "title": title, "subtitle": sub,
+        "description": f"{desc}\n\n{FLEX['journey']}", "type": TYPE["journey"], "kind": KIND["journey"], "price_paise": 0, "compare_at_paise": None,
+        "currency": "INR", "stock": None, "requires_shipping": False, "image_url": illustration(sys.argv[1], slug), "starts_at": None,
+        "duration_minutes": None, "speaker": None, "venue": venue,
+        "details": {"For": "Visitors from abroad, families and private groups", "Length": days.replace("days", "days, adjusted to you"),
+                    "Led by": "An archaeologist or historian, with partner guides in your language", "Language": LANG,
+                    "Group size": "From one traveller upwards", **PRACTICAL["journey"], "Price": "Quoted for your group"},
+        "highlights": [t.split(": ", 1)[1] if ": " in t else t for t, _ in plan][:4],
+        "plan": [{"title": t, "detail": d} for t, d in plan], "plan_kind": "days", "related": related,
+        "audience": ["public", "college"], "find": {"topics": ["monuments", "heritage"], "places": places, "lengths": ["long"]},
+        "region": "india", "tags": ["on-request", "journey", "international"], "is_active": True, "is_featured": False,
+        "sort_order": BASE["journey"] * 10 + i,
+    })
+
+slugs = [p["slug"] for p in catalogue["programmes"]]
+assert len(slugs) == len(set(slugs)), [x for x in slugs if slugs.count(x) > 1]
+for p in catalogue["programmes"]:
+    assert p["find"]["topics"] and p["find"]["places"] and p["find"]["lengths"], p["slug"]
+    assert set(p["find"]["topics"]) <= TOPICS and set(p["find"]["places"]) <= PLACES and set(p["find"]["lengths"]) <= LENGTHS, p["slug"]
+    assert p["audience"] and p["highlights"], p["slug"]
 out = sys.argv[1]
 with open(out, "w", encoding="utf-8") as fh:
     json.dump(catalogue, fh, ensure_ascii=False, indent=1)
@@ -426,20 +673,22 @@ from html import escape as h
 SITE_URL = "https://talaash-heritage.pages.dev/"
 ACTION = {"Heritage walk": "Enquire about this walk", "Museum visit": "Enquire about this visit", "Lecture": "Request this lecture",
           "Workshop": "Request this workshop", "Course": "Request this course", "Field school": "Enquire about this field school",
-          "Study tour": "Plan this study tour"}  # same wording as requestAction() in assets/js/ui.js
+          "Study tour": "Plan this study tour", "Day trip": "Plan this day trip", "Masterclass": "Request this masterclass",
+          "Career session": "Request a session", "Discussion": "Request this discussion", "Private journey": "Plan this journey"}  # same wording as requestAction() in assets/js/ui.js
 SIZES = "(min-width: 1000px) 25vw, (min-width: 560px) 33vw, 50vw"
 
 
 def static_card(p):
     href = p["page"]
+    meta = " · ".join(x for x in (p["details"].get("Length"), p["venue"]) if x)
     if p["image_url"]:
         small = p["image_url"].replace(".jpg", "-s.jpg")
-        art = (f'<img src="{h(small)}" srcset="{h(small)} 560w, {h(p["image_url"])} 1040w" sizes="{SIZES}" '
-               f'alt="{h("Illustration for " + p["title"])}" loading="lazy" width="1040" height="780">')
+        art = (f'<a class="card-art" href="{h(href)}" tabindex="-1" aria-hidden="true"><img src="{h(small)}" srcset="{h(small)} 560w, {h(p["image_url"])} 1040w" sizes="{SIZES}" '
+               f'alt="{h("Illustration for " + p["title"])}" loading="lazy" width="1040" height="780"></a>')
+        cls = "card"
     else:
-        art = ""
-    meta = " · ".join(x for x in (p["details"].get("Length"), p["venue"]) if x)
-    return (f'<article class="card"><a class="card-art" href="{h(href)}" tabindex="-1" aria-hidden="true">{art}</a>'
+        art, cls = "", "card card-text"
+    return (f'<article class="{cls}">{art}'
             f'<p class="card-type">{h(p["kind"])} · On request</p><h3><a href="{h(href)}">{h(p["title"])}</a></h3>'
             f'<p class="card-meta">{h(meta)}</p><p class="visually-hidden">{h(p["subtitle"])}</p>'
             f'<div class="card-foot card-foot-wide"><a class="btn btn-outline btn-small" href="{h(href)}">{h(ACTION[p["kind"]])}</a></div></article>')
@@ -455,6 +704,32 @@ block = f'{START}\n<section class="shop-block"><h2>All programmes</h2><div class
 shop = shop[:shop.index(START)] + block + shop[shop.index(END) + len(END):]
 open(shop_path, "w", encoding="utf-8").write(shop)
 
+# The Journeys page (TALAASHH) lists the travel programmes in blocks between markers.
+journeys_path = os.path.join(site, "journeys.html")
+jp = open(journeys_path, encoding="utf-8").read()
+progs = catalogue["programmes"]
+grid = lambda items: '<div class="grid">\n' + "\n".join(static_card(x) for x in items) + "\n</div>"
+blocks = {
+    "trips": sorted([x for x in progs if x["kind"] == "Day trip"], key=lambda x: x["sort_order"]),
+    "tours": [x for x in progs if x["kind"] == "Study tour"],
+    "field": [x for x in progs if x["kind"] == "Field school"],
+    "private": [x for x in progs if x["kind"] == "Private journey"],
+}
+STATE_ORDER = ["Madhya Pradesh", "Mumbai", "Odisha", "Gujarat", "Rajasthan", "Uttar Pradesh", "Bihar", "Tamil Nadu", "Karnataka"]
+by_state = {}
+for x in progs:
+    if x.get("region") == "india" and x["kind"] in ("Heritage walk", "Museum visit"):
+        state = x["venue"].split(", ")[-1]
+        by_state.setdefault("Mumbai" if "Mumbai" in state else state, []).append(x)
+assert set(by_state) <= set(STATE_ORDER), set(by_state) - set(STATE_ORDER)
+india = "\n".join(f'<h3 class="journey-sub">{h(st)}</h3>\n{grid(by_state[st])}' for st in STATE_ORDER if st in by_state)
+for key in ["trips", "tours", "field", "private", "india"]:
+    a, b = f"<!-- journeys:{key} -->", f"<!-- /journeys:{key} -->"
+    assert jp.count(a) == 1 and jp.count(b) == 1, key
+    body = india if key == "india" else grid(blocks[key])
+    jp = jp[:jp.index(a) + len(a)] + "\n" + body + "\n" + jp[jp.index(b):]
+open(journeys_path, "w", encoding="utf-8").write(jp)
+
 # One static page per programme, named after its slug, so that search engines
 # and link previews see the programme's own title, picture and text. The page
 # script then draws the live version over it.
@@ -463,6 +738,47 @@ MARK = "<!-- generated by tools/build_catalogue.py: edit the programme there, no
 HAND_MADE = {f for f in os.listdir(site) if f.endswith(".html") and MARK not in open(os.path.join(site, f), encoding="utf-8").read()}
 assert not {p["page"] for p in catalogue["programmes"]} & HAND_MADE, "a programme slug clashes with a page of the site"
 WA_NUMBER = "917397829282"  # CONFIG.whatsappNumber in assets/js/config.js
+
+
+PLAN_HEAD = {"timed": "How the time is spent", "days": "Day by day", "outline": "Course outline", "steps": "How it is planned"}
+PLAN_NOTE = {"timed": "Timings are a guide. The plan is confirmed with your quotation.",
+             "days": "Days can be added, removed or reordered. The final itinerary comes with your quotation.",
+             "outline": "The number and length of sessions are agreed with your batch."}
+TITLES = {p["slug"]: (p["title"], p["page"]) for p in catalogue["programmes"]}
+
+
+def extras_html(p):
+    """The sections under a programme's description: plan, aims, take-away, options, notes, related programmes.
+    Mirrors extrasHtml() in assets/js/pages/product.js."""
+    out = []
+    if p.get("plan"):
+        kind = p.get("plan_kind", "timed")
+        items = []
+        for st in p["plan"]:
+            time = f' <span class="plan-time">{st["minutes"]} min</span>' if st.get("minutes") else ""
+            detail = f'<p>{h(st["detail"])}</p>' if st.get("detail") else ""
+            act = f'<p class="plan-do">You: {h(lower(st["activity"]))}</p>' if st.get("activity") else ""
+            items.append(f'<li><p class="plan-head"><strong>{h(st["title"])}</strong>{time}</p>{detail}{act}</li>')
+        note = f'<p class="small muted">{PLAN_NOTE[kind]}</p>' if kind in PLAN_NOTE else ""
+        out.append(f'<h2 class="covers-title">{PLAN_HEAD[kind]}</h2><ol class="plan plan-{kind}">{"".join(items)}</ol>{note}')
+    if p.get("objectives"):
+        out.append('<h2 class="covers-title">By the end you can</h2><ul class="covers">' +
+                   "".join(f"<li>{h(o)}</li>" for o in p["objectives"]) + "</ul>")
+    if p.get("takeaway"):
+        out.append(f'<h2 class="covers-title">You take away</h2><p>{h(p["takeaway"])}.</p>')
+    if p.get("options"):
+        out.append('<h2 class="covers-title">Options you can add</h2><ul class="options">' +
+                   "".join(f"<li><strong>{h(t)}.</strong> {h(n)}</li>" for t, n in p["options"]) + "</ul>")
+    if p.get("notes"):
+        out.append('<h2 class="covers-title">Good to know</h2><ul class="covers">' + "".join(f"<li>{h(n)}</li>" for n in p["notes"]) + "</ul>")
+    if p.get("related"):
+        out.append('<h2 class="covers-title">Programmes in this journey</h2><ul class="covers">' +
+                   "".join(f'<li><a href="{h(TITLES[r][1])}">{h(TITLES[r][0])}</a></li>' for r in p["related"]) + "</ul>")
+    return "".join(out)
+
+
+def lower(x):
+    return x[0].lower() + x[1:] if x and not x[:2].isupper() else x
 
 
 def static_page(p):
@@ -482,7 +798,7 @@ def static_page(p):
     spec = "".join(f"<div><dt>{h(k)}</dt><dd>{h(v)}</dd></div>" for k, v in [("Where", p["venue"]), *p["details"].items()] if v)
     prose = "".join(f"<p>{h(x)}</p>" for x in p["description"].split("\n\n"))
     covers = "".join(f"<li>{h(x)}</li>" for x in p["highlights"])
-    travels = "tour" in p["tags"] or "field" in p["tags"]
+    travels = any(t in p["tags"] for t in ("tour", "field", "trip", "journey"))
     how = ("Send your preferred dates, group size and starting point. We prepare a day-by-day itinerary and a quotation, and revise both until they suit you. The suggested group size is a guide, not a requirement."
            if travels else "Send your preferred dates, group size and location. We adapt the length, level and language, and prepare a quotation. The suggested group size is a guide, not a requirement.")
     return f"""<!doctype html>
@@ -536,6 +852,7 @@ def static_page(p):
       </div>
       <div class="prose">{prose}</div>
       <h2 class="covers-title">What it covers</h2><ul class="covers">{covers}</ul>
+      {extras_html(p)}
       <dl class="spec">{spec}</dl>
     </div>
   </div>

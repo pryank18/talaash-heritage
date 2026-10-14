@@ -94,6 +94,11 @@ const ACTION = {
   "Field school": "Enquire about this field school",
   "Study tour": "Plan this study tour",
   "One-to-one counselling": "Request a session",
+  "Day trip": "Plan this day trip",
+  "Masterclass": "Request this masterclass",
+  "Career session": "Request a session",
+  "Discussion": "Request this discussion",
+  "Private journey": "Plan this journey",
 };
 export const requestAction = (p) => ACTION[kindLabel(p)] || "Enquire";
 
