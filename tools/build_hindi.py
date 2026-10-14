@@ -597,6 +597,124 @@ TEXT = {
     "Pick a lecture, a walk or something for your desk.": "कोई व्याख्यान, भ्रमण या अपनी मेज़ के लिए कुछ चुनें।",
     "Browse the shop": "सूची देखें",
 
+    # ---- Our work ------------------------------------------------------------
+    "Our work: field projects and research": "हमारा कार्य: क्षेत्र परियोजनाएँ और शोध",
+    "Field projects, documentation and teaching by Talaash Heritage since 2018: museum work in Kargil, explorations at Sirpur and Sumerpur, rock art in Hazaribagh, and courses in Prakrit.":
+        "2018 से Talaash Heritage की क्षेत्र परियोजनाएँ, प्रलेखन और अध्यापन: कारगिल में संग्रहालय कार्य, सिरपुर और सुमेरपुर में अन्वेषण, हज़ारीबाग में शैलचित्र, और प्राकृत के पाठ्यक्रम।",
+    "Since 2018 · Registered 2021": "2018 से · 2021 में पंजीकृत",
+    "Talaash Heritage began in 2018, when young professionals from archaeology, linguistics, anthropology, the arts, Sanskrit and history started working together. It was registered in 2021. Our team was in the field before this site existed: exploring sites, documenting collections and rock art, and teaching the languages India's inscriptions are written in.":
+        "Talaash Heritage की शुरुआत 2018 में हुई, जब पुरातत्व, भाषाविज्ञान, नृविज्ञान, कला, संस्कृत और इतिहास के युवा पेशेवरों ने साथ मिलकर काम करना शुरू किया। 2021 में इसका पंजीकरण हुआ। यह वेबसाइट बनने से पहले ही हमारा दल क्षेत्र में काम कर रहा था: स्थलों का अन्वेषण, संग्रहों और शैलचित्रों का प्रलेखन, और उन भाषाओं का अध्यापन जिनमें भारत के अभिलेख लिखे गए हैं।",
+    "Field projects": "क्षेत्र परियोजनाएँ",
+    "Kargil, Ladakh": "कारगिल, लद्दाख",
+    "A museum field school": "संग्रहालय क्षेत्र-विद्यालय",
+    "Training in museum management, documentation and conservation, carried out alongside the documentation and refurbishment of a museum collection.":
+        "संग्रहालय प्रबंधन, प्रलेखन और संरक्षण का प्रशिक्षण, जो एक संग्रहालय संग्रह के प्रलेखन और नवीनीकरण के साथ-साथ किया गया।",
+    "Sirpur, Chhattisgarh": "सिरपुर, छत्तीसगढ़",
+    "Archaeological and anthropological exploration": "पुरातात्विक और नृवैज्ञानिक अन्वेषण",
+    "Archaeological exploration of sites around Sirpur, together with anthropological study of the area.":
+        "सिरपुर के आसपास के स्थलों का पुरातात्विक अन्वेषण, साथ में क्षेत्र का नृवैज्ञानिक अध्ययन।",
+    "Sumerpur": "सुमेरपुर",
+    "Archaeological exploration": "पुरातात्विक अन्वेषण",
+    "Exploration to locate and record archaeological sites and material.": "पुरातात्विक स्थलों और सामग्री को खोजने और दर्ज करने के लिए अन्वेषण।",
+    "Hazaribagh, Jharkhand": "हज़ारीबाग, झारखंड",
+    "Rock art documentation": "शैलचित्र प्रलेखन",
+    "Digitisation and documentation of rock art in the Hazaribagh region.": "हज़ारीबाग क्षेत्र के शैलचित्रों का डिजिटलीकरण और प्रलेखन।",
+    "Dhanbad and Purulia": "धनबाद और पुरुलिया",
+    "Temple documentation": "मंदिर प्रलेखन",
+    "Documentation of temples in the Dhanbad and Purulia districts.": "धनबाद और पुरुलिया ज़िलों के मंदिरों का प्रलेखन।",
+    "Mithila": "मिथिला",
+    "Maithili culture": "मैथिली संस्कृति",
+    "Documentation and promotion of Maithili culture.": "मैथिली संस्कृति का प्रलेखन और प्रसार।",
+    "Teaching and public programmes": "अध्यापन और सार्वजनिक कार्यक्रम",
+    "We have taught a certificate course in Prakrit online, and run a series of public talks and online sessions in 2022 and 2023 on archaeology, anthropology, scripts and heritage.":
+        "हमने प्राकृत में ऑनलाइन प्रमाणपत्र पाठ्यक्रम पढ़ाया है, और 2022 और 2023 में पुरातत्व, नृविज्ञान, लिपियों और धरोहर पर सार्वजनिक वार्ताओं और ऑनलाइन सत्रों की शृंखला चलाई है।",
+    "Students join us as campus ambassadors and interns, and we advise those who want to study or work in the field. Today the same team runs the <a href=\"shop.html\">lectures, workshops, walks and courses</a> listed on this site, and heritage journeys under our travel name, <a href=\"journeys.html\">TALAASHH</a>.":
+        "विद्यार्थी हमारे साथ कैंपस एंबेसडर और इंटर्न के रूप में जुड़ते हैं, और इस क्षेत्र में पढ़ना या काम करना चाहने वालों को हम सलाह देते हैं। आज वही दल इस साइट पर दिए गए <a href=\"shop.html\">व्याख्यान, कार्यशालाएँ, भ्रमण और पाठ्यक्रम</a> चलाता है, और हमारे यात्रा नाम <a href=\"journeys.html\">TALAASHH</a> के अंतर्गत धरोहर यात्राएँ भी।",
+    "For museums, archives and institutions": "संग्रहालयों, अभिलेखागारों और संस्थानों के लिए",
+    "We help museums, archives and collections, public and private, understand what they hold and look after it.":
+        "हम सार्वजनिक और निजी संग्रहालयों, अभिलेखागारों और संग्रहों को यह समझने में मदद करते हैं कि उनके पास क्या है, और उसकी देखभाल कैसे हो।",
+    "<strong>Research and documentation</strong>Recording sites, monuments, objects and collections to a consistent standard.":
+        "<strong>शोध और प्रलेखन</strong>स्थलों, स्मारकों, वस्तुओं और संग्रहों को एक समान मानक पर दर्ज करना।",
+    "<strong>Archives and collections</strong>Cataloguing, collection management and digitisation.":
+        "<strong>अभिलेखागार और संग्रह</strong>सूचीकरण, संग्रह प्रबंधन और डिजिटलीकरण।",
+    "<strong>Conservation</strong>Condition surveys and preventive conservation, with training for the people who look after a collection.":
+        "<strong>संरक्षण</strong>स्थिति सर्वेक्षण और निवारक संरक्षण, साथ में संग्रह की देखभाल करने वालों का प्रशिक्षण।",
+    "<strong>Exhibitions and galleries</strong>Planning a new display or refurbishing an old one, from content to layout.":
+        "<strong>प्रदर्शनियाँ और दीर्घाएँ</strong>नई प्रदर्शनी की योजना या पुरानी का नवीनीकरण, सामग्री से लेकर संयोजन तक।",
+    "<strong>Translation and content</strong>Texts translated between Indian languages and English, and content for publications and media.":
+        "<strong>अनुवाद और सामग्री</strong>भारतीय भाषाओं और अंग्रेज़ी के बीच पाठों का अनुवाद, और प्रकाशनों व मीडिया के लिए सामग्री।",
+    "<strong>Training</strong>Workshops for staff, students and volunteers, at your institution or online.":
+        "<strong>प्रशिक्षण</strong>कर्मचारियों, विद्यार्थियों और स्वयंसेवकों के लिए कार्यशालाएँ, आपके संस्थान में या ऑनलाइन।",
+    "Tell us about the collection or site and what you need: <a href=\"mailto:talaashheritage@gmail.com?subject=Work%20with%20Talaash%20Heritage\">talaashheritage@gmail.com</a> or WhatsApp +91 7397829282.":
+        "संग्रह या स्थल के बारे में और अपनी ज़रूरत हमें बताएँ: <a href=\"mailto:talaashheritage@gmail.com?subject=Work%20with%20Talaash%20Heritage\">talaashheritage@gmail.com</a> या WhatsApp +91 7397829282।",
+    "How we work": "हम कैसे काम करते हैं",
+    "We start from the evidence: the inscription, the text, the structure, the excavated material. A session on Aśoka begins with the edicts, and a temple survey begins with a measured plan.":
+        "हम साक्ष्य से शुरू करते हैं: अभिलेख, ग्रंथ, संरचना, उत्खनन से मिली सामग्री। अशोक पर सत्र उनके शिलालेखों से शुरू होता है, और मंदिर का सर्वेक्षण नापे हुए नक्शे से।",
+    "Records are made to a common standard, so that one site or collection can be compared with another. Material is translated so that it can be read in the region it comes from, and the people who care for a site or a collection are trained to keep the work going.":
+        "अभिलेख एक समान मानक पर बनाए जाते हैं, ताकि एक स्थल या संग्रह की तुलना दूसरे से की जा सके। सामग्री का अनुवाद किया जाता है ताकि उसे उसी क्षेत्र में पढ़ा जा सके जहाँ से वह आई है, और स्थल या संग्रह की देखभाल करने वालों को प्रशिक्षित किया जाता है ताकि काम चलता रहे।",
+
+    # ---- TALAASHH journeys ------------------------------------------------------
+    "TALAASHH: heritage journeys in India with archaeologists": "TALAASHH: पुरातत्वविदों के साथ भारत की धरोहर यात्राएँ",
+    "Small-group heritage journeys in India led by archaeologists and historians: Rakhigarhi, central India, Delhi, Agra and Jaipur, Rajasthan, field experiences and private itineraries for visitors from abroad.":
+        "पुरातत्वविदों और इतिहासकारों के नेतृत्व में भारत में छोटे समूहों की धरोहर यात्राएँ: राखीगढ़ी, मध्य भारत, दिल्ली, आगरा और जयपुर, राजस्थान, क्षेत्र-कार्य के अनुभव, और विदेश से आने वालों के लिए निजी यात्रा-योजनाएँ।",
+    "<span class=\"brand-mark\">TALAASH<span class=\"hh\">H</span></span> Heritage journeys by Talaash Heritage":
+        "<span class=\"brand-mark\">TALAASH<span class=\"hh\">H</span></span> Talaash Heritage की धरोहर यात्राएँ",
+    "Travel India's past with the people who study it": "भारत के अतीत की यात्रा, उनके साथ जो उसका अध्ययन करते हैं",
+    "Small-group journeys to archaeological sites, temples and historic cities, led by archaeologists and historians. Join a public departure on your own, bring your friends, or have a trip planned for you.":
+        "पुरातात्विक स्थलों, मंदिरों और ऐतिहासिक नगरों की छोटे समूहों में यात्राएँ, पुरातत्वविदों और इतिहासकारों के नेतृत्व में। किसी सार्वजनिक यात्रा में अकेले जुड़ें, मित्रों को साथ लाएँ, या अपने लिए यात्रा की योजना बनवाएँ।",
+    "Plan a journey on WhatsApp": "WhatsApp पर यात्रा की योजना बनाएँ",
+    "Plan by email": "ईमेल से योजना बनाएँ",
+    "On this page": "इस पृष्ठ पर",
+    "Open walks": "सार्वजनिक भ्रमण",
+    "Study tours": "अध्ययन यात्राएँ",
+    "Field experiences": "क्षेत्र-कार्य के अनुभव",
+    "Private and international": "निजी और अंतरराष्ट्रीय",
+    "Public walks in Delhi that anyone can join, on their own or with friends. Each date is listed here with its price and the seats left, and is paid for online.":
+        "दिल्ली में सार्वजनिक भ्रमण, जिनमें कोई भी अकेले या मित्रों के साथ जुड़ सकता है। हर तिथि यहाँ उसके शुल्क और बची हुई सीटों के साथ दी जाती है, और भुगतान ऑनलाइन होता है।",
+    "The first public dates are being set. <a href=\"https://wa.me/917397829282?text=Hello%20TALAASHH%2C%20please%20tell%20me%20when%20public%20walk%20dates%20open.\" target=\"_blank\" rel=\"noopener\">Ask to be told when they open</a>.":
+        "पहली सार्वजनिक तिथियाँ तय की जा रही हैं। <a href=\"https://wa.me/917397829282?text=Hello%20TALAASHH%2C%20please%20tell%20me%20when%20public%20walk%20dates%20open.\" target=\"_blank\" rel=\"noopener\">तिथियाँ खुलने पर सूचना पाने के लिए लिखें</a>।",
+    "Planning a walk for a school, a college or your own group? Choose any of <a href=\"shop.html?type=walk\">our walks</a> and set the date yourself.":
+        "विद्यालय, महाविद्यालय या अपने समूह के लिए भ्रमण की योजना बना रहे हैं? <a href=\"shop.html?type=walk\">हमारे भ्रमणों</a> में से कोई भी चुनें और तिथि स्वयं तय करें।",
+    "All day trips": "सभी एक-दिवसीय यात्राएँ",
+    "A Harappan city, Tughlaq forts and Mughal gardens within a day of Delhi. Transport, lunch and the start time are arranged with you.":
+        "दिल्ली से एक दिन की दूरी पर एक हड़प्पा नगर, तुग़लक़ किले और मुग़ल उद्यान। वाहन, दोपहर का भोजन और प्रस्थान का समय आपके साथ तय किया जाता है।",
+    "From two days among the stupas of Sanchi to a week across Rajasthan's hill forts. Each tour comes with a day-by-day itinerary and a quotation before you commit.":
+        "साँची के स्तूपों के बीच दो दिन से लेकर राजस्थान के पहाड़ी किलों में एक सप्ताह तक। हर यात्रा के साथ, आपके निर्णय से पहले, दिन-प्रतिदिन का कार्यक्रम और कोटेशन मिलता है।",
+    "Walks around India": "भारत भर में भ्रमण",
+    "All of them in the catalogue": "सभी, कैटलॉग में",
+    "Single sites and neighbourhoods outside Delhi, led by a specialist and arranged through our partners. Add them to a longer journey or book one on its own.":
+        "दिल्ली के बाहर के एकल स्थल और मोहल्ले, किसी विशेषज्ञ के नेतृत्व में और हमारे साझेदारों के माध्यम से आयोजित। इन्हें किसी लंबी यात्रा में जोड़ें या अलग से बुक करें।",
+    "Odisha": "ओडिशा",
+    "Gujarat": "गुजरात",
+    "Uttar Pradesh": "उत्तर प्रदेश",
+    "Bihar": "बिहार",
+    "Tamil Nadu": "तमिलनाडु",
+    "Our field projects": "हमारी क्षेत्र परियोजनाएँ",
+    "Spend a few days with a field team: survey a landscape, handle stone tools, or record a museum collection, and learn how the record is made. Where you can join depends on the work under way and the permissions it holds, so tell us your dates and interests.":
+        "कुछ दिन किसी क्षेत्र दल के साथ बिताएँ: भूदृश्य का सर्वेक्षण करें, पाषाण औज़ारों को हाथ में लेकर देखें, या किसी संग्रहालय संग्रह को दर्ज करें, और जानें कि अभिलेख कैसे बनता है। आप कहाँ जुड़ सकते हैं, यह चल रहे काम और उसकी अनुमतियों पर निर्भर है, इसलिए हमें अपनी तिथियाँ और रुचियाँ बताएँ।",
+    "Ask about a field experience on WhatsApp": "क्षेत्र-कार्य के अनुभव के बारे में WhatsApp पर पूछें",
+    "Private and international journeys": "निजी और अंतरराष्ट्रीय यात्राएँ",
+    "Visiting India from abroad? Every programme on this site is open to you, and any journey can be built around your dates, interests and pace.":
+        "विदेश से भारत आ रहे हैं? इस साइट का हर कार्यक्रम आपके लिए खुला है, और कोई भी यात्रा आपकी तिथियों, रुचियों और गति के अनुसार बनाई जा सकती है।",
+    "Every journey includes": "हर यात्रा में शामिल",
+    "<strong>In your language</strong>Through our partners, guides can work in the language you are most comfortable in. The language and the specialist are confirmed in your quotation.":
+        "<strong>आपकी भाषा में</strong>हमारे साझेदारों के माध्यम से गाइड उस भाषा में काम कर सकते हैं जिसमें आप सबसे सहज हैं। भाषा और विशेषज्ञ आपके कोटेशन में पक्के किए जाते हैं।",
+    "<strong>A plan before you commit</strong>A day-by-day itinerary and a quotation that states what is covered and what is not, revised until it suits you.":
+        "<strong>निर्णय से पहले योजना</strong>दिन-प्रतिदिन का कार्यक्रम और कोटेशन, जिसमें लिखा हो कि क्या शामिल है और क्या नहीं, आपके अनुकूल होने तक संशोधित।",
+    "<strong>Your pace and budget</strong>Hotels, transport and the length of each day are arranged to suit you.":
+        "<strong>आपकी गति और बजट</strong>होटल, वाहन और हर दिन की अवधि आपके अनुसार तय की जाती है।",
+    "<strong>Any group size</strong>From one traveller to a university department.":
+        "<strong>समूह किसी भी आकार का</strong>एक यात्री से लेकर विश्वविद्यालय के पूरे विभाग तक।",
+    "Plan my trip on WhatsApp": "WhatsApp पर मेरी यात्रा की योजना बनाएँ",
+    "How a journey works": "यात्रा कैसे तय होती है",
+    "<strong>Tell us</strong>Where you would like to go, when, how many of you, and anything you want to see or avoid.":
+        "<strong>हमें बताएँ</strong>आप कहाँ जाना चाहते हैं, कब, कितने लोग हैं, और क्या देखना या छोड़ना चाहते हैं।",
+    "<strong>Receive an itinerary and quotation</strong>A day-by-day plan with the specialist who will lead it, and a price that states what is included.":
+        "<strong>कार्यक्रम और कोटेशन पाएँ</strong>दिन-प्रतिदिन की योजना, उसका नेतृत्व करने वाले विशेषज्ञ के साथ, और एक मूल्य जिसमें लिखा हो कि क्या शामिल है।",
+    "<strong>Confirm</strong>No payment is taken until you approve the plan.":
+        "<strong>पुष्टि करें</strong>योजना स्वीकार करने तक कोई भुगतान नहीं लिया जाता।",
+    "TALAASH<span class=\"hh\">H</span> is the travel name of Talaash Heritage. <a href=\"about.html#questions\">Common questions</a>":
+        "TALAASH<span class=\"hh\">H</span>, Talaash Heritage का यात्रा नाम है। <a href=\"about.html#questions\">सामान्य प्रश्न</a>",
     # ---- page not found -------------------------------------------------------------
     "Lost in the mists of time": "समय की धुंध में खो गया",
     "Nothing at this address": "इस पते पर कुछ नहीं है",

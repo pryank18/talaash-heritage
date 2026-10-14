@@ -37,7 +37,7 @@ export const CONFIG = {
   //               server. You confirm each payment yourself.
   //   "whatsapp"  order is saved and the buyer messages you to arrange payment.
   //   "razorpay"  cards, netbanking and UPI through Razorpay, confirmed
-  //               automatically. About 2% per sale. Needs docs/SETUP.md part B.
+  //               automatically. About 2% per sale. Setup: docs/RAZORPAY.md.
   paymentMethods: ["upi", "whatsapp"],
   // Where UPI payments go. A business UPI ID works best: some apps refuse
   // link and QR payments to personal IDs.
