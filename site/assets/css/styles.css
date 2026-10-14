@@ -122,7 +122,8 @@ p { margin: 0 0 1em; }
 .schools h3 { text-transform: uppercase; letter-spacing: 0.05em; font-size: 1.05rem; border-bottom: 2px solid var(--haldi); padding-bottom: 0.4rem; }
 .schools ul { margin: 0; padding-left: 1.1rem; }
 
-@media (max-width: 1180px) {
+/* The header holds six links; below 1300px the links move to their own row. */
+@media (max-width: 1299px) {
   .site-header { gap: 0.75rem; }
   .site-nav { order: 3; width: 100%; margin-left: 0; gap: 1.1rem; overflow-x: auto; flex-wrap: nowrap; white-space: nowrap; padding-bottom: 0.2rem; }
   .cart-link { margin-left: auto; }
@@ -533,7 +534,7 @@ a.chip:hover, a.chip:focus-visible { border-color: var(--ink); }
 .theme-toggle .icon-sun { display: none; }
 html[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
-@media (max-width: 1180px) { .theme-toggle { margin-left: auto; } .site-header .cart-link { margin-left: 0; } }
+@media (max-width: 1299px) { .theme-toggle { margin-left: auto; } .site-header .cart-link { margin-left: 0; } }
 
 /* ---------- dark theme ---------- */
 html[data-theme="dark"] {
@@ -586,8 +587,8 @@ html[data-theme="dark"] .feature { box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0
 html[data-theme="dark"] .card-art img,
 html[data-theme="dark"] .product-art img { filter: brightness(0.84) contrast(1.04); }
 html[data-theme="dark"] .card-art, html[data-theme="dark"] .product-art { box-shadow: 0 0 0 1px var(--line); }
-@media (min-width: 1181px) {
-  .site-header { gap: 1rem; }
+@media (min-width: 1300px) {
+  .site-header { gap: 1rem; max-width: 84rem; }
   .site-nav { gap: 1.05rem; }
   .site-nav ~ .theme-toggle { margin-left: 0.25rem; }
 }
@@ -922,3 +923,56 @@ html[data-theme="dark"] .card-art::after { background: radial-gradient(circle at
   }
 }
 @media print { .hero-mist, .hero-light { display: none; } .hero-seal { animation: none; } }
+
+/* ---------------------------------------------------------------------------
+   Two paths: Talaash Heritage (learn) and TALAASHH (travel); proof of record;
+   the Journeys and Our work pages.
+   ------------------------------------------------------------------------- */
+.hh { color: var(--haldi-dark); }
+.path-travel .hh, .brand-mark .hh { color: var(--haldi); }
+.section-paths { padding-bottom: 0; }
+.paths { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; }
+.path { display: flex; flex-direction: column; gap: 0.35rem; padding: 1.4rem 1.5rem 1.5rem; border: 1px solid var(--line); border-top: 3px solid var(--haldi); border-radius: 6px; background: var(--paper); color: var(--ink); text-decoration: none; }
+.path-brand { font-size: var(--step--1); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+.path strong { font-family: var(--font-display); font-weight: 400; font-size: var(--step-3); line-height: 1.1; }
+.path > span:last-child { color: var(--ink-soft); }
+.path-travel { background: var(--patina); border-color: var(--patina); border-top-color: var(--haldi); color: #f3efe6; }
+.path-travel .path-brand, .path-travel > span:last-child { color: #cfc8ba; }
+.path:hover strong, .path:focus-visible strong { text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--haldi); text-underline-offset: 0.18em; }
+.path:focus-visible { outline: 3px solid var(--haldi); outline-offset: 2px; }
+html[data-theme="dark"] .path-travel { border-color: var(--line); border-top-color: var(--haldi); }
+
+.proof { list-style: none; margin: 1.5rem 0 0; padding: 1rem 0; display: grid; gap: 0.75rem 2rem; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; align-items: center; border-block: 1px solid var(--line); }
+.proof li { display: flex; flex-direction: column; }
+.proof strong { font-family: var(--font-display); font-weight: 400; font-size: var(--step-1); line-height: 1.2; }
+.proof span { font-size: var(--step--1); color: var(--ink-soft); }
+.proof-link a { font-weight: 600; white-space: nowrap; }
+
+.kicker { font-size: var(--step--1); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--haldi-dark); margin: 0 0 0.4rem; }
+.page-lede { font-size: var(--step-1); line-height: 1.5; color: var(--ink-soft); max-width: 44rem; }
+.projects { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.5rem 2rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+.projects li { border-top: 2px solid var(--haldi); padding-top: 0.75rem; }
+.projects h3 { margin: 0 0 0.35rem; font-size: var(--step-1); }
+.projects p { margin: 0; }
+.projects p + p { color: var(--ink-soft); }
+.project-place { font-size: var(--step--1); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 0.25rem !important; }
+
+.journey-hero { padding-block: clamp(2rem, 5vw, 3.5rem) clamp(1.5rem, 4vw, 2.5rem); border-bottom: 1px solid var(--line); }
+.journey-hero h1 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem); max-width: 20ch; }
+.brand-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.35rem 0.75rem; color: var(--ink-soft); margin: 0 0 0.6rem; }
+.brand-mark { font-weight: 700; letter-spacing: 0.14em; color: var(--ink); font-size: var(--step-1); }
+.jump { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.75rem; }
+.jump a { padding: 0.4rem 0.8rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); text-decoration: none; font-size: var(--step--1); background: var(--paper); }
+.jump a:hover { border-color: var(--ink); }
+#open-walks .note { margin: 1rem 0; }
+
+@media (max-width: 899px) {
+  .paths { grid-template-columns: 1fr; gap: 0.6rem; }
+  .path { padding: 1rem 1.1rem 1.1rem; }
+  .path strong { font-size: var(--step-2); }
+  .proof { grid-template-columns: 1fr 1fr; gap: 0.75rem 1rem; align-items: start; }
+  .proof-link { grid-column: 1 / -1; }
+  .jump { flex-wrap: nowrap; overflow-x: auto; margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); scrollbar-width: none; }
+  .jump::-webkit-scrollbar { display: none; }
+  .jump a { white-space: nowrap; }
+}

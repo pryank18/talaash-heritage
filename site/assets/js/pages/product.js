@@ -5,7 +5,8 @@ import { t } from "../i18n.js";
 import { $, esc, formatDuration, formatWhen, isRequest, isSoon, kindLabel, priceHtml, productArt, requestLinks, stockFlag, toast } from "../ui.js";
 
 const root = $("#product-root");
-const slug = new URLSearchParams(location.search).get("slug");
+// Static programme pages carry their slug on <body>; the dynamic page takes it from the link.
+const slug = new URLSearchParams(location.search).get("slug") || document.body.dataset.slug;
 
 function specRows(p) {
   const rows = [];
@@ -66,6 +67,13 @@ async function render() {
   }
 
   document.title = `${p.title} | Talaash Heritage`;
+  // The dynamic page points search engines at the programme's static copy.
+  if (p.page && !document.querySelector('link[rel="canonical"]')) {
+    const link = document.createElement("link");
+    link.rel = "canonical";
+    link.href = new URL(p.page, location.href).href;
+    document.head.append(link);
+  }
   $('meta[name="description"]')?.setAttribute("content", p.subtitle || p.title);
 
   const request = isRequest(p);

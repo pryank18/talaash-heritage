@@ -34,7 +34,9 @@ function firstTouch() {
 }
 
 function currentPage() {
-  return location.pathname.split("/").pop() || "index.html";
+  // The host serves /about.html as /about, so the name is compared with ".html" added back.
+  const raw = location.pathname.split("/").pop() || "index";
+  return raw.endsWith(".html") ? raw : `${raw}.html`;
 }
 
 function template(hard, v) {
@@ -272,7 +274,7 @@ export function initGate() {
   const v = getVisitor();
   // A changed consent version means the notice changed: ask again.
   if (v && v.consent_version === CONFIG.consentVersion) return;
-  if (CONFIG.gateExemptPages.includes(currentPage())) return;
+  if (CONFIG.gateExemptPages.includes(currentPage()) || document.body.dataset.gate === "open") return;
   if (CONFIG.gateMode === "hard") openGate({ hard: true, edit: Boolean(v) });
   else if (CONFIG.gateMode === "soft" && !sessionStorage.getItem("th_gate_dismissed")) {
     openGate().then((v) => {

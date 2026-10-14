@@ -175,11 +175,16 @@ export function priceHtml(p) {
   return `${money(p.price_paise)}${was}`;
 }
 
+/** A programme's page: its static page when it has one, otherwise the dynamic one. */
+export function productHref(p) {
+  return p.page || `product.html?slug=${encodeURIComponent(p.slug)}`;
+}
+
 export function productCard(p) {
   const request = isRequest(p);
   const soon = isSoon(p);
   const flag = request ? null : soon ? { text: "Coming soon", low: false, soldOut: true } : stockFlag(p);
-  const href = `product.html?slug=${encodeURIComponent(p.slug)}`;
+  const href = esc(productHref(p));
   return `
   <article class="card">
     <a class="card-art" href="${href}" tabindex="-1" aria-hidden="true">

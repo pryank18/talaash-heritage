@@ -7,11 +7,15 @@ import { $, esc, toast, canBuy } from "./ui.js";
 import { lang, setLang, startTranslating, t } from "./i18n.js";
 import "./magic.js";
 
-const page = location.pathname.split("/").pop() || "index.html";
+// The host serves /about.html as /about, so names are compared with ".html" added back.
+const rawPage = location.pathname.split("/").pop() || "index";
+const page = rawPage.endsWith(".html") ? rawPage : `${rawPage}.html`;
+// Static programme pages (one per catalogue programme) behave like product.html.
+const isProgramme = page === "product.html" || Boolean(document.body.dataset.slug);
 const filter = new URLSearchParams(location.search).get("type");
 
 // Pages whose main text has not been translated yet. Their header, footer and buttons are still in Hindi.
-const ENGLISH_ONLY = new Set(["about.html", "privacy.html", "terms.html", "shipping-returns.html", "sell.html", "seller.html", "cart.html", "checkout.html", "order.html", "admin.html"]);
+const ENGLISH_ONLY = new Set(["about.html", "work.html", "journeys.html", "privacy.html", "terms.html", "shipping-returns.html", "sell.html", "seller.html", "cart.html", "checkout.html", "order.html", "admin.html"]);
 
 function navLink(href, label) {
   const [file, query] = href.split("?");
@@ -34,7 +38,7 @@ function renderHeader() {
     ${isLive() ? "" : `<div class="demo-banner">Demo mode: registrations and orders are not saved anywhere. Add your Supabase keys in <code>assets/js/config.js</code> to go live.</div>`}
     ${isLive() && CONFIG.sampleNotice ? `<div class="demo-banner">This site is being set up. The listings shown are examples; bookings open soon.</div>` : ""}
     ${lang === "hi" && ENGLISH_ONLY.has(page) ? `<div class="lang-notice" lang="hi" data-no-translate>यह पृष्ठ अभी केवल अंग्रेज़ी में उपलब्ध है। किसी भी जानकारी के लिए आप हमें WhatsApp पर हिन्दी में लिख सकते हैं।</div>` : ""}
-    ${lang === "hi" && page === "product.html" ? `<div class="lang-notice" lang="hi" data-no-translate>कार्यक्रम का विस्तृत विवरण अभी अंग्रेज़ी में है। हिन्दी में जानकारी के लिए आप हमें WhatsApp पर लिख सकते हैं।</div>` : ""}
+    ${lang === "hi" && isProgramme ? `<div class="lang-notice" lang="hi" data-no-translate>कार्यक्रम का विस्तृत विवरण अभी अंग्रेज़ी में है। हिन्दी में जानकारी के लिए आप हमें WhatsApp पर लिख सकते हैं।</div>` : ""}
     <div class="site-header">
       <a class="wordmark" href="index.html" aria-label="${esc(CONFIG.brand)} home">
         <img class="wordmark-badge" src="${esc(CONFIG.logo || "assets/img/logo-192.png")}" alt="" width="48" height="48">
@@ -45,6 +49,7 @@ function renderHeader() {
         ${navLink("shop.html?type=live", "Courses and lectures")}
         ${navLink("shop.html?type=counselling", "Counselling")}
         ${navLink("shop.html", "Everything")}
+        ${navLink("journeys.html", "Journeys")}
         ${navLink("about.html", "About")}
       </nav>
       <button type="button" class="lang-quick" data-no-translate data-lang-set="${lang === "hi" ? "en" : "hi"}" lang="${lang === "hi" ? "en" : "hi"}">${lang === "hi" ? "English" : "हिन्दी"}</button>
@@ -97,11 +102,14 @@ function renderFooter() {
           <li><a href="shop.html?type=counselling">Counselling</a></li>
           <li><a href="shop.html?type=recording">Recordings</a></li>
           <li><a href="shop.html?type=physical">Books and prints</a></li>
+          <li><a href="journeys.html">TALAASHH journeys</a></li>
         </ul>
       </div>
       <div>
         <h2>Help</h2>
         <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="work.html">Our work</a></li>
           <li><a href="finder.html">Help me choose a programme</a></li>
           <li><a href="contact.html">Contact us</a></li>
           <li><a href="about.html#questions">Common questions</a></li>
@@ -137,7 +145,7 @@ function renderFooter() {
 // ---- phone app shell: bottom tabs and the "More" sheet -----------------------
 // Shown by CSS on phones and portrait tablets only; desktop keeps the header nav.
 const NO_TABS = new Set(["admin.html", "seller.html", "checkout.html"]);
-const MORE_PAGES = new Set(["about.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html", "cart.html", "order.html"]);
+const MORE_PAGES = new Set(["about.html", "work.html", "journeys.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html", "cart.html", "order.html"]);
 const ICON = {
   home: '<path d="M3.5 10.5 12 4l8.5 6.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/>',
   shop: '<rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"/>',
@@ -149,7 +157,7 @@ const svg = (name) => `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="fa
 
 function renderAppShell() {
   if (NO_TABS.has(page) || $(".tabbar")) return;
-  const current = page === "index.html" ? "home" : page === "shop.html" || page === "product.html" ? "shop" : page === "finder.html" ? "find" : page === "contact.html" ? "contact" : MORE_PAGES.has(page) ? "more" : "";
+  const current = page === "index.html" ? "home" : page === "shop.html" || isProgramme ? "shop" : page === "finder.html" ? "find" : page === "contact.html" ? "contact" : MORE_PAGES.has(page) ? "more" : "";
   const tab = (key, href, label, extra = "") =>
     `<a class="tab${extra}" href="${href}"${current === key ? ' aria-current="page"' : ""}>${svg(key)}<span>${label}</span></a>`;
   const bar = document.createElement("nav");
@@ -178,10 +186,12 @@ function renderAppShell() {
         <li><a href="shop.html?type=counselling">Counselling</a></li>
         <li><a href="shop.html?type=recording">Recordings</a></li>
         <li><a href="shop.html?type=physical">Books and prints</a></li>
+        <li><a href="journeys.html">TALAASHH journeys</a></li>
       </ul>
       <h3>Talaash Heritage</h3>
       <ul>
         <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Our work</a></li>
         <li><a href="about.html#questions">Common questions</a></li>
         <li><a href="cart.html">Cart</a></li>
         <li><a href="sell.html">Sell with us</a></li>
