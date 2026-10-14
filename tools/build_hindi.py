@@ -38,6 +38,26 @@ TEXT = {
     "Counselling": "परामर्श",
     "Everything": "सब कुछ",
     "About": "हमारे बारे में",
+    "About us": "हमारे बारे में",
+    "Our work": "हमारा कार्य",
+    "Journeys": "यात्राएँ",
+    "TALAASHH journeys": "TALAASHH यात्राएँ",
+    # home: the two paths and the record under the hero
+    "Learn or travel with us": "हमारे साथ सीखें या यात्रा करें",
+    "Learn with us": "हमारे साथ सीखें",
+    "Travel with us": "हमारे साथ यात्रा करें",
+    "Lectures, workshops, walks and courses for schools, colleges, workplaces and anyone curious.":
+        "विद्यालयों, महाविद्यालयों, कार्यस्थलों और हर जिज्ञासु के लिए व्याख्यान, कार्यशालाएँ, भ्रमण और पाठ्यक्रम।",
+    "Heritage journeys, field experiences and private trips, led by people who study the sites.":
+        "धरोहर यात्राएँ, क्षेत्र-कार्य के अनुभव और निजी यात्राएँ, उन लोगों के साथ जो इन स्थलों का अध्ययन करते हैं।",
+    "Our record": "हमारा अनुभव",
+    "Since 2018": "2018 से",
+    "Registered in 2021": "2021 में पंजीकृत",
+    "In the field": "क्षेत्र-कार्य",
+    "Kargil, Sirpur, Sumerpur and Hazaribagh": "कारगिल, सिरपुर, सुमेरपुर और हज़ारीबाग",
+    "Teaching": "अध्यापन",
+    "Prakrit, Brāhmī and Śāradā, online and on campus": "प्राकृत, ब्राह्मी और शारदा, ऑनलाइन और परिसर में",
+    "See our work": "हमारा कार्य देखें",
     "Cart": "कार्ट",
     "items": "आइटम",
     "Switch to dark theme": "गहरी थीम पर जाएँ",
@@ -238,8 +258,8 @@ TEXT = {
     '<a href="about.html">Read more about us</a> · <a href="about.html#schools">Programmes for schools</a>':
         '<a href="about.html">हमारे बारे में और पढ़ें</a> · <a href="about.html#schools">विद्यालयों के लिए कार्यक्रम</a>',
     f"About {BRAND}": f"{BRAND} के बारे में",
-    "Talaash means search. It also spells out who we are: a Team for Archaeology, Linguistics, Anthropology, Arts, Sanskrit, History and Heritage. We started in 2021 to teach India's past the way it is studied: from inscriptions, texts, monuments and excavated material, with the sources in front of you.":
-        "तलाश का अर्थ है खोज। यह नाम यह भी बताता है कि हम कौन हैं: पुरातत्व, भाषाविज्ञान, नृविज्ञान, कला, संस्कृत, इतिहास और धरोहर (Team for Archaeology, Linguistics, Anthropology, Arts, Sanskrit, History and Heritage) के लिए समर्पित दल। हमने 2021 में शुरुआत की, ताकि भारत के अतीत को उसी तरह पढ़ाया जाए जैसे उसका अध्ययन होता है: अभिलेखों, ग्रंथों, स्मारकों और उत्खनन से मिली सामग्री से, स्रोतों को सामने रखकर।",
+    "Talaash means search. It also spells out who we are: a Team for Archaeology, Linguistics, Anthropology, Arts, Sanskrit, History and Heritage. We began in 2018 and were registered in 2021, to teach India's past the way it is studied: from inscriptions, texts, monuments and excavated material, with the sources in front of you.":
+        "तलाश का अर्थ है खोज। यह नाम यह भी बताता है कि हम कौन हैं: पुरातत्व, भाषाविज्ञान, नृविज्ञान, कला, संस्कृत, इतिहास और धरोहर (Team for Archaeology, Linguistics, Anthropology, Arts, Sanskrit, History and Heritage) के लिए समर्पित दल। हमने 2018 में शुरुआत की और 2021 में पंजीकरण कराया, ताकि भारत के अतीत को उसी तरह पढ़ाया जाए जैसे उसका अध्ययन होता है: अभिलेखों, ग्रंथों, स्मारकों और उत्खनन से मिली सामग्री से, स्रोतों को सामने रखकर।",
     "Lead walks or teach with us": "हमारे साथ भ्रमण कराएँ या पढ़ाएँ",
     "Guides, archaeologists, historians, museum educators and makers can list their own walks, courses, counselling sessions and prints here. We handle bookings and payments and send you your share every week.":
         "गाइड, पुरातत्वविद, इतिहासकार, संग्रहालय शिक्षक और शिल्पकार यहाँ अपने भ्रमण, पाठ्यक्रम, परामर्श सत्र और प्रिंट सूचीबद्ध कर सकते हैं। बुकिंग और भुगतान हम सँभालते हैं और आपका हिस्सा हर सप्ताह आपको भेजते हैं।",
@@ -506,7 +526,7 @@ def check(text):
             problems.append(f"key has extra whitespace: {en!r}")
         if TAG.findall(en) != TAG.findall(hi):
             problems.append(f"markup differs:\n  {en}\n  {hi}")
-        if re.search(r"[A-Za-z]{3,}", TAG.sub("", hi)) and not re.search(r"Talaash|WhatsApp|IST|Instagram|TH|PIN|Team for", hi):
+        if re.search(r"[A-Za-z]{3,}", TAG.sub("", hi)) and not re.search(r"Talaash|TALAASHH|WhatsApp|IST|Instagram|TH|PIN|Team for", hi):
             problems.append(f"English left in the Hindi: {hi}")
         if not re.search(r"[ऀ-ॿ]", hi):
             problems.append(f"no Hindi in: {hi}")

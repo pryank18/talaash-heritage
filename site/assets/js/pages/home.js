@@ -1,13 +1,13 @@
 import { getProducts } from "../api.js";
 import { lang } from "../i18n.js";
 import { getVisitor } from "../store.js";
-import { $, $$, esc, formatWhen, formatDuration, isRequest, kindLabel, money, productCard, requestAction, stockFlag, typeLabel } from "../ui.js";
+import { $, $$, esc, formatWhen, formatDuration, isRequest, kindLabel, money, productCard, productHref, requestAction, stockFlag, typeLabel } from "../ui.js";
 
 const SESSION_TYPES = ["live", "course", "walk", "experience", "counselling", "recording"];
 
 function featureCard(p) {
   const flag = stockFlag(p);
-  const href = `product.html?slug=${encodeURIComponent(p.slug)}`;
+  const href = esc(productHref(p));
   if (isRequest(p)) {
     const meta = [[kindLabel(p), p.details?.Length?.toLowerCase()].filter(Boolean).join(", "), p.venue, "Dates and group size set by you"].filter(Boolean);
     return `

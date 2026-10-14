@@ -20,6 +20,9 @@ export const CONFIG = {
   gateExemptPages: [
     "privacy.html", "terms.html", "shipping-returns.html", "contact.html",
     "sell.html", "seller.html", "admin.html",
+    // Open to everyone, so travellers and search engines can read them.
+    // Static programme pages opt in with <body data-gate="open">.
+    "journeys.html", "work.html", "product.html",
   ],
   // Bump this when the consent wording or privacy notice changes; it is
   // stored with every registration.
