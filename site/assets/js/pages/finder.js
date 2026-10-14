@@ -17,7 +17,7 @@ const PLACE = {
   delhi: "In Delhi, at a monument or museum",
   local: "At your school, college or office",
   online: "Online",
-  travel: "A trip of several days",
+  travel: "Out of town: a day trip or a longer journey",
 };
 const LENGTH = {
   short: "Up to about 2 hours",
@@ -97,7 +97,11 @@ export function suggest(products, a, limit = 5) {
 function why(p, a) {
   const parts = [WHO_FIT[a.who]];
   const place = a.place && p.find.places.includes(a.place) ? a.place : p.find.places[0];
-  parts.push(PLACE_FIT[place]);
+  // "Out of town" covers a day trip, a single site elsewhere in India and a journey of several days.
+  parts.push(place !== "travel" ? PLACE_FIT[place]
+    : p.kind === "Day trip" ? "A day trip from Delhi"
+    : p.kind === "Heritage walk" || p.kind === "Museum visit" ? p.venue
+    : PLACE_FIT.travel);
   if (p.details?.Length) parts.push(p.details.Length);
   const topics = a.topics.filter((k) => p.find.topics.includes(k)).map((k) => TOPIC[k]);
   if (lang === "hi") {

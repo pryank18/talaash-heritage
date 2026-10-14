@@ -95,7 +95,7 @@ function renderFooter() {
         <p>Team for Archaeology, Linguistics, Anthropology, Arts, Sanskrit, History and Heritage.</p>
       </div>
       <div>
-        <h2>Shop</h2>
+        <h2>Programmes</h2>
         <ul>
           <li><a href="shop.html?type=walk">Walks and experiences</a></li>
           <li><a href="shop.html?type=live">Courses and lectures</a></li>

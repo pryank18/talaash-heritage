@@ -245,3 +245,76 @@ export function loadScript(src) {
     document.head.append(s);
   });
 }
+
+// ---- sections and carousels ---------------------------------------------------
+// One list of sections, used by the home page and the shop, so a visitor sees
+// the catalogue grouped the same way everywhere. Each programme sits in the
+// first section that matches it.
+const isDelhi = (p) => p.region === "delhi";
+export const GROUPS = [
+  { key: "dates", title: "Upcoming dates", test: (p) => Boolean(p.starts_at) && new Date(p.starts_at).getTime() > Date.now() },
+  { key: "delhi-walks", title: "Heritage walks in Delhi", test: (p) => p.kind === "Heritage walk" && isDelhi(p) },
+  { key: "day-trips", title: "Day trips from Delhi", test: (p) => p.kind === "Day trip" },
+  { key: "journeys", title: "Study tours and private journeys", test: (p) => p.kind === "Study tour" || p.kind === "Private journey" },
+  { key: "india", title: "Walks and visits around India", test: (p) => p.region === "india" && (p.kind === "Heritage walk" || p.kind === "Museum visit") },
+  { key: "museums", title: "Museum visits", test: (p) => p.kind === "Museum visit" },
+  { key: "lectures", title: "Lectures and masterclasses", test: (p) => p.kind === "Lecture" || p.kind === "Masterclass" },
+  { key: "courses", title: "Courses", test: (p) => p.type === "course" || p.kind === "Course" },
+  { key: "workshops", title: "Workshops", test: (p) => p.kind === "Workshop" },
+  { key: "discussions", title: "Discussions", test: (p) => p.kind === "Discussion" },
+  { key: "careers", title: "Career guidance and counselling", test: (p) => p.type === "counselling" },
+  { key: "field", title: "Field schools", test: (p) => p.kind === "Field school" },
+  { key: "recordings", title: "Recordings", test: (p) => p.type === "recording" },
+  { key: "books", title: "Books and prints", test: (p) => p.type === "physical" },
+  { key: "more", title: "More programmes", test: () => true },
+];
+export const groupByKey = (key) => GROUPS.find((g) => g.key === key);
+
+/** The sections that have something in them, in order, each with its programmes. */
+export function groupProducts(list) {
+  const out = GROUPS.map((g) => ({ ...g, items: [] }));
+  for (const p of list) out.find((g) => g.test(p)).items.push(p);
+  return out.filter((g) => g.items.length);
+}
+
+/** A titled, horizontally scrolling row of cards with "See all". */
+export function railHtml(g, { limit = 12, href = "" } = {}) {
+  const items = g.items.slice(0, limit);
+  const id = `rail-${g.key}`;
+  return `<section class="rail" aria-labelledby="${id}">
+    <div class="rail-head">
+      <h2 id="${id}">${esc(g.title)}</h2>
+      <span class="rail-count" aria-hidden="true">${g.items.length}</span>
+      <div class="rail-nav" hidden>
+        <button class="rail-btn" type="button" data-rail-prev aria-label="Scroll back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="rail-btn" type="button" data-rail-next aria-label="Scroll on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+      ${href ? `<a class="rail-all" href="${esc(href)}">See all <span class="visually-hidden">${esc(g.title.toLowerCase())}, </span>${g.items.length}</a>` : ""}
+    </div>
+    <div class="rail-track" role="group" aria-label="${esc(g.title)}" tabindex="0">${items.map(productCard).join("")}</div>
+  </section>`;
+}
+
+/** Arrow buttons for every row under root. Each shows only when its row overflows. */
+export function initRails(root = document) {
+  const smooth = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+  for (const rail of root.querySelectorAll(".rail")) {
+    const track = rail.querySelector(".rail-track");
+    const nav = rail.querySelector(".rail-nav");
+    const prev = rail.querySelector("[data-rail-prev]");
+    const next = rail.querySelector("[data-rail-next]");
+    if (!track || !nav || rail.dataset.ready) continue;
+    rail.dataset.ready = "1";
+    const sync = () => {
+      const overflow = track.scrollWidth > track.clientWidth + 4;
+      nav.hidden = !overflow;
+      prev.disabled = track.scrollLeft <= 4;
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+    };
+    prev.addEventListener("click", () => track.scrollBy({ left: -track.clientWidth * 0.9, behavior: smooth }));
+    next.addEventListener("click", () => track.scrollBy({ left: track.clientWidth * 0.9, behavior: smooth }));
+    track.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", sync);
+    sync();
+  }
+}

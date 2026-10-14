@@ -1,7 +1,7 @@
 import { getProducts } from "../api.js";
 import { lang } from "../i18n.js";
 import { getVisitor } from "../store.js";
-import { $, $$, esc, formatWhen, formatDuration, isRequest, kindLabel, money, productCard, productHref, requestAction, stockFlag, typeLabel } from "../ui.js";
+import { $, $$, esc, formatWhen, formatDuration, groupProducts, initRails, isRequest, kindLabel, money, productCard, productHref, railHtml, requestAction, stockFlag, typeLabel } from "../ui.js";
 
 const SESSION_TYPES = ["live", "course", "walk", "experience", "counselling", "recording"];
 
@@ -37,7 +37,7 @@ function featureCard(p) {
 async function render() {
   const feature = $("#feature");
   const featureSection = $("#feature-section");
-  const sessions = $("#home-sessions");
+  const sessions = $("#home-rails");
   const goods = $("#home-goods");
   try {
     const products = await getProducts();
@@ -59,9 +59,14 @@ async function render() {
       if (n) el.textContent = lang === "hi" ? `${n} कार्यक्रम` : `${n} programme${n === 1 ? "" : "s"}`;
     }
 
-    const chosen = products.filter((p) => p.tags?.includes("home") && p.id !== pick?.id);
-    const sessionList = (chosen.length ? chosen : products.filter((p) => SESSION_TYPES.includes(p.type) && p.id !== pick?.id)).slice(0, 6);
-    sessions.innerHTML = sessionList.length ? sessionList.map(productCard).join("") : `<p class="muted">Tell us what your group wants to study and we will build it. <a href="contact.html">Contact us</a>.</p>`;
+    // A short "start here" row, then the main sections of the catalogue, each with "See all".
+    const groups = groupProducts(products.filter((p) => SESSION_TYPES.includes(p.type) && p.id !== pick?.id));
+    const HOME_ROWS = ["delhi-walks", "day-trips", "journeys", "lectures", "courses", "workshops", "careers"];
+    const rows = HOME_ROWS.map((k) => groups.find((g) => g.key === k)).filter(Boolean);
+    sessions.innerHTML =
+      rows.map((g) => railHtml(g, { limit: 10, href: `shop.html?group=${g.key}` })).join("") ||
+      `<p class="muted">Tell us what your group wants to study and we will build it. <a href="contact.html">Contact us</a>.</p>`;
+    initRails(sessions);
 
     const goodsList = products.filter((p) => p.type === "physical").slice(0, 4);
     if (goodsList.length) goods.innerHTML = goodsList.map(productCard).join("");

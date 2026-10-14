@@ -3196,6 +3196,7 @@
     "Surrounding tomb context"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -3291,6 +3292,7 @@
     "Sikandar Lodi tomb"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -3386,6 +3388,7 @@
     "Exit interpretation"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -3481,6 +3484,7 @@
     "Neighbouring tomb viewpoints"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -3576,6 +3580,7 @@
     "City morphology wrap-up"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -3671,6 +3676,7 @@
     "Water and pavilions"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -3766,6 +3772,7 @@
     "Remaining halls and walls"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -3861,6 +3868,7 @@
     "Safe exit stop"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -3956,6 +3964,7 @@
     "Siri-Hauz Khas relationship"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -4051,6 +4060,7 @@
     "Neighbourhood interface"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -4146,6 +4156,7 @@
     "Residential edge"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -4241,6 +4252,7 @@
     "Wrap-up"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -4336,6 +4348,7 @@
     "Nearby sacred precinct public edge"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -4431,6 +4444,7 @@
     "Landscape viewpoint"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -4526,6 +4540,7 @@
     "Approach landscape"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -4621,6 +4636,7 @@
     "Neighbourhood setting"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -4716,6 +4732,7 @@
     "Workshop recap"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -4811,6 +4828,7 @@
     "Heritage landscape summary"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -4907,6 +4925,7 @@
     "Exit near complex axis"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -5002,6 +5021,7 @@
     "Comparison stop"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -5097,6 +5117,7 @@
     "Garden/urban interface"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -5192,6 +5213,7 @@
     "Reflection"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -5287,6 +5309,7 @@
     "Heritage reuse stop"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -5382,6 +5405,7 @@
     "End stop"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -5478,6 +5502,7 @@
     "Historical narratives"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -5573,6 +5598,7 @@
     "Close reading"
    ],
    "audience": [
+    "school",
     "college",
     "work",
     "public"
@@ -7601,7 +7627,7 @@
    "speaker": null,
    "venue": "Online or at your venue",
    "details": {
-    "For": "Students, graduates and early-career researchers",
+    "For": "School students in Classes 10 to 12, and their parents",
     "Length": "About 75 minutes",
     "When": "A time agreed with you.",
     "Led by": "A career mentor with academic experience in archaeology and heritage",
@@ -7616,7 +7642,8 @@
     "Next steps"
    ],
    "audience": [
-    "college"
+    "school",
+    "public"
    ],
    "find": {
     "topics": [
