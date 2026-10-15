@@ -88,7 +88,7 @@ def prog_card(page):
     meta = " · ".join(x for x in (p["details"].get("Length"), p["venue"]) if x)
     if p.get("image_small"):
         art = (f'<a class="card-art" href="{h(page)}" tabindex="-1" aria-hidden="true"><img src="{h(p["image_small"])}" '
-               f'alt="{h(p["image_alt"])}" width="500" height="375" loading="lazy"></a>')
+               f'alt="{h(p["image_alt"])}" width="500" height="375" loading="lazy"{' class="fit-contain"' if p.get("image_fit") == "contain" else ""}></a>')
     elif p.get("image_url"):
         art = (f'<a class="card-art" href="{h(page)}" tabindex="-1" aria-hidden="true"><img src="{h(p["image_url"].replace(".jpg", "-s.jpg"))}" '
                f'alt="{h("Illustration for " + p["title"])}" width="560" height="420" loading="lazy"></a>')
@@ -105,7 +105,7 @@ def hero(g):
     if not m:
         return ""
     return (f'<figure class="guide-hero"><img src="{h(m["src"])}" srcset="{h(m["small"])} 500w, {h(m["src"])} 960w" '
-            f'sizes="(min-width: 760px) 46rem, 100vw" alt="{h(m["alt"])}" width="960" height="600" fetchpriority="high">'
+            f'sizes="(min-width: 760px) 46rem, 100vw" alt="{h(m["alt"])}" width="960" height="600" fetchpriority="high"{' class="fit-contain"' if m.get("portrait") else ""}>'
             f'<figcaption class="photo-credit">Photo: <a href="{h(m["page"])}" rel="noopener">{h(m["credit"])}</a>, '
             f'<a href="{h(m["license_url"])}" rel="license noopener">{h(m["license"])}</a>, via Wikimedia Commons</figcaption></figure>')
 

@@ -138,14 +138,14 @@
   },
   "careers-in-archaeology-oct-2026": {
    "kind": "Career course",
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Artefacts_-_ASI_Excavation_-_Old_Fort_Complex_-_New_Delhi_2014-05-13_2902-2904_Compress.JPG/960px-Artefacts_-_ASI_Excavation_-_Old_Fort_Complex_-_New_Delhi_2014-05-13_2902-2904_Compress.JPG",
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Artefacts_-_ASI_Excavation_-_Old_Fort_Complex_-_New_Delhi_2014-05-13_2902-2904_Compress.JPG/500px-Artefacts_-_ASI_Excavation_-_Old_Fort_Complex_-_New_Delhi_2014-05-13_2902-2904_Compress.JPG",
-   "image_alt": "Excavated artefacts at the ASI dig inside Purana Qila, New Delhi.",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_05.jpg/960px-Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_05.jpg",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_05.jpg/500px-Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_05.jpg",
+   "image_alt": "Steps leading up to an excavated brick structure at Ballal Dhipi, Nabadwip, West Bengal.",
    "image_credit": {
-    "by": "Biswarup Ganguly",
-    "license": "CC BY 3.0",
-    "license_url": "https://creativecommons.org/licenses/by/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Artefacts_-_ASI_Excavation_-_Old_Fort_Complex_-_New_Delhi_2014-05-13_2902-2904_Compress.JPG"
+    "by": "Amitabha Gupta",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district,_West_Bengal,_India_05.jpg"
    }
   },
   "careers-history-museums-heritage-nov-2026": {
@@ -164,7 +164,7 @@
    "kind": "Career course",
    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Nalanda_Ruins_%2813%29.jpg/960px-Nalanda_Ruins_%2813%29.jpg",
    "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Nalanda_Ruins_%2813%29.jpg/500px-Nalanda_Ruins_%2813%29.jpg",
-   "image_alt": "Brick ruins of the ancient Nalanda Mahavihara university in Bihar.",
+   "image_alt": "Brick ruins of Nalanda Mahavihara in Bihar, an ancient university that drew students from across Asia.",
    "image_credit": {
     "by": "Sumitsurai",
     "license": "CC BY-SA 4.0",
@@ -335,7 +335,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/View_of_Qutub_Minar_%281%29.jpg/960px-View_of_Qutub_Minar_%281%29.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Qutb_complex_-Delhi_-Delhi_-SSI_011.jpg/960px-Qutb_complex_-Delhi_-Delhi_-SSI_011.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -448,14 +448,15 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/View_of_Qutub_Minar_%281%29.jpg/500px-View_of_Qutub_Minar_%281%29.jpg",
-   "image_alt": "The Qutb Minar rising above the ruins of the Qutb complex in Mehrauli, Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Qutb_complex_-Delhi_-Delhi_-SSI_011.jpg/500px-Qutb_complex_-Delhi_-Delhi_-SSI_011.jpg",
+   "image_alt": "The Qutb Minar seen from the entrance of the Qutb complex, Delhi.",
    "image_credit": {
     "by": "Syed Sajidul Islam",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:View_of_Qutub_Minar_(1).jpg"
-   }
+    "page": "https://commons.wikimedia.org/wiki/File:Qutb_complex_-Delhi_-Delhi_-SSI_011.jpg"
+   },
+   "image_fit": "contain"
   },
   {
    "id": "req-purana-qila",
@@ -471,7 +472,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Purana_Qila_ruined_complex_in_New_Delhi_20.jpg/960px-Purana_Qila_ruined_complex_in_New_Delhi_20.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Purana_Qila%2C_Delhi_2.jpg/960px-Purana_Qila%2C_Delhi_2.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -583,13 +584,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Purana_Qila_ruined_complex_in_New_Delhi_20.jpg/500px-Purana_Qila_ruined_complex_in_New_Delhi_20.jpg",
-   "image_alt": "Ruined stone structures inside the walls of Purana Qila, the Old Fort of Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Purana_Qila%2C_Delhi_2.jpg/500px-Purana_Qila%2C_Delhi_2.jpg",
+   "image_alt": "A domed red sandstone building at Purana Qila, Delhi.",
    "image_credit": {
-    "by": "Pinakpani",
-    "license": "CC BY 4.0",
-    "license_url": "https://creativecommons.org/licenses/by/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Purana_Qila_ruined_complex_in_New_Delhi_20.jpg"
+    "by": "Slyronit",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Purana_Qila,_Delhi_2.jpg"
    }
   },
   {
@@ -741,7 +742,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Medieval_Sculptures_of_Bihar_-_Archaeology_Gallery_-_Indian_Museum_-_Kolkata_2012-12-21_2385.JPG/960px-Medieval_Sculptures_of_Bihar_-_Archaeology_Gallery_-_Indian_Museum_-_Kolkata_2012-12-21_2385.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gallery16_national_museum_india.JPG/1920px-Gallery16_national_museum_india.JPG",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -848,13 +849,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Medieval_Sculptures_of_Bihar_-_Archaeology_Gallery_-_Indian_Museum_-_Kolkata_2012-12-21_2385.JPG/500px-Medieval_Sculptures_of_Bihar_-_Archaeology_Gallery_-_Indian_Museum_-_Kolkata_2012-12-21_2385.JPG",
-   "image_alt": "Medieval stone sculptures from Bihar on display in the archaeology gallery of the Indian Museum, Kolkata.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gallery16_national_museum_india.JPG/960px-Gallery16_national_museum_india.JPG",
+   "image_alt": "Display cases in the musical instruments gallery of the National Museum, New Delhi.",
    "image_credit": {
-    "by": "Biswarup Ganguly",
-    "license": "CC BY 3.0",
-    "license_url": "https://creativecommons.org/licenses/by/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Medieval_Sculptures_of_Bihar_-_Archaeology_Gallery_-_Indian_Museum_-_Kolkata_2012-12-21_2385.JPG"
+    "by": "Nomu420",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gallery16_national_museum_india.JPG"
    }
   },
   {
@@ -995,7 +996,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "assets/img/programmes/what-archaeologists-actually-do.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Moghalmari_archaeological_excavation_site%2C_Dantan%2C_West_Bengal.jpg/1920px-Moghalmari_archaeological_excavation_site%2C_Dantan%2C_West_Bengal.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -1093,6 +1094,14 @@
      "Prices are for Delhi NCR. Elsewhere, the expert's travel is added to your quotation."
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
+   },
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Moghalmari_archaeological_excavation_site%2C_Dantan%2C_West_Bengal.jpg/960px-Moghalmari_archaeological_excavation_site%2C_Dantan%2C_West_Bengal.jpg",
+   "image_alt": "Excavated brick walls of the early medieval Buddhist monastery at Moghalmari, Dantan, West Bengal.",
+   "image_credit": {
+    "by": "Paramanu Sarkar",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Moghalmari_archaeological_excavation_site,_Dantan,_West_Bengal.jpg"
    }
   },
   {
@@ -1586,7 +1595,7 @@
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
    "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Group_of_Monuments_at_pattadakal.jpg/500px-Group_of_Monuments_at_pattadakal.jpg",
-   "image_alt": "Chalukya-period temples at Pattadakal, Karnataka, built in both Nagara and Dravida styles.",
+   "image_alt": "Chalukya-period temples at Pattadakal, Karnataka.",
    "image_credit": {
     "by": "Mrnayak1992",
     "license": "CC BY-SA 4.0",
@@ -1608,7 +1617,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "assets/img/programmes/india-s-linguistic-heritage.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tamil_Brahmi_inscription_Arittapatti_JEG5887.JPG/960px-Tamil_Brahmi_inscription_Arittapatti_JEG5887.JPG",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -1708,6 +1717,14 @@
      "Prices are for Delhi NCR. Elsewhere, the expert's travel is added to your quotation."
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
+   },
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tamil_Brahmi_inscription_Arittapatti_JEG5887.JPG/500px-Tamil_Brahmi_inscription_Arittapatti_JEG5887.JPG",
+   "image_alt": "Tamil-Brahmi inscription cut into the rock at Arittapatti near Madurai, Tamil Nadu, one of the oldest written records of Tamil.",
+   "image_credit": {
+    "by": "PJeganathan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tamil_Brahmi_inscription_Arittapatti_JEG5887.JPG"
    }
   },
   {
@@ -1724,7 +1741,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "assets/img/programmes/rock-art-of-india.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Prehistoric_rock_paintings_near_Hirebenakal_megalithic_dolmens%2C_Koppal_district%2C_India_5.jpg/960px-Prehistoric_rock_paintings_near_Hirebenakal_megalithic_dolmens%2C_Koppal_district%2C_India_5.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -1824,6 +1841,14 @@
      "Prices are for Delhi NCR. Elsewhere, the expert's travel is added to your quotation."
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
+   },
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Prehistoric_rock_paintings_near_Hirebenakal_megalithic_dolmens%2C_Koppal_district%2C_India_5.jpg/500px-Prehistoric_rock_paintings_near_Hirebenakal_megalithic_dolmens%2C_Koppal_district%2C_India_5.jpg",
+   "image_alt": "Prehistoric red ochre rock paintings of animals and human figures near Hirebenakal, Koppal district, Karnataka.",
+   "image_credit": {
+    "by": "Krishnakulkarni36",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Prehistoric_rock_paintings_near_Hirebenakal_megalithic_dolmens,_Koppal_district,_India_5.jpg"
    }
   },
   {
@@ -1963,7 +1988,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Indian_Museum%2C_Gallery_2%2C_Kolkata%2C_India.jpg/960px-Indian_Museum%2C_Gallery_2%2C_Kolkata%2C_India.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/East_Gateway_and_Railings_-_2nd_Century_BCE_-_Red_Sand_Stone_-_Bharhut_Stupa_-_Madhya_Pradesh_-_Bharhut_Gallery_-_West_View_-_Indian_Museum_-_Kolkata_2014-02-14_3312.JPG/960px-East_Gateway_and_Railings_-_2nd_Century_BCE_-_Red_Sand_Stone_-_Bharhut_Stupa_-_Madhya_Pradesh_-_Bharhut_Gallery_-_West_View_-_Indian_Museum_-_Kolkata_2014-02-14_3312.JPG",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -2067,13 +2092,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Indian_Museum%2C_Gallery_2%2C_Kolkata%2C_India.jpg/500px-Indian_Museum%2C_Gallery_2%2C_Kolkata%2C_India.jpg",
-   "image_alt": "A gallery of the Indian Museum in Kolkata, the oldest museum in India.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/East_Gateway_and_Railings_-_2nd_Century_BCE_-_Red_Sand_Stone_-_Bharhut_Stupa_-_Madhya_Pradesh_-_Bharhut_Gallery_-_West_View_-_Indian_Museum_-_Kolkata_2014-02-14_3312.JPG/500px-East_Gateway_and_Railings_-_2nd_Century_BCE_-_Red_Sand_Stone_-_Bharhut_Stupa_-_Madhya_Pradesh_-_Bharhut_Gallery_-_West_View_-_Indian_Museum_-_Kolkata_2014-02-14_3312.JPG",
+   "image_alt": "The Bharhut stupa east gateway and railings displayed in the Bharhut Gallery of the Indian Museum, Kolkata.",
    "image_credit": {
-    "by": "Vyacheslav Argenberg",
-    "license": "CC BY 4.0",
-    "license_url": "https://creativecommons.org/licenses/by/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Indian_Museum,_Gallery_2,_Kolkata,_India.jpg"
+    "by": "Biswarup Ganguly",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:East_Gateway_and_Railings_-_2nd_Century_BCE_-_Red_Sand_Stone_-_Bharhut_Stupa_-_Madhya_Pradesh_-_Bharhut_Gallery_-_West_View_-_Indian_Museum_-_Kolkata_2014-02-14_3312.JPG"
    }
   },
   {
@@ -2463,7 +2488,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ashoka%27s_Minor_Rock_Edict_at_Gujarra%2C_Datia_District%2C_Madhya_Pradesh%2C_India.jpg/960px-Ashoka%27s_Minor_Rock_Edict_at_Gujarra%2C_Datia_District%2C_Madhya_Pradesh%2C_India.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/A_Brahmi_script_inscription_at_the_Ajanta_Caves.jpg/960px-A_Brahmi_script_inscription_at_the_Ajanta_Caves.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -2565,13 +2590,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ashoka%27s_Minor_Rock_Edict_at_Gujarra%2C_Datia_District%2C_Madhya_Pradesh%2C_India.jpg/500px-Ashoka%27s_Minor_Rock_Edict_at_Gujarra%2C_Datia_District%2C_Madhya_Pradesh%2C_India.jpg",
-   "image_alt": "Close view of Ashoka's Minor Rock Edict in Brahmi script at Gujarra, Datia district, Madhya Pradesh.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/A_Brahmi_script_inscription_at_the_Ajanta_Caves.jpg/500px-A_Brahmi_script_inscription_at_the_Ajanta_Caves.jpg",
+   "image_alt": "An inscription in Brahmi script carved in stone at the Ajanta Caves, Maharashtra.",
    "image_credit": {
-    "by": "Ashok.tapase",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Ashoka%27s_Minor_Rock_Edict_at_Gujarra,_Datia_District,_Madhya_Pradesh,_India.jpg"
+    "by": "Ms Sarah Welch",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_Brahmi_script_inscription_at_the_Ajanta_Caves.jpg"
    }
   },
   {
@@ -2703,7 +2728,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Archaeological_Conservation_Laboratory_at_Chittagong_University_Museum_%2801%29.jpg/960px-Archaeological_Conservation_Laboratory_at_Chittagong_University_Museum_%2801%29.jpg",
+   "image_url": "assets/img/programmes/caring-for-collections-preventive-conservation-basics.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -2801,14 +2826,6 @@
      "Prices are for Delhi NCR. Elsewhere, the expert's travel is added to your quotation."
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
-   },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Archaeological_Conservation_Laboratory_at_Chittagong_University_Museum_%2801%29.jpg/500px-Archaeological_Conservation_Laboratory_at_Chittagong_University_Museum_%2801%29.jpg",
-   "image_alt": "The archaeological conservation laboratory of the Chittagong University Museum, Bangladesh.",
-   "image_credit": {
-    "by": "Moheen Reeyad",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Archaeological_Conservation_Laboratory_at_Chittagong_University_Museum_(01).jpg"
    }
   },
   {
@@ -2825,7 +2842,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Tools_of_Acheulean_culture_in_the_Timiryazev_museum.jpg/960px-Tools_of_Acheulean_culture_in_the_Timiryazev_museum.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Biface_Cintegabelle_MHNT_PRE_2009.0.201.1_V1.jpg/960px-Biface_Cintegabelle_MHNT_PRE_2009.0.201.1_V1.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -2924,13 +2941,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Tools_of_Acheulean_culture_in_the_Timiryazev_museum.jpg/500px-Tools_of_Acheulean_culture_in_the_Timiryazev_museum.jpg",
-   "image_alt": "A display of Acheulean stone tools, including handaxes, in the Timiryazev museum.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Biface_Cintegabelle_MHNT_PRE_2009.0.201.1_V1.jpg/500px-Biface_Cintegabelle_MHNT_PRE_2009.0.201.1_V1.jpg",
+   "image_alt": "Several views of one prehistoric stone biface (hand axe) from Cintegabelle, France, in the Toulouse Museum collection.",
    "image_credit": {
-    "by": "Александр Сигачёв",
-    "license": "CC0",
-    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:Tools_of_Acheulean_culture_in_the_Timiryazev_museum.jpg"
+    "by": "Didier Descouens",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Biface_Cintegabelle_MHNT_PRE_2009.0.201.1_V1.jpg"
    }
   },
   {
@@ -2947,7 +2964,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Archaeologists_excavating_trench_7_at_Liverpool_Street_Worksite%2C_Liverpool_Street_%28Crossrail_XSM10%29.jpg/960px-Archaeologists_excavating_trench_7_at_Liverpool_Street_Worksite%2C_Liverpool_Street_%28Crossrail_XSM10%29.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_03.jpg/960px-Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_03.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -3045,13 +3062,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Archaeologists_excavating_trench_7_at_Liverpool_Street_Worksite%2C_Liverpool_Street_%28Crossrail_XSM10%29.jpg/500px-Archaeologists_excavating_trench_7_at_Liverpool_Street_Worksite%2C_Liverpool_Street_%28Crossrail_XSM10%29.jpg",
-   "image_alt": "A team of archaeologists excavating Trench 7 at the Liverpool Street worksite in London.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_03.jpg/500px-Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_03.jpg",
+   "image_alt": "Excavated brick structures at Ballal Dhipi, Nabadwip, West Bengal, a mound excavated by the Archaeological Survey of India.",
    "image_credit": {
-    "by": "Crossrail/MOLA",
+    "by": "Amitabha Gupta",
     "license": "CC BY 4.0",
     "license_url": "https://creativecommons.org/licenses/by/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Archaeologists_excavating_trench_7_at_Liverpool_Street_Worksite,_Liverpool_Street_(Crossrail_XSM10).jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district,_West_Bengal,_India_03.jpg"
    }
   },
   {
@@ -3316,7 +3333,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "assets/img/programmes/sarada-script.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Folio_of_a_manuscript_of_the_Harshacharita_by_Banabhatta%2C_written_in_Sharada_script.jpg/960px-Folio_of_a_manuscript_of_the_Harshacharita_by_Banabhatta%2C_written_in_Sharada_script.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -3416,7 +3433,16 @@
      "An open batch runs with 10 or more learners. If it does not, you get a full refund or a place in the next batch."
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
-   }
+   },
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Folio_of_a_manuscript_of_the_Harshacharita_by_Banabhatta%2C_written_in_Sharada_script.jpg/500px-Folio_of_a_manuscript_of_the_Harshacharita_by_Banabhatta%2C_written_in_Sharada_script.jpg",
+   "image_alt": "A folio from a manuscript of Banabhatta's Harshacharita written in the Sharada script.",
+   "image_credit": {
+    "by": "Unknown scribe (manuscript of Banabhatta's Harshacharita)",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Folio_of_a_manuscript_of_the_Harshacharita_by_Banabhatta,_written_in_Sharada_script.jpg"
+   },
+   "image_fit": "contain"
   },
   {
    "id": "req-understanding-indian-temple-architecture",
@@ -3432,7 +3458,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "assets/img/programmes/understanding-indian-temple-architecture.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Khajuraho_Devi_Jagadambi_Temple_2010.jpg/960px-Khajuraho_Devi_Jagadambi_Temple_2010.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -3525,6 +3551,14 @@
      "An open batch runs with 10 or more learners. If it does not, you get a full refund or a place in the next batch."
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
+   },
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Khajuraho_Devi_Jagadambi_Temple_2010.jpg/500px-Khajuraho_Devi_Jagadambi_Temple_2010.jpg",
+   "image_alt": "The Devi Jagadambi temple at Khajuraho, a Nagara-style temple with a curved shikhara rising over its halls.",
+   "image_credit": {
+    "by": "Marcin Białek",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Khajuraho_Devi_Jagadambi_Temple_2010.jpg"
    }
   },
   {
@@ -3541,7 +3575,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "assets/img/programmes/remote-sensing-in-archaeology-and-heritage-management.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/0111821_Akhati_group_of_temples%2C_Kadwaya_MP_Aerial_06.jpg/1920px-0111821_Akhati_group_of_temples%2C_Kadwaya_MP_Aerial_06.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -3644,6 +3678,14 @@
     ],
     "notes": [],
     "gst": "All prices include GST. A GST invoice is issued on request."
+   },
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/0111821_Akhati_group_of_temples%2C_Kadwaya_MP_Aerial_06.jpg/960px-0111821_Akhati_group_of_temples%2C_Kadwaya_MP_Aerial_06.jpg",
+   "image_alt": "Aerial drone view of the ruined Akhati group of temples at Kadwaha, Madhya Pradesh, seen from above.",
+   "image_credit": {
+    "by": "Ms Sarah Welch",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:0111821_Akhati_group_of_temples,_Kadwaya_MP_Aerial_06.jpg"
    }
   },
   {
@@ -3772,7 +3814,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Archaeological_Conservation_Laboratory_at_Chittagong_University_Museum_%2802%29.jpg/960px-Archaeological_Conservation_Laboratory_at_Chittagong_University_Museum_%2802%29.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Interior_view_-_National_Museum%2C_New_Delhi_-_IMG_2202.JPG/960px-Interior_view_-_National_Museum%2C_New_Delhi_-_IMG_2202.JPG",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -3860,13 +3902,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Archaeological_Conservation_Laboratory_at_Chittagong_University_Museum_%2802%29.jpg/500px-Archaeological_Conservation_Laboratory_at_Chittagong_University_Museum_%2802%29.jpg",
-   "image_alt": "Work area of the archaeological conservation laboratory at Chittagong University Museum.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Interior_view_-_National_Museum%2C_New_Delhi_-_IMG_2202.JPG/500px-Interior_view_-_National_Museum%2C_New_Delhi_-_IMG_2202.JPG",
+   "image_alt": "A gallery of pottery inside the National Museum, New Delhi.",
    "image_credit": {
-    "by": "Moheen Reeyad",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Archaeological_Conservation_Laboratory_at_Chittagong_University_Museum_(02).jpg"
+    "by": "Daderot",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Interior_view_-_National_Museum,_New_Delhi_-_IMG_2202.JPG"
    }
   },
   {
@@ -3990,7 +4032,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "assets/img/programmes/three-capitals-delhi-agra-and-jaipur.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Lahori_Gate_%28Red_Fort%29%2C_Delhi%2C_India_%282017%29.jpg/960px-Lahori_Gate_%28Red_Fort%29%2C_Delhi%2C_India_%282017%29.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -4095,6 +4137,14 @@
      "Includes 3-star stays on twin sharing, transport and the expert throughout. Single rooms are quoted separately."
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
+   },
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Lahori_Gate_%28Red_Fort%29%2C_Delhi%2C_India_%282017%29.jpg/500px-Lahori_Gate_%28Red_Fort%29%2C_Delhi%2C_India_%282017%29.jpg",
+   "image_alt": "The Lahori Gate, the main entrance of the Red Fort in Delhi, built in red sandstone under Shah Jahan.",
+   "image_credit": {
+    "by": "Lucky181993",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lahori_Gate_(Red_Fort),_Delhi,_India_(2017).jpg"
    }
   },
   {
@@ -5575,7 +5625,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Ruins_of_Siri_Fort_wall%2C_New_Delhi%2C_India_-_20090517.jpg/960px-Ruins_of_Siri_Fort_wall%2C_New_Delhi%2C_India_-_20090517.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siri_Fort%2C_New_Delhi%2C_India_%282018%29.jpg/1920px-Siri_Fort%2C_New_Delhi%2C_India_%282018%29.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -5687,13 +5737,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Ruins_of_Siri_Fort_wall%2C_New_Delhi%2C_India_-_20090517.jpg/500px-Ruins_of_Siri_Fort_wall%2C_New_Delhi%2C_India_-_20090517.jpg",
-   "image_alt": "Ruined rubble-stone walls of Siri Fort in New Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siri_Fort%2C_New_Delhi%2C_India_%282018%29.jpg/960px-Siri_Fort%2C_New_Delhi%2C_India_%282018%29.jpg",
+   "image_alt": "The ruined stone walls of Siri Fort, New Delhi, with a path running beside them.",
    "image_credit": {
-    "by": "Nvvchar.",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Ruins_of_Siri_Fort_wall,_New_Delhi,_India_-_20090517.jpg"
+    "by": "Yashvi Sahraya",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siri_Fort,_New_Delhi,_India_(2018).jpg"
    }
   },
   {
@@ -5980,7 +6030,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Satpula_monument_park%2C_Delhi.jpg/960px-Satpula_monument_park%2C_Delhi.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Satpula_3.jpg/960px-Satpula_3.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -6092,13 +6142,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Satpula_monument_park%2C_Delhi.jpg/500px-Satpula_monument_park%2C_Delhi.jpg",
-   "image_alt": "The Satpula dam and its arched sluices in the monument park at Saket, Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Satpula_3.jpg/500px-Satpula_3.jpg",
+   "image_alt": "The arched stone weir of Satpula, Delhi.",
    "image_credit": {
-    "by": "आशीष भटनागर",
-    "license": "CC BY 3.0",
-    "license_url": "https://creativecommons.org/licenses/by/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Satpula_monument_park,_Delhi.jpg"
+    "by": "Parth.rkt",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Satpula_3.jpg"
    }
   },
   {
@@ -7196,7 +7246,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Abdul_Rahim_Khan-I-Khanan.jpg_01.jpg/960px-Abdul_Rahim_Khan-I-Khanan.jpg_01.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Khan-i-khana.jpg/1920px-Khan-i-khana.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -7308,13 +7358,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Abdul_Rahim_Khan-I-Khanan.jpg_01.jpg/500px-Abdul_Rahim_Khan-I-Khanan.jpg_01.jpg",
-   "image_alt": "The tomb of Abdul Rahim Khan-i-Khanan at Nizamuddin, New Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Khan-i-khana.jpg/960px-Khan-i-khana.jpg",
+   "image_alt": "Abdul Rahim Khan-i-Khanan's tomb in Nizamuddin East, New Delhi.",
    "image_credit": {
-    "by": "Pinakpani",
+    "by": "MOH12KUM",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Abdul_Rahim_Khan-I-Khanan.jpg_01.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Khan-i-khana.jpg"
    }
   },
   {
@@ -7466,7 +7516,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Colonnade_of_f_block.JPG/960px-Colonnade_of_f_block.JPG",
+   "image_url": null,
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -7577,14 +7627,6 @@
      "Monument and museum entry fees are not included and are paid at the site."
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
-   },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Colonnade_of_f_block.JPG/500px-Colonnade_of_f_block.JPG",
-   "image_alt": "The white colonnade of F Block at Connaught Place, New Delhi.",
-   "image_credit": {
-    "by": "Arjuncm3",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Colonnade_of_f_block.JPG"
    }
   },
   {
@@ -8843,7 +8885,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Khajuraho_Vishwanath_temple_2010.jpg/960px-Khajuraho_Vishwanath_temple_2010.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Khajuraho_Vaman_Temple_2010.jpg/960px-Khajuraho_Vaman_Temple_2010.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -8943,13 +8985,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Khajuraho_Vishwanath_temple_2010.jpg/500px-Khajuraho_Vishwanath_temple_2010.jpg",
-   "image_alt": "The Vishvanatha Temple at Khajuraho, a Nagara temple with a tall curvilinear shikhara.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Khajuraho_Vaman_Temple_2010.jpg/500px-Khajuraho_Vaman_Temple_2010.jpg",
+   "image_alt": "The Vamana Temple at Khajuraho, a Nagara temple with a tall curved spire.",
    "image_credit": {
-    "by": "Marcin Białek",
+    "by": "Sfu",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Khajuraho_Vishwanath_temple_2010.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Khajuraho_Vaman_Temple_2010.jpg"
    }
   },
   {
@@ -9335,7 +9377,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Karla_Caves_Interior.jpg/960px-Karla_Caves_Interior.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Grand_Chaitya_at_Karla_Caves_-_2025_-_19.jpg/960px-Grand_Chaitya_at_Karla_Caves_-_2025_-_19.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -9436,13 +9478,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Karla_Caves_Interior.jpg/500px-Karla_Caves_Interior.jpg",
-   "image_alt": "Pillared nave and stupa inside the rock-cut Grand Chaitya at Karla, Maharashtra.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Grand_Chaitya_at_Karla_Caves_-_2025_-_19.jpg/500px-Grand_Chaitya_at_Karla_Caves_-_2025_-_19.jpg",
+   "image_alt": "The stupa inside the rock-cut Grand Chaitya hall at Karla Caves, framed by carved pillars.",
    "image_credit": {
-    "by": "Ashwin Rajesh Pillai",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "page": "https://commons.wikimedia.org/wiki/File:Karla_Caves_Interior.jpg"
+    "by": "Oleg Yunakov",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Grand_Chaitya_at_Karla_Caves_-_2025_-_19.jpg"
    }
   },
   {
@@ -10198,7 +10240,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Lakshmana_Temple_in_Khajuraho.jpg/960px-Lakshmana_Temple_in_Khajuraho.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Khajuraho_Dulhadeo_2010.jpg/960px-Khajuraho_Dulhadeo_2010.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -10298,13 +10340,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Lakshmana_Temple_in_Khajuraho.jpg/500px-Lakshmana_Temple_in_Khajuraho.jpg",
-   "image_alt": "The Lakshmana Temple at Khajuraho, Madhya Pradesh.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Khajuraho_Dulhadeo_2010.jpg/500px-Khajuraho_Dulhadeo_2010.jpg",
+   "image_alt": "The Duladeo Temple at Khajuraho, Madhya Pradesh.",
    "image_credit": {
-    "by": "Chetansoni",
+    "by": "Marcin Białek",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Lakshmana_Temple_in_Khajuraho.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Khajuraho_Dulhadeo_2010.jpg"
    }
   },
   {
@@ -10938,7 +10980,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Artefacts_-_ASI_Excavation_-_Old_Fort_Complex_-_New_Delhi_2014-05-13_2902-2904_Compress.JPG/960px-Artefacts_-_ASI_Excavation_-_Old_Fort_Complex_-_New_Delhi_2014-05-13_2902-2904_Compress.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_05.jpg/960px-Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_05.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -11038,13 +11080,13 @@
     "notes": [],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Artefacts_-_ASI_Excavation_-_Old_Fort_Complex_-_New_Delhi_2014-05-13_2902-2904_Compress.JPG/500px-Artefacts_-_ASI_Excavation_-_Old_Fort_Complex_-_New_Delhi_2014-05-13_2902-2904_Compress.JPG",
-   "image_alt": "Excavated artefacts at the ASI dig inside Purana Qila, New Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_05.jpg/500px-Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district%2C_West_Bengal%2C_India_05.jpg",
+   "image_alt": "Steps leading up to an excavated brick structure at Ballal Dhipi, Nabadwip, West Bengal.",
    "image_credit": {
-    "by": "Biswarup Ganguly",
-    "license": "CC BY 3.0",
-    "license_url": "https://creativecommons.org/licenses/by/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Artefacts_-_ASI_Excavation_-_Old_Fort_Complex_-_New_Delhi_2014-05-13_2902-2904_Compress.JPG"
+    "by": "Amitabha Gupta",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Excavated_site_of_Ballal_Dhipi_at_Nabadwip_in_Nadia_district,_West_Bengal,_India_05.jpg"
    }
   },
   {
@@ -11184,7 +11226,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Deccan_college_of_ancient_Archaeology_.jpg/960px-Deccan_college_of_ancient_Archaeology_.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/NEO-GOTHIC_LOOK.jpg/1920px-NEO-GOTHIC_LOOK.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -11283,13 +11325,13 @@
     "notes": [],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Deccan_college_of_ancient_Archaeology_.jpg/500px-Deccan_college_of_ancient_Archaeology_.jpg",
-   "image_alt": "Building of Deccan College, Pune, a leading centre for archaeology research.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/NEO-GOTHIC_LOOK.jpg/960px-NEO-GOTHIC_LOOK.jpg",
+   "image_alt": "A building of Deccan College, Pune.",
    "image_credit": {
-    "by": "Aravind Pakide",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Deccan_college_of_ancient_Archaeology_.jpg"
+    "by": "Dheepika Karunakar",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:NEO-GOTHIC_LOOK.jpg"
    }
   },
   {
@@ -11553,7 +11595,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Entrance_gallery_national_museum_india.JPG/960px-Entrance_gallery_national_museum_india.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Interior_view_-_National_Museum%2C_New_Delhi_-_IMG_2267.JPG/960px-Interior_view_-_National_Museum%2C_New_Delhi_-_IMG_2267.JPG",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -11653,13 +11695,13 @@
     "notes": [],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Entrance_gallery_national_museum_india.JPG/500px-Entrance_gallery_national_museum_india.JPG",
-   "image_alt": "Entrance corridor leading to the galleries of the National Museum, New Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Interior_view_-_National_Museum%2C_New_Delhi_-_IMG_2267.JPG/500px-Interior_view_-_National_Museum%2C_New_Delhi_-_IMG_2267.JPG",
+   "image_alt": "A sculpture gallery inside the National Museum, New Delhi.",
    "image_credit": {
-    "by": "Nomu420",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Entrance_gallery_national_museum_india.JPG"
+    "by": "Daderot",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Interior_view_-_National_Museum,_New_Delhi_-_IMG_2267.JPG"
    }
   },
   {
@@ -11777,7 +11819,7 @@
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
    "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Nalanda_Ruins_%2813%29.jpg/500px-Nalanda_Ruins_%2813%29.jpg",
-   "image_alt": "Brick ruins of the ancient Nalanda Mahavihara university in Bihar.",
+   "image_alt": "Brick ruins of Nalanda Mahavihara in Bihar, an ancient university that drew students from across Asia.",
    "image_credit": {
     "by": "Sumitsurai",
     "license": "CC BY-SA 4.0",
@@ -11799,7 +11841,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Sculptures_in_Bharhut_Gallery%2C_Indian_Museum_07.jpg/960px-Sculptures_in_Bharhut_Gallery%2C_Indian_Museum_07.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Railing_Pillars_-_2nd_Century_BCE_-_Red_Sand_Stone_-_Bharhut_Stupa_-_Madhya_Pradesh_-_Bharhut_Gallery_-_South_View_-_Indian_Museum_-_Kolkata_2014-02-14_3314.JPG/960px-Railing_Pillars_-_2nd_Century_BCE_-_Red_Sand_Stone_-_Bharhut_Stupa_-_Madhya_Pradesh_-_Bharhut_Gallery_-_South_View_-_Indian_Museum_-_Kolkata_2014-02-14_3314.JPG",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -11899,13 +11941,13 @@
     "notes": [],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Sculptures_in_Bharhut_Gallery%2C_Indian_Museum_07.jpg/500px-Sculptures_in_Bharhut_Gallery%2C_Indian_Museum_07.jpg",
-   "image_alt": "Sculptures and pillars from Bharhut displayed in the Bharhut Gallery, Indian Museum, Kolkata.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Railing_Pillars_-_2nd_Century_BCE_-_Red_Sand_Stone_-_Bharhut_Stupa_-_Madhya_Pradesh_-_Bharhut_Gallery_-_South_View_-_Indian_Museum_-_Kolkata_2014-02-14_3314.JPG/500px-Railing_Pillars_-_2nd_Century_BCE_-_Red_Sand_Stone_-_Bharhut_Stupa_-_Madhya_Pradesh_-_Bharhut_Gallery_-_South_View_-_Indian_Museum_-_Kolkata_2014-02-14_3314.JPG",
+   "image_alt": "Carved red sandstone railing pillars from the Bharhut stupa in the Bharhut Gallery, Indian Museum, Kolkata.",
    "image_credit": {
-    "by": "Pinakpani",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Sculptures_in_Bharhut_Gallery,_Indian_Museum_07.jpg"
+    "by": "Biswarup Ganguly",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Railing_Pillars_-_2nd_Century_BCE_-_Red_Sand_Stone_-_Bharhut_Stupa_-_Madhya_Pradesh_-_Bharhut_Gallery_-_South_View_-_Indian_Museum_-_Kolkata_2014-02-14_3314.JPG"
    }
   },
   {
@@ -12410,7 +12452,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/PXL_20231130_051658841_Bara_Gumbad_Mosque_and_Bara_Gumbad_Lodhi_Gardens%2C_Lodhi_Estate%2C_New_Delhi%2C_Delhi_110003_03.jpg/960px-PXL_20231130_051658841_Bara_Gumbad_Mosque_and_Bara_Gumbad_Lodhi_Gardens%2C_Lodhi_Estate%2C_New_Delhi%2C_Delhi_110003_03.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facade_of_Bara_Gumbad_%E2%80%93_Lodhi_Gardens.jpg/960px-Facade_of_Bara_Gumbad_%E2%80%93_Lodhi_Gardens.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -12509,13 +12551,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/PXL_20231130_051658841_Bara_Gumbad_Mosque_and_Bara_Gumbad_Lodhi_Gardens%2C_Lodhi_Estate%2C_New_Delhi%2C_Delhi_110003_03.jpg/500px-PXL_20231130_051658841_Bara_Gumbad_Mosque_and_Bara_Gumbad_Lodhi_Gardens%2C_Lodhi_Estate%2C_New_Delhi%2C_Delhi_110003_03.jpg",
-   "image_alt": "Bara Gumbad and its mosque in Lodhi Gardens, New Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facade_of_Bara_Gumbad_%E2%80%93_Lodhi_Gardens.jpg/500px-Facade_of_Bara_Gumbad_%E2%80%93_Lodhi_Gardens.jpg",
+   "image_alt": "Frontal view of Bara Gumbad in Lodhi Gardens, New Delhi, showing its entry arch and dome.",
    "image_credit": {
-    "by": "Sourabh.biswas003",
+    "by": "Mbigul",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:PXL_20231130_051658841_Bara_Gumbad_Mosque_and_Bara_Gumbad_Lodhi_Gardens,_Lodhi_Estate,_New_Delhi,_Delhi_110003_03.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Facade_of_Bara_Gumbad_%E2%80%93_Lodhi_Gardens.jpg"
    }
   },
   {
@@ -12654,7 +12696,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Tomb_of_Roshanara_Begum.jpg/960px-Tomb_of_Roshanara_Begum.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Front_and_left_side_view_of_tomb_of_Roshanara_Begum.jpg/960px-Front_and_left_side_view_of_tomb_of_Roshanara_Begum.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -12754,13 +12796,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Tomb_of_Roshanara_Begum.jpg/500px-Tomb_of_Roshanara_Begum.jpg",
-   "image_alt": "Tomb of Roshanara Begum and its baradari in Roshanara Bagh, Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Front_and_left_side_view_of_tomb_of_Roshanara_Begum.jpg/500px-Front_and_left_side_view_of_tomb_of_Roshanara_Begum.jpg",
+   "image_alt": "Front and side view of the tomb of Roshanara Begum, daughter of Shah Jahan, in north Delhi.",
    "image_credit": {
-    "by": "कृष्ण कान्त शर्मा",
+    "by": "Harvinder Chandigarh",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Tomb_of_Roshanara_Begum.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Front_and_left_side_view_of_tomb_of_Roshanara_Begum.jpg"
    }
   },
   {
@@ -13143,7 +13185,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/St._James%27_Church%2C_Delhi_7.jpg/960px-St._James%27_Church%2C_Delhi_7.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/St._James_church_in_Delhi_01.jpg/960px-St._James_church_in_Delhi_01.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -13242,13 +13284,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/St._James%27_Church%2C_Delhi_7.jpg/500px-St._James%27_Church%2C_Delhi_7.jpg",
-   "image_alt": "St. James' Church at Kashmere Gate, Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/St._James_church_in_Delhi_01.jpg/500px-St._James_church_in_Delhi_01.jpg",
+   "image_alt": "St. James' Church near Kashmiri Gate, Delhi, built in 1836 by Colonel James Skinner.",
    "image_credit": {
-    "by": "कृष्ण कान्त शर्मा",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:St._James%27_Church,_Delhi_7.jpg"
+    "by": "Indrajit Das",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:St._James_church_in_Delhi_01.jpg"
    }
   },
   {
@@ -13512,7 +13554,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Ghalib_ki_Haveli_19.jpg/960px-Ghalib_ki_Haveli_19.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Mirza_Ghalib_ki_Haveli.jpg/960px-Mirza_Ghalib_ki_Haveli.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -13612,13 +13654,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Ghalib_ki_Haveli_19.jpg/500px-Ghalib_ki_Haveli_19.jpg",
-   "image_alt": "Ghalib ki Haveli, the poet Mirza Ghalib's residence in Ballimaran, Old Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Mirza_Ghalib_ki_Haveli.jpg/500px-Mirza_Ghalib_ki_Haveli.jpg",
+   "image_alt": "Arched brick entrances at Mirza Ghalib's haveli, Old Delhi.",
    "image_credit": {
-    "by": "कृष्ण कान्त शर्मा",
+    "by": "Abhishekhanna",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Ghalib_ki_Haveli_19.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Mirza_Ghalib_ki_Haveli.jpg"
    }
   },
   {
@@ -13881,7 +13923,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Bhojeshwar_temple_front_view.jpg/960px-Bhojeshwar_temple_front_view.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Bhojpur_temple_view.jpg/960px-Bhojpur_temple_view.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -13982,13 +14024,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Bhojeshwar_temple_front_view.jpg/500px-Bhojeshwar_temple_front_view.jpg",
-   "image_alt": "Front view of the Bhojeshwar Temple at Bhojpur, near Bhopal.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Bhojpur_temple_view.jpg/500px-Bhojpur_temple_view.jpg",
+   "image_alt": "The Bhojeshwar temple at Bhojpur, Madhya Pradesh, seen on its hill among trees.",
    "image_credit": {
-    "by": "InterstellarHarsh",
+    "by": "Vishi261994",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Bhojeshwar_temple_front_view.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Bhojpur_temple_view.jpg"
    }
   },
   {
@@ -14380,7 +14422,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Fortification_Wall_From_Baradari_Balcony_Raisen_Fort_%284%29.jpg/960px-Fortification_Wall_From_Baradari_Balcony_Raisen_Fort_%284%29.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Western_Part_Of_Raisen_Fort_%281%29.jpg/960px-Western_Part_Of_Raisen_Fort_%281%29.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -14480,13 +14522,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Fortification_Wall_From_Baradari_Balcony_Raisen_Fort_%284%29.jpg/500px-Fortification_Wall_From_Baradari_Balcony_Raisen_Fort_%284%29.jpg",
-   "image_alt": "Fortification walls of the hilltop Raisen Fort seen from the Baradari balcony.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Western_Part_Of_Raisen_Fort_%281%29.jpg/500px-Western_Part_Of_Raisen_Fort_%281%29.jpg",
+   "image_alt": "Walls and a tower of Raisen Fort on its hilltop in Madhya Pradesh.",
    "image_credit": {
     "by": "Vijay Tiwari09",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Fortification_Wall_From_Baradari_Balcony_Raisen_Fort_(4).jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Western_Part_Of_Raisen_Fort_(1).jpg"
    }
   },
   {
@@ -14750,7 +14792,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Inside_View_of_State_Museum_Bhopal.jpg/960px-Inside_View_of_State_Museum_Bhopal.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Soorya_%28Sun%29_Statue_India.jpg/960px-Soorya_%28Sun%29_Statue_India.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -14850,13 +14892,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Inside_View_of_State_Museum_Bhopal.jpg/500px-Inside_View_of_State_Museum_Bhopal.jpg",
-   "image_alt": "Inside view of the State Museum, Bhopal.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Soorya_%28Sun%29_Statue_India.jpg/500px-Soorya_%28Sun%29_Statue_India.jpg",
+   "image_alt": "Stone sculpture of Surya, the sun deity, in the State Museum, Bhopal.",
    "image_credit": {
     "by": "Suyash Dwivedi",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Inside_View_of_State_Museum_Bhopal.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Soorya_(Sun)_Statue_India.jpg"
    }
   },
   {
@@ -17292,7 +17334,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/20191205_Targ_przypraw_w_Starym_Delhi_0703_6755.jpg/960px-20191205_Targ_przypraw_w_Starym_Delhi_0703_6755.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Common_Indian_spices.jpg/960px-Common_Indian_spices.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -17381,13 +17423,13 @@
     "notes": [],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/20191205_Targ_przypraw_w_Starym_Delhi_0703_6755.jpg/500px-20191205_Targ_przypraw_w_Starym_Delhi_0703_6755.jpg",
-   "image_alt": "The spice market in Old Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Common_Indian_spices.jpg/500px-Common_Indian_spices.jpg",
+   "image_alt": "Spoonfuls of common Indian spices, including turmeric powder and cumin seeds.",
    "image_credit": {
-    "by": "Jakub Hałun",
+    "by": "PilotChicago",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:20191205_Targ_przypraw_w_Starym_Delhi_0703_6755.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Common_Indian_spices.jpg"
    }
   },
   {
@@ -17516,7 +17558,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/20191216_Adhai_Din_Ka_Jhonpra%2C_Ajmer_1203_8870.jpg/960px-20191216_Adhai_Din_Ka_Jhonpra%2C_Ajmer_1203_8870.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Templo_dorado-Amritsar-India005.JPG/960px-Templo_dorado-Amritsar-India005.JPG",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -17605,13 +17647,13 @@
     "notes": [],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/20191216_Adhai_Din_Ka_Jhonpra%2C_Ajmer_1203_8870.jpg/500px-20191216_Adhai_Din_Ka_Jhonpra%2C_Ajmer_1203_8870.jpg",
-   "image_alt": "Ruins of the Adhai Din Ka Jhonpra mosque in Ajmer, Rajasthan.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Templo_dorado-Amritsar-India005.JPG/500px-Templo_dorado-Amritsar-India005.JPG",
+   "image_alt": "Harmandir Sahib, the Golden Temple, in Amritsar, India, seen across its sacred pool.",
    "image_credit": {
-    "by": "Jakub Hałun",
+    "by": "Diego Delso",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:20191216_Adhai_Din_Ka_Jhonpra,_Ajmer_1203_8870.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Templo_dorado-Amritsar-India005.JPG"
    }
   },
   {
@@ -17740,7 +17782,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Keeladi_Excavation_Camp.jpg/960px-Keeladi_Excavation_Camp.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Remains_of_Pravarapura_at_Mansar_Excavation_Site.jpg/960px-Remains_of_Pravarapura_at_Mansar_Excavation_Site.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -17830,13 +17872,13 @@
     "notes": [],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Keeladi_Excavation_Camp.jpg/500px-Keeladi_Excavation_Camp.jpg",
-   "image_alt": "Archaeological remains at the ASI excavation camp at Keeladi near Madurai, Tamil Nadu.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Remains_of_Pravarapura_at_Mansar_Excavation_Site.jpg/500px-Remains_of_Pravarapura_at_Mansar_Excavation_Site.jpg",
+   "image_alt": "Excavated brick remains of Pravarapura at the Mansar excavation site, Maharashtra.",
    "image_credit": {
-    "by": "Paramatamil",
+    "by": "Kmohankar",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Keeladi_Excavation_Camp.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Remains_of_Pravarapura_at_Mansar_Excavation_Site.jpg"
    }
   },
   {
@@ -17853,7 +17895,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Water_storage_tanks_at_Dholavira_Citadel.jpg/960px-Water_storage_tanks_at_Dholavira_Citadel.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Water_reservoir_at_Dholavira_site.jpg/960px-Water_reservoir_at_Dholavira_site.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -17943,13 +17985,13 @@
     "notes": [],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Water_storage_tanks_at_Dholavira_Citadel.jpg/500px-Water_storage_tanks_at_Dholavira_Citadel.jpg",
-   "image_alt": "Stepped water storage tanks at the citadel of Dholavira, Gujarat.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Water_reservoir_at_Dholavira_site.jpg/500px-Water_reservoir_at_Dholavira_site.jpg",
+   "image_alt": "A stone-lined water reservoir at the Harappan site of Dholavira, Gujarat.",
    "image_credit": {
-    "by": "Prof Ranga Sai",
+    "by": "Bhajish Bharathan",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Water_storage_tanks_at_Dholavira_Citadel.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Water_reservoir_at_Dholavira_site.jpg"
    }
   },
   {
@@ -18283,7 +18325,7 @@
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
    "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Tomb_of_Safdarjung_in_Delhi.jpg/500px-Tomb_of_Safdarjung_in_Delhi.jpg",
-   "image_alt": "The Tomb of Safdarjung in Delhi.",
+   "image_alt": "Inside Safdarjung's Tomb in Delhi.",
    "image_credit": {
     "by": "Dey.sandip",
     "license": "CC BY-SA 4.0",
@@ -18305,7 +18347,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/20191205_Spice_market%2C_Old_Delhi_0711_6765.jpg/960px-20191205_Spice_market%2C_Old_Delhi_0711_6765.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/32_-_Old_Delhi_Chandni_Chowk.jpg/960px-32_-_Old_Delhi_Chandni_Chowk.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -18405,13 +18447,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/20191205_Spice_market%2C_Old_Delhi_0711_6765.jpg/500px-20191205_Spice_market%2C_Old_Delhi_0711_6765.jpg",
-   "image_alt": "Rooftops and shop backs of the spice market neighbourhood in Old Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/32_-_Old_Delhi_Chandni_Chowk.jpg/500px-32_-_Old_Delhi_Chandni_Chowk.jpg",
+   "image_alt": "A multi-storey building with shops at street level in Chandni Chowk, Old Delhi.",
    "image_credit": {
-    "by": "Jakub Hałun",
+    "by": "Misa.stefanovic.07",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:20191205_Spice_market,_Old_Delhi_0711_6765.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:32_-_Old_Delhi_Chandni_Chowk.jpg"
    }
   },
   {
@@ -18668,7 +18710,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Biface_de_Boucher_de_Perthes_MHNT.jpg/960px-Biface_de_Boucher_de_Perthes_MHNT.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Primitive_Hand_Axe_-_Lower_Palaeolithic_Culture_-_Human_Evolution_Gallery_-_Indian_Museum_-_Kolkata_2014-04-04_4501.JPG/960px-Primitive_Hand_Axe_-_Lower_Palaeolithic_Culture_-_Human_Evolution_Gallery_-_Indian_Museum_-_Kolkata_2014-04-04_4501.JPG",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -18767,14 +18809,15 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Biface_de_Boucher_de_Perthes_MHNT.jpg/500px-Biface_de_Boucher_de_Perthes_MHNT.jpg",
-   "image_alt": "Several views of an Acheulean flint hand axe in a museum collection.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Primitive_Hand_Axe_-_Lower_Palaeolithic_Culture_-_Human_Evolution_Gallery_-_Indian_Museum_-_Kolkata_2014-04-04_4501.JPG/500px-Primitive_Hand_Axe_-_Lower_Palaeolithic_Culture_-_Human_Evolution_Gallery_-_Indian_Museum_-_Kolkata_2014-04-04_4501.JPG",
+   "image_alt": "A Lower Palaeolithic stone hand axe in the Indian Museum, Kolkata.",
    "image_credit": {
-    "by": "Didier Descouens",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Biface_de_Boucher_de_Perthes_MHNT.jpg"
-   }
+    "by": "Biswarup Ganguly",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Primitive_Hand_Axe_-_Lower_Palaeolithic_Culture_-_Human_Evolution_Gallery_-_Indian_Museum_-_Kolkata_2014-04-04_4501.JPG"
+   },
+   "image_fit": "contain"
   },
   {
    "id": "req-school-heritage-club-starter-workshop",
@@ -18790,7 +18833,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Indian_Museum%2C_Gallery%2C_Kolkata%2C_India.jpg/960px-Indian_Museum%2C_Gallery%2C_Kolkata%2C_India.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Harappan_Potteries_-_Showcase_4-19_-_Prehistory_and_Terracotta_Gallery_-_Government_Museum_-_Mathura_2013-02-24_6224.JPG/960px-Harappan_Potteries_-_Showcase_4-19_-_Prehistory_and_Terracotta_Gallery_-_Government_Museum_-_Mathura_2013-02-24_6224.JPG",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -18891,13 +18934,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Indian_Museum%2C_Gallery%2C_Kolkata%2C_India.jpg/500px-Indian_Museum%2C_Gallery%2C_Kolkata%2C_India.jpg",
-   "image_alt": "A gallery of the Indian Museum, Kolkata.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Harappan_Potteries_-_Showcase_4-19_-_Prehistory_and_Terracotta_Gallery_-_Government_Museum_-_Mathura_2013-02-24_6224.JPG/500px-Harappan_Potteries_-_Showcase_4-19_-_Prehistory_and_Terracotta_Gallery_-_Government_Museum_-_Mathura_2013-02-24_6224.JPG",
+   "image_alt": "Harappan pottery displayed in a showcase in the Prehistory and Terracotta Gallery of the Government Museum, Mathura.",
    "image_credit": {
-    "by": "Vyacheslav Argenberg",
-    "license": "CC BY 4.0",
-    "license_url": "https://creativecommons.org/licenses/by/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Indian_Museum,_Gallery,_Kolkata,_India.jpg"
+    "by": "Biswarup Ganguly",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Harappan_Potteries_-_Showcase_4-19_-_Prehistory_and_Terracotta_Gallery_-_Government_Museum_-_Mathura_2013-02-24_6224.JPG"
    }
   },
   {
@@ -19138,7 +19181,7 @@
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
    "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Shaikh_Salim_Chishti_Ka_Maqbara.jpg/500px-Shaikh_Salim_Chishti_Ka_Maqbara.jpg",
-   "image_alt": "The white marble Tomb of Salim Chishti at Fatehpur Sikri.",
+   "image_alt": "Carved marble screens (jalis) of the Tomb of Salim Chishti at Fatehpur Sikri.",
    "image_credit": {
     "by": "Sharvarism",
     "license": "CC BY-SA 4.0",
@@ -19285,7 +19328,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Harappan_seals_%28Indus_Valley%29.jpg/960px-Harappan_seals_%28Indus_Valley%29.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Harappan_%28Indus_Valley%29_Inscribed_Seal.jpg/960px-Harappan_%28Indus_Valley%29_Inscribed_Seal.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -19387,13 +19430,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Harappan_seals_%28Indus_Valley%29.jpg/500px-Harappan_seals_%28Indus_Valley%29.jpg",
-   "image_alt": "Harappan seals on display in the National Museum, New Delhi.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Harappan_%28Indus_Valley%29_Inscribed_Seal.jpg/500px-Harappan_%28Indus_Valley%29_Inscribed_Seal.jpg",
+   "image_alt": "An inscribed Harappan (Indus Valley) seal in the National Museum, New Delhi.",
    "image_credit": {
     "by": "Gary Todd",
     "license": "CC0",
-    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:Harappan_seals_(Indus_Valley).jpg"
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Harappan_(Indus_Valley)_Inscribed_Seal.jpg"
    }
   },
   {
@@ -19837,7 +19880,7 @@
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
    "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rock_Shelter_9%2C_Bhimbetka_03.jpg/500px-Rock_Shelter_9%2C_Bhimbetka_03.jpg",
-   "image_alt": "Rock Shelter 9 at Bhimbetka, Madhya Pradesh.",
+   "image_alt": "Prehistoric painting of elephants in Rock Shelter 9 at Bhimbetka, Madhya Pradesh.",
    "image_credit": {
     "by": "Bernard Gagnon",
     "license": "CC BY-SA 3.0",
@@ -19859,7 +19902,7 @@
    "currency": "INR",
    "stock": null,
    "requires_shipping": false,
-   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Gateway_Of_India.jpg/960px-Gateway_Of_India.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Elephanta_Cave_1_4.jpg/960px-Elephanta_Cave_1_4.jpg",
    "starts_at": null,
    "duration_minutes": null,
    "speaker": null,
@@ -19950,13 +19993,13 @@
     ],
     "gst": "All prices include GST. A GST invoice is issued on request."
    },
-   "image_small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Gateway_Of_India.jpg/500px-Gateway_Of_India.jpg",
-   "image_alt": "The Gateway of India on the Mumbai waterfront.",
+   "image_small": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Elephanta_Cave_1_4.jpg/500px-Elephanta_Cave_1_4.jpg",
+   "image_alt": "Carved stone pillars inside Cave 1 of the Elephanta Caves, near Mumbai.",
    "image_credit": {
-    "by": "Joe Ravi",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Gateway_Of_India.jpg"
+    "by": "Rangan Datta Wiki",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Elephanta_Cave_1_4.jpg"
    }
   },
   {
