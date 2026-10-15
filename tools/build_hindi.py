@@ -52,6 +52,7 @@ TEXT = {
     "Heritage sites by state": "राज्यवार धरोहर स्थल",
     "Guides to India's heritage": "भारत की धरोहर पर मार्गदर्शिकाएँ",
     "TALAASHH journeys": "TALAASHH यात्राएँ",
+    "For children abroad": "विदेश में रहने वाले बच्चों के लिए",
     # home: the two paths and the record under the hero
     "Learn or travel with us": "हमारे साथ सीखें या यात्रा करें",
     "Learn with us": "हमारे साथ सीखें",

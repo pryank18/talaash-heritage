@@ -227,6 +227,7 @@ const text = {
  "Firoz Shah Kotla, Delhi": "फ़िरोज़ शाह कोटला, दिल्ली",
  "For": "किसके लिए",
  "For a day trip, a study tour or a private journey, also tell us where you will start from, how many days you have, the language you would like to be guided in, and the kind of hotel you prefer. Visitors from outside India can write in English or in their own language, and we reply in English. See <a href=\"journeys.html\">TALAASHH journeys</a>.": "एक दिन की यात्रा, अध्ययन यात्रा या निजी यात्रा के लिए यह भी बताएँ कि आप कहाँ से शुरू करेंगे, आपके पास कितने दिन हैं, आप किस भाषा में मार्गदर्शन चाहते हैं और किस तरह का होटल पसंद करेंगे। भारत के बाहर से आने वाले यात्री अंग्रेज़ी या अपनी भाषा में लिख सकते हैं, और हम अंग्रेज़ी में उत्तर देते हैं। देखें <a href=\"journeys.html\">TALAASHH यात्राएँ</a>।",
+ "For children abroad": "विदेश में रहने वाले बच्चों के लिए",
  "For example, a Saturday in November": "उदाहरण के लिए, नवंबर का कोई शनिवार",
  "For museums, archives and institutions": "संग्रहालयों, अभिलेखागारों और संस्थानों के लिए",
  "For schools and colleges": "विद्यालयों और महाविद्यालयों के लिए",
