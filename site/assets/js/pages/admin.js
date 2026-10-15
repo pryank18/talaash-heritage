@@ -373,7 +373,11 @@ async function Traffic(body) {
       ${tile("Enquiry rate", rate(t.enquiries, t.visits), "Enquiries per visit")}
       ${tile("Guide → programme", n(t.guide_to_programme), "Clicks from a guide to a programme")}
       ${tile("Sales", n(t.purchases), `${money(t.revenue_paise)} · ${n(t.add_to_cart)} added to cart · ${n(t.checkouts)} checkouts`)}
+      ${tile("Help panel opened", n(t.help_opens), "The Ask us button")}
     </div>
+    <h3>Questions visitors opened in the help panel</h3>
+    <div class="table-scroll"><table class="dtable"><thead><tr><th>Question</th><th>Times opened</th></tr></thead>
+    <tbody>${(r.help_questions || []).map((x) => `<tr><td>${esc(x.question)}</td><td>${n(x.count)}</td></tr>`).join("") || `<tr><td colspan="2" class="muted">None yet.</td></tr>`}</tbody></table></div>
     <h3>By day</h3>
     <div class="bars" role="img" aria-label="Page views by day">${r.by_day.map((d) => `<div class="bar" title="${esc(d.day)}: ${d.views} views, ${d.enquiries} enquiries"><span style="height:${Math.round((100 * d.views) / maxViews)}%"></span></div>`).join("") || `<p class="muted">No visits yet.</p>`}</div>
     <h3>Where visits came from</h3>
