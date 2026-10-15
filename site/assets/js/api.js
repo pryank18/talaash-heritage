@@ -122,6 +122,38 @@ export async function getListingTitles() {
   }
 }
 
+/**
+ * One listing for its own page, without downloading the whole catalogue:
+ * 1. programme pages carry their record in <script id="programme-data"> (written by build_catalogue.py);
+ * 2. database listings (product.html?slug=) fetch their one row plus data/overrides.json (a few KB);
+ * 3. anything else, or any failure, falls back to the full catalogue as before.
+ */
+export async function getProductFast(slug) {
+  try {
+    const el = document.getElementById("programme-data");
+    const own = el ? JSON.parse(el.textContent) : null;
+    if (own?.slug === slug) return own.is_active ? own : null;
+  } catch { /* unreadable: use the full catalogue */ }
+  if (isLive() && !productCache) {
+    try {
+      const [rows, cat] = await Promise.all([
+        withTimeout(request(`/rest/v1/products?select=${PRODUCT_COLUMNS}&is_active=eq.true&slug=eq.${encodeURIComponent(slug)}`), 6000),
+        fetch("data/overrides.json").then((r) => (r.ok ? r.json() : Promise.reject(new Error("overrides")))),
+      ]);
+      const row = rows?.[0];
+      if (row && !(cat.hide || []).includes(row.slug)) {
+        let p = cat.overrides?.[row.slug] ? { ...row, ...cat.overrides[row.slug] } : row;
+        if (p.seller_id) {
+          const s = (await withTimeout(request(`/rest/v1/public_sellers?select=id,name,city,bio&id=eq.${encodeURIComponent(p.seller_id)}`), 6000).catch(() => []))?.[0];
+          if (s) p = { ...p, seller_name: s.name, seller_city: s.city, seller_bio: s.bio };
+        }
+        return p;
+      }
+    } catch { /* database or file unreachable: fall through */ }
+  }
+  return getProduct(slug);
+}
+
 export async function getProduct(slug) {
   const all = await getProducts({ includeUnlisted: true });
   return all.find((p) => p.slug === slug) || null;

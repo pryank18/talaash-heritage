@@ -1,5 +1,5 @@
 import { shareButton } from "../share.js";
-import { getProduct, getProducts } from "../api.js";
+import { getProductFast, getProducts } from "../api.js";
 import { CONFIG } from "../config.js";
 import { addToCart, getCart, MAX_QTY } from "../store.js";
 import { t } from "../i18n.js";
@@ -112,7 +112,8 @@ function extrasHtml(p, all) {
   if (p.takeaway) out.push(`<h2 class="covers-title">You take away</h2><p>${esc(p.takeaway)}.</p>`);
   if (p.options?.length) out.push(`<h2 class="covers-title">Options you can add</h2><ul class="options">${p.options.map(([t, n]) => `<li><strong>${esc(t)}.</strong> ${esc(n)}</li>`).join("")}</ul>`);
   if (p.notes?.length) out.push(`<h2 class="covers-title">Good to know</h2><ul class="covers">${p.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>`);
-  const related = (p.related || []).map((slug) => all.find((x) => x.slug === slug)).filter(Boolean);
+  // Static programme pages carry their related programmes; other listings look them up.
+  const related = p.related_items || (p.related || []).map((slug) => all.find((x) => x.slug === slug)).filter(Boolean);
   if (related.length) out.push(`<h2 class="covers-title">Programmes in this journey</h2><ul class="covers">${related.map((r) => `<li><a href="${esc(productHref(r))}">${esc(r.title)}</a></li>`).join("")}</ul>`);
   return out.join("");
 }
@@ -132,7 +133,7 @@ function soonPanel(p) {
 async function render() {
   let p = null;
   try {
-    p = slug ? await getProduct(slug) : null;
+    p = slug ? await getProductFast(slug) : null;
   } catch (e) {
     root.innerHTML = `<div class="empty"><h1>The catalogue did not load</h1><p>${esc(e.message)}</p></div>`;
     return;
@@ -152,7 +153,7 @@ async function render() {
   }
   $('meta[name="description"]')?.setAttribute("content", p.subtitle || p.title);
 
-  const all = p.related?.length ? await getProducts().catch(() => []) : [];
+  const all = p.related?.length && !p.related_items ? await getProducts().catch(() => []) : [];
   const request = isRequest(p);
   const soon = isSoon(p);
   const flag = request || soon ? null : stockFlag(p);
