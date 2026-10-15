@@ -1213,3 +1213,6 @@ body.has-help .toast { bottom: 5rem; }
   }
   .help-body { padding-bottom: calc(1.2rem + env(safe-area-inset-bottom)); }
 }
+
+/* Tall photographs (a minaret, a manuscript folio) are shown whole, not cropped through the middle. */
+.card-art img.fit-contain, .product-art img.fit-contain, .guide-hero img.fit-contain { object-fit: contain; background: var(--plaster-deep); }

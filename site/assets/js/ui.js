@@ -172,7 +172,7 @@ export const isIllustration = (p) => /^assets\/img\/programmes\/[a-z0-9-]+\.jpg$
 
 /** `sizes` tells the browser how wide the picture is shown, so phones fetch the small file. */
 export function productArt(p, sizes = "(min-width: 1000px) 25vw, (min-width: 560px) 33vw, 50vw") {
-  if (p.image_small) return `<img src="${esc(p.image_small)}" srcset="${esc(p.image_small)} 500w, ${esc(p.image_url)} 960w" sizes="${esc(sizes)}" alt="${esc(p.image_alt || p.title)}" loading="lazy" width="960" height="720">`;
+  if (p.image_small) return `<img src="${esc(p.image_small)}" srcset="${esc(p.image_small)} 500w, ${esc(p.image_url)} 960w" sizes="${esc(sizes)}" alt="${esc(p.image_alt || p.title)}" loading="lazy" width="960" height="720"${p.image_fit === "contain" ? ' class="fit-contain"' : ""}>`;
   if (!p.image_url) return stratArt(p);
   if (!isIllustration(p)) return `<img src="${esc(p.image_url)}" alt="${esc(p.title)}" loading="lazy" width="400" height="300">`;
   const small = p.image_url.replace(/\.jpg$/, "-s.jpg");

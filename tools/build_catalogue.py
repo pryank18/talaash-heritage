@@ -676,6 +676,9 @@ def attach(p):
     if m:
         p["image_url"], p["image_small"], p["image_alt"] = m["src"], m["small"], m["alt"]
         p["image_credit"] = {"by": m["credit"], "license": m["license"], "license_url": m["license_url"], "page": m["page"]}
+        # Tall photos (a minaret, a manuscript folio) are shown whole instead of cropped through the middle.
+        if m.get("portrait"):
+            p["image_fit"] = "contain"
 
 
 for p in catalogue["programmes"]:
@@ -724,11 +727,15 @@ ACTION = {"Heritage walk": "Enquire about this walk", "Museum visit": "Enquire a
 SIZES = "(min-width: 1000px) 25vw, (min-width: 560px) 33vw, 50vw"
 
 
+def fit_attr(p):
+    return ' class="fit-contain"' if p.get("image_fit") == "contain" else ""
+
+
 def card_art(p, sizes):
     """Picture markup shared by cards and pages: a credited photograph, or our own illustration."""
     if p.get("image_small"):
         return (f'<img src="{h(p["image_small"])}" srcset="{h(p["image_small"])} 500w, {h(p["image_url"])} 960w" sizes="{sizes}" '
-                f'alt="{h(p["image_alt"])}" loading="lazy" width="960" height="720">')
+                f'alt="{h(p["image_alt"])}" loading="lazy" width="960" height="720"{fit_attr(p)}>')
     if p["image_url"]:
         small = p["image_url"].replace(".jpg", "-s.jpg")
         return (f'<img src="{h(small)}" srcset="{h(small)} 560w, {h(p["image_url"])} 1040w" sizes="{sizes}" '
