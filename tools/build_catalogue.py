@@ -1053,11 +1053,29 @@ def static_page(p):
 {xsell_html(p)}
 </main>
 <div id="site-footer"></div>
+<script type="application/json" id="programme-data">{page_data(p)}</script>
 <script type="module" src="assets/js/layout.js"></script>
 <script type="module" src="assets/js/pages/product.js"></script>
 </body>
 </html>
 """
+
+
+BY_SLUG = {x["slug"]: x for x in catalogue["programmes"]}
+
+
+def page_data(p):
+    """The programme's own record, embedded in its page, so product.js draws the page without
+    downloading the whole catalogue. Related programmes carry just the title and link."""
+    d = dict(p)
+    d["related_items"] = [{"slug": r, "title": BY_SLUG[r]["title"], "page": BY_SLUG[r]["page"]} for r in p.get("related") or [] if r in BY_SLUG]
+    return json.dumps(d, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
+
+
+# Database listings shown at product.html?slug= need only the hide list and the overrides,
+# not the 160 programmes, so they get a small file of their own.
+with open(os.path.join(os.path.dirname(out), "overrides.json"), "w", encoding="utf-8") as fh:
+    json.dump({"hide": catalogue.get("hide", []), "overrides": catalogue.get("overrides", {})}, fh, ensure_ascii=False, separators=(",", ":"))
 
 
 written = set()
