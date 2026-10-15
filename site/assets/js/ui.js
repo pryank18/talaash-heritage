@@ -55,9 +55,9 @@ export const kindLabel = (p) => p.kind || typeLabel(p.type);
 
 const waLink = (text) => `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`;
 /** WhatsApp and email links that open with the programme already named. Nothing about the visitor is put in the link. */
-export function requestLinks(p) {
+export function requestLinks(p, group = "") {
   const soon = isSoon(p);
-  const text = lang === "hi"
+  let text = lang === "hi"
     ? soon
       ? `नमस्ते ${CONFIG.brand}, कृपया "${p.title}" उपलब्ध होने पर मुझे सूचित करें।`
       : p.tags?.includes("counselling")
@@ -68,6 +68,8 @@ export function requestLinks(p) {
     : p.tags?.includes("counselling")
     ? `Hello ${CONFIG.brand}, I would like to book a counselling session.\n\nWhat I want to discuss: \nWhen I am free: `
     : `Hello ${CONFIG.brand}, I would like to request "${p.title}".\n\nWho it is for (school, college, workplace or private group): \nGroup size: \nPreferred dates: \nCity or online: \nAnything you would like changed: `;
+  // The group size chosen in the price calculator, so the first message already has it.
+  if (group) text = text.replace("Group size: ", `Group size: ${group}`).replace("समूह का आकार: ", `समूह का आकार: ${group}`);
   const subject = soon ? `${t("Notify me")}: ${p.title}` : `${t("Request")}: ${p.title}`;
   return {
     whatsapp: waLink(text),
@@ -195,9 +197,32 @@ export function photoCredit(p) {
 export function pricingHtml(p) {
   const pb = p.pricing;
   if (!pb) return "";
-  const cells = pb.tiers.map((t) => `<li class="ptier${t.best ? " is-best" : ""}"><p class="ptier-label">${esc(t.label)}</p><p class="ptier-price">${esc(t.amount)}</p><p class="ptier-unit">${esc(t.unit)}</p>${t.note ? `<p class="ptier-note">${esc(t.note)}</p>` : ""}</li>`).join("");
+  const cells = pb.tiers.map((t) => `<li class="ptier${t.bands ? " ptier-wide" : ""}"><p class="ptier-label">${esc(t.label)}</p><p class="ptier-price">${esc(t.amount)}</p><p class="ptier-unit">${esc(t.unit)}</p>${bandsHtml(t.bands)}${t.note ? `<p class="ptier-note">${esc(t.note)}</p>` : ""}${calcHtml(t.bands)}</li>`).join("");
   const notes = [...pb.notes, pb.gst].map((n) => `<li>${esc(n)}</li>`).join("");
   return `<section class="pricing" aria-label="Prices"><ul class="ptiers ptiers-${pb.tiers.length}">${cells}</ul><ul class="pricing-notes">${notes}</ul></section>`;
+}
+
+/** One row of the group-size price list. Mirrors band_label() in tools/build_catalogue.py. */
+function bandLabel(b) {
+  if (b.from === b.to) return [`${b.from} ${b.from === 1 ? "person" : "people"}`, money(b.each * 100) + (b.from === 1 ? "" : " each")];
+  return [`${b.from} to ${b.to} people`, `${money(b.each * 100)} each`];
+}
+const bandsHtml = (bands) => (bands ? `<ul class="ptier-bands">${bands.map((b) => bandLabel(b)).map(([a, c]) => `<li><span>${esc(a)}</span><span>${esc(c)}</span></li>`).join("")}</ul>` : "");
+
+/** The group-size picker inside the private price. Mirrors calc_html() in tools/build_catalogue.py. */
+function calcHtml(bands) {
+  if (!bands) return "";
+  const opts = Array.from({ length: 25 }, (_, i) => `<option value="${i + 1}"${i + 1 === 2 ? " selected" : ""}>${i + 1}</option>`).join("");
+  return `<div class="pcalc"><label for="pcalc-size">How many people?</label> <select id="pcalc-size" data-pcalc>${opts}<option value="26">More than 25</option></select><p class="pcalc-out" aria-live="polite">${esc(groupTotal(bands, 2).text)}</p></div>`;
+}
+
+/** The private price for a group of n: { total (rupees), text }. Mirrors group_total() in tools/build_catalogue.py. */
+export function groupTotal(bands, n) {
+  const max = bands[bands.length - 1].to;
+  if (n > max) return { total: 0, text: `More than ${max} people: we quote for your group.` };
+  const each = bands.find((b) => n >= b.from && n <= b.to).each;
+  const total = each * n;
+  return { total, text: n === 1 ? `1 person: ${money(total * 100)} in total` : `${n} people: ${money(total * 100)} in total (${money(each * 100)} each)` };
 }
 
 export function priceHtml(p) {
