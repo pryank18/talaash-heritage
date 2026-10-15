@@ -103,7 +103,7 @@ function renderFooter() {
           <li><a href="shop.html?type=counselling">Counselling</a></li>
           <li><a href="shop.html?type=recording">Recordings</a></li>
           <li><a href="shop.html?type=physical">Books and prints</a></li>
-          <li><a href="indian-culture-for-children-abroad.html">For children abroad</a></li>
+          <li><a href="indian-culture-classes-for-kids-online.html">Indian culture for kids</a></li>
           <li><a href="journeys.html">TALAASHH journeys</a></li>
         </ul>
       </div>
@@ -201,7 +201,7 @@ function renderAppShell() {
         <li><a href="shop.html?type=counselling">Counselling</a></li>
         <li><a href="shop.html?type=recording">Recordings</a></li>
         <li><a href="shop.html?type=physical">Books and prints</a></li>
-        <li><a href="indian-culture-for-children-abroad.html">For children abroad</a></li>
+        <li><a href="indian-culture-classes-for-kids-online.html">Indian culture for kids</a></li>
         <li><a href="journeys.html">TALAASHH journeys</a></li>
       </ul>
       <h3>Learn</h3>

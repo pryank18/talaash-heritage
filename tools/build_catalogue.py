@@ -953,7 +953,7 @@ for f in os.listdir(site):
         os.remove(os.path.join(site, f))
         print("removed", f)
 
-pages = ["", "shop.html", "finder.html", "journeys.html", "indian-culture-for-children-abroad.html", "work.html", "about.html", "contact.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html"]
+pages = ["", "shop.html", "finder.html", "journeys.html", "indian-culture-classes-for-kids-online.html", "work.html", "about.html", "contact.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html"]
 urls = [SITE_URL + x for x in pages] + [SITE_URL + p["page"] for p in catalogue["programmes"]] + \
     [f"{SITE_URL}product.html?slug={x}" for x in catalogue["overrides"]]
 assert all("&" not in u and "<" not in u for u in urls)

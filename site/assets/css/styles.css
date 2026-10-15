@@ -1108,3 +1108,6 @@ html[data-theme="dark"] .path-travel { border-color: var(--line); border-top-col
 .tier-pick { border-color: var(--haldi); border-top-width: 6px; }
 .card-text ol { padding-left: 1.2rem; margin: 0; }
 .card-text ol li { margin-bottom: 0.4rem; }
+.journey-hero h1.h1-two { max-width: 34rem; }
+.h1-hook { display: block; }
+.h1-sub { display: block; margin-top: 0.6rem; font-family: var(--font-body); font-size: var(--step-1); line-height: 1.4; color: var(--ink-soft); letter-spacing: 0; }
