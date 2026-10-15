@@ -1101,3 +1101,10 @@ html[data-theme="dark"] .path-travel { border-color: var(--line); border-top-col
 .xsell-reads { columns: 2 16rem; padding-left: 1.1rem; max-width: 46rem; }
 .xsell-reads li { margin-bottom: 0.35rem; break-inside: avoid; }
 @media (max-width: 560px) { .guide-next .buy-row .btn, .guide-final .btn { width: 100%; } .guide-lede { font-size: var(--step-0); } }
+/* ---------- fee options (indian-culture-for-children-abroad.html) ---------- */
+.tiers .card-text { align-self: stretch; }
+.tier-price { font-family: var(--font-display); font-size: var(--step-3); line-height: 1.1; margin: 0.2rem 0 0.8rem; font-variant-numeric: tabular-nums; }
+.tier-price span { display: block; font-family: var(--font-body); font-size: var(--step--1); color: var(--ink-soft); margin-top: 0.25rem; }
+.tier-pick { border-color: var(--haldi); border-top-width: 6px; }
+.card-text ol { padding-left: 1.2rem; margin: 0; }
+.card-text ol li { margin-bottom: 0.4rem; }
