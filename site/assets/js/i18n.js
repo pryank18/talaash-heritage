@@ -5,9 +5,14 @@
 // English appears in HI.text is replaced, including text that the page scripts
 // add later (cards, the registration form, finder results). Programme names and
 // details are not in the dictionary, so they stay in English.
-import { HI } from "./hi.js";
-
 export const lang = document.documentElement.getAttribute("data-lang") === "hi" ? "hi" : "en";
+
+// The Hindi dictionary (about 95 KB) is fetched only by visitors who chose Hindi.
+const EMPTY = { text: {}, patterns: [] };
+let HI = EMPTY;
+if (lang === "hi") {
+  try { HI = (await import("./hi.js")).HI; } catch { HI = EMPTY; }
+}
 
 const norm = (s) => s.replace(/\s+/g, " ").trim();
 const SKIP = new Set(["SCRIPT", "STYLE", "NOSCRIPT", "svg", "TEXTAREA", "CODE", "TITLE"]);

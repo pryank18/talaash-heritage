@@ -50,7 +50,7 @@ function template(hard, v) {
       <button type="button" class="lang-option" data-lang-set="hi" lang="hi" aria-pressed="${document.documentElement.getAttribute("data-lang") === "hi"}">हिन्दी</button>
     </div>
     ${hard ? "" : `<button type="button" class="gate-x" data-close aria-label="${v ? "Close" : "Close and look around first"}">×</button>`}
-    <img class="gate-badge" src="assets/img/logo-192.png" alt="" width="56" height="56">
+    <img class="gate-badge" src="assets/img/logo-192.webp" alt="" width="56" height="56">
     <h2 id="gate-title">${v && hard ? "Our privacy notice changed. Confirm your details" : v ? "Update your details" : "Welcome to Talaash Heritage"}</h2>
     <p>${v ? "We use these details to send lecture links and order updates, and to plan sessions and walks near you." : "Register once and we can send you walk dates and lecture links, and plan a programme around you. Or look around first."}</p>
   </div>

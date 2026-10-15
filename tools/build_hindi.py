@@ -485,6 +485,8 @@ TEXT = {
     "<strong>Questions before you pay?</strong> We answer on WhatsApp, by email or on the phone.":
         "<strong>भुगतान से पहले कोई प्रश्न?</strong> हम WhatsApp, ईमेल या फ़ोन पर उत्तर देते हैं।",
     "Ask on WhatsApp": "WhatsApp पर पूछें",
+    "Share": "साझा करें",
+    "Search": "खोजें",
     "Email us": "हमें ईमेल करें",
     "Call +91 7397829282": "फ़ोन करें: +91 7397829282",
     "Payments by card, netbanking and UPI are processed securely by Razorpay.": "कार्ड, नेटबैंकिंग और यूपीआई से भुगतान रेज़रपे के माध्यम से सुरक्षित रूप से होता है।",

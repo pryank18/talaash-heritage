@@ -25,7 +25,7 @@ UPI and WhatsApp orders need no server. Card, netbanking and UPI through Razorpa
 The guides (Learn menu) are JSON files in `content/guides/`, written to `content/SPEC.md`. Each guide also holds its Google Ads ad group, social posts and share text.
 
 - `python3 tools/check_guides.py`: checks every guide (links, length, banned words, cross-sell and marketing fields).
-- `python3 tools/build_learn.py`: writes the guide pages, `site/learn.html`, `site/sitemap-guides.xml` and `site/llms.txt`. Run it after `build_catalogue.py`.
+- `python3 tools/build_learn.py`: writes the guide pages, `site/learn.html`, `site/sitemap-guides.xml`, `site/llms.txt`, the header search index `site/data/search.json` and `site/data/programmes.json`. Run it after `build_catalogue.py`.
 - `python3 tools/export_marketing.py [start date]`: writes `docs/marketing/` (keyword map, Google Ads Editor import, 90-day social calendar, page register).
 
 `build_catalogue.py` reads the guides too: programme pages show "Pairs well with" (from the guides' bundles) and "Read before you go" (guides that recommend the programme).

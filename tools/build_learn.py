@@ -297,6 +297,7 @@ def guide_page(g):
       <p class="guide-eyebrow">{h(eyebrow(g))}</p>
       <h1>{h(g["title"])}</h1>
       <p class="guide-byline">By <a href="archaeologywala.html" rel="author">@archaeologywala</a> for Talaash Heritage · Updated {UPDATED}</p>
+      <div class="share-row"><button type="button" class="share-btn" data-share aria-haspopup="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="m8.2 10.8 7.6-4.1M8.2 13.2l7.6 4.1"/></svg><span>Share</span></button></div>
       <p class="guide-lede">{inline(g["summary"])}</p>
     </header>
     {hero(g)}
@@ -468,7 +469,44 @@ def main():
     lines += ["", "## Heritage sites by state"]
     lines += [f"- [{g['state']}]({SITE_URL}{g['slug']}.html)" for g in sorted((g for g in GUIDES.values() if g["type"] == "state"), key=lambda g: g["state"])]
     open(os.path.join(SITE, "llms.txt"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
+    write_search_index()
     print(len(GUIDES), "guides and learn.html written")
+
+
+def write_search_index():
+    """data/search.json: what the header search looks through. Programmes and guides come from
+    the repository; listings that live only in the database (career courses, books) are added
+    in the browser. Keys are short to keep the file small: t title, u link, k kind, p place, x more words."""
+    cat = json.load(open(os.path.join(SITE, "data", "catalogue.json"), encoding="utf-8"))
+    items = []
+    for p in cat["programmes"]:
+        if not p.get("is_active"):
+            continue
+        words = [p.get("subtitle") or "", p.get("region") or "", " ".join(t for t in p.get("tags") or [] if t not in ("on-request", "home"))]
+        items.append({"t": p["title"], "u": p["page"], "k": p.get("kind") or "Programme", "p": p.get("venue") or "", "x": " ".join(w for w in words if w)})
+    for g in GUIDES.values():
+        place = g.get("city") or g.get("state") or ""
+        items.append({"t": g["title"], "u": g["slug"] + ".html", "k": "Guide", "p": place,
+                      "x": " ".join([g.get("og_description") or "", " ".join(g.get("keywords") or [])])[:400]})
+    pages = [
+        ("Help me choose a programme", "finder.html", "Answer a few questions and get suggestions"),
+        ("TALAASHH journeys", "journeys.html", "Multi-day heritage journeys and tours"),
+        ("Indian culture for kids", "indian-culture-classes-for-kids-online.html", "Online classes for children abroad, diaspora, NRI"),
+        ("Career courses with @archaeologywala", "archaeologywala.html", "Archaeology careers, counselling, weekend course"),
+        ("About Talaash Heritage", "about.html", "Who we are, team, questions"),
+        ("Our work", "work.html", "Past walks, lectures, clients, schools, colleges"),
+        ("Contact us", "contact.html", "WhatsApp, email, phone, group enquiries, quotation"),
+        ("Shipping, cancellations and refunds", "shipping-returns.html", "Refund, cancel, reschedule, delivery policy"),
+        ("All guides", "learn.html", "Learn history, archaeology, heritage, temples"),
+    ]
+    items += [{"t": t, "u": u, "k": "Page", "p": "", "x": x} for t, u, x in pages if os.path.exists(os.path.join(SITE, u))]
+    out = {"hide": cat.get("hide", []), "kinds": {k: v["kind"] for k, v in cat.get("overrides", {}).items() if v.get("kind")}, "items": items}
+    open(os.path.join(SITE, "data", "search.json"), "w", encoding="utf-8").write(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
+    # The programme page names alone, so guide pages can tell a programme link from a guide link
+    # without downloading the whole catalogue.
+    slugs = sorted(p["page"][:-5] for p in cat["programmes"] if p.get("page"))
+    open(os.path.join(SITE, "data", "programmes.json"), "w", encoding="utf-8").write(json.dumps(slugs, separators=(",", ":")))
+    print(len(items), "entries in data/search.json")
 
 
 if __name__ == "__main__":
