@@ -70,6 +70,8 @@ export const CONFIG = {
     { label: "X", href: "https://x.com/HeritageTalaash" },
     { label: "Google reviews", href: "https://www.google.com/maps/place/?q=place_id:ChIJHbwKo5fhDDkRuh_zAqXnRQM" },
   ],
+  // Shown in the help panel and on programme pages. Update when the count changes.
+  googleRating: { score: "5.0", count: 18 },
   googleReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJHbwKo5fhDDkRuh_zAqXnRQM",
   // Path to your logo file, e.g. "assets/img/logo.png". Empty shows the
   // तलाश wordmark instead.
