@@ -170,10 +170,25 @@ export async function bookingsForOrder(orderId, token) {
   try { return await rpc("career_booking_for_order", { p_order_id: orderId, p_token: token }); } catch { return []; }
 }
 
-export function sessionsHtml(bookings) {
+const sessionRange = (s) => `${day.format(new Date(s.starts_at))}, ${t12(new Date(s.starts_at)).replace(/ [ap]m$/, "")} to ${t12(new Date(s.ends_at))} IST`;
+
+/**
+ * Booked sessions on the order page. Once paid, a button sends the booking to Talaash Heritage on
+ * WhatsApp from the learner's own phone, so the details sit in their chat (free: the learner starts it).
+ */
+export function sessionsHtml(bookings, order = {}) {
   if (!bookings?.length) return "";
-  const range = (s) => `${day.format(new Date(s.starts_at))}, ${t12(new Date(s.starts_at)).replace(/ [ap]m$/, "")} to ${t12(new Date(s.ends_at))} IST`;
+  const meet = (order.items || []).find((i) => i.access_url)?.access_url || "";
   return `<h2>Your sessions</h2>${bookings
-    .map((b) => `<div class="access"><p><strong>${esc(b.product)}</strong><br>${esc(b.topic)}</p><ul>${(b.sessions || []).map((s) => `<li>${esc(range(s))}</li>`).join("")}</ul>${b.status === "held" ? `<p class="small muted">Held for you until payment is confirmed.</p>` : ""}</div>`)
+    .map((b) => {
+      const lines = (b.sessions || []).map(sessionRange);
+      const text = `Hello ${CONFIG.brand}, my career course is booked.\n\nOrder: ${order.order_number || ""}\nCourse: ${b.product}\nTopic: ${b.topic}\n${lines.map((l) => `Session: ${l}`).join("\n")}${meet ? `\nGoogle Meet: ${meet}` : ""}\n\nName: ${order.customer_name || ""}`;
+      const wa = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`;
+      return `<div class="access"><p><strong>${esc(b.product)}</strong><br>${esc(b.topic)}</p><ul>${lines.map((l) => `<li>${esc(l)}</li>`).join("")}</ul>${
+        b.status === "held"
+          ? `<p class="small muted">Held for you until payment is confirmed.</p>`
+          : `<p class="small">A calendar invitation from talaashheritage@gmail.com reaches your email within an hour.</p><p><a class="btn btn-outline btn-small" href="${esc(wa)}" target="_blank" rel="noopener">Get these details on WhatsApp</a></p>`
+      }</div>`;
+    })
     .join("")}`;
 }

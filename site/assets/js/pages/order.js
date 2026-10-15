@@ -119,7 +119,7 @@ function view(o) {
       <p>Order <strong>${esc(o.order_number)}</strong> <span class="status ${s.cls}">${esc(s.label)}</span></p>
       ${nextStep(o)}
       ${o.tracking_number ? `<p>Tracking number: <strong>${esc(o.tracking_number)}</strong></p>` : ""}
-      ${sessionsHtml(o.bookings)}
+      ${sessionsHtml(o.bookings, o)}
       ${
         access.length
           ? `<h2>Your links</h2>${access

@@ -365,15 +365,23 @@ async function Bookings(body) {
       action: "TEMPLATE",
       text: `Career course: ${b.customer || ""} (${b.order_number || ""})`,
       dates: `${f(s.starts_at)}/${f(s.ends_at)}`,
-      details: `${b.product}\nTopic: ${b.topic}\n${b.email || ""} ${b.phone || ""}\nGoogle Meet: https://meet.google.com/nxc-hmqt-fpo`,
+      details: `${b.product}\nTopic: ${b.topic}\n${b.email || ""} ${b.phone || ""}\nGoogle Meet: https://meet.google.com/jpq-mrsa-cgx`,
       ctz: "Asia/Kolkata",
     });
     return `https://calendar.google.com/calendar/render?${q}`;
   };
+  // One tap opens WhatsApp with a confirmation addressed to the learner.
+  const waLearner = (b) => {
+    const digits = String(b.phone || "").replace(/\D/g, "");
+    const to = digits.length === 10 ? `91${digits}` : digits;
+    const first = String(b.customer || "").split(" ")[0];
+    const text = `Hello ${first}, your Talaash Heritage career course is confirmed.\n\nCourse: ${b.product}\nTopic: ${b.topic}\n${b.sessions.map((s) => `Session: ${when(s.starts_at)} IST`).join("\n")}\nGoogle Meet: https://meet.google.com/jpq-mrsa-cgx\n\nYou will also get a calendar invitation by email. See you there.\nPryank, Talaash Heritage`;
+    return `https://wa.me/${to}?text=${encodeURIComponent(text)}`;
+  };
   const synced = r.calendar_synced_at ? when(r.calendar_synced_at) : "never";
   body.innerHTML = `
     <div class="dash-head"><h2>Career course bookings</h2></div>
-    <p class="small muted">Booked on the website for Saturday and Sunday evenings. "Confirmed" means paid. Your Google Calendar was last read on ${esc(synced)}.</p>
+    <p class="small muted">Booked on the website for Saturday and Sunday evenings. "Confirmed" means paid: within an hour each confirmed booking is added to the Talaash Heritage calendar and the learner is emailed an invitation. The calendar was last read on ${esc(synced)}.</p>
     ${
       r.bookings.length
         ? `<div class="table-scroll"><table class="dtable"><thead><tr><th>When</th><th>Learner</th><th>Course and topic</th><th>Status</th><th></th></tr></thead><tbody>
@@ -382,7 +390,7 @@ async function Bookings(body) {
             <td>${esc(b.customer || "")}<br><span class="small muted">${esc(b.email || "")} ${esc(b.phone || "")}</span></td>
             <td>${esc(b.product)}<br><span class="small muted">${esc(b.topic)}</span></td>
             <td>${b.status === "confirmed" ? "Confirmed" : `Awaiting payment (${esc(b.order_number || "")})`}</td>
-            <td>${b.sessions.map((s) => `<a href="${esc(gcal(b, s))}" target="_blank" rel="noopener">Add to calendar</a>`).join("<br>")}</td>
+            <td>${b.phone ? `<a href="${esc(waLearner(b))}" target="_blank" rel="noopener">WhatsApp learner</a><br>` : ""}${b.status === "confirmed" ? "" : b.sessions.map((s) => `<a href="${esc(gcal(b, s))}" target="_blank" rel="noopener">Add to calendar</a>`).join("<br>")}</td>
           </tr>`).join("")}</tbody></table></div>`
         : `<p class="muted">No bookings yet.</p>`
     }`;
