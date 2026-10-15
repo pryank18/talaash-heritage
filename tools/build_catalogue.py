@@ -705,6 +705,13 @@ for slug, photo in CAREER_COURSES.items():
         "image_credit": {"by": m["credit"], "license": m["license"], "license_url": m["license_url"], "page": m["page"]},
     }
 
+# A few bank outcomes name the programme where they mean the place ("Situate Hansi Asigarh Fort
+# Heritage Visit within..."); use the place from the venue instead.
+for p in catalogue["programmes"]:
+    place = (p.get("venue") or "").split(",")[0].strip()
+    if p.get("objectives") and place:
+        p["objectives"] = [re.sub(r"^Situate .+? within its regional", "Situate " + place + " within its regional", o) for o in p["objectives"]]
+
 # Learning outcomes and take-aways written for programmes that had none (content/outcomes.json).
 OUTCOMES = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "outcomes.json"), encoding="utf-8"))
 for p in catalogue["programmes"]:
