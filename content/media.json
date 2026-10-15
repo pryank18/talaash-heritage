@@ -3357,5 +3357,47 @@
   "assessment": "none",
   "width": 4000,
   "height": 3000
+ },
+ "national-museum-new-delhi": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Harappan_gallery_national_museum_india.JPG/960px-Harappan_gallery_national_museum_india.JPG",
+  "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Harappan_gallery_national_museum_india.JPG/500px-Harappan_gallery_national_museum_india.JPG",
+  "alt": "The Harappan gallery of the National Museum, New Delhi, with pottery and pillar bases on display.",
+  "credit": "Nomu420",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Harappan_gallery_national_museum_india.JPG",
+  "file": "Harappan gallery national museum india.JPG",
+  "assessment": "none",
+  "width": 5184,
+  "height": 3456,
+  "portrait": false
+ },
+ "old-delhi-chandni-chowk-heritage-walk": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/View_of_Chandni_Chowk%2C_Old_Delhi%2C_India_-_September_2014.jpg/960px-View_of_Chandni_Chowk%2C_Old_Delhi%2C_India_-_September_2014.jpg",
+  "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/View_of_Chandni_Chowk%2C_Old_Delhi%2C_India_-_September_2014.jpg/500px-View_of_Chandni_Chowk%2C_Old_Delhi%2C_India_-_September_2014.jpg",
+  "alt": "The busy main street of Chandni Chowk in Old Delhi.",
+  "credit": "Rickard Törnblad",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:View_of_Chandni_Chowk,_Old_Delhi,_India_-_September_2014.jpg",
+  "file": "View of Chandni Chowk, Old Delhi, India - September 2014.jpg",
+  "assessment": "none",
+  "width": 4128,
+  "height": 2322,
+  "portrait": false
+ },
+ "agra-day-trip-taj-mahal-agra-fort": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Taj_Mahal%2C_Agra%2C_India.jpg/960px-Taj_Mahal%2C_Agra%2C_India.jpg",
+  "small": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Taj_Mahal%2C_Agra%2C_India.jpg/500px-Taj_Mahal%2C_Agra%2C_India.jpg",
+  "alt": "The south face of the Taj Mahal in Agra, seen across its garden.",
+  "credit": "Yann Forget",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India.jpg",
+  "file": "Taj Mahal, Agra, India.jpg",
+  "assessment": "none",
+  "width": 3840,
+  "height": 2525,
+  "portrait": false
  }
 }

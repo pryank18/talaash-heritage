@@ -122,7 +122,7 @@ COPY = {
  "Mehrauli Archaeological Park": ("Mehrauli Archaeological Park",
    "A guided heritage walk through ten centuries of building, from the Sultanate to the British period",
    "The park holds standing remains from the eleventh century to the nineteenth, among them Rajon ki Baoli, the tomb of Balban and the mosque and tomb of Jamali Kamali. An archaeologist shows how masonry, arches and decoration distinguish one period from the next."),
- "The Qutb complex": ("The Qutb complex",
+ "The Qutb complex": ("Qutb Minar and the Qutb complex",
    "A guided heritage walk through a World Heritage Site, read from its inscriptions and masonry",
    "The Qutb Minar stands beside a mosque built with reused temple pillars, an iron pillar of the Gupta period and the Alai Darwaza of 1311. The walk uses the inscriptions and the joints in the masonry to trace how the complex grew under successive rulers."),
  "Purana Qila": ("Purana Qila",
@@ -131,7 +131,7 @@ COPY = {
  "Hauz Khas": ("Hauz Khas",
    "A guided heritage walk around a fourteenth-century madrasa, tomb and reservoir",
    "Alauddin Khalji had the reservoir dug for his city of Siri. Firoz Shah Tughlaq later built a madrasa along its edge and his own tomb at the corner. The walk explains how the madrasa functioned and how to recognise Tughlaq architecture."),
- "Museum morning with an archaeologist": ("Museum gallery study",
+ "Museum morning with an archaeologist": ("A Delhi museum of your choice, with an archaeologist",
    "A guided museum visit that studies one gallery in depth, object by object",
    "Rather than a rapid tour of a whole museum, this visit concentrates on a single gallery chosen with you. An archaeologist takes the group through about a dozen objects: what each is, how it was made and found, and what it tells us."),
 
@@ -570,6 +570,33 @@ for i, b in enumerate(BANK["programmes"]):
         })
     catalogue["programmes"].append(p)
 
+# Programmes written by hand outside the bank (content/extra_programmes.json): the National Museum,
+# Old Delhi's Chandni Chowk and the Agra day trip. Same fields as the bank, plus "when" and "practical".
+EXTRA = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "extra_programmes.json"), encoding="utf-8"))
+for i, b in enumerate(EXTRA["programmes"]):
+    assert b["slug"] not in {x["slug"] for x in catalogue["programmes"]}, b["slug"]
+    p = bank_programme(200 + i, b)
+    if b.get("when"):
+        p["details"]["When"] = b["when"]
+    for k, v in b.get("practical", {}).items():
+        if v is None:
+            p["details"].pop(k, None)  # a general row that does not fit this programme
+        else:
+            p["details"][k] = v
+    p["details"]["Price"] = p["details"].pop("Price")  # keep the price as the last row
+    catalogue["programmes"].append(p)
+
+# Weekly closing days and prayer times the general wording would get wrong (checked 15 Oct 2026).
+WHEN = {
+    "red-fort-complex": "Tuesday to Sunday. The Red Fort is closed on Mondays. Early morning is best in the warmer months.",
+    "jama-masjid-shahjahanabad": "Any day you choose. The mosque is closed to visitors during prayers, so the walk is timed around them.",
+    "elephanta-shiva-and-rock-cut-architecture": "Tuesday to Sunday. The Elephanta Caves are closed on Mondays. Early morning is best in the warmer months.",
+    "kanheri-caves-monastic-landscapes": "Tuesday to Sunday. The Kanheri Caves and Sanjay Gandhi National Park are closed on Mondays.",
+}
+for p in catalogue["programmes"]:
+    if p["slug"] in WHEN:
+        p["details"]["When"] = WHEN[p["slug"]]
+
 # Private journeys for visitors from abroad (and anyone else), from the international experience book.
 JOURNEYS = [
     ("delhi-through-seven-cities", "Delhi through seven cities", "A three-day private journey through Delhi's historic cities", "Delhi", "3 days",
@@ -671,7 +698,7 @@ def attach(p):
         p["pricing"] = pb
         p["price_paise"] = pb["from_paise"]
         if "Price" in p.get("details", {}):
-            p["details"]["Price"] = pb["card"] + ", including GST"
+            p["details"]["Price"] = (pb["card"][: -len(" included")] + " and GST included") if pb["card"].endswith(", car included") else pb["card"] + ", including GST"
     m = MEDIA.get(p["slug"])
     if m:
         p["image_url"], p["image_small"], p["image_alt"] = m["src"], m["small"], m["alt"]

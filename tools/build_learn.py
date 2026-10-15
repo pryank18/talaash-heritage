@@ -473,6 +473,10 @@ def main():
     print(len(GUIDES), "guides and learn.html written")
 
 
+FLAGSHIP = {"national-museum-new-delhi", "old-delhi-chandni-chowk-heritage-walk", "agra-day-trip-taj-mahal-agra-fort",
+             "red-fort-complex", "humayuns-tomb", "the-qutb-complex", "mehrauli-archaeological-park"}
+
+
 def write_search_index():
     """data/search.json: what the header search looks through. Programmes and guides come from
     the repository; listings that live only in the database (career courses, books) are added
@@ -482,12 +486,17 @@ def write_search_index():
     for p in cat["programmes"]:
         if not p.get("is_active"):
             continue
-        words = [p.get("subtitle") or "", p.get("region") or "", " ".join(t for t in p.get("tags") or [] if t not in ("on-request", "home"))]
-        items.append({"t": p["title"], "u": p["page"], "k": p.get("kind") or "Programme", "p": p.get("venue") or "", "x": " ".join(w for w in words if w)})
+        words = [p.get("subtitle") or "", p.get("region") or "", " ".join(t for t in p.get("tags") or [] if t not in ("on-request", "home")),
+                 " ".join(p.get("highlights") or []), (p.get("description") or "").split("\n\n")[0][:400],
+                 " ".join((p.get("find") or {}).get("topics") or [])]
+        item = {"t": p["title"], "u": p["page"], "k": p.get("kind") or "Programme", "p": p.get("venue") or "", "x": " ".join(w for w in words if w)}
+        if "home" in (p.get("tags") or []) or p["slug"] in FLAGSHIP:
+            item["b"] = 1  # flagship programmes rank first when results are otherwise level
+        items.append(item)
     for g in GUIDES.values():
         place = g.get("city") or g.get("state") or ""
         items.append({"t": g["title"], "u": g["slug"] + ".html", "k": "Guide", "p": place,
-                      "x": " ".join([g.get("og_description") or "", " ".join(g.get("keywords") or [])])[:400]})
+                      "x": " ".join([g.get("og_description") or "", " ".join(g.get("keywords") or []), g.get("summary") or ""])[:700]})
     pages = [
         ("Help me choose a programme", "finder.html", "Answer a few questions and get suggestions"),
         ("TALAASHH journeys", "journeys.html", "Multi-day heritage journeys and tours"),
