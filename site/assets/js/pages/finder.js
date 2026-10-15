@@ -6,6 +6,7 @@ import { CONFIG } from "../config.js";
 import { getVisitor } from "../store.js";
 import { $, $$, esc, kindLabel, productCard } from "../ui.js";
 import { lang, t } from "../i18n.js";
+import { track } from "../track.js";
 
 const WHO = {
   school: "A school class",
@@ -159,6 +160,7 @@ function enquiryText(chosen, a, f) {
 function renderResults(products, a) {
   const { list, relaxed } = suggest(products, a);
   out.hidden = false;
+  track("finder_result", { label: `${list.length} results: ${Object.values(a || {}).flat().filter((x) => typeof x === "string").join(", ")}`.slice(0, 200) });
   if (!list.length) {
     out.innerHTML = `<h2>We will design one for you</h2>
       <p>Nothing in the catalogue matches these answers yet, but most of our work is arranged on request. Tell us what you need and we will propose a programme.</p>

@@ -2,7 +2,8 @@ import { getProduct, getProducts } from "../api.js";
 import { CONFIG } from "../config.js";
 import { addToCart, getCart, MAX_QTY } from "../store.js";
 import { t } from "../i18n.js";
-import { $, esc, formatDuration, formatWhen, isRequest, isSoon, kindLabel, priceHtml, productArt, productHref, requestLinks, stockFlag, toast } from "../ui.js";
+import { track } from "../track.js";
+import { $, esc, formatDuration, formatWhen, isRequest, isSoon, kindLabel, photoCredit, priceHtml, pricingHtml, productArt, productHref, requestLinks, stockFlag, toast } from "../ui.js";
 
 const root = $("#product-root");
 // Static programme pages carry their slug on <body>; the dynamic page takes it from the link.
@@ -10,12 +11,14 @@ const slug = new URLSearchParams(location.search).get("slug") || document.body.d
 
 function specRows(p) {
   const rows = [];
-  if (p.starts_at) rows.push([p.type === "course" ? "Starts" : "When", formatWhen(p.starts_at)]);
-  if (p.duration_minutes) rows.push([p.type === "course" ? "Each session" : "Length", formatDuration(p.duration_minutes)]);
+  const sessions = p.type === "course" || (p.tags || []).includes("career-course");
+  if (p.starts_at) rows.push([sessions ? "Starts" : "When", formatWhen(p.starts_at)]);
+  if (p.duration_minutes) rows.push([sessions ? "Each session" : "Length", formatDuration(p.duration_minutes)]);
   if (p.venue) rows.push(["Where", p.venue]);
   if (p.seller_name) rows.push(["Offered by", [p.seller_name, p.seller_city].filter(Boolean).join(", ")]);
   if (p.speaker) rows.push(["Taught by", p.speaker]);
-  for (const [k, v] of Object.entries(p.details || {})) rows.push([k, v]);
+  // Lower-case keys (gst_pct) are for the site's own use, not for display.
+  for (const [k, v] of Object.entries(p.details || {})) if (!/^[a-z_]+$/.test(k)) rows.push([k, v]);
   if (p.requires_shipping && !isSoon(p)) rows.push(["Delivery", "Shipped within India. Delivery charge is shown in your cart."]);
   return rows.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("");
 }
@@ -27,7 +30,7 @@ function requestPanel(p) {
   const counselling = tags.includes("counselling");
   const travels = ["tour", "field", "trip", "journey"].some((k) => tags.includes(k));
   const how = counselling
-    ? "Share what you would like to discuss and when you are available. We confirm a time and the fee before you commit."
+    ? "Share what you would like to discuss and when you are available. We confirm a time before you pay."
     : travels
     ? "Send your preferred dates, group size and starting point. We prepare a day-by-day itinerary and a quotation, and revise both until they suit you. The suggested group size is a guide, not a requirement."
     : "Send your preferred dates, group size and location. We adapt the length, level and language, and prepare a quotation. The suggested group size is a guide, not a requirement.";
@@ -112,11 +115,12 @@ async function render() {
   root.innerHTML = `
     <p class="crumbs"><a href="shop.html">Everything we offer</a> / ${esc(t(kindLabel(p)))}</p>
     <div class="product">
-      <div class="product-art">${productArt(p, "(min-width: 760px) 50vw, 100vw")}</div>
+      <div><div class="product-art">${productArt(p, "(min-width: 760px) 50vw, 100vw")}</div>${photoCredit(p)}</div>
       <div>
         <h1>${esc(p.title)}</h1>
         ${p.subtitle ? `<p class="product-sub">${esc(p.subtitle)}</p>` : ""}
-        <p class="product-price">${request ? "On request" : soon ? "Coming soon" : priceHtml(p)}</p>
+        <p class="product-price">${request ? esc(p.pricing?.card || "On request") : soon ? "Coming soon" : priceHtml(p)}</p>
+        ${request ? pricingHtml(p) : ""}
         ${flag ? `<p><strong>${esc(flag.text)}</strong></p>` : ""}
         ${
           request
@@ -180,6 +184,7 @@ async function render() {
 
   $("[data-buy]", root).addEventListener("click", () => {
     addToCart(p.id, qty, max);
+    track("add_to_cart", { label: p.slug, value: String(p.price_paise * qty) });
     const now = getCart().find((l) => l.id === p.id)?.qty || qty;
     $("[data-incart]", root).innerHTML = `${now} in your cart. <a href="cart.html">View cart</a>`;
     toast("Added to cart", { href: "cart.html", label: "View cart" });

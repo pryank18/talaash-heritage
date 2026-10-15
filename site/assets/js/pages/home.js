@@ -15,7 +15,7 @@ function featureCard(p) {
     <h2><a href="${href}">${esc(p.title)}</a></h2>
     <ul class="feature-meta">${meta.map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
     <div class="feature-foot">
-      <span class="price">On request</span>
+      <span class="price">${esc(p.pricing?.card || "On request")}</span>
       <a class="btn btn-primary" href="${href}">${esc(requestAction(p))}</a>
     </div>`;
   }

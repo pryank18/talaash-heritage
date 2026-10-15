@@ -23,7 +23,12 @@ export async function pricedCart() {
   const subtotal = buyable.reduce((n, l) => n + l.total, 0);
   const needsShipping = buyable.some((l) => l.p.requires_shipping);
   const shipping = shippingFor(subtotal, needsShipping, rule);
-  return { lines, buyable, subtotal, needsShipping, shipping, total: subtotal + shipping, rule };
+  // GST already inside the price, shown as a break-up (details.gst_pct on the listing, e.g. 18).
+  const gst = buyable.reduce((n, l) => {
+    const pct = Number(l.p.details?.gst_pct) || 0;
+    return n + (pct ? Math.round((l.total * pct) / (100 + pct)) : 0);
+  }, 0);
+  return { lines, buyable, subtotal, needsShipping, shipping, total: subtotal + shipping, gst, rule };
 }
 
 async function render() {
@@ -75,6 +80,7 @@ async function render() {
           <div><dt>Subtotal</dt><dd>${money(cart.subtotal)}</dd></div>
           ${cart.needsShipping ? `<div><dt>Delivery in India</dt><dd>${cart.shipping ? money(cart.shipping) : "Free"}</dd></div>` : ""}
           <div class="total"><dt>Total</dt><dd>${money(cart.total)}</dd></div>
+          ${cart.gst ? `<div class="gst-line"><dt>Includes GST</dt><dd>${money(cart.gst)}</dd></div>` : ""}
         </dl>
         ${freeGap > 0 ? `<p class="small muted">Add ${money(freeGap)} more for free delivery.</p>` : ""}
         ${

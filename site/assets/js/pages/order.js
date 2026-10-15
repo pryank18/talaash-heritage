@@ -1,6 +1,7 @@
 import { CONFIG, isLive } from "../config.js";
 import { getOrder, submitPaymentReference } from "../api.js";
 import { $, esc, money, toast } from "../ui.js";
+import { track } from "../track.js";
 
 const root = $("#order-root");
 const params = new URLSearchParams(location.search);
@@ -101,6 +102,13 @@ function nextStep(o) {
 
 function view(o) {
   const s = STATUS[o.status] || { label: o.status, cls: "" };
+  // Count a sale once, when the order is first seen as paid.
+  if (!o.demo && (o.status === "paid" || o.status === "fulfilled")) {
+    const key = `th_sale_${o.order_number}`;
+    let seen = false;
+    try { seen = Boolean(localStorage.getItem(key)); localStorage.setItem(key, "1"); } catch { /* storage blocked */ }
+    if (!seen) track("purchase", { label: o.order_number, value: String(o.total_paise) });
+  }
   const access = o.items.filter((i) => i.access_url || i.access_notes);
   document.title = `Order ${o.order_number} | Talaash Heritage`;
   root.innerHTML = `

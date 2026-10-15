@@ -3,6 +3,7 @@ plus how the existing database listings are shown (hidden, or enquiry-only).
 Run: python3 build_catalogue.py <path to site/data/catalogue.json>
 """
 import json, os, re, sys, unicodedata
+from pricing import pricing as price_block, inr
 
 LANG = "English, Hindi or both. Other languages on request, through our partners."
 
@@ -658,6 +659,51 @@ for p in catalogue["programmes"]:
     assert p["find"]["topics"] and p["find"]["places"] and p["find"]["lengths"], p["slug"]
     assert set(p["find"]["topics"]) <= TOPICS and set(p["find"]["places"]) <= PLACES and set(p["find"]["lengths"]) <= LENGTHS, p["slug"]
     assert p["audience"] and p["highlights"], p["slug"]
+# Prices (tools/pricing.py) and photographs (content/media.json, licensed
+# photos from Wikimedia Commons with credits) for every programme.
+MEDIA_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "media.json")
+MEDIA = json.load(open(MEDIA_PATH, encoding="utf-8")) if os.path.exists(MEDIA_PATH) else {}
+
+
+def attach(p):
+    pb = price_block(p)
+    if pb:
+        p["pricing"] = pb
+        p["price_paise"] = pb["from_paise"]
+        if "Price" in p.get("details", {}):
+            p["details"]["Price"] = pb["card"] + ", including GST"
+    m = MEDIA.get(p["slug"])
+    if m:
+        p["image_url"], p["image_small"], p["image_alt"] = m["src"], m["small"], m["alt"]
+        p["image_credit"] = {"by": m["credit"], "license": m["license"], "license_url": m["license_url"], "page": m["page"]}
+
+
+for p in catalogue["programmes"]:
+    attach(p)
+for slug, ov in catalogue["overrides"].items():
+    if ov.get("kind") == "One-to-one counselling":
+        ov["slug"] = slug
+        attach(ov)
+        ov.pop("slug")
+        if "Length and fee" in ov.get("details", {}):
+            ov["details"]["Length and fee"] = "About 60 minutes. " + ov["pricing"]["card"] + ", including GST"
+        ov["description"] = ov["description"].replace(" Its length and fee are confirmed when you enquire.", "")
+
+# Dated career courses sold through the cart (rows in the products table):
+# a display name and a credited photograph for each batch.
+CAREER_COURSES = {
+    "careers-in-archaeology-oct-2026": "ba-ma-archaeology-pathways",
+    "careers-history-museums-heritage-nov-2026": "asi-museums-public-heritage-careers",
+    "study-heritage-abroad-nov-2026": "international-study-scholarships",
+    "careers-in-archaeology-dec-2026": "archaeology-after-class-12",
+}
+for slug, photo in CAREER_COURSES.items():
+    m = MEDIA[photo]
+    catalogue["overrides"][slug] = {
+        "kind": "Career course", "image_url": m["src"], "image_small": m["small"], "image_alt": m["alt"],
+        "image_credit": {"by": m["credit"], "license": m["license"], "license_url": m["license_url"], "page": m["page"]},
+    }
+
 out = sys.argv[1]
 with open(out, "w", encoding="utf-8") as fh:
     json.dump(catalogue, fh, ensure_ascii=False, indent=1)
@@ -678,20 +724,56 @@ ACTION = {"Heritage walk": "Enquire about this walk", "Museum visit": "Enquire a
 SIZES = "(min-width: 1000px) 25vw, (min-width: 560px) 33vw, 50vw"
 
 
+def card_art(p, sizes):
+    """Picture markup shared by cards and pages: a credited photograph, or our own illustration."""
+    if p.get("image_small"):
+        return (f'<img src="{h(p["image_small"])}" srcset="{h(p["image_small"])} 500w, {h(p["image_url"])} 960w" sizes="{sizes}" '
+                f'alt="{h(p["image_alt"])}" loading="lazy" width="960" height="720">')
+    if p["image_url"]:
+        small = p["image_url"].replace(".jpg", "-s.jpg")
+        return (f'<img src="{h(small)}" srcset="{h(small)} 560w, {h(p["image_url"])} 1040w" sizes="{sizes}" '
+                f'alt="{h("Illustration for " + p["title"])}" loading="lazy" width="1040" height="780">')
+    return ""
+
+
+def type_line(p):
+    return f'{p["kind"]} · {p["pricing"]["card"]}' if p.get("pricing") else f'{p["kind"]} · On request'
+
+
 def static_card(p):
     href = p["page"]
     meta = " · ".join(x for x in (p["details"].get("Length"), p["venue"]) if x)
-    if p["image_url"]:
-        small = p["image_url"].replace(".jpg", "-s.jpg")
-        art = (f'<a class="card-art" href="{h(href)}" tabindex="-1" aria-hidden="true"><img src="{h(small)}" srcset="{h(small)} 560w, {h(p["image_url"])} 1040w" sizes="{SIZES}" '
-               f'alt="{h("Illustration for " + p["title"])}" loading="lazy" width="1040" height="780"></a>')
-        cls = "card"
+    art = card_art(p, SIZES)
+    if art:
+        art, cls = f'<a class="card-art" href="{h(href)}" tabindex="-1" aria-hidden="true">{art}</a>', "card"
     else:
-        art, cls = "", "card card-text"
+        cls = "card card-text"
     return (f'<article class="{cls}">{art}'
-            f'<p class="card-type">{h(p["kind"])} · On request</p><h3><a href="{h(href)}">{h(p["title"])}</a></h3>'
+            f'<p class="card-type">{h(type_line(p))}</p><h3><a href="{h(href)}">{h(p["title"])}</a></h3>'
             f'<p class="card-meta">{h(meta)}</p><p class="visually-hidden">{h(p["subtitle"])}</p>'
             f'<div class="card-foot card-foot-wide"><a class="btn btn-outline btn-small" href="{h(href)}">{h(ACTION[p["kind"]])}</a></div></article>')
+
+
+def pricing_html(p):
+    """The price table on a programme page. Mirrors pricingHtml() in assets/js/ui.js."""
+    pb = p.get("pricing")
+    if not pb:
+        return ""
+    cells = "".join(
+        f'<li class="ptier{" is-best" if t["best"] else ""}"><p class="ptier-label">{h(t["label"])}</p>'
+        f'<p class="ptier-price">{h(t["amount"])}</p><p class="ptier-unit">{h(t["unit"])}</p>'
+        + (f'<p class="ptier-note">{h(t["note"])}</p>' if t["note"] else "") + "</li>"
+        for t in pb["tiers"])
+    notes = "".join(f"<li>{h(n)}</li>" for n in pb["notes"] + [pb["gst"]])
+    return f'<section class="pricing" aria-label="Prices"><ul class="ptiers ptiers-{len(pb["tiers"])}">{cells}</ul><ul class="pricing-notes">{notes}</ul></section>'
+
+
+def credit_html(p):
+    c = p.get("image_credit")
+    if not c:
+        return ""
+    return (f'<p class="photo-credit">Photo: <a href="{h(c["page"])}" rel="noopener">{h(c["by"])}</a>, '
+            f'<a href="{h(c["license_url"])}" rel="license noopener">{h(c["license"])}</a>, via Wikimedia Commons</p>')
 
 
 site = os.path.dirname(os.path.dirname(os.path.abspath(out)))
@@ -845,6 +927,12 @@ def programme_ld(p, url, image):
                 "inLanguage": ["en", "hi"],
                 "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online" if "Online" in p["venue"] and "venue" not in p["venue"] else "Blended",
                                       "location": p["venue"]}}
+    if p.get("pricing"):
+        main["offers"] = {"@type": "Offer", "price": str(p["pricing"]["from_paise"] // 100), "priceCurrency": "INR",
+                          "description": p["pricing"]["card"] + ", including GST", "availability": "https://schema.org/InStock", "url": url,
+                          "seller": {"@id": SITE_URL + "#org"}}
+        if main["@type"] == "Course":
+            main["offers"]["category"] = "Paid"
     main = {k: v for k, v in main.items() if v}
     crumbs = {"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Everything we offer", "item": SITE_URL + "shop.html"},
@@ -861,15 +949,11 @@ def static_page(p):
             "\nGroup size: \nPreferred dates: \nCity or online: \nAnything you would like changed: ")
     wa = f"https://wa.me/{WA_NUMBER}?text={quote(text, safe='')}"
     mail = f"mailto:talaashheritage@gmail.com?subject={quote('Request: ' + p['title'], safe='')}&body={quote(text, safe='')}"
-    image = SITE_URL + (p["image_url"] or "assets/img/logo-badge.png")
+    image = p["image_url"] if (p["image_url"] or "").startswith("http") else SITE_URL + (p["image_url"] or "assets/img/logo-badge.png")
     url = SITE_URL + p["page"]
     desc = p["subtitle"].rstrip(".") + ". " + p["description"].split("\n\n")[0]
     desc = desc if len(desc) <= 300 else desc[:297].rsplit(" ", 1)[0] + "…"
-    art = ""
-    if p["image_url"]:
-        small = p["image_url"].replace(".jpg", "-s.jpg")
-        art = (f'<img src="{h(small)}" srcset="{h(small)} 560w, {h(p["image_url"])} 1040w" sizes="(min-width: 760px) 50vw, 100vw" '
-               f'alt="{h("Illustration for " + p["title"])}" width="1040" height="780">')
+    art = card_art(p, "(min-width: 760px) 50vw, 100vw")
     spec = "".join(f"<div><dt>{h(k)}</dt><dd>{h(v)}</dd></div>" for k, v in [("Where", p["venue"]), *p["details"].items()] if v)
     prose = "".join(f"<p>{h(x)}</p>" for x in p["description"].split("\n\n"))
     covers = "".join(f"<li>{h(x)}</li>" for x in p["highlights"])
@@ -913,11 +997,12 @@ def static_page(p):
 <div class="wrap" id="product-root">
   <p class="crumbs"><a href="shop.html">Everything we offer</a> / {h(p["kind"])}</p>
   <div class="product">
-    <div class="product-art">{art}</div>
+    <div><div class="product-art">{art}</div>{credit_html(p)}</div>
     <div>
       <h1>{h(p["title"])}</h1>
       <p class="product-sub">{h(p["subtitle"])}</p>
-      <p class="product-price">On request</p>
+      <p class="product-price">{h(p["pricing"]["card"]) if p.get("pricing") else "On request"}</p>
+      {pricing_html(p)}
       <div class="request">
         <p><strong>Arranged for your group.</strong> {h(how)}</p>
         <div class="buy-row">
@@ -953,7 +1038,7 @@ for f in os.listdir(site):
         os.remove(os.path.join(site, f))
         print("removed", f)
 
-pages = ["", "shop.html", "finder.html", "journeys.html", "indian-culture-classes-for-kids-online.html", "work.html", "about.html", "contact.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html"]
+pages = ["", "shop.html", "finder.html", "journeys.html", "indian-culture-classes-for-kids-online.html", "work.html", "about.html", "archaeologywala.html", "contact.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html"]
 urls = [SITE_URL + x for x in pages] + [SITE_URL + p["page"] for p in catalogue["programmes"]] + \
     [f"{SITE_URL}product.html?slug={x}" for x in catalogue["overrides"]]
 assert all("&" not in u and "<" not in u for u in urls)

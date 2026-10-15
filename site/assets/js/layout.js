@@ -6,6 +6,7 @@ import { getProducts } from "./api.js";
 import { $, esc, toast, canBuy } from "./ui.js";
 import { lang, setLang, startTranslating, t } from "./i18n.js";
 import "./magic.js";
+import { initTracking, track } from "./track.js";
 
 // The host serves /about.html as /about, so names are compared with ".html" added back.
 const rawPage = location.pathname.split("/").pop() || "index";
@@ -133,6 +134,7 @@ function renderFooter() {
           <li><a href="shipping-returns.html">Shipping, cancellations and refunds</a></li>
           <li><a href="privacy.html">Privacy notice</a></li>
           <li><a href="terms.html">Terms of sale</a></li>
+          <li><a href="credits.html">Photo credits</a></li>
         </ul>
       </div>
       <div>
@@ -146,10 +148,13 @@ function renderFooter() {
         </ul>
       </div>
     </div>
+    <div class="footer-social" data-no-translate>
+      <span>Follow us:</span>
+      ${(CONFIG.socials || []).map((s) => `<a href="${esc(s.href)}" rel="noopener me" target="_blank">${esc(s.label)}</a>`).join("")}
+      <a href="archaeologywala.html">@archaeologywala</a>
+    </div>
     <div class="footer-legal">
-      © ${year} ${esc(CONFIG.brand)}. <a href="mailto:${esc(CONFIG.contactEmail)}">${esc(CONFIG.contactEmail)}</a>, ${esc(CONFIG.contactPhone)}${
-        CONFIG.instagram ? `, <a href="${esc(CONFIG.instagram)}" rel="noopener">Instagram</a>` : ""
-      }
+      © ${year} ${esc(CONFIG.brand)}. <a href="mailto:${esc(CONFIG.contactEmail)}">${esc(CONFIG.contactEmail)}</a>, ${esc(CONFIG.contactPhone)}
     </div>`;
   $("[data-edit-details]", el)?.addEventListener("click", async () => {
     const saved = await openGate({ edit: Boolean(getVisitor()) });
@@ -203,6 +208,10 @@ function renderAppShell() {
         <li><a href="shop.html?type=physical">Books and prints</a></li>
         <li><a href="indian-culture-classes-for-kids-online.html">Indian culture for kids</a></li>
         <li><a href="journeys.html">TALAASHH journeys</a></li>
+      </ul>
+      <h3>Follow us</h3>
+      <ul class="sheet-social">
+        ${(CONFIG.socials || []).map((s) => `<li><a href="${esc(s.href)}" rel="noopener" target="_blank">${esc(s.label)}</a></li>`).join("")}
       </ul>
       <h3>Learn</h3>
       <ul>
@@ -271,6 +280,7 @@ document.addEventListener("click", async (e) => {
   const p = products.find((x) => x.id === btn.dataset.add);
   if (!p || !canBuy(p)) return;
   addToCart(p.id, 1, p.stock ?? undefined);
+  track("add_to_cart", { label: p.slug, value: String(p.price_paise) });
   toast("Added to cart", { href: "cart.html", label: "View cart" });
 });
 
@@ -289,3 +299,4 @@ renderFooter();
 renderAppShell();
 updateCartCount();
 initGate();
+initTracking();

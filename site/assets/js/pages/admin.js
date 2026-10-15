@@ -7,7 +7,7 @@ import { $, esc, money, typeLabel } from "../ui.js";
 
 const root = $("#admin-root");
 const KEY = "th_admin_pass";
-const TABS = ["Payments", "Orders", "Partners", "Listings", "Payouts", "People", "Account"];
+const TABS = ["Payments", "Orders", "Traffic", "Partners", "Listings", "Payouts", "People", "Account"];
 let pass = "";
 let data = null;
 let tab = "Payments";
@@ -112,7 +112,7 @@ function render() {
     }),
   );
   const body = $("[data-body]", root);
-  ({ Payments, Orders, Partners, Listings, Payouts, People, Account })[tab](body);
+  ({ Payments, Orders, Traffic, Partners, Listings, Payouts, People, Account })[tab](body);
 }
 
 // ---- tabs -------------------------------------------------------------------
@@ -344,6 +344,46 @@ function Payouts(body) {
       act(() => rpc("admin_record_payout", { p_passcode: pass, p_seller_id: b.dataset.pay, p_amount_paise: paise, p_reference: reference, p_note: null }), "Payout recorded.");
     }),
   );
+}
+
+let trafficDays = 30;
+async function Traffic(body) {
+  body.innerHTML = `<p class="muted">Loading…</p>`;
+  let r;
+  try {
+    r = await rpc("admin_traffic", { p_passcode: pass, p_days: trafficDays });
+  } catch (e) {
+    body.innerHTML = `<p class="form-error">${esc(e.message)}</p>`;
+    return;
+  }
+  if (!r?.ok) { body.innerHTML = `<p class="form-error">Could not load the report.</p>`; return; }
+  const t = r.totals;
+  const n = (v) => Number(v || 0).toLocaleString("en-IN");
+  const rate = (a, b) => (b ? `${((100 * a) / b).toFixed(1)}%` : "–");
+  const tile = (label, value, sub = "") => `<div class="stat"><p class="stat-label">${esc(label)}</p><p class="stat-value">${value}</p>${sub ? `<p class="stat-sub">${sub}</p>` : ""}</div>`;
+  const maxViews = Math.max(1, ...r.by_day.map((d) => d.views));
+  body.innerHTML = `
+    <div class="dash-head"><h2>Traffic and enquiries</h2>
+      <label class="small">Period <select data-days>${[7, 30, 90, 365].map((d) => `<option value="${d}" ${d === r.days ? "selected" : ""}>Last ${d} days</option>`).join("")}</select></label></div>
+    <p class="small muted">Counted on this site without cookies. Visitors who block tracking or use Do Not Track are not counted, so real numbers are a little higher.</p>
+    <div class="stats">
+      ${tile("Visitors", n(t.visitors), `${n(t.visits)} visits`)}
+      ${tile("Page views", n(t.page_views))}
+      ${tile("Enquiries", n(t.enquiries), `WhatsApp ${n(t.whatsapp)} · Email ${n(t.email)} · Calls ${n(t.calls)}`)}
+      ${tile("Enquiry rate", rate(t.enquiries, t.visits), "Enquiries per visit")}
+      ${tile("Guide → programme", n(t.guide_to_programme), "Clicks from a guide to a programme")}
+      ${tile("Sales", n(t.purchases), `${money(t.revenue_paise)} · ${n(t.add_to_cart)} added to cart · ${n(t.checkouts)} checkouts`)}
+    </div>
+    <h3>By day</h3>
+    <div class="bars" role="img" aria-label="Page views by day">${r.by_day.map((d) => `<div class="bar" title="${esc(d.day)}: ${d.views} views, ${d.enquiries} enquiries"><span style="height:${Math.round((100 * d.views) / maxViews)}%"></span></div>`).join("") || `<p class="muted">No visits yet.</p>`}</div>
+    <h3>Where visits came from</h3>
+    <div class="table-scroll"><table class="dtable"><thead><tr><th>Source</th><th>Medium</th><th>Campaign</th><th>Visits</th><th>Enquiries</th><th>Rate</th><th>Sales</th></tr></thead>
+    <tbody>${r.sources.map((x) => `<tr><td>${esc(x.source)}</td><td>${esc(x.medium)}</td><td>${esc(x.campaign || "")}</td><td>${n(x.visits)}</td><td>${n(x.enquiries)}</td><td>${rate(x.enquiries, x.visits)}</td><td>${n(x.purchases)}${x.revenue_paise ? ` (${money(x.revenue_paise)})` : ""}</td></tr>`).join("") || `<tr><td colspan="7" class="muted">No visits yet.</td></tr>`}</tbody></table></div>
+    <h3>Pages</h3>
+    <div class="table-scroll"><table class="dtable"><thead><tr><th>Page</th><th>Views</th><th>Enquiries</th><th>Rate</th><th>To programmes</th></tr></thead>
+    <tbody>${r.pages.map((x) => `<tr><td><a href="${esc(x.path.replace(/^\//, ""))}">${esc(x.path)}</a></td><td>${n(x.views)}</td><td>${n(x.enquiries)}</td><td>${rate(x.enquiries, x.views)}</td><td>${n(x.to_programmes)}</td></tr>`).join("") || `<tr><td colspan="5" class="muted">No visits yet.</td></tr>`}</tbody></table></div>
+    <p class="small muted">Devices: ${Object.entries(r.devices || {}).map(([k, v]) => `${esc(k)} ${n(v)}`).join(" · ") || "none yet"}</p>`;
+  $("[data-days]", body).addEventListener("change", (e) => { trafficDays = Number(e.target.value); Traffic(body); });
 }
 
 function People(body) {
