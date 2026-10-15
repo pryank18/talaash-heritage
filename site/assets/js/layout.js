@@ -8,6 +8,8 @@ import { lang, setLang, startTranslating, t } from "./i18n.js";
 import "./magic.js";
 import { initTracking, track } from "./track.js";
 import { initHelp } from "./help.js";
+import { initSearch, searchButton } from "./search.js";
+import { initShare } from "./share.js";
 
 // The host serves /about.html as /about, so names are compared with ".html" added back.
 const rawPage = location.pathname.split("/").pop() || "index";
@@ -43,7 +45,7 @@ function renderHeader() {
     ${lang === "hi" && isProgramme ? `<div class="lang-notice" lang="hi" data-no-translate>कार्यक्रम का विस्तृत विवरण अभी अंग्रेज़ी में है। हिन्दी में जानकारी के लिए आप हमें WhatsApp पर लिख सकते हैं।</div>` : ""}
     <div class="site-header">
       <a class="wordmark" href="index.html" aria-label="${esc(CONFIG.brand)} home">
-        <img class="wordmark-badge" src="${esc(CONFIG.logo || "assets/img/logo-192.png")}" alt="" width="48" height="48">
+        <img class="wordmark-badge" src="${esc(CONFIG.logo || "assets/img/logo-192.webp")}" alt="" width="48" height="48">
         <span class="wordmark-text"><span class="wordmark-latin">${esc(CONFIG.brand)}</span><span class="wordmark-tag">lost in the mists of time</span></span>
       </a>
       <nav class="site-nav" aria-label="Main">
@@ -55,6 +57,7 @@ function renderHeader() {
         ${navLink("learn.html", "Learn")}
         ${navLink("about.html", "About")}
       </nav>
+      ${page === "admin.html" ? "" : searchButton()}
       <button type="button" class="lang-quick" data-no-translate data-lang-set="${lang === "hi" ? "en" : "hi"}" lang="${lang === "hi" ? "en" : "hi"}">${lang === "hi" ? "English" : "हिन्दी"}</button>
       <button class="theme-toggle" type="button" data-theme-toggle>
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
@@ -93,7 +96,7 @@ function renderFooter() {
     <div class="scale-bar" aria-hidden="true"></div>
     <div class="site-footer">
       <div>
-        <img class="footer-badge" src="assets/img/logo-192.png" alt="" width="72" height="72">
+        <img class="footer-badge" src="assets/img/logo-192.webp" alt="" width="72" height="72">
         <p class="footer-tag">lost in the mists of time</p>
         <p>Team for Archaeology, Linguistics, Anthropology, Arts, Sanskrit, History and Heritage.</p>
       </div>
@@ -293,6 +296,7 @@ window.addEventListener("storage", updateCartCount);
 startTranslating();
 renderHeader();
 initThemeToggle();
+if (page !== "admin.html") initSearch();
 document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-lang-set]");
   if (b && b.dataset.langSet !== lang) setLang(b.dataset.langSet);
@@ -303,3 +307,4 @@ updateCartCount();
 initGate();
 initTracking();
 initHelp();
+if (page !== "admin.html" && page !== "seller.html") initShare();

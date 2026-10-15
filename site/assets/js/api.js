@@ -112,6 +112,16 @@ async function withCatalogue(listings) {
   return [...kept, ...(cat.programmes || []).filter((p) => p.is_active)].sort((a, b) => a.sort_order - b.sort_order);
 }
 
+/** Titles of the listings kept in the database, for the header search. Empty if the database is unreachable. */
+export async function getListingTitles() {
+  if (!isLive()) return [];
+  try {
+    return (await withTimeout(request("/rest/v1/products?select=slug,title,subtitle,type,tags&is_active=eq.true"), 6000)) || [];
+  } catch {
+    return [];
+  }
+}
+
 export async function getProduct(slug) {
   const all = await getProducts({ includeUnlisted: true });
   return all.find((p) => p.slug === slug) || null;

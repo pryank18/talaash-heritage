@@ -98,8 +98,8 @@ export function initTracking() {
   document.addEventListener("click", onClick, { capture: true });
   // Programme pages are known from the catalogue, so guide clicks to them can be told apart from guide-to-guide links.
   if (document.body.classList.contains("guide-page")) {
-    fetch("data/catalogue.json").then((r) => r.json()).then((c) => {
-      window.__thProgrammes = new Set(c.programmes.map((p) => p.slug));
+    fetch("data/programmes.json").then((r) => r.json()).then((slugs) => {
+      window.__thProgrammes = new Set(slugs);
     }).catch(() => {});
   }
   if (isProgrammePage()) document.body.dataset.tracked = "programme";

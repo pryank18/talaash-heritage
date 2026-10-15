@@ -1,3 +1,4 @@
+import { shareButton } from "../share.js";
 import { getProduct, getProducts } from "../api.js";
 import { CONFIG } from "../config.js";
 import { addToCart, getCart, MAX_QTY } from "../store.js";
@@ -166,6 +167,7 @@ async function render() {
       <div>
         <h1>${esc(p.title)}</h1>
         ${p.subtitle ? `<p class="product-sub">${esc(p.subtitle)}</p>` : ""}
+        <div class="share-row">${shareButton()}</div>
         <p class="product-price">${request ? esc(p.pricing?.card || "On request") : soon ? "Coming soon" : priceHtml(p)}</p>
         ${request ? pricingHtml(p) : ""}
         ${flag ? `<p><strong>${esc(flag.text)}</strong></p>` : ""}

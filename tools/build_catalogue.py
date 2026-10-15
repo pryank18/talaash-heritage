@@ -745,6 +745,17 @@ def fit_attr(p):
     return ' class="fit-contain"' if p.get("image_fit") == "contain" else ""
 
 
+def meta_description(text, limit=158):
+    """Search results show about 155 to 160 characters; end on a full sentence where one fits."""
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    stop = cut.rfind(". ")
+    if stop >= 90:
+        return cut[:stop + 1]
+    return cut[:limit - 1].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+
+
 def card_art(p, sizes):
     """Picture markup shared by cards and pages: a credited photograph, or our own illustration."""
     if p.get("image_small"):
@@ -973,7 +984,7 @@ def static_page(p):
     image = p["image_url"] if (p["image_url"] or "").startswith("http") else SITE_URL + (p["image_url"] or "assets/img/logo-badge.png")
     url = SITE_URL + p["page"]
     desc = p["subtitle"].rstrip(".") + ". " + p["description"].split("\n\n")[0]
-    desc = desc if len(desc) <= 300 else desc[:297].rsplit(" ", 1)[0] + "…"
+    desc = meta_description(desc)
     art = card_art(p, "(min-width: 760px) 50vw, 100vw")
     spec = "".join(f"<div><dt>{h(k)}</dt><dd>{h(v)}</dd></div>" for k, v in [("Where", p["venue"]), *p["details"].items()] if v)
     prose = "".join(f"<p>{h(x)}</p>" for x in p["description"].split("\n\n"))
