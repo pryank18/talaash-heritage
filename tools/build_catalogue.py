@@ -692,13 +692,11 @@ for slug, ov in catalogue["overrides"].items():
             ov["details"]["Length and fee"] = "About 60 minutes. " + ov["pricing"]["card"] + ", including GST"
         ov["description"] = ov["description"].replace(" Its length and fee are confirmed when you enquire.", "")
 
-# Dated career courses sold through the cart (rows in the products table):
-# a display name and a credited photograph for each batch.
+# Career courses sold through the cart and booked for a weekend evening (rows in the products table):
+# a display name and a credited photograph for each.
 CAREER_COURSES = {
-    "careers-in-archaeology-oct-2026": "ba-ma-archaeology-pathways",
-    "careers-history-museums-heritage-nov-2026": "asi-museums-public-heritage-careers",
-    "study-heritage-abroad-nov-2026": "international-study-scholarships",
-    "careers-in-archaeology-dec-2026": "archaeology-after-class-12",
+    "career-course-weekend": "ba-ma-archaeology-pathways",
+    "career-course-one-evening": "asi-museums-public-heritage-careers",
 }
 for slug, photo in CAREER_COURSES.items():
     m = MEDIA[photo]
@@ -706,6 +704,15 @@ for slug, photo in CAREER_COURSES.items():
         "kind": "Career course", "image_url": m["src"], "image_small": m["small"], "image_alt": m["alt"],
         "image_credit": {"by": m["credit"], "license": m["license"], "license_url": m["license_url"], "page": m["page"]},
     }
+
+# Learning outcomes and take-aways written for programmes that had none (content/outcomes.json).
+OUTCOMES = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "outcomes.json"), encoding="utf-8"))
+for p in catalogue["programmes"]:
+    extra = OUTCOMES.get(p["slug"], {})
+    if extra.get("objectives") and not p.get("objectives"):
+        p["objectives"] = extra["objectives"]
+    if extra.get("takeaway") and not p.get("takeaway"):
+        p["takeaway"] = extra["takeaway"]
 
 out = sys.argv[1]
 with open(out, "w", encoding="utf-8") as fh:

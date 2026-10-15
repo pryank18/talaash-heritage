@@ -3,7 +3,7 @@ import { CONFIG, isLive } from "./config.js";
 import { cartCount, getVisitor, addToCart } from "./store.js";
 import { initGate, openGate } from "./gate.js";
 import { getProducts } from "./api.js";
-import { $, esc, toast, canBuy } from "./ui.js";
+import { $, esc, toast, canBuy, needsSlot, productHref } from "./ui.js";
 import { lang, setLang, startTranslating, t } from "./i18n.js";
 import "./magic.js";
 import { initTracking, track } from "./track.js";
@@ -280,6 +280,7 @@ document.addEventListener("click", async (e) => {
   const products = await getProducts();
   const p = products.find((x) => x.id === btn.dataset.add);
   if (!p || !canBuy(p)) return;
+  if (needsSlot(p)) { location.href = productHref(p); return; }
   addToCart(p.id, 1, p.stock ?? undefined);
   track("add_to_cart", { label: p.slug, value: String(p.price_paise) });
   toast("Added to cart", { href: "cart.html", label: "View cart" });

@@ -1216,3 +1216,20 @@ body.has-help .toast { bottom: 5rem; }
 
 /* Tall photographs (a minaret, a manuscript folio) are shown whole, not cropped through the middle. */
 .card-art img.fit-contain, .product-art img.fit-contain, .guide-hero img.fit-contain { object-fit: contain; background: var(--plaster-deep); }
+
+/* Career course slot picker (booking.js) */
+.booking { margin: 1rem 0 0.5rem; }
+.booking fieldset { border: 0; padding: 0; margin: 0 0 1.1rem; min-width: 0; }
+.booking legend { font-weight: 600; margin-bottom: 0.5rem; padding: 0; }
+.booking-opt { display: flex; gap: 0.55rem; align-items: flex-start; padding: 0.35rem 0; cursor: pointer; }
+.booking-opt input { margin-top: 0.3rem; accent-color: var(--haldi-dark); }
+.booking-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.booking-chip {
+  font: inherit; font-size: var(--step--1); padding: 0.55rem 0.85rem; border-radius: 6px; cursor: pointer;
+  background: var(--paper); color: var(--ink); border: 1px solid var(--line);
+}
+.booking-chip:hover { border-color: var(--ink-soft); }
+.booking-chip.is-on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.booking-chip:focus-visible { outline: 3px solid var(--haldi); outline-offset: 2px; }
+.booking-sum { background: var(--plaster-deep); border-radius: 6px; padding: 0.7rem 0.9rem; margin: 0.4rem 0 0.8rem; }
+.booking .form-error:empty { display: none; }

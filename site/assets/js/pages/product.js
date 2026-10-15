@@ -3,6 +3,7 @@ import { CONFIG } from "../config.js";
 import { addToCart, getCart, MAX_QTY } from "../store.js";
 import { t } from "../i18n.js";
 import { track } from "../track.js";
+import { isBookable, mountBooking } from "../booking.js";
 import { $, esc, formatDuration, formatWhen, isRequest, isSoon, kindLabel, photoCredit, priceHtml, pricingHtml, productArt, productHref, requestLinks, stockFlag, toast } from "../ui.js";
 
 const root = $("#product-root");
@@ -177,6 +178,8 @@ async function render() {
             ? `<p class="note">Bookings open soon. This listing is an example while the site is being set up.</p><a class="btn btn-outline" href="contact.html">Contact us</a>`
             : flag?.soldOut
             ? `<p class="muted">Write to us and we will tell you when it is back.</p><a class="btn btn-outline" href="contact.html">Contact us</a>`
+            : isBookable(p)
+            ? `<div data-booking></div>${assuranceHtml(p)}`
             : `<div class="buy-row">
                  <span class="small muted">${unit}</span>
                  <div class="qty" role="group" aria-label="${unit}">
@@ -216,6 +219,15 @@ async function render() {
   }
 
   if (request || soon || flag?.soldOut || CONFIG.sampleNotice) return;
+  if (isBookable(p)) {
+    mountBooking($("[data-booking]", root), p, () => {
+      const line = getCart().find((l) => l.id === p.id);
+      if (!line) addToCart(p.id, 1, 1);
+      track("add_to_cart", { label: p.slug, value: String(p.price_paise) });
+      location.href = "checkout.html";
+    });
+    return;
+  }
   let qty = 1;
   const out = $("[data-qty]", root);
   const dec = $("[data-dec]", root);
