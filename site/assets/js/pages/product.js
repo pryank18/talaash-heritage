@@ -5,7 +5,7 @@ import { addToCart, getCart, MAX_QTY } from "../store.js";
 import { t } from "../i18n.js";
 import { track } from "../track.js";
 import { isBookable, mountBooking } from "../booking.js";
-import { $, esc, formatDuration, formatWhen, isRequest, isSoon, kindLabel, photoCredit, priceHtml, pricingHtml, productArt, productHref, requestLinks, stockFlag, toast } from "../ui.js";
+import { $, esc, formatDuration, formatWhen, groupTotal, isRequest, isSoon, kindLabel, money, photoCredit, priceHtml, pricingHtml, productArt, productHref, requestLinks, stockFlag, toast } from "../ui.js";
 
 const root = $("#product-root");
 // Static programme pages carry their slug on <body>; the dynamic page takes it from the link.
@@ -45,8 +45,8 @@ function requestPanel(p) {
   return `<div class="request">
       <p><strong>${counselling ? "Scheduled at a time that suits you." : "Arranged for your group."}</strong> ${how}</p>
       <div class="buy-row">
-        <a class="btn btn-primary" href="${esc(links.whatsapp)}" target="_blank" rel="noopener">${counselling ? "Request a session on WhatsApp" : "Request on WhatsApp"}</a>
-        <a class="btn btn-outline" href="${esc(links.email)}">Request by email</a>
+        <a class="btn btn-primary" href="${esc(links.whatsapp)}" target="_blank" rel="noopener" data-req="whatsapp">${counselling ? "Request a session on WhatsApp" : "Request on WhatsApp"}</a>
+        <a class="btn btn-outline" href="${esc(links.email)}" data-req="email">Request by email</a>
       </div>
       <p class="small muted">${counselling ? "No payment is taken until you confirm the session." : "No payment is taken until you approve the plan."} <a href="about.html#questions">Common questions</a></p>
       ${googleLine()}
@@ -130,6 +130,9 @@ function soonPanel(p) {
     </div>`;
 }
 
+// The programme on this page, for the price calculator below.
+let current = null;
+
 async function render() {
   let p = null;
   try {
@@ -143,6 +146,7 @@ async function render() {
     return;
   }
 
+  current = p;
   document.title = `${p.title} | Talaash Heritage`;
   // The dynamic page points search engines at the programme's static copy.
   if (p.page && !document.querySelector('link[rel="canonical"]')) {
@@ -214,8 +218,8 @@ async function render() {
     const bar = document.createElement("div");
     bar.className = "app-action";
     bar.innerHTML = `
-      <a class="btn btn-primary" href="${esc(links.whatsapp)}" target="_blank" rel="noopener">${soon ? "Notify me on WhatsApp" : counselling ? "Request a session on WhatsApp" : "Request on WhatsApp"}</a>
-      <a class="btn btn-outline" href="${esc(links.email)}">Email</a>`;
+      <a class="btn btn-primary" href="${esc(links.whatsapp)}" target="_blank" rel="noopener"${soon ? "" : ' data-req="whatsapp"'}>${soon ? "Notify me on WhatsApp" : counselling ? "Request a session on WhatsApp" : "Request on WhatsApp"}</a>
+      <a class="btn btn-outline" href="${esc(links.email)}"${soon ? "" : ' data-req="email"'}>Email</a>`;
     document.querySelector(".app-action")?.remove();
     document.body.append(bar);
     document.body.classList.add("has-action");
@@ -254,3 +258,23 @@ async function render() {
 }
 
 render();
+
+// Price calculator on programmes priced by group size: shows the total and carries the
+// group size into the WhatsApp and email request.
+document.addEventListener("change", (e) => {
+  const sel = e.target.closest("[data-pcalc]");
+  if (!sel || !current) return;
+  const bands = current.pricing?.tiers?.find((t) => t.bands)?.bands;
+  if (!bands) return;
+  const n = Number(sel.value);
+  const r = groupTotal(bands, n);
+  sel.closest(".pcalc").querySelector(".pcalc-out").textContent = r.text;
+  const max = bands[bands.length - 1].to;
+  const hi = document.documentElement.getAttribute("data-lang") === "hi";
+  const group = n > max
+    ? (hi ? `${max} से अधिक` : `more than ${max}`)
+    : hi ? `${n} (निजी, कुल ${money(r.total * 100)})` : `${n} (private, ${money(r.total * 100)} in total)`;
+  const links = requestLinks(current, group);
+  document.querySelectorAll('[data-req="whatsapp"]').forEach((a) => (a.href = links.whatsapp));
+  document.querySelectorAll('[data-req="email"]').forEach((a) => (a.href = links.email));
+});

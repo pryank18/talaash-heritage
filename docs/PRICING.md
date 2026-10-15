@@ -182,6 +182,8 @@ Research date: 15 October 2026. All recommended prices are in INR and **include 
 
 ## (c) Recommended Talaash price points (INR, GST-inclusive)
 
+**Change of 15 October 2026.** Private walks, museum visits, workshops and one- or two-day site study tours are priced per person by group size, with no minimum (the bands are in `PRIVATE_BANDS` in `tools/pricing.py`). Cards read "₹1,800 per person for 2, ₹900 each for 10 or more"; programme pages have a group-size calculator, and the size chosen goes into the WhatsApp request. One-day site study tours: 1 person ₹5,000, 2 people ₹3,000 each, 3–4 ₹2,000, 5–9 ₹1,600, 10–25 ₹1,500 (doubled for two days). Day trips stay priced per vehicle and read "₹16,000 for 1 to 4 people, car included". No tier is highlighted any more.
+
 Positioning: Talaash guides are archaeologists and historians. That supports a price above volunteer and government walks (₹500–1,050) and the ₹600–850 social-media walks. It does not support the foreign-tourist rates (₹3,500–10,000 per person). Prices are round numbers ending in 0 or 00, following the evidence on round prices for premium, feeling-led purchases (section d).
 
 ### Heritage walk (2–2.5 h; monument tickets extra)
@@ -189,8 +191,8 @@ Positioning: Talaash guides are archaeologists and historians. That supports a p
 |---|---|---|
 | Public walk, per person | **₹900** | Sits between Delhi Tourism (₹1,050 incl. GST) and Sabhyata (₹850). Below Khaki Mumbai (₹999) and well below the ₹3,500–4,000 tourist walks. |
 | Public walk, student (with ID) | **₹500** | A Delhi peer gives students half price (₹700 → ₹350). |
-| Private group, up to 10 guests | **₹9,000 per group** | Equals ₹900 per head at 10, so a private group never pays less per head than a public seat. Two guests pay ₹4,500 each, which is in line with Delhi Walks (₹3,500) and Food Tour in Delhi (₹4,000) private-style per-person rates. |
-| Each extra person, 11 to 25 | **₹700** | Marginal cost is low, and this rewards larger groups. Above 25, add a second guide at +₹6,000. |
+| Private, any group size (changed 15 Oct) | **1 person ₹3,000; 2 people ₹1,800 each; 3–4 ₹1,250 each; 5–9 ₹1,000 each; 10–25 ₹900 each**. No minimum. | Pryank did not want a minimum, which reads as a barrier. Per person by group size is how Viator and GetYourGuide sell private walks, so buyers know it. Two guests pay ₹3,600 in total, below Delhi Walks (₹3,500 each) and Food Tour in Delhi (₹4,000 each). A group of 10 still pays ₹9,000. Adding a person never lowers the total (checked in tools/pricing.py). |
+| More than 25 | Quoted | Above 25, add a second guide. |
 | School group (per-student equivalent) | **₹450 per student**, minimum 30 (₹13,500); 1 teacher free per 10 students | Delhi Tourism charges ₹500 per person for groups of 25+. Schools pay ₹1,200–1,500 for a full day that includes an AC coach and meals, so ₹450 for walk content alone fits school budgets. |
 | Corporate group | **₹1,500 per person**, minimum ₹25,000; includes tea and a short Q&A | Within the half-day corporate band of ₹800–2,000 per person. |
 
@@ -198,7 +200,7 @@ Positioning: Talaash guides are archaeologists and historians. That supports a p
 | Product | Price | Reasoning |
 |---|---|---|
 | Public, per person | **₹800** | A little below the walk price because it is shorter. The National Museum's free volunteer tour sets the floor, so the scholar-led depth has to justify the fee. |
-| Private group up to 10 | **₹8,000 per group**; extra person ₹600 | GetYourGuide's private museum tour starts at US$17 per person, including car and entry. |
+| Private, any group size (changed 15 Oct) | **1 person ₹2,500; 2 people ₹1,500 each; 3–4 ₹1,000 each; 5–9 ₹850 each; 10–25 ₹800 each** | GetYourGuide's private museum tour starts at US$17 per person, including car and entry. A group of 10 pays ₹8,000, as before. |
 | School | **₹400 per student**, minimum 30 | Consistent with the walk price. |
 | Corporate | **₹1,500 per person**, minimum ₹25,000 | Same as walks. |
 
@@ -229,7 +231,7 @@ Positioning: Talaash guides are archaeologists and historians. That supports a p
 | Product | Price | Reasoning |
 |---|---|---|
 | Public, per person | **₹1,500** | Same as the Naveen Chhaya and Chalkboard pottery workshops (₹1,499–1,500). |
-| Private group up to 10 | **₹12,000 per group**; extra person ₹1,000 | |
+| Private, any group size (changed 15 Oct) | **1 person ₹3,500; 2 people ₹2,200 each; 3–4 ₹1,600 each; 5–9 ₹1,300 each; 10–25 ₹1,200 each** | A group of 10 pays ₹12,000, as before. |
 | School | **₹700 per student**, minimum 25 (₹17,500); materials included | In the middle of the verified Delhi NCR school-workshop band (₹600–800, minimum 20). |
 | Corporate | **₹2,000 per person**, minimum ₹30,000 | Top of the half-day corporate band. |
 

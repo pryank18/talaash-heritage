@@ -786,15 +786,46 @@ def static_card(p):
             f'<div class="card-foot card-foot-wide"><a class="btn btn-outline btn-small" href="{h(href)}">{h(ACTION[p["kind"]])}</a></div></article>')
 
 
+def band_label(b):
+    """Mirrors bandLabel() in assets/js/ui.js."""
+    if b["from"] == b["to"]:
+        return f'{b["from"]} {"person" if b["from"] == 1 else "people"}', inr(b["each"]) + ("" if b["from"] == 1 else " each")
+    return f'{b["from"]} to {b["to"]} people', inr(b["each"]) + " each"
+
+
+def bands_html(bands):
+    if not bands:
+        return ""
+    rows = "".join(f"<li><span>{h(a)}</span><span>{h(b)}</span></li>" for a, b in map(band_label, bands))
+    return f'<ul class="ptier-bands">{rows}</ul>'
+
+
+def calc_html(bands):
+    """The group-size picker inside the private price. Mirrors calcHtml() in assets/js/ui.js."""
+    if not bands:
+        return ""
+    opts = "".join(f'<option value="{n}"{" selected" if n == 2 else ""}>{n}</option>' for n in range(1, 26)) + '<option value="26">More than 25</option>'
+    return (f'<div class="pcalc"><label for="pcalc-size">How many people?</label> <select id="pcalc-size" data-pcalc>{opts}</select>'
+            f'<p class="pcalc-out" aria-live="polite">{h(group_total(bands, 2))}</p></div>')
+
+
+def group_total(bands, n):
+    """Mirrors groupTotal() in assets/js/ui.js."""
+    each = next(b["each"] for b in bands if b["from"] <= n <= b["to"])
+    total = each * n
+    return f"1 person: {inr(total)} in total" if n == 1 else f"{n} people: {inr(total)} in total ({inr(each)} each)"
+
+
 def pricing_html(p):
     """The price table on a programme page. Mirrors pricingHtml() in assets/js/ui.js."""
     pb = p.get("pricing")
     if not pb:
         return ""
     cells = "".join(
-        f'<li class="ptier{" is-best" if t["best"] else ""}"><p class="ptier-label">{h(t["label"])}</p>'
+        f'<li class="ptier{" ptier-wide" if t.get("bands") else ""}"><p class="ptier-label">{h(t["label"])}</p>'
         f'<p class="ptier-price">{h(t["amount"])}</p><p class="ptier-unit">{h(t["unit"])}</p>'
-        + (f'<p class="ptier-note">{h(t["note"])}</p>' if t["note"] else "") + "</li>"
+        + bands_html(t.get("bands"))
+        + (f'<p class="ptier-note">{h(t["note"])}</p>' if t["note"] else "") + calc_html(t.get("bands")) + "</li>"
         for t in pb["tiers"])
     notes = "".join(f"<li>{h(n)}</li>" for n in pb["notes"] + [pb["gst"]])
     return f'<section class="pricing" aria-label="Prices"><ul class="ptiers ptiers-{len(pb["tiers"])}">{cells}</ul><ul class="pricing-notes">{notes}</ul></section>'

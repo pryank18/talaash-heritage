@@ -486,6 +486,7 @@ TEXT = {
         "<strong>भुगतान से पहले कोई प्रश्न?</strong> हम WhatsApp, ईमेल या फ़ोन पर उत्तर देते हैं।",
     "Ask on WhatsApp": "WhatsApp पर पूछें",
     "Share": "साझा करें",
+    "How many people?": "कितने लोग?",
     "Search": "खोजें",
     "Email us": "हमें ईमेल करें",
     "Call +91 7397829282": "फ़ोन करें: +91 7397829282",
@@ -791,7 +792,13 @@ const PER = { group: "प्रति समूह", session: "प्रति �
 // Prices on cards: "From ₹9,000 per group" -> "₹9,000 से, प्रति समूह"
 const price = (s) => {
   const m = s !== undefined && s.match(/^From (₹[\d,]+) per (group|session|learner|person|participant)$/);
-  return m ? `${m[1]} से, ${PER[m[2]]}` : undefined;
+  if (m) return `${m[1]} से, ${PER[m[2]]}`;
+  // Private prices by group size: "₹1,800 per person for 2, ₹900 each for 10 or more"
+  const g = s !== undefined && s.match(/^(₹[\d,]+) per person for 2, (₹[\d,]+) each for 10 or more$/);
+  if (g) return `2 लोगों के लिए ${g[1]} प्रति व्यक्ति, 10 या अधिक के लिए ${g[2]} प्रति व्यक्ति`;
+  // Day trips: "₹16,000 for 1 to 4 people, car included"
+  const c = s !== undefined && s.match(/^(₹[\d,]+) for 1 to 4 people, car included$/);
+  return c ? `1 से 4 लोगों के लिए ${c[1]}, गाड़ी सहित` : undefined;
 };
 const whole = (s) => (s !== undefined && text[s] !== undefined ? text[s] : price(s));
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
