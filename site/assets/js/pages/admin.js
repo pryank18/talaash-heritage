@@ -7,7 +7,7 @@ import { $, esc, money, typeLabel } from "../ui.js";
 
 const root = $("#admin-root");
 const KEY = "th_admin_pass";
-const TABS = ["Payments", "Orders", "Traffic", "Partners", "Listings", "Payouts", "People", "Account"];
+const TABS = ["Payments", "Orders", "Bookings", "Traffic", "Partners", "Listings", "Payouts", "People", "Account"];
 let pass = "";
 let data = null;
 let tab = "Payments";
@@ -112,7 +112,7 @@ function render() {
     }),
   );
   const body = $("[data-body]", root);
-  ({ Payments, Orders, Traffic, Partners, Listings, Payouts, People, Account })[tab](body);
+  ({ Payments, Orders, Bookings, Traffic, Partners, Listings, Payouts, People, Account })[tab](body);
 }
 
 // ---- tabs -------------------------------------------------------------------
@@ -344,6 +344,48 @@ function Payouts(body) {
       act(() => rpc("admin_record_payout", { p_passcode: pass, p_seller_id: b.dataset.pay, p_amount_paise: paise, p_reference: reference, p_note: null }), "Payout recorded.");
     }),
   );
+}
+
+// Career courses booked on the website. "Add to calendar" opens Google Calendar with the
+// session filled in, marked busy, so that time stops being offered once the calendar syncs.
+async function Bookings(body) {
+  body.innerHTML = `<p class="muted">Loading…</p>`;
+  let r;
+  try {
+    r = await rpc("admin_career_bookings", { p_passcode: pass });
+  } catch (e) {
+    body.innerHTML = `<p class="form-error">${esc(e.message)}</p>`;
+    return;
+  }
+  if (!r?.ok) { body.innerHTML = `<p class="form-error">Could not load bookings.</p>`; return; }
+  const when = (iso) => new Date(iso).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
+  const gcal = (b, s) => {
+    const f = (iso) => new Date(iso).toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+    const q = new URLSearchParams({
+      action: "TEMPLATE",
+      text: `Career course: ${b.customer || ""} (${b.order_number || ""})`,
+      dates: `${f(s.starts_at)}/${f(s.ends_at)}`,
+      details: `${b.product}\nTopic: ${b.topic}\n${b.email || ""} ${b.phone || ""}\nGoogle Meet: https://meet.google.com/nxc-hmqt-fpo`,
+      ctz: "Asia/Kolkata",
+    });
+    return `https://calendar.google.com/calendar/render?${q}`;
+  };
+  const synced = r.calendar_synced_at ? when(r.calendar_synced_at) : "never";
+  body.innerHTML = `
+    <div class="dash-head"><h2>Career course bookings</h2></div>
+    <p class="small muted">Booked on the website for Saturday and Sunday evenings. "Confirmed" means paid. Your Google Calendar was last read on ${esc(synced)}.</p>
+    ${
+      r.bookings.length
+        ? `<div class="table-scroll"><table class="dtable"><thead><tr><th>When</th><th>Learner</th><th>Course and topic</th><th>Status</th><th></th></tr></thead><tbody>
+          ${r.bookings.map((b) => `<tr>
+            <td>${b.sessions.map((s) => esc(when(s.starts_at))).join("<br>")}</td>
+            <td>${esc(b.customer || "")}<br><span class="small muted">${esc(b.email || "")} ${esc(b.phone || "")}</span></td>
+            <td>${esc(b.product)}<br><span class="small muted">${esc(b.topic)}</span></td>
+            <td>${b.status === "confirmed" ? "Confirmed" : `Awaiting payment (${esc(b.order_number || "")})`}</td>
+            <td>${b.sessions.map((s) => `<a href="${esc(gcal(b, s))}" target="_blank" rel="noopener">Add to calendar</a>`).join("<br>")}</td>
+          </tr>`).join("")}</tbody></table></div>`
+        : `<p class="muted">No bookings yet.</p>`
+    }`;
 }
 
 let trafficDays = 30;

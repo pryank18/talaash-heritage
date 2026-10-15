@@ -1,0 +1,825 @@
+{
+ "museum-morning-with-an-archaeologist": {
+  "objectives": [
+   "Read a museum label for provenance and chronology, and notice what it leaves out.",
+   "Describe what an object is, how it was made and how it was found.",
+   "Compare two or three related objects and draft an interpretation label of your own."
+  ]
+ },
+ "culture-and-heritage-what-we-inherit-and-why-it-matters": {
+  "objectives": [
+   "Explain the difference between culture and heritage using Indian examples.",
+   "Distinguish tangible from intangible heritage, and recognise contested and lived heritage.",
+   "Identify who protects heritage, from UNESCO and the Archaeological Survey of India to local communities."
+  ]
+ },
+ "what-archaeologists-actually-do": {
+  "objectives": [
+   "Explain how archaeological sites are found and why a site is selected for study.",
+   "Describe how a trench is laid out, dug and recorded, including context sheets.",
+   "Trace what happens to finds in the laboratory and to a site after the dig."
+  ]
+ },
+ "from-stone-tools-to-the-first-villages": {
+  "objectives": [
+   "Distinguish handaxes, flake tools and microliths, and explain what changed between them.",
+   "Describe how the first farming villages appeared in the subcontinent, with varied regional timelines.",
+   "Explain how archaeologists date stone tools and other very old finds."
+  ]
+ },
+ "the-first-cities-harappa-among-the-early-civilisations": {
+  "objectives": [
+   "Explain what makes a settlement a city, using planning, drainage, weights and seals.",
+   "Compare the Indus cities with their contemporaries in Mesopotamia, Egypt and early China.",
+   "Distinguish claims from evidence in debates on differences among Indus settlements and their decline."
+  ]
+ },
+ "reading-india-s-scripts-brahmi-to-sarada": {
+  "objectives": [
+   "Distinguish a writing system from the spoken language it is used to write.",
+   "Trace how Brāhmī developed into the scripts of north and south India.",
+   "Recognise how epigraphists date an inscription from the shapes of its letters."
+  ]
+ },
+ "how-to-read-a-temple": {
+  "objectives": [
+   "Identify the parts of a temple, from gateway to sanctum, on a plan.",
+   "Distinguish the Nāgara, Drāviḍa and Vesara traditions using photographs and drawings.",
+   "Read a temple elevation and identify its shikhara or vimana form."
+  ]
+ },
+ "india-s-linguistic-heritage": {
+  "objectives": [
+   "Identify the main language families of India, including Indo-Aryan, Dravidian, Austroasiatic and Tibeto-Burman.",
+   "Explain how neighbouring languages borrow from one another and how sound change works.",
+   "Assess what texts, inscriptions and oral records can and cannot show about a language's history."
+  ]
+ },
+ "rock-art-of-india": {
+  "objectives": [
+   "Describe the painted shelters of Bhimbetka and the rock engravings of the Konkan coast.",
+   "Explain how rock art is dated and why dating it has limits.",
+   "Describe how rock art is documented through motifs, pigment and superimposition."
+  ]
+ },
+ "the-goddess-in-text-and-image-the-devimahatmya": {
+  "objectives": [
+   "Explain where the Devīmāhātmya sits within the Mārkaṇḍeya Purāṇa and its historical context.",
+   "Outline its three episodes: Madhu and Kaiṭabha, Mahiṣāsura, and Śumbha and Niśumbha.",
+   "Compare the Goddess in sculpture and painting, keeping doctrinal, literary and material readings distinct."
+  ]
+ },
+ "mock-trench-a-practice-excavation": {
+  "objectives": [
+   "Excavate a prepared trench layer by layer using real tools.",
+   "Record each find and its position on a context sheet.",
+   "Build a stratigraphic sequence and work out, as a team, what happened at the site."
+  ]
+ },
+ "clay-and-the-past-a-pottery-workshop": {
+  "objectives": [
+   "Shape a simple vessel by hand from prepared clay.",
+   "Sort sherds by fabric, form and decoration, distinguishing rims, bases and body sherds.",
+   "Explain what pottery tells an archaeologist about date and daily life, and where caution is needed."
+  ]
+ },
+ "reading-sculpture": {
+  "objectives": [
+   "Identify figures in sculpture from their attributes, dress and posture.",
+   "Analyse where a sculpture is placed in a gallery or temple setting.",
+   "Compare religious and aesthetic interpretations and write a short catalogue label."
+  ]
+ },
+ "write-like-asoka-s-scribes-a-brahmi-workshop": {
+  "objectives": [
+   "Recognise the vowels and consonants of Brāhmī and write their basic strokes.",
+   "Write your own name in Brāhmī using the letters learnt in the session.",
+   "Read a few words from an Aśokan edict and recognise differences between palaeographic periods."
+  ]
+ },
+ "recording-the-past-a-documentation-workshop": {
+  "objectives": [
+   "Complete a context sheet recording context, material, scale and metadata.",
+   "Draw and photograph an object to scale, keeping a photo log.",
+   "Write a catalogue entry and check a record for completeness and provenance."
+  ]
+ },
+ "caring-for-collections-preventive-conservation-basics": {
+  "objectives": [
+   "Identify the main causes of damage to a collection: light, damp, pests and handling.",
+   "Assess the condition of an object made of paper, textile or metal.",
+   "Plan safe storage and handling for paper, textiles and metal, including environmental monitoring."
+  ]
+ },
+ "stone-tools-up-close": {
+  "objectives": [
+   "Explain how stone tools were struck, using terms such as core, flake, platform and percussion.",
+   "Read the scars on a stone tool to describe how it was made.",
+   "Sort replica stone tools by observed features into basic types."
+  ]
+ },
+ "the-dig-an-archaeology-team-challenge": {
+  "objectives": [
+   "Work as a team in assigned roles of supervisor, recorder and analyst.",
+   "Record finds accurately as you excavate a prepared trench.",
+   "Present a reading of the evidence and justify your timeline with it."
+  ]
+ },
+ "prakrit-a-first-course": {
+  "objectives": [
+   "Describe the sounds and basic grammar of Prakrit, including inflection and verbal forms.",
+   "Read and translate a short edited Prakrit passage with guidance.",
+   "Identify where Prakrit is found: in inscriptions, drama and Jain texts."
+  ]
+ },
+ "pali-a-first-course": {
+  "objectives": [
+   "Pronounce Pali words using the transcription conventions taught on the course.",
+   "Recognise basic Pali grammar, including nouns, verbs and compounds.",
+   "Read and translate short edited Pali passages with the help of a glossary."
+  ]
+ },
+ "sarada-script": {
+  "objectives": [
+   "Recognise the Śāradā alphabet, its conjuncts and its numerals.",
+   "Transliterate Śāradā text, taking account of vowel signs and scribal habits.",
+   "Read and transcribe lines from reproduced Śāradā manuscript pages."
+  ]
+ },
+ "understanding-indian-temple-architecture": {
+  "objectives": [
+   "Name the parts of a temple, such as the sanctum, mandapa and superstructure.",
+   "Compare Nāgara, Drāviḍa and Deccan temples and place the regional styles in chronological order.",
+   "Analyse a building through case studies of Khajuraho, Pattadakal and Kalinga temples."
+  ]
+ },
+ "remote-sensing-in-archaeology-and-heritage-management": {
+  "objectives": [
+   "Use satellite images and aerial photographs as sources for finding and studying sites.",
+   "Georeference imagery and map sites with points and polygons in mapping software.",
+   "Recognise false positives in imagery and explain why ground verification is needed."
+  ]
+ },
+ "martial-arts-and-society": {
+  "objectives": [
+   "Distinguish what treatises, inscriptions and images each reveal about wrestling and combat.",
+   "Explain what wrestling and combat sports meant to those who practised and patronised them.",
+   "Discuss living traditions of combat without assuming an unbroken continuity with the past."
+  ]
+ },
+ "museum-field-school-documentation-and-conservation": {
+  "objectives": [
+   "Document objects from a museum collection under the supervision of documentation specialists.",
+   "Clean and rehouse museum objects under the supervision of conservators.",
+   "Explain the rules for handling objects in a museum collection safely."
+  ],
+  "takeaway": "Your own notes from the laboratory sessions, lectures and site visits"
+ },
+ "prehistory-field-workshop": {
+  "objectives": [
+   "Read a local landscape using maps and geology to decide where to survey.",
+   "Find, record and classify stone tools, and explain what their scars tell us.",
+   "Document rock art and megaliths, and take and label samples."
+  ],
+  "takeaway": "Your own notes and observations from each site"
+ },
+ "three-capitals-delhi-agra-and-jaipur": {
+  "objectives": [
+   "Explain how Delhi's first Sultanate capitals were built, at the Qutb complex and Mehrauli.",
+   "Compare how the Mughal court built at Delhi, Agra and Fatehpur Sikri.",
+   "Describe Jaipur as a planned eighteenth-century city through the City Palace and Jantar Mantar."
+  ]
+ },
+ "forts-of-rajasthan": {
+  "objectives": [
+   "Explain how Rajasthan's hill forts were sited, supplied with water and defended.",
+   "Identify the gates, reservoirs, palaces and towers of Chittorgarh, the largest of the hill forts.",
+   "Describe defence, water supply and court life at the palace-fort of Amber and Jaigarh above it."
+  ]
+ },
+ "stupas-caves-and-temples-of-central-india": {
+  "objectives": [
+   "Describe the painted rock shelters of Bhimbetka and the unfinished Bhojeshwar temple.",
+   "Describe the Great Stupa at Sanchi, its four gateways and the monasteries on the hill.",
+   "Read the plans, towers and sculpture of the Chandella temples at Khajuraho."
+  ]
+ },
+ "a-study-tour-built-for-your-group": {
+  "objectives": [
+   "Relate the sites on your route to what your group is studying.",
+   "Prepare for each stage of the tour using the reading sent in advance.",
+   "Discuss each site with a specialist in its period or region throughout the tour."
+  ],
+  "takeaway": "Your day-by-day itinerary and the reading sent in advance"
+ },
+ "nagara-temple-architecture": {
+  "objectives": [
+   "Classify northern temple elevations as Latina, śekharī or bhūmija.",
+   "Compare northern temple forms from central India, Rajasthan and western India.",
+   "Analyse the plan and superstructure of a temple at Khajuraho."
+  ]
+ },
+ "dravida-temple-architecture": {
+  "objectives": [
+   "Arrange Pallava structural and rock-cut temples in chronological order as precedents for later forms.",
+   "Compare Chola temple volume with the later growth of enclosures and gopurams.",
+   "Use temple plans and inscriptions to trace patronage and social history."
+  ]
+ },
+ "deccan-temple-forms-vesara-debates": {
+  "objectives": [
+   "Compare northern and southern temple forms within the single ensemble at Pattadakal.",
+   "Identify experiments in built form and dating at Aihole and Badami.",
+   "Explain why the label Vesara is contested and recognise the term Karnata Dravida."
+  ]
+ },
+ "early-structural-temples": {
+  "objectives": [
+   "Evaluate how early temples are dated by inscription, construction and stylistic comparison.",
+   "Compare the early temples at Deogarh, Tigawa and Bhitargaon through images.",
+   "Distinguish what can and cannot be inferred about the origins of the stone temple."
+  ]
+ },
+ "rock-cut-sacred-architecture": {
+  "objectives": [
+   "Explain how rock-cut monuments differ from structural temples in the way they are made.",
+   "Compare the rock-cut caves at Badami, Elephanta and Ellora as a sequence.",
+   "Discuss the working methods behind rock-cut monuments and the questions they raise for conservation."
+  ]
+ },
+ "temple-plans-sacred-space": {
+  "objectives": [
+   "Identify the sanctum, antarala, mandapa and enclosure on a temple floor plan.",
+   "Trace ritual circulation and entrances through a plan, noting regional differences.",
+   "Compare two or three historical temple plans critically on a comparative sheet."
+  ]
+ },
+ "temple-superstructures": {
+  "objectives": [
+   "Read a temple elevation from base mouldings and walls to tower and finial.",
+   "Distinguish Nagara Latina and Shekhari towers from the storeys of a Dravida vimana.",
+   "Write a reasoned caption without completing missing parts of a building beyond the evidence."
+  ]
+ },
+ "temple-sculpture-iconography": {
+  "objectives": [
+   "Identify deities using attributes, posture and context, cross-checked against texts.",
+   "Explain how sculptures placed in niches and on lintels form part of a larger programme.",
+   "Recognise that a sculpture may support several readings and describe the uncertainty involved."
+  ]
+ },
+ "temple-inscriptions-patrons": {
+  "objectives": [
+   "Read a supplied inscription excerpt for its date, ruler, donor and language.",
+   "Map the artisanal, religious and political actors in a temple's patronage network.",
+   "Explain why surviving inscriptions are only partial evidence for a temple's history."
+  ]
+ },
+ "temples-as-social-institutions": {
+  "objectives": [
+   "Describe how endowments and land grants supported temples, using documented cases.",
+   "Identify the craftspeople, servants, clergy and settlements connected with a temple.",
+   "Compare temples across dynasties without relying on timeless stereotypes."
+  ]
+ },
+ "kalinga-temple-architecture": {
+  "objectives": [
+   "Distinguish the rekha deul from the pidha deul and name their components.",
+   "Compare temple forms in Bhubaneswar and place them in building chronology.",
+   "Read the architectural programme at Konark and its present conservation."
+  ]
+ },
+ "khajuraho-architecture-deep-dive": {
+  "objectives": [
+   "Place the Chandella temples of Khajuraho in their chronology and temple groups.",
+   "Read the plan and clustered towers of the Kandariya Mahadeva temple.",
+   "Interpret individual sculptures within the larger sculptural programme of a temple."
+  ]
+ },
+ "temple-architectural-documentation-lab": {
+  "objectives": [
+   "Prepare a drawing sheet with scale, vantage point and photographic reference.",
+   "Make a measured sketch of safe, accessible features of a temple.",
+   "Separate observation from reconstruction when reviewing an annotated drawing."
+  ]
+ },
+ "chronology-and-archaeological-dating": {
+  "objectives": [
+   "Explain relative dating through typology, stratigraphy and seriation.",
+   "Describe the basics of radiocarbon dating, calibration and the importance of sample context.",
+   "Combine dates with site history to write a cautious chronological claim."
+  ]
+ },
+ "burials-and-bioarchaeology": {
+  "objectives": [
+   "Explain how burial contexts are recorded, with attention to taphonomy and burial patterns.",
+   "Match bioarchaeological methods such as osteology, isotopes and disease studies to research questions.",
+   "Discuss the ethics of studying human remains, including dignity and sampling."
+  ]
+ },
+ "ancient-dna-and-the-harappan-debate": {
+  "objectives": [
+   "Explain what ancient DNA can show, given sampling limits, contamination and population models.",
+   "Assess the limits of the single genome reported in the 2019 Rakhigarhi paper.",
+   "Distinguish ancestry statistics from claims about identity in debates on the Harappans."
+  ]
+ },
+ "site-mapping-measured-drawing": {
+  "objectives": [
+   "Draw a base map with a north arrow, scale bar and offsets.",
+   "Make a measured drawing from a safe viewpoint or a classroom replica.",
+   "Reconcile a field sketch with photographs to produce a clean annotated plan."
+  ]
+ },
+ "research-methods-academic-writing": {
+  "objectives": [
+   "Design a research question with suitable evidence types and scope.",
+   "Find scholarship through library databases and keep useful reading notes.",
+   "Write claim-and-evidence paragraphs with accurate citations and references."
+  ]
+ },
+ "national-crafts-museum-living-traditions": {
+  "objectives": [
+   "Describe a craft object by its material, function, region and change over time.",
+   "Record the steps of a craft process from a practitioner's demonstration, where available.",
+   "Discuss the difference between a living craft practice and a static museum display."
+  ]
+ },
+ "museum-object-identification-lab": {
+  "objectives": [
+   "Describe an object using standard terminology, measurements and condition categories.",
+   "Make accession-style practice catalogue entries for five replica objects.",
+   "Test claims about an object against its label and provenance."
+  ]
+ },
+ "bara-gumbad-and-shish-gumbad-architecture-lab": {
+  "objectives": [
+   "Compare Lodhi-era tomb and mosque forms through their material details.",
+   "Describe the decorative surfaces of the Bara Gumbad mosque and the external fabric of Shish Gumbad.",
+   "Draw and compare the elevations of the two buildings."
+  ]
+ },
+ "ghiyasuddin-tughlaq-s-tomb-focus-walk": {
+  "objectives": [
+   "Explain how a royal tomb's siting relates to defence in the Tughlaqabad landscape.",
+   "Describe the sloped masonry and materials of Ghiyasuddin Tughlaq's tomb.",
+   "Compare the fort and funerary architecture at Tughlaqabad."
+  ]
+ },
+ "roshanara-bagh-and-mughal-garden-memory": {
+  "objectives": [
+   "Identify surviving traces of a Mughal-era garden using a historic map.",
+   "Describe the tomb and built remains visible from accessible areas.",
+   "Discuss questions of planting and water management, and how the garden is used today."
+  ]
+ },
+ "chausath-khamba-marble-and-memory": {
+  "objectives": [
+   "Describe Chausath Khamba as an early modern memorial space within its neighbourhood.",
+   "Recognise the stone craft of Chausath Khamba through close observation.",
+   "Discuss the conservation of memorials and the role of patronage."
+  ]
+ },
+ "chor-minar-monuments-and-historical-claims": {
+  "objectives": [
+   "Distinguish demonstrable architectural facts about Chor Minar from uncertain legends.",
+   "Describe the form of Chor Minar from its perimeter.",
+   "Compare the reliability of historical sources and reflect on how myths are made."
+  ]
+ },
+ "bijay-mandal-the-city-of-jahanpanah": {
+  "objectives": [
+   "Locate Bijay Mandal within the medieval city of Jahanpanah using a map.",
+   "Interpret the construction of the platform in relation to its topography.",
+   "Record signs of urban change around Bijay Mandal in a field exercise."
+  ]
+ },
+ "st-james-church-and-delhi-s-colonial-crossroads": {
+  "objectives": [
+   "Describe the exterior architecture of St James' Church in Kashmere Gate.",
+   "Relate the nearby institutional streetscape to nineteenth-century Delhi.",
+   "Discuss questions of preservation and memorial history raised by the church and its surroundings."
+  ]
+ },
+ "nicholson-cemetery-and-the-memory-of-1857": {
+  "objectives": [
+   "Explain how a burial landscape preserves and frames colonial memory.",
+   "Read selected epitaphs and dates in their historical context.",
+   "Discuss competing narratives of 1857 and how the cemetery frames them."
+  ]
+ },
+ "fatehpuri-masjid-architecture-focus": {
+  "objectives": [
+   "Describe the architecture of a Mughal-era mosque seen from the public street and permitted courtyard areas.",
+   "Explain how the mosque relates to the commercial grid of the Mughal city around it.",
+   "Discuss how to approach an active religious site respectfully as both heritage and a place of worship."
+  ]
+ },
+ "ghalib-ki-haveli-and-literary-shahjahanabad": {
+  "objectives": [
+   "Orient yourself in the lanes of Ballimaran and place Ghalib Ki Haveli within them.",
+   "Discuss how poetry and many languages shaped the literary life of the city.",
+   "Explain how the local craft streets form the lived context of a poet's neighbourhood."
+  ]
+ },
+ "delhi-gate-and-daryaganj-streetscape": {
+  "objectives": [
+   "Identify Delhi Gate from public viewpoints and explain its place among the historic gates.",
+   "Read the street plan and surviving facades of Daryaganj as evidence of how the area developed.",
+   "Relate stories of publishing and reading culture to places, and map neighbourhood memories."
+  ]
+ },
+ "old-bhopal-markets-water-and-city-identity": {
+  "objectives": [
+   "Explain how lakes, neighbourhoods and markets shape Old Bhopal, starting from the public lakeside.",
+   "Read the old market streets as evidence of the city's urban heritage.",
+   "Describe historic architecture from public areas and reflect on the urban culture still lived there."
+  ]
+ },
+ "bhojpur-bhojeshwar-temple-the-unfinished-monument": {
+  "objectives": [
+   "Read the site plan of the Bhojeshwar Temple and place the monument in its setting.",
+   "Identify tool marks and surviving stone that show how the temple was being built.",
+   "Compare construction hypotheses for the unfinished temple and the landscape evidence behind them."
+  ]
+ },
+ "bhimbetka-painted-shelters-and-prehistoric-landscapes": {
+  "objectives": [
+   "Describe the accessible painted shelters at Bhimbetka within their prehistoric landscape.",
+   "Observe rock surfaces closely and recognise the conservation issues affecting the paintings.",
+   "Explain why not every rock art image can be securely dated, and how chronologies are argued."
+  ]
+ },
+ "sanchi-stupas-gateways-and-buddhist-art": {
+  "objectives": [
+   "Place the Sanchi monuments in an archaeological chronology, starting from the entrance.",
+   "Read the narrative scenes carved on the toranas of Stupa 1.",
+   "Discuss Buddhist architecture across the other accessible monuments using the sources shared on the walk."
+  ]
+ },
+ "udayagiri-caves-gupta-period-sacred-art": {
+  "objectives": [
+   "Describe how the Udayagiri caves sit in their landscape and how their rock-cut interiors are arranged.",
+   "Interpret Gupta-period sculpture and inscriptions as evidence of patronage.",
+   "Compare cave forms and weigh the claims made about them in different sources."
+  ]
+ },
+ "raisen-fort-the-hilltop-defensive-landscape": {
+  "objectives": [
+   "Read the hilltop terrain and the gate approach as parts of a defensive landscape.",
+   "Describe the publicly accessible structures and what they show about the fort's layers.",
+   "Discuss how the historic layers of the fort are distinguished through its structural remains."
+  ]
+ },
+ "taj-ul-masajid-architecture-and-active-heritage": {
+  "objectives": [
+   "Describe the scale of a monumental mosque and how it is approached from outside.",
+   "Identify stylistic details of Taj-ul-Masajid and place them in their context.",
+   "Discuss how to interpret an active religious site respectfully, visiting permitted areas only."
+  ]
+ },
+ "bhopal-tribal-museum-material-culture-interpretation": {
+  "objectives": [
+   "Explain the ethical questions involved in displaying the material culture of living communities.",
+   "Interpret selected objects and stories within the themes of the galleries.",
+   "Compare museum interpretation with the voices of the living communities it represents."
+  ]
+ },
+ "bhopal-state-museum-central-india-in-objects": {
+  "objectives": [
+   "Place local archaeological evidence in regional timelines through a chronology-led selection of galleries.",
+   "Compare materials and sculpture across the periods shown in the museum.",
+   "Record a short analysis of a single object using a worksheet."
+  ]
+ },
+ "sanchi-and-vidisha-two-day-archaeology-immersion": {
+  "objectives": [
+   "Read the Sanchi monuments, and the museum where available, as Buddhist monumental architecture.",
+   "Test interpretations of what you have seen against the evidence in an evening clinic.",
+   "Compare Sanchi with the early historic landscape of Vidisha and, where access allows, Udayagiri."
+  ]
+ },
+ "bhimbetka-bhojpur-art-stone-and-landscape": {
+  "objectives": [
+   "Describe the permitted painted shelters at Bhimbetka as evidence from a prehistoric landscape.",
+   "Read the Bhojpur temple as a major medieval monument built in stone.",
+   "Compare rock surfaces across periods while keeping prehistoric and medieval chronologies separate."
+  ]
+ },
+ "mandu-fortified-plateau-and-water-architecture": {
+  "objectives": [
+   "Explain how the historic plateau of Mandu was shaped by landscape engineering.",
+   "Describe the Jahaz Mahal and Hindola Mahal from their public and permitted zones.",
+   "Explain how water systems and gardens connect the palaces, reservoirs and landscape."
+  ]
+ },
+ "mumbai-fort-precinct-colonial-urban-form": {
+  "objectives": [
+   "Use a historic map to orient yourself in the layered mercantile city of the Fort precinct.",
+   "Read the Town Hall exterior and historic trading buildings as public architecture.",
+   "Record the layering of the precinct in a sketch of its streets and buildings."
+  ]
+ },
+ "chhatrapati-shivaji-maharaj-terminus-built-heritage": {
+  "objectives": [
+   "Identify the architectural motifs of the station from its exterior and accessible viewpoints.",
+   "Explain how rail heritage is connected to the growth of the city.",
+   "Compare how people originally moved through the station with how they move through it today."
+  ]
+ },
+ "elephanta-shiva-and-rock-cut-architecture": {
+  "objectives": [
+   "Interpret the reliefs in Cave 1 as early medieval rock-cut iconography of Shiva.",
+   "Read rock-cut iconography with a respectful approach led by the evidence.",
+   "Describe how the sculpted panels are arranged within the cave."
+  ]
+ },
+ "kanheri-caves-monastic-landscapes": {
+  "objectives": [
+   "Describe how the selected caves at Kanheri served Buddhist monastic living.",
+   "Identify rock-cut cisterns and viharas and explain what they show about water and monastic life.",
+   "Summarise the evidence for rock-cut architecture seen across the caves."
+  ]
+ },
+ "banganga-tank-sacred-water-and-neighbourhood": {
+  "objectives": [
+   "Follow the etiquette expected when approaching a sacred site from public areas.",
+   "Describe the public edges of the Banganga tank and the historic architecture around it.",
+   "Discuss the links between sacred water, settlement and everyday religious practice."
+  ]
+ },
+ "bhuleshwar-living-religious-streetscape": {
+  "objectives": [
+   "Describe how worship spaces and markets are layered in the Bhuleshwar precinct.",
+   "Read architectural exteriors and streets as evidence of a living district.",
+   "Explain how craft and commercial life sit alongside religious heritage in daily use."
+  ]
+ },
+ "mumbai-art-deco-and-victorian-gothic-walk": {
+  "objectives": [
+   "Identify the features of Victorian Gothic facades in the Fort precinct.",
+   "Recognise Art Deco frontages and compare them with Gothic buildings across the Maidan.",
+   "Discuss what these two architectural styles show about architecture and modernity in the city."
+  ]
+ },
+ "konark-sun-temple-architecture-and-astronomy": {
+  "objectives": [
+   "Read the site plan of the Sun Temple within its UNESCO World Heritage context.",
+   "Describe the chariot imagery, sculpture and conservation of the temple's architectural fabric.",
+   "Distinguish what the evidence supports from the astronomical claims made about the temple."
+  ]
+ },
+ "bhubaneswar-ekamra-temples-and-urban-sacred-landscape": {
+  "objectives": [
+   "Use a street map to orient yourself in the Old Town of Bhubaneswar.",
+   "Relate temple building forms to the living sacred landscape, including Bindusagar.",
+   "Compare the architecture of selected temple exteriors in your own notes."
+  ]
+ },
+ "udayagiri-khandagiri-caves-jain-heritage": {
+  "objectives": [
+   "Describe how the excavated caves are arranged across the Udayagiri and Khandagiri hillsides.",
+   "Interpret the accessible caves as monastic spaces of Jain heritage.",
+   "Explain what inscriptions and conservation work tell us about the caves."
+  ]
+ },
+ "dholavira-harappan-urbanism-in-kachchh": {
+  "objectives": [
+   "Read the settlement planning of a Harappan city from viewpoints across the site.",
+   "Interpret the evidence for how water was managed at Dholavira.",
+   "Question claims about resilience and environment against the evidence on site."
+  ]
+ },
+ "lothal-harappan-trade-and-its-interpretations": {
+  "objectives": [
+   "Place the excavated remains at Lothal within the chronology of the site.",
+   "Assess trade artefacts in the available displays as evidence of exchange.",
+   "Compare the port interpretation of Lothal with the alternative hypotheses in scholarly debate."
+  ]
+ },
+ "champaner-pavagadh-fort-city-and-sacred-landscape": {
+  "objectives": [
+   "Place Champaner-Pavagadh in its UNESCO context as an archaeological park of fortifications and religious sites.",
+   "Read the accessible Champaner monuments as parts of a fortified historic city.",
+   "Map the evidence across the sacred landscape of Pavagadh and discuss cultural pluralism."
+  ]
+ },
+ "mamallapuram-rock-cut-and-structural-temples": {
+  "objectives": [
+   "Compare the monolithic, cave and structural monuments at Mamallapuram.",
+   "Interpret the Pancha Rathas and selected cave reliefs as Pallava monuments.",
+   "Describe the materials of the Shore Temple and discuss the role of Pallava patronage."
+  ]
+ },
+ "pattadakal-and-aihole-temple-design-laboratory": {
+  "objectives": [
+   "Identify foundational examples of temple building at Aihole.",
+   "Compare the temple experiments of the Pattadakal UNESCO group without relying on rigid textbook labels.",
+   "Record a measured comparative sketch of the temple forms you have seen."
+  ]
+ },
+ "who-owns-the-past-heritage-and-urban-development": {
+  "objectives": [
+   "Map the stakeholders in a case of heritage conservation and urban development.",
+   "Argue a position on conservation, public access and development using case evidence.",
+   "Propose a practical compromise between competing conservation and development interests."
+  ]
+ },
+ "excavation-headlines-evidence-or-exaggeration": {
+  "objectives": [
+   "Compare news headlines about excavations with the evidence behind them.",
+   "Explain how excavation reports work and what scientific limitations apply to them.",
+   "Score archaeological news claims against the evidence using a verification framework."
+  ]
+ },
+ "foods-as-historical-evidence-coconut-spice-and-exchange": {
+  "objectives": [
+   "Map the cultural uses of an ingredient across farming, exchange, ritual and material culture.",
+   "Place ingredients such as coconut and spice in their historical trade and ecological context.",
+   "Compare objects, texts and oral traditions as evidence, and discuss where uncertainty remains."
+  ]
+ },
+ "gender-and-everyday-life-in-archaeology": {
+  "objectives": [
+   "Ask whose labour and lives survive in the evidence of a domestic assemblage.",
+   "Explain the caveats involved in interpreting bioarchaeological evidence.",
+   "Audit an interpretation for bias and frame a research question of your own."
+  ]
+ },
+ "sacred-architecture-across-communities": {
+  "objectives": [
+   "Compare the plans and functions of sacred buildings across communities.",
+   "Describe different material traditions without collapsing distinct practices and histories.",
+   "Choose evidence-led terminology when describing sacred architecture from different communities."
+  ]
+ },
+ "cemeteries-epitaphs-and-public-memory": {
+  "objectives": [
+   "Analyse epitaph images as sources for memorial landscapes and public memory.",
+   "Identify missing voices and explain how memorial landscapes reflect unequal remembrance.",
+   "Write an interpretive caption based on a critique of your sources."
+  ]
+ },
+ "community-archaeology-and-heritage-stewardship": {
+  "objectives": [
+   "Listen to stakeholders and identify the local knowledge a heritage activity should draw on.",
+   "Plan heritage activities around consent and shared benefit, using a community partnership case.",
+   "Draft a project brief for a heritage activity of your own."
+  ]
+ },
+ "climate-change-and-ancient-settlements": {
+  "objectives": [
+   "Read a settlement map and explain the basics of palaeoenvironmental proxies.",
+   "Compare archaeological environmental evidence with simplified narratives of settlement collapse.",
+   "Weigh multiple-cause explanations for ancient settlements using an evidence matrix."
+  ]
+ },
+ "museums-and-the-stories-objects-tell": {
+  "objectives": [
+   "Compare two museum labels and explain how they turn objects into histories.",
+   "Explain how provenance and context shape what an object can tell us.",
+   "Write a different interpretation of an object and discuss it with your peers."
+  ]
+ },
+ "heritage-in-the-age-of-ai-verification-and-ethics": {
+  "objectives": [
+   "Spot errors in AI-generated historical content before they are treated as evidence.",
+   "Trace a historical claim back to its source to check whether it holds.",
+   "Build a verification checklist and decide when an image reconstruction needs disclosure."
+  ]
+ },
+ "heritage-photography-evidence-led-photo-walk": {
+  "objectives": [
+   "Apply visual ethics when making photographic records at a public-access heritage site.",
+   "Plan repeatable photographic views that document both context and detail.",
+   "Record metadata and write accurate captions for the photographs you take."
+  ]
+ },
+ "oral-history-and-neighbourhood-memory-lab": {
+  "objectives": [
+   "Prepare interview questions and a consent protocol for an oral-history interview.",
+   "Practise oral-history interviewing in a mock recorded interview.",
+   "Compare testimony with documents and write a respectful field note."
+  ]
+ },
+ "introduction-to-numismatics-with-replicas": {
+  "objectives": [
+   "Use basic numismatic terms to describe replica coins you have handled.",
+   "Read symbols and inscriptions on coins as contextual evidence.",
+   "Explain the caveats of context and dating, and create a descriptive catalogue card."
+  ]
+ },
+ "heritage-podcast-and-storytelling-studio": {
+  "objectives": [
+   "Choose the evidence and the audience for a short story about a monument.",
+   "Build an accurate narrative script supported by source notes.",
+   "Record a short audio draft and edit it after a peer fact-check."
+  ]
+ },
+ "experimental-archaeology-safe-replica-demonstrations": {
+  "objectives": [
+   "Frame a question and hypothesis that an experiment could test.",
+   "Document the variables observed during an instructor's safe replica demonstration.",
+   "Interpret the limits of what the demonstration shows and write a short note."
+  ]
+ },
+ "school-heritage-club-starter-workshop": {
+  "objectives": [
+   "Choose a local heritage question for a school club to investigate.",
+   "Create field-observation cards for club members to use on site.",
+   "Plan a school event with safeguarding in mind and present a club charter."
+  ]
+ },
+ "jaipur-jantar-mantar-instruments-and-observation": {
+  "objectives": [
+   "Explain the basic sky geometry behind historic astronomical instruments.",
+   "Describe the form and function of selected major instruments at Jantar Mantar.",
+   "Discuss the challenges and limits of observation and place historical astronomy in context."
+  ]
+ },
+ "fatehpur-sikri-mughal-urban-vision": {
+  "objectives": [
+   "Read the site plan and topography of Fatehpur Sikri as evidence of imperial planning.",
+   "Describe the public palace structures, ceremonial courts and material details on the walk.",
+   "Discuss what the surviving structures show about water and habitation in the city."
+  ]
+ },
+ "nalanda-monastic-university-landscape": {
+  "objectives": [
+   "Place the excavated remains of Nalanda in a chronology using the site plan.",
+   "Identify monastic residential remains and sacred structures, and interpret their materials.",
+   "Assess the evidence for learning networks connected to the monastic landscape of Nalanda."
+  ]
+ },
+ "archaeology-for-families-object-detective-lab": {
+  "objectives": [
+   "Explain why the context in which an object is found matters in archaeology.",
+   "Sort replica objects into groups and explain the choices you made.",
+   "Draw a miniature excavation grid and observe objects closely in a museum challenge."
+  ]
+ },
+ "delhi-through-seven-cities": {
+  "objectives": [
+   "Explain how Delhi grew as a sequence of cities built beside one another.",
+   "Read the Qutb complex, Mehrauli Archaeological Park and Humayun's Tomb in historical order.",
+   "Place Old Delhi and the Red Fort within the sequence of Delhi's historic cities."
+  ],
+  "takeaway": "Your own notes and observations from each site"
+ },
+ "delhi-and-rakhigarhi-the-harappan-world": {
+  "objectives": [
+   "Explain the basics of Harappan archaeology before visiting a Harappan site.",
+   "Describe the archaeological landscape of Rakhigarhi, one of the largest Harappan cities.",
+   "Relate the ancient landscape at Rakhigarhi to the village that stands there today."
+  ],
+  "takeaway": "Your own notes and observations from each site"
+ },
+ "the-golden-triangle-with-an-archaeologist": {
+  "objectives": [
+   "Distinguish the Sultanate and Mughal phases of Delhi through the monuments you choose to visit.",
+   "Describe the architecture and history of Shahjahanabad in Old Delhi.",
+   "Compare Akbar's city at Fatehpur Sikri with the planned city of Jaipur and its Jantar Mantar."
+  ],
+  "takeaway": "Your own notes and observations from each site"
+ },
+ "central-india-rock-art-and-buddhist-archaeology": {
+  "objectives": [
+   "Describe the prehistoric painted shelters at Bhimbetka and their place in the story of the region.",
+   "Explain what the stones of the unfinished Bhojeshwar temple show about how it was built.",
+   "Read the Buddhist monuments at Sanchi and the Gupta caves of Udayagiri one at a time."
+  ],
+  "takeaway": "Your own notes and observations from each site"
+ },
+ "mumbai-caves-city-and-living-traditions": {
+  "objectives": [
+   "Read the colonial streets of the Fort precinct and South Mumbai's Victorian Gothic and Art Deco buildings.",
+   "Describe the rock-cut caves of Elephanta, and those of Kanheri if your group chooses them.",
+   "Explain how Banganga and the Bhuleshwar quarter work as living neighbourhoods, if your group chooses that day."
+  ],
+  "takeaway": "Your own notes and observations from each site"
+ },
+ "temples-of-eastern-india": {
+  "objectives": [
+   "Read a Kalinga temple and apply this to the temples of Bhubaneswar's old town.",
+   "Describe the Jain caves on the twin hills of Udayagiri and Khandagiri.",
+   "Compare the sculpture seen across the journey, including at the Sun Temple in Konark."
+  ],
+  "takeaway": "Your own notes and observations from each site"
+ },
+ "harappan-gujarat-cities-water-and-trade": {
+  "objectives": [
+   "Explain how Lothal is interpreted as a Harappan dock town and what the site shows.",
+   "Describe the walled city of Dholavira, its gates and its water system.",
+   "Relate water and settlement in Kachchh to the local crafts you see with host makers."
+  ],
+  "takeaway": "Your own notes and observations from each site"
+ },
+ "south-india-temple-architecture": {
+  "objectives": [
+   "Explain how the southern temple took shape, starting from Pallava art.",
+   "Distinguish the rock-cut and structural monuments by the sea at Mamallapuram.",
+   "Discuss temple plans, patrons and inscriptions, and record what you saw on the journey."
+  ],
+  "takeaway": "Your own notes and observations from each site"
+ }
+}

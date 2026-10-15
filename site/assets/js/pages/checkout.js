@@ -5,6 +5,8 @@ import { requireVisitor } from "../gate.js";
 import { $, esc, loadScript, money } from "../ui.js";
 import { pricedCart } from "./cart.js";
 import { track } from "../track.js";
+import { attachHolds, clearHolds, slotLabel } from "../booking.js";
+import { productHref } from "../ui.js";
 
 const root = $("#checkout-root");
 
@@ -72,6 +74,10 @@ async function render() {
   }
   if (!cart.buyable.length) {
     root.innerHTML = `<div class="empty"><h2>Nothing to check out</h2><p>Your cart is empty.</p><a class="btn btn-primary" href="shop.html">Browse the shop</a></div>`;
+    return;
+  }
+  if (cart.missingSlot) {
+    location.replace(productHref(cart.missingSlot.p));
     return;
   }
 
@@ -149,7 +155,7 @@ async function render() {
       <aside class="summary" aria-label="Order summary">
         <h2>Your order</h2>
         <ul class="summary-items">
-          ${cart.buyable.map((l) => `<li><span>${l.qty} × ${esc(l.p.title)}</span><span>${money(l.total)}</span></li>`).join("")}
+          ${cart.buyable.map((l) => `<li><span>${l.qty} × ${esc(l.p.title)}${l.hold ? `<br><small>${esc(slotLabel(l.hold.kind, l.hold.start))}. ${esc(l.hold.topic)}</small>` : ""}</span><span>${money(l.total)}</span></li>`).join("")}
         </ul>
         <dl>
           <div><dt>Subtotal</dt><dd>${money(cart.subtotal)}</dd></div>
@@ -232,10 +238,20 @@ async function render() {
     }
     rememberOrder(order);
 
+    // Booked courses: tie the held time to this order before any payment is taken.
+    const clash = order.demo ? null : await attachHolds(order, cart.buyable);
+    if (clash) {
+      submit.disabled = false;
+      submit.textContent = payLabel();
+      errorEl.innerHTML = `${esc(clash.message)} <a href="${esc(productHref(clash.p))}">Choose a time</a>`;
+      return;
+    }
+
     // UPI and WhatsApp orders, and everything in demo mode, finish on the order
     // page: it shows how to pay and takes the payment reference.
     if (order.demo || payload.payment_method !== "razorpay") {
       clearCart();
+      clearHolds();
       if (payload.payment_method === "whatsapp") window.open(whatsappLink(order, cart, customer), "_blank", "noopener");
       location.href = orderUrl(order);
       return;
@@ -271,6 +287,7 @@ async function render() {
           // The webhook confirms the payment independently; the order page will catch up.
         }
         clearCart();
+        clearHolds();
         location.href = orderUrl(order);
       },
       modal: {

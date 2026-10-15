@@ -3331,5 +3331,31 @@
   "page": "https://commons.wikimedia.org/wiki/File:Hampi_Vitthala_Temple_3465.jpg",
   "file": "Hampi Vitthala Temple 3465.jpg",
   "assessment": "featured"
+ },
+ "hansi-asigarh-fort-heritage-visit": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Main_Gate_front_look.jpg/960px-Main_Gate_front_look.jpg",
+  "small": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Main_Gate_front_look.jpg/500px-Main_Gate_front_look.jpg",
+  "alt": "The brick main gate of Asigarh Fort, also known as Prithviraj Chauhan's Fort, at Hansi, Haryana.",
+  "credit": "Pkindian23",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Main_Gate_front_look.jpg",
+  "file": "Main Gate front look.jpg",
+  "assessment": "none",
+  "width": 4160,
+  "height": 2340
+ },
+ "agroha-archaeological-landscape": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/I_found_sometning_intersteing_in_these_ruins..._%286562921161%29.jpg/960px-I_found_sometning_intersteing_in_these_ruins..._%286562921161%29.jpg",
+  "small": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/I_found_sometning_intersteing_in_these_ruins..._%286562921161%29.jpg/500px-I_found_sometning_intersteing_in_these_ruins..._%286562921161%29.jpg",
+  "alt": "Excavated brick structures on the ancient mound at Agroha, Hisar district, Haryana.",
+  "credit": "Archit Ratan",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:I_found_sometning_intersteing_in_these_ruins..._(6562921161).jpg",
+  "file": "I found sometning intersteing in these ruins... (6562921161).jpg",
+  "assessment": "none",
+  "width": 4000,
+  "height": 3000
  }
 }

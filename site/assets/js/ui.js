@@ -10,8 +10,10 @@ export function esc(value) {
   return String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
-const inr = new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 2, minimumFractionDigits: 0 });
-export const money = (paise) => inr.format((paise || 0) / 100);
+const inrWhole = new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 });
+const inrPaise = new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", minimumFractionDigits: 2, maximumFractionDigits: 2 });
+// Whole rupees as ₹3,500; amounts with paise always with two decimals, as ₹533.90.
+export const money = (paise) => (Math.round(paise || 0) % 100 ? inrPaise : inrWhole).format((paise || 0) / 100);
 
 const TYPE_LABEL = {
   live: "Live lecture",
@@ -47,6 +49,8 @@ export const isRequest = (p) => Boolean(p.tags?.includes("on-request"));
 export const isSoon = (p) => Boolean(p.tags?.includes("coming-soon"));
 /** True for anything the cart can sell right now. */
 export const canBuy = (p) => !isRequest(p) && !isSoon(p) && !CONFIG.sampleNotice && !stockFlag(p)?.soldOut;
+/** Career courses booked for a weekend evening: bought from their page, after choosing a time. */
+export const needsSlot = (p) => Boolean(p.tags?.includes("career-weekend") || p.tags?.includes("career-single"));
 export const kindLabel = (p) => p.kind || typeLabel(p.type);
 
 const waLink = (text) => `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`;
@@ -77,6 +81,7 @@ export function typeLine(p) {
   if (isSoon(p)) return `${p.type === "physical" ? "Printed item" : typeLabel(p.type)} · Coming soon`;
   const when = p.starts_at ? formatWhen(p.starts_at) : "";
   if (p.type === "course" && when) return `Course, starts ${when}`;
+  if (needsSlot(p)) return p.tags.includes("career-weekend") ? "Career course, Sat and Sun evenings you choose" : "Career course, a weekend evening you choose";
   if (p.type === "counselling" && when) return `${kindLabel(p)}, starts ${when}`;
   if (p.type === "counselling") return `${typeLabel(p.type)}, ${formatDuration(p.duration_minutes) || "book your own time"}`;
   return when ? `${typeLabel(p.type)}, ${when}` : typeLabel(p.type);
@@ -230,6 +235,8 @@ export function productCard(p) {
       ${
         flag?.soldOut || CONFIG.sampleNotice
           ? `<a class="btn btn-outline btn-small" href="${href}">View details</a>`
+          : needsSlot(p)
+          ? `<a class="btn btn-outline btn-small" href="${href}">Choose a date</a>`
           : `<button class="btn btn-outline btn-small" type="button" data-add="${esc(p.id)}">Add to cart</button>`
       }
     </div>`

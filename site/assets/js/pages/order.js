@@ -2,6 +2,7 @@ import { CONFIG, isLive } from "../config.js";
 import { getOrder, submitPaymentReference } from "../api.js";
 import { $, esc, money, toast } from "../ui.js";
 import { track } from "../track.js";
+import { bookingsForOrder, sessionsHtml } from "../booking.js";
 
 const root = $("#order-root");
 const params = new URLSearchParams(location.search);
@@ -118,6 +119,7 @@ function view(o) {
       <p>Order <strong>${esc(o.order_number)}</strong> <span class="status ${s.cls}">${esc(s.label)}</span></p>
       ${nextStep(o)}
       ${o.tracking_number ? `<p>Tracking number: <strong>${esc(o.tracking_number)}</strong></p>` : ""}
+      ${sessionsHtml(o.bookings)}
       ${
         access.length
           ? `<h2>Your links</h2>${access
@@ -209,6 +211,8 @@ async function load() {
     root.innerHTML = `<div class="empty"><h1>We could not find that order</h1><p>The link may be incomplete. Write to <a href="mailto:${esc(CONFIG.contactEmail)}">${esc(CONFIG.contactEmail)}</a> with your order number and we will help.</p></div>`;
     return;
   }
+  // Booked course times, shown above the links.
+  order.bookings = order.demo ? [] : await bookingsForOrder(id, token);
   view(order);
   // Card payments are confirmed by the gateway a moment after checkout closes.
   if (order.status === "pending" && order.payment_method === "razorpay" && polls < 20) {

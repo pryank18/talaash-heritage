@@ -1,7 +1,8 @@
 import { CONFIG } from "../config.js";
 import { getProducts, getShippingRule } from "../api.js";
 import { getCart, setQty, removeFromCart, MAX_QTY } from "../store.js";
-import { $, esc, isRequest, isSoon, money, productArt, shippingFor, typeLine } from "../ui.js";
+import { $, esc, isRequest, isSoon, money, needsSlot, productArt, productHref, shippingFor, typeLine } from "../ui.js";
+import { getHold, slotLabel } from "../booking.js";
 
 const root = $("#cart-root");
 
@@ -13,13 +14,16 @@ export async function pricedCart() {
     const p = products.find((x) => x.id === l.id);
     // Programmes on request and things not yet on sale are never sold through the cart.
     if (!p || isRequest(p) || isSoon(p)) { removeFromCart(l.id); continue; }
-    const max = Math.min(MAX_QTY, p.stock ?? MAX_QTY);
+    // A booked course is one booking: one learner, one time.
+    const max = needsSlot(p) ? 1 : Math.min(MAX_QTY, p.stock ?? MAX_QTY);
     if (max <= 0) { lines.push({ p, qty: l.qty, max, soldOut: true, total: 0 }); continue; }
     const qty = Math.min(l.qty, max);
     if (qty !== l.qty) setQty(l.id, qty);
-    lines.push({ p, qty, max, soldOut: false, total: p.price_paise * qty });
+    const hold = needsSlot(p) ? getHold(p.id) : null;
+    lines.push({ p, qty, max, soldOut: false, total: p.price_paise * qty, hold, missingSlot: needsSlot(p) && !hold });
   }
   const buyable = lines.filter((l) => !l.soldOut);
+  const missingSlot = buyable.find((l) => l.missingSlot) || null;
   const subtotal = buyable.reduce((n, l) => n + l.total, 0);
   const needsShipping = buyable.some((l) => l.p.requires_shipping);
   const shipping = shippingFor(subtotal, needsShipping, rule);
@@ -28,7 +32,7 @@ export async function pricedCart() {
     const pct = Number(l.p.details?.gst_pct) || 0;
     return n + (pct ? Math.round((l.total * pct) / (100 + pct)) : 0);
   }, 0);
-  return { lines, buyable, subtotal, needsShipping, shipping, total: subtotal + shipping, gst, rule };
+  return { lines, buyable, subtotal, needsShipping, shipping, total: subtotal + shipping, gst, rule, missingSlot };
 }
 
 async function render() {
@@ -50,16 +54,20 @@ async function render() {
       <ul class="lines">
         ${cart.lines
           .map(
-            ({ p, qty, max, soldOut, total }) => `
+            ({ p, qty, max, soldOut, total, hold, missingSlot }) => `
           <li class="line" data-line="${esc(p.id)}">
             <div class="line-art">${productArt(p)}</div>
             <div>
               <a class="line-title" href="product.html?slug=${encodeURIComponent(p.slug)}">${esc(p.title)}</a>
               <div class="small muted">${esc(typeLine(p))}</div>
+              ${hold ? `<div class="small"><strong>${esc(slotLabel(hold.kind, hold.start))}</strong><br>${esc(hold.topic)} · <a href="${esc(productHref(p))}">Change</a></div>` : ""}
+              ${missingSlot ? `<div class="small"><a href="${esc(productHref(p))}"><strong>Choose a date and time</strong></a></div>` : ""}
               <div class="line-controls">
                 ${
                   soldOut
                     ? `<strong>No longer available</strong>`
+                    : needsSlot(p)
+                    ? ""
                     : `<div class="qty" role="group" aria-label="Quantity of ${esc(p.title)}">
                          <button type="button" data-step="-1" aria-label="Decrease">−</button>
                          <output>${qty}</output>
@@ -86,6 +94,8 @@ async function render() {
         ${
           CONFIG.sampleNotice
             ? `<p class="note">Bookings open soon. These listings are examples and cannot be ordered yet.</p>`
+            : cart.missingSlot
+            ? `<a class="btn btn-primary btn-block" href="${esc(productHref(cart.missingSlot.p))}">Choose a date and time first</a>`
             : cart.buyable.length
             ? `<a class="btn btn-primary btn-block" href="checkout.html">Go to checkout</a>`
             : `<p class="form-error">Nothing in your cart can be ordered right now.</p>`
