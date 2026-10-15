@@ -73,10 +73,11 @@ export function requestLinks(p) {
 
 /** What the card says under the picture: type, plus the date for dated things. */
 export function typeLine(p) {
-  if (isRequest(p)) return `${kindLabel(p)} · On request`;
+  if (isRequest(p)) return `${kindLabel(p)} · ${p.pricing?.card || "On request"}`;
   if (isSoon(p)) return `${p.type === "physical" ? "Printed item" : typeLabel(p.type)} · Coming soon`;
   const when = p.starts_at ? formatWhen(p.starts_at) : "";
   if (p.type === "course" && when) return `Course, starts ${when}`;
+  if (p.type === "counselling" && when) return `${kindLabel(p)}, starts ${when}`;
   if (p.type === "counselling") return `${typeLabel(p.type)}, ${formatDuration(p.duration_minutes) || "book your own time"}`;
   return when ? `${typeLabel(p.type)}, ${when}` : typeLabel(p.type);
 }
@@ -104,6 +105,8 @@ export const requestAction = (p) => ACTION[kindLabel(p)] || "Enquire";
 
 /** null = no flag. Seats and stock are only called out when it changes a decision. */
 export function stockFlag(p) {
+  // Dated listings close when they start (the database refuses the order too).
+  if (p.starts_at && new Date(p.starts_at).getTime() <= Date.now() && !p.tags?.includes("on-request")) return { text: "Booking closed", low: false, soldOut: true };
   if (p.stock === null || p.stock === undefined) return null;
   if (p.stock <= 0) return { text: p.requires_shipping ? "Sold out" : "Fully booked", low: false, soldOut: true };
   if (p.stock <= 10) return { text: p.requires_shipping ? `${p.stock} left` : `${p.stock} seats left`, low: true, soldOut: false };
@@ -169,10 +172,27 @@ export const isIllustration = (p) => /^assets\/img\/programmes\/[a-z0-9-]+\.jpg$
 
 /** `sizes` tells the browser how wide the picture is shown, so phones fetch the small file. */
 export function productArt(p, sizes = "(min-width: 1000px) 25vw, (min-width: 560px) 33vw, 50vw") {
+  if (p.image_small) return `<img src="${esc(p.image_small)}" srcset="${esc(p.image_small)} 500w, ${esc(p.image_url)} 960w" sizes="${esc(sizes)}" alt="${esc(p.image_alt || p.title)}" loading="lazy" width="960" height="720">`;
   if (!p.image_url) return stratArt(p);
   if (!isIllustration(p)) return `<img src="${esc(p.image_url)}" alt="${esc(p.title)}" loading="lazy" width="400" height="300">`;
   const small = p.image_url.replace(/\.jpg$/, "-s.jpg");
   return `<img src="${esc(small)}" srcset="${esc(small)} 560w, ${esc(p.image_url)} 1040w" sizes="${esc(sizes)}" alt="${esc(`Illustration for ${p.title}`)}" loading="lazy" width="1040" height="780">`;
+}
+
+/** Credit line for a licensed photograph. Mirrors credit_html() in tools/build_catalogue.py. */
+export function photoCredit(p) {
+  const c = p.image_credit;
+  if (!c) return "";
+  return `<p class="photo-credit">Photo: <a href="${esc(c.page)}" rel="noopener">${esc(c.by)}</a>, <a href="${esc(c.license_url)}" rel="license noopener">${esc(c.license)}</a>, via Wikimedia Commons</p>`;
+}
+
+/** Price options for a programme run on request. Mirrors pricing_html() in tools/build_catalogue.py. */
+export function pricingHtml(p) {
+  const pb = p.pricing;
+  if (!pb) return "";
+  const cells = pb.tiers.map((t) => `<li class="ptier${t.best ? " is-best" : ""}"><p class="ptier-label">${esc(t.label)}</p><p class="ptier-price">${esc(t.amount)}</p><p class="ptier-unit">${esc(t.unit)}</p>${t.note ? `<p class="ptier-note">${esc(t.note)}</p>` : ""}</li>`).join("");
+  const notes = [...pb.notes, pb.gst].map((n) => `<li>${esc(n)}</li>`).join("");
+  return `<section class="pricing" aria-label="Prices"><ul class="ptiers ptiers-${pb.tiers.length}">${cells}</ul><ul class="pricing-notes">${notes}</ul></section>`;
 }
 
 export function priceHtml(p) {

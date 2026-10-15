@@ -1,0 +1,8 @@
+-- Applied 15 Oct 2026 through the Supabase connector (migration "site_events_tracking").
+-- First-party measurement: public.site_events, written only through public.track(jsonb),
+-- read only through public.admin_traffic(passcode, days). The device breakdown counts
+-- page views only (amended the same day). See the live definitions for the full text:
+--   select pg_get_functiondef('public.track(jsonb)'::regprocedure);
+--   select pg_get_functiondef('public.admin_traffic(text,integer)'::regprocedure);
+-- Retention promised in the privacy notice: 13 months. Rows older than that must be
+-- removed (manually or by a scheduled job approved by the owner).

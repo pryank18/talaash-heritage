@@ -6,7 +6,7 @@ const FILTERS = {
   all: { label: "Everything", types: null, title: "Everything we offer" },
   walk: { label: "Walks and experiences", types: ["walk", "experience"], title: "Heritage walks and experiences" },
   live: { label: "Courses and lectures", types: ["live", "course"], title: "Courses and lectures" },
-  counselling: { label: "Counselling", types: ["counselling"], title: "One-to-one counselling" },
+  counselling: { label: "Counselling", types: ["counselling"], title: "Career counselling and career courses" },
   recording: { label: "Recordings", types: ["recording"], title: "Recorded lectures" },
   physical: { label: "Books and prints", types: ["physical"], title: "Books and prints" },
 };

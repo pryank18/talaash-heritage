@@ -42,6 +42,12 @@ TEXT = {
     "Our work": "हमारा कार्य",
     "Journeys": "यात्राएँ",
     "Learn": "सीखें",
+    "Booking closed": "बुकिंग बंद",
+    "Includes GST": "जीएसटी सहित",
+    "Career course": "करियर पाठ्यक्रम",
+    "Career counselling and career courses": "करियर परामर्श और करियर पाठ्यक्रम",
+    "Follow us": "हमें फ़ॉलो करें",
+    "Traffic": "ट्रैफ़िक",
     "All guides": "सभी मार्गदर्शिकाएँ",
     "UNESCO sites in India": "भारत के यूनेस्को स्थल",
     "Ancient Indian history": "प्राचीन भारतीय इतिहास",
@@ -769,7 +775,13 @@ function counts(list) {
   });
   return out.every(Boolean) ? out.join(", ") : undefined;
 }
-const whole = (s) => (s !== undefined && text[s] !== undefined ? text[s] : undefined);
+const PER = { group: "प्रति समूह", session: "प्रति सत्र", learner: "प्रति प्रतिभागी", person: "प्रति व्यक्ति", participant: "प्रति प्रतिभागी" };
+// Prices on cards: "From ₹9,000 per group" -> "₹9,000 से, प्रति समूह"
+const price = (s) => {
+  const m = s !== undefined && s.match(/^From (₹[\d,]+) per (group|session|learner|person|participant)$/);
+  return m ? `${m[1]} से, ${PER[m[2]]}` : undefined;
+};
+const whole = (s) => (s !== undefined && text[s] !== undefined ? text[s] : price(s));
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export const patterns = [

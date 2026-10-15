@@ -134,6 +134,7 @@ const text = {
  "Bhubaneswar, Odisha": "भुवनेश्वर, ओडिशा",
  "Bhuleshwar, Mumbai": "भुलेश्वर, मुंबई",
  "Bihar": "बिहार",
+ "Booking closed": "बुकिंग बंद",
  "Books and prints": "पुस्तकें और प्रिंट",
  "Books, prints and field gear": "पुस्तकें, प्रिंट और फ़ील्ड सामग्री",
  "Browse every programme": "सभी कार्यक्रम देखें",
@@ -141,6 +142,8 @@ const text = {
  "Business name": "संस्था का नाम",
  "By the end you can": "अंत तक आप",
  "Cancel": "रद्द करें",
+ "Career counselling and career courses": "करियर परामर्श और करियर पाठ्यक्रम",
+ "Career course": "करियर पाठ्यक्रम",
  "Career guidance and counselling": "करियर मार्गदर्शन और परामर्श",
  "Career session": "करियर सत्र",
  "Careers and further study": "करियर और उच्च शिक्षा",
@@ -225,6 +228,7 @@ const text = {
  "Field schools": "फ़ील्ड स्कूल",
  "Filter the shop": "कार्यक्रम छाँटें",
  "Firoz Shah Kotla, Delhi": "फ़िरोज़ शाह कोटला, दिल्ली",
+ "Follow us": "हमें फ़ॉलो करें",
  "For": "किसके लिए",
  "For a day trip, a study tour or a private journey, also tell us where you will start from, how many days you have, the language you would like to be guided in, and the kind of hotel you prefer. Visitors from outside India can write in English or in their own language, and we reply in English. See <a href=\"journeys.html\">TALAASHH journeys</a>.": "एक दिन की यात्रा, अध्ययन यात्रा या निजी यात्रा के लिए यह भी बताएँ कि आप कहाँ से शुरू करेंगे, आपके पास कितने दिन हैं, आप किस भाषा में मार्गदर्शन चाहते हैं और किस तरह का होटल पसंद करेंगे। भारत के बाहर से आने वाले यात्री अंग्रेज़ी या अपनी भाषा में लिख सकते हैं, और हम अंग्रेज़ी में उत्तर देते हैं। देखें <a href=\"journeys.html\">TALAASHH यात्राएँ</a>।",
  "For example, a Saturday in November": "उदाहरण के लिए, नवंबर का कोई शनिवार",
@@ -273,6 +277,7 @@ const text = {
  "In Delhi, at a monument or museum": "दिल्ली में, किसी स्मारक या संग्रहालय में",
  "In the field": "क्षेत्र-कार्य",
  "Include your order number, which starts with TH. You will find it on your order page and in the payment receipt.": "अपना ऑर्डर नंबर लिखें, जो TH से शुरू होता है। यह आपके ऑर्डर पृष्ठ और भुगतान रसीद पर मिलेगा।",
+ "Includes GST": "जीएसटी सहित",
  "India unless you change it": "बदलें नहीं तो भारत",
  "Indian culture for kids": "बच्चों के लिए भारतीय संस्कृति",
  "Individuals and private groups": "व्यक्ति और निजी समूह",
@@ -530,6 +535,7 @@ const text = {
  "To prepare a quotation, we need five details:": "कोटेशन तैयार करने के लिए हमें पाँच जानकारियाँ चाहिए:",
  "To see, correct or delete the details you registered with, or to stop announcements, write to the email above from your registered address. See the <a href=\"privacy.html#your-choices\">privacy notice</a>.": "अपने पंजीकृत विवरण देखने, सुधारने या हटाने, या घोषणाएँ बंद करवाने के लिए अपने पंजीकृत ईमेल पते से ऊपर दिए गए पते पर लिखें। <a href=\"privacy.html#your-choices\">गोपनीयता सूचना</a> देखें।",
  "Too many registrations from this network in the last hour. Try again later.": "पिछले एक घंटे में इस नेटवर्क से बहुत अधिक पंजीकरण हुए हैं। कुछ देर बाद प्रयास करें।",
+ "Traffic": "ट्रैफ़िक",
  "Training in museum management, documentation and conservation, carried out alongside the documentation and refurbishment of a museum collection.": "संग्रहालय प्रबंधन, प्रलेखन और संरक्षण का प्रशिक्षण, जो एक संग्रहालय संग्रह के प्रलेखन और नवीनीकरण के साथ-साथ किया गया।",
  "Travel India's past with the people who study it": "भारत के अतीत की यात्रा, उनके साथ जो उसका अध्ययन करते हैं",
  "Travel with us": "हमारे साथ यात्रा करें",
@@ -620,7 +626,13 @@ function counts(list) {
   });
   return out.every(Boolean) ? out.join(", ") : undefined;
 }
-const whole = (s) => (s !== undefined && text[s] !== undefined ? text[s] : undefined);
+const PER = { group: "प्रति समूह", session: "प्रति सत्र", learner: "प्रति प्रतिभागी", person: "प्रति व्यक्ति", participant: "प्रति प्रतिभागी" };
+// Prices on cards: "From ₹9,000 per group" -> "₹9,000 से, प्रति समूह"
+const price = (s) => {
+  const m = s !== undefined && s.match(/^From (₹[\d,]+) per (group|session|learner|person|participant)$/);
+  return m ? `${m[1]} से, ${PER[m[2]]}` : undefined;
+};
+const whole = (s) => (s !== undefined && text[s] !== undefined ? text[s] : price(s));
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export const patterns = [

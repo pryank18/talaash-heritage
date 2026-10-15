@@ -27,7 +27,7 @@ export const CONFIG = {
   ],
   // Bump this when the consent wording or privacy notice changes; it is
   // stored with every registration.
-  consentVersion: "2026-10-v1",
+  consentVersion: "2026-10-v2",
   defaultCountry: "India",
   defaultDialCode: "+91",
 
@@ -60,6 +60,17 @@ export const CONFIG = {
   contactPhone: "+91 7397829282",
   whatsappNumber: "917397829282",       // digits only, with country code
   instagram: "https://www.instagram.com/talaashheritage/",
+  // Every public profile, shown in the footer and on Contact. Also listed as
+  // sameAs in the structured data on the home page.
+  socials: [
+    { label: "Instagram", href: "https://www.instagram.com/talaashheritage/" },
+    { label: "Facebook", href: "https://www.facebook.com/talaashheritage/" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/talaashheritage/" },
+    { label: "YouTube", href: "https://www.youtube.com/@talaashheritage1967" },
+    { label: "X", href: "https://x.com/HeritageTalaash" },
+    { label: "Google reviews", href: "https://www.google.com/maps/place/?q=place_id:ChIJHbwKo5fhDDkRuh_zAqXnRQM" },
+  ],
+  googleReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJHbwKo5fhDDkRuh_zAqXnRQM",
   // Path to your logo file, e.g. "assets/img/logo.png". Empty shows the
   // तलाश wordmark instead.
   logo: "",

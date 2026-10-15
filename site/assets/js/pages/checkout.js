@@ -4,6 +4,7 @@ import { clearCart } from "../store.js";
 import { requireVisitor } from "../gate.js";
 import { $, esc, loadScript, money } from "../ui.js";
 import { pricedCart } from "./cart.js";
+import { track } from "../track.js";
 
 const root = $("#checkout-root");
 
@@ -147,6 +148,7 @@ async function render() {
           <div><dt>Subtotal</dt><dd>${money(cart.subtotal)}</dd></div>
           ${cart.needsShipping ? `<div><dt>Delivery in India</dt><dd>${cart.shipping ? money(cart.shipping) : "Free"}</dd></div>` : ""}
           <div class="total"><dt>Total</dt><dd>${money(cart.total)}</dd></div>
+          ${cart.gst ? `<div class="gst-line"><dt>Includes GST</dt><dd>${money(cart.gst)}</dd></div>` : ""}
         </dl>
         <a href="cart.html" class="small">Change items</a>
       </aside>
@@ -170,6 +172,7 @@ async function render() {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     errorEl.textContent = "";
+    track("begin_checkout", { value: String(cart.total), label: cart.buyable.map((l) => l.p.slug).join(",").slice(0, 200) });
     const d = Object.fromEntries(new FormData(form));
     const phone = String(d.phone).replace(/[^0-9+]/g, "");
 
