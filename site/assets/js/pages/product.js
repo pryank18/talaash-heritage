@@ -23,6 +23,12 @@ function specRows(p) {
   return rows.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("");
 }
 
+function googleLine() {
+  const r = CONFIG.googleRating;
+  const href = (CONFIG.socials || []).find((s) => s.label === "Google reviews")?.href;
+  return r && href ? `<p class="small"><a href="${esc(href)}" target="_blank" rel="noopener">★ Rated ${esc(r.score)} on Google from ${r.count} reviews</a></p>` : "";
+}
+
 /** Shown in place of the cart for programmes we run on request. */
 function requestPanel(p) {
   const links = requestLinks(p);
@@ -41,6 +47,46 @@ function requestPanel(p) {
         <a class="btn btn-outline" href="${esc(links.email)}">Request by email</a>
       </div>
       <p class="small muted">${counselling ? "No payment is taken until you confirm the session." : "No payment is taken until you approve the plan."} <a href="about.html#questions">Common questions</a></p>
+      ${googleLine()}
+    </div>`;
+}
+
+/** The cancellation rule that applies to this listing, as set out on shipping-returns.html. */
+function refundLine(p) {
+  const tags = p.tags || [];
+  if (p.type === "live" || p.type === "course" || tags.includes("career-course")) return "Full refund if you cancel 48 hours or more before it starts.";
+  if (p.type === "walk" || p.type === "experience") return "Full refund if you cancel 72 hours or more before the start, or send someone in your place.";
+  if (p.type === "counselling") return "Move your slot free of charge up to 24 hours before it.";
+  if (p.type === "recording") return "Instant access. If the link does not work, we fix it or refund you.";
+  if (p.type === "physical") return "Arrived damaged or wrong? We replace it or refund you, including delivery.";
+  return "";
+}
+
+const waText = (p) => `Hello ${CONFIG.brand}, I have a question about "${p.title}": \n\n(ref: ${p.slug})`;
+
+/** Under the cart button: what the buyer can count on, and a way to ask before paying. */
+function assuranceHtml(p) {
+  const r = CONFIG.googleRating;
+  const reviews = (CONFIG.socials || []).find((s) => s.label === "Google reviews")?.href;
+  const teacher = p.speaker === "@archaeologywala"
+    ? `Taught by <a href="archaeologywala.html">@archaeologywala</a>, an archaeologist trained at Deccan College, Pune.`
+    : p.speaker ? `Taught by ${esc(p.speaker)}.` : "";
+  const lines = [
+    teacher,
+    refundLine(p) ? `${esc(refundLine(p))} <a href="shipping-returns.html">Policy</a>` : "",
+    `Pay securely by card, netbanking or UPI.${p.details?.gst_pct ? " The price includes GST." : ""}`,
+    reviews && r ? `<a href="${esc(reviews)}" target="_blank" rel="noopener">Rated ${esc(r.score)} on Google from ${r.count} reviews</a>` : "",
+  ].filter(Boolean);
+  const wa = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(waText(p))}`;
+  const mail = `mailto:${CONFIG.contactEmail}?subject=${encodeURIComponent(`Question: ${p.title}`)}&body=${encodeURIComponent(waText(p))}`;
+  return `<ul class="assure">${lines.map((l) => `<li>${l}</li>`).join("")}</ul>
+    <div class="ask-box">
+      <p><strong>Questions before you book?</strong> Ask us and we help you decide.</p>
+      <div class="buy-row">
+        <a class="btn btn-outline" href="${esc(wa)}" target="_blank" rel="noopener">Ask on WhatsApp</a>
+        <a class="btn btn-plain" href="${esc(mail)}">Email us</a>
+        <a class="btn btn-plain" href="tel:${esc(CONFIG.contactPhone.replace(/\s+/g, ""))}">Call ${esc(CONFIG.contactPhone)}</a>
+      </div>
     </div>`;
 }
 
@@ -140,7 +186,8 @@ async function render() {
                  </div>
                  <button class="btn btn-primary" type="button" data-buy>Add to cart</button>
                </div>
-               <p class="small muted" data-incart>${inCart ? `${inCart} already in your cart. <a href="cart.html">View cart</a>` : ""}</p>`
+               <p class="small muted" data-incart>${inCart ? `${inCart} already in your cart. <a href="cart.html">View cart</a>` : ""}</p>
+               ${assuranceHtml(p)}`
         }
         <div class="prose">${(p.description || "").split(/\n{2,}/).map((para) => `<p>${esc(para)}</p>`).join("")}</div>
         ${p.highlights?.length ? `<h2 class="covers-title">What it covers</h2><ul class="covers">${p.highlights.map((h) => `<li>${esc(h)}</li>`).join("")}</ul>` : ""}

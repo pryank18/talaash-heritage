@@ -48,6 +48,13 @@ function whatsappLink(order, cart, customer) {
   return `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`;
 }
 
+/** WhatsApp message for a buyer who has a question before paying. */
+function askLink(cart) {
+  const lines = cart.buyable.map((l) => `${l.qty} x ${l.p.title}`).join("\n");
+  const text = `Hello ${CONFIG.brand}, I have a question before I pay for:\n${lines}\n\nMy question: `;
+  return `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(text)}`;
+}
+
 async function render() {
   if (CONFIG.sampleNotice) {
     root.innerHTML = `<div class="empty"><h2>Bookings open soon</h2><p>The listings on the site are examples while it is being set up, so orders are not being taken yet.</p><a class="btn btn-primary" href="shop.html">Back to the shop</a></div>`;
@@ -151,6 +158,17 @@ async function render() {
           ${cart.gst ? `<div class="gst-line"><dt>Includes GST</dt><dd>${money(cart.gst)}</dd></div>` : ""}
         </dl>
         <a href="cart.html" class="small">Change items</a>
+        <div class="ask-box">
+          <p><strong>Questions before you pay?</strong> We answer on WhatsApp, by email or on the phone.</p>
+          <div class="buy-row">
+            <a class="btn btn-outline" href="${esc(askLink(cart))}" target="_blank" rel="noopener">Ask on WhatsApp</a>
+            <a class="btn btn-plain" href="tel:${esc(CONFIG.contactPhone.replace(/\s+/g, ""))}">Call ${esc(CONFIG.contactPhone)}</a>
+          </div>
+          <ul class="assure">
+            <li>Payments by card, netbanking and UPI are processed securely by Razorpay.</li>
+            <li>Changed your mind? See our <a href="shipping-returns.html" target="_blank" rel="noopener">cancellation and refund policy</a>.</li>
+          </ul>
+        </div>
       </aside>
     </div>`;
 

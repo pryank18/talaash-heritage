@@ -478,6 +478,16 @@ TEXT = {
     "Request a session on WhatsApp": "WhatsApp पर सत्र का अनुरोध करें",
     "Notify me on WhatsApp": "WhatsApp पर सूचना पाएँ",
     "Notify me by email": "ईमेल से सूचना पाएँ",
+    "<strong>Scheduled at a time that suits you.</strong> Share what you would like to discuss and when you are available. We confirm a time before you pay.":
+        "<strong>आपकी सुविधा के समय पर।</strong> बताएँ कि आप किस विषय पर बात करना चाहते हैं और कब उपलब्ध हैं। भुगतान से पहले हम समय की पुष्टि करते हैं।",
+    "<strong>Questions before you book?</strong> Ask us and we help you decide.":
+        "<strong>बुकिंग से पहले कोई प्रश्न?</strong> हमसे पूछें, निर्णय लेने में हम आपकी मदद करेंगे।",
+    "<strong>Questions before you pay?</strong> We answer on WhatsApp, by email or on the phone.":
+        "<strong>भुगतान से पहले कोई प्रश्न?</strong> हम WhatsApp, ईमेल या फ़ोन पर उत्तर देते हैं।",
+    "Ask on WhatsApp": "WhatsApp पर पूछें",
+    "Email us": "हमें ईमेल करें",
+    "Call +91 7397829282": "फ़ोन करें: +91 7397829282",
+    "Payments by card, netbanking and UPI are processed securely by Razorpay.": "कार्ड, नेटबैंकिंग और यूपीआई से भुगतान रेज़रपे के माध्यम से सुरक्षित रूप से होता है।",
     'No payment is taken until you approve the plan. <a href="about.html#questions">Common questions</a>':
         'योजना को आपकी स्वीकृति मिलने तक कोई भुगतान नहीं लिया जाता। <a href="about.html#questions">सामान्य प्रश्न</a>',
     'No payment is taken until you confirm the session. <a href="about.html#questions">Common questions</a>':

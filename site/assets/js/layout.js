@@ -7,6 +7,7 @@ import { $, esc, toast, canBuy } from "./ui.js";
 import { lang, setLang, startTranslating, t } from "./i18n.js";
 import "./magic.js";
 import { initTracking, track } from "./track.js";
+import { initHelp } from "./help.js";
 
 // The host serves /about.html as /about, so names are compared with ".html" added back.
 const rawPage = location.pathname.split("/").pop() || "index";
@@ -300,3 +301,4 @@ renderAppShell();
 updateCartCount();
 initGate();
 initTracking();
+initHelp();
