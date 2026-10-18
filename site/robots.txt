@@ -8,3 +8,4 @@ Disallow: /admin.html
 
 Sitemap: https://talaash-heritage.pages.dev/sitemap.xml
 Sitemap: https://talaash-heritage.pages.dev/sitemap-guides.xml
+Sitemap: https://talaash-heritage.pages.dev/sitemap-news.xml
