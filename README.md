@@ -30,3 +30,11 @@ The guides (Learn menu) are JSON files in `content/guides/`, written to `content
 - `python3 tools/export_marketing.py [start date]`: writes `docs/marketing/` (keyword map, Google Ads Editor import, 90-day social calendar, page register).
 
 `build_catalogue.py` reads the guides too: programme pages show "Pairs well with" (from the guides' bundles) and "Read before you go" (guides that recommend the programme).
+
+## Heritage desk (news)
+
+Stories are JSON files in `content/news/` (rules in `content/news/README.md`). `python3 tools/build_news.py` writes `site/news.html`, one `site/news-<slug>.html` per story and `site/sitemap-news.xml`; `--check` validates only. "News" is in the header, the footer and the mobile menu.
+
+## Social media images
+
+Instagram and Facebook slides are rendered by the GitHub Action in `.github/workflows/render-slides.yml` from `render/queue/<post>/<n>.html` to `site/media/ig/<post>-<n>.jpg` (see `render/README.md`), and served from `https://talaash-heritage.pages.dev/media/ig/`.
