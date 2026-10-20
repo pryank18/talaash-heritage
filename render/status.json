@@ -1,8 +1,19 @@
 {
- "at": "2026-10-18T23:27:12.233Z",
+ "at": "2026-10-20T21:36:29.328Z",
  "rendered": [
+  "site/media/ig/20261025-sharad-purnima-1.jpg",
+  "site/media/ig/20261025-sharad-purnima-2.jpg",
+  "site/media/ig/20261025-sharad-purnima-3.jpg",
+  "site/media/ig/20261025-sharad-purnima-4.jpg",
+  "site/media/ig/20261025-sharad-purnima-5.jpg",
+  "site/media/ig/20261026-valmiki-jayanti-1.jpg",
+  "site/media/ig/20261026-valmiki-jayanti-2.jpg",
+  "site/media/ig/20261026-valmiki-jayanti-3.jpg",
+  "site/media/ig/20261026-valmiki-jayanti-4.jpg",
+  "site/media/ig/20261026-valmiki-jayanti-5.jpg"
+ ],
+ "skipped": [
   "site/media/ig/_selftest-1.jpg"
  ],
- "skipped": [],
  "failed": []
 }
