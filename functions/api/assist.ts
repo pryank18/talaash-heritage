@@ -59,7 +59,9 @@ const ASKS_PRICE = /\b(price|prices|pricing|priced|cost|costs|charge|charges|fee
 const ASKS_REFUND = /\b(refund|refunds|cancel|cancels|cancelled|cancelling|cancellation|reschedule|money back|paisa wapas)\b|रद्द|वापस|रिफ़ंड|रिफंड/i;
 const ASKS_PAYMENT = /\b(how (do|can|to) i? ?pay|pay by|payment|payments|upi|razorpay|netbanking|gst|invoice)\b|भुगतान|पेमेंट|जीएसटी/i;
 
-const STOP = new Set("the a an of in at and or for to with on near me my by is are was were do does did can could will would you your we our i it this that what which who when where how why any some about have has there please tell want need like get run runs offer teach help book find talaash ka ki ke se mein hai".split(" "));
+const ASKS_ONE_TO_ONE = /\b(one[- ]to[- ]one|one on one|1[:-]1|1 on 1)\b|वन टू वन|व्यक्तिगत सत्र/i;
+const NOT_CAREER = /\b(walk|walks|tour|child|children|kid|kids|son|daughter)\b|भ्रमण|बच्च/i;
+const STOP = new Set("the a an of in at and or for to with on near me my by is are was were do does did can could will would you your we our i it this that what which who when where how why any some about have has there please tell want need like get run runs offer teach help book find talaash ignore rule rules give code discount family ka ki ke se mein hai".split(" "));
 const GENERIC = new Set("walk tour trip course lecture workshop programme heritage history india indian group school college something".split(" "));
 const norm = (s: string) => ` ${s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()} `;
 
@@ -86,7 +88,7 @@ function pick(question: string, limit = 4): Row[] {
     for (const pair of pairs) if (title.includes(pair) || terms.includes(pair) || rest.includes(pair)) score += 8;
     return { r, score };
   });
-  return scored.filter((x) => x.score >= 4).sort((a, b) => b.score - a.score).slice(0, limit).map((x) => x.r);
+  return scored.filter((x) => x.score >= 6).sort((a, b) => b.score - a.score).slice(0, limit).map((x) => x.r);
 }
 
 // Anything a reply must never contain. A match throws the reply away.
@@ -129,6 +131,12 @@ const PRICE: Record<Lang, { found: string; none: string }> = {
     none: "हर कार्यक्रम के पृष्ठ पर उसका वर्तमान मूल्य GST सहित दिया गया है। बताइए आप किस भ्रमण, पाठ्यक्रम या यात्रा के बारे में सोच रहे हैं, या कोटेशन के लिए WhatsApp पर समूह का आकार और तिथियाँ भेजें।",
   },
 };
+const ONE_TO_ONE: Record<Lang, string> = {
+  en: "Yes, in four ways: a single online counselling session of about 60 minutes, an application clinic with a review of your statement of purpose and CV, a career course on one evening of 2 hours, or a career course over a weekend, with two sessions of 1 hour 30 minutes. Each page below shows the details and price.",
+  hi: "हाँ, चार तरीकों से: लगभग 60 मिनट का एक ऑनलाइन परामर्श सत्र, आपके उद्देश्य-विवरण और CV की समीक्षा के साथ आवेदन क्लिनिक, एक शाम का 2 घंटे का करियर पाठ्यक्रम, या सप्ताहांत का करियर पाठ्यक्रम जिसमें 1 घंटे 30 मिनट के दो सत्र होते हैं। विवरण और मूल्य नीचे के पृष्ठों पर हैं।",
+};
+const ONE_TO_ONE_ROWS = ["product.html?slug=counselling-archaeology-careers", "product.html?slug=career-course-one-evening", "product.html?slug=career-course-weekend"]
+  .map((u) => ROWS.find((r) => r.u === u)!);
 const plain = (html: string) => html.replace(/<a [^>]*>(Full policy|पूरी नीति)<\/a>[.।]?/g, "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
 // The site's own Hindi words, and small slips the model repeats.
 const TIDY: [RegExp, string][] = [
@@ -190,15 +198,18 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   // A short follow-up such as "and in Agra?" still finds its subject in the earlier question.
   const rows = pick(question).length ? pick(question) : pick(turns.filter((t) => t.role === "user").map((t) => t.content).join(" "));
   // A button always backs up "see below". A declined request gets no programme buttons, only the finder.
-  const answer = (reply: string, source: "set" | "ai", only?: { title: string; url: string }) => {
-    const pages = only ? [only] : DECLINED.test(reply) ? [] : rows.slice(0, 3).map((r) => ({ title: r.t, url: r.u }));
+  const answer = (reply: string, source: "set" | "ai", only?: { title: string; url: string }[]) => {
+    if (only) return json({ ok: true, reply, source, links: only });
+    const pages = DECLINED.test(reply) ? [] : rows.slice(0, 3).map((r) => ({ title: r.t, url: r.u }));
     return json({ ok: true, reply, source, links: pages.length ? pages : [FINDER[lang]] });
   };
 
   // Fixed answers: these never reach the model, so they cost nothing and cannot drift.
+  // (Price first: "How much is one-to-one?" must lead to the pages, which the matching rows do.)
   if (ASKS_PRICE.test(question)) return answer(rows.length ? PRICE[lang].found : PRICE[lang].none, "set");
-  if (ASKS_REFUND.test(question)) return answer(plain(ANSWERS[lang][1][1]), "set", POLICY[lang]);
-  if (ASKS_PAYMENT.test(question)) return answer(plain(ANSWERS[lang][0][1]), "set");
+  if (ASKS_REFUND.test(question)) return answer(plain(ANSWERS[lang][1][1]), "set", [POLICY[lang]]);
+  if (ASKS_PAYMENT.test(question)) return answer(plain(ANSWERS[lang][0][1]), "set", []);
+  if (ASKS_ONE_TO_ONE.test(question) && !NOT_CAREER.test(question)) return answer(ONE_TO_ONE[lang], "set", ONE_TO_ONE_ROWS.map((r) => ({ title: r.t, url: r.u })));
 
   if (!env.AI) return json({ ok: false, error: "unavailable" }, 503);
   const url = new URL(request.url);

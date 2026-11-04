@@ -47,7 +47,7 @@ def main():
     rows += [
         {"t": "One-to-one career counselling", "u": "product.html?slug=counselling-archaeology-careers", "k": "One-to-one counselling", "p": "Online",
          "f": f"One private online session of about 60 minutes on study and career choices, with written next steps. There is also an application clinic, a session that includes a review of your statement of purpose and CV. {one}",
-         "s": "one to one 1:1 counselling counseling career mentoring guidance session application clinic sop cv"},
+         "s": "one to one 1:1 counselling counseling career mentoring guidance session application clinic sop cv abroad masters ma phd"},
         {"t": "Career course: one evening with an archaeologist", "u": "product.html?slug=career-course-one-evening", "k": "One-to-one career course", "p": "Online",
          "f": f"One private session of 2 hours with @archaeologywala on a Saturday or Sunday evening you choose, starting between 5:00 and 6:00 pm IST, booked on the site. Topics: careers in archaeology; careers with history, museums, heritage and research; studying abroad. {one}",
          "s": "one to one 1:1 one day single evening career course mentoring guidance counselling"},
