@@ -1,0 +1,31 @@
+# Runs on the assistant branch only: checks the branch preview and saves the answers on the assist-report branch.
+name: Assistant check
+on:
+  push:
+    branches: [assistant]
+    paths: ['functions/**', 'tools/assist-check.mjs', 'wrangler.toml', '.github/workflows/assist-check.yml']
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Wait for the preview
+        run: sleep 150
+      - name: Ask the questions
+        run: node tools/assist-check.mjs https://assistant.talaash-heritage.pages.dev
+      - name: Save the report
+        run: |
+          cp assist-report.md /tmp/r.md
+          git config user.name "assist-check"; git config user.email "assist-check@users.noreply.github.com"
+          git fetch origin assist-report || true
+          git checkout -B assist-report
+          git rm -rq --cached . ; rm -rf site functions tools content docs supabase render
+          cp /tmp/r.md assist-report.md; git add assist-report.md
+          git commit -m "Assistant check $GITHUB_SHA" -q
+          git push -f origin assist-report

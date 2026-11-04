@@ -27,7 +27,7 @@ export const CONFIG = {
   ],
   // Bump this when the consent wording or privacy notice changes; it is
   // stored with every registration.
-  consentVersion: "2026-10-v2",
+  consentVersion: "2026-11-v3",
   defaultCountry: "India",
   defaultDialCode: "+91",
 

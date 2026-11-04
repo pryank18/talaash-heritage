@@ -1362,3 +1362,25 @@ body.has-help .toast { bottom: 5rem; }
   .wordmark-tag { display: none; }
 }
 @media (min-width: 900px) and (max-width: 1299px) { .site-nav { gap: 0.85rem; font-size: 0.93rem; } }
+
+/* Site assistant, inside the help panel */
+.assist { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+.assist-log { display: flex; flex-direction: column; gap: 0.5rem; max-height: min(17rem, 38vh); overflow-y: auto; overscroll-behavior: contain; }
+.assist-msg { max-width: 92%; padding: 0.5rem 0.7rem; border-radius: 10px; font-size: var(--step--1); overflow-wrap: anywhere; }
+.assist-msg p { margin: 0; }
+.assist-msg.is-bot { align-self: flex-start; background: color-mix(in srgb, var(--ink) 6%, var(--paper)); }
+.assist-msg.is-user { align-self: flex-end; background: var(--ink); color: var(--paper); }
+.assist-label { display: block; font-size: 0.72rem; font-weight: 600; color: var(--ink-soft); margin-bottom: 0.15rem; }
+.assist-link { display: block; margin-top: 0.4rem; font-weight: 600; color: var(--ink); }
+.assist-wa { display: inline-block; margin-top: 0.5rem; }
+.assist-wait { margin: 0; font-size: var(--step--1); color: var(--ink-soft); }
+.assist-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; }
+.assist-chips:empty { display: none; }
+.assist-chip { border: 1px solid var(--line); background: none; color: var(--ink); border-radius: 999px; padding: 0.3rem 0.65rem; font: inherit; font-size: var(--step--1); cursor: pointer; }
+.assist-chip:hover { border-color: var(--ink-soft); }
+.assist-chip:focus-visible, .assist-log:focus-visible { outline: 3px solid var(--haldi); outline-offset: 2px; }
+.assist-form { display: flex; gap: 0.4rem; margin-top: 0.6rem; }
+.assist-form input { flex: 1; min-width: 0; font: inherit; font-size: 1rem; padding: 0.5rem 0.6rem; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); }
+.assist-form .btn { flex: none; }
+.assist-form .btn:disabled { opacity: 0.6; }
+.assist-note { margin: 0.4rem 0 0; font-size: 0.75rem; color: var(--ink-soft); }
