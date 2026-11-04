@@ -487,6 +487,8 @@ TEXT = {
     "Ask on WhatsApp": "WhatsApp पर पूछें",
     "Share": "साझा करें",
     "How many people?": "कितने लोग?",
+    "News": "समाचार",
+    "Heritage desk (news)": "धरोहर डेस्क (समाचार)",
     "Search": "खोजें",
     "Email us": "हमें ईमेल करें",
     "Call +91 7397829282": "फ़ोन करें: +91 7397829282",
