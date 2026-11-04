@@ -55,6 +55,9 @@ def main():
          "f": f"Two private sessions of 1 hour 30 minutes with @archaeologywala, on the Saturday and Sunday of a weekend you choose, starting between 5:00 and 6:30 pm IST, booked on the site. Topics: careers in archaeology; careers with history, museums, heritage and research; studying abroad. {one}",
          "s": "one to one 1:1 two day weekend career course mentoring guidance counselling"},
     ]
+    rows.append({"t": "Indian culture classes for children abroad", "u": "indian-culture-classes-for-kids-online", "k": "Online programme for children", "p": "Online",
+                 "f": "A live online Indian culture programme for children of Indian families abroad, aged 5 to 14, in two age tracks, with stories and a free trial. Taught live online, so it can be joined from the Gulf and elsewhere.",
+                 "s": "child children kid kids son daughter nri diaspora abroad dubai uae gulf overseas"})
     seen.update(r["u"] for r in rows)
     # Everything else in the search index: database listings such as the career courses, and the main pages.
     kinds = search.get("kinds", {})

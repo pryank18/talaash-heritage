@@ -3,7 +3,7 @@
 import { writeFileSync } from "node:fs";
 const base = process.argv[2];
 const qs = [
-  "What do you do?", "Walks in Delhi", "Something for a school group", "Career guidance in archaeology", "Tell me about the Mehrauli walk",
+  "What do you do?", "I want to run a walk for my family", "Walks in Delhi", "Something for a school group", "Career guidance in archaeology", "Tell me about the Mehrauli walk",
   "Is the Red Fort open on Monday?", "Can you take us to Agra for a day?", "Do you run walks in Shimla?", "Do you run tours in Goa?", "Do you have anything in Paris?",
   "Do you do one-to-one sessions?", "I want one day career guidance", "I want help with my SOP for an MA abroad", "Classes for my child in Dubai", "Which programme suits a corporate team outing?",
   "Do you teach Brahmi?", "Who built the Qutb Minar?", "When was the Taj Mahal built?", "Who runs Talaash?", "What is TALAASHH?",
