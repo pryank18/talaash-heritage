@@ -1,6 +1,20 @@
 {
- "at": "2026-11-04T20:21:20.030Z",
+ "at": "2026-11-04T20:22:48.658Z",
  "rendered": [
+  "site/media/ig/20261106-dhanteras-5.jpg",
+  "site/media/ig/20261108-diwali-5.jpg"
+ ],
+ "skipped": [
+  "site/media/ig/20261025-sharad-purnima-1.jpg",
+  "site/media/ig/20261025-sharad-purnima-2.jpg",
+  "site/media/ig/20261025-sharad-purnima-3.jpg",
+  "site/media/ig/20261025-sharad-purnima-4.jpg",
+  "site/media/ig/20261025-sharad-purnima-5.jpg",
+  "site/media/ig/20261026-valmiki-jayanti-1.jpg",
+  "site/media/ig/20261026-valmiki-jayanti-2.jpg",
+  "site/media/ig/20261026-valmiki-jayanti-3.jpg",
+  "site/media/ig/20261026-valmiki-jayanti-4.jpg",
+  "site/media/ig/20261026-valmiki-jayanti-5.jpg",
   "site/media/ig/20261105-fact-uttaramerur-1.jpg",
   "site/media/ig/20261105-fact-uttaramerur-2.jpg",
   "site/media/ig/20261106-dhanteras-1.jpg",
@@ -21,19 +35,7 @@
   "site/media/ig/20261108-jain-sikh-diwali-1.jpg",
   "site/media/ig/20261108-jain-sikh-diwali-2.jpg",
   "site/media/ig/20261108-jain-sikh-diwali-3.jpg",
-  "site/media/ig/20261108-jain-sikh-diwali-4.jpg"
- ],
- "skipped": [
-  "site/media/ig/20261025-sharad-purnima-1.jpg",
-  "site/media/ig/20261025-sharad-purnima-2.jpg",
-  "site/media/ig/20261025-sharad-purnima-3.jpg",
-  "site/media/ig/20261025-sharad-purnima-4.jpg",
-  "site/media/ig/20261025-sharad-purnima-5.jpg",
-  "site/media/ig/20261026-valmiki-jayanti-1.jpg",
-  "site/media/ig/20261026-valmiki-jayanti-2.jpg",
-  "site/media/ig/20261026-valmiki-jayanti-3.jpg",
-  "site/media/ig/20261026-valmiki-jayanti-4.jpg",
-  "site/media/ig/20261026-valmiki-jayanti-5.jpg",
+  "site/media/ig/20261108-jain-sikh-diwali-4.jpg",
   "site/media/ig/_selftest-1.jpg"
  ],
  "failed": []
