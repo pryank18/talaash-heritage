@@ -59,30 +59,31 @@ const ASKS_PRICE = /\b(price|prices|pricing|priced|cost|costs|charge|charges|fee
 const ASKS_REFUND = /\b(refund|refunds|cancel|cancels|cancelled|cancelling|cancellation|reschedule|money back|paisa wapas)\b|रद्द|वापस|रिफ़ंड|रिफंड/i;
 const ASKS_PAYMENT = /\b(how (do|can|to) i? ?pay|pay by|payment|payments|upi|razorpay|netbanking|gst|invoice)\b|भुगतान|पेमेंट|जीएसटी/i;
 
-const STOP = new Set("the a an of in at and or for to with on near me my by is are was were do does did can could will would you your we our i it this that what which who when where how why any some about have has there please tell want need like get ka ki ke se mein hai".split(" "));
+const STOP = new Set("the a an of in at and or for to with on near me my by is are was were do does did can could will would you your we our i it this that what which who when where how why any some about have has there please tell want need like get run runs offer teach help book find talaash ka ki ke se mein hai".split(" "));
 const GENERIC = new Set("walk tour trip course lecture workshop programme heritage history india indian group school college something".split(" "));
-const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const norm = (s: string) => ` ${s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()} `;
 
-/** The rows of the site that best match the question. */
+/** The rows of the site that best match the question. A word must match from its start: "run" must not find "Arunachal". */
 function pick(question: string, limit = 4): Row[] {
   let q = question;
   for (const [hi, en] of HINDI) q = q.replaceAll(hi, ` ${en} `);
-  const words = [...new Set(norm(q).replace(/[^a-z0-9]+/g, " ").split(" ").filter((w) => w.length > 2 && !STOP.has(w)))];
+  const words = [...new Set(norm(q).trim().split(" ").filter((w) => w.length > 2 && !STOP.has(w)))];
   if (!words.length) return [];
   // Words such as "walk" fit most of the site, so they count for little. A place or name decides the order.
-  const pairs = words.slice(1).map((w, i) => `${words[i]} ${w}`);
+  const pairs = words.slice(1).map((w, i) => ` ${words[i]} ${w}`);
   const scored = ROWS.map((r) => {
-    const title = norm(r.t), place = norm(r.p), kind = norm(r.k), rest = norm(`${r.f} ${r.s}`);
+    const title = norm(r.t), place = norm(r.p), kind = norm(r.k), terms = norm(r.s), rest = norm(r.f);
     let score = 0;
     for (const w of words) {
-      const stem = w.replace(/s$/, "");
-      const weight = GENERIC.has(stem) ? 0.25 : 1;
+      const stem = ` ${w.replace(/s$/, "")}`;
+      const weight = GENERIC.has(w.replace(/s$/, "")) ? 0.25 : 1;
       if (title.includes(stem)) score += 6 * weight;
       if (place.includes(stem)) score += 4 * weight;
       if (kind.includes(stem)) score += 2 * weight;
+      if (terms.includes(stem)) score += 4 * weight;
       if (rest.includes(stem)) score += weight;
     }
-    for (const pair of pairs) if (title.includes(pair) || rest.includes(pair)) score += 8;
+    for (const pair of pairs) if (title.includes(pair) || terms.includes(pair) || rest.includes(pair)) score += 8;
     return { r, score };
   });
   return scored.filter((x) => x.score >= 4).sort((a, b) => b.score - a.score).slice(0, limit).map((x) => x.r);
@@ -107,7 +108,8 @@ function safe(reply: string, facts: string, lang: Lang) {
   if (!reply || reply.length > 900) return false;
   if (UNSAFE.some((r) => r.test(reply))) return false;
   if (/[०-९]/.test(reply)) return false;
-  if ((lang === "hi") !== DEVANAGARI.test(reply)) return false;
+  // Hindi gets Hindi. Hindi typed in English letters may get either, so an English question is not checked here.
+  if (lang === "hi" && !DEVANAGARI.test(reply)) return false;
   const known = new Set(digits(facts));
   const knownMeasures = new Set(measures(facts));
   return digits(reply).every((n) => known.has(n)) && measures(reply).every((m) => knownMeasures.has(m));
@@ -127,8 +129,22 @@ const PRICE: Record<Lang, { found: string; none: string }> = {
     none: "हर कार्यक्रम के पृष्ठ पर उसका वर्तमान मूल्य GST सहित दिया गया है। बताइए आप किस भ्रमण, पाठ्यक्रम या यात्रा के बारे में सोच रहे हैं, या कोटेशन के लिए WhatsApp पर समूह का आकार और तिथियाँ भेजें।",
   },
 };
-const plain = (html: string) => html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
-const links = (rows: Row[]) => rows.slice(0, 3).map((r) => ({ title: r.t, url: r.u, kind: r.k }));
+const plain = (html: string) => html.replace(/<a [^>]*>(Full policy|पूरी नीति)<\/a>[.।]?/g, "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+// The site's own Hindi words, and small slips the model repeats.
+const TIDY: [RegExp, string][] = [
+  [/व्हाट्सएप|व्हाट्सऐप/g, "WhatsApp"], [/प्रोग्राम फाइंडर|प्रोग्राम फ़ाइंडर/g, "कार्यक्रम खोजक"], [/विरासत भ्रमण/g, "धरोहर भ्रमण"], [/तलाश हेरिटेज/g, "Talaash Heritage"],
+  [/ in my facts/gi, ""],
+];
+const tidy = (reply: string) => TIDY.reduce((t, [from, to]) => t.replace(from, to), reply);
+const FINDER: Record<Lang, { title: string; url: string }> = {
+  en: { title: "Help me choose a programme", url: "finder.html" },
+  hi: { title: "कार्यक्रम खोजक", url: "finder.html" },
+};
+const POLICY: Record<Lang, { title: string; url: string }> = {
+  en: { title: "Cancellations and refunds", url: "shipping-returns.html" },
+  hi: { title: "रद्द करने और वापसी की नीति", url: "shipping-returns.html" },
+};
+const DECLINED = /^I am an AI assistant\. I c|^I cannot|I cannot provide|मैं .*नहीं कर सकता/;
 
 async function hashed(ip: string, host: string) {
   const day = new Date().toISOString().slice(0, 10);
@@ -173,11 +189,15 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   const lang: Lang = DEVANAGARI.test(question) ? "hi" : "en";
   // A short follow-up such as "and in Agra?" still finds its subject in the earlier question.
   const rows = pick(question).length ? pick(question) : pick(turns.filter((t) => t.role === "user").map((t) => t.content).join(" "));
-  const answer = (reply: string, source: "set" | "ai") => json({ ok: true, reply, source, links: links(rows) });
+  // A button always backs up "see below". A declined request gets no programme buttons, only the finder.
+  const answer = (reply: string, source: "set" | "ai", only?: { title: string; url: string }) => {
+    const pages = only ? [only] : DECLINED.test(reply) ? [] : rows.slice(0, 3).map((r) => ({ title: r.t, url: r.u }));
+    return json({ ok: true, reply, source, links: pages.length ? pages : [FINDER[lang]] });
+  };
 
   // Fixed answers: these never reach the model, so they cost nothing and cannot drift.
   if (ASKS_PRICE.test(question)) return answer(rows.length ? PRICE[lang].found : PRICE[lang].none, "set");
-  if (ASKS_REFUND.test(question)) return answer(plain(ANSWERS[lang][1][1]), "set");
+  if (ASKS_REFUND.test(question)) return answer(plain(ANSWERS[lang][1][1]), "set", POLICY[lang]);
   if (ASKS_PAYMENT.test(question)) return answer(plain(ANSWERS[lang][0][1]), "set");
 
   if (!env.AI) return json({ ok: false, error: "unavailable" }, 503);
@@ -207,7 +227,7 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
       if (lang === "hi") throw e;
       return run(BACKUP_MODEL);
     });
-    const reply = textOf(out);
+    const reply = tidy(textOf(out));
     if (!reply) return json({ ok: false, error: "empty" }, 502);
     return safe(reply, facts, lang) ? answer(reply, "ai") : answer(HANDOVER[lang], "set");
   } catch (e) {
