@@ -1352,3 +1352,13 @@ body.has-help .toast { bottom: 5rem; }
 .news-text { margin-top: 1.5rem; }
 .news-sources { margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1rem; }
 .news-sources li { margin-bottom: 0.4rem; overflow-wrap: anywhere; }
+/* Eight menu items (News added 20 Oct) on one row: a touch smaller from 1300px so the cart stays on the row. */
+@media (min-width: 1300px) {
+  .site-nav { gap: 0.75rem; font-size: 0.94rem; }
+}
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .site-header { gap: 0.6rem; }
+  .site-nav { gap: 0.55rem; font-size: 0.9rem; }
+  .wordmark-tag { display: none; }
+}
+@media (min-width: 900px) and (max-width: 1299px) { .site-nav { gap: 0.85rem; font-size: 0.93rem; } }
