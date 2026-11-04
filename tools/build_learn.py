@@ -8,7 +8,7 @@ posts the marketing team uses (see tools/export_marketing.py).
 
 Run after build_catalogue.py:  python3 tools/build_learn.py
 """
-import datetime, html, json, os, re
+import datetime, html, json, os, re, subprocess, sys
 from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -516,6 +516,7 @@ def write_search_index():
     slugs = sorted(p["page"][:-5] for p in cat["programmes"] if p.get("page"))
     open(os.path.join(SITE, "data", "programmes.json"), "w", encoding="utf-8").write(json.dumps(slugs, separators=(",", ":")))
     print(len(items), "entries in data/search.json")
+    subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "build_assist.py")], check=True)
 
 
 if __name__ == "__main__":
