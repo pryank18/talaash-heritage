@@ -6,27 +6,27 @@ import { track } from "./track.js";
 
 const EN = {
   label: "Ask Khoji",
-  hello: "Hello, I'm Khoji, the AI guide of Talaash Heritage. Ask me about a walk, a course, a city or a topic, and I'll point you to the right programme.",
-  ai: "Khoji, AI reply",
-  set: "Khoji, from our site",
-  note: "AI can make mistakes. Please confirm anything important with our team.",
+  hello: "Hello, I'm Khoji from Talaash Heritage. Looking for a walk, a course or a trip, or curious about a place? Tell me what you have in mind.",
+  ai: "Khoji",
+  set: "Khoji",
+  note: "Khoji is our AI guide. For anything important, please check with our team.",
   placeholder: "Type your question",
   send: "Send",
-  thinking: "Writing a reply",
-  busy: "I can't answer just now. Please message our team on WhatsApp, and a person will reply.",
+  thinking: "Khoji is typing",
+  busy: "Sorry, I can't reply just now. Message our team on WhatsApp and someone will help you.",
   whatsapp: "WhatsApp us",
   chips: ["Walks in Delhi", "Something for a school group", "Career guidance in archaeology", "How do I cancel?"],
 };
 const HI = {
   label: "खोजी से पूछें",
-  hello: "नमस्ते, मैं खोजी हूँ, Talaash Heritage का AI मार्गदर्शक। किसी भ्रमण, पाठ्यक्रम, शहर या विषय के बारे में पूछें, मैं आपको सही कार्यक्रम तक पहुँचाऊँगा।",
-  ai: "खोजी, AI का उत्तर",
-  set: "खोजी, हमारी साइट से",
-  note: "AI से ग़लती हो सकती है। कोई भी महत्वपूर्ण बात हमारी टीम से पक्की कर लें।",
+  hello: "नमस्ते, मैं Talaash Heritage से खोजी हूँ। कोई भ्रमण, पाठ्यक्रम या यात्रा खोज रहे हैं, या किसी स्थान के बारे में जानना चाहते हैं? बताइए, आपके मन में क्या है।",
+  ai: "खोजी",
+  set: "खोजी",
+  note: "खोजी हमारा AI मार्गदर्शक है। कोई भी महत्वपूर्ण बात हमारी टीम से पक्की कर लें।",
   placeholder: "अपना प्रश्न लिखें",
   send: "भेजें",
-  thinking: "उत्तर लिखा जा रहा है",
-  busy: "अभी उत्तर नहीं दे पा रहा हूँ। कृपया WhatsApp पर हमारी टीम को संदेश भेजें, कोई व्यक्ति उत्तर देगा।",
+  thinking: "खोजी लिख रहा है",
+  busy: "क्षमा करें, अभी उत्तर नहीं दे पा रहा हूँ। WhatsApp पर हमारी टीम को संदेश भेज दीजिए, वे आपकी सहायता करेंगे।",
   whatsapp: "WhatsApp करें",
   chips: ["दिल्ली में भ्रमण", "विद्यालय के समूह के लिए कार्यक्रम", "पुरातत्व में करियर मार्गदर्शन", "बुकिंग कैसे रद्द करें?"],
 };
@@ -75,7 +75,8 @@ export function mountAssistant(box) {
       a.href = l.url;
       b.append(a);
     });
-    if (m.failed) {
+    // A reply that sends someone to WhatsApp, with no page to offer, carries the button.
+    if (m.failed || (/WhatsApp/.test(m.content) && !(m.links || []).length)) {
       const a = el("a", "btn btn-outline assist-wa", L.whatsapp);
       a.href = `https://wa.me/${CONFIG.whatsappNumber}`;
       a.target = "_blank";

@@ -22,6 +22,15 @@ def no_money(text):
     return " ".join(p for p in parts if not re.search(r"₹|\bRs\.?\b|\bINR\b|rupee|per head|per person", p, re.I))
 
 
+def knowledge(g, limit=4000):
+    """The guide's own text, questions first, so Khoji can answer history questions from what the site says."""
+    parts = [g.get("summary", "")]
+    parts += [f"{i['q']} {i['a']}" for i in g.get("faq") or []]
+    parts += [p for sec in g.get("sections") or [] for p in sec.get("paras") or []]
+    text = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", " ".join(str(p) for p in parts))
+    return clean(no_money(clean(text, 8000)), limit)
+
+
 def main():
     cat = json.load(open(os.path.join(SITE, "data", "catalogue.json"), encoding="utf-8"))
     search = json.load(open(os.path.join(SITE, "data", "search.json"), encoding="utf-8"))
@@ -40,7 +49,7 @@ def main():
         g = json.load(open(path, encoding="utf-8"))
         faq = " ".join(f"{i['q']} {i['a']}" for i in (g.get("faq") or [])[:3])
         rows.append({"t": g["title"], "u": f"{g['slug']}.html", "k": "Guide", "p": "",
-                     "f": no_money(clean(f"{g.get('summary', '')} {faq}", 760)), "s": clean(" ".join(g.get("keywords") or []), 200)})
+                     "f": no_money(clean(f"{g.get('summary', '')} {faq}", 760)), "s": clean(" ".join(g.get("keywords") or []), 200), "x": knowledge(g)})
         seen.add(f"{g['slug']}.html")
     # One-to-one work is sold in several formats, some of them database listings outside the catalogue.
     one = "One to one, online, for Class 11 and 12 students, undergraduates, graduates and parents. A parent is welcome to join. In English and Hindi."
