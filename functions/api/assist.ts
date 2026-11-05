@@ -174,7 +174,7 @@ const plain = (html: string) => html.replace(/<a [^>]*>(Full policy|पूरी
 // The site's own Hindi words, and small slips the model repeats.
 const TIDY: [RegExp, string][] = [
   [/व्हाट्सएप|व्हाट्सऐप/g, "WhatsApp"], [/प्रोग्राम फाइंडर|प्रोग्राम फ़ाइंडर/g, "कार्यक्रम खोजक"], [/विरासत भ्रमण/g, "धरोहर भ्रमण"], [/तलाश हेरिटेज/g, "Talaash Heritage"],
-  [/का कार्यक्रम खोजक हूँ/g, "का AI मार्गदर्शक हूँ"], [/Schools and colleges (get|receive)/g, "Schools $1"], [/विरासत वाली सैर/g, "धरोहर भ्रमण"], [/कश्मीरे गेट/g, "कश्मीरी गेट"], [/AI गाइड/g, "AI मार्गदर्शक"], [/कस्टमाइज़/g, "अपने अनुसार तय"],
+  [/का कार्यक्रम खोजक हूँ/g, "का AI मार्गदर्शक हूँ"], [/Schools and colleges (get|receive)/g, "Schools $1"], [/विरासत वाली सैर/g, "धरोहर भ्रमण"], [/कश्मीरे गेट/g, "कश्मीरी गेट"], [/हमारी धरोहर भ्रमण/g, "हमारे धरोहर भ्रमण"], [/AI गाइड/g, "AI मार्गदर्शक"], [/कस्टमाइज़/g, "अपने अनुसार तय"],
   [/\[[^\]]*\]/g, ""], [/[^.!?।]*\bI(?:'ve| have) put\b[^.!?।]*[.!?।]?/gi, ""], [/ in my facts/gi, ""], [/\s*(Please )?see below\.?$/i, ""], [/\s*नीचे देखें।?$/, ""],
 ];
 const tidy = (reply: string) =>
