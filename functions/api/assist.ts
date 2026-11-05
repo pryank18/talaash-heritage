@@ -78,6 +78,8 @@ function passages(question: string, rows: Row[], limit = 5) {
   const scored: { line: string; score: number }[] = [];
   for (const r of rows) {
     for (const line of (r.x ?? "").split(/(?<=[.?!])\s+/)) {
+      // A sentence that leans on the one before it ("Its rulers built...") makes no sense alone.
+      if (/^(It|Its|He|His|She|Her|They|Their|This|These|Those|That|There|Here|Some|Both)\b/.test(line)) continue;
       const n = norm(line);
       const score = words.filter((w) => has(n, w)).length;
       if (score) scored.push({ line, score });
