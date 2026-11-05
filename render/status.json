@@ -1,6 +1,17 @@
 {
- "at": "2026-11-05T02:31:08.955Z",
- "rendered": [],
+ "at": "2026-11-05T14:58:32.992Z",
+ "rendered": [
+  "site/media/ig/20261112-fact-junagadh-dam-1.jpg",
+  "site/media/ig/20261112-fact-junagadh-dam-2.jpg",
+  "site/media/ig/20261113-boli-kaithi-1.jpg",
+  "site/media/ig/20261113-boli-kaithi-2.jpg",
+  "site/media/ig/20261113-boli-kaithi-3.jpg",
+  "site/media/ig/20261113-boli-kaithi-4.jpg",
+  "site/media/ig/20261113-boli-kaithi-5.jpg",
+  "site/media/ig/20261113-boli-kaithi-6.jpg",
+  "site/media/ig/20261114-fact-kharosthi-coin-1.jpg",
+  "site/media/ig/20261114-fact-kharosthi-coin-2.jpg"
+ ],
  "skipped": [
   "site/media/ig/20261025-sharad-purnima-1.jpg",
   "site/media/ig/20261025-sharad-purnima-2.jpg",
@@ -72,9 +83,7 @@
  ],
  "failed": [],
  "shorts": {
-  "built": [
-   "site/media/ig/20261111-read-brahmi-short.mp4"
-  ],
-  "diplomaFixed": true
+  "built": [],
+  "diplomaFixed": false
  }
 }
