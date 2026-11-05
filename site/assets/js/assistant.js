@@ -1,14 +1,14 @@
-// The site assistant inside the "Ask us" panel. Replies come from functions/api/assist.ts and always carry a label saying
+// Khoji, the site assistant, inside the help panel. Replies come from functions/api/assist.ts and always carry a label saying
 // so. Everything is shown as text, never as HTML. The conversation lives in this page only and is never stored.
 import { CONFIG } from "./config.js";
 import { lang } from "./i18n.js";
 import { track } from "./track.js";
 
 const EN = {
-  label: "Ask the assistant",
-  hello: "Hello. Ask me about a walk, a course, a city or a topic, and I'll point you to the right programme.",
-  ai: "AI reply",
-  set: "From our policies",
+  label: "Ask Khoji",
+  hello: "Hello, I'm Khoji, the AI guide of Talaash Heritage. Ask me about a walk, a course, a city or a topic, and I'll point you to the right programme.",
+  ai: "Khoji, AI reply",
+  set: "Khoji, from our site",
   note: "AI can make mistakes. Please confirm anything important with our team.",
   placeholder: "Type your question",
   send: "Send",
@@ -18,10 +18,10 @@ const EN = {
   chips: ["Walks in Delhi", "Something for a school group", "Career guidance in archaeology", "How do I cancel?"],
 };
 const HI = {
-  label: "सहायक से पूछें",
-  hello: "नमस्ते। किसी भ्रमण, पाठ्यक्रम, शहर या विषय के बारे में पूछें, मैं आपको सही कार्यक्रम तक पहुँचाऊँगा।",
-  ai: "AI का उत्तर",
-  set: "हमारी नीति से",
+  label: "खोजी से पूछें",
+  hello: "नमस्ते, मैं खोजी हूँ, Talaash Heritage का AI मार्गदर्शक। किसी भ्रमण, पाठ्यक्रम, शहर या विषय के बारे में पूछें, मैं आपको सही कार्यक्रम तक पहुँचाऊँगा।",
+  ai: "खोजी, AI का उत्तर",
+  set: "खोजी, हमारी साइट से",
   note: "AI से ग़लती हो सकती है। कोई भी महत्वपूर्ण बात हमारी टीम से पक्की कर लें।",
   placeholder: "अपना प्रश्न लिखें",
   send: "भेजें",
