@@ -37,7 +37,7 @@ Stories are JSON files in `content/news/` (rules in `content/news/README.md`). `
 
 ## Site assistant
 
-The Ask us panel holds an AI assistant on Cloudflare Workers AI (free allowance): `site/assets/js/assistant.js` calls `functions/api/assist.ts`. Rules and general facts are in `functions/_lib/assist-rules.ts`; programme and guide facts in `functions/_lib/assist-data.json`, written by `tools/build_assist.py` (`build_learn.py` runs it). Payment and refund answers come word for word from `site/assets/js/help-answers.js`. It never quotes a price: price questions go to the programme page. The AI binding is in `wrangler.toml`. Daily limits: `public.assist_take`, 100 replies for the site and 20 per visitor. `node tools/assist-check.mjs <address>` asks it a fixed set of questions.
+The help panel ("Ask Khoji") holds Khoji, an AI assistant on Cloudflare Workers AI (free allowance): `site/assets/js/assistant.js` calls `functions/api/assist.ts`. Rules and general facts are in `functions/_lib/assist-rules.ts`; programme and guide facts in `functions/_lib/assist-data.json`, written by `tools/build_assist.py` (`build_learn.py` runs it). Payment and refund answers come word for word from `site/assets/js/help-answers.js`. It never quotes a price: price questions go to the programme page. The AI binding is in `wrangler.toml`. Daily limits: `public.assist_take`, 100 replies for the site and 20 per visitor. `node tools/assist-check.mjs <address>` asks it a fixed set of questions.
 
 ## Social media images
 

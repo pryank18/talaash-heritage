@@ -1,4 +1,4 @@
-// Cloudflare Pages Function: POST /api/assist. The site assistant inside the "Ask us" panel.
+// Cloudflare Pages Function: POST /api/assist. Khoji, the site assistant inside the help panel.
 // Conversations are never stored. Prices, payment and refund questions get fixed answers without calling the model, so they
 // cannot drift. The model sees only facts picked from the site. Every reply is checked before it leaves: a price, a web address,
 // a promise or any number that is not in those facts throws the reply away and hands over to the team. Any failure sends the
@@ -61,7 +61,7 @@ const ASKS_PAYMENT = /\b(how (do|can|to) i? ?pay|pay by|payment|payments|upi|raz
 
 const ASKS_ONE_TO_ONE = /\b(one[- ]to[- ]one|one on one|1[:-]1|1 on 1)\b|वन टू वन|व्यक्तिगत सत्र/i;
 const NOT_CAREER = /\b(walk|walks|tour|child|children|kid|kids|son|daughter)\b|भ्रमण|बच्च/i;
-const STOP = new Set("the a an of in at and or for to with on near me my by is are was were do does did can could will would you your we our i it this that what which who when where how why any some about have has there please tell want need like get run runs offer teach help book find talaash ignore rule rules give code discount family worked ka ki ke se mein hai".split(" "));
+const STOP = new Set("the a an of in at and or for to with on near me my by is are was were do does did can could will would you your we our i it this that what which who when where how why any some about have has there please tell want need like get run runs offer teach help book find talaash ignore rule rules give code discount family worked name real person print system prompt ka ki ke se mein hai".split(" "));
 const GENERIC = new Set("walk tour trip course lecture workshop programme heritage history india indian group school college something".split(" "));
 const norm = (s: string) => ` ${s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()} `;
 
@@ -141,7 +141,7 @@ const plain = (html: string) => html.replace(/<a [^>]*>(Full policy|पूरी
 // The site's own Hindi words, and small slips the model repeats.
 const TIDY: [RegExp, string][] = [
   [/व्हाट्सएप|व्हाट्सऐप/g, "WhatsApp"], [/प्रोग्राम फाइंडर|प्रोग्राम फ़ाइंडर/g, "कार्यक्रम खोजक"], [/विरासत भ्रमण/g, "धरोहर भ्रमण"], [/तलाश हेरिटेज/g, "Talaash Heritage"],
-  [/ in my facts/gi, ""],
+  [/का कार्यक्रम खोजक हूँ/g, "का AI मार्गदर्शक हूँ"], [/ in my facts/gi, ""],
 ];
 const tidy = (reply: string) => TIDY.reduce((t, [from, to]) => t.replace(from, to), reply);
 const FINDER: Record<Lang, { title: string; url: string }> = {
@@ -152,7 +152,7 @@ const POLICY: Record<Lang, { title: string; url: string }> = {
   en: { title: "Cancellations and refunds", url: "shipping-returns.html" },
   hi: { title: "रद्द करने और वापसी की नीति", url: "shipping-returns.html" },
 };
-const DECLINED = /^Our team can help|^I am an AI assistant\. I c|^I cannot|I cannot provide|मैं .*नहीं कर सकता/;
+const DECLINED = /^Our team can help|^I am sorry|^I am (Khoji, )?an AI assistant\. I c|^I cannot|I cannot provide|मैं .*नहीं कर सकता/;
 
 async function hashed(ip: string, host: string) {
   const day = new Date().toISOString().slice(0, 10);

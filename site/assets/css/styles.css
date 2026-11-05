@@ -1164,7 +1164,25 @@ html[data-theme="dark"] .path-travel { border-color: var(--line); border-top-col
 .help-fab:hover { filter: brightness(1.15); }
 .help-fab:focus-visible { outline: 3px solid var(--haldi); outline-offset: 3px; }
 body.has-help .toast { bottom: 5rem; }
-@media print { .help-fab { display: none; } }
+/* Up arrow, WhatsApp and Ask Khoji stand in one column, measured from --fab-base. */
+body { --fab-base: 1.25rem; --fab-x: 1.25rem; --fab-size: 3rem; --fab-gap: 0.6rem; --fab-ask: 3.1rem; }
+.wa-fab, .top-fab {
+  position: fixed; right: var(--fab-x); z-index: 34; width: var(--fab-size); height: var(--fab-size);
+  display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 0; cursor: pointer;
+  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.55);
+}
+.help-fab { bottom: var(--fab-base); }
+.wa-fab { bottom: calc(var(--fab-base) + var(--fab-ask) + var(--fab-gap)); background: #128c4b; color: #fff; border: 0; }
+.wa-fab svg { width: 1.55rem; height: 1.55rem; fill: currentColor; }
+.top-fab {
+  bottom: calc(var(--fab-base) + var(--fab-ask) + var(--fab-size) + var(--fab-gap) * 2);
+  background: var(--paper); color: var(--ink); border: 1px solid var(--line);
+}
+.top-fab[hidden] { display: none; }
+.top-fab svg { width: 1.3rem; height: 1.3rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.wa-fab:hover, .top-fab:hover { filter: brightness(1.1); }
+.wa-fab:focus-visible, .top-fab:focus-visible { outline: 3px solid var(--haldi); outline-offset: 3px; }
+@media print { .help-fab, .wa-fab, .top-fab { display: none; } }
 
 .help-panel {
   border: 0; padding: 0; width: min(25rem, calc(100vw - 2rem)); max-height: min(38rem, calc(100vh - 7rem));
@@ -1202,10 +1220,12 @@ body.has-help .toast { bottom: 5rem; }
 .summary .ask-box { margin-top: 1.25rem; }
 
 @media (max-width: 899px) {
-  .help-fab { padding: 0; width: 3.2rem; height: 3.2rem; justify-content: center; right: 0.9rem; }
+  body { --fab-x: 0.9rem; --fab-size: 2.9rem; --fab-gap: 0.5rem; --fab-ask: 3.2rem; }
+  body.has-tabbar { --fab-base: calc(4.9rem + env(safe-area-inset-bottom)); }
+  body.has-action { --fab-base: calc(5.3rem + env(safe-area-inset-bottom)); }
+  body.is-typing .wa-fab, body.is-typing .top-fab, body.is-typing .help-fab { display: none; }
+  .help-fab { padding: 0; width: 3.2rem; height: 3.2rem; justify-content: center; right: var(--fab-x); }
   .help-fab span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  body.has-tabbar .help-fab { bottom: calc(4.9rem + env(safe-area-inset-bottom)); }
-  body.has-action .help-fab { bottom: calc(5.3rem + env(safe-area-inset-bottom)); }
   body.has-help .toast { bottom: calc(5rem + env(safe-area-inset-bottom)); max-width: calc(100vw - 5.5rem); left: 0.9rem; transform: none; }
   body.has-help.has-action .toast { bottom: calc(5.4rem + env(safe-area-inset-bottom)); }
   .help-panel {
