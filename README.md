@@ -35,6 +35,10 @@ The guides (Learn menu) are JSON files in `content/guides/`, written to `content
 
 Stories are JSON files in `content/news/` (rules in `content/news/README.md`). `python3 tools/build_news.py` writes `site/news.html`, one `site/news-<slug>.html` per story and `site/sitemap-news.xml`; `--check` validates only. "News" is in the header, the footer and the mobile menu.
 
+## Site assistant
+
+The Ask us panel holds an AI assistant on Cloudflare Workers AI (free allowance): `site/assets/js/assistant.js` calls `functions/api/assist.ts`. Rules and general facts are in `functions/_lib/assist-rules.ts`; programme and guide facts in `functions/_lib/assist-data.json`, written by `tools/build_assist.py` (`build_learn.py` runs it). Payment and refund answers come word for word from `site/assets/js/help-answers.js`. It never quotes a price: price questions go to the programme page. The AI binding is in `wrangler.toml`. Daily limits: `public.assist_take`, 100 replies for the site and 20 per visitor. `node tools/assist-check.mjs <address>` asks it a fixed set of questions.
+
 ## Social media images
 
 Instagram and Facebook slides are rendered by the GitHub Action in `.github/workflows/render-slides.yml` from `render/queue/<post>/<n>.html` to `site/media/ig/<post>-<n>.jpg` (see `render/README.md`), and served from `https://talaash-heritage.pages.dev/media/ig/`.
