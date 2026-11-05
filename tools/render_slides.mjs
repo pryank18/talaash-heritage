@@ -36,6 +36,12 @@ for (const post of posts.sort()) {
   }
 }
 await browser.close();
+try {
+  const { buildShorts } = await import('./build_shorts.mjs');
+  status.shorts = await buildShorts();
+} catch (e) {
+  status.shortsError = String(e.message || e).slice(0, 500);
+}
 fs.writeFileSync('render/status.json', JSON.stringify(status, null, 1) + '\n');
 console.log(JSON.stringify(status, null, 1));
 if (status.failed.length) process.exitCode = 1;
