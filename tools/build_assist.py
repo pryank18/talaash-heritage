@@ -57,7 +57,7 @@ def main():
     ]
     rows.append({"t": "Indian culture classes for children abroad", "u": "indian-culture-classes-for-kids-online", "k": "Online programme for children", "p": "Online",
                  "f": "A live online Indian culture programme for children of Indian families abroad, aged 5 to 14, in two age tracks, with stories and a free trial. Taught live online, so it can be joined from the Gulf and elsewhere.",
-                 "s": "child children kid kids son daughter nri diaspora abroad dubai uae gulf overseas"})
+                 "s": "child children kid kids son daughter nri diaspora dubai uae gulf overseas"})
     seen.update(r["u"] for r in rows)
     # Everything else in the search index: database listings such as the career courses, and the main pages.
     kinds = search.get("kinds", {})
