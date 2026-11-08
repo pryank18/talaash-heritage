@@ -1,11 +1,9 @@
 {
- "at": "2026-11-07T14:49:18.891Z",
+ "at": "2026-11-08T14:48:44.791Z",
  "rendered": [
-  "site/media/ig/20261115-chhath-1.jpg",
-  "site/media/ig/20261115-chhath-2.jpg",
-  "site/media/ig/20261115-chhath-3.jpg",
-  "site/media/ig/20261115-chhath-4.jpg",
-  "site/media/ig/20261115-chhath-5.jpg"
+  "site/media/ig/20261110-fact-people-of-india-1.jpg",
+  "site/media/ig/20261110-fact-people-of-india-2.jpg",
+  "site/media/ig/20261110-fact-people-of-india-3.jpg"
  ],
  "skipped": [
   "site/media/ig/20261025-sharad-purnima-1.jpg",
@@ -86,6 +84,11 @@
   "site/media/ig/20261113-boli-kaithi-7.jpg",
   "site/media/ig/20261114-fact-kharosthi-coin-1.jpg",
   "site/media/ig/20261114-fact-kharosthi-coin-2.jpg",
+  "site/media/ig/20261115-chhath-1.jpg",
+  "site/media/ig/20261115-chhath-2.jpg",
+  "site/media/ig/20261115-chhath-3.jpg",
+  "site/media/ig/20261115-chhath-4.jpg",
+  "site/media/ig/20261115-chhath-5.jpg",
   "site/media/ig/_selftest-1.jpg"
  ],
  "failed": [],
