@@ -1,12 +1,15 @@
 {
- "at": "2026-11-10T17:37:51.250Z",
+ "at": "2026-11-10T18:20:08.768Z",
  "rendered": [
-  "site/media/ig/_badges-1.jpg",
-  "site/media/ig/_badges-2.jpg",
-  "site/media/ig/_badges-3.jpg",
-  "site/media/ig/_badges-4.jpg",
-  "site/media/ig/_badges-5.jpg",
-  "site/media/ig/_badges-6.jpg"
+  "site/media/ig/20261111-bhai-dooj-7.jpg",
+  "site/media/ig/20261111-read-brahmi-9.jpg",
+  "site/media/ig/20261112-fact-junagadh-dam-6.jpg",
+  "site/media/ig/20261113-boli-kaithi-8.jpg",
+  "site/media/ig/20261114-fact-kharosthi-coin-5.jpg",
+  "site/media/ig/20261115-chhath-6.jpg",
+  "site/media/ig/20261115-heritage-this-week-7.jpg",
+  "site/media/ig/20261116-ugc-net-heritage-7.jpg",
+  "site/media/ig/20261116-world-heritage-convention-6.jpg"
  ],
  "skipped": [
   "site/media/ig/20261025-sharad-purnima-1.jpg",
@@ -117,6 +120,12 @@
   "site/media/ig/20261116-world-heritage-convention-3.jpg",
   "site/media/ig/20261116-world-heritage-convention-4.jpg",
   "site/media/ig/20261116-world-heritage-convention-5.jpg",
+  "site/media/ig/_badges-1.jpg",
+  "site/media/ig/_badges-2.jpg",
+  "site/media/ig/_badges-3.jpg",
+  "site/media/ig/_badges-4.jpg",
+  "site/media/ig/_badges-5.jpg",
+  "site/media/ig/_badges-6.jpg",
   "site/media/ig/_selftest-1.jpg"
  ],
  "failed": [],
