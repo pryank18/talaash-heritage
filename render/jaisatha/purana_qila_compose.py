@@ -117,7 +117,8 @@ def text_layer(eyebrow, heading, body, labels=False):
     # label and wordmark
     lf = sans(26, 450)
     lw = d.textlength(LABEL, font=lf)
-    d.text(((W - lw) / 2, H - 120), LABEL, font=lf, fill=(235, 230, 220, 210))
+    d.rounded_rectangle([(W - lw) / 2 - 22, H - 130, (W + lw) / 2 + 22, H - 78], radius=26, fill=(20, 19, 17, 170))
+    d.text(((W - lw) / 2, H - 120), LABEL, font=lf, fill=(240, 236, 228, 235))
     d.text((84, 108), "TALAASH HERITAGE", font=sans(28, 700), fill=(235, 230, 220, 200))
     if labels:
         im = draw_labels(im)
@@ -157,9 +158,9 @@ def base_frame(i, t):
     if s == "end":
         return END.copy()
     img = stills[s]
-    z = 1.0 + (0.0 if SEG[i][2] == "Almost 14 m" else 0.07) * (t / dur)
+    z = 1.0 + (0.0 if SEG[i][2] == "Almost 14 m" else 0.035) * (t / dur)
     w, h = int(W / z), int(H / z)
-    drift = 0 if SEG[i][2] == "Almost 14 m" else 26 * math.sin(math.pi * (t / dur) - math.pi / 2) * (1 if i % 2 else -1)
+    drift = 0 if SEG[i][2] == "Almost 14 m" else 12 * math.sin(math.pi * (t / dur) - math.pi / 2) * (1 if i % 2 else -1)
     cx, cy = W / 2 + drift, H * (0.55 + 0.03 * (t / dur))
     box = (int(cx - w / 2), int(cy - h / 2), int(cx - w / 2) + w, int(cy - h / 2) + h)
     bx = max(0, min(W - w, box[0]))

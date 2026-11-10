@@ -508,15 +508,39 @@ cam = bpy.context.object
 scene.camera = cam
 cam.data.lens = 38
 if STAGE <= 10:
-    lift = {8: 0.35, 10: 1.75}.get(STAGE, 0.0)
-    target = Vector((0, 0, TOP - 0.35 + lift))
-    cam.location = Vector((3.4, -4.6, TOP + 2.2 + lift * 0.6))
+    # Fit the whole block in frame: back the camera away along a fixed direction until every
+    # object (not the ground) projects inside x 110..970 px and below the text area (y >= 640 px).
+    from bpy_extras.object_utils import world_to_camera_view
+    target = Vector((0, 0, TOP - 0.2))
+    dirv = Vector((3.4, -4.6, 2.4)).normalized()
+    cam.data.lens = 34
+    pts3 = []
+    for ob in scene.objects:
+        if ob.type == "MESH" and ob.name not in ("Plane",) and ob.dimensions.x < 30:
+            pts3 += [ob.matrix_world @ Vector(c) for c in ob.bound_box]
+    dist = 5.0
+    while dist < 60:
+        cam.location = target + dirv * dist
+        cam.rotation_euler = (target - cam.location).to_track_quat("-Z", "Y").to_euler()
+        bpy.context.view_layer.update()
+        ok = True
+        for p3 in pts3:
+            v = world_to_camera_view(scene, cam, p3)
+            px, py = v.x * 1080, (1 - v.y) * 1920
+            if p3.z >= bases[max(0, n_layers - 2)] and (px < 110 or px > 970 or py < (700 if STAGE == 10 else 640)):
+                ok = False
+                break
+        if ok:
+            break
+        dist += 0.25
+    print("FIT dist", round(dist, 2))
 else:
     target = Vector((0.6, 0, tops[-1] * 0.86))
     cam.location = Vector((6.2, -11.5, tops[-1] * 0.70 + 1.4))
     cam.data.lens = 27
-d = target - cam.location
-cam.rotation_euler = d.to_track_quat("-Z", "Y").to_euler()
+if STAGE > 10:
+    d = target - cam.location
+    cam.rotation_euler = d.to_track_quat("-Z", "Y").to_euler()
 
 if STAGE == 11:
     import json
