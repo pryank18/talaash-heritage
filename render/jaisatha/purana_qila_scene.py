@@ -297,8 +297,186 @@ def stage_objects(s):
             bpy.context.object.data.materials.append(quartz)
 
 
+
+# ---------- small finds and details (all named in Swarnkar and Bal 2023-24) ----------
+def mk(name, col, rough=0.6, metal=0.0, noise=0.0):
+    return mat(name, col, rough=rough, noise=noise, metal=metal)
+
+
+redware = None
+
+
+def frag(loc, m, r=0.16, k=0, flat=False):
+    """A curved pot fragment cut from a bowl shell, resting on the surface."""
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=r, segments=32, ring_count=16, location=(0, 0, 0))
+    sh = bpy.context.object
+    so = sh.modifiers.new("s", "SOLIDIFY")
+    so.thickness = r * 0.07
+    bpy.ops.object.modifier_apply(modifier="s")
+    bpy.ops.mesh.primitive_cube_add(location=(0, 0, r * 0.9))
+    cu = bpy.context.object
+    cu.scale = (r * (0.35 + 0.1 * (k % 3)), r * (0.28 + 0.08 * (k % 2)), r * 0.4)
+    cu.rotation_euler.z = k * 0.9
+    bo = sh.modifiers.new("i", "BOOLEAN")
+    bo.object = cu
+    bo.operation = "INTERSECT"
+    bpy.context.view_layer.objects.active = sh
+    bpy.ops.object.modifier_apply(modifier="i")
+    bpy.data.objects.remove(cu)
+    bpy.ops.object.origin_set(type="ORIGIN_GEOMETRY", center="BOUNDS")
+    if flat:
+        sh.rotation_euler.x = math.pi
+    bpy.context.view_layer.update()
+    mz = min((sh.matrix_world @ v.co).z for v in sh.data.vertices)
+    sh.location = (loc[0], loc[1], sh.location.z - mz + loc[2] + 0.001)
+    sh.rotation_euler.z = random.random() * 6
+    sh.data.materials.clear()
+    sh.data.materials.append(m)
+    bpy.ops.object.shade_smooth()
+    return sh
+
+
+def bead(loc, m, r=0.035, ghat=False):
+    if ghat:  # double cone
+        for sgn in (1, -1):
+            bpy.ops.mesh.primitive_cone_add(radius1=r, radius2=r * 0.35, depth=r * 1.1,
+                                            location=(loc[0], loc[1], loc[2] + r * 0.9 + sgn * r * 0.55),
+                                            rotation=(0 if sgn > 0 else math.pi, 0, 0), vertices=16)
+            bpy.context.object.data.materials.append(m)
+    else:
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=r, location=(loc[0], loc[1], loc[2] + r))
+        bpy.context.object.data.materials.append(m)
+        bpy.ops.object.shade_smooth()
+
+
+def disc(loc, r, h, m, rot=(0, 0, 0)):
+    bpy.ops.mesh.primitive_cylinder_add(radius=r, depth=h, location=loc, rotation=rot, vertices=32)
+    bpy.context.object.data.materials.append(m)
+    return bpy.context.object
+
+
+def pot(loc, m, r=0.12, h=0.22, neck=0.55):
+    """A simple wheel-made pot from a lathed profile."""
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=r, location=(loc[0], loc[1], loc[2] + h * 0.45), segments=32, ring_count=16)
+    b = bpy.context.object
+    b.scale = (1, 1, h / (2 * r))
+    b.data.materials.append(m)
+    bpy.ops.object.shade_smooth()
+    bpy.ops.mesh.primitive_cylinder_add(radius=r * neck * 0.6, depth=h * 0.25, location=(loc[0], loc[1], loc[2] + h * 0.92), vertices=24)
+    bpy.context.object.data.materials.append(m)
+    bpy.ops.mesh.primitive_torus_add(major_radius=r * neck * 0.62, minor_radius=r * 0.06, location=(loc[0], loc[1], loc[2] + h * 1.04))
+    bpy.context.object.data.materials.append(m)
+
+
+def inclusions(i):
+    """Pebbles and pottery chips showing in the cut faces of layer i."""
+    rs = random.Random(100 + i)
+    pal = [(0.42, 0.40, 0.37), (0.55, 0.30, 0.18), (0.30, 0.29, 0.28), (0.62, 0.55, 0.45)]
+    mats_ = [mat(f"inc{i}_{j}", c, rough=0.8, noise=0.2) for j, c in enumerate(pal)]
+    t = LAYERS[i][1]
+    for n in range(14):
+        z = bases[i] + 0.06 + rs.random() * (t - 0.12)
+        if rs.random() < 0.6:
+            loc = (-W / 2 + 0.1 + rs.random() * (W - 0.2), -D / 2 - 0.004, z)
+        else:
+            loc = (W / 2 + 0.004, -D / 2 + 0.1 + rs.random() * (D - 0.2), z)
+        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=1, radius=0.018 + rs.random() * 0.03, location=loc)
+        o = bpy.context.object
+        o.scale = (1, 1, 0.5 + rs.random() * 0.4)
+        o.rotation_euler = (rs.random(), rs.random(), rs.random())
+        o.data.materials.append(mats_[n % len(mats_)])
+
+
+def extras(s, z0):
+    red = mk("redware", (0.60, 0.26, 0.15), rough=0.55)
+    blackish = mk("blackware", (0.12, 0.11, 0.10), rough=0.5)
+    nbpw = mk("nbpw", (0.03, 0.03, 0.035), rough=0.08)
+    tc = mk("tc2", (0.66, 0.36, 0.20), rough=0.75, noise=0.2)
+    charcoal = mat("burnt", (0.08, 0.06, 0.05), rough=0.95, noise=0.4, scale=12)
+    stonew = mk("stonew", (0.36, 0.34, 0.31), rough=0.4, noise=0.15)
+    glassb = mk("glassbead", (0.15, 0.45, 0.40), rough=0.1)
+    if s == 2:   # grey, blackish and red ware fragments beside the PGW
+        for k, (x, y) in enumerate([(-1.55, 0.05), (-0.45, -0.1), (0.85, 0.65), (1.75, -0.1), (0.25, -0.15)]):
+            frag((x, y, z0), red if k % 2 == 0 else blackish, r=0.2, k=k)
+    if s == 3:   # NBPW sherds, ghat-shaped beads, terracotta disc, sling balls
+        for k, (x, y) in enumerate([(0.9, -0.45), (1.3, -0.2), (1.6, -0.55)]):
+            frag((x, y, z0), nbpw, r=0.2, k=k)
+        for k in range(4):
+            bead((0.3 + k * 0.14, -0.55, z0), tc, r=0.05, ghat=True)
+        disc((0.45, 0.75, z0 + 0.012), 0.09, 0.024, tc)
+        for k in range(3):
+            bead((1.2 + k * 0.13, 0.75, z0), tc, r=0.05)
+    if s == 4:   # burnt patches, beads, a stone weight
+        for x, y, r in [(0.2, -0.45, 0.32), (1.4, 0.55, 0.22)]:
+            disc((x, y, z0 + 0.003), r, 0.006, charcoal)
+        for k in range(5):
+            bead((-1.65 + k * 0.12, -0.15, z0), tc if k % 2 else glassb, r=0.04)
+        b = box("weight", (0.6, -0.2, z0 + 0.05), (0.12, 0.12, 0.1), stonew, bevel=0.03)
+    if s == 5:   # small carinated pot and glass beads inside a room
+        pot((-1.0, 0.15, z0), red, r=0.1, h=0.17)
+        pot((0.0, 0.2, z0), stonew, r=0.09, h=0.15, neck=0.8)
+        for k in range(4):
+            bead((0.9 + k * 0.1, 0.0, z0), glassb, r=0.035)
+    if s == 6:   # brick-jelly floor, terracotta dice, red-slipped vase
+        floor = mat("brickjelly", (0.55, 0.24, 0.15), rough=0.9, noise=0.5, scale=90)
+        box("brickjelly", (0.1, -0.3, z0 + 0.008), (2.4, 1.0, 0.016), floor)
+        for k in range(2):
+            box("die", (-0.6 + k * 0.12, -0.45, z0 + 0.05), (0.06, 0.06, 0.06), tc, bevel=0.008).rotation_euler.z = k * 0.6
+        pot((-1.3, -0.35, z0 + 0.016), red, r=0.11, h=0.24)
+    if s == 7:   # a pot with a flanged rim beside the dabbers
+        pot((-1.2, -0.45, z0), red, r=0.12, h=0.2, neck=0.9)
+    if s == 8:   # two post-holes and a heap of knife-edged bowls
+        for x in (-1.1, -0.6):
+            disc((x, -0.2, z0 + 0.002), 0.07, 0.004, mat("hole", (0.02, 0.015, 0.01), rough=1))
+        for k in range(7):
+            bx, by = -0.25 + (k % 4) * 0.2, -0.55 + (k // 4) * 0.2
+            bpy.ops.mesh.primitive_cone_add(radius1=0.05, radius2=0.13, depth=0.08, end_fill_type="NOTHING",
+                                            location=(bx, by, z0 + 0.045 + (0.05 if k == 6 else 0)),
+                                            rotation=(0.25 if k % 2 else -0.2, 0.15 * (k % 3), 0), vertices=40)
+            o = bpy.context.object
+            sol = o.modifiers.new("s", "SOLIDIFY")
+            sol.thickness = 0.012
+            o.data.materials.append(red)
+            bpy.ops.object.shade_smooth()
+    if s == 9:   # chillums and a ring-based pot
+        for k in range(3):
+            bpy.ops.mesh.primitive_cone_add(radius1=0.022, radius2=0.06, depth=0.16, location=(1.2 + k * 0.16, -0.5, z0 + 0.03),
+                                            rotation=(math.pi / 2, 0, 0.4 + k * 0.5), vertices=24)
+            bpy.context.object.data.materials.append(mk("chillum", (0.28, 0.27, 0.26), rough=0.6))
+        pot((1.55, 0.1, z0), red, r=0.12, h=0.22)
+    if s == 10:  # blue-and-white porcelain and green glass bottle fragments
+        bw = bpy.data.materials.new("bluewhite")
+        bw.use_nodes = True
+        nt = bw.node_tree
+        bs = nt.nodes["Principled BSDF"]
+        bs.inputs["Roughness"].default_value = 0.15
+        tco = nt.nodes.new("ShaderNodeTexCoord")
+        wv = nt.nodes.new("ShaderNodeTexWave")
+        nt.links.new(tco.outputs["Object"], wv.inputs["Vector"])
+        wv.inputs["Scale"].default_value = 45
+        wv.inputs["Distortion"].default_value = 9
+        rp = nt.nodes.new("ShaderNodeValToRGB")
+        rp.color_ramp.elements[0].color = (0.05, 0.12, 0.45, 1)
+        rp.color_ramp.elements[1].position = 0.62
+        rp.color_ramp.elements[1].color = (0.92, 0.93, 0.95, 1)
+        nt.links.new(wv.outputs["Fac"], rp.inputs["Fac"])
+        nt.links.new(rp.outputs["Color"], bs.inputs["Base Color"])
+        for k, (x, y) in enumerate([(1.0, -0.6), (1.35, -0.35), (0.7, -0.75)]):
+            frag((x, y, z0), bw, r=0.18, k=k)
+        g = bpy.data.materials.new("greenglass")
+        g.use_nodes = True
+        gb = g.node_tree.nodes["Principled BSDF"]
+        gb.inputs["Base Color"].default_value = (0.25, 0.55, 0.30, 1)
+        gb.inputs["Roughness"].default_value = 0.05
+        gb.inputs["Transmission Weight"].default_value = 0.8
+        for k, (x, y) in enumerate([(-1.2, -0.6), (-0.9, -0.75)]):
+            disc((x, y, z0 + 0.04), 0.045, 0.12, g, rot=(math.pi / 2, 0, k * 1.2))
+
+for _i in range(n_layers):
+    inclusions(_i)
 if STAGE <= 10:
     stage_objects(STAGE)
+    extras(STAGE, on_top(STAGE - 1))
 else:
     stage_objects(10)
 
@@ -354,6 +532,12 @@ if STAGE == 11:
     pts["base"] = [round(v.x * 1080), round((1 - v.y) * 1920)]
     json.dump(pts, open("/home/claude/jaisatha/frames/stage11_layers.json", "w"))
     print("LAYERS", pts)
+
+if STAGE <= 10:
+    bpy.ops.object.empty_add(location=(0, 0, TOP))
+    cam.data.dof.use_dof = True
+    cam.data.dof.focus_object = bpy.context.object
+    cam.data.dof.aperture_fstop = 5.6
 
 scene.render.filepath = OUT
 bpy.ops.render.render(write_still=True)
