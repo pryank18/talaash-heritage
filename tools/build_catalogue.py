@@ -1001,6 +1001,33 @@ def xsell_html(p):
     return f'<section class="wrap xsell" aria-label="More to explore">{"".join(out)}</section>' if out else ""
 
 
+REELS = [r for r in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "content", "reels.json"), encoding="utf-8"))["reels"]
+         if r.get("instagram") or r.get("youtube")]
+
+
+IG_EMBED = '\n<script async src="https://www.instagram.com/embed.js"></script>'
+
+
+def reels_html(p):
+    """Live reels that point at this programme (content/reels.json), embedded under it."""
+    stem = p["page"][:-5]
+    rs = [r for r in REELS if stem in r.get("pages", [])]
+    if not rs:
+        return ""
+    cards = []
+    for r in rs:
+        if r.get("youtube"):
+            frame = (f'<div class="reel-frame"><iframe src="https://www.youtube-nocookie.com/embed/{h(r["youtube"])}" title="{h(r["title"])}" '
+                     'loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>')
+        else:
+            url = r["instagram"].rstrip("/") + "/"
+            frame = (f'<blockquote class="instagram-media" data-instgrm-permalink="{h(url)}" data-instgrm-version="14">'
+                     f'<a href="{h(url)}" rel="noopener">{h(r["title"])}, on Instagram</a></blockquote>')
+        cards.append(f'<article class="reel"><h3>{h(r["title"])}</h3><p>{h(r["blurb"])}</p>{frame}</article>')
+    return (f'<section class="wrap reels-on-page" aria-label="Watch it"><div class="section-head"><h2>Watch it</h2>'
+            f'<a href="watch.html">All reels</a></div><div class="reel-grid">{"".join(cards)}</div></section>')
+
+
 TRIP_KINDS = {"Heritage walk", "Museum visit", "Day trip", "Study tour", "Private journey", "Field school"}
 
 
@@ -1108,12 +1135,12 @@ def static_page(p):
     </div>
   </div>
 </div>
-{xsell_html(p)}
+{reels_html(p)}{xsell_html(p)}
 </main>
 <div id="site-footer"></div>
 <script type="application/json" id="programme-data">{page_data(p)}</script>
 <script type="module" src="assets/js/layout.js"></script>
-<script type="module" src="assets/js/pages/product.js"></script>
+<script type="module" src="assets/js/pages/product.js"></script>{IG_EMBED if "instagram-media" in reels_html(p) else ""}
 </body>
 </html>
 """

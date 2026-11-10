@@ -1,0 +1,53 @@
+{
+  "_readme": "One entry per reel. A reel appears on the site only once \"instagram\" holds its public link (add it after the reel is live, then run python3 tools/build_reels.py and python3 tools/build_catalogue.py site/data/catalogue.json). \"account\" is who posts it; \"collab\" is the co-author. \"pages\" are programme, guide or news pages (file names without .html) the reel sells or explains: the reel is embedded on each programme page listed here. Series: jaisa-tha (Talaash 3D reconstructions), explorer (archaeologywala, collab), khudai-khabar (archaeologywala only, satire: never list programme pages), news (archaeologywala faceless news reels, collab). Full rules: docs/SOCIAL.md.",
+  "reels": [
+    {
+      "id": "burials-rakhigarhi-sinauli-adichanallur",
+      "title": "Teen jagah, teen vidaai: Rakhigarhi, Sinauli and Adichanallur",
+      "blurb": "How the dead were buried at three excavations, rebuilt in 3D from the published reports.",
+      "series": "jaisa-tha",
+      "account": "archaeologywala",
+      "collab": "talaashheritage",
+      "date": "2026-11-17T20:30:00+05:30",
+      "instagram": null,
+      "youtube": null,
+      "pages": ["rakhigarhi", "delhi-and-rakhigarhi-the-harappan-world"]
+    },
+    {
+      "id": "explorer-01-tughlaqabad",
+      "title": "Explorer, episode 1: Tughlaqabad",
+      "blurb": "A walk through Ghiyasuddin Tughlaq's fort city, from the walls to his tomb.",
+      "series": "explorer",
+      "account": "archaeologywala",
+      "collab": "talaashheritage",
+      "date": null,
+      "instagram": null,
+      "youtube": null,
+      "pages": ["tughlaqabad-fort", "ghiyasuddin-tughlaq-s-tomb-focus-walk"]
+    },
+    {
+      "id": "news-kothakota-pillar",
+      "title": "Kothakota: a 900-year-old land gift, read on a temple pillar",
+      "blurb": "A Kalyani Chalukya inscription of Vikramaditya VI, as read by the research group.",
+      "series": "news",
+      "account": "archaeologywala",
+      "collab": "talaashheritage",
+      "date": null,
+      "instagram": null,
+      "youtube": null,
+      "pages": ["news-chalukya-pillar-inscription-of-vikramaditya-vi-read-at-kothakota"]
+    },
+    {
+      "id": "jaisa-tha-01-purana-qila",
+      "title": "Jaisa Tha: Purana Qila",
+      "blurb": "The layers under Delhi's Old Fort, rebuilt from the excavations.",
+      "series": "jaisa-tha",
+      "account": "talaashheritage",
+      "collab": null,
+      "date": null,
+      "instagram": null,
+      "youtube": null,
+      "pages": ["purana-qila"]
+    }
+  ]
+}

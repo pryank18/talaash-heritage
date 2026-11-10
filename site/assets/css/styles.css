@@ -1139,6 +1139,17 @@ html[data-theme="dark"] .path-travel { border-color: var(--line); border-top-col
 .ig-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); align-items: start; margin-top: 0.5rem; }
 .ig-grid .instagram-media { margin: 0 !important; min-width: 0 !important; width: 100% !important; }
 .ig-note { margin: 0.75rem 0 2.5rem; }
+.reel-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); align-items: start; margin-top: 0.75rem; }
+.reel h3 { font-size: var(--step-1); margin: 0 0 0.25rem; }
+.reel p { margin: 0 0 0.5rem; }
+.reel .instagram-media { margin: 0 !important; min-width: 0 !important; width: 100% !important; }
+.reel-frame { position: relative; aspect-ratio: 9 / 16; max-width: 22rem; border-radius: 4px; overflow: hidden; background: var(--line); }
+.reel-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.reel-links { list-style: none; padding: 0; margin: 0.75rem 0 0; }
+.reel-links li { margin-bottom: 0.35rem; }
+.reel-series { margin-bottom: 2.5rem; }
+.reels-on-page { padding-block: 1rem 1.5rem; }
+.reels-on-page h2 { font-size: var(--step-2); }
 .guide-byline { font-size: var(--step--1); color: var(--ink-soft); margin: -0.3rem 0 0.6rem; }
 .stats { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); margin: 1rem 0 1.5rem; }
 .stat { border: 1px solid var(--line); border-radius: 4px; padding: 0.8rem 0.9rem; }
