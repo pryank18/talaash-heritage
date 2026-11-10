@@ -23,6 +23,28 @@ Bio links carry UTM tags so the admin Traffic tab credits the whole visit:
 - @archaeologywala: `https://talaash-heritage.pages.dev/archaeologywala.html?utm_source=instagram&utm_medium=bio&utm_campaign=aw-bio`
 - YouTube Short descriptions link straight to the programme with `utm_source=youtube&utm_medium=short&utm_campaign=<series>-<reel id>`.
 
+## Post types and badges (10 Nov 2026)
+Every @talaashheritage carousel carries exactly one type badge on its cover, so followers can tell at a glance what a post is. The badge sits under the top line, left-aligned: `<div class="bdg TYPE">Label</div>` placed before `<div class="top">`. Styles are in `render/house.css`; nothing else on the cover moves.
+
+| Badge | Class | Look | Used for |
+|---|---|---|---|
+| Special Day | `special` | solid gold | Festivals and observances, 08:00 slot, on the day |
+| Fact | `fact` | gold outline | Tue, Thu, Sat 19:30 Facts. The Fact number stays in the top line ("Talaash Heritage · Fact 011") |
+| Deep Story | `story` | solid cream | Mon, Wed, Fri main posts: scripts, inscriptions, art, language, anthropology, teach-a-skill |
+| Careers | `careers` | cream outline | The weekly careers or exams main post |
+| Event | `event` | dark with gold | A dated event: a Talaash live event, or an outside event at least 5 days away, with its date on the cover |
+| This Week | `week` | dashed gold | Sunday "Heritage this week" digest |
+
+Rules
+- One badge per post, cover only. The top line then reads "Talaash Heritage" (plus the Fact number); the type no longer goes in the top line.
+- News of finds is archaeologywala's (Khudai Khabar, news reels). Talaash covers finds only inside This Week and on the website news page, so there is no News badge.
+- Reels (Jaisa Tha) and Shorts carry no badge; they have the logo on every frame.
+- Starts with rows due 17 Nov 2026. Rows already Ready for 11 to 16 Nov keep their rendered slides (images are never re-rendered).
+- Test covers for all six: `render/queue/_badges/` (test folder, never posted).
+
+## The 168-post calendar (docs/marketing/social-calendar.csv)
+Built 15 Oct by `tools/export_marketing.py`, before the rotation above and the account split. It is an idea bank, not a schedule: the queue sheet and the rotation decide what posts. When taking an idea from it, map its angle to a badge (fact → Fact; tip or offer → Deep Story, ending on the programme page), skip any row on a reserved topic (Purana Qila, Tughlaqabad, Rakhigarhi before 1 Dec), and run the three checks as for any other post.
+
 ## Brand SOP (Pryank, 10 Nov 2026)
 Every Talaash post carries the Talaash Heritage logo and the other social links.
 - Carousels: logo badge on the cover and on the last slide. Reels: logo on every frame.
