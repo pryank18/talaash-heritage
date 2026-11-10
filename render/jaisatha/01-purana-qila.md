@@ -14,7 +14,7 @@ Fact-checked twice on 10 Nov 2026 (one checker opened every source; one searched
 9. "Sultanate: rubble walls, lime floors, glazed pottery."
 10. "Mughal: the fort on top. Humayun founded his city Dinpanah here in 1533; Sher Shah took Delhi in 1540. Who built which walls is still debated."
 11. "Excavation has gone almost 14 m deep, and natural soil has still not been reached."
-12. "Walk Purana Qila and its excavations with Talaash Heritage. Link in bio." Small label throughout: "Reconstruction from published excavation reports. Not to scale."
+12. End card: logo, "Walk Purana Qila and its excavations with Talaash Heritage." then "talaash-heritage.pages.dev/purana-qila", then "Instagram @talaashheritage · YouTube @talaashheritage1967 / LinkedIn and Facebook: Talaash Heritage". Small label throughout: "Reconstruction from published excavation reports. Not to scale."
 
 ## Caption
 Jaisa Tha #1 | Purana Qila
@@ -31,9 +31,16 @@ Excavation has gone almost 14 m deep, and natural soil has still not been reache
 
 The 3D scenes are reconstructions from the published reports, not to scale.
 
-Walk Purana Qila and its excavations with us: link in bio.
+Walk Purana Qila and its excavations with us: talaash-heritage.pages.dev/purana-qila
 
 Sources: V.K. Swarnkar and S. Bal, "A Comprehensive Picture of Delhi's Archaeology Through Excavations at Purana Qila", Heritage: Journal of Multidisciplinary Studies in Archaeology 11.1 (2023–24), pp. 351–370; Ministry of Culture, PIB release, 30 May 2023; Google Arts & Culture, "Purana Qila".
+
+Follow Talaash Heritage
+Instagram: @talaashheritage
+Facebook: facebook.com/109410924674841
+LinkedIn: linkedin.com/company/talaashheritage
+YouTube: @talaashheritage1967
+Website: talaash-heritage.pages.dev
 
 #PuranaQila #DelhiHistory #Archaeology #IndianHistory #TalaashHeritage
 
@@ -49,3 +56,9 @@ Sources: V.K. Swarnkar and S. Bal, "A Comprehensive Picture of Delhi's Archaeolo
 - S1: https://www.heritageuniversityofkerala.com/JournalPDF/Volume11.1/15.pdf
 - S2: https://pib.gov.in/PressReleasePage.aspx?PRID=1928410
 - S3: https://artsandculture.google.com/exhibit/QRWvANZ3
+
+## Version 4 (10 Nov 2026, late night): brand SOP and third check
+- Logo badge on every frame (top right); end card shows the Purana Qila page address and the Talaash handles instead of "Link in bio" (the bio does not point to the site).
+- Third check (independent disproof search plus S1 re-read in full on 10 Nov): every claim confirmed. S1 itself says "terracotta medallion of Gaja Lakshmi", the silt deposit "probably the evidence of water submergence", organic dates "as early as 540 BCE", depth "almost 14m", natural soil not reached.
+- Hosted for posting: https://talaash-heritage.pages.dev/media/ig/jaisatha-01-purana-qila.mp4 (46.4 s, 1080x1920, 30 fps, H.264 + AAC, 3.68 MB, 0 of 1,392 frames touch an edge).
+- Slot: Fri 20 Nov 2026 19:30 IST, row Type "Reel", via the Make poster. The row must be added in Due At order after the 19 Nov rows (the poster takes the first Ready row in sheet order, so a 20 Nov row placed early would block the posts before it).

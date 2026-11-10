@@ -90,6 +90,9 @@ def draw_labels(im):
     return im
 
 
+BADGE = Image.open("/home/claude/talaash-heritage/site/assets/img/logo-badge.png").convert("RGBA").resize((128, 128), Image.LANCZOS)
+
+
 def text_layer(eyebrow, heading, body, labels=False):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
@@ -120,6 +123,7 @@ def text_layer(eyebrow, heading, body, labels=False):
     d.rounded_rectangle([(W - lw) / 2 - 22, H - 130, (W + lw) / 2 + 22, H - 78], radius=26, fill=(20, 19, 17, 170))
     d.text(((W - lw) / 2, H - 120), LABEL, font=lf, fill=(240, 236, 228, 235))
     d.text((84, 108), "TALAASH HERITAGE", font=sans(28, 700), fill=(235, 230, 220, 200))
+    im.alpha_composite(BADGE, (W - 84 - 128, 64))
     if labels:
         im = draw_labels(im)
     return im
@@ -130,17 +134,21 @@ def end_card():
     logo = Image.open("/home/claude/talaash-heritage/site/assets/img/logo-badge.png").convert("RGBA").resize((520, 520), Image.LANCZOS)
     im.paste(logo, ((W - 520) // 2, 430), logo)
     d = ImageDraw.Draw(im)
-    lines = [("Walk Purana Qila and its excavations", ImageFont.truetype(SERIF, 64), PLASTER),
-             ("with Talaash Heritage.", ImageFont.truetype(SERIF, 64), PLASTER),
-             ("Link in bio", sans(46, 650), GOLD)]
+    lines = [("Walk Purana Qila and its excavations", ImageFont.truetype(SERIF, 56), PLASTER),
+             ("with Talaash Heritage.", ImageFont.truetype(SERIF, 56), PLASTER),
+             ("talaash-heritage.pages.dev/purana-qila", sans(40, 650), GOLD)]
     y = 1060
     for t, f, c in lines:
         w = d.textlength(t, font=f)
         d.text(((W - w) / 2, y), t, font=f, fill=c)
         y += 96 if f != lines[-1][1] else 0
+    sf = sans(30, 500)
+    for k, s in enumerate(["Instagram @talaashheritage  ·  YouTube @talaashheritage1967",
+                           "LinkedIn and Facebook: Talaash Heritage"]):
+        d.text(((W - d.textlength(s, font=sf)) / 2, 1400 + k * 48), s, font=sf, fill=PLASTER)
     s = "Sources: Swarnkar and Bal, Heritage 11.1 (2023–24); PIB, 30 May 2023"
     sf = sans(26, 450)
-    d.text(((W - d.textlength(s, font=sf)) / 2, 1460), s, font=sf, fill=SOFT)
+    d.text(((W - d.textlength(s, font=sf)) / 2, 1540), s, font=sf, fill=SOFT)
     return im
 
 
