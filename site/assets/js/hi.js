@@ -425,6 +425,7 @@ const text = {
  "Recorded lectures": "रिकॉर्ड किए गए व्याख्यान",
  "Recordings": "रिकॉर्डिंग",
  "Records are made to a common standard, so that one site or collection can be compared with another. Material is translated so that it can be read in the region it comes from, and the people who care for a site or a collection are trained to keep the work going.": "अभिलेख एक समान मानक पर बनाए जाते हैं, ताकि एक स्थल या संग्रह की तुलना दूसरे से की जा सके। सामग्री का अनुवाद किया जाता है ताकि उसे उसी क्षेत्र में पढ़ा जा सके जहाँ से वह आई है, और स्थल या संग्रह की देखभाल करने वालों को प्रशिक्षित किया जाता है ताकि काम चलता रहे।",
+ "Reels": "रील्स",
  "Register": "पंजीकरण करें",
  "Register and enter": "पंजीकरण करें और आगे बढ़ें",
  "Register once and we can send you walk dates and lecture links, and plan a programme around you. Or look around first.": "एक बार पंजीकरण करें, ताकि हम आपको भ्रमण की तिथियाँ और व्याख्यान के लिंक भेज सकें और आपके अनुसार कार्यक्रम बना सकें। या पहले साइट देख लें।",
