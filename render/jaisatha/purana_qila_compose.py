@@ -159,15 +159,36 @@ def base_frame(i, t):
     img = stills[s]
     z = 1.0 + (0.0 if SEG[i][2] == "Almost 14 m" else 0.07) * (t / dur)
     w, h = int(W / z), int(H / z)
-    cx, cy = W / 2, H * (0.55 + 0.03 * (t / dur))
+    drift = 0 if SEG[i][2] == "Almost 14 m" else 26 * math.sin(math.pi * (t / dur) - math.pi / 2) * (1 if i % 2 else -1)
+    cx, cy = W / 2 + drift, H * (0.55 + 0.03 * (t / dur))
     box = (int(cx - w / 2), int(cy - h / 2), int(cx - w / 2) + w, int(cy - h / 2) + h)
-    box = (max(0, box[0]), max(0, min(H - h, box[1])), max(0, box[0]) + w, max(0, min(H - h, box[1])) + h)
+    bx = max(0, min(W - w, box[0]))
+    by = max(0, min(H - h, box[1]))
+    box = (bx, by, bx + w, by + h)
     return img.crop(box).resize((W, H), Image.BILINEAR)
 
 
-def frame(i, t):
+rng = np.random.default_rng(11)
+DUST = [(rng.uniform(0, W), rng.uniform(250, H - 200), rng.uniform(1.2, 3.4), rng.uniform(-6, 6), rng.uniform(-14, -4), rng.uniform(0, 6.28))
+        for _ in range(70)]
+
+
+def dust(T):
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    for x0, y0, r, vx, vy, ph in DUST:
+        x = (x0 + vx * T + 8 * math.sin(T * 0.6 + ph)) % W
+        y = (y0 + vy * T - 250) % (H - 450) + 250
+        a = int(70 + 60 * math.sin(T * 1.3 + ph))
+        d.ellipse([x - r, y - r, x + r, y + r], fill=(255, 226, 170, max(0, a)))
+    return im
+
+
+def frame(i, t, T=None):
     s, *_, dur = SEG[i]
     f = base_frame(i, t).convert("RGBA")
+    if s != "end" and T is not None and SEG[i][2] != "Almost 14 m":
+        f = Image.alpha_composite(f, dust(T))
     if layers[i] is not None:
         a = min(1.0, max(0.0, (t - 0.25) / 0.5))
         L = layers[i]
@@ -192,7 +213,7 @@ for n in range(N):
     T = n / FPS
     i = max(k for k in range(len(SEG)) if starts[k] <= T)
     t = T - starts[i]
-    img = frame(i, t)
+    img = frame(i, t, T)
     if i + 1 < len(SEG) and T >= starts[i + 1]:
         pass
     # crossfade into next segment during the last XF seconds
@@ -201,7 +222,7 @@ for n in range(N):
         if T >= nxt_start:
             pass
     if i > 0 and t < XF:
-        prev = frame(i - 1, T - starts[i - 1])
+        prev = frame(i - 1, T - starts[i - 1], T)
         img = Image.blend(prev, img, t / XF)
     ff.stdin.write(img.tobytes())
 ff.stdin.close()
