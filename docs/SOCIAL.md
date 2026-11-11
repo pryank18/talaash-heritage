@@ -1,5 +1,7 @@
 # Social reels and the website
 
+> Above this file: `docs/UNIVERSE.md` and the ledger `content/universe.json` (11 Nov 2026). Every piece is entered there, with its number from `tools/check_universe.py`, before it is built.
+
 Decided 10 Nov 2026. The full reasoning is in the Claude project note "social-content-split".
 
 ## Who posts what
