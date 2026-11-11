@@ -11,6 +11,9 @@
   ],
   "category": "finds",
   "field": "history",
+  "also_fields": [
+    "linguistics"
+  ],
   "published": "2026-11-10",
   "place": "Kothakota, Wanaparthy district, Telangana",
   "sources": [

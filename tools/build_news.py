@@ -9,6 +9,7 @@ and lists its sources. Rules: content/news/README.md.
 
 Run:  python3 tools/build_news.py           (build)
       python3 tools/build_news.py --check   (validate only, exit 1 on any problem)
+      python3 tools/build_news.py --coverage  (stories per field over the last 14 days)
 """
 import datetime, html, json, os, re, sys
 
@@ -27,7 +28,19 @@ CATEGORIES = {
     "opportunities": ("Jobs, fellowships, courses and calls", "Opportunities"),
     "policy": ("Sites, policy and conservation", "Sites and policy"),
 }
-FIELDS = {"archaeology", "linguistics", "anthropology", "arts", "sanskrit", "history", "heritage"}
+# The seven fields in the name TALAASHH. Every one gets its own place on the
+# desk, and --coverage shows which ones are thin over the last 14 days.
+FIELDS = {
+    "archaeology": ("Archaeology", "what-is-archaeology"),
+    "linguistics": ("Linguistics and scripts", "classical-languages-of-india"),
+    "anthropology": ("Anthropology", "what-is-anthropology"),
+    "arts": ("Arts, crafts and performance", "classical-dances-of-india"),
+    "sanskrit": ("Sanskrit and classical texts", "what-is-sanskrit"),
+    "history": ("History", "indian-history-timeline"),
+    "heritage": ("Heritage, museums and conservation", "what-is-cultural-heritage"),
+}
+COVERAGE_DAYS = 14
+COVERAGE_TARGET = 2  # stories per field per 14 days
 STATUS = {"published", "draft", "withdrawn"}
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -37,6 +50,10 @@ h = lambda x: html.escape(str(x), quote=True)
 
 def fmt(d):
     return datetime.date.fromisoformat(d).strftime("%-d %B %Y")
+
+
+def fields_of(s):
+    return [s["field"]] + list(s.get("also_fields", []))
 
 
 def validate(s, fname):
@@ -60,7 +77,10 @@ def validate(s, fname):
     if s["category"] not in CATEGORIES:
         errs.append("category must be one of " + ", ".join(CATEGORIES))
     if s["field"] not in FIELDS:
-        errs.append("field must be one of " + ", ".join(sorted(FIELDS)))
+        errs.append("field must be one of " + ", ".join(FIELDS))
+    also = s.get("also_fields", [])
+    if not isinstance(also, list) or any(f not in FIELDS or f == s["field"] for f in also) or len(also) != len(set(also)) or len(also) > 2:
+        errs.append("also_fields: up to 2 other fields from the seven, not repeating field")
     if s["status"] not in STATUS:
         errs.append("status must be published, draft or withdrawn")
     for k in ("published", "updated", "event_start", "event_end", "deadline"):
@@ -179,7 +199,7 @@ def story_page(s):
   <p class="crumbs"><a href="news.html">Heritage desk</a> / <a href="news.html#{h(s['category'])}">{h(cat)}</a></p>
   <article class="guide-body news-story">
     <header class="guide-head">
-      <p class="guide-eyebrow">{h(cat)}</p>
+      <p class="guide-eyebrow">{h(cat)} · {h(" · ".join(FIELDS[f][0] for f in fields_of(s)))}</p>
       <h1>{h(s["title"])}</h1>
       <p class="guide-lede">{h(s["dek"])}</p>
       <p class="guide-byline">Talaash Heritage desk · Published {fmt(s["published"])}{upd}</p>
@@ -192,7 +212,7 @@ def story_page(s):
       <ol>{srcs}</ol>
       <p class="small muted">Written by Talaash Heritage from the sources above. Spotted an error? Write to <a href="mailto:{EMAIL}">{EMAIL}</a> and we will correct it on this page.</p>
     </section>
-    <p><a href="news.html">More from the Heritage desk</a> · <a href="learn.html">Guides to India's past</a></p>
+    <p><a href="news.html">More from the Heritage desk</a> · <a href="news.html#field-{h(s['field'])}">More in {h(FIELDS[s['field']][0])}</a> · <a href="{h(FIELDS[s['field']][1])}.html">Background guide</a></p>
   </article>
 </div>
 </main>
@@ -210,18 +230,32 @@ def hub(stories):
         flag = ' · <span class="news-flag">Withdrawn</span>'
         lis = "".join(
             f'<li class="news-item"><p class="news-meta"><time datetime="{s["published"]}">{fmt(s["published"])}</time>'
+            f' · {h(" · ".join(FIELDS[f][0] for f in fields_of(s)))}'
             f'{flag if s["status"] == "withdrawn" else ""}</p>'
             f'<h3><a href="news-{s["slug"]}.html">{h(s["title"])}</a></h3><p>{h(s["dek"])}</p>'
             + (f'<p class="small muted">{" · ".join(h(k + ": " + v) for k, v in facts(s))}</p>' if facts(s) else "")
             + "</li>" for s in items[:30])
         sections.append(f'<section class="news-cat" id="{key}" aria-labelledby="h-{key}"><h2 id="h-{key}">{h(name)}</h2><ol class="news-list">{lis}</ol></section>')
+    subj = []
+    for key, (name, guide) in FIELDS.items():
+        items = [s for s in live if key in fields_of(s) and s["status"] == "published"]
+        if items:
+            lis = "".join(f'<li><a href="news-{s["slug"]}.html">{h(s["title"])}</a> <span class="small muted">{fmt(s["published"])}</span></li>' for s in items[:5])
+            more = f'<p class="small muted">{len(items)} {"story" if len(items) == 1 else "stories"} · <a href="{h(guide)}.html">Our guide</a></p>'
+        else:
+            lis = ""
+            more = f'<p class="small muted">No new story yet. Meanwhile, read <a href="{h(guide)}.html">our guide</a>.</p>'
+        subj.append(f'<section class="news-cat" id="field-{key}" aria-labelledby="hf-{key}"><h3 id="hf-{key}">{h(name)}</h3>'
+                    + (f'<ul>{lis}</ul>' if lis else '') + more + '</section>')
+    subjects = '<section class="news-subjects" aria-labelledby="h-subjects"><h2 id="h-subjects">By subject</h2>' + "".join(subj) + '</section>'
+    field_chips = "".join(f'<li><a href="#field-{k}">{h(v[0])}</a></li>' for k, v in FIELDS.items())
     latest = "".join(f'<li><a href="news-{s["slug"]}.html">{h(s["title"])}</a> <span class="small muted">{fmt(s["published"])}</span></li>' for s in live[:6])
     chips = "".join(f'<li><a href="#{k}">{h(v[1])}</a></li>' for k, v in CATEGORIES.items() if any(s["category"] == k for s in live))
     empty = '' if live else '<p class="muted">The first stories are on their way. Meanwhile, read our <a href="learn.html">guides to India\'s past</a>.</p>'
     ld = json.dumps({"@context": "https://schema.org", "@type": "CollectionPage", "name": "Heritage desk", "url": url,
-                     "description": "News from Indian archaeology, history, Sanskrit, anthropology, arts and heritage, with sources."}, ensure_ascii=False)
-    return head("Heritage desk: news from Indian archaeology and heritage | Talaash Heritage",
-                "New finds, research, exhibitions, conferences, jobs and calls, and decisions on heritage sites in India, with sources under every story.",
+                     "description": "News from Indian archaeology, linguistics, anthropology, the arts, Sanskrit, history and heritage, with sources."}, ensure_ascii=False)
+    return head("Heritage desk: news from Indian archaeology, languages, anthropology, arts, Sanskrit, history and heritage | Talaash Heritage",
+                "New finds, research, exhibitions, performances, conferences, jobs and calls across archaeology, linguistics, anthropology, the arts, Sanskrit, history and heritage in India, with sources under every story.",
                 url, ld, og_type="website") + f"""
 <body data-gate="open" data-english-only="1" class="guide-page">
 <div id="site-header"></div>
@@ -229,13 +263,15 @@ def hub(stories):
 <div class="wrap">
   <header class="page-head hub-head">
     <p class="guide-eyebrow">Heritage desk</p>
-    <h1>What is happening in Indian archaeology and heritage</h1>
-    <p class="guide-lede">New finds, research, exhibitions, conferences, jobs and calls, and decisions on sites, across archaeology, history, Sanskrit, linguistics, anthropology, the arts and heritage. Written in our own words, with the sources under every story.</p>
-    {f'<ul class="chip-list">{chips}</ul>' if chips else ''}
+    <h1>What is happening across India's past and living heritage</h1>
+    <p class="guide-lede">Seven fields, one desk: archaeology, linguistics, anthropology, the arts, Sanskrit, history and heritage. New finds, research, exhibitions and performances, conferences, jobs and calls, and decisions on sites. Written in our own words, with the sources under every story.</p>
+    {f'<ul class="chip-list" aria-label="By type">{chips}</ul>' if chips else ''}
+    <ul class="chip-list" aria-label="By subject">{field_chips}</ul>
   </header>
   {empty}
   {f'<section class="news-latest" aria-labelledby="h-latest"><h2 id="h-latest">Latest</h2><ul>{latest}</ul></section>' if latest else ''}
   {"".join(sections)}
+  {subjects}
 </div>
 </main>
 """ + FOOT
@@ -250,6 +286,19 @@ def main():
     if problems:
         print("\n".join(problems))
         sys.exit(1)
+    if "--coverage" in sys.argv:
+        today = datetime.date.today()
+        since = (today - datetime.timedelta(days=COVERAGE_DAYS - 1)).isoformat()
+        recent = [s for s in stories if s["status"] == "published" and s["published"] >= since]
+        cnt = {k: sum(k in fields_of(s) for s in recent) for k in FIELDS}
+        cats = {k: sum(s["category"] == k for s in recent) for k in CATEGORIES}
+        print(f"Last {COVERAGE_DAYS} days (since {since}): {len(recent)} stories")
+        for k, n in sorted(cnt.items(), key=lambda x: x[1]):
+            print(f"  {k:13} {n}{'  <- needs stories' if n < COVERAGE_TARGET else ''}")
+        print("  categories: " + ", ".join(f"{k} {n}" for k, n in cats.items()))
+        need = [k for k, n in sorted(cnt.items(), key=lambda x: x[1]) if n < COVERAGE_TARGET]
+        print("PRIORITY: " + (", ".join(need) if need else "all seven fields covered"))
+        return
     if check_only:
         print(f"{len(stories)} stories OK")
         return

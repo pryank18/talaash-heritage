@@ -1397,6 +1397,12 @@ body { --fab-base: 1.25rem; --fab-x: 1.25rem; --fab-size: 3rem; --fab-gap: 0.6re
 .news-text { margin-top: 1.5rem; }
 .news-sources { margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1rem; }
 .news-sources li { margin-bottom: 0.4rem; overflow-wrap: anywhere; }
+.news-subjects { margin-top: 3rem; border-top: 2px solid var(--ink); padding-top: 0.5rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: 0 2rem; }
+.news-subjects > h2 { grid-column: 1 / -1; }
+.news-subjects .news-cat { margin-top: 1rem; }
+.news-subjects h3 { margin: 0 0 0.4rem; font-size: var(--step-0); }
+.news-subjects ul { padding-left: 1.1rem; margin: 0 0 0.4rem; }
+.news-subjects li { margin-bottom: 0.35rem; }
 /* Eight menu items (News added 20 Oct) on one row: a touch smaller from 1300px so the cart stays on the row. */
 @media (min-width: 1300px) {
   .site-nav { gap: 0.75rem; font-size: 0.94rem; }
