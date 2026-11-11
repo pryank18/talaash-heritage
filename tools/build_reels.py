@@ -143,7 +143,7 @@ def watch_page(shown):
         body = ('<div class="doc"><p>Our reels are on Instagram. Each one ends here, with the walk, course or guide '
                 'it comes from.</p></div>')
         robots = '<meta name="robots" content="noindex">\n'
-    ig_script = '\n<script async src="https://www.instagram.com/embed.js"></script>' if "instagram-media" in body else ""
+    ig_script = ""  # Instagram loads only on request: site/assets/js/embeds.js
     return head("Reels: watch, then go there with us | Talaash Heritage",
                 "Talaash Heritage reels on Indian history and archaeology, each linked to the walk, course or guide it comes from.",
                 "watch.html", robots) + f"""
@@ -161,7 +161,7 @@ def watch_page(shown):
     </div>
   </header>
   {body}
-  <p class="small muted ig-note">Reels are shown by Instagram or YouTube, which may set their own cookies.</p>
+  <p class="small muted ig-note">Instagram reels load only when you ask; Instagram and YouTube may then set their own cookies.</p>
 </div>
 </main>
 <div id="site-footer"></div>

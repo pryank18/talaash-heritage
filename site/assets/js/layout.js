@@ -10,6 +10,8 @@ import { initTracking, track } from "./track.js";
 import { initHelp } from "./help.js";
 import { initSearch, searchButton } from "./search.js";
 import { initShare } from "./share.js";
+import { consentEnabled, initConsent, openConsent } from "./consent.js";
+import { initEmbeds } from "./embeds.js";
 
 // The host serves /about.html as /about, so names are compared with ".html" added back.
 const rawPage = location.pathname.split("/").pop() || "index";
@@ -139,7 +141,7 @@ function renderFooter() {
           <li><a href="sell.html">Sell with us</a></li>
           <li><a href="seller.html">Partner sign-in</a></li>
           <li><a href="shipping-returns.html">Shipping, cancellations and refunds</a></li>
-          <li><a href="privacy.html">Privacy notice</a></li>
+          <li><a href="privacy.html">Privacy notice</a></li>${consentEnabled() ? '<li><button class="btn-plain" type="button" data-cookie-settings>Cookie settings</button></li>' : ""}
           <li><a href="terms.html">Terms of sale</a></li>
           <li><a href="credits.html">Photo credits</a></li>
         </ul>
@@ -240,7 +242,7 @@ function renderAppShell() {
       <h3>Policies</h3>
       <ul>
         <li><a href="shipping-returns.html">Shipping, cancellations and refunds</a></li>
-        <li><a href="privacy.html">Privacy notice</a></li>
+        <li><a href="privacy.html">Privacy notice</a></li>${consentEnabled() ? '<li><button class="btn-plain" type="button" data-cookie-settings>Cookie settings</button></li>' : ""}
         <li><a href="terms.html">Terms of sale</a></li>
       </ul>
       <div class="sheet-theme">
@@ -311,5 +313,10 @@ renderAppShell();
 updateCartCount();
 initGate();
 initTracking();
+initConsent();
+initEmbeds();
+document.addEventListener("click", (e) => {
+  if (e.target.closest("[data-cookie-settings]")) openConsent();
+});
 initHelp();
 if (page !== "admin.html" && page !== "seller.html") initShare();
