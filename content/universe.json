@@ -832,7 +832,7 @@
    "number": null,
    "field": "history",
    "title": "Durlabh #01 carousel (Wednesday Deep Story)",
-   "status": "idea",
+   "status": "building",
    "slot": "2026-11-25T19:30",
    "platforms": [
     "instagram",
@@ -841,7 +841,7 @@
    ],
    "page": "durlabh-01-raya-asoko",
    "durlabh": 1,
-   "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
+   "notes": "Slides render/queue/20261125-durlabh-01-raya-asoko (8) → site/media/ig/20261125-durlabh-01-raya-asoko-1..8.jpg; caption and LinkedIn text in render/lectures/01-raya-asoko/carousel.md. Built 12 Nov from the checked long read."
   },
   {
    "id": "tl-durlabh-02-carousel",
