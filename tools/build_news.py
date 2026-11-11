@@ -287,7 +287,7 @@ def main():
         print("\n".join(problems))
         sys.exit(1)
     if "--coverage" in sys.argv:
-        today = datetime.date.today()
+        today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=5, minutes=30))).date()  # IST
         since = (today - datetime.timedelta(days=COVERAGE_DAYS - 1)).isoformat()
         recent = [s for s in stories if s["status"] == "published" and s["published"] >= since]
         cnt = {k: sum(k in fields_of(s) for s in recent) for k in FIELDS}
@@ -316,7 +316,7 @@ def main():
                 if MARK in fh.read(400):
                     os.remove(os.path.join(SITE, f))
                     print("removed", f)
-    today = datetime.date.today().isoformat()
+    today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=5, minutes=30))).date().isoformat()  # IST
     urls = [(SITE_URL + "news.html", today)] + [(f"{SITE_URL}news-{s['slug']}.html", s.get("updated", s["published"])) for s in stories if s["status"] == "published"]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"  <url><loc>{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
