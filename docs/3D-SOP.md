@@ -1,6 +1,6 @@
 # 3D model pages: standard operating procedure
 
-For every interactive 3D page on the site (`site/3d-<page>.html`). Written 12 Nov 2026 after the Kandariya Mahadeva and Bhaja pages. Follow every step in order. A step that fails stops the work: the item goes to `hold` in the ledger with the reason, and nothing is published.
+For every interactive 3D page on the site (`site/3d-<page>.html`). Written 12 Nov 2026 after the Kandariya Mahadeva and Bhaja pages; section 6 updated the same day, when the pages were moved onto the original design canvases. Follow every step in order. A step that fails stops the work: the item goes to `hold` in the ledger with the reason, and nothing is published.
 
 Live examples: https://talaash-heritage.pages.dev/3d-kandariya-mahadeva and https://talaash-heritage.pages.dev/3d-bhaja-chaitya
 
@@ -40,7 +40,8 @@ Keep a claim only if both subagents confirm it. Otherwise drop it, or show it as
 
 One entry per model. `tools/build_3d.py` refuses to build if a required field is empty, a tag is wrong, or a linked page or file is missing.
 
-- `page`, `ledger` (the ledger id), `script` (scene file name), `still` (`assets/img/3d/<page>.webp`)
+- `page`, `ledger` (the ledger id), `script` (the app module, `<slug>-app`), `still` (`assets/img/3d/<page>.webp`)
+- `app`: `three` (vendored folder), `theme` (`k`-style light or `bj`-style dark, or a new scoped theme), `fonts`, `eyebrow`, `heading` (the page h1), `intro`
 - `label`: "Reconstruction from published surveys. Estimated parts tagged." (add "and plans" when a plan was used)
 - `title` (ends "| Talaash Heritage"), `h1`, `eyebrow` (field name), `crumb` ([pillar guide, pillar name]), `short` (link text), `description` (meta, at most about 160 characters), `og_title`, `og_description`
 - `lede`: what it is, which sources the model is built from, and how to use it ("Drag to turn it, zoom with the + and − buttons (or pinch on a phone) …")
@@ -52,14 +53,20 @@ One entry per model. `tools/build_3d.py` refuses to build if a required field is
 - `sources`: full citations; HTML links are allowed
 - `published`, and `updated` whenever the page changes (ISO dates)
 
-## 6. The scene: `site/assets/js/3d/<script>.js`
+## 6. The scene: the design canvas, run on the website as it is
 
-- Import `start` from `./viewer.js`. Units are metres. Each measured figure is a named constant with its source in a comment, and its conversion from feet and inches is done in code (`const FT = 0.3048`).
-- Every visible element that carries a figure gets `api.label(text, tag, [x, y, z], layer)`. Keep label text short, metric then imperial; the full wording goes in the facts table. The first labels added have priority when space is short.
-- Add `api.person(x, z)` (1.7 m) with an Illustrative label.
-- Use layers for parts a reader may want to hide, such as the cutaway, a hypothetical timber front, or roofs. Pass them in `toggles`.
-- Return `target`, `camera`, a `phone` view ({target, camera}) tested at 390×844, and `sun` if the default light leaves the inside dark. `minDistance` and `maxDistance` should stop a reader zooming inside walls or losing the model.
-- Plain shapes only. Do not invent ornament, carving or colour.
+Each model is first designed as a Claude Design canvas (an interactive artboard with its own three.js scene, views, layers, sun, walk mode and facts panel). The website runs that same canvas, so the page looks and behaves like the design. Do not rebuild a canvas from scratch for the site.
+
+1. Read the canvas's `project/Main.dc.html` and its three.js asset (Artifact tool, `read`). Note the three.js version from the asset's header (`const e="147"` etc.) and vendor the official build of that version from npm into `site/assets/js/vendor/three-r<version>/three.min.js` with its LICENSE. Check the sha256 against the canvas asset; they must match. For r150 and later, remove only the first `console.warn(...)` line and put `!` before the function (see `three-r158/README.txt`).
+2. Make `site/assets/js/3d/<slug>-app.js`: the canvas's `<x-dc>` markup (without `<helmet>`) as `MARKUP`, then its `Component` class unchanged except for the edits below, then `export function start(host) { return mount(host, MARKUP, Component); }`. `dc-lite.js` runs `{{ bindings }}`, `<sc-for>`, `<sc-if>`, `on…` events and `ref` exactly as the canvas does.
+3. Copy the `<helmet>` styles into `site/assets/css/model3d.css`, each rule scoped under `.m3d-app-<theme>` (never a bare `.tag`, `.tab` or `body` rule), and the canvas's Google Fonts link into `app.fonts` in `content/models3d.json`.
+4. Edits to the canvas code, all required:
+   - Replace every fact, label, tab text and source with the checked wording from the evidence sheet. Drop anything the three checks did not keep, and cite only qualifying sources: Wikipedia, blogs, Medium and travel sites are never listed as sources.
+   - Put both logos (Talaash and archaeologywala) and the reconstruction label in a corner of the model view.
+   - Do not trap page scrolling. The mouse wheel zooms only when the model has been clicked (has focus), Ctrl or ⌘ is held, or the view is full screen; otherwise show "Click the model first, or hold Ctrl…" for 1.6 s and let the page scroll.
+   - Phones: set the model height with a CSS variable, put the model before long button rows, and make overlay panels collapsible (a Facts button). Buttons must not wrap their text.
+   - Name lost or unknown orientation honestly. For example, a view called "Entrance front", not "East front", unless a checked source gives the direction.
+5. The page header (crumbs, eyebrow, h1, intro, byline, Share) is static HTML built from `app` in `content/models3d.json`, in the canvas's own fonts and colours. The app section follows it, then the website sections.
 
 ## 7. Build
 
@@ -73,7 +80,7 @@ python3 tools/clean_urls.py
 
 `build_learn.py` rewrites the "Updated" date on every guide. Before committing, keep only files with real changes. Revert any page whose only change is the date or the JSON-LD dateModified.
 
-Then make the still image (fallback, og:image and the thumbnail on Learn, Watch, guides and programme pages). Render the stage headless at 1600×900 with the hint hidden, check both logos and the reconstruction label are in it, and save it as WebP in `site/assets/img/3d/`. Regenerate it whenever the scene or its labels change.
+Then make the still image (og:image, no-script fallback and the thumbnail on Learn, Watch, guides and programme pages). Render the model view headless at 1600×900 (Playwright Chromium with SwiftShader; heavy scenes need 20–30 s to draw), with the help buttons hidden. Check that both logos and the reconstruction label are in it, and save it as WebP in `site/assets/img/3d/`. Regenerate it whenever the scene or its labels change. In headless tests, click the app's buttons with `element.click()` in the page: SwiftShader is too slow for Playwright's stability checks.
 
 ## 8. Visitor check, A to Z (before every push)
 
@@ -81,13 +88,13 @@ Serve `site/` locally and use Playwright Chromium (SwiftShader WebGL). Take scre
 
 - [ ] 3D page at 1440×900 and 390×844, light and dark theme. Full-page screenshots and the stage.
 - [ ] Both logos (Talaash and archaeologywala) visible in the viewer corner and in "Follow the series", on desktop and phone.
-- [ ] Reconstruction label visible and not covered. The hint is correct for mouse ("Ctrl + scroll or + −") and touch ("pinch").
+- [ ] Reconstruction label visible and not covered.
 - [ ] Model visible and framed on desktop and phone. Labels legible, not overlapping, none pointing off-screen, and the top label shown.
-- [ ] Every toggle, + and −, Reset view and Full screen work. Labels can be switched off.
-- [ ] The mouse wheel scrolls the page, and Ctrl + wheel zooms. Touch drag turns the model on a phone.
+- [ ] Every view, layer, tab, unit and look button works, with no console errors; the sun slider and date change the light; walk mode moves.
+- [ ] The mouse wheel scrolls the page until the model is clicked; Ctrl + wheel zooms. Touch drag turns the model on a phone.
 - [ ] No console errors and no 404s (fonts blocked by the sandbox do not count).
-- [ ] No-WebGL fallback: the still image and the note show, and the facts are still there.
-- [ ] The facts table reads correctly on a phone (rows stacked).
+- [ ] No-WebGL: the app shows its own message, and the facts are still on the page ("All the key facts as text").
+- [ ] The page matches the canvas: same fonts, colours, buttons and panel; compare screenshots of the canvas and the page side by side.
 - [ ] Every link on the page resolves: Plan a visit, WhatsApp, programme cards, More in 3D, Read next, sources.
 - [ ] "See it in 3D" block on every guide and programme in the entry, plus Learn ("Explore in 3D"), Watch, the home chips and the Learn menus.
 - [ ] The search finds it (kind "3D model"), and it is listed in `llms.txt` and `sitemap-3d.xml`.

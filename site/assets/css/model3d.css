@@ -1,109 +1,115 @@
-/* 3D model pages (site/3d-*.html). Colours come from styles.css tokens. */
-.m3d-page .guide-head h1 { max-width: 30ch; }
-.m3d-wrap { margin: 1.2rem 0 1.8rem; max-width: 62rem; }
-.m3d-wrap:fullscreen { max-width: none; margin: 0; padding: 12px; background: var(--paper); display: flex; flex-direction: column; }
-.m3d-wrap:fullscreen .m3d-stage { flex: 1; height: auto; min-height: 0; }
-.m3d-wrap:fullscreen .m3d-key { display: none; }
-.m3d-stage { position: relative; width: 100%; height: min(70vh, 620px); min-height: 420px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: #e9e4da; touch-action: none; }
-.m3d-canvas { display: block; width: 100%; height: 100%; cursor: grab; }
-.m3d-canvas:active { cursor: grabbing; }
-.m3d-still { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.m3d-stage.webgl .m3d-still { display: none; }
-.m3d-stage.no-webgl { height: auto; min-height: 0; aspect-ratio: 16 / 9; }
-.m3d-note-nowebgl { display: none; margin: .5rem 0 0; }
-.m3d-stage.no-webgl + .m3d-note-nowebgl { display: block; }
-.m3d-stage.no-webgl .m3d-hint, .m3d-stage.no-webgl .m3d-brand, .m3d-stage.no-webgl .m3d-recon { display: none; }
-.m3d-labels { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
-.m3d-label { position: absolute; left: 0; top: 0; white-space: nowrap; font-size: 11.5px; line-height: 1.25; color: #1c1b19; background: rgba(255,255,255,.88); border: 1px solid rgba(0,0,0,.15); border-radius: 5px; padding: 2px 6px; box-shadow: 0 1px 3px rgba(0,0,0,.15); }
-.m3d-tag { display: inline-block; font-size: 9.5px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; padding: 0 4px; border-radius: 3px; color: #fff; vertical-align: 1px; }
-.tag-measured { background: #1f6f43; } .tag-documented { background: #2d5c8a; } .tag-comparative { background: #7a4f9a; }
-.tag-hypothetical { background: #a5432f; } .tag-reconstructed { background: #8a6d1f; } .tag-estimated { background: #6b6b6b; } .tag-illustrative { background: #3f7f86; }
-.m3d-brand { position: absolute; top: 8px; right: 8px; display: flex; gap: 6px; align-items: center; background: rgba(255,255,255,.9); border-radius: 8px; padding: 4px 6px; z-index: 2; }
-.m3d-brand img { width: 40px; height: 40px; object-fit: contain; display: block; }
-.m3d-recon { position: absolute; left: 8px; bottom: 8px; right: 8px; width: fit-content; max-width: calc(100% - 16px); background: rgba(28,27,25,.82); color: #fff; font-size: 11.5px; padding: 3px 8px; border-radius: 5px; z-index: 2; }
-.m3d-hint-touch { display: none; }
-.m3d-stage.touch .m3d-hint-mouse { display: none; }
-.m3d-stage.touch .m3d-hint-touch { display: inline; }
-.m3d-wheel-note { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; background: rgba(28,27,25,.86); color: #fff; padding: .5rem .8rem; border-radius: 8px; font-size: .9rem; z-index: 3; pointer-events: none; }
-.m3d-wheel-note[hidden] { display: none; }
-.m3d-hint { position: absolute; left: 8px; top: 8px; background: rgba(255,255,255,.9); color: #1c1b19; font-size: 11.5px; padding: 3px 8px; border-radius: 5px; z-index: 2; max-width: 60%; }
-.m3d-toggles { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .6rem; }
-.m3d-btn { font: inherit; font-size: .85rem; padding: .35rem .7rem; min-height: 2.25rem; min-width: 2.25rem; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--ink); cursor: pointer; }
-.m3d-btn[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-.m3d-key { display: flex; flex-wrap: wrap; gap: .35rem .8rem; font-size: .82rem; margin: .8rem 0 0; padding: 0; list-style: none; }
-.m3d-facts { width: 100%; border-collapse: collapse; font-size: .92rem; margin: .6rem 0 1rem; }
+/* 3D model pages (site/3d-*.html): the look of the original design canvases.
+   .m3d-app-k = Kandariya (light, Cormorant Garamond + Inter); .m3d-app-bj = Bhaja (dark, Spectral + Inter). */
+
+/* ---------- page header, in the canvas's own type and colours ---------- */
+.m3d-head { padding: 22px 0 6px; }
+.m3d-head-in { box-sizing: border-box; max-width: 1480px; margin: 0 auto; padding: 0 28px; display: flex; flex-direction: column; gap: 6px; }
+.m3d-head .crumbs { margin: 0 0 4px; font-size: 13px; }
+.m3d-head h1 { margin: 0; text-transform: none; letter-spacing: 0; }
+.m3d-eyebrow { margin: 0; font: 600 13px Inter, system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; }
+.m3d-intro { margin: 0; font: 400 15px/1.5 Inter, system-ui, sans-serif; max-width: 980px; }
+.m3d-meta { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; font: 400 13px Inter, system-ui, sans-serif; margin-top: 4px; }
+.m3d-meta .share-btn { margin: 0; }
+.m3d-head-k { background: #f3ede3; color: #2a2118; }
+.m3d-head-k h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; font-size: 46px; line-height: 1.05; color: #2a2118; }
+.m3d-head-k .m3d-eyebrow { color: #7a3f1f; }
+.m3d-head-k .m3d-intro, .m3d-head-k .m3d-meta { color: #5a4a3a; }
+.m3d-head-k a { color: #7a3f1f; }
+.m3d-head-bj { background: #14110f; color: #efe7dc; padding-bottom: 14px; }
+.m3d-head-bj h1 { font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 40px; line-height: 1.1; color: #f6efe4; }
+.m3d-head-bj .m3d-eyebrow { color: #c9b9a4; }
+.m3d-head-bj .m3d-intro, .m3d-head-bj .m3d-meta { color: #c9b9a4; }
+.m3d-head-bj a { color: #e0b07a; }
+.m3d-head-bj .share-btn { color: #efe7dc; border-color: #4a3f36; background: transparent; }
+
+/* ---------- Kandariya app (canvas styles, scoped) ---------- */
+.m3d-app-k { background: #f3ede3; color: #2a2118; font-family: Inter, system-ui, sans-serif; }
+.m3d-app-k a { color: #7a3f1f; } .m3d-app-k a:hover { color: #4f2812; }
+.m3d-app-k .vbtn { min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid #c9b79d; background: #fffaf2; color: #2a2118; font: 500 14px Inter, system-ui, sans-serif; cursor: pointer; }
+.m3d-app-k .vbtn:hover { background: #f1e6d4; }
+.m3d-app-k .vbtn.on { background: #2a2118; color: #fffaf2; border-color: #2a2118; }
+.m3d-app-k .tab { min-height: 44px; padding: 0 12px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: #5a4a3a; font: 600 14px Inter, system-ui, sans-serif; cursor: pointer; }
+.m3d-app-k .tab.on { color: #2a2118; border-bottom-color: #7a3f1f; }
+.m3d-app-k .pad { width: 56px; height: 56px; border-radius: 12px; border: 1px solid rgba(255,250,242,0.5); background: rgba(34,26,19,0.78); color: #fffaf2; display: flex; align-items: center; justify-content: center; cursor: pointer; touch-action: none; user-select: none; }
+.m3d-app-k .tag { display: inline-block; padding: 2px 7px; border-radius: 5px; font: 600 10.5px Inter, system-ui, sans-serif; letter-spacing: 0.04em; color: #fff; white-space: nowrap; }
+.m3d-app-k .t-MEASURED { background: #1f5f8b; } .m3d-app-k .t-DOCUMENTED { background: #2f6b3a; } .m3d-app-k .t-COMPARATIVE { background: #6e4790; }
+.m3d-app-k .t-HYPOTHETICAL { background: #93520f; } .m3d-app-k .t-RECONSTRUCTED { background: #8a2d2d; } .m3d-app-k .t-ESTIMATED { background: #5f5f5f; } .m3d-app-k .t-ILLUSTRATIVE { background: #9c2f64; }
+.m3d-app-k input[type=range] { accent-color: #7a3f1f; }
+.m3d-app-k select { width: auto; max-width: 100%; }
+.m3d-app-k h3 { font-family: Inter, system-ui, sans-serif; text-transform: none; letter-spacing: 0; }
+.m3d-app-k svg { display: inline-block; }
+
+/* ---------- Bhaja app (canvas styles, scoped) ---------- */
+.m3d-app-bj { --app-h: calc(100svh - 72px); scroll-margin-top: 72px; background: #14110f; color: #efe7dc; }
+.m3d-app-bj a { color: #e0b07a; } .m3d-app-bj a:hover { color: #f3d2a8; }
+.m3d-app-bj .bj-scroll::-webkit-scrollbar { width: 6px; }
+.m3d-app-bj .bj-scroll::-webkit-scrollbar-thumb { background: #4a3f36; border-radius: 3px; }
+.m3d-app-bj .bj-facts-btn { display: none !important; }
+.m3d-app-bj canvas { touch-action: none; }
+
+/* ---------- the rest of the page ---------- */
+.m3d-page .guide { padding-top: 1.5rem; }
+.m3d-page .guide-text { padding-top: 0.5rem; margin-bottom: 0; padding-bottom: 0; }
+.m3d-noscript { width: 100%; height: auto; border-radius: 10px; margin: 1rem 0 .5rem; }
+.m3d-facts-text { margin: 1.4rem 0 0; border: 1px solid var(--line); border-radius: 10px; padding: .6rem .9rem; }
+.m3d-facts-text summary { cursor: pointer; font-weight: 600; }
+.m3d-facts { width: 100%; border-collapse: collapse; font-size: .92rem; margin: .6rem 0 .4rem; }
 .m3d-facts th, .m3d-facts td { text-align: left; vertical-align: top; padding: .45rem .5rem; border-bottom: 1px solid var(--line); }
 .m3d-facts th { width: 34%; font-weight: 600; }
-.m3d-facts td .m3d-tag { margin-right: .35rem; }
-.m3d-visit { border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.1rem; margin: 1.2rem 0 2rem; background: var(--paper); }
-.m3d-page .guide-text, .m3d-page .doc { margin-bottom: 0; padding-bottom: 0; }
-.m3d-page .guide-text > p:last-child { margin-bottom: 0; }
+.m3d-tag { display: inline-block; font-size: 9.5px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; padding: 0 4px; border-radius: 3px; color: #fff; vertical-align: 1px; margin-right: .35rem; }
+.tag-measured { background: #1f5f8b; } .tag-documented { background: #2f6b3a; } .tag-comparative { background: #6e4790; }
+.tag-hypothetical { background: #93520f; } .tag-reconstructed { background: #8a2d2d; } .tag-estimated { background: #5f5f5f; } .tag-illustrative { background: #9c2f64; }
+.m3d-visit { border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.1rem; margin: 1.6rem 0 2rem; background: var(--paper); }
+.m3d-visit h2 { margin-top: 0; }
 .m3d-more { margin: 2.5rem 0; }
 .m3d-card .card-art { aspect-ratio: 16 / 9; height: auto; }
-.m3d-card .card-art img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: auto; }
-.m3d-follow { margin: 1.5rem 0; }
-.m3d-visit h2 { margin-top: 0; }
-.m3d-follow { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+.m3d-card .card-art img { width: 100%; height: 100%; object-fit: cover; }
+.m3d-follow { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin: 1.5rem 0; }
 .m3d-follow img { width: 34px; height: 34px; object-fit: contain; }
 .m3d-sources li { margin-bottom: .35rem; }
-@media (max-width: 600px) {
-  .m3d-stage { height: 64vh; min-height: 380px; }
-  .m3d-brand img { width: 32px; height: 32px; }
-  .m3d-label { font-size: 10.5px; }
+
+/* ---------- phones and small tablets ---------- */
+@media (max-width: 760px) {
+  .m3d-head-in { padding: 0 16px; }
+  .m3d-head-k h1 { font-size: 32px; }
+  .m3d-head-bj h1 { font-size: 30px; }
+  .m3d-intro { font-size: 14px; }
+  .m3d-app-k .k-root { padding: 8px 16px 28px !important; }
+  .m3d-app-k { --k-h: 64svh; }
+  .m3d-app-k .vbtn { padding: 0 12px; font-size: 13px; }
+  .m3d-app-bj { --app-h: calc(100svh - 124px); }
+  .m3d-app-bj .bj-facts-btn { display: inline-block !important; }
+  .m3d-app-bj .bj-panel { display: none !important; }
+  .m3d-app-bj .bj-panel.open { display: flex !important; left: 10px !important; right: 10px !important; top: 10px !important; width: auto !important; max-height: calc(100% - 46%) !important; z-index: 3; }
+  .m3d-app-bj .bj-bar { left: 10px !important; right: 10px !important; bottom: 10px !important; max-height: 44%; overflow-y: auto; padding: 10px !important; gap: 8px !important; }
+  .m3d-app-bj .bj-brand { top: 10px !important; right: 10px !important; }
+  .m3d-app-bj .bj-brand img { width: 34px !important; height: 34px !important; }
+  .m3d-app-bj .bj-hint { display: none; }
+  .m3d-app-bj .bj-brand { max-width: 72% !important; }
   .m3d-facts, .m3d-facts tbody, .m3d-facts tr, .m3d-facts th, .m3d-facts td { display: block; width: auto; }
   .m3d-facts tr { border-bottom: 1px solid var(--line); padding: .5rem 0; }
   .m3d-facts th, .m3d-facts td { border: 0; padding: .1rem .2rem; }
-  .m3d-hint { max-width: 62%; }
 }
 
-/* ---- viewer additions (12 Nov 2026) ---- */
-.m3d-stage.is-passive { touch-action: pan-y pinch-zoom; }
-.m3d-canvas:focus-visible { outline: 3px solid var(--haldi, #e0a526); outline-offset: -3px; }
-.m3d-wheel-note { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; background: rgba(28,27,25,.85); color: #fff; font-size: .9rem; padding: .6rem .9rem; border-radius: 8px; z-index: 3; text-align: center; max-width: 80%; pointer-events: none; }
-.m3d-wheel-note[hidden] { display: none; }
-.m3d-stage.no-webgl .m3d-open, .m3d-stage.no-webgl .m3d-close, .m3d-stage:not(.webgl) .m3d-open { display: none; }
-.m3d-open { position: absolute; left: 50%; bottom: 64px; transform: translateX(-50%); z-index: 3; display: none; align-items: center; gap: .45rem; font: inherit; font-weight: 600; font-size: 1rem; padding: .75rem 1.2rem; min-height: 48px; border: 2px solid #fff; border-radius: 999px; background: #1c1b19; color: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.3); cursor: pointer; }
-.m3d-stage.is-passive .m3d-open { display: inline-flex; }
-.m3d-close { position: absolute; left: 8px; top: 8px; z-index: 4; display: none; width: 48px; height: 48px; align-items: center; justify-content: center; border: 0; border-radius: 999px; background: rgba(255,255,255,.95); color: #1c1b19; box-shadow: 0 2px 8px rgba(0,0,0,.2); cursor: pointer; }
-/* Phones: numbered pins on the model, full text in the parts list below. */
-.m3d-pin { display: none; width: 22px; height: 22px; border-radius: 50%; color: #fff; font-size: 11px; font-weight: 700; line-height: 22px; text-align: center; box-shadow: 0 0 0 2px #fff, 0 1px 4px rgba(0,0,0,.35); flex: none; }
-.m3d-stage.pins .m3d-label { background: none; border: 0; box-shadow: none; padding: 0; }
-.m3d-stage.pins .m3d-label .m3d-pin { display: block; }
-.m3d-stage.pins .m3d-label .m3d-ltext { display: none; }
-.m3d-label.is-flash { outline: 3px solid var(--haldi, #e0a526); outline-offset: 2px; border-radius: 6px; }
-.m3d-stage.pins .m3d-label.is-flash .m3d-pin { transform: scale(1.35); transition: transform .2s; }
-.m3d-parts-box { margin-top: .8rem; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
-.m3d-parts-box summary { cursor: pointer; padding: .65rem .9rem; font-weight: 600; min-height: 44px; display: flex; align-items: center; gap: .3rem; flex-wrap: wrap; }
-.m3d-parts-list { list-style: none; margin: 0; padding: 0 .4rem .5rem; }
-.m3d-part { display: flex; align-items: center; gap: .5rem; width: 100%; text-align: left; font: inherit; font-size: .9rem; color: var(--ink); background: none; border: 0; border-top: 1px solid var(--line); padding: .55rem .5rem; min-height: 44px; cursor: pointer; }
-.m3d-part:hover { background: rgba(0,0,0,.04); }
-.m3d-part .m3d-pin { display: inline-block; }
-.m3d-group { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; }
-.m3d-group-title { font-size: .75rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-soft); margin-right: .1rem; }
-.m3d-btn { font: inherit; font-size: .85rem; padding: .45rem .75rem; min-height: 40px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--ink); cursor: pointer; }
-.m3d-btn:hover { border-color: var(--ink-soft); }
-.m3d-btn.m3d-sq { width: 40px; padding: 0; font-size: 1.15rem; font-weight: 600; }
-/* Full screen (all devices; CSS, so it also works on iPhone). */
-html.m3d-lock, html.m3d-lock body { overflow: hidden; }
-.m3d-wrap.is-expanded { position: fixed; inset: 0; z-index: 100; margin: 0; display: flex; flex-direction: column; background: var(--paper); padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
-.m3d-wrap.is-expanded .m3d-stage { flex: 1 1 auto; height: auto; min-height: 0; border: 0; border-radius: 0; touch-action: none; }
-.m3d-wrap.is-expanded .m3d-close { display: inline-flex; }
-.m3d-wrap.is-expanded .m3d-hint { left: 64px; top: 14px; }
-.m3d-wrap.is-expanded .m3d-toggles { margin: 0; padding: .5rem .7rem; border-top: 1px solid var(--line); overflow-x: auto; flex-wrap: nowrap; flex: none; }
-.m3d-wrap.is-expanded .m3d-group { flex-wrap: nowrap; }
-.m3d-wrap.is-expanded .m3d-btn { white-space: nowrap; }
-.m3d-wrap.is-expanded .m3d-key { display: none; }
-.m3d-wrap.is-expanded .m3d-parts { flex: none; max-height: 38vh; overflow-y: auto; }
-.m3d-wrap.is-expanded .m3d-parts-box { margin: 0; border-radius: 0; border-width: 1px 0 0; }
-@media (max-width: 900px) {
-  body.m3d-inview .help-fab, body.m3d-inview .wa-fab, body.m3d-inview .top-fab { opacity: 0; pointer-events: none; transition: opacity .2s; }
+/* ---------- the whole content area takes the canvas palette, in light and dark site themes ---------- */
+.m3d-k main { --plaster: #f3ede3; --plaster-deep: #efe5d6; --paper: #fffaf2; --ink: #2a2118; --ink-soft: #5a4a3a; --line: #e2d5c1; --verdigris: #c9b79d; --verdigris-dark: #7a3f1f; background: #f3ede3; color: #2a2118; color-scheme: light; }
+.m3d-bj main { --plaster: #14110f; --plaster-deep: #1c1815; --paper: #201b17; --ink: #efe7dc; --ink-soft: #c9b9a4; --line: #3a322b; --verdigris: #4a3f36; --verdigris-dark: #e0b07a; background: #14110f; color: #efe7dc; color-scheme: dark; }
+.m3d-k main h1, .m3d-k main h2, .m3d-k main h3 { color: #2a2118; }
+.m3d-k main .guide-text h2, .m3d-k main .m3d-visit h2, .m3d-k main .section-head h2, .m3d-k main .guide-related h2, .m3d-k main #src-title { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 700; text-transform: none; letter-spacing: 0; font-size: 30px; }
+.m3d-bj main .guide-text h2, .m3d-bj main .m3d-visit h2, .m3d-bj main .section-head h2, .m3d-bj main .guide-related h2, .m3d-bj main #src-title { font-family: Spectral, Georgia, serif; font-weight: 600; text-transform: none; letter-spacing: 0; font-size: 28px; color: #f6efe4; }
+.m3d-k main a { color: #7a3f1f; } .m3d-bj main a { color: #e0b07a; }
+.m3d-k main .btn-primary, .m3d-bj main .btn-primary { color: #1c1b19; }
+@media (max-width: 760px) {
+  /* on phones the model comes first, then the view and layer buttons */
+  .m3d-app-k .k-root > div:nth-child(4) { order: -1; }
+  .m3d-app-k .k-root > div:nth-child(1), .m3d-app-k .k-root > div:nth-child(2) { gap: 6px !important; }
+  .m3d-app-k .vbtn { min-height: 40px; }
 }
-
-.m3d-label { max-width: 260px; white-space: normal; }
-.m3d-btn { min-height: 40px; }
-.m3d-btn.m3d-sq { width: 40px; padding: 0; font-size: 1.15rem; font-weight: 600; }
-.m3d-toggles { gap: .5rem 1rem; align-items: center; }
-.m3d-lede { margin-top: .4rem; }
-@media (max-width: 600px) { .m3d-stage { height: 58vh; min-height: 340px; } }
-.m3d-wrap.is-expanded { max-width: none; }
-.m3d-stage.is-passive .m3d-hint { display: none; }
+@media (max-width: 760px) {
+  .m3d-app-k .k-panel-body { max-height: 52svh !important; }
+  .m3d-app-bj .bj-bar { flex-direction: column; flex-wrap: nowrap !important; align-items: stretch !important; max-height: none; overflow: visible; }
+  .m3d-app-bj .bj-bar > div { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .m3d-app-bj .bj-bar > div > * { flex: 0 0 auto; }
+  .m3d-app-bj .bj-bar button { min-height: 36px !important; white-space: nowrap; }
+  .m3d-app-bj .bj-bar input[type=range] { width: 120px !important; }
+}
