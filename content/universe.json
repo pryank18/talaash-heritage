@@ -488,7 +488,7 @@
     "youtube-short"
    ],
    "page": "khajuraho-architecture-deep-dive",
-   "sources": "project doc claude/kandariya-3d-sources.md; model aa5f80ed-5676-496a-aaee-353ea79aee60",
+   "sources": "render/3d/kandariya-sources.md (canvas aa5f80ed-5676-496a-aaee-353ea79aee60)",
    "topic_lock": [
     "khajuraho"
    ]
@@ -525,7 +525,7 @@
     "youtube-short"
    ],
    "page": "buddhist-caves-in-india",
-   "sources": "Design canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2 (Bhaja Caves – 3D Reconstruction), evidence-tagged",
+   "sources": "render/3d/bhaja-sources.md (canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2)",
    "topic_lock": [
     "bhaja"
    ]
@@ -543,7 +543,7 @@
     "website"
    ],
    "page": "3d-kandariya-mahadeva",
-   "sources": "Design canvas aa5f80ed-5676-496a-aaee-353ea79aee60; project doc claude/kandariya-3d-sources.md",
+   "sources": "render/3d/kandariya-sources.md (canvas aa5f80ed-5676-496a-aaee-353ea79aee60)",
    "sells": "khajuraho-architecture-deep-dive"
   },
   {
@@ -559,7 +559,7 @@
     "website"
    ],
    "page": "3d-bhaja-chaitya",
-   "sources": "Design canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2; sources listed inside the canvas",
+   "sources": "render/3d/bhaja-sources.md (canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2)",
    "sells": "buddhist-caves-in-india"
   }
  ]
