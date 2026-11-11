@@ -4,7 +4,13 @@
 // enquiries. No cookies and no third-party scripts: a random device number is
 // kept in this browser, and events go to our own database through public.track().
 // Respects "Do Not Track". Reports: the Traffic tab of admin.html.
+// Visitors in Europe (see region.js): nothing is stored on their device; the IDs
+// live only in memory for the page they are on, so each page counts as a visit.
+// If Google tags are switched on and the visitor accepted them (consent.js), the
+// same key events are also passed to Google.
 import { CONFIG, isLive } from "./config.js";
+import { strictPrivacyRegion } from "./region.js";
+import { sendToGoogle } from "./consent.js";
 
 const UTM = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"];
 const SOCIAL = /(^|\.)(instagram\.com|facebook\.com|linkedin\.com|youtube\.com|x\.com|twitter\.com|google\.com\/maps|maps\.google\.com|g\.page)/;
@@ -17,7 +23,10 @@ function randomId() {
   return Array.from(a, (b) => (b % 36).toString(36)).join("");
 }
 
+const memory = {};
+
 function stored(storage, key, make) {
+  if (strictPrivacyRegion()) return (memory[key] ||= make());
   try {
     let v = storage.getItem(key);
     if (!v) { v = make(); storage.setItem(key, v); }
@@ -29,10 +38,18 @@ function stored(storage, key, make) {
 
 /** Where this visit came from, fixed on the first page of the visit. */
 function attribution() {
+  if (memory.attr) return memory.attr;
+  if (strictPrivacyRegion()) return (memory.attr = firstPage());
   try {
     const saved = sessionStorage.getItem("th_attr");
     if (saved) return JSON.parse(saved);
   } catch { /* storage blocked */ }
+  const out = firstPage();
+  try { sessionStorage.setItem("th_attr", JSON.stringify(out)); } catch { /* storage blocked */ }
+  return out;
+}
+
+function firstPage() {
   const q = new URLSearchParams(location.search);
   const out = { landing: (location.pathname + location.search).slice(0, 300) };
   for (const k of UTM) if (q.get(k)) out[k] = q.get(k).slice(0, 120);
@@ -40,7 +57,6 @@ function attribution() {
     const ref = document.referrer ? new URL(document.referrer) : null;
     if (ref && ref.hostname !== location.hostname) out.referrer = ref.hostname.replace(/^www\./, "").slice(0, 200);
   } catch { /* bad referrer */ }
-  try { sessionStorage.setItem("th_attr", JSON.stringify(out)); } catch { /* storage blocked */ }
   return out;
 }
 
@@ -50,6 +66,7 @@ const lang = () => (document.documentElement.lang || "").startsWith("hi") ? "hi"
 /** Sends one event. Never throws and never delays the page. */
 export function track(event, extra = {}) {
   if (off()) return;
+  sendToGoogle(event, extra);
   const body = {
     event,
     visitor: stored(localStorage, "th_vid", randomId),

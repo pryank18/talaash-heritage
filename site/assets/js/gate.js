@@ -5,14 +5,27 @@
 // See CONFIG.gateMode.
 
 import { CONFIG } from "./config.js";
+import { strictPrivacyRegion } from "./region.js";
 import { registerVisitor } from "./api.js";
 import { getVisitor, setVisitor } from "./store.js";
 import { $, $$, esc, toast } from "./ui.js";
 
 const META_KEY = "th_first_touch";
+let memoryTouch = null;
 
-/** Remember how the visitor first arrived, even if they register three pages later. */
+/** Remember how the visitor first arrived, even if they register three pages later.
+ *  Visitors in Europe (region.js): kept in memory for this page only, never stored. */
 function captureFirstTouch() {
+  if (strictPrivacyRegion()) {
+    if (memoryTouch) return;
+    const q = new URLSearchParams(location.search);
+    const utm = {};
+    for (const k of ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]) {
+      if (q.get(k)) utm[k] = q.get(k).slice(0, 120);
+    }
+    memoryTouch = { landing: location.pathname + location.search, referrer: document.referrer || "", utm };
+    return;
+  }
   try {
     if (sessionStorage.getItem(META_KEY)) return;
     const q = new URLSearchParams(location.search);
@@ -28,6 +41,7 @@ function captureFirstTouch() {
 }
 
 function firstTouch() {
+  if (memoryTouch) return memoryTouch;
   try {
     return JSON.parse(sessionStorage.getItem(META_KEY)) || {};
   } catch {

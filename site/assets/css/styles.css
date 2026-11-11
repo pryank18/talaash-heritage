@@ -1139,6 +1139,20 @@ html[data-theme="dark"] .path-travel { border-color: var(--line); border-top-col
 .ig-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); align-items: start; margin-top: 0.5rem; }
 .ig-grid .instagram-media { margin: 0 !important; min-width: 0 !important; width: 100% !important; }
 .ig-note { margin: 0.75rem 0 2.5rem; }
+.embed-gate { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; margin: 0.5rem 0 1rem; }
+
+/* ---------- cookie choice (only when Google tags are switched on in config.js) ---------- */
+.consent {
+  position: fixed; left: 1rem; bottom: 1rem; z-index: 45; max-width: 26rem;
+  background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: 8px;
+  padding: 1rem 1.1rem; box-shadow: 0 12px 32px -12px rgba(0, 0, 0, 0.35); font-size: var(--step--1);
+}
+.consent p { margin: 0 0 0.8rem; }
+.consent-actions { display: flex; gap: 0.6rem; justify-content: flex-end; flex-wrap: wrap; }
+@media (max-width: 899px) {
+  .consent { left: 0.75rem; right: 0.75rem; max-width: none; }
+  body.has-tabbar .consent { bottom: calc(5rem + env(safe-area-inset-bottom)); }
+}
 .reel-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); align-items: start; margin-top: 0.75rem; }
 .reel h3 { font-size: var(--step-1); margin: 0 0 0.25rem; }
 .reel p { margin: 0 0 0.5rem; }

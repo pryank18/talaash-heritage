@@ -28,6 +28,14 @@ export const CONFIG = {
   // Bump this when the consent wording or privacy notice changes; it is
   // stored with every registration.
   consentVersion: "2026-11-v3",
+
+  // --- Google Analytics 4 and Google Ads (optional) ---------------------------
+  // Leave empty and the site sets no cookies at all. Fill one in and visitors
+  // see a short cookie banner; Google loads only for those who press Accept
+  // (assets/js/consent.js). Also add a "Cookies" line to privacy.html then.
+  ga4Id: "",                    // e.g. "G-XXXXXXXXXX"
+  googleAdsId: "",              // e.g. "AW-123456789"
+  googleAdsPurchaseLabel: "",   // the purchase conversion label from Google Ads, e.g. "AbC-D_efG"
   defaultCountry: "India",
   defaultDialCode: "+91",
 

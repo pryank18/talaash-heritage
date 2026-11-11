@@ -1005,7 +1005,9 @@ REELS = [r for r in json.load(open(os.path.join(os.path.dirname(os.path.abspath(
          if r.get("instagram") or r.get("youtube")]
 
 
-IG_EMBED = '\n<script async src="https://www.instagram.com/embed.js"></script>'
+# Instagram's script is loaded only when the visitor presses "Show the Instagram posts"
+# (site/assets/js/embeds.js), so no page includes it directly.
+IG_EMBED = ''
 
 
 def reels_html(p):
