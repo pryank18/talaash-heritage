@@ -93,10 +93,18 @@ jobs:
               print("warning: could not confirm the key file from GitHub; sending anyway")
           body = json.dumps({"host": host, "key": key, "keyLocation": key_url, "urlList": urls}).encode()
           req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8", **ua})
-          try:
-              resp = urllib.request.urlopen(req, timeout=30)
-              print("IndexNow:", resp.status)
-          except urllib.error.HTTPError as e:
-              print("IndexNow error:", e.code, e.read()[:300])
-              raise SystemExit(1)
+          # The first sends after a new key can get 403 SiteVerificationNotCompleted while
+          # IndexNow checks the key file; retry for up to about 6 minutes.
+          for attempt in range(7):
+              try:
+                  resp = urllib.request.urlopen(req, timeout=30)
+                  print("IndexNow:", resp.status, f"({len(urls)} URLs)")
+                  break
+              except urllib.error.HTTPError as e:
+                  msg = e.read()[:300]
+                  print("IndexNow error:", e.code, msg)
+                  if e.code == 403 and b"SiteVerificationNotCompleted" in msg and attempt < 6:
+                      time.sleep(60)
+                      continue
+                  raise SystemExit(1)
           PY
