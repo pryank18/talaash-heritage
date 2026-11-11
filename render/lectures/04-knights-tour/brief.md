@@ -1,0 +1,7 @@
+# Durlabh #04 · A knight's tour in a Sanskrit verse (Sun 13 Dec 2026) · Sanskrit
+
+Angle: in the 9th century the Kashmiri poetician Rudraṭa, in his Kāvyālaṅkāra (5.15), gave a citra-kāvya figure called turagapadabandha, "the pattern of the horse's steps": syllables of a verse laid on half a chessboard (4 × 8) that can be read either row by row or by following a chess knight's moves. This is the earliest known knight's-tour pattern, about nine centuries before Euler's paper on the problem. Later Vedānta Deśika (c. 13th–14th century) used the form in the Pādukāsahasra.
+Leads (confirm in checks): G. S. S. Murthy, "The Knight's Tour Problem and Rudrata's Verse", Resonance 25 (2020) 1095–1116, doi 10.1007/s12045-020-1026-7; P. V. Kane, History of Sanskrit Poetics (Motilal Banarsidass) on Rudraṭa's date and work; Kāvyālaṅkāra text (sanskrit.nic.in digital book); Edwin Gerow, Glossary of Indian Figures of Speech (entry turagapada); Namisādhu's commentary (1068–69 CE); Donald Knuth on Sanskrit knight's tours (check exact source before citing).
+Careful: which verse number (5.15 vs 5.2(15)) differs by edition; whether Rudraṭa's example yields a full tour of the half-board; the Ratnākara attribution. Show the 4 × 8 grid as a drawn diagram, syllables typed from a checked edition.
+Sells: sarada-script (Rudraṭa was Kashmiri; Śāradā is Kashmir's script). Read next: sanskrit-literature, sanskrit-and-indian-knowledge-systems, heritage-sites-in-jammu-and-kashmir.
+Topic lock: knights-tour, rudrata.

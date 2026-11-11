@@ -1,0 +1,63 @@
+# Durlabh Sunday: publishes each long read at its release time (docs/UNIVERSE.md, section 10).
+# Runs every Sunday at about 11:02 IST, with a backup run at about 11:47 IST, and by hand.
+# tools/build_durlabh.py writes only pieces whose "release" time (IST) has passed, so an early
+# run publishes nothing. A push made with GITHUB_TOKEN does not start other workflows, so this
+# job also sends the new pages to IndexNow itself.
+name: "Durlabh Sunday: release"
+on:
+  schedule:
+    - cron: "32 5 * * 0"   # 11:02 IST
+    - cron: "17 6 * * 0"   # 11:47 IST (backup; GitHub can delay scheduled runs)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: durlabh-release
+  cancel-in-progress: false
+env:
+  HOST: talaash-heritage.pages.dev
+  KEY: 805cfa7c14665c3e7715dd2957aaed42
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Durlabh pages
+        run: python3 tools/build_durlabh.py
+      - name: Commit and push
+        id: push
+        run: |
+          if [ -n "$(git status --porcelain site)" ]; then
+            git diff --name-only -- site | tee /tmp/changed.txt
+            git status --porcelain site | awk '$1=="??"{print $2}' >> /tmp/changed.txt
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add site
+            git commit -m "Durlabh Sunday: release (automatic)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo "pushed=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "nothing to release"
+          fi
+      - name: Send new pages to IndexNow
+        if: steps.push.outputs.pushed == '1'
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request
+          host, key = os.environ["HOST"], os.environ["KEY"]
+          base = f"https://{host}/"
+          urls = sorted({base + f.strip()[len("site/"):-len(".html")] for f in open("/tmp/changed.txt") if f.strip().endswith(".html")})
+          print(urls)
+          if not urls:
+              raise SystemExit(0)
+          time.sleep(150)  # let Cloudflare Pages deploy
+          body = json.dumps({"host": host, "key": key, "keyLocation": f"{base}{key}.txt", "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
+                                       headers={"Content-Type": "application/json; charset=utf-8", "User-Agent": "talaash-durlabh/1.0"})
+          try:
+              print("IndexNow:", urllib.request.urlopen(req, timeout=30).status)
+          except Exception as e:
+              print("IndexNow warning:", e)  # never fail the release over IndexNow
+          PY

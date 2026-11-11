@@ -53,7 +53,7 @@ jobs:
           urls = set()
           before = os.environ.get("BEFORE", "")
           if os.environ["EVENT"] == "workflow_dispatch" or not before or set(before) == {"0"}:
-              for sm in ["site/sitemap.xml", "site/sitemap-guides.xml", "site/sitemap-news.xml"]:
+              for sm in ["site/sitemap.xml", "site/sitemap-guides.xml", "site/sitemap-news.xml", "site/sitemap-durlabh.xml"]:
                   if os.path.exists(sm):
                       urls.update(re.findall(r"<loc>([^<]+)</loc>", open(sm, encoding="utf-8").read()))
           else:

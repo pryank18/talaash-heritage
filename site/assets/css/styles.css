@@ -1441,3 +1441,17 @@ body { --fab-base: 1.25rem; --fab-x: 1.25rem; --fab-size: 3rem; --fab-gap: 0.6re
 .see-3d img { width: 120px; height: 68px; object-fit: cover; border-radius: 6px; flex: none; }
 .see-3d p { margin: 0; }
 .hub-3d ul { list-style: none; padding: 0; display: grid; gap: .6rem; }
+/* Durlabh Sunday (tools/build_durlabh.py) */
+.durlabh-watch { margin: 1.25rem 0 0.5rem; }
+.durlabh-watch h2 { font-size: var(--step-2); margin: 0 0 0.25rem; }
+.durlabh-video { margin: 0.75rem 0 1rem; }
+.durlabh-frame { position: relative; aspect-ratio: 16 / 9; border-radius: 4px; overflow: hidden; background: var(--line); }
+.durlabh-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.durlabh-video figcaption { font-size: var(--step--1); color: var(--ink-soft); margin-top: 0.35rem; }
+.durlabh-sources { max-width: 44rem; }
+.durlabh-sources h2 { font-size: var(--step-2); }
+.durlabh-sources li { margin-bottom: 0.45rem; font-size: var(--step--1); }
+.durlabh-follow { max-width: 44rem; margin-top: 1.5rem; }
+.durlabh-list { display: grid; gap: 1.5rem; margin: 1.5rem 0 2rem; max-width: 46rem; }
+.durlabh-item h2 { font-size: var(--step-2); margin: 0 0 0.35rem; }
+.durlabh-item p { margin: 0 0 0.35rem; }

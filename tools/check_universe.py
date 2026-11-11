@@ -44,6 +44,12 @@ for it in d["items"]:
         if pg and not os.path.exists(os.path.join(ROOT, "site", pg + ".html")):
             if it.get("series") == "3d-model" and it["status"] in ("idea", "building"):
                 continue
+            if key == "page" and pg.startswith("durlabh-") and any(
+                    json.load(open(os.path.join(ROOT, "content", "durlabh", f), encoding="utf-8")).get("page") == pg
+                    for f in os.listdir(os.path.join(ROOT, "content", "durlabh")) if f.endswith(".json")):
+                continue  # Durlabh page: published by tools/build_durlabh.py at its release time
+            if key == "page" and pg.startswith("durlabh-") and it["status"] in ("idea", "building"):
+                continue  # long read not written yet (Durlabh desk)
             errors.append(f"{i}: {key} {pg}.html does not exist in site/")
     if it.get("series") == "khudai-khabar" and (it.get("collab") or it.get("page")):
         errors.append(f"{i}: Khudai Khabar is never a Collab and never sells a page")
