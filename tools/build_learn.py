@@ -52,6 +52,18 @@ MEDIA = json.load(open(os.path.join(ROOT, "content", "media.json"), encoding="ut
 assert not set(GUIDES) & {p[:-5] for p in PROGS}, "a guide slug clashes with a programme page"
 
 
+# Interactive 3D models (content/models3d.json, pages built by tools/build_3d.py).
+MODELS3D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "content", "models3d.json"), encoding="utf-8"))["models"]
+
+
+def see3d_html(slug):
+    """'See it in 3D' block for a guide or programme page that a 3D model names."""
+    ms = [m for m in MODELS3D if slug in m.get("guides", []) or slug == m.get("sells")]
+    return "".join(f'<aside class="see-3d" aria-label="See it in 3D"><a href="{m["page"]}.html"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
+                   f'<p><strong>See it in 3D:</strong> <a href="{m["page"]}.html">{html.escape(m["short"])}</a>. Turn the model, zoom in and see which parts are measured and which are estimated.</p></aside>'
+                   for m in ms)
+
+
 def label(slug):
     """Short link text for a guide."""
     g = GUIDES[slug]
@@ -301,6 +313,7 @@ def guide_page(g):
       <p class="guide-lede">{inline(g["summary"])}</p>
     </header>
     {hero(g)}
+    {see3d_html(g["slug"])}
     <div class="guide-next">
       <p>{inline(g["cta"])}</p>
       <div class="buy-row">
@@ -338,6 +351,15 @@ def guide_page(g):
 </div>
 </main>
 """ + FOOT
+
+
+def hub3d():
+    if not MODELS3D:
+        return ""
+    items = "".join(f'<li class="see-3d"><a href="{m["page"]}.html"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
+                    f'<p><a href="{m["page"]}.html"><strong>{h(m["short"])}</strong></a><br><span class="small muted">{h(m["og_description"])}</span></p></li>' for m in MODELS3D)
+    return (f'<section class="hub-places hub-3d" id="models-3d" aria-labelledby="m3d-title"><div class="section-head"><h2 id="m3d-title">Explore in 3D</h2></div>'
+            f'<p class="muted">Interactive models built from published surveys and plans, with every estimated part tagged.</p><ul>{items}</ul></section>')
 
 
 def hub():
@@ -386,6 +408,7 @@ def hub():
     <div class="buy-row"><a class="btn btn-primary" href="finder.html">Find a programme for your group</a>{f'<a class="btn btn-outline" href="{unesco["slug"]}.html">The 45 UNESCO sites in India</a>' if unesco else ""}</div>
   </header>
   <div class="hub-grid">{"".join(pillar_cards)}</div>
+  {hub3d()}
   <section class="hub-places" id="cities" aria-labelledby="cities-title">
     <div class="section-head"><h2 id="cities-title">Heritage walks by city</h2><a href="shop.html?type=walk">All walks</a></div>
     <p class="muted">Where to walk, what you see and which museums to add. We arrange any of these with an archaeologist or historian.</p>

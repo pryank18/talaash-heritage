@@ -1010,6 +1010,23 @@ REELS = [r for r in json.load(open(os.path.join(os.path.dirname(os.path.abspath(
 IG_EMBED = ''
 
 
+# Interactive 3D models (content/models3d.json, pages built by tools/build_3d.py).
+MODELS3D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "content", "models3d.json"), encoding="utf-8"))["models"]
+
+
+def see3d_html(slug):
+    """'See it in 3D' block for a guide or programme page that a 3D model names."""
+    ms = [m for m in MODELS3D if slug in m.get("guides", []) or slug == m.get("sells")]
+    return "".join(f'<aside class="see-3d" aria-label="See it in 3D"><a href="{m["page"]}.html"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
+                   f'<p><strong>See it in 3D:</strong> <a href="{m["page"]}.html">{h(m["short"])}</a>. Turn the model, zoom in and see which parts are measured and which are estimated.</p></aside>'
+                   for m in ms)
+
+
+def see3d_wrap(p):
+    b = see3d_html(p["page"][:-5] if p["page"].endswith(".html") else p["page"])
+    return f'<section class="wrap">{b}</section>' if b else ""
+
+
 def reels_html(p):
     """Live reels that point at this programme (content/reels.json), embedded under it."""
     stem = p["page"][:-5]
@@ -1137,7 +1154,7 @@ def static_page(p):
     </div>
   </div>
 </div>
-{reels_html(p)}{xsell_html(p)}
+{reels_html(p)}{see3d_wrap(p)}{xsell_html(p)}
 </main>
 <div id="site-footer"></div>
 <script type="application/json" id="programme-data">{page_data(p)}</script>

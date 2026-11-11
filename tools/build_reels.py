@@ -128,6 +128,17 @@ def head(title, desc, url, robots):
 </head>"""
 
 
+def models3d_html():
+    """Interactive 3D models (content/models3d.json): a short strip under the reels."""
+    ms = json.load(open(os.path.join(ROOT, "content", "models3d.json"), encoding="utf-8"))["models"]
+    if not ms:
+        return ""
+    items = "".join(f'<li class="see-3d"><a href="{m["page"]}.html"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
+                    f'<p><a href="{m["page"]}.html"><strong>{h(m["short"])}</strong></a><br><span class="small muted">{h(m["og_description"])}</span></p></li>' for m in ms)
+    return (f'<section class="reel-series hub-3d" id="models-3d"><h2>Explore in 3D</h2>'
+            f'<p class="muted">Turn and zoom heritage sites built from published surveys, with every estimated part tagged.</p><ul>{items}</ul></section>')
+
+
 def watch_page(shown):
     sections = []
     for s in ORDER:
@@ -162,6 +173,7 @@ def watch_page(shown):
     </div>
   </header>
   {body}
+  {models3d_html()}
   <p class="small muted ig-note">Instagram reels load only when you ask; Instagram and YouTube may then set their own cookies.</p>
 </div>
 </main>

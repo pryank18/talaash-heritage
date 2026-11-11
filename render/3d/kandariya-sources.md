@@ -29,3 +29,9 @@ Copied 11 Nov 2026 from the project note "kandariya-3d-sources" (model: Design c
 ## Rules
 - Label "Reconstruction from published plans. Estimated parts tagged." No deity figures shown; the liṅga as a plain shape with a label. No marigolds, stitched clothes or later objects in any "in use" scene.
 - Pages to point to: khajuraho-architecture-deep-dive (sells), heritage-walk-in-khajuraho, indian-temple-architecture.
+
+## Three checks, 11 Nov 2026 (for site/3d-kandariya-mahadeva.html)
+Check 1 read Cunningham, ASI Reports vol. II (1871), pp. 419–420 (archive.org OCR), Shukla (1960) and UNESCO 240. Check 2 (sources given) and check 3 (independent, trying to disprove) ran as separate subagents.
+- Kept: 109 ft long; about 59½ ft wide (Cunningham; Fergusson and Shukla give 60 ft); 116½ ft above the ground and 88 ft above its floor; plan order and the double cross with porticoes lighting the passage; stepped roofs to the spire; marble liṅga; 226 + 646 = 872 statues counted by Cunningham; largest standing temple at Khajuraho; Chandela dynasty, 10th–11th centuries CE.
+- Dropped: 84 urushringas and four tiers (only a travel guide via Wikipedia), "Virimda" inscription (only a reference dictionary via Wikipedia; Cunningham found no inscription giving the date), five transepts and the makara-torana (no source found), 12 storeys and 11 bhūmi-āmalakas (no source reached), the 18 ft plinth (check 3 could not confirm), "mostly built 950–1050" (UNESCO dates the dynasty's apogee, not the building).
+- Shown as Estimated: chamber sizes, wall and roof heights, smaller spires (number and grouping), amalaka and finial, terrace/base split.
