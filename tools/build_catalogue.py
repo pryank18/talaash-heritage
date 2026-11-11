@@ -1027,6 +1027,26 @@ def see3d_wrap(p):
     return f'<section class="wrap">{b}</section>' if b else ""
 
 
+OWN_PHOTOS = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "own-photos.json"), encoding="utf-8"))["events"]
+
+
+def own_photos_html(p):
+    """'From our walks': Talaash's own photographs from past runs of this programme (content/own-photos.json)."""
+    stem = p["page"][:-5] if p["page"].endswith(".html") else p["page"]
+    out = []
+    for ev in OWN_PHOTOS:
+        if stem not in ev["pages"]:
+            continue
+        figs = "".join(
+            f'<figure><img src="{h(ph["file"])}-640.webp" srcset="{h(ph["file"])}-640.webp 640w, {h(ph["file"])}-1200.webp 1200w" '
+            f'sizes="(min-width: 900px) 33vw, 85vw" alt="{h(ph["alt"])}" width="1200" height="900" loading="lazy"></figure>'
+            for ph in ev["photos"])
+        out.append(f'<section class="wrap own-photos" aria-labelledby="own-{h(ev["id"])}"><div class="section-head"><h2 id="own-{h(ev["id"])}">{h(ev["title"])}</h2></div>'
+                   f'<div class="own-photos-row" tabindex="0" aria-label="Photographs, scroll sideways">{figs}</div>'
+                   f'<p class="small muted">{h(ev["caption"])} Photographs: Talaash Heritage.</p></section>')
+    return "".join(out)
+
+
 def reels_html(p):
     """Live reels that point at this programme (content/reels.json), embedded under it."""
     stem = p["page"][:-5]
@@ -1154,7 +1174,7 @@ def static_page(p):
     </div>
   </div>
 </div>
-{reels_html(p)}{see3d_wrap(p)}{xsell_html(p)}
+{own_photos_html(p)}{reels_html(p)}{see3d_wrap(p)}{xsell_html(p)}
 </main>
 <div id="site-footer"></div>
 <script type="application/json" id="programme-data">{page_data(p)}</script>

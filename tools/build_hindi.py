@@ -21,6 +21,11 @@ BRAND = "Talaash Heritage"
 
 TEXT = {
     # Home: weekend walks (12 Nov 2026)
+    "What people say about us": "लोग हमारे बारे में क्या कहते हैं",
+    "Our evening walk at the Qutb complex, 26 June 2022.": "क़ुतुब परिसर में हमारा शाम का भ्रमण, 26 जून 2022।",
+    "All reviews on Google": "गूगल पर सभी समीक्षाएँ",
+    "5.0 on Google from 18 reviews. Every review is five stars; these are the twelve with written comments, word for word.":
+        "गूगल पर 18 समीक्षाओं से 5.0। हर समीक्षा पाँच सितारों की है; ये वे बारह समीक्षाएँ हैं जिनमें लिखित टिप्पणी है, ज्यों की त्यों।",
     "Walks this weekend": "इस सप्ताहांत के भ्रमण",
     "Walk Delhi with us this weekend": "इस सप्ताहांत हमारे साथ दिल्ली का भ्रमण करें",
     "All Delhi walks": "दिल्ली के सभी भ्रमण",

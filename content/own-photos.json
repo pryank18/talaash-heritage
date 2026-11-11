@@ -1,0 +1,17 @@
+{
+  "_readme": "Talaash Heritage's own photographs from past programmes. build_catalogue.py shows them on the programme pages listed under 'pages' (a 'From our walks' block); the home page uses them too. Use wide shots where people are small or seen from behind; leave out close-ups of faces, especially children. Every entry must say which event it is from, checked against the original post.",
+  "events": [
+    {
+      "id": "qutb-2022-06-26",
+      "title": "From our evening walk at the Qutb complex",
+      "caption": "Our evening walk at the Qutb complex on 26 June 2022. More than 20 people joined.",
+      "source": "https://www.instagram.com/p/Chm1h8uPhXW/",
+      "pages": ["the-qutb-complex"],
+      "photos": [
+        {"file": "assets/img/walks/qutb-walk-2022-arches", "alt": "People on a Talaash Heritage evening walk gather in front of the arched stone screen of the Quwwat-ul-Islam mosque in the Qutb complex, at dusk."},
+        {"file": "assets/img/walks/qutb-walk-2022-dusk", "alt": "The walk leader points out the floodlit ruins of the Qutb complex to the group at dusk."},
+        {"file": "assets/img/walks/qutb-walk-2022-guide", "alt": "The walk leader, in a blue sari, talks to the group beside a stone wall in the Qutb complex in the evening sun."}
+      ]
+    }
+  ]
+}
