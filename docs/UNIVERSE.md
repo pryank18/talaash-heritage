@@ -41,7 +41,7 @@ Decided 11 Nov 2026 (Pryank: "take ownership, be my main manager for social medi
 | Daily slides | Talaash IG + FB (+ LinkedIn company) | Evening slot every day (rows say 19:30; the poster publishes them in its 20:55–21:20 window during the timing test, 11–29 Nov 2026); 08:00 on festivals | 21:43 queue task |
 | Jaisa Tha 3D reel | Talaash IG + FB, then YouTube Short the next Saturday | **Fri 19:30, weekly**; it is that Friday's main post | Talaash 3D studio, Saturday 8 days ahead |
 | Interactive 3D model page | Talaash website | Any day; one before each archaeology/history Jaisa Tha | Talaash 3D studio |
-| Talaash Lectures (8–15 min) | Talaash YouTube and website page; its 45 s cut is the next Monday's 19:30 main post on IG/FB; LinkedIn post | **First Sunday of the month, about 12:00** (uploaded private when built, made public by the Sunday review at about 11:40); fortnightly once two lectures beat the channel median | Talaash lecture studio, Friday 9 days before |
+| **Durlabh Sunday** = Talaash Lectures (8–15 min) + long read | Website long read, Talaash YouTube, then a week of cuts (section 10) | **Every Sunday from 22 Nov 2026**: page 11:00, video public about 11:40 (Sunday review) | Durlabh desk (Tue), lecture studio (Fri), release task (Sun/Thu); section 10 |
 | Heritage desk news | Talaash website | 0–3 a day | Desk task 11:23 |
 | Reels, carousels, Explorer, Khudai Khabar, Rahasya, Ancient India in 3D | archaeologywala IG (Pryank schedules on his phone on Saturdays) | Mon/Wed 20:30 reels, Fri 20:30 Rahasya from 4 Dec, Sat 21:30 flagship, Sun 20:30 carousel | archaeologywala project tasks |
 | **Deep Dive** (from 26 Nov 2026) | archaeologywala: blog at archaeologywala.pages.dev/deep-dive/, IG launch reel, IG notes carousel; Talaash channels carry the video and link posts: YouTube (playlist "archaeologywala Deep Dive", credited "Narrated by @archaeologywala") plus the reel as a Short, LinkedIn company page, Facebook Page | **Thursday weekly**: blog 18:00, YouTube about 18:30, IG reel 21:00 (cloud queue), LinkedIn and Facebook link posts after the blog is live; YouTube Short Friday; IG notes carousel the following Tuesday 21:00 | archaeologywala project tasks (Deep Dive studio, Deep Dive publish); rules in the project note claude/deep-dive.md |
@@ -79,7 +79,9 @@ Primary sources or two independent reputable ones; nothing from memory; three ch
 | Talaash queue refill (trig_012zAYUKNEGrDkqNN2zX7UZS) | daily 21:43 (timing test) | Talaash slides and reel rows, ledger entries, Fact numbers |
 | Talaash Heritage desk news | daily 11:23 | Website news |
 | Talaash 3D studio | Sat 13:07 | Jaisa Tha reel for the Friday 6–13 days ahead; last live Jaisa Tha to YouTube as a Short (public, never a publishAt); 3D model pages; keeps 4 Jaisa Tha slots planned |
-| Talaash lecture studio | Fri 14:23 | Talaash Lectures when one is due within 10 days; teaser for the following Monday |
+| Talaash lecture studio | Fri 14:23 | The Durlabh lecture due within 10 days (built from the checked long read); Monday teaser; two Short cuts |
+| Durlabh desk | Tue 15:17 | Long read, carousel and captions for the Sunday 12 days ahead; keeps 4 future Sundays locked with briefs |
+| Durlabh release | Sun 12:13, Wed 12:13 | Checks page and video, embeds the video, uploads the Shorts, reports |
 | Universe review | Sun 11:37 | Both accounts' numbers, ledger sync, lecture goes public, what moves up, limits |
 | archaeologywala tasks (archaeologywala project) | Sat mornings and nightly | Reels, carousels, Explorer, hand-over to Pryank's phone; read this ledger for topics and numbers |
 
@@ -87,3 +89,29 @@ Primary sources or two independent reputable ones; nothing from memory; three ch
 - 86.5% of archaeologywala's views come from stories, so stories are the main bridge to Talaash. On the day a Talaash Jaisa Tha reel, lecture teaser or new 3D page goes live, the archaeologywala scheduler shares it to an archaeologywala story (reshare of the Talaash post, or a frame with the page address as plain text), and shares every live Collab to a story the same evening.
 - If stories cannot be scheduled or published from the cloud, the scheduler logs "story not possible: <reason>" once; it never asks Pryank to post them.
 - Talaash's own stories: only if Make's Instagram module can publish a story on the free plan; the Sunday review checks this once and records the answer here.
+
+## 10. Durlabh Sunday (decided 12 Nov 2026; Pryank: "one day a week for a rare topic, used across every platform all week")
+**What it is.** *Durlabh* = rare, hard to find. Every Sunday one rare subject is studied properly and published as one connected piece. It is the weekly form of Talaash Lectures: the Durlabh number is the Talaash Lectures number (#1 = 22 Nov). Monthly lectures are superseded.
+
+**Why Sunday.** The lecture slot was already Sunday late morning, the Sunday review (11:37) already makes lectures public, Talaash's audience (25–34, working) has time for an 8–15 minute video at the weekend, and Friday is Jaisa Tha.
+
+**One piece, every platform, all linked.**
+| When (IST) | What | Where | Links to |
+|---|---|---|---|
+| Sun 11:00 | Long read (900–1,600 words, every source listed, FAQ) | site/durlabh-NN-slug, index site/durlabh, sitemap-durlabh.xml; published by the GitHub Action "Durlabh Sunday: release" (no laptop, no Claude session needed) | the programme in `sells`, guides, the video once public |
+| Sun ~11:40 | Narrated lecture, 2–3 parts, English, cloned voice | YouTube @talaashheritage1967 (Sunday review makes it public) | the long read and the `sells` page, UTM campaign durlabh-NN |
+| Sun 12:13 | Release check; video embedded on the page; Short 1 (the teaser) public | site, YouTube Shorts | long read |
+| Sun evening | "Heritage this week" opens with the Durlabh piece (cover line and the page address) | IG, FB, LinkedIn | long read, YouTube |
+| Mon 19:30 slot | 45 s teaser reel (main post) | IG, FB, LinkedIn company | long read, YouTube (plain text) |
+| Wed 19:30 slot | Durlabh carousel (the story in 7–9 slides; replaces that Wednesday's Deep Story) | IG, FB, LinkedIn company | long read, YouTube |
+| Wed 12:13 | Short 2 (a second 30–45 s cut) public | YouTube Shorts | long read |
+| Same days | archaeologywala stories share the teaser and the carousel (section 9) | archaeologywala IG stories | Talaash post |
+Rules: every caption ends with the Follow block; the long-read address always appears as plain text (talaash-heritage.pages.dev/durlabh-NN-slug); never "link in bio". The long read lists the YouTube parts once public; YouTube descriptions carry the long read first, then the `sells` page. The Durlabh field counts for 2 of the week's 7 evening posts (Mon, Wed), so the queue task must not put a third post of that field in the same week. Net cost about 55 Make operations a month (uploads and Shorts; the Mon and Wed posts replace existing slots). If the Sunday review projects more than 850, drop Short 2 first.
+
+**Durlabh and Deep Dive.** archaeologywala's Deep Dive (Thursday, Hinglish, archaeology first, its own blog) and Durlabh Sunday (Talaash, English, all seven fields, the Talaash site) are two different series. Durlabh leans to linguistics, anthropology, arts, Sanskrit, history and heritage, and takes an archaeology subject at most one Sunday in four, never in a week whose Deep Dive is archaeology on a related subject. Topic locks cover both. On YouTube the week runs: Sun Durlabh lecture and Short 1, Wed Durlabh Short 2, Thu Deep Dive video, Fri Deep Dive Short, Sat Jaisa Tha Short.
+
+**Choosing subjects.** Rare = not already a Talaash guide or programme subject, not posted by either account in the last 90 days, not standard school-textbook material, and supported by at least two scholarly or primary sources. Fields rotate through all seven; never the same field as the previous Durlabh or as that week's Friday Jaisa Tha; prefer subjects that sell an existing programme and pull Talaash's top cities. Every subject gets a `topic_lock` in the ledger so Jaisa Tha and archaeologywala never repeat it within 30 days. The desk always keeps the next 4 Sundays locked, each with a brief in render/lectures/NN-slug/brief.md.
+
+**Pipeline per piece (D = the Sunday).** D−12 Tue: Durlabh desk writes content/durlabh/NN-slug.json (the long read), runs the three checks (render/lectures/NN-slug/checks.md), builds the Wednesday carousel slides and all captions, adds the Monday teaser, Wednesday carousel and Shorts ledger items. D−9 Fri: lecture studio voices and renders the lecture from the checked long read (no new claims), uploads private, cuts the teaser and two Shorts. D 11:00: page goes live automatically. D 11:37: Sunday review makes the parts public. D 12:13: release task checks everything, sets `video_public`, rebuilds, uploads Short 1. If the video is not ready, the long read still publishes; Monday's slot then carries the carousel and Wednesday's returns to the normal rotation, and the video follows the next Sunday.
+
+**Locked plan (12 Nov 2026).** #01 22 Nov History: Rāya Asoko, the only portrait that names Ashoka (long read written and checked). #02 29 Nov Arts: the Ajanta copies that burned twice. #03 6 Dec Linguistics: Read Brāhmī, a first lesson. #04 13 Dec Sanskrit: a knight's tour in a Sanskrit verse (Rudraṭa). #05 20 Dec Anthropology: ittal, the wall paintings of the Sora. Next to add: History and Heritage.

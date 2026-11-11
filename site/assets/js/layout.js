@@ -119,6 +119,7 @@ function renderFooter() {
         <h2>Learn</h2>
         <ul>
           <li><a href="learn.html">All guides</a></li>
+          <li><a href="durlabh.html">Durlabh Sunday</a></li>
           <li><a href="news.html">Heritage desk (news)</a></li>
           <li><a href="watch.html">Reels</a></li>
           <li><a href="unesco-world-heritage-sites-in-india.html">UNESCO sites in India</a></li>
@@ -174,7 +175,7 @@ function renderFooter() {
 // ---- phone app shell: bottom tabs and the "More" sheet -----------------------
 // Shown by CSS on phones and portrait tablets only; desktop keeps the header nav.
 const NO_TABS = new Set(["admin.html", "seller.html", "checkout.html"]);
-const MORE_PAGES = new Set(["learn.html", "news.html", "watch.html", "about.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html", "cart.html", "order.html"]);
+const MORE_PAGES = new Set(["learn.html", "durlabh.html", "news.html", "watch.html", "about.html", "sell.html", "privacy.html", "terms.html", "shipping-returns.html", "cart.html", "order.html"]);
 const ICON = {
   home: '<path d="M3.5 10.5 12 4l8.5 6.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/>',
   shop: '<rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"/>',
@@ -225,6 +226,7 @@ function renderAppShell() {
       <h3>Learn</h3>
       <ul>
         <li><a href="learn.html">Guides to India's heritage</a></li>
+        <li><a href="durlabh.html">Durlabh Sunday</a></li>
         <li><a href="news.html">Heritage desk (news)</a></li>
         <li><a href="watch.html">Reels</a></li>
         <li><a href="learn.html#cities">Heritage walks by city</a></li>

@@ -29,7 +29,8 @@
    "name": "Talaash Lectures",
    "account": "talaashheritage",
    "format": "YouTube lecture (animated slides, Pryank's voice)",
-   "used": ""
+   "used": "",
+   "note": "Weekly from 22 Nov 2026 as Durlabh Sunday (docs/UNIVERSE.md section 10). Planned: #1 Rāya Asoko 22 Nov, #2 Ajanta copies 29 Nov, #3 Read Brāhmī 6 Dec, #4 Knight's tour 13 Dec, #5 Sora ittal 20 Dec."
   },
   "boli": {
    "name": "Boli",
@@ -448,10 +449,10 @@
    "notes": "Scheduled on Instagram by the archaeologywala scheduler (11 Nov)"
   },
   {
-   "id": "tl-lecture-01-brahmi",
+   "id": "tl-lecture-03-brahmi",
    "brand": "talaash",
    "series": "talaash-lectures",
-   "number": 1,
+   "number": 3,
    "field": "linguistics",
    "title": "Talaash Lectures #1: Read Brahmi, a first lesson",
    "status": "idea",
@@ -465,7 +466,9 @@
    "page": "brahmi-script",
    "sources": "Talaash lecture studio, Fri 27 Nov run; made public by the Sunday universe review",
    "sells": "write-like-asoka-s-scribes-a-brahmi-workshop",
-   "notes": "English narration (Talaash audience is pan-India; Hindi fallback only if the English voice clone fails its checks)"
+   "notes": "English narration (Talaash audience is pan-India; Hindi fallback only if the English voice clone fails its checks) Renumbered #1 → #3 on 12 Nov 2026 when Talaash Lectures became the weekly Durlabh Sunday anchor (nothing had been built or published). Long read: content/durlabh/03-read-brahmi.json (page durlabh-03-read-brahmi), written by the Durlabh desk.",
+   "durlabh": 3,
+   "durlabh_page": "durlabh-03-read-brahmi"
   },
   {
    "id": "aw-khudai-khabar-02",
@@ -721,6 +724,196 @@
    "page": "3d-bhimbetka-shelter",
    "sources": "render/3d/bhimbetka-shelter-sources.md (sources chosen; figures not yet extracted)",
    "sells": "bhimbetka-painted-shelters-and-prehistoric-landscapes"
+  },
+  {
+   "id": "tl-lecture-01-raya-asoko",
+   "number": 1,
+   "field": "history",
+   "title": "Durlabh #01 · Rāya Asoko: the only portrait that names Ashoka",
+   "slot": "2026-11-22T12:00",
+   "page": "durlabh-01-raya-asoko",
+   "sells": "write-like-asoka-s-scribes-a-brahmi-workshop",
+   "topic_lock": [
+    "kanaganahalli",
+    "raya-asoko"
+   ],
+   "status": "idea",
+   "notes": "Long read written and three-checked 12 Nov 2026: content/durlabh/01-raya-asoko.json (checks: render/lectures/01-raya-asoko/checks.md). Lecture studio builds the video from that text on Fri 13 Nov.",
+   "brand": "talaash",
+   "series": "talaash-lectures",
+   "platforms": [
+    "youtube",
+    "website",
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "durlabh": 1
+  },
+  {
+   "id": "tl-lecture-02-ajanta-copies",
+   "number": 2,
+   "field": "arts",
+   "title": "Durlabh #02 · The Ajanta copies that burned twice (Robert Gill, 1866; South Kensington, 1885)",
+   "slot": "2026-11-29T12:00",
+   "page": "durlabh-02-ajanta-copies",
+   "sells": "reading-sculpture",
+   "topic_lock": [
+    "ajanta",
+    "robert-gill"
+   ],
+   "status": "idea",
+   "notes": "Brief: render/lectures/02-ajanta-copies/brief.md. Durlabh desk writes the long read by Tue 17 Nov.",
+   "brand": "talaash",
+   "series": "talaash-lectures",
+   "platforms": [
+    "youtube",
+    "website",
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "durlabh": 2
+  },
+  {
+   "id": "tl-lecture-04-knights-tour",
+   "number": 4,
+   "field": "sanskrit",
+   "title": "Durlabh #04 · A knight's tour in a Sanskrit verse (Rudraṭa, 9th century Kashmir)",
+   "slot": "2026-12-13T12:00",
+   "page": "durlabh-04-knights-tour",
+   "sells": "sarada-script",
+   "topic_lock": [
+    "knights-tour",
+    "rudrata"
+   ],
+   "status": "idea",
+   "notes": "Brief: render/lectures/04-knights-tour/brief.md.",
+   "brand": "talaash",
+   "series": "talaash-lectures",
+   "platforms": [
+    "youtube",
+    "website",
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "durlabh": 4
+  },
+  {
+   "id": "tl-lecture-05-sora-ittal",
+   "number": 5,
+   "field": "anthropology",
+   "title": "Durlabh #05 · Ittal: the wall paintings of the Sora (Saora) of Odisha",
+   "slot": "2026-12-20T12:00",
+   "page": "durlabh-05-sora-ittal",
+   "sells": "bhopal-tribal-museum-material-culture-interpretation",
+   "topic_lock": [
+    "sora-ittal",
+    "saora-painting"
+   ],
+   "status": "idea",
+   "notes": "Brief: render/lectures/05-sora-ittal/brief.md. Respect rules: published ethnography only, no rites, no identifiable people.",
+   "brand": "talaash",
+   "series": "talaash-lectures",
+   "platforms": [
+    "youtube",
+    "website",
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "durlabh": 5
+  },
+  {
+   "id": "tl-durlabh-01-carousel",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "history",
+   "title": "Durlabh #01 carousel (Wednesday Deep Story)",
+   "status": "idea",
+   "slot": "2026-11-25T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-01-raya-asoko",
+   "durlabh": 1,
+   "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
+  },
+  {
+   "id": "tl-durlabh-02-carousel",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "arts",
+   "title": "Durlabh #02 carousel (Wednesday Deep Story)",
+   "status": "idea",
+   "slot": "2026-12-02T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-02-ajanta-copies",
+   "durlabh": 2,
+   "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
+  },
+  {
+   "id": "tl-durlabh-03-carousel",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "linguistics",
+   "title": "Durlabh #03 carousel (Wednesday Deep Story)",
+   "status": "idea",
+   "slot": "2026-12-09T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-03-read-brahmi",
+   "durlabh": 3,
+   "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
+  },
+  {
+   "id": "tl-durlabh-04-carousel",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "sanskrit",
+   "title": "Durlabh #04 carousel (Wednesday Deep Story)",
+   "status": "idea",
+   "slot": "2026-12-16T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-04-knights-tour",
+   "durlabh": 4,
+   "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
+  },
+  {
+   "id": "tl-durlabh-05-carousel",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "anthropology",
+   "title": "Durlabh #05 carousel (Wednesday Deep Story)",
+   "status": "idea",
+   "slot": "2026-12-23T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-05-sora-ittal",
+   "durlabh": 5,
+   "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
   }
  ]
 }
