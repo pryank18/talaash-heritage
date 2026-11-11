@@ -76,17 +76,23 @@ jobs:
               raise SystemExit(0)
           time.sleep(150)  # let Cloudflare Pages finish deploying this commit
           key_url = f"{base}{key}.txt"
-          for attempt in range(6):
+          # Cloudflare may answer GitHub's runners with 403 (bot check); search engines fetch
+          # the key from their own servers, so a failed check here only warns.
+          ua = {"User-Agent": "Mozilla/5.0 (compatible; talaash-indexnow/1.0)"}
+          for attempt in range(4):
               try:
-                  if urllib.request.urlopen(key_url, timeout=20).read().decode().strip() == key:
+                  got = urllib.request.urlopen(urllib.request.Request(key_url, headers=ua), timeout=20).read().decode().strip()
+                  if got == key:
+                      print("key file live")
                       break
+                  print("key file served but content differs")
               except Exception as e:
-                  print("key file not live yet:", e)
+                  print("key file check:", e)
               time.sleep(30)
           else:
-              raise SystemExit("IndexNow key file is not being served; nothing sent")
+              print("warning: could not confirm the key file from GitHub; sending anyway")
           body = json.dumps({"host": host, "key": key, "keyLocation": key_url, "urlList": urls}).encode()
-          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8"})
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8", **ua})
           try:
               resp = urllib.request.urlopen(req, timeout=30)
               print("IndexNow:", resp.status)
