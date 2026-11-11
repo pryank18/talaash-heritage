@@ -36,6 +36,8 @@ Decided 11 Nov 2026 (Pryank: "take ownership, be my main manager for social medi
 | Heritage desk news | Talaash website | 0–3 a day | Desk task 11:23 |
 | Reels, carousels, Explorer, Khudai Khabar, Rahasya, Ancient India in 3D | archaeologywala IG (Pryank schedules on his phone on Saturdays) | Mon/Wed 20:30 reels, Fri 20:30 Rahasya from 4 Dec, Sat 21:30 flagship, Sun 20:30 carousel | archaeologywala project tasks |
 
+Superseded on 11 Nov 2026: older notes (project notes talaash-ops-status "Plan from 12 Nov" and social-content-split "Cadence to start" / "Jaisa Tha rotation") that say Jaisa Tha runs every two weeks, or put #2 on 4 Dec, #3 on 18 Dec and #4 on 1 Jan. The dates in content/universe.json are the plan.
+
 Jaisa Tha rotation: archaeology/history episodes alternate with arts, linguistics/Sanskrit and anthropology episodes; never two archaeology in a row. Models already built (Kandariya Mahadeva, Bhaja Cave 12) are slotted as archaeology/history episodes. Cut rule: if three Jaisa Tha reels in a row get less reach than the median Talaash carousel of the same weeks, go back to fortnightly.
 
 Lecture rules: each lecture is 2–3 parts of about 5 minutes, each under 4.8 MB, because Make's free plan refuses larger files; animated slides (16:9, 1280×720), English on every slide and English subtitles, narration in Pryank's voice (his cloned Hindi voice from the archaeologywala studio kit, or his own recording if he sends one), 8–15 minutes, chapters in the description, sources on the last slide and in the description, the TALAASHH logo on every slide, "Narrated by @archaeologywala". The lecture page on the site carries the video, the slides as text (for search) and the programme it sells. Fields rotate like Jaisa Tha.
