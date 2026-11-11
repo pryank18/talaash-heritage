@@ -1,12 +1,6 @@
 {
- "at": "2026-11-11T16:43:16.822Z",
- "rendered": [
-  "site/media/ig/20261117-fact-didarganj-yakshi-1.jpg",
-  "site/media/ig/20261117-fact-didarganj-yakshi-2.jpg",
-  "site/media/ig/20261117-fact-didarganj-yakshi-3.jpg",
-  "site/media/ig/_retry1111-1.jpg",
-  "site/media/ig/_retry1111-2.jpg"
- ],
+ "at": "2026-11-11T16:47:38.831Z",
+ "rendered": [],
  "skipped": [
   "site/media/ig/20261025-sharad-purnima-1.jpg",
   "site/media/ig/20261025-sharad-purnima-2.jpg",
@@ -125,12 +119,17 @@
   "site/media/ig/20261116-world-heritage-convention-4.jpg",
   "site/media/ig/20261116-world-heritage-convention-5.jpg",
   "site/media/ig/20261116-world-heritage-convention-6.jpg",
+  "site/media/ig/20261117-fact-didarganj-yakshi-1.jpg",
+  "site/media/ig/20261117-fact-didarganj-yakshi-2.jpg",
+  "site/media/ig/20261117-fact-didarganj-yakshi-3.jpg",
   "site/media/ig/_badges-1.jpg",
   "site/media/ig/_badges-2.jpg",
   "site/media/ig/_badges-3.jpg",
   "site/media/ig/_badges-4.jpg",
   "site/media/ig/_badges-5.jpg",
   "site/media/ig/_badges-6.jpg",
+  "site/media/ig/_retry1111-1.jpg",
+  "site/media/ig/_retry1111-2.jpg",
   "site/media/ig/_selftest-1.jpg"
  ],
  "failed": [],
