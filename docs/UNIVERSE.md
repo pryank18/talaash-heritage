@@ -79,3 +79,8 @@ Primary sources or two independent reputable ones; nothing from memory; three ch
 | Talaash lecture studio | Fri 14:23 | Talaash Lectures when one is due within 10 days; teaser for the following Monday |
 | Universe review | Sun 11:37 | Both accounts' numbers, ledger sync, lecture goes public, what moves up, limits |
 | archaeologywala tasks (archaeologywala project) | Sat mornings and nightly | Reels, carousels, Explorer, hand-over to Pryank's phone; read this ledger for topics and numbers |
+
+## 9. Stories (archaeologywala's real reach)
+- 86.5% of archaeologywala's views come from stories, so stories are the main bridge to Talaash. On the day a Talaash Jaisa Tha reel, lecture teaser or new 3D page goes live, the archaeologywala scheduler shares it to an archaeologywala story (reshare of the Talaash post, or a frame with the page address as plain text), and shares every live Collab to a story the same evening.
+- If stories cannot be scheduled or published from the cloud, the scheduler logs "story not possible: <reason>" once; it never asks Pryank to post them.
+- Talaash's own stories: only if Make's Instagram module can publish a story on the free plan; the Sunday review checks this once and records the answer here.

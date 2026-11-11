@@ -374,7 +374,7 @@
    "number": 1,
    "field": "history",
    "title": "Rahasya #1: Kailasa, Ellora",
-   "status": "idea",
+   "status": "scheduled",
    "slot": "2026-12-02T20:30",
    "collab": null,
    "platforms": [
@@ -384,7 +384,8 @@
    "sources": "claude/reel-kailasa-build.md (aw project)",
    "topic_lock": [
     "kailasa-ellora"
-   ]
+   ],
+   "notes": "Scheduled on Instagram by the archaeologywala scheduler (11 Nov)"
   },
   {
    "id": "tl-jaisa-tha-03-linguistics",
@@ -412,7 +413,7 @@
    "title": "Rahasya #2: Konark wheels",
    "status": "idea",
    "slot": "2026-12-04T20:30",
-   "collab": null,
+   "collab": "talaashheritage",
    "platforms": [
     "instagram"
    ],
@@ -429,14 +430,15 @@
    "number": 2,
    "field": "archaeology",
    "title": "Harappan Civilisation, as the evidence shows it (diorama carousel)",
-   "status": "idea",
+   "status": "scheduled",
    "slot": "2026-12-05T21:30",
    "collab": "talaashheritage",
    "platforms": [
     "instagram"
    ],
    "page": "delhi-and-rakhigarhi-the-harappan-world",
-   "sources": "project doc claude/harappan-diorama-carousel.md"
+   "sources": "project doc claude/harappan-diorama-carousel.md",
+   "notes": "Scheduled on Instagram by the archaeologywala scheduler (11 Nov)"
   },
   {
    "id": "tl-lecture-01-brahmi",
@@ -464,7 +466,7 @@
    "series": "khudai-khabar",
    "number": 2,
    "field": "archaeology",
-   "title": "Khudai Khabar EP 02 (Dholavira unless comments pick otherwise)",
+   "title": "Khudai Khabar EP 02 (Dholavira unless EP 01 comments pick Lothal; never Rakhigarhi before 17 Dec)",
    "status": "idea",
    "slot": "2026-12-09T20:30",
    "collab": null,
