@@ -1,0 +1,46 @@
+# Downloads Talaash's own photos (listed in render/import/list.json by an editor) into
+# render/import/ so they can be checked by eye before anything is used on the site.
+# Nothing here is published: render/ is outside site/.
+name: Import own photos
+on:
+  push:
+    branches: [main]
+    paths: ['render/import/list.json']
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: import-photos
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request, pathlib
+          items = json.load(open("render/import/list.json"))
+          for it in items:
+              out = pathlib.Path("render/import") / (it["name"] + ".jpg")
+              if out.exists():
+                  continue
+              req = urllib.request.Request(it["url"], headers={"User-Agent": "Mozilla/5.0"})
+              try:
+                  data = urllib.request.urlopen(req, timeout=30).read()
+                  out.write_bytes(data)
+                  print("ok", it["name"], len(data))
+              except Exception as e:
+                  print("FAILED", it["name"], e)
+          PY
+      - name: Commit
+        run: |
+          git config user.name "talaash-render-bot"
+          git config user.email "talaash-render-bot@users.noreply.github.com"
+          git add render/import/*.jpg || true
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "import: own photos $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin main
+          git push origin HEAD:main
