@@ -1,6 +1,6 @@
 {
  "_readme": "The single ledger for everything Talaash Heritage and archaeologywala make: posts, reels, 3D models, lectures, web pages. Every piece gets one id here before it is built, and its status is updated when it goes live. Series numbers are taken only from this ledger: run tools/check_universe.py and use the 'next' number it prints, then add the item here before building it. Rules: docs/UNIVERSE.md. Check with python3 tools/check_universe.py before every commit that touches this file. Talaash tasks write here; archaeologywala tasks read it and log in their run book, and the Sunday universe review copies their live posts in.",
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "fields": [
   "archaeology",
   "linguistics",
@@ -81,6 +81,13 @@
    "format": "web page",
    "used": "",
    "note": "Free to view on the Talaash site; each one later becomes a Jaisa Tha episode."
+  },
+  "deep-dive": {
+   "name": "Deep Dive",
+   "account": "archaeologywala",
+   "format": "weekly: blog on archaeologywala.pages.dev/deep-dive/ + narrated slide video (YouTube on the Talaash channel, playlist 'archaeologywala Deep Dive', and on the blog) + IG launch reel (Thu) + IG notes carousel (Tue) + YouTube Short + link posts on Talaash LinkedIn and Facebook",
+   "used": "",
+   "note": "Set up 12 Nov 2026 (Pryank: one rare, scholarly topic a week, every platform cross-linked). Every Thursday from 26 Nov 2026. Rules: claude/deep-dive.md in the archaeologywala project. One topic per Deep Dive; its topic_lock covers both accounts for 30 days."
   }
  },
  "items": [
@@ -564,6 +571,106 @@
    "page": "3d-bhaja-chaitya",
    "sources": "render/3d/bhaja-sources.md (canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2)",
    "sells": "buddhist-caves-in-india"
+  },
+  {
+   "id": "aw-deep-dive-01-roopkund",
+   "brand": "archaeologywala",
+   "series": "deep-dive",
+   "number": 1,
+   "field": "archaeology",
+   "title": "Deep Dive #1: Skeleton Lake, what ancient DNA revealed about Roopkund",
+   "status": "building",
+   "slot": "2026-11-26T18:00",
+   "collab": null,
+   "platforms": [
+    "website",
+    "youtube",
+    "instagram",
+    "youtube-short",
+    "linkedin-talaash",
+    "facebook-talaash"
+   ],
+   "page": "burials-and-bioarchaeology",
+   "sources": "archaeologywala project: claude/deep-dive.md; build packages on Drive › archaeologywala › Deep Dive",
+   "topic_lock": [
+    "roopkund"
+   ],
+   "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage)."
+  },
+  {
+   "id": "aw-deep-dive-02-bhimbetka-dickinsonia",
+   "brand": "archaeologywala",
+   "series": "deep-dive",
+   "number": 2,
+   "field": "archaeology",
+   "title": "Deep Dive #2: The Bhimbetka 'fossil' that was a beehive",
+   "status": "idea",
+   "slot": "2026-12-03T18:00",
+   "collab": null,
+   "platforms": [
+    "website",
+    "youtube",
+    "instagram",
+    "youtube-short",
+    "linkedin-talaash",
+    "facebook-talaash"
+   ],
+   "page": "bhimbetka-painted-shelters-and-prehistoric-landscapes",
+   "sources": "archaeologywala project: claude/deep-dive.md; build packages on Drive › archaeologywala › Deep Dive",
+   "topic_lock": [
+    "bhimbetka"
+   ],
+   "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage)."
+  },
+  {
+   "id": "aw-deep-dive-03-arikamedu",
+   "brand": "archaeologywala",
+   "series": "deep-dive",
+   "number": 3,
+   "field": "history",
+   "title": "Deep Dive #3: Arikamedu, Rome's trading post near Puducherry, and how its dates were rewritten",
+   "status": "idea",
+   "slot": "2026-12-10T18:00",
+   "collab": null,
+   "platforms": [
+    "website",
+    "youtube",
+    "instagram",
+    "youtube-short",
+    "linkedin-talaash",
+    "facebook-talaash"
+   ],
+   "page": "heritage-walk-in-puducherry",
+   "sources": "archaeologywala project: claude/deep-dive.md; build packages on Drive › archaeologywala › Deep Dive",
+   "topic_lock": [
+    "arikamedu"
+   ],
+   "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage)."
+  },
+  {
+   "id": "aw-deep-dive-04-nagardhan",
+   "brand": "archaeologywala",
+   "series": "deep-dive",
+   "number": 4,
+   "field": "archaeology",
+   "title": "Deep Dive #4: Nagardhan, the Vakataka capital and Queen Prabhavatigupta's seal (Pryank's first trench)",
+   "status": "idea",
+   "slot": "2026-12-17T18:00",
+   "collab": null,
+   "platforms": [
+    "website",
+    "youtube",
+    "instagram",
+    "youtube-short",
+    "linkedin-talaash",
+    "facebook-talaash"
+   ],
+   "page": null,
+   "sources": "archaeologywala project: claude/deep-dive.md; build packages on Drive › archaeologywala › Deep Dive",
+   "topic_lock": [
+    "nagardhan"
+   ],
+   "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage)."
   }
  ]
 }
