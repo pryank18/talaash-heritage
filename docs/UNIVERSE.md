@@ -39,7 +39,7 @@ Decided 11 Nov 2026 (Pryank: "take ownership, be my main manager for social medi
 | Format | Account | Slot | Made by |
 |---|---|---|---|
 | Daily slides | Talaash IG + FB (+ LinkedIn company) | Evening slot every day (rows say 19:30; the poster publishes them in its 20:55–21:20 window during the timing test, 11–29 Nov 2026); 08:00 on festivals | 21:43 queue task |
-| Jaisa Tha 3D reel | Talaash IG + FB, then YouTube Short | **Fri 19:30, weekly**; it is that Friday's main post | Talaash 3D studio, Saturday 8 days ahead |
+| Jaisa Tha 3D reel | Talaash IG + FB, then YouTube Short the next Saturday | **Fri 19:30, weekly**; it is that Friday's main post | Talaash 3D studio, Saturday 8 days ahead |
 | Interactive 3D model page | Talaash website | Any day; one before each archaeology/history Jaisa Tha | Talaash 3D studio |
 | Talaash Lectures (8–15 min) | Talaash YouTube and website page; its 45 s cut is the next Monday's 19:30 main post on IG/FB; LinkedIn post | **First Sunday of the month, about 12:00** (uploaded private when built, made public by the Sunday review at about 11:40); fortnightly once two lectures beat the channel median | Talaash lecture studio, Friday 9 days before |
 | Heritage desk news | Talaash website | 0–3 a day | Desk task 11:23 |
@@ -57,7 +57,7 @@ Lecture rules: each lecture is 2–3 parts of about 5 minutes, each under 4.8 MB
 | Instagram | Both accounts, as above | Where both audiences are |
 | Facebook | Talaash mirrors Instagram automatically | Free through the same Make run |
 | LinkedIn | Talaash company page: lectures and careers posts; Pryank's own profile has its separate queue | Careers and institutions read LinkedIn |
-| YouTube | Talaash: Jaisa Tha Shorts and Lectures | Long form and search; Shorts held until the publish-time check in talaash-ops-status is cleared |
+| YouTube | Talaash: Jaisa Tha Shorts and Lectures | Long form and search. The 11 Nov publish-time problem only hits uploads with a scheduled time, so every upload here goes up without one and is read back |
 | X | Dormant | No free, reliable posting route; revisit when lectures have run for two months |
 | Reddit | Not used | Self-promotion rules and no automation; revisit with lectures |
 
@@ -73,9 +73,9 @@ Primary sources or two independent reputable ones; nothing from memory; three ch
 ## 8. Who runs what (scheduled tasks, 11 Nov 2026)
 | Task | When (IST) | Does |
 |---|---|---|
-| Talaash queue refill | daily 20:13 | Talaash slides and reel rows, ledger entries, Fact numbers |
+| Talaash queue refill (trig_012zAYUKNEGrDkqNN2zX7UZS) | daily 21:43 (timing test) | Talaash slides and reel rows, ledger entries, Fact numbers |
 | Talaash Heritage desk news | daily 11:23 | Website news |
-| Talaash 3D studio | Sat 13:07 | Jaisa Tha reel for the Friday 6–13 days ahead; 3D model pages; keeps 4 Jaisa Tha slots planned |
+| Talaash 3D studio | Sat 13:07 | Jaisa Tha reel for the Friday 6–13 days ahead; last live Jaisa Tha to YouTube as a Short (public, never a publishAt); 3D model pages; keeps 4 Jaisa Tha slots planned |
 | Talaash lecture studio | Fri 14:23 | Talaash Lectures when one is due within 10 days; teaser for the following Monday |
 | Universe review | Sun 11:37 | Both accounts' numbers, ledger sync, lecture goes public, what moves up, limits |
 | archaeologywala tasks (archaeologywala project) | Sat mornings and nightly | Reels, carousels, Explorer, hand-over to Pryank's phone; read this ledger for topics and numbers |
