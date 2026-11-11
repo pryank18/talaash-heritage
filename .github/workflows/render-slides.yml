@@ -25,7 +25,12 @@ jobs:
         run: |
           npm init -y >/dev/null
           npm install --no-save playwright@1.48.2
-          npx playwright install --with-deps chromium
+          # Browser download comes from Playwright's CDN, not Ubuntu's mirrors.
+          for i in 1 2 3; do npx playwright install chromium && break; sleep 20; done
+          # System libraries: the runner image normally has them already. If the Ubuntu
+          # mirrors are down (11 Nov 2026) this must not stop the render, so it is non-fatal;
+          # render_slides.mjs falls back to the runner's preinstalled Google Chrome.
+          sudo npx playwright install-deps chromium || echo "install-deps failed; continuing"
       - name: Render
         run: node tools/render_slides.mjs
       - name: Commit images
