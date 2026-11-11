@@ -1460,3 +1460,18 @@ body { --fab-base: 1.25rem; --fab-x: 1.25rem; --fab-size: 3rem; --fab-gap: 0.6re
 .durlabh-item h2 { font-size: var(--step-2); margin: 0 0 0.35rem; }
 .durlabh-item p { margin: 0 0 0.35rem; }
 .fit:focus-visible { outline: 3px solid var(--haldi); outline-offset: 4px; }
+
+/* Home: "Walk Delhi with us this weekend" */
+.section-weekend .weekend-dates { font-weight: 600; font-size: var(--step-1); margin: 0 0 .35rem; }
+.section-weekend .weekend-dates:empty { display: none; }
+.section-weekend .weekend-lede { max-width: 46rem; color: var(--ink-soft); margin: 0 0 1.1rem; }
+.weekend-fallback { columns: 2 14rem; margin: 0; padding-left: 1.1rem; }
+.weekend-fallback li { padding: .3rem 0; }
+.weekend-cta { margin: 1.2rem 0 0; }
+@media (max-width: 700px) {
+  .weekend-grid:not(:has(.weekend-fallback)) { display: flex; gap: .9rem; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; margin-inline: calc(-1 * var(--gutter)); padding: 0 var(--gutter) .5rem; scroll-padding-inline: var(--gutter); scrollbar-width: none; }
+  .weekend-grid::-webkit-scrollbar { display: none; }
+  .weekend-grid > .card { flex: 0 0 78%; scroll-snap-align: start; }
+  .weekend-cta .btn { width: 100%; text-align: center; }
+}
+@media (min-width: 1000px) { .weekend-grid { grid-template-columns: repeat(3, 1fr); } }

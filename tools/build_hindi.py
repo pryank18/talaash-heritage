@@ -20,6 +20,13 @@ from pathlib import Path
 BRAND = "Talaash Heritage"
 
 TEXT = {
+    # Home: weekend walks (12 Nov 2026)
+    "Walks this weekend": "इस सप्ताहांत के भ्रमण",
+    "Walk Delhi with us this weekend": "इस सप्ताहांत हमारे साथ दिल्ली का भ्रमण करें",
+    "All Delhi walks": "दिल्ली के सभी भ्रमण",
+    "Pick a walk, tell us how many of you are coming and when you would like to start (mornings are best), and we confirm on WhatsApp. Priced per person: ₹1,800 each for two, ₹900 each for ten or more, including GST. Monument entry fees, where charged, are extra.":
+        "कोई भ्रमण चुनें, हमें बताएँ कि आप कितने लोग आ रहे हैं और कब शुरू करना चाहेंगे (सुबह का समय सबसे अच्छा रहता है), और हम WhatsApp पर पुष्टि करेंगे। शुल्क प्रति व्यक्ति: दो लोगों के लिए ₹1,800 प्रति व्यक्ति, दस या अधिक के लिए ₹900 प्रति व्यक्ति, GST सहित। स्मारकों का प्रवेश शुल्क, जहाँ लगता है, अलग से देना होगा।",
+    "Book a weekend walk on WhatsApp": "सप्ताहांत का भ्रमण WhatsApp पर बुक करें",
     # ---- header, footer, shared --------------------------------------------
     "Skip to content": "मुख्य सामग्री पर जाएँ",
     f"{BRAND} home": f"{BRAND} मुखपृष्ठ",

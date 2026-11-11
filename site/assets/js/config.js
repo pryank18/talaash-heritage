@@ -14,8 +14,10 @@ export const CONFIG = {
   // "hard"     every visitor must register before seeing any page
   // "soft"     the form opens on arrival but can be closed; required at checkout
   // "checkout" no prompt while browsing; required at checkout
-  // Soft since 15 Oct 2026: visitors may close the form and look around first.
-  gateMode: "soft",
+  // Soft from 15 Oct 2026; "checkout" since 12 Nov 2026: the form no longer opens on
+  // arrival (it was costing first-time visitors). Details are taken at checkout, and
+  // enquiries arrive with the visitor's WhatsApp number or email anyway.
+  gateMode: "checkout",
   // Pages a visitor can always read without registering. Consent is only
   // valid if people can read the privacy notice before they agree to it.
   gateExemptPages: [
