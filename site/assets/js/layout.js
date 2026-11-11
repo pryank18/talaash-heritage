@@ -122,6 +122,7 @@ function renderFooter() {
           <li><a href="durlabh.html">Durlabh Sunday</a></li>
           <li><a href="news.html">Heritage desk (news)</a></li>
           <li><a href="watch.html">Reels</a></li>
+          <li><a href="learn.html#models-3d">Explore in 3D</a></li>
           <li><a href="unesco-world-heritage-sites-in-india.html">UNESCO sites in India</a></li>
           <li><a href="ancient-indian-history.html">Ancient Indian history</a></li>
           <li><a href="archaeology-in-india.html">Archaeology in India</a></li>
@@ -229,6 +230,7 @@ function renderAppShell() {
         <li><a href="durlabh.html">Durlabh Sunday</a></li>
         <li><a href="news.html">Heritage desk (news)</a></li>
         <li><a href="watch.html">Reels</a></li>
+        <li><a href="learn.html#models-3d">Explore in 3D</a></li>
         <li><a href="learn.html#cities">Heritage walks by city</a></li>
         <li><a href="learn.html#states">Heritage sites by state</a></li>
       </ul>
