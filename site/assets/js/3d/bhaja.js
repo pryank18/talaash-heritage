@@ -124,7 +124,8 @@ start(api => {
   api.label('Person 1.7 m (5 ft 7 in)', 'Illustrative', [0.6, 1.9, -5.5]);
 
   return {
-    target: [0, 2.6, -10], camera: [15, 14, 2.5], sun: [45, 60, 10], minDistance: 4, maxDistance: 70,
+    target: [0, 2.6, -10], camera: [15, 14, 2.5], sun: [45, 60, 10],
+    phone: { target: [0, 2.4, -9.5], camera: [12, 15, 5] }, minDistance: 4, maxDistance: 70,
     toggles: [
       { text: 'Cutaway', layer: 'cut', on: true, hides: 'shell-right' },
       { text: 'Timber front (hypothetical)', layer: front, on: true },

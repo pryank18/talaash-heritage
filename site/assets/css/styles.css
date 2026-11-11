@@ -1438,9 +1438,12 @@ body { --fab-base: 1.25rem; --fab-x: 1.25rem; --fab-size: 3rem; --fab-gap: 0.6re
 
 /* See-it-in-3D block on guides and programme pages */
 .see-3d { display: flex; gap: .9rem; align-items: center; border: 1px solid var(--line); border-radius: 10px; padding: .8rem; margin: 1.2rem 0; background: var(--paper); }
-.see-3d img { width: 120px; height: 68px; object-fit: cover; border-radius: 6px; flex: none; }
+.see-3d > a { flex: none; display: block; line-height: 0; }
+.see-3d img { width: 120px; height: 68px; object-fit: cover; border-radius: 6px; display: block; }
 .see-3d p { margin: 0; }
 .hub-3d ul { list-style: none; padding: 0; display: grid; gap: .6rem; }
+.hub-3d li.see-3d { margin: 0; }
+@media (max-width: 600px) { .see-3d { align-items: flex-start; gap: .7rem; } .see-3d img { width: 96px; height: 54px; } }
 /* Durlabh Sunday (tools/build_durlabh.py) */
 .durlabh-watch { margin: 1.25rem 0 0.5rem; }
 .durlabh-watch h2 { font-size: var(--step-2); margin: 0 0 0.25rem; }

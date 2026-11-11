@@ -115,7 +115,7 @@ start(api => {
   api.add(api.person(X0 - 1.2, 2.0, -0.4)).position.y = F;
 
   // Labels.
-  api.label('Marble liṅga in the sanctum (Cunningham)', 'Documented', [X0 - 27.4, F + 2.0, 0], 'inside');
+  api.label('Marble liṅga in the sanctum (Cunningham)', 'Documented', [X0 - 27.4, F + 1.1, 0], 'inside');
   api.label('Length 33.2 m (109 ft)', 'Measured', [0, F + 0.4, WID / 2 + 1.2]);
   api.label('Width about 18.1 m (59½ ft); Fergusson gives 60 ft', 'Measured', [gx, F + 1.6, -WID / 2 - 0.4]);
   api.label('Top 35.5 m (116½ ft) above the ground', 'Measured', [X0 - 27, TOP + 0.6, 0], R);
@@ -129,9 +129,10 @@ start(api => {
   api.label('Person 1.7 m (5 ft 7 in) for scale', 'Illustrative', [X0 + 9, 2.1, 3.2]);
 
   return {
-    target: [-2, 15, 0], camera: [60, 30, 54], minDistance: 8, maxDistance: 140,
+    target: [-2, 17, 0], camera: [68, 36, 62],
+    phone: { target: [-2, 16, 0], camera: [74, 44, 66] }, minDistance: 8, maxDistance: 140,
     toggles: [
-      { text: 'Roofs and tower', layer: R, on: true, hides: 'inside' },
+      { text: 'Roofs and tower', layer: R, on: true, hides: 'inside', viewOff: { target: [X0 - 20, F, 0], camera: [X0 - 12, F + 58, 5] } },
     ],
   };
 });

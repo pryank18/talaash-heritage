@@ -28,6 +28,8 @@ export function start(build) {
   renderer.domElement.setAttribute('aria-label', 'Interactive 3D model. Drag to turn, pinch or scroll to zoom.');
   stage.insertBefore(renderer.domElement, stage.firstChild);
   stage.classList.add('webgl');
+  const fine = window.matchMedia && matchMedia('(pointer: fine)').matches;
+  if (!fine && (navigator.maxTouchPoints > 0 || 'ontouchstart' in window)) stage.classList.add('touch');
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0xe9e4da);
@@ -94,11 +96,30 @@ export function start(build) {
   controls.maxDistance = view.maxDistance || 200;
   controls.target.set(...view.target);
   if (stage.clientWidth / stage.clientHeight < 0.9) {
-    // Narrow (phone) stage: step the camera back so the whole model fits.
-    view.camera = view.camera.map((c, i) => view.target[i] + (c - view.target[i]) * 1.55);
+    // Narrow (phone) stage: the page may give its own phone view; otherwise step the camera back.
+    if (view.phone) { view.target = view.phone.target; view.camera = view.phone.camera; }
+    else view.camera = view.camera.map((c, i) => view.target[i] + (c - view.target[i]) * 1.55);
   }
   camera.position.set(...view.camera);
   controls.update();
+
+  // The mouse wheel scrolls the page unless Ctrl (or Cmd) is held, so the model never traps
+  // the reader on the way down the page. Trackpad pinches arrive with ctrlKey and still zoom.
+  const note = stage.querySelector('.m3d-wheel-note');
+  let noteTimer = 0;
+  renderer.domElement.addEventListener('wheel', e => {
+    if (e.ctrlKey || e.metaKey || document.fullscreenElement) return;
+    e.stopImmediatePropagation();
+    if (note) { note.hidden = false; clearTimeout(noteTimer); noteTimer = setTimeout(() => { note.hidden = true; }, 1400); }
+  }, { capture: true });
+
+  const zoomBy = f => {
+    const d = camera.position.clone().sub(controls.target).multiplyScalar(f);
+    const len = d.length();
+    if (len < controls.minDistance || len > controls.maxDistance) return;
+    camera.position.copy(controls.target).add(d);
+    controls.update();
+  };
 
   // Layer toggles
   const bar = stage.parentElement.querySelector('.m3d-toggles');
@@ -115,13 +136,36 @@ export function start(build) {
     (view.toggles || []).forEach(t => {
       const g = api.layer(t.layer);
       g.visible = t.on;
-      mkBtn(t.text, t.on, v => { g.visible = v; if (t.hides) api.layer(t.hides).visible = !v; });
+      mkBtn(t.text, t.on, v => {
+        g.visible = v;
+        if (t.hides) api.layer(t.hides).visible = !v;
+        // Optional camera for the "off" state (for example a view from above once the roofs are hidden).
+        const cam = !v && t.viewOff ? t.viewOff : (v && t.viewOff ? { target: view.target, camera: view.camera } : null);
+        if (cam) { controls.target.set(...cam.target); camera.position.set(...cam.camera); controls.update(); }
+      });
       if (t.hides) api.layer(t.hides).visible = !t.on;
     });
-    const reset = document.createElement('button');
-    reset.type = 'button'; reset.className = 'm3d-btn'; reset.textContent = 'Reset view';
-    reset.addEventListener('click', () => { controls.target.set(...view.target); camera.position.set(...view.camera); controls.update(); });
-    bar.appendChild(reset);
+    const plain = (text, label, fn) => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'm3d-btn'; b.textContent = text;
+      if (label) b.setAttribute('aria-label', label);
+      b.addEventListener('click', fn);
+      bar.appendChild(b);
+      return b;
+    };
+    plain('+', 'Zoom in', () => zoomBy(0.8));
+    plain('−', 'Zoom out', () => zoomBy(1.25));
+    plain('Reset view', '', () => { controls.target.set(...view.target); camera.position.set(...view.camera); controls.update(); });
+    const fsTarget = stage.closest('.m3d-wrap');
+    if (fsTarget && fsTarget.requestFullscreen) {
+      const fs = plain('Full screen', '', () => {
+        if (document.fullscreenElement) document.exitFullscreen(); else fsTarget.requestFullscreen().catch(() => {});
+      });
+      document.addEventListener('fullscreenchange', () => {
+        fs.textContent = document.fullscreenElement ? 'Exit full screen' : 'Full screen';
+        setTimeout(() => { resize(); labels.forEach(L => { L.w = 0; }); }, 60);
+      });
+    }
   }
 
   const v = new THREE.Vector3();
@@ -138,7 +182,9 @@ export function start(build) {
       let vis = showLabels && layerOn && v.z < 1 && v.z > -1;
       if (vis) {
         if (!L.w) { L.el.style.display = ''; L.w = L.el.offsetWidth; L.h = L.el.offsetHeight; }
-        let x = (v.x + 1) / 2 * w - L.w / 2, y = (1 - v.y) / 2 * h - L.h;
+        const ax = (v.x + 1) / 2 * w;
+        if (ax < 0 || ax > w) vis = false;
+        let x = ax - L.w / 2, y = (1 - v.y) / 2 * h - L.h;
         if (x < 4) x = 4;
         if (x + L.w > w - 4) x = w - 4 - L.w;
         if (y < 36 || y + L.h > bottom || x < 0) vis = false;
@@ -159,11 +205,19 @@ export function start(build) {
   window.addEventListener('resize', () => { resize(); labels.forEach(L => { L.w = 0; }); });
   resize();
 
-  (function loop() {
+  // Draw only while the model is on screen (saves battery on phones).
+  let onScreen = true, running = false;
+  function loop() {
+    if (!onScreen) { running = false; return; }
+    running = true;
     controls.update();
     renderer.render(scene, camera);
     placeLabels();
     requestAnimationFrame(loop);
-  })();
+  }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(es => { onScreen = es[0].isIntersecting; if (onScreen && !running) loop(); }).observe(stage);
+  }
+  loop();
   stage.dataset.ready = '1';
 }

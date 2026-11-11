@@ -85,6 +85,10 @@
 - [What is anthropology?](https://talaash-heritage.pages.dev/what-is-anthropology): How anthropologists study humans past and present, its four fields, and its long history in India.
 - [What is ethnography?](https://talaash-heritage.pages.dev/what-is-ethnography): How ethnographers live, listen and write, with classic and Indian examples and the ethics that matter.
 
+## Interactive 3D models
+- [Kandariya Mahadeva Temple, Khajuraho, in 3D](https://talaash-heritage.pages.dev/3d-kandariya-mahadeva): The largest standing temple at Khajuraho, built from Cunningham's survey. Turn it, zoom in, see what is measured and what is estimated.
+- [Bhaja Caves chaitya hall (Cave 12) in 3D](https://talaash-heritage.pages.dev/3d-bhaja-chaitya): A rock-cut prayer hall near Lonavala, built from the 1880 survey: turn it, cut it open and see what is measured and what is estimated.
+
 ## Heritage walks by city
 - [Agra](https://talaash-heritage.pages.dev/heritage-walk-in-agra)
 - [Ahmedabad](https://talaash-heritage.pages.dev/heritage-walk-in-ahmedabad)

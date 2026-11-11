@@ -1,5 +1,7 @@
 # Interactive 3D models and their Jaisa Tha episodes
 
+**Every new model follows docs/3D-SOP.md (subject, ledger, evidence sheet, three checks, page data, scene, build, visitor check, publish and live confirmation, interlinking).**
+
 Evidence sheets for models first built as Claude Design canvases (cloud tasks cannot open canvases, so the evidence lives here). Each model becomes:
 1. a free interactive page on the site, `site/3d-<slug>.html` (three.js, orbit and walk, evidence tag on every element, "Reconstruction" label, Talaash logo, links to the programme in the ledger's `sells` and to both handles), and
 2. a Jaisa Tha reel rendered from the same scene (see render/jaisatha/README.md).

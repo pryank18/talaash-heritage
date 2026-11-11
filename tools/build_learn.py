@@ -58,7 +58,7 @@ MODELS3D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)
 
 def see3d_html(slug):
     """'See it in 3D' block for a guide or programme page that a 3D model names."""
-    ms = [m for m in MODELS3D if slug in m.get("guides", []) or slug == m.get("sells")]
+    ms = [m for m in MODELS3D if slug in m.get("guides", []) or slug in m.get("programmes", []) or slug == m.get("sells")]
     return "".join(f'<aside class="see-3d" aria-label="See it in 3D"><a href="{m["page"]}.html"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
                    f'<p><strong>See it in 3D:</strong> <a href="{m["page"]}.html">{html.escape(m["short"])}</a>. Turn the model, zoom in and see which parts are measured and which are estimated.</p></aside>'
                    for m in ms)
@@ -312,8 +312,7 @@ def guide_page(g):
       <div class="share-row"><button type="button" class="share-btn" data-share aria-haspopup="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="m8.2 10.8 7.6-4.1M8.2 13.2l7.6 4.1"/></svg><span>Share</span></button></div>
       <p class="guide-lede">{inline(g["summary"])}</p>
     </header>
-    {hero(g)}
-    {see3d_html(g["slug"])}
+    {hero(g)}{see3d_html(g["slug"])}
     <div class="guide-next">
       <p>{inline(g["cta"])}</p>
       <div class="buy-row">
@@ -487,6 +486,10 @@ def main():
         for g in sorted((g for g in GUIDES.values() if g["pillar"] == key and g["type"] in ("pillar", "explainer", "list")), key=lambda g: g["type"] != "pillar"):
             lines.append(f"- [{label(g['slug'])}]({SITE_URL}{g['slug']}.html): {g['og_description']}")
         lines.append("")
+    if MODELS3D:
+        lines.append("## Interactive 3D models")
+        lines += [f"- [{m['h1']}]({SITE_URL}{m['page']}.html): {m['og_description']}" for m in MODELS3D]
+        lines.append("")
     lines.append("## Heritage walks by city")
     lines += [f"- [{g['city']}]({SITE_URL}{g['slug']}.html)" for g in sorted((g for g in GUIDES.values() if g["type"] == "city"), key=lambda g: g["city"])]
     lines += ["", "## Heritage sites by state"]
@@ -520,6 +523,9 @@ def write_search_index():
         place = g.get("city") or g.get("state") or ""
         items.append({"t": g["title"], "u": g["slug"] + ".html", "k": "Guide", "p": place,
                       "x": " ".join([g.get("og_description") or "", " ".join(g.get("keywords") or []), g.get("summary") or ""])[:700]})
+    for m in MODELS3D:
+        items.append({"t": m["h1"], "u": m["page"] + ".html", "k": "3D model", "p": "",
+                      "x": " ".join(["3d model interactive reconstruction", m["og_description"], m["description"]])[:700]})
     pages = [
         ("Help me choose a programme", "finder.html", "Answer a few questions and get suggestions"),
         ("TALAASHH journeys", "journeys.html", "Multi-day heritage journeys and tours"),
