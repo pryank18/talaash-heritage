@@ -87,7 +87,7 @@ export function track(event, extra = {}) {
   } catch { /* offline */ }
 }
 
-const isProgrammePage = () => Boolean(document.body.dataset.slug) || location.pathname.endsWith("/product.html");
+const isProgrammePage = () => Boolean(document.body.dataset.slug) || /\/product(\.html)?$/.test(location.pathname);
 const slugOf = (url) => (url.pathname.split("/").pop() || "").replace(/\.html$/, "");
 
 function onClick(e) {
@@ -105,7 +105,7 @@ function onClick(e) {
   // From a guide to a programme: the cross-sell working.
   if (document.body.classList.contains("guide-page") && /\.html$/.test(url.pathname) && !url.pathname.endsWith("/learn.html")) {
     const target = slugOf(url);
-    if (window.__thProgrammes?.has(target) || url.pathname.endsWith("/product.html")) track("learn_to_programme", { label: target || url.search.slice(0, 200) });
+    if (window.__thProgrammes?.has(target) || /\/product(\.html)?$/.test(url.pathname)) track("learn_to_programme", { label: target || url.search.slice(0, 200) });
   }
 }
 

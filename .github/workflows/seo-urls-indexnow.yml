@@ -1,0 +1,96 @@
+# After every push to main that touches the site:
+# 1. tools/clean_urls.py rewrites absolute URLs to the address Cloudflare Pages
+#    serves (/page, not /page.html, which redirects). If anything changed it
+#    commits; that push runs this workflow again.
+# 2. Once the site is deployed, the changed pages (or, on a manual run, every URL
+#    in the sitemaps) are sent to IndexNow, which passes them to Bing and other
+#    IndexNow search engines. Free; no account needed. Key file: site/805cfa7c14665c3e7715dd2957aaed42.txt
+name: "SEO: clean URLs and IndexNow"
+on:
+  push:
+    branches: [main]
+    paths: ['site/**', 'tools/clean_urls.py', '.github/workflows/seo-urls-indexnow.yml']
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: seo-urls-indexnow
+  cancel-in-progress: false
+env:
+  HOST: talaash-heritage.pages.dev
+  KEY: 805cfa7c14665c3e7715dd2957aaed42
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Clean absolute URLs
+        id: clean
+        run: |
+          python3 tools/clean_urls.py
+          if [ -n "$(git status --porcelain site)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add site
+            git commit -m "seo: clean URLs (automatic)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo "pushed=1" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Send changed pages to IndexNow
+        if: steps.clean.outputs.pushed != '1'
+        env:
+          BEFORE: ${{ github.event.before }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess, time, urllib.request
+          host, key = os.environ["HOST"], os.environ["KEY"]
+          base = f"https://{host}/"
+          urls = set()
+          before = os.environ.get("BEFORE", "")
+          if os.environ["EVENT"] == "workflow_dispatch" or not before or set(before) == {"0"}:
+              for sm in ["site/sitemap.xml", "site/sitemap-guides.xml", "site/sitemap-news.xml"]:
+                  if os.path.exists(sm):
+                      urls.update(re.findall(r"<loc>([^<]+)</loc>", open(sm, encoding="utf-8").read()))
+          else:
+              out = subprocess.run(["git", "diff", "--name-only", before, "HEAD", "--", "site"], capture_output=True, text=True).stdout.split()
+              skip = {"admin", "cart", "checkout", "order", "seller", "partner", "404"}
+              for f in out:
+                  if not f.endswith(".html") or not os.path.exists(f):
+                      continue
+                  rel = f[len("site/"):-len(".html")]
+                  name = rel.split("/")[-1]
+                  if name in skip or "/_" in "/" + rel:
+                      continue
+                  src = open(f, encoding="utf-8", errors="ignore").read()
+                  if re.search(r'<meta name="robots" content="[^"]*noindex', src):
+                      continue
+                  urls.add(base if rel == "index" else base + rel)
+          urls = sorted(u for u in urls if u.startswith(base))[:10000]
+          print(f"{len(urls)} URL(s) to send")
+          if not urls:
+              raise SystemExit(0)
+          time.sleep(150)  # let Cloudflare Pages finish deploying this commit
+          key_url = f"{base}{key}.txt"
+          for attempt in range(6):
+              try:
+                  if urllib.request.urlopen(key_url, timeout=20).read().decode().strip() == key:
+                      break
+              except Exception as e:
+                  print("key file not live yet:", e)
+              time.sleep(30)
+          else:
+              raise SystemExit("IndexNow key file is not being served; nothing sent")
+          body = json.dumps({"host": host, "key": key, "keyLocation": key_url, "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, headers={"Content-Type": "application/json; charset=utf-8"})
+          try:
+              resp = urllib.request.urlopen(req, timeout=30)
+              print("IndexNow:", resp.status)
+          except urllib.error.HTTPError as e:
+              print("IndexNow error:", e.code, e.read()[:300])
+              raise SystemExit(1)
+          PY
