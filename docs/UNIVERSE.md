@@ -5,6 +5,12 @@ Decided 11 Nov 2026 (Pryank: "take ownership, be my main manager for social medi
 
 > **Timing test, 11–29 Nov 2026 (data, not habit).** Meta Business Suite's Planner shows Talaash's Instagram followers most active at 21:30; posts had been going out at 19:40. Reach of 26 carousels, 15 Oct–11 Nov: median 45.5; by type Careers 294 (n=1), Festival 86.5, Main 64, Fact 45.5, Navratri daily 24.5; days of the week have only 2–4 posts each, too few to choose days on. So the evening window moved to 20:55–21:20 (Make scenario 6534359; the queue task moved to 21:43). Rows keep the 19:30 label. On 29 Nov compare each type's median reach against the baseline above and keep the window or move it back. Morning festival window unchanged (07:55–08:20). Never run the helper swap inside either window.
 
+## 0. Audience (read before choosing language, time or format)
+- Talaash Instagram (833 followers, checked 10 Nov 2026): India 94%; aged 25–34 63%; men 56%, women 44%; top cities Delhi 10%, Pune 6%, Bangalore 6%, Mumbai 4%, Chennai 3%, then Gurugram, Kolkata, Hyderabad. Many followers are outside the Hindi belt, so everything Talaash makes is in English (captions, on-screen text, lectures). Followers most active at 21:30 (Meta), hence the evening timing test above. Best reach so far by type: Careers, then festivals, then main posts, then Facts.
+- Talaash Facebook (1,723): India 93%, men 75%, mostly 25–44.
+- archaeologywala Instagram (2,148): 86% of views come from followers and 86.5% from stories; reels were 0.4%. Reach, not language, is its limit; Hinglish voice with English facts in every caption. Hindi-belt content belongs here, not on Talaash.
+- So: Talaash = English, scholarly, pan-India, evening; archaeologywala = Hinglish, personal, story-led reach. Same topic never twice; the Collab is the bridge.
+
 ## 1. One ledger
 - `content/universe.json` holds every piece both brands make: posts, reels, 3D models, lectures, web pages. Each has one id, its series and number, field, status, slot, platforms, the website page it points to (`page`) and the product it sells (`sells`).
 - A piece gets its ledger entry **before** it is built. Series numbers are taken only from the "next numbers" line that `python3 tools/check_universe.py` prints. Never number from memory or from a caption.
@@ -43,7 +49,7 @@ Superseded on 11 Nov 2026: older notes (project notes talaash-ops-status "Plan f
 
 Jaisa Tha rotation: archaeology/history episodes alternate with arts, linguistics/Sanskrit and anthropology episodes; never two archaeology in a row. Models already built (Kandariya Mahadeva, Bhaja Cave 12) are slotted as archaeology/history episodes. Cut rule: if three Jaisa Tha reels in a row get less reach than the median Talaash carousel of the same weeks, go back to fortnightly.
 
-Lecture rules: each lecture is 2–3 parts of about 5 minutes, each under 4.8 MB, because Make's free plan refuses larger files; animated slides (16:9, 1280×720), English on every slide and English subtitles, narration in Pryank's voice (his cloned Hindi voice from the archaeologywala studio kit, or his own recording if he sends one), 8–15 minutes, chapters in the description, sources on the last slide and in the description, the TALAASHH logo on every slide, "Narrated by @archaeologywala". The lecture page on the site carries the video, the slides as text (for search) and the programme it sells. Fields rotate like Jaisa Tha.
+Lecture rules: each lecture is 2–3 parts of about 5 minutes, each under 4.8 MB, because Make's free plan refuses larger files; animated slides (16:9, 1280×720), English on every slide and English subtitles, narration in clear English in Pryank's cloned voice (English clone from the archaeologywala kit's reference voice; if it fails the likeness check, his cloned Hindi voice with English subtitles, and the report says so), 8–15 minutes, chapters in the description, sources on the last slide and in the description, the TALAASHH logo on every slide, "Narrated by @archaeologywala". The lecture page on the site carries the video, the slides as text (for search) and the programme it sells. Fields rotate like Jaisa Tha.
 
 ## 5. Platforms
 | Platform | Use now | Why |
@@ -59,7 +65,7 @@ Lecture rules: each lecture is 2–3 parts of about 5 minutes, each under 4.8 MB
 - Make Free: 1,000 operations a month, ceiling 850, only 2 active scenarios. A post costs about 6. If the Sunday review projects more than 600, Talaash drops to the 19:30 slot only.
 - Apify free credit: the weekly reviews and nightly checks only.
 - No paid tools, no ads, no new subscriptions without Pryank's yes.
-- Never more than 2 posts a day per account; never a filler post.
+- Never more than 2 of an account's own posts a day; never a filler post. An archaeologywala Collab also shows on Talaash's grid: keep it at least 30 minutes from Talaash's own evening post, and on a festival day (Talaash 08:00 + evening) put no Collab, or move the Collab to another day.
 
 ## 7. Quality (unchanged, applies to every piece)
 Primary sources or two independent reputable ones; nothing from memory; three checks (own, a subagent with the sources, a subagent without them trying to disprove); reconstructions labelled and evidence-tagged; no deity images in illustrations; real images with checked open licences only; Brand SOP logo and links blocks; British English; "link in bio" never on Talaash.
