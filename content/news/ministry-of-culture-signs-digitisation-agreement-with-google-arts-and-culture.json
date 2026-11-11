@@ -11,6 +11,9 @@
   ],
   "category": "policy",
   "field": "heritage",
+  "also_fields": [
+    "arts"
+  ],
   "published": "2026-11-08",
   "place": "New Delhi",
   "sources": [

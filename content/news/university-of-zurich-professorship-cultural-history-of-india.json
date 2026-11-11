@@ -11,6 +11,9 @@
   ],
   "category": "opportunities",
   "field": "history",
+  "also_fields": [
+    "linguistics"
+  ],
   "published": "2026-11-05",
   "place": "Zurich, Switzerland",
   "deadline": "2026-12-07",
