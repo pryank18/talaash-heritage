@@ -25,11 +25,12 @@ h = html.escape
 
 SERIES = {
     "jaisa-tha": ("Jaisa Tha", "Sites as they were, rebuilt in 3D from the excavation reports."),
+    "ancient-india-3d": ("Ancient India in 3D", "@archaeologywala rebuilds what was dug up, in 3D."),
     "explorer": ("Explorer", "@archaeologywala walks a site from end to end."),
     "news": ("From the Heritage desk", "New finds, explained in under a minute."),
     "khudai-khabar": ("Khudai Khabar", "Real archaeology news, told as satire by @archaeologywala."),
 }
-ORDER = ["jaisa-tha", "explorer", "news", "khudai-khabar"]
+ORDER = ["jaisa-tha", "ancient-india-3d", "explorer", "news", "khudai-khabar"]
 IG_RE = re.compile(r"^https://www\.instagram\.com/(?:[A-Za-z0-9_.]+/)?(?:reel|p)/[A-Za-z0-9_-]+/?$")
 YT_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
 

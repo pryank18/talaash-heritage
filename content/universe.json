@@ -1,0 +1,566 @@
+{
+ "_readme": "The single ledger for everything Talaash Heritage and archaeologywala make: posts, reels, 3D models, lectures, web pages. Every piece gets one id here before it is built, and its status is updated when it goes live. Series numbers are taken only from this ledger: run tools/check_universe.py and use the 'next' number it prints, then add the item here before building it. Rules: docs/UNIVERSE.md. Check with python3 tools/check_universe.py before every commit that touches this file. Talaash tasks write here; archaeologywala tasks read it and log in their run book, and the Sunday universe review copies their live posts in.",
+ "updated": "2026-11-11",
+ "fields": [
+  "archaeology",
+  "linguistics",
+  "anthropology",
+  "arts",
+  "sanskrit",
+  "history",
+  "heritage"
+ ],
+ "series": {
+  "fact": {
+   "name": "Fact",
+   "account": "talaashheritage",
+   "format": "carousel",
+   "used": "001-005, 008-011",
+   "note": "006 and 007 were never posted (the feed went 005 on 7 Nov to 008 on 10 Nov). Never reuse them; numbers only rise."
+  },
+  "jaisa-tha": {
+   "name": "Jaisa Tha",
+   "account": "talaashheritage",
+   "format": "3D reel",
+   "used": "1",
+   "note": "Talaash only. One field per episode; never two archaeology episodes in a row."
+  },
+  "talaash-lectures": {
+   "name": "Talaash Lectures",
+   "account": "talaashheritage",
+   "format": "YouTube lecture (animated slides, Pryank's voice)",
+   "used": ""
+  },
+  "boli": {
+   "name": "Boli",
+   "account": "talaashheritage",
+   "format": "carousel",
+   "used": "Kaithi (13 Nov)",
+   "note": "Unnumbered; one script or speech form per post."
+  },
+  "ancient-india-3d": {
+   "name": "Ancient India in 3D",
+   "account": "archaeologywala",
+   "format": "3D reel or diorama carousel, Collab with talaashheritage",
+   "used": "1",
+   "note": "archaeologywala's own 3D series, distinct from Jaisa Tha. #1 = 17 Nov burials reel; #2 = Harappan diorama carousel."
+  },
+  "explorer": {
+   "name": "Explorer",
+   "account": "archaeologywala",
+   "format": "reel, Collab",
+   "used": ""
+  },
+  "khudai-khabar": {
+   "name": "Khudai Khabar",
+   "account": "archaeologywala",
+   "format": "satire reel, never a Collab",
+   "used": ""
+  },
+  "rahasya": {
+   "name": "Rahasya",
+   "account": "archaeologywala",
+   "format": "reel",
+   "used": ""
+  },
+  "guess-the-artefact": {
+   "name": "Guess the Artefact",
+   "account": "archaeologywala",
+   "format": "reel",
+   "used": "1-2"
+  },
+  "aw-news": {
+   "name": "News reels",
+   "account": "archaeologywala",
+   "format": "faceless reel, Collab",
+   "used": ""
+  },
+  "3d-model": {
+   "name": "Interactive 3D models",
+   "account": "website",
+   "format": "web page",
+   "used": "",
+   "note": "Free to view on the Talaash site; each one later becomes a Jaisa Tha episode."
+  }
+ },
+ "items": [
+  {
+   "id": "tl-fact-009-junagadh",
+   "brand": "talaash",
+   "series": "fact",
+   "number": 9,
+   "field": "history",
+   "title": "Junagadh: a dam breach 420 cubits long",
+   "status": "scheduled",
+   "slot": "2026-11-12T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "sources": "queue sheet row 36"
+  },
+  {
+   "id": "tl-boli-kaithi",
+   "brand": "talaash",
+   "series": "boli",
+   "number": null,
+   "field": "linguistics",
+   "title": "Boli: Kaithi, the script of Bihar's courts",
+   "status": "scheduled",
+   "slot": "2026-11-13T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "sources": "queue sheet row 37"
+  },
+  {
+   "id": "tl-fact-010-kharosthi",
+   "brand": "talaash",
+   "series": "fact",
+   "number": 10,
+   "field": "linguistics",
+   "title": "Coins helped unlock Kharosthi",
+   "status": "scheduled",
+   "slot": "2026-11-14T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "sources": "queue sheet row 38"
+  },
+  {
+   "id": "tl-chhath-2026",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "Chhath: the first arghya goes to the setting sun",
+   "status": "scheduled",
+   "slot": "2026-11-15T08:00",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "sources": "queue sheet row 39"
+  },
+  {
+   "id": "tl-week-2026-11-15",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "Heritage this week (15 Nov)",
+   "status": "scheduled",
+   "slot": "2026-11-15T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "sources": "queue sheet row 40"
+  },
+  {
+   "id": "aw-news-kothakota",
+   "brand": "archaeologywala",
+   "series": "aw-news",
+   "number": null,
+   "field": "history",
+   "title": "Kothakota: a 900-year-old land gift, read on a temple pillar",
+   "status": "building",
+   "slot": "2026-11-15T21:30",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": "news-chalukya-pillar-inscription-of-vikramaditya-vi-read-at-kothakota",
+   "sources": "reels.json news-kothakota-pillar"
+  },
+  {
+   "id": "tl-whc-54",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "World Heritage Convention at 54: India's 45 sites",
+   "status": "scheduled",
+   "slot": "2026-11-16T08:00",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "sources": "queue sheet row 41"
+  },
+  {
+   "id": "tl-ugc-net-dec-2026",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "UGC-NET December 2026: the 6% cut and your subject code",
+   "status": "scheduled",
+   "slot": "2026-11-16T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "sources": "queue sheet row 42"
+  },
+  {
+   "id": "tl-fact-011-didarganj",
+   "brand": "talaash",
+   "series": "fact",
+   "number": 11,
+   "field": "arts",
+   "title": "Fact 011: Didarganj Yakshi",
+   "status": "building",
+   "slot": "2026-11-17T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "sources": "render/queue/20261117-fact-didarganj-yakshi"
+  },
+  {
+   "id": "aw-3d-01-burials",
+   "brand": "archaeologywala",
+   "series": "ancient-india-3d",
+   "number": 1,
+   "field": "archaeology",
+   "title": "Teen jagah, teen vidaai: Rakhigarhi, Sinauli and Adichanallur",
+   "status": "scheduled",
+   "slot": "2026-11-17T20:30",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": "rakhigarhi",
+   "sources": "reels.json burials-rakhigarhi-sinauli-adichanallur",
+   "topic_lock": [
+    "rakhigarhi"
+   ]
+  },
+  {
+   "id": "aw-reel-delhi-whs",
+   "brand": "archaeologywala",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "Delhi's three World Heritage Sites",
+   "status": "building",
+   "slot": "2026-11-18T20:30",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "aw reel studio, Sat 14 Nov run"
+  },
+  {
+   "id": "aw-explorer-01-tughlaqabad",
+   "brand": "archaeologywala",
+   "series": "explorer",
+   "number": 1,
+   "field": "history",
+   "title": "Explorer, episode 1: Tughlaqabad",
+   "status": "building",
+   "slot": "2026-11-19T20:30",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": "tughlaqabad-fort",
+   "sources": "reels.json explorer-01-tughlaqabad",
+   "topic_lock": [
+    "tughlaqabad"
+   ]
+  },
+  {
+   "id": "tl-jaisa-tha-01-purana-qila",
+   "brand": "talaash",
+   "series": "jaisa-tha",
+   "number": 1,
+   "field": "archaeology",
+   "title": "Jaisa Tha #1: Purana Qila",
+   "status": "ready",
+   "slot": "2026-11-20T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "youtube-short"
+   ],
+   "page": "purana-qila",
+   "sources": "render/jaisatha/01-purana-qila.md",
+   "topic_lock": [
+    "purana-qila"
+   ]
+  },
+  {
+   "id": "aw-news-nagapattinam",
+   "brand": "archaeologywala",
+   "series": "aw-news",
+   "number": null,
+   "field": "arts",
+   "title": "Chola bronzes of Nataraja and Sivakami found at Nagapattinam",
+   "status": "building",
+   "slot": "2026-11-20T20:30",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": "news-chola-period-bronzes-of-nataraja-and-sivakami-found-at-nagapattinam",
+   "sources": "aw news reels studio"
+  },
+  {
+   "id": "aw-khudai-khabar-01",
+   "brand": "archaeologywala",
+   "series": "khudai-khabar",
+   "number": 1,
+   "field": "archaeology",
+   "title": "Khudai Khabar EP 01",
+   "status": "building",
+   "slot": "2026-11-25T20:30",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "aw run book"
+  },
+  {
+   "id": "tl-jaisa-tha-02-arts",
+   "brand": "talaash",
+   "series": "jaisa-tha",
+   "number": 2,
+   "field": "arts",
+   "title": "Jaisa Tha #2 (Arts: a painting, mural or craft as it looked new; original colours documented in a published source)",
+   "status": "idea",
+   "slot": "2026-11-27T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "youtube-short"
+   ],
+   "page": null,
+   "sources": "Talaash 3D studio, Sat 21 Nov run"
+  },
+  {
+   "id": "aw-guess-03",
+   "brand": "archaeologywala",
+   "series": "guess-the-artefact",
+   "number": 3,
+   "field": "archaeology",
+   "title": "Guess the Artefact #3",
+   "status": "idea",
+   "slot": "2026-11-30T20:30",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "aw calendar"
+  },
+  {
+   "id": "aw-rahasya-01-kailasa",
+   "brand": "archaeologywala",
+   "series": "rahasya",
+   "number": 1,
+   "field": "history",
+   "title": "Rahasya #1: Kailasa, Ellora",
+   "status": "idea",
+   "slot": "2026-12-02T20:30",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "claude/reel-kailasa-build.md (aw project)",
+   "topic_lock": [
+    "kailasa-ellora"
+   ]
+  },
+  {
+   "id": "tl-jaisa-tha-03-linguistics",
+   "brand": "talaash",
+   "series": "jaisa-tha",
+   "number": 3,
+   "field": "linguistics",
+   "title": "Jaisa Tha #3 (Linguistics or Sanskrit: how a script was written or a word sounded)",
+   "status": "idea",
+   "slot": "2026-12-04T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "youtube-short"
+   ],
+   "page": null,
+   "sources": "Talaash 3D studio, Sat 28 Nov run. Must not repeat the topic of Talaash Lectures #1 (Brahmi)."
+  },
+  {
+   "id": "aw-rahasya-02-konark",
+   "brand": "archaeologywala",
+   "series": "rahasya",
+   "number": 2,
+   "field": "history",
+   "title": "Rahasya #2: Konark wheels",
+   "status": "idea",
+   "slot": "2026-12-04T20:30",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "aw calendar",
+   "topic_lock": [
+    "konark"
+   ]
+  },
+  {
+   "id": "aw-3d-02-harappan-diorama",
+   "brand": "archaeologywala",
+   "series": "ancient-india-3d",
+   "number": 2,
+   "field": "archaeology",
+   "title": "Harappan Civilisation, as the evidence shows it (diorama carousel)",
+   "status": "idea",
+   "slot": "2026-12-05T21:30",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": "delhi-and-rakhigarhi-the-harappan-world",
+   "sources": "project doc claude/harappan-diorama-carousel.md"
+  },
+  {
+   "id": "tl-lecture-01-brahmi",
+   "brand": "talaash",
+   "series": "talaash-lectures",
+   "number": 1,
+   "field": "linguistics",
+   "title": "Talaash Lectures #1: Read Brahmi, a first lesson",
+   "status": "idea",
+   "slot": "2026-12-06T17:00",
+   "platforms": [
+    "youtube",
+    "website",
+    "instagram-cutdown",
+    "linkedin"
+   ],
+   "page": "brahmi-script",
+   "sources": "Talaash lecture studio, first run 5 Dec",
+   "sells": "write-like-asoka-s-scribes-a-brahmi-workshop"
+  },
+  {
+   "id": "aw-khudai-khabar-02",
+   "brand": "archaeologywala",
+   "series": "khudai-khabar",
+   "number": 2,
+   "field": "archaeology",
+   "title": "Khudai Khabar EP 02 (Dholavira unless comments pick otherwise)",
+   "status": "idea",
+   "slot": "2026-12-09T20:30",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "aw reel studio"
+  },
+  {
+   "id": "tl-jaisa-tha-04-kandariya",
+   "brand": "talaash",
+   "series": "jaisa-tha",
+   "number": 4,
+   "field": "history",
+   "title": "Jaisa Tha #4: Kandariya Mahadeva, Khajuraho",
+   "status": "idea",
+   "slot": "2026-12-11T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "youtube-short"
+   ],
+   "page": "khajuraho-architecture-deep-dive",
+   "sources": "project doc claude/kandariya-3d-sources.md; model aa5f80ed-5676-496a-aaee-353ea79aee60",
+   "topic_lock": [
+    "khajuraho"
+   ]
+  },
+  {
+   "id": "tl-jaisa-tha-05-anthropology",
+   "brand": "talaash",
+   "series": "jaisa-tha",
+   "number": 5,
+   "field": "anthropology",
+   "title": "Jaisa Tha #5 (Anthropology: a living practice or object in use, from published ethnography)",
+   "status": "idea",
+   "slot": "2026-12-18T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "youtube-short"
+   ],
+   "page": null,
+   "sources": "Talaash 3D studio"
+  },
+  {
+   "id": "tl-jaisa-tha-06-bhaja",
+   "brand": "talaash",
+   "series": "jaisa-tha",
+   "number": 6,
+   "field": "archaeology",
+   "title": "Jaisa Tha #6: Bhaja Cave 12 chaitya",
+   "status": "idea",
+   "slot": "2026-12-25T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "youtube-short"
+   ],
+   "page": "buddhist-caves-in-india",
+   "sources": "Design canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2 (Bhaja Caves – 3D Reconstruction), evidence-tagged",
+   "topic_lock": [
+    "bhaja"
+   ]
+  },
+  {
+   "id": "web-3d-kandariya",
+   "brand": "talaash",
+   "series": "3d-model",
+   "number": null,
+   "field": "history",
+   "title": "Kandariya Mahadeva Temple in 3D (interactive)",
+   "status": "building",
+   "slot": "2026-11-16",
+   "platforms": [
+    "website"
+   ],
+   "page": "3d-kandariya-mahadeva",
+   "sources": "Design canvas aa5f80ed-5676-496a-aaee-353ea79aee60; project doc claude/kandariya-3d-sources.md",
+   "sells": "khajuraho-architecture-deep-dive"
+  },
+  {
+   "id": "web-3d-bhaja",
+   "brand": "talaash",
+   "series": "3d-model",
+   "number": null,
+   "field": "archaeology",
+   "title": "Bhaja Caves chaitya hall (Cave 12) in 3D (interactive)",
+   "status": "building",
+   "slot": "2026-11-16",
+   "platforms": [
+    "website"
+   ],
+   "page": "3d-bhaja-chaitya",
+   "sources": "Design canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2; sources listed inside the canvas",
+   "sells": "buddhist-caves-in-india"
+  }
+ ]
+}
