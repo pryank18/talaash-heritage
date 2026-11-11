@@ -1,0 +1,96 @@
+{
+  "_readme": "Three-check audit of content/guides/*.json, 5 a night.",
+  "done": [
+    {
+      "slug": "ancient-indian-history",
+      "date": "2026-11-12",
+      "claims_checked": 28,
+      "changed": [
+        "Magadha capital: Rajagriha first, later Pataliputra",
+        "Ashoka's reign 268 to 232 BCE: added 'scholars differ by a few years'",
+        "Ashoka's edicts: 'earliest securely dated, deciphered' records (body and FAQ)",
+        "Nalanda 'continued', Vikramashila 'flourished' under the Palas",
+        "Mesolithic table row: from about 12,000 years ago, later in some regions",
+        "Harappan: 'most extensive of the early Bronze Age urban civilisations' (was 'largest')",
+        "UPSC FAQ: Prelims history of India; Mains GS I culture from ancient to modern times (Mains has no ancient-history item)"
+      ],
+      "held": [],
+      "unconfirmed_recheck": [
+        "Isampur and 300,000-year boundary",
+        "Haryanka/Shishunaga/Nanda",
+        "Ahar/Jorwe and Deccan ashmounds",
+        "Arikamedu/Keeladi/Pattanam Tamil Brahmi",
+        "Megasthenes/Faxian/Xuanzang: verifier 2 tools blocked; verifier 3 found them standing"
+      ]
+    },
+    {
+      "slug": "ancient-scripts-of-india",
+      "date": "2026-11-12",
+      "claims_checked": 19,
+      "changed": [
+        "Indus inscriptions: 'on average about five signs' (Mahadevan), was 'most have fewer than six'",
+        "Indus non-linguistic view: 'many specialists dispute', was 'most specialists reject'",
+        "Kharosthi in use until about the 4th or 5th century CE (body, table, FAQ; Britannica)",
+        "Gandharan birch-bark manuscripts dated about 1st century BCE to 2nd century CE (was 'around 1st century CE')",
+        "Grantha from about the 5th or 6th century CE (body, table)",
+        "Nagari table: from about the 7th or 8th century CE",
+        "'nearly every indigenous Indian script' descends from Brahmi (body, social caption)"
+      ],
+      "held": [],
+      "unconfirmed_recheck": [
+        "Indus objects list (tablets, copper)",
+        "Tamil-Brahmi letters and Vatteluttu",
+        "Siddham in East Asia: verifier 2 tools blocked; verifier 3 found them standing (Salomon 1998)"
+      ]
+    },
+    {
+      "slug": "anthropology-and-tribal-india",
+      "date": "2026-11-12",
+      "claims_checked": 23,
+      "changed": [
+        "Calcutta University anthropology department: 1921, was 1920 (caluniv.ac.in)",
+        "AnSI: set up 1945, HQ in Kolkata since 1948 (began in Varanasi)",
+        "South India row: 'Nilgiri and other southern hill communities' (Soliga and Chenchu are not Nilgiri)",
+        "'Gond Pandvani' changed to 'the Pandvani of Chhattisgarh'",
+        "Bhopal Tribal Museum: tribal artists made the displays (was 'helped design the galleries')"
+      ],
+      "held": [],
+      "unconfirmed_recheck": [
+        "705+ ST communities",
+        "largest ST groups",
+        "language families",
+        "Fifth/Sixth Schedule, PESA, FRA",
+        "Ramanujan",
+        "DNA studies",
+        "university list: verifier 2 tools blocked; verifier 3 found them standing"
+      ]
+    },
+    {
+      "slug": "anthropology-optional-for-upsc",
+      "date": "2026-11-12",
+      "claims_checked": 10,
+      "changed": [
+        "Paper II bullet: the syllabus does not name the Fifth/Sixth Schedules or PESA; now 'history of tribal policies and development programmes, constitutional safeguards, forest policy and welfare programmes'",
+        "FAQ GS overlap: 'related themes ... constitutional provisions' (GS syllabus does not name the Schedules or forest rights)"
+      ],
+      "held": [],
+      "unconfirmed_recheck": [
+        "250 marks x 2, 3 hours, free choice of optional: upsc.gov.in blocked for verifier 2; verifier 3 confirmed from CSE rules; re-read the official notification"
+      ]
+    },
+    {
+      "slug": "archaeological-survey-of-india",
+      "date": "2026-11-12",
+      "claims_checked": 20,
+      "changed": [
+        "Blue board: 'usually carry a board' (no source for 'blue' or 'every'; CAG found signage gaps), also social hook, caption, reel",
+        "Social hook 'older than most Indian railways' replaced with 'The ASI has been at work since 1861.'",
+        "Survey 'wound up in 1866', was 'suspended for a few years' (ASI history)"
+      ],
+      "held": [],
+      "unconfirmed_recheck": [
+        "Superintending Archaeologists head circles; Hampi is a mini circle"
+      ]
+    }
+  ]
+}
