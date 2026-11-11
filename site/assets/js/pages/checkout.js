@@ -270,7 +270,7 @@ async function render() {
       amount: order.total_paise,
       currency: order.currency,
       name: CONFIG.brand,
-      description: `Order ${order.order_number}`,
+      description: `Order ${order.order_number} · billed as Nibbling Nuts`,
       prefill: { name: customer.name, email: customer.email, contact: customer.phone },
       notes: { order_number: order.order_number },
       theme: { color: "#0e463e" },
