@@ -190,21 +190,24 @@ def page(m, models, progs, guides):
     <h1>{h(m["h1"])}</h1>
     <p class="guide-byline">By <a href="archaeologywala.html" rel="author">@archaeologywala</a> for Talaash Heritage · Published {nice_date(m["published"])}{" · Updated " + nice_date(m["updated"]) if m.get("updated") else ""}</p>
     <div class="share-row"><button type="button" class="share-btn" data-share aria-haspopup="true">{SHARE_ICON}<span>Share</span></button></div>
-    <p class="guide-lede">{m["lede"]}</p>
   </header>
   <div class="m3d-wrap">
     <div class="m3d-stage" id="m3d-stage">
       <img class="m3d-still" src="{h(m["still"])}" alt="Still view of the 3D model: {h(m["short"])}, with its labels" width="1600" height="900">
       <div class="m3d-labels" aria-hidden="true"></div>
       <p class="m3d-hint"><span class="m3d-hint-mouse">Drag to turn · Ctrl + scroll or + − to zoom</span><span class="m3d-hint-touch">Drag to turn · pinch to zoom</span></p>
-      <p class="m3d-wheel-note" hidden>Hold Ctrl (⌘ on a Mac) and scroll to zoom</p>
+      <p class="m3d-wheel-note" hidden>Hold Ctrl (⌘ on a Mac) and scroll to zoom, or use + and −</p>
+      <button type="button" class="m3d-open"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg>Explore in 3D</button>
+      <button type="button" class="m3d-close" aria-label="Close full screen"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       <div class="m3d-brand"><img src="assets/img/logo-192.webp" alt="Talaash Heritage" width="40" height="40"><img src="assets/img/archaeologywala-logo.webp" alt="archaeologywala" width="40" height="40"></div>
       <p class="m3d-recon">{h(m["label"])}</p>
     </div>
     <p class="m3d-note-nowebgl small">Your browser cannot show 3D here, so this is a still view of the model. The facts are below.</p>
     <div class="m3d-toggles" aria-label="Model controls"></div>
     <ul class="m3d-key" aria-label="Evidence tags used on this model">{key}</ul>
+    <div class="m3d-parts"></div>
   </div>
+  <div class="guide-body"><p class="guide-lede m3d-lede">{m["lede"]}</p></div>
   <article class="guide-body">
     <div class="doc guide-text">
       <h2 id="facts">What is measured and what is estimated</h2>

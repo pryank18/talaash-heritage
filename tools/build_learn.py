@@ -59,7 +59,7 @@ MODELS3D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)
 def see3d_html(slug):
     """'See it in 3D' block for a guide or programme page that a 3D model names."""
     ms = [m for m in MODELS3D if slug in m.get("guides", []) or slug in m.get("programmes", []) or slug == m.get("sells")]
-    return "".join(f'<aside class="see-3d" aria-label="See it in 3D"><a href="{m["page"]}.html"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
+    return "".join(f'<aside class="see-3d" aria-label="See it in 3D"><a href="{m["page"]}.html" tabindex="-1" aria-hidden="true"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
                    f'<p><strong>See it in 3D:</strong> <a href="{m["page"]}.html">{html.escape(m["short"])}</a>. Turn the model, zoom in and see which parts are measured and which are estimated.</p></aside>'
                    for m in ms)
 
@@ -130,7 +130,7 @@ def section_html(s, i):
         out.append("<ul>" + "".join(f"<li>{inline(x)}</li>" for x in s["list"]) + "</ul>")
     if s.get("table"):
         t = s["table"]
-        out.append('<div class="table-scroll"><table><thead><tr>' + "".join(f"<th>{h(c)}</th>" for c in t["head"]) + "</tr></thead><tbody>" +
+        out.append('<div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrolls sideways"><table><thead><tr>' + "".join(f"<th>{h(c)}</th>" for c in t["head"]) + "</tr></thead><tbody>" +
                    "".join("<tr>" + "".join(f"<td>{inline(c)}</td>" for c in r) + "</tr>" for r in t["rows"]) + "</tbody></table></div>")
     return "\n".join(out)
 
@@ -164,7 +164,7 @@ def city_html(g):
 
 def state_html(g):
     rows = "".join(f'<tr><td><strong>{h(s["name"])}</strong>{" <span class=" + chr(34) + "tag-unesco" + chr(34) + ">UNESCO</span>" if s.get("unesco") else ""}</td><td>{inline(s["note"])}</td></tr>' for s in g["sites"])
-    out = [f'<h2 id="sites">Heritage sites in {h(g["state"])}</h2><div class="table-scroll"><table><thead><tr><th>Site</th><th>Why go</th></tr></thead><tbody>{rows}</tbody></table></div>']
+    out = [f'<h2 id="sites">Heritage sites in {h(g["state"])}</h2><div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrolls sideways"><table><thead><tr><th>Site</th><th>Why go</th></tr></thead><tbody>{rows}</tbody></table></div>']
     if g.get("cities"):
         out.append('<p class="city-links">Heritage walks in this state: ' + ", ".join(f'<a href="{c}.html">{h(GUIDES[c]["city"])}</a>' for c in g["cities"] if c in GUIDES) + "</p>")
     if g.get("museums"):
@@ -355,7 +355,7 @@ def guide_page(g):
 def hub3d():
     if not MODELS3D:
         return ""
-    items = "".join(f'<li class="see-3d"><a href="{m["page"]}.html"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
+    items = "".join(f'<li class="see-3d"><a href="{m["page"]}.html" tabindex="-1" aria-hidden="true"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
                     f'<p><a href="{m["page"]}.html"><strong>{h(m["short"])}</strong></a><br><span class="small muted">{h(m["og_description"])}</span></p></li>' for m in MODELS3D)
     return (f'<section class="hub-places hub-3d" id="models-3d" aria-labelledby="m3d-title"><div class="section-head"><h2 id="m3d-title">Explore in 3D</h2></div>'
             f'<p class="muted">Interactive models built from published surveys and plans, with every estimated part tagged.</p><ul>{items}</ul></section>')
@@ -429,7 +429,7 @@ def credits_page():
     for k, m in MEDIA.items():
         used.setdefault(m["file"], m)
     rows = "".join(
-        f'<tr><td><a href="{h(m["page"])}" rel="noopener"><img src="{h(m["small"])}" alt="" width="120" height="90" loading="lazy"></a></td>'
+        f'<tr><td><a href="{h(m["page"])}" rel="noopener" aria-label="Original on Wikimedia Commons: {h(m["alt"])}"><img src="{h(m["small"])}" alt="" width="120" height="90" loading="lazy"></a></td>'
         f'<td>{h(m["alt"])}</td><td>{h(m["credit"])}</td><td><a href="{h(m["license_url"])}" rel="license noopener">{h(m["license"])}</a></td>'
         f'<td><a href="{h(m["page"])}" rel="noopener">Wikimedia Commons</a></td></tr>'
         for f, m in sorted(used.items(), key=lambda kv: kv[1]["alt"]))
@@ -445,7 +445,7 @@ def credits_page():
   <div class="doc credits">
     <p>Most photographs on this site are by photographers who share their work on Wikimedia Commons under Creative Commons licences or in the public domain. We are grateful to them. Each is listed below with its author, licence and source; select a photograph to see the original. Photographs shown with a licence ending in SA are shared under the same licence. Our own illustrations and photographs are not listed.</p>
     <p>If you are the author of a photograph here and would like the credit changed, write to <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
-    <div class="table-scroll"><table><thead><tr><th>Photo</th><th>Subject</th><th>Author</th><th>Licence</th><th>Source</th></tr></thead><tbody>{rows}</tbody></table></div>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrolls sideways"><table><thead><tr><th>Photo</th><th>Subject</th><th>Author</th><th>Licence</th><th>Source</th></tr></thead><tbody>{rows}</tbody></table></div>
   </div>
 </div>
 </main>

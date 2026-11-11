@@ -215,8 +215,9 @@ async function render() {
   if (request || soon) {
     const links = requestLinks(p);
     const counselling = (p.tags || []).includes("counselling");
-    const bar = document.createElement("div");
+    const bar = document.createElement("aside");
     bar.className = "app-action";
+    bar.setAttribute("aria-label", "Request this programme");
     bar.innerHTML = `
       <a class="btn btn-primary" href="${esc(links.whatsapp)}" target="_blank" rel="noopener"${soon ? "" : ' data-req="whatsapp"'}>${soon ? "Notify me on WhatsApp" : counselling ? "Request a session on WhatsApp" : "Request on WhatsApp"}</a>
       <a class="btn btn-outline" href="${esc(links.email)}"${soon ? "" : ' data-req="email"'}>Email</a>`;

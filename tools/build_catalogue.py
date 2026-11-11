@@ -1017,7 +1017,7 @@ MODELS3D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)
 def see3d_html(slug):
     """'See it in 3D' block for a guide or programme page that a 3D model names."""
     ms = [m for m in MODELS3D if slug in m.get("guides", []) or slug in m.get("programmes", []) or slug == m.get("sells")]
-    return "".join(f'<aside class="see-3d" aria-label="See it in 3D"><a href="{m["page"]}.html"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
+    return "".join(f'<aside class="see-3d" aria-label="See it in 3D"><a href="{m["page"]}.html" tabindex="-1" aria-hidden="true"><img src="{m["still"]}" alt="" width="120" height="68" loading="lazy"></a>'
                    f'<p><strong>See it in 3D:</strong> <a href="{m["page"]}.html">{h(m["short"])}</a>. Turn the model, zoom in and see which parts are measured and which are estimated.</p></aside>'
                    for m in ms)
 

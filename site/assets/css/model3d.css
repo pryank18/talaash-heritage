@@ -55,3 +55,55 @@
   .m3d-facts th, .m3d-facts td { border: 0; padding: .1rem .2rem; }
   .m3d-hint { max-width: 62%; }
 }
+
+/* ---- viewer additions (12 Nov 2026) ---- */
+.m3d-stage.is-passive { touch-action: pan-y pinch-zoom; }
+.m3d-canvas:focus-visible { outline: 3px solid var(--haldi, #e0a526); outline-offset: -3px; }
+.m3d-wheel-note { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; background: rgba(28,27,25,.85); color: #fff; font-size: .9rem; padding: .6rem .9rem; border-radius: 8px; z-index: 3; text-align: center; max-width: 80%; pointer-events: none; }
+.m3d-wheel-note[hidden] { display: none; }
+.m3d-stage.no-webgl .m3d-open, .m3d-stage.no-webgl .m3d-close, .m3d-stage:not(.webgl) .m3d-open { display: none; }
+.m3d-open { position: absolute; left: 50%; bottom: 64px; transform: translateX(-50%); z-index: 3; display: none; align-items: center; gap: .45rem; font: inherit; font-weight: 600; font-size: 1rem; padding: .75rem 1.2rem; min-height: 48px; border: 2px solid #fff; border-radius: 999px; background: #1c1b19; color: #fff; box-shadow: 0 4px 14px rgba(0,0,0,.3); cursor: pointer; }
+.m3d-stage.is-passive .m3d-open { display: inline-flex; }
+.m3d-close { position: absolute; left: 8px; top: 8px; z-index: 4; display: none; width: 48px; height: 48px; align-items: center; justify-content: center; border: 0; border-radius: 999px; background: rgba(255,255,255,.95); color: #1c1b19; box-shadow: 0 2px 8px rgba(0,0,0,.2); cursor: pointer; }
+/* Phones: numbered pins on the model, full text in the parts list below. */
+.m3d-pin { display: none; width: 22px; height: 22px; border-radius: 50%; color: #fff; font-size: 11px; font-weight: 700; line-height: 22px; text-align: center; box-shadow: 0 0 0 2px #fff, 0 1px 4px rgba(0,0,0,.35); flex: none; }
+.m3d-stage.pins .m3d-label { background: none; border: 0; box-shadow: none; padding: 0; }
+.m3d-stage.pins .m3d-label .m3d-pin { display: block; }
+.m3d-stage.pins .m3d-label .m3d-ltext { display: none; }
+.m3d-label.is-flash { outline: 3px solid var(--haldi, #e0a526); outline-offset: 2px; border-radius: 6px; }
+.m3d-stage.pins .m3d-label.is-flash .m3d-pin { transform: scale(1.35); transition: transform .2s; }
+.m3d-parts-box { margin-top: .8rem; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
+.m3d-parts-box summary { cursor: pointer; padding: .65rem .9rem; font-weight: 600; min-height: 44px; display: flex; align-items: center; gap: .3rem; flex-wrap: wrap; }
+.m3d-parts-list { list-style: none; margin: 0; padding: 0 .4rem .5rem; }
+.m3d-part { display: flex; align-items: center; gap: .5rem; width: 100%; text-align: left; font: inherit; font-size: .9rem; color: var(--ink); background: none; border: 0; border-top: 1px solid var(--line); padding: .55rem .5rem; min-height: 44px; cursor: pointer; }
+.m3d-part:hover { background: rgba(0,0,0,.04); }
+.m3d-part .m3d-pin { display: inline-block; }
+.m3d-group { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; }
+.m3d-group-title { font-size: .75rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-soft); margin-right: .1rem; }
+.m3d-btn { font: inherit; font-size: .85rem; padding: .45rem .75rem; min-height: 40px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--ink); cursor: pointer; }
+.m3d-btn:hover { border-color: var(--ink-soft); }
+.m3d-btn.m3d-sq { width: 40px; padding: 0; font-size: 1.15rem; font-weight: 600; }
+/* Full screen (all devices; CSS, so it also works on iPhone). */
+html.m3d-lock, html.m3d-lock body { overflow: hidden; }
+.m3d-wrap.is-expanded { position: fixed; inset: 0; z-index: 100; margin: 0; display: flex; flex-direction: column; background: var(--paper); padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+.m3d-wrap.is-expanded .m3d-stage { flex: 1 1 auto; height: auto; min-height: 0; border: 0; border-radius: 0; touch-action: none; }
+.m3d-wrap.is-expanded .m3d-close { display: inline-flex; }
+.m3d-wrap.is-expanded .m3d-hint { left: 64px; top: 14px; }
+.m3d-wrap.is-expanded .m3d-toggles { margin: 0; padding: .5rem .7rem; border-top: 1px solid var(--line); overflow-x: auto; flex-wrap: nowrap; flex: none; }
+.m3d-wrap.is-expanded .m3d-group { flex-wrap: nowrap; }
+.m3d-wrap.is-expanded .m3d-btn { white-space: nowrap; }
+.m3d-wrap.is-expanded .m3d-key { display: none; }
+.m3d-wrap.is-expanded .m3d-parts { flex: none; max-height: 38vh; overflow-y: auto; }
+.m3d-wrap.is-expanded .m3d-parts-box { margin: 0; border-radius: 0; border-width: 1px 0 0; }
+@media (max-width: 900px) {
+  body.m3d-inview .help-fab, body.m3d-inview .wa-fab, body.m3d-inview .top-fab { opacity: 0; pointer-events: none; transition: opacity .2s; }
+}
+
+.m3d-label { max-width: 260px; white-space: normal; }
+.m3d-btn { min-height: 40px; }
+.m3d-btn.m3d-sq { width: 40px; padding: 0; font-size: 1.15rem; font-weight: 600; }
+.m3d-toggles { gap: .5rem 1rem; align-items: center; }
+.m3d-lede { margin-top: .4rem; }
+@media (max-width: 600px) { .m3d-stage { height: 58vh; min-height: 340px; } }
+.m3d-wrap.is-expanded { max-width: none; }
+.m3d-stage.is-passive .m3d-hint { display: none; }

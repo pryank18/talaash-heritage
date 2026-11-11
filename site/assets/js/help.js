@@ -165,6 +165,11 @@ export function initHelp() {
   document.addEventListener("focusin", (e) => document.body.classList.toggle("is-typing", typing(e.target)));
   document.addEventListener("focusout", () => document.body.classList.remove("is-typing"));
 
-  document.body.append(topFab, waFab, fab, panel);
+  // One labelled landmark for the floating buttons, so screen-reader users can find them.
+  const dock = document.createElement("aside");
+  dock.className = "help-dock";
+  dock.setAttribute("aria-label", "Quick help");
+  dock.append(topFab, waFab, fab, panel);
+  document.body.append(dock);
   document.body.classList.add("has-help");
 }
