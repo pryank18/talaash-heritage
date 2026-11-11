@@ -33,6 +33,7 @@ function navLink(href, label) {
 function renderHeader() {
   const el = $("#site-header");
   if (!el) return;
+  el.setAttribute("role", "banner");
   el.innerHTML = `
     <a class="skip" href="#main">Skip to content</a>
     <div class="lang-bar" data-no-translate><div class="lang-bar-inner">
@@ -93,6 +94,7 @@ function initThemeToggle() {
 function renderFooter() {
   const el = $("#site-footer");
   if (!el) return;
+  el.setAttribute("role", "contentinfo");
   const v = getVisitor();
   const year = new Date().getFullYear();
   el.innerHTML = `

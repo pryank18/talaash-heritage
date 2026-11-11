@@ -284,7 +284,9 @@ export function openGate({ hard = false, edit = false } = {}) {
     });
 
     dlg.showModal();
-    $("#g-name", dlg).focus();
+    // On phones, focusing the first field would pop the keyboard up over the welcome
+    // before it has been read; leave focus on the dialog there.
+    if (!(window.matchMedia && window.matchMedia("(pointer: coarse)").matches)) $("#g-name", dlg).focus();
   });
   return openPromise;
 }

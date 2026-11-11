@@ -131,6 +131,12 @@ start(api => {
   return {
     target: [-2, 17, 0], camera: [68, 36, 62],
     phone: { target: [-2, 16, 0], camera: [74, 44, 66] }, minDistance: 8, maxDistance: 140,
+    views: [
+      { name: 'Entrance (east)', camera: [X0 + 34, 13, 0], target: [X0 - 10, 14, 0], layers: [[R, true]] },
+      { name: 'Side', camera: [-2, 17, 64], target: [-2, 15, 0], layers: [[R, true]] },
+      { name: 'Back', camera: [-X0 - 40, 22, -18], target: [-6, 15, 0], layers: [[R, true]] },
+      { name: 'Plan from above', camera: [X0 - 12, F + 58, 5], target: [X0 - 20, F, 0], layers: [[R, false]] },
+    ],
     toggles: [
       { text: 'Roofs and tower', layer: R, on: true, hides: 'inside', viewOff: { target: [X0 - 20, F, 0], camera: [X0 - 12, F + 58, 5] } },
     ],

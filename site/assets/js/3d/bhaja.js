@@ -126,6 +126,11 @@ start(api => {
   return {
     target: [0, 2.6, -10], camera: [15, 14, 2.5], sun: [45, 60, 10],
     phone: { target: [0, 2.4, -9.5], camera: [12, 15, 5] }, minDistance: 4, maxDistance: 70,
+    views: [
+      { name: 'Entrance', camera: [0, 4.5, 15], target: [0, 4, -8] },
+      { name: 'Down the nave', camera: [0.01, 1.7, -0.6], target: [0, 2.4, -14] },
+      { name: 'Plan from above', camera: [0, 34, -8.9], target: [0, 0, -9], layers: [['cut', true]] },
+    ],
     toggles: [
       { text: 'Cutaway', layer: 'cut', on: true, hides: 'shell-right' },
       { text: 'Timber front (hypothetical)', layer: front, on: true },
