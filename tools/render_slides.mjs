@@ -12,7 +12,14 @@ const OUT = 'site/media/ig';
 fs.mkdirSync(OUT, { recursive: true });
 const status = { at: new Date().toISOString(), rendered: [], skipped: [], failed: [] };
 const posts = fs.existsSync(QUEUE) ? fs.readdirSync(QUEUE).filter((d) => fs.statSync(path.join(QUEUE, d)).isDirectory()) : [];
-const browser = await chromium.launch();
+let browser;
+try {
+  browser = await chromium.launch();
+} catch (err) {
+  // Playwright's Chromium could not start (missing system libraries): use the runner's Google Chrome.
+  console.log('Playwright Chromium failed to launch, trying channel chrome:', String(err).slice(0, 200));
+  browser = await chromium.launch({ channel: 'chrome' });
+}
 const page = await browser.newPage({ viewport: { width: 1080, height: 1350 }, deviceScaleFactor: 1 });
 for (const post of posts.sort()) {
   if (!/^[a-z0-9_][a-z0-9-]*$/.test(post)) { status.failed.push({ post, error: 'bad folder name' }); continue; }
