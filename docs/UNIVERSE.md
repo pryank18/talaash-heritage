@@ -32,7 +32,7 @@ Decided 11 Nov 2026 (Pryank: "take ownership, be my main manager for social medi
 | Daily slides | Talaash IG + FB (+ LinkedIn company) | 19:30 every day; 08:00 on festivals | 20:13 queue task |
 | Jaisa Tha 3D reel | Talaash IG + FB, then YouTube Short | **Fri 19:30, weekly**; it is that Friday's main post | Talaash 3D studio, Saturday 8 days ahead |
 | Interactive 3D model page | Talaash website | Any day; one before each archaeology/history Jaisa Tha | Talaash 3D studio |
-| Talaash Lectures (8–15 min) | Talaash YouTube and website page; its 45 s cut is the next Monday's 19:30 main post on IG/FB; LinkedIn post | **First Sunday of the month, 17:00**; fortnightly once two lectures beat the channel median | Talaash lecture studio, the Saturday before |
+| Talaash Lectures (8–15 min) | Talaash YouTube and website page; its 45 s cut is the next Monday's 19:30 main post on IG/FB; LinkedIn post | **First Sunday of the month, about 12:00** (uploaded private on the Friday before, made public by the Sunday review); fortnightly once two lectures beat the channel median | Talaash lecture studio, Friday 9 days before |
 | Heritage desk news | Talaash website | 0–3 a day | Desk task 11:23 |
 | Reels, carousels, Explorer, Khudai Khabar, Rahasya, Ancient India in 3D | archaeologywala IG (Pryank schedules on his phone on Saturdays) | Mon/Wed 20:30 reels, Fri 20:30 Rahasya from 4 Dec, Sat 21:30 flagship, Sun 20:30 carousel | archaeologywala project tasks |
 
