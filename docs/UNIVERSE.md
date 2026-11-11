@@ -32,13 +32,13 @@ Decided 11 Nov 2026 (Pryank: "take ownership, be my main manager for social medi
 | Daily slides | Talaash IG + FB (+ LinkedIn company) | 19:30 every day; 08:00 on festivals | 20:13 queue task |
 | Jaisa Tha 3D reel | Talaash IG + FB, then YouTube Short | **Fri 19:30, weekly**; it is that Friday's main post | Talaash 3D studio, Saturday 8 days ahead |
 | Interactive 3D model page | Talaash website | Any day; one before each archaeology/history Jaisa Tha | Talaash 3D studio |
-| Talaash Lectures (8–15 min) | Talaash YouTube and website page; its 45 s cut is the next Monday's 19:30 main post on IG/FB; LinkedIn post | **First Sunday of the month, about 12:00** (uploaded private on the Friday before, made public by the Sunday review); fortnightly once two lectures beat the channel median | Talaash lecture studio, Friday 9 days before |
+| Talaash Lectures (8–15 min) | Talaash YouTube and website page; its 45 s cut is the next Monday's 19:30 main post on IG/FB; LinkedIn post | **First Sunday of the month, about 12:00** (uploaded private when built, made public by the Sunday review at about 11:40); fortnightly once two lectures beat the channel median | Talaash lecture studio, Friday 9 days before |
 | Heritage desk news | Talaash website | 0–3 a day | Desk task 11:23 |
 | Reels, carousels, Explorer, Khudai Khabar, Rahasya, Ancient India in 3D | archaeologywala IG (Pryank schedules on his phone on Saturdays) | Mon/Wed 20:30 reels, Fri 20:30 Rahasya from 4 Dec, Sat 21:30 flagship, Sun 20:30 carousel | archaeologywala project tasks |
 
 Jaisa Tha rotation: archaeology/history episodes alternate with arts, linguistics/Sanskrit and anthropology episodes; never two archaeology in a row. Models already built (Kandariya Mahadeva, Bhaja Cave 12) are slotted as archaeology/history episodes. Cut rule: if three Jaisa Tha reels in a row get less reach than the median Talaash carousel of the same weeks, go back to fortnightly.
 
-Lecture rules: animated slides (16:9, 1920×1080), English on every slide and English subtitles, narration in Pryank's voice (his cloned Hindi voice from the archaeologywala studio kit, or his own recording if he sends one), 8–15 minutes, chapters in the description, sources on the last slide and in the description, the TALAASHH logo on every slide, "Narrated by @archaeologywala". The lecture page on the site carries the video, the slides as text (for search) and the programme it sells. Fields rotate like Jaisa Tha.
+Lecture rules: each lecture is 2–3 parts of about 5 minutes, each under 4.8 MB, because Make's free plan refuses larger files; animated slides (16:9, 1280×720), English on every slide and English subtitles, narration in Pryank's voice (his cloned Hindi voice from the archaeologywala studio kit, or his own recording if he sends one), 8–15 minutes, chapters in the description, sources on the last slide and in the description, the TALAASHH logo on every slide, "Narrated by @archaeologywala". The lecture page on the site carries the video, the slides as text (for search) and the programme it sells. Fields rotate like Jaisa Tha.
 
 ## 5. Platforms
 | Platform | Use now | Why |
@@ -58,3 +58,13 @@ Lecture rules: animated slides (16:9, 1920×1080), English on every slide and En
 
 ## 7. Quality (unchanged, applies to every piece)
 Primary sources or two independent reputable ones; nothing from memory; three checks (own, a subagent with the sources, a subagent without them trying to disprove); reconstructions labelled and evidence-tagged; no deity images in illustrations; real images with checked open licences only; Brand SOP logo and links blocks; British English; "link in bio" never on Talaash.
+
+## 8. Who runs what (scheduled tasks, 11 Nov 2026)
+| Task | When (IST) | Does |
+|---|---|---|
+| Talaash queue refill | daily 20:13 | Talaash slides and reel rows, ledger entries, Fact numbers |
+| Talaash Heritage desk news | daily 11:23 | Website news |
+| Talaash 3D studio | Sat 13:07 | Jaisa Tha reel for the Friday 6–13 days ahead; 3D model pages; keeps 4 Jaisa Tha slots planned |
+| Talaash lecture studio | Fri 14:23 | Talaash Lectures when one is due within 10 days; teaser for the following Monday |
+| Universe review | Sun 11:37 | Both accounts' numbers, ledger sync, lecture goes public, what moves up, limits |
+| archaeologywala tasks (archaeologywala project) | Sat mornings and nightly | Reels, carousels, Explorer, hand-over to Pryank's phone; read this ledger for topics and numbers |
