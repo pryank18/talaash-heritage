@@ -65,7 +65,7 @@ Lecture rules: each lecture is 2–3 parts of about 5 minutes, each under 4.8 MB
 - Make Free: 1,000 operations a month, ceiling 850, only 2 active scenarios. A post costs about 6. If the Sunday review projects more than 600, Talaash drops to the 19:30 slot only.
 - Apify free credit: the weekly reviews and nightly checks only.
 - No paid tools, no ads, no new subscriptions without Pryank's yes.
-- Never more than 2 of an account's own posts a day; never a filler post. An archaeologywala Collab also shows on Talaash's grid: keep it at least 30 minutes from Talaash's own evening post, and on a festival day (Talaash 08:00 + evening) put no Collab, or move the Collab to another day.
+- Never more than 2 of an account's own posts a day; never a filler post. An archaeologywala Collab also appears on Talaash's grid but is not counted as a Talaash post; it must not be in the same topic as Talaash's own post that day.
 
 ## 7. Quality (unchanged, applies to every piece)
 Primary sources or two independent reputable ones; nothing from memory; three checks (own, a subagent with the sources, a subagent without them trying to disprove); reconstructions labelled and evidence-tagged; no deity images in illustrations; real images with checked open licences only; Brand SOP logo and links blocks; British English; "link in bio" never on Talaash.
