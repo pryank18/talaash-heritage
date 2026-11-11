@@ -1,0 +1,104 @@
+{
+  "_readme": "Interactive 3D model pages. tools/build_3d.py writes site/3d-<page>.html and site/sitemap-3d.xml from this file; build_learn.py, build_catalogue.py and build_reels.py read it for the 'See it in 3D' blocks. Every fact must come from the model's evidence sheet in render/3d/ after the three checks. Tags: Measured, Documented, Comparative, Hypothetical, Reconstructed, Estimated, Illustrative.",
+  "models": [
+    {
+      "page": "3d-kandariya-mahadeva",
+      "ledger": "web-3d-kandariya",
+      "script": "kandariya",
+      "still": "assets/img/3d/3d-kandariya-mahadeva.webp",
+      "label": "Reconstruction from published surveys and plans. Estimated parts tagged.",
+      "title": "Kandariya Mahadeva Temple in 3D | Talaash Heritage",
+      "h1": "Kandariya Mahadeva Temple, Khajuraho, in 3D",
+      "eyebrow": "Architecture",
+      "crumb": ["indian-temple-architecture", "Architecture"],
+      "short": "Kandariya Mahadeva, Khajuraho",
+      "description": "Turn and zoom a 3D model of the Kandariya Mahadeva temple at Khajuraho, built from Cunningham's survey: 109 ft long and 116½ ft high, with every estimated part tagged.",
+      "og_title": "Kandariya Mahadeva in 3D",
+      "og_description": "The largest standing temple at Khajuraho, built from Cunningham's survey. Turn it, zoom in, see what is measured and what is estimated.",
+      "lede": "The Kandariya Mahadeva is the largest standing temple at Khajuraho, built during the Chandela dynasty, who ruled the region in the 10th and 11th centuries CE. This model is built from the measurements Alexander Cunningham published from his 1864–65 survey and from his ground plan. Drag to turn it, pinch or scroll to zoom, and switch the roofs off to see the plan and the sanctum.",
+      "facts": [
+        ["Length", "33.2 m (109 ft) externally", "Measured"],
+        ["Width", "About 18.1 m (59½ ft) externally; Fergusson gives 60 ft (18.3 m)", "Measured"],
+        ["Height", "35.5 m (116½ ft) above the ground; 26.8 m (88 ft) above its own floor", "Measured"],
+        ["Floor level", "8.7 m (28½ ft) above the ground: the difference between the two heights", "Measured"],
+        ["Plan", "Portico, hall (mandapa), great hall with transepts (maha-mandapa), vestibule (antarala) and sanctum (garbha-griha), with a passage round the sanctum lit by three open porticoes at the back and sides: a \"double cross\"", "Documented"],
+        ["Roofs", "Each part has its own roof, rising in steps from the low pyramid over the entrance to the tall spire over the sanctum", "Documented"],
+        ["Sanctum", "A marble liṅga, shown here as a plain labelled shape", "Documented"],
+        ["Sculpture", "Cunningham counted 226 statues inside and 646 outside, 872 in all (not modelled)", "Documented"],
+        ["Dynasty", "Built during the Chandela dynasty, who ruled the region in the 10th and 11th centuries CE", "Documented"],
+        ["Chamber sizes, wall and roof heights", "Read from the published plan and photographs, not from a measured section", "Estimated"],
+        ["Smaller spires round the tower", "Their number and grouping are not taken from a measured drawing", "Estimated"],
+        ["Terrace and base mouldings", "How the 8.7 m rise divides between the shared terrace and the temple's own base", "Estimated"],
+        ["Person", "1.7 m (5 ft 7 in), for scale", "Illustrative"]
+      ],
+      "body": [
+        "Cunningham describes the temple as having the usual portico, hall, great hall, vestibule and sanctum, \"each of which has its separate pinnacled roof rising in regular gradation from the low pyramid of the entrance to the lofty spire of the sanctum\". A second pair of transepts lights the passage round the sanctum, which is why he calls the plan a large double cross rather than a single one.",
+        "What the model does not show: the sculpture. Cunningham counted 872 statues on and in the temple, and no deity figures are modelled here. The sanctum holds a marble liṅga, drawn as a plain shape with a label."
+      ],
+      "visit": "Khajuraho is in Madhya Pradesh. We teach the temples in a two-hour masterclass and walk them with you on site.",
+      "visit_links": [
+        ["khajuraho-architecture-deep-dive", "Khajuraho Architecture Deep Dive (masterclass)"],
+        ["heritage-walk-in-khajuraho", "Heritage walk in Khajuraho (guide)"],
+        ["indian-temple-architecture", "Indian temple architecture (guide)"]
+      ],
+      "sells": "khajuraho-architecture-deep-dive",
+      "guides": ["heritage-walk-in-khajuraho", "indian-temple-architecture"],
+      "sources": [
+        "A. Cunningham, <i>Four Reports Made during the Years 1862-63-64-65</i>, Archaeological Survey of India Reports vol. II (1871), pp. 419–420 (dimensions, plan, roofs, liṅga, statue count) and plate XCVII (plan).",
+        "J. Fergusson, <i>History of Indian and Eastern Architecture</i>, revised edition (1910), fig. 342: plan of the Kandariya Mahadeva after Cunningham; 109 × 60 ft.",
+        "D. N. Shukla, <i>Vāstu-Śāstra</i> (1960): the dimensions and the double-cross plan, quoted from an earlier survey.",
+        "UNESCO World Heritage List no. 240, <a href=\"https://whc.unesco.org/en/list/240/\" rel=\"noopener\">Khajuraho Group of Monuments</a>: the Chandela dynasty."
+      ],
+      "published": "2026-11-11"
+    },
+    {
+      "page": "3d-bhaja-chaitya",
+      "ledger": "web-3d-bhaja",
+      "script": "bhaja",
+      "still": "assets/img/3d/3d-bhaja-chaitya.webp",
+      "label": "Reconstruction from published surveys. Estimated parts tagged.",
+      "title": "Bhaja Caves Chaitya Hall (Cave 12) in 3D | Talaash Heritage",
+      "h1": "Bhaja Caves chaitya hall (Cave 12) in 3D",
+      "eyebrow": "Archaeology",
+      "crumb": ["archaeology-in-india", "Archaeology"],
+      "short": "Bhaja Caves chaitya hall",
+      "description": "Walk round a 3D model of the rock-cut chaitya hall at Bhaja near Lonavala: 59 ft long, 27 pillars, a stupa and teak ribs, from the 1880 survey, with estimated parts tagged.",
+      "og_title": "Bhaja chaitya hall in 3D",
+      "og_description": "A rock-cut prayer hall near Lonavala, built from the 1880 survey: turn it, cut it open and see what is measured and what is estimated.",
+      "lede": "Cave 12 at Bhaja, near Lonavala in Pune district, is an early rock-cut chaitya hall: a prayer hall with a stupa at the far end, cut into the west face of a hill. This model is built from the measurements in Fergusson and Burgess's <i>The Cave Temples of India</i> (1880) and the 1885 Bombay Gazetteer. Drag to turn it, pinch or scroll to zoom, and use the cutaway to look inside.",
+      "facts": [
+        ["Date", "Fergusson and Burgess (1880) put it at about 200 BCE or earlier; the 1885 Gazetteer puts the group in the 2nd and 1st centuries BCE", "Documented"],
+        ["Setting", "The caves are about 122 m (400 ft) above Bhaja village, in the west face of a steep hill", "Documented"],
+        ["Length", "18.0 m (59 ft), with a semicircular apse at the back", "Measured"],
+        ["Width", "8.13 m (26 ft 8 in) (Fergusson and Burgess); the 1885 Gazetteer gives about 29 ft (8.8 m)", "Measured"],
+        ["Height", "8.05 m (26 ft 5 in) from the floor to the top of the vault", "Measured"],
+        ["Pillars", "27 plain octagonal pillars, 3.45 m (11 ft 4 in) high, raking inward about 13 cm (5 in) on each side", "Measured"],
+        ["Nave and aisles", "Nave 4.98 m (16 ft 4 in) wide at the pillar bases and 4.72 m (15 ft 6 in) at their tops; aisles 1.04 m (3 ft 5 in)", "Measured"],
+        ["Vault", "Rises from a narrow ledge 2.26 m (7 ft 5 in) above the pillar tops; ribbed with teak, of which the first four ribs and parts of others had given way or been pulled down by 1880", "Measured"],
+        ["Stupa", "3.35 m (11 ft) across at the floor; drum 1.22 m (4 ft) high; dome 1.83 m (6 ft) high; a two-storeyed box on top with a hole 18 cm (7 in) across and about 51 cm (20 in) deep", "Measured"],
+        ["Front", "Entirely of wood: four holes in the floor for the main uprights, mortices in the arch for a cross-beam, about 170 pin holes in three rows on the great arch", "Documented"],
+        ["Inside", "The 1880 and 1885 surveys record carved symbols on four pillars but no image of the Buddha", "Documented"],
+        ["Wooden front", "The screen, doors and lattice as drawn here: only the sockets, mortices and pin holes survive", "Hypothetical"],
+        ["Pillar and rib spacing, box sizes, aisle ceiling, rock outside the hall", "Not given in the surveys", "Estimated"],
+        ["Person", "1.7 m (5 ft 7 in), for scale", "Illustrative"]
+      ],
+      "body": [
+        "The hall was not all rock. Its vault was lined with teak ribs, and Fergusson and Burgess concluded that the front must have been entirely of wood: four holes in the floor, mortices in the arch and some 170 pin holes show where it was fixed. None of that woodwork survives, so the front in the model is marked hypothetical; switch it off to see only what the rock records.",
+        "The stupa stands in the apse at the far end of the nave. The model shows no figures in the hall: the surveys record only a few carved symbols on four pillars."
+      ],
+      "visit": "Bhaja is near Lonavala in Pune district, Maharashtra. We cover it in our guide to India's Buddhist caves and on heritage walks in Pune.",
+      "visit_links": [
+        ["buddhist-caves-in-india", "Buddhist caves in India (guide)"],
+        ["heritage-walk-in-pune", "Heritage walk in Pune (guide)"]
+      ],
+      "sells": "buddhist-caves-in-india",
+      "guides": ["buddhist-caves-in-india", "heritage-walk-in-pune"],
+      "sources": [
+        "J. Fergusson and J. Burgess, <i>The Cave Temples of India</i> (London, 1880), pp. 182, 223–225 and plate IX (plan and section).",
+        "<i>Gazetteer of the Bombay Presidency</i>, vol. XVIII, part III, Poona (Bombay, 1885), \"Bhaja\".",
+        "Archaeological Survey of India, list of centrally protected monuments, Mumbai Circle: \"Cave temples and inscriptions, Bhaja\"."
+      ],
+      "published": "2026-11-11"
+    }
+  ]
+}

@@ -554,7 +554,8 @@
    ],
    "page": "3d-kandariya-mahadeva",
    "sources": "render/3d/kandariya-sources.md (canvas aa5f80ed-5676-496a-aaee-353ea79aee60)",
-   "sells": "khajuraho-architecture-deep-dive"
+   "sells": "khajuraho-architecture-deep-dive",
+   "notes": "building 2026-11-11: page built from the checked figures (three checks passed; dropped claims listed in render/3d/kandariya-sources.md); waiting for the live check"
   },
   {
    "id": "web-3d-bhaja",
@@ -570,7 +571,8 @@
    ],
    "page": "3d-bhaja-chaitya",
    "sources": "render/3d/bhaja-sources.md (canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2)",
-   "sells": "buddhist-caves-in-india"
+   "sells": "buddhist-caves-in-india",
+   "notes": "building 2026-11-11: page built from the checked figures (three checks passed; dropped claims listed in render/3d/bhaja-sources.md); waiting for the live check"
   },
   {
    "id": "aw-deep-dive-01-roopkund",
@@ -671,6 +673,54 @@
     "nagardhan"
    ],
    "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage)."
+  },
+  {
+   "id": "web-3d-heliodorus",
+   "brand": "talaash",
+   "series": "3d-model",
+   "number": null,
+   "field": "linguistics",
+   "title": "Heliodorus pillar, Vidisha, in 3D: the Brahmi inscription as a stone you can turn",
+   "status": "idea",
+   "slot": "2026-11-30",
+   "platforms": [
+    "website"
+   ],
+   "page": "3d-heliodorus-pillar",
+   "sources": "render/3d/heliodorus-sources.md (sources chosen; figures not yet extracted)",
+   "sells": "write-like-asoka-s-scribes-a-brahmi-workshop"
+  },
+  {
+   "id": "web-3d-toda-dwelling",
+   "brand": "talaash",
+   "series": "3d-model",
+   "number": null,
+   "field": "anthropology",
+   "title": "Toda dwelling hut, Nilgiris, in 3D (from published ethnography)",
+   "status": "idea",
+   "slot": "2026-12-14",
+   "platforms": [
+    "website"
+   ],
+   "page": "3d-toda-dwelling",
+   "sources": "render/3d/toda-dwelling-sources.md (sources chosen; figures not yet extracted)",
+   "sells": "anthropology-and-tribal-india"
+  },
+  {
+   "id": "web-3d-bhimbetka-shelter",
+   "brand": "talaash",
+   "series": "3d-model",
+   "number": null,
+   "field": "arts",
+   "title": "A painted rock shelter at Bhimbetka in 3D, with documented colours",
+   "status": "idea",
+   "slot": "2026-12-28",
+   "platforms": [
+    "website"
+   ],
+   "page": "3d-bhimbetka-shelter",
+   "sources": "render/3d/bhimbetka-shelter-sources.md (sources chosen; figures not yet extracted)",
+   "sells": "bhimbetka-painted-shelters-and-prehistoric-landscapes"
   }
  ]
 }

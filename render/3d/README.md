@@ -8,3 +8,8 @@ Ledger entries: content/universe.json (web-3d-kandariya, web-3d-bhaja, tl-jaisa-
 
 - kandariya-sources.md — Kandariya Mahadeva, Khajuraho (canvas aa5f80ed-5676-496a-aaee-353ea79aee60)
 - bhaja-sources.md — Bhaja Cave 12 chaitya (canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2)
+- heliodorus-sources.md: Heliodorus pillar, Vidisha (linguistics); sources chosen, figures not yet extracted
+- toda-dwelling-sources.md: Toda dwelling hut, Nilgiris (anthropology); sources chosen, figures not yet extracted
+- bhimbetka-shelter-sources.md: a painted shelter at Bhimbetka (arts); sources chosen, figures not yet extracted
+
+Built pages: site/3d-kandariya-mahadeva.html and site/3d-bhaja-chaitya.html (content/models3d.json, tools/build_3d.py). The figures on those pages are the ones that passed the three checks on 11 Nov 2026; the sheets above them list what was dropped and why.

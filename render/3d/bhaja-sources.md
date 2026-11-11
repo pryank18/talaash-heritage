@@ -31,3 +31,8 @@ J. Burgess & J. Fergusson, *The Cave Temples of India* (1880); *Gazetteer of the
 ## Rules
 - Label "Reconstruction from published surveys. Estimated parts tagged." No Buddha figure in the hall.
 - Pages to point to: buddhist-caves-in-india (sells), heritage-walk-in-pune.
+
+## Three checks, 11 Nov 2026 (for site/3d-bhaja-chaitya.html)
+Check 1 read Fergusson & Burgess (1880) pp. 182, 223–225 and the Bombay Gazetteer, Poona (1885) (archive.org OCR). Check 2 (sources given) and check 3 (independent, trying to disprove) ran as separate subagents.
+- Kept: all measured figures above, the hole as about 20 in deep (F&B OCR reads 20½; Gazetteer 1 ft 8 in), the width as 26 ft 8 in (F&B) with the Gazetteer's 29 ft beside it, the date as F&B's view (200 BCE or earlier) beside the Gazetteer's 2nd–1st century BCE, the ribs as fallen or pulled down by 1880, "the surveys record carved symbols on four pillars but no image of the Buddha".
+- Dropped: the purpose of the hole (F&B: umbrella shaft; Gazetteer: a relic) is not stated on the page; the replacement ribs (check 3 found no second source); "among the earliest"; the "in use" layer, colours, rituals and chant (comparative, not recorded at Bhaja); the later painted Buddha images.
