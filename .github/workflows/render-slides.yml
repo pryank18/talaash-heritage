@@ -30,7 +30,7 @@ jobs:
           # System libraries: the runner image normally has them already. If the Ubuntu
           # mirrors are down (11 Nov 2026) this must not stop the render, so it is non-fatal;
           # render_slides.mjs falls back to the runner's preinstalled Google Chrome.
-          sudo npx playwright install-deps chromium || echo "install-deps failed; continuing"
+          timeout 150 sudo npx playwright install-deps chromium || echo "install-deps failed; continuing"
       - name: Render
         run: node tools/render_slides.mjs
       - name: Commit images
