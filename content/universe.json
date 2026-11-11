@@ -550,7 +550,7 @@
    "number": null,
    "field": "history",
    "title": "Kandariya Mahadeva Temple in 3D (interactive)",
-   "status": "building",
+   "status": "live",
    "slot": "2026-11-16",
    "platforms": [
     "website"
@@ -558,7 +558,8 @@
    "page": "3d-kandariya-mahadeva",
    "sources": "render/3d/kandariya-sources.md (canvas aa5f80ed-5676-496a-aaee-353ea79aee60)",
    "sells": "khajuraho-architecture-deep-dive",
-   "notes": "building 2026-11-11: page built from the checked figures (three checks passed; dropped claims listed in render/3d/kandariya-sources.md); waiting for the live check"
+   "notes": "live 2026-11-12: checked on the live site (h1, reconstruction label, both logos); three checks passed 2026-11-11; dropped claims listed in render/3d/kandariya-sources.md",
+   "url": "https://talaash-heritage.pages.dev/3d-kandariya-mahadeva"
   },
   {
    "id": "web-3d-bhaja",
@@ -567,7 +568,7 @@
    "number": null,
    "field": "archaeology",
    "title": "Bhaja Caves chaitya hall (Cave 12) in 3D (interactive)",
-   "status": "building",
+   "status": "live",
    "slot": "2026-11-16",
    "platforms": [
     "website"
@@ -575,7 +576,8 @@
    "page": "3d-bhaja-chaitya",
    "sources": "render/3d/bhaja-sources.md (canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2)",
    "sells": "buddhist-caves-in-india",
-   "notes": "building 2026-11-11: page built from the checked figures (three checks passed; dropped claims listed in render/3d/bhaja-sources.md); waiting for the live check"
+   "notes": "live 2026-11-12: checked on the live site (h1, reconstruction label, both logos, facts table); three checks passed 2026-11-11; dropped claims listed in render/3d/bhaja-sources.md",
+   "url": "https://talaash-heritage.pages.dev/3d-bhaja-chaitya"
   },
   {
    "id": "aw-deep-dive-01-roopkund",
