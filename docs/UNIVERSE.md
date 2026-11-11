@@ -2,6 +2,9 @@
 
 Decided 11 Nov 2026 (Pryank: "take ownership, be my main manager for social media, nothing left, nothing overlapping, everything keeps getting made"). This file and `content/universe.json` sit above `docs/SOCIAL.md` and the archaeologywala run book wherever they differ on numbering, slots or topics. Both projects' scheduled tasks read this file.
 
+
+> **Timing test, 11–29 Nov 2026 (data, not habit).** Meta Business Suite's Planner shows Talaash's Instagram followers most active at 21:30; posts had been going out at 19:40. Reach of 26 carousels, 15 Oct–11 Nov: median 45.5; by type Careers 294 (n=1), Festival 86.5, Main 64, Fact 45.5, Navratri daily 24.5; days of the week have only 2–4 posts each, too few to choose days on. So the evening window moved to 20:55–21:20 (Make scenario 6534359; the queue task moved to 21:43). Rows keep the 19:30 label. On 29 Nov compare each type's median reach against the baseline above and keep the window or move it back. Morning festival window unchanged (07:55–08:20). Never run the helper swap inside either window.
+
 ## 1. One ledger
 - `content/universe.json` holds every piece both brands make: posts, reels, 3D models, lectures, web pages. Each has one id, its series and number, field, status, slot, platforms, the website page it points to (`page`) and the product it sells (`sells`).
 - A piece gets its ledger entry **before** it is built. Series numbers are taken only from the "next numbers" line that `python3 tools/check_universe.py` prints. Never number from memory or from a caption.
@@ -29,7 +32,7 @@ Decided 11 Nov 2026 (Pryank: "take ownership, be my main manager for social medi
 ## 4. Formats and cadence (from 20 Nov 2026)
 | Format | Account | Slot | Made by |
 |---|---|---|---|
-| Daily slides | Talaash IG + FB (+ LinkedIn company) | 19:30 every day; 08:00 on festivals | 20:13 queue task |
+| Daily slides | Talaash IG + FB (+ LinkedIn company) | Evening slot every day (rows say 19:30; the poster publishes them in its 20:55–21:20 window during the timing test, 11–29 Nov 2026); 08:00 on festivals | 21:43 queue task |
 | Jaisa Tha 3D reel | Talaash IG + FB, then YouTube Short | **Fri 19:30, weekly**; it is that Friday's main post | Talaash 3D studio, Saturday 8 days ahead |
 | Interactive 3D model page | Talaash website | Any day; one before each archaeology/history Jaisa Tha | Talaash 3D studio |
 | Talaash Lectures (8–15 min) | Talaash YouTube and website page; its 45 s cut is the next Monday's 19:30 main post on IG/FB; LinkedIn post | **First Sunday of the month, about 12:00** (uploaded private when built, made public by the Sunday review at about 11:40); fortnightly once two lectures beat the channel median | Talaash lecture studio, Friday 9 days before |
