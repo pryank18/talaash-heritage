@@ -3,7 +3,7 @@ plus how the existing database listings are shown (hidden, or enquiry-only).
 Run: python3 build_catalogue.py <path to site/data/catalogue.json>
 """
 import json, os, re, sys, unicodedata
-from pricing import pricing as price_block, inr
+from pricing import pricing as price_block, inr, SHOW_PRICES
 
 LANG = "English, Hindi or both. Other languages on request, through our partners."
 
@@ -583,7 +583,8 @@ for i, b in enumerate(EXTRA["programmes"]):
             p["details"].pop(k, None)  # a general row that does not fit this programme
         else:
             p["details"][k] = v
-    p["details"]["Price"] = p["details"].pop("Price")  # keep the price as the last row
+    if "Price" in p["details"]:
+        p["details"]["Price"] = p["details"].pop("Price")  # keep the price as the last row
     catalogue["programmes"].append(p)
 
 # Weekly closing days and prayer times the general wording would get wrong (checked 15 Oct 2026).
@@ -693,7 +694,9 @@ MEDIA = json.load(open(MEDIA_PATH, encoding="utf-8")) if os.path.exists(MEDIA_PA
 
 
 def attach(p):
-    pb = price_block(p)
+    pb = price_block(p) if SHOW_PRICES else None
+    if not SHOW_PRICES:
+        (p.get("details") or {}).pop("Price", None)  # prices are quoted to each group, not shown (pricing.SHOW_PRICES)
     if pb:
         p["pricing"] = pb
         p["price_paise"] = pb["from_paise"]
@@ -716,7 +719,10 @@ for slug, ov in catalogue["overrides"].items():
         attach(ov)
         ov.pop("slug")
         if "Length and fee" in ov.get("details", {}):
-            ov["details"]["Length and fee"] = "About 60 minutes. " + ov["pricing"]["card"] + ", including GST"
+            if SHOW_PRICES:
+                ov["details"]["Length and fee"] = "About 60 minutes. " + ov["pricing"]["card"] + ", including GST"
+            else:
+                ov["details"] = {("Length" if k == "Length and fee" else k): ("About 60 minutes" if k == "Length and fee" else v) for k, v in ov["details"].items()}
         ov["description"] = ov["description"].replace(" Its length and fee are confirmed when you enquire.", "")
 
 # Career courses sold through the cart and booked for a weekend evening (rows in the products table):
@@ -796,7 +802,7 @@ def card_art(p, sizes):
 
 
 def type_line(p):
-    return f'{p["kind"]} · {p["pricing"]["card"]}' if p.get("pricing") else f'{p["kind"]} · On request'
+    return f'{p["kind"]} · {p["pricing"]["card"]}' if p.get("pricing") else p["kind"]
 
 
 def static_card(p):
@@ -843,11 +849,31 @@ def group_total(bands, n):
     return f"1 person: {inr(total)} in total" if n == 1 else f"{n} people: {inr(total)} in total ({inr(each)} each)"
 
 
+# Shown in place of prices (pricing.SHOW_PRICES is False). Mirrors TAILOR and tailorHtml() in assets/js/ui.js.
+TAILOR_LEAD = "Made for your group"
+TAILOR_POINTS = ["Your day and start time, weekends and special days included",
+                 "Any group size, from one person to a whole class",
+                 "Your pace and your language: English, Hindi or both"]
+ENTRY_KINDS = {"Heritage walk", "Museum visit", "Day trip", "Study tour"}
+ENTRY_NOTE = "Monument and museum entry fees, where charged, are paid at the site."
+
+
+def tailor_html(p):
+    """What the programme page says instead of a price: how it is shaped to the group, and a group-size picker
+    that only fills in the WhatsApp and email request."""
+    opts = "".join(f'<option value="{n}"{" selected" if n == 2 else ""}>{n}</option>' for n in range(1, 26)) + '<option value="26">More than 25</option>'
+    points = "".join(f"<li>{h(x)}</li>" for x in TAILOR_POINTS)
+    entry = f'<p class="tailor-small">{h(ENTRY_NOTE)}</p>' if p.get("kind") in ENTRY_KINDS else ""
+    return (f'<section class="tailor" aria-label="{h(TAILOR_LEAD)}"><ul class="tailor-points">{points}</ul>'
+            f'<div class="pcalc"><label for="pcalc-size">How many people?</label> <select id="pcalc-size" data-pcalc>{opts}</select></div>'
+            f'{entry}</section>')
+
+
 def pricing_html(p):
     """The price table on a programme page. Mirrors pricingHtml() in assets/js/ui.js."""
     pb = p.get("pricing")
     if not pb:
-        return ""
+        return "" if SHOW_PRICES else tailor_html(p)
     cells = "".join(
         f'<li class="ptier{" ptier-wide" if t.get("bands") else ""}"><p class="ptier-label">{h(t["label"])}</p>'
         f'<p class="ptier-price">{h(t["amount"])}</p><p class="ptier-unit">{h(t["unit"])}</p>'
@@ -1157,7 +1183,7 @@ def static_page(p):
     <div>
       <h1>{h(p["title"])}</h1>
       <p class="product-sub">{h(p["subtitle"])}</p>
-      <p class="product-price">{h(p["pricing"]["card"]) if p.get("pricing") else "On request"}</p>
+      <p class="product-price">{h(p["pricing"]["card"]) if p.get("pricing") else TAILOR_LEAD}</p>
       {pricing_html(p)}
       <div class="request">
         <p><strong>Arranged for your group.</strong> {h(how)}</p>

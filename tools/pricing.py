@@ -12,6 +12,11 @@ Rules that shape the numbers:
 """
 import re
 
+# 12 Nov 2026, Pryank: prices are not shown on the site. Every programme is presented as made for
+# the group that asks, and the quotation is sent on WhatsApp or by email. The tables below stay the
+# reference for those quotations. Set to True to show the price cards again, then rebuild.
+SHOW_PRICES = False
+
 WORD_NUM = {"two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
 
 
