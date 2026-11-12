@@ -1,6 +1,6 @@
 # Toda dwelling hut (Nilgiris): 3D evidence sheet (anthropology)
 
-Started 11 Nov 2026 by the Talaash 3D studio. **Status (12 Nov 2026): check 1 extraction done (below); checks 2 and 3 not yet run, and every figure must be re-read against the page scans (OCR). Nothing on this sheet may be built until each figure is taken from the source named and passes the THREE CHECKS (render/3d/README.md).**
+Started 11 Nov 2026 by the Talaash 3D studio. **Status (12 Nov 2026): three checks done; use only the "Kept" list at the end. Still to do before building: a design canvas. Nothing on this sheet may be built until each figure is taken from the source named and passes the THREE CHECKS (render/3d/README.md).**
 
 ## The object
 The barrel-roofed dwelling hut of the Toda people of the Nilgiri hills, as recorded in published ethnography: a vernacular house type you can turn and cut open. Dwelling only. The Toda dairies are sacred places and are not modelled; no people are shown other than the plain 1.7 m scale figure.
@@ -31,3 +31,14 @@ Sources: W. H. R. Rivers, *The Todas* (1906; fieldwork 1901-02), Project Gutenbe
 - Outside (Documented): raised seats *kwottün* either side of the door (Rivers p. 29); enclosure wall of loose stones 2-3 ft (Shortt), about 3 ft (Marshall).
 - Period: the measured figures are from about 1870, the description from 1901-02. Say so on the page; the Todas live in the Nilgiris today and houses have changed.
 - Not modelled: dairies (sacred), people.
+
+## Three checks, 12 Nov 2026 (result: use only this list)
+Kept (both checks confirmed):
+- The house is called ars; "shaped like half a barrel, with the barrel-like roof and sides projecting for a considerable distance beyond the front partition containing the door" (Rivers 1906, p. 28). Documented.
+- The entrance is always very small and closed by a door which slides over the opening on its inner side (Rivers pp. 28–29). Shortt: a solid slab or plank of wood 4 to 6 in thick; one has to go down on all fours. Documented.
+- Shortt (1868, quoted by Breeks 1873 and Thurston): huts usually 10 ft high, 18 ft long and 9 ft broad; doorway 32 in high and 18 in wide. Measured (older account).
+- Shortt: built of bamboo closely laid together, fastened with rattan, and covered with thatch; end walls of solid blocks of wood. Documented.
+- Raised sleeping places called tün inside; the floor divided into two parts by the hole in which grain is pounded (Rivers p. 30). Shortt: a raised clay platform about 2 ft high, a fireplace on the opposite side, the mortar a hole 7 to 9 in deep. Documented.
+- Raised seats called kwottün either side of the door (Rivers p. 29). A wall (katu) encloses the group of huts, with two or three narrow openings large enough for a man but not a buffalo (Rivers p. 25). Shortt: a loose-stone wall 2–3 ft high round each hut. Documented.
+- Rivers's research was funded for 1901–02 (preface).
+Dropped or held: all W. E. Marshall (1873) figures and details (rooms 8 × 8 × 8 ft, cubits, roof projection, grass thatch, planking, clay and cow-dung), because the second check could not read his book; "low stone wall, katu" as one wall (it merged two different walls).
