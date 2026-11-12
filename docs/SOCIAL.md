@@ -57,7 +57,7 @@ Every Talaash post carries the Talaash Heritage logo and the other social links.
 - Fact numbers rise with the date and never repeat (001-010 used by 14 Nov 2026).
 
 ## Walk and event posts: lessons from a benchmark (12 Nov 2026)
-Studied: Varaha Heritage, Mehrauli walk poster (instagram.com/p/DfofGxlMD66, posted 12 Nov 2026, run as a paid ad). Reference only; nothing is copied and no collab follows.
+Studied: Varaha Heritage, Mehrauli walk poster (instagram.com/p/DfofGxlMD66, posted 12 Nov 2026 IST, shown as a paid ad). Reference only; nothing is copied and no collab follows.
 
 Adopt
 - Story title first. A walk or event post leads with a theme title, not the monument's name ("Cities Beneath Cities" style), then one line saying what the visitor will see, in date order.
@@ -69,4 +69,4 @@ Adopt
 Never copy
 - "DM us", "link in bio" or a Google Form link. Booking goes through the Talaash page and checkout.
 - Paid boosting or a joint post with another organisation (no spend, no collabs for now).
-- Hashtags without "#" or more than 5. The queue check counts exactly 5, each starting with "#".
+- Hashtags without "#" or more than 5. Before queueing, count them: exactly 5, each starting with "#".

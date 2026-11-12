@@ -43,7 +43,7 @@ Research date: 15 October 2026. All recommended prices are in INR and **include 
 | 23 | Sair-e-Hind | Mehrauli heritage walk (3 h) | ₹400 | per person | about 2022 (OLD) | Excerpt (Facebook) | https://www.facebook.com/groups/delhincrtravelbuddies/posts/513943797706266/ |
 | 24 | Let Us Go (Kolkata) | Midnight Calcutta Walk | ₹1,750 | per person | 2018 (OLD) | Verified | https://www.outlookindia.com/traveller/destinations/7-heritage-walks-in-india-that-go-beyond-food/ |
 | 25 | Beyond Bombay | Bookworming tour, Delhi and Mumbai | ₹3,500 (₹800–1,000 when part of a group tour) | per person | 2018 (OLD) | Verified | same |
-| 25a | Varaha Heritage × History Beyond Books | "Cities Beneath Cities" Mehrauli Archaeological Park walk (3 h, Sat 14 Nov 2026, 14:30–17:30) | ₹750, including GST | per person | 12 Nov 2026 | Verified (post caption read on 12 Nov 2026) | https://www.instagram.com/p/DfofGxlMD66/ |
+| 25a | Varaha Heritage × History Beyond Books | "Cities Beneath Cities" Mehrauli Archaeological Park walk (3 h, Sat 14 Nov 2026, 14:30–17:30) | ₹750, including GST | per person | 12 Nov 2026 | Verified (full caption read through an Instagram scraper on 12 Nov 2026; image not opened) | https://www.instagram.com/p/DfofGxlMD66/ |
 
 ### A2. Heritage walks and guided visits: private-group pricing
 
