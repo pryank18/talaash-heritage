@@ -114,6 +114,7 @@ def check_audio(d):
     assert a["seconds"] > 60, f'{d["page"]}: audio seconds looks wrong'
 
 
+FEED_START = datetime.datetime(2026, 11, 12, 21, 30, tzinfo=datetime.timezone(datetime.timedelta(hours=5, minutes=30)))
 PODCAST_COVER = "assets/img/podcast-durlabh.jpg"
 PODCAST_DESC = ("Durlabh means rare, hard to find. Every Sunday Talaash Heritage takes one rare subject from India's past, "
                 "in archaeology, linguistics, anthropology, arts, Sanskrit, history or heritage, and studies it properly. "
@@ -160,7 +161,7 @@ def podcast_feed(live, now):
   <itunes:category text="Education"/>
   <itunes:explicit>false</itunes:explicit>
   <itunes:type>episodic</itunes:type>
-  <lastBuildDate>{format_datetime(now)}</lastBuildDate>
+  <lastBuildDate>{format_datetime(max([d["_release"] for d in eps], default=FEED_START))}</lastBuildDate>
 {items}</channel>
 </rss>
 """
