@@ -113,3 +113,11 @@
   .m3d-app-bj .bj-bar button { min-height: 36px !important; white-space: nowrap; }
   .m3d-app-bj .bj-bar input[type=range] { width: 120px !important; }
 }
+
+/* Phones and tablets: a vertical swipe on the model scrolls the page; a sideways drag turns it,
+   two fingers pinch to zoom. Full screen keeps every gesture for the model. */
+@media (pointer: coarse) {
+  .m3d-app canvas { touch-action: pan-y !important; }
+  .m3d-app:fullscreen canvas, .m3d-app :fullscreen canvas { touch-action: none !important; }
+}
+.m3d-app .bj-scroll:focus-visible, .m3d-app .k-panel-body:focus-visible { outline: 2px solid #e0a526; outline-offset: -2px; }
