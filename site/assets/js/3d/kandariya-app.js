@@ -1085,7 +1085,7 @@ class Component extends DCLogic {
       [10, 'Shikhara and its 84 smaller replicas', SX, K.HTOP + 0.9, 0, 'out'],
       [11, 'Urushringa', SX, 28.0, -7.0, 'out'],
       [12, 'Adhiṣṭhāna (moulded base)', X(110), J + 2.4, -Hp(108) - 0.8, 'out'],
-      [13, 'Rear (west) balcony', -0.8, F + 2.6, 0, 'out'],
+      [13, 'Rear balcony', -0.8, F + 2.6, 0, 'out'],
       [14, 'Makara-toraṇa', L + 0.6, F + 4.9, 0, 'out'],
       [15, 'Scale figure, 1.70 m', 52.5, 1.95, -5.5, 'out']
     ];
@@ -1653,7 +1653,7 @@ class Component extends DCLogic {
     const tabs = [['facts', 'Facts'], ['disc', 'Discrepancies'], ['elems', 'Model elements'], ['ico', 'Iconography'], ['labels', 'Labels and layers'], ['sources', 'Sources']].map((t) => ({ label: t[1], cls: s.tab === t[0] ? 'tab on' : 'tab', sel: s.tab === t[0] ? 'true' : 'false', pick: () => this.setState({ tab: t[0] }) }));
     const F = (k, v, tag, src) => ({ k: k, v: v, tag: tag, cls: tagCls(tag), src: src });
     const facts = [
-      F('Date', 'Krishna Deva (ASI) assigns it, as a plausible inference, to the latter part of the Chandela king Vidyādhara\'s reign, c. 1025–50 CE. The ASI\'s website attributes it to king Gaṇḍa.', 'DOCUMENTED', '[2] [5]'),
+      F('Date', 'Krishna Deva (ASI) dates it to c. 1025–50 CE and assigns it, as a plausible inference, to the latter part of the Chandela king Vidyādhara\'s reign. The ASI\'s website attributes it to king Gaṇḍa.', 'DOCUMENTED', '[2] [5]'),
       F('Deity and image', 'Śiva. A marble liṅga stands in the sanctum.', 'DOCUMENTED', '[1]'),
       F('Length, external', f(109 * K.FT) + ' (109 ft).', 'MEASURED', '[1]'),
       F('Width, external', 'About ' + f(59.5 * K.FT) + ' (59½ ft) in Cunningham; Fergusson and Shukla give 60 ft, which the model uses.', 'MEASURED', '[1] [3] [4]'),
@@ -1666,7 +1666,7 @@ class Component extends DCLogic {
       F('Roofs', 'Each part has its own pinnacled roof, rising in regular gradation from the low pyramid of the entrance to the lofty spire of the sanctum.', 'DOCUMENTED', '[1]'),
       F('Plan', 'Porch, hall, great hall with transepts, vestibule and sanctum, with a passage round the sanctum lit by three open porticoes at the back and sides: a large double cross.', 'DOCUMENTED', '[1] [3]'),
       F('Ground plan used', "Cunningham's survey plan as published by Fergusson (1910), fig. 342, 50 ft to 1 in. Walls, openings and pillar positions in the model are scaled from it.", 'MEASURED', '[4]'),
-      F('Sanctum cell', 'About ' + f(2 * 21.5 * PXZ) + ' wide by ' + f(58 * PXA) + ' long, read from the plan. The east doorway, frame included, is about ' + f(2 * 18.5 * PXZ) + ' wide.', 'ESTIMATED', '[4]'),
+      F('Sanctum cell', 'About ' + f(2 * 21.5 * PXZ) + ' wide by ' + f(58 * PXA) + ' long, read from the plan. The doorway, frame included, is about ' + f(2 * 18.5 * PXZ) + ' wide.', 'ESTIMATED', '[4]'),
       F('Ambulatory', 'A narrow passage, ' + f(0.6) + '–' + f(1.0) + ' wide, between the stepped sanctum wall and outer walls about ' + f(30.5 * PXZ) + ' thick, read from the plan.', 'ESTIMATED', '[4]'),
       F('Great hall', 'Interior about ' + f(2 * 63.5 * PXZ) + ' wide by ' + f(90 * PXA) + ' long, read from the plan. Cunningham describes four central pillars; the plan also shows two in each transept window.', 'DOCUMENTED', '[1] [4]'),
       F('Halls', 'The halls are enclosed by sloping balustrades (kakṣāsana).', 'DOCUMENTED', '[2]'),
@@ -1684,7 +1684,7 @@ class Component extends DCLogic {
     ];
     const disc = [
       { k: 'Width', v: 'About 59½ ft (Cunningham) [1]; 60 ft (Fergusson, Shukla) [3][4].', used: '60 ft. The half-foot is within the precision of the published plan.' },
-      { k: 'Date and builder', v: 'Krishna Deva: probably late in Vidyādhara\'s reign, c. 1025–50 [2]. The ASI\'s website: king Gaṇḍa [5].', used: 'Both are shown. The model is one phase, so the dating does not change the geometry.' },
+      { k: 'Date and builder', v: 'Krishna Deva: c. 1025–50, probably late in Vidyādhara\'s reign [2]. The ASI\'s website: king Gaṇḍa [5].', used: 'Both are shown. The model is one phase, so the dating does not change the geometry.' },
       { k: 'Drawing against stated size', v: 'Scaled so its length is 109 ft, the plan [4] gives a width of 61 ft, against the stated 60 ft [3]: a 1.7% difference.', used: 'Each axis is scaled to its own measured figure: length to 109 ft, width to 60 ft.' },
       { k: 'Spire count', v: '84 smaller replicas round the grand śikhara [2].', used: '84 smaller spires plus the main one, 85 peaks in all. Their grouping is estimated.' },
       { k: 'Hall pillars', v: 'Cunningham describes four central pillars [1].', used: 'As drawn on the plan [4]: four central pillars and two in each transept window, with pilasters at the window jambs.' },
