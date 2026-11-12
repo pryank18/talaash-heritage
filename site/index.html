@@ -71,10 +71,6 @@
         <h2 id="walks-title">Join a heritage walk</h2>
         <p class="walks-lede">Monuments, museums and old cities, with an archaeologist or historian beside you. Choose a place, tell us the day that suits you, and we shape the walk around your group.</p>
       </div>
-      <div class="walks-nav">
-        <button class="walks-btn" type="button" data-walks-prev aria-label="Previous walks" aria-controls="walks-track" disabled><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg></button>
-        <button class="walks-btn" type="button" data-walks-next aria-label="More walks" aria-controls="walks-track"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg></button>
-      </div>
     </div>
     <ul class="walks-track" id="walks-track" tabindex="0" aria-label="Walks and day trips">
     <li class="walk-slide">
@@ -89,9 +85,9 @@
       <a class="walk-link" href="humayuns-tomb.html"><span class="walk-pic"><img src="assets/img/walks/carousel/humayuns-tomb-560.webp" srcset="assets/img/walks/carousel/humayuns-tomb-560.webp 560w, assets/img/walks/carousel/humayuns-tomb-960.webp 960w" sizes="(min-width: 1000px) 19rem, 80vw" alt="The main mausoleum of Humayun&#x27;s Tomb in Delhi, seen across its garden." width="960" height="638" loading="lazy"></span><span class="walk-body"><span class="walk-place">Nizamuddin, Delhi · Walk</span><span class="walk-title">Humayun&#x27;s Tomb</span><span class="walk-line">The Mughal emperor Humayun&#x27;s tomb and its garden.</span><span class="walk-go">See the walk</span></span></a>
       <p class="walk-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:20191205_Grobowiec_Humajuna_w_Delhi_1055_6794.jpg" rel="noopener">Jakub Hałun</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="license noopener">CC BY-SA 4.0</a></p>
     </li>
-    <li class="walk-slide walk-slide-art">
-      <a class="walk-link" href="rakhigarhi.html"><span class="walk-pic"><span class="walk-art" aria-hidden="true"></span></span><span class="walk-body"><span class="walk-place">Haryana · Day trip</span><span class="walk-title">Rakhigarhi: a Harappan city and a living village</span><span class="walk-line">One of the largest Harappan sites, and a living village, with an archaeologist.</span><span class="walk-go">See the day trip</span></span></a>
-      
+    <li class="walk-slide">
+      <a class="walk-link" href="rakhigarhi.html"><span class="walk-pic"><img src="assets/img/photos/rakhigarhi-500.webp" srcset="assets/img/photos/rakhigarhi-500.webp 500w, assets/img/photos/rakhigarhi-960.webp 960w" sizes="(min-width: 1000px) 19rem, 80vw" alt="Scrub-covered mounds of the Harappan site at Rakhigarhi, Hisar district, Haryana." width="960" height="720" loading="lazy"></span><span class="walk-body"><span class="walk-place">Haryana · Day trip</span><span class="walk-title">Rakhigarhi: a Harappan city and a living village</span><span class="walk-line">One of the largest Harappan sites, and a living village, with an archaeologist.</span><span class="walk-go">See the day trip</span></span></a>
+      <p class="walk-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Rakhigarhi_Harappan_civilization.jpg" rel="noopener">Durgeshkushvaha</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="license noopener">CC BY-SA 4.0</a></p>
     </li>
     <li class="walk-slide">
       <a class="walk-link" href="agra-day-trip-taj-mahal-agra-fort.html"><span class="walk-pic"><img src="assets/img/walks/carousel/taj-mahal-560.webp" srcset="assets/img/walks/carousel/taj-mahal-560.webp 560w, assets/img/walks/carousel/taj-mahal-960.webp 960w" sizes="(min-width: 1000px) 19rem, 80vw" alt="The south face of the Taj Mahal in Agra, seen across its garden." width="960" height="631" loading="lazy"></span><span class="walk-body"><span class="walk-place">Agra · Day trip</span><span class="walk-title">Agra in a day: the Taj Mahal and Agra Fort</span><span class="walk-line">The Taj Mahal and Agra Fort in a day, with an archaeologist at both.</span><span class="walk-go">See the day trip</span></span></a>
@@ -110,6 +106,12 @@
       <p class="walk-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Jamali_Kamali_Mosque_New_Delhi,_India.jpg" rel="noopener">Harvinder Chandigarh</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="license noopener">CC BY-SA 4.0</a></p>
     </li>
     </ul>
+    <div class="walks-controls">
+      <button class="walks-btn" type="button" data-walks-prev aria-label="Previous walk" aria-controls="walks-track"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div class="walks-dots" data-walks-dots></div>
+      <button class="walks-btn" type="button" data-walks-next aria-label="Next walk" aria-controls="walks-track"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg></button>
+      <button class="walks-btn walks-play" type="button" data-walks-play aria-label="Pause the slideshow" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="i-pause" d="M9 6v12M15 6v12"/><path class="i-play" d="M8 5l11 7-11 7z"/></svg></button>
+    </div>
     <div class="walks-foot">
       <a class="btn btn-primary" href="https://wa.me/917397829282?text=Hello%20Talaash%20Heritage%2C%20I%20would%20like%20to%20join%20a%20heritage%20walk.%0AWalk%3A%0APreferred%20day%3A%0ANumber%20of%20people%3A%0A%28ref%3A%20home-walks%29" target="_blank" rel="noopener">Plan a walk on WhatsApp</a>
       <a href="shop.html?group=delhi-walks">All Delhi walks</a>

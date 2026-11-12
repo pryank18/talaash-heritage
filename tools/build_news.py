@@ -39,6 +39,40 @@ FIELDS = {
     "history": ("History", "indian-history-timeline"),
     "heritage": ("Heritage, museums and conservation", "what-is-cultural-heritage"),
 }
+# Every story carries a photograph (Pryank, 12 Nov 2026: nothing on the site without an image).
+# A story may name its own photo with "image": <key in content/media.json>; otherwise it gets the
+# photo for its field, whose caption names what the picture actually shows.
+FIELD_PHOTO = {
+    "archaeology": "guide:what-is-archaeology",
+    "linguistics": "guide:brahmi-script",
+    "anthropology": "guide:what-is-ethnography",
+    "arts": "guide:folk-dances-of-india-state-wise",
+    "sanskrit": "guide:learn-sanskrit-for-beginners",
+    "history": "red-fort-complex",
+    "heritage": "humayuns-tomb",
+}
+MEDIA = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "content", "media.json"), encoding="utf-8"))
+assert all(k in MEDIA for k in FIELD_PHOTO.values()), "a field photo is missing from content/media.json"
+
+
+def photo(s):
+    return MEDIA.get(s.get("image") or "") or MEDIA[FIELD_PHOTO[s["field"]]]
+
+
+def figure(s):
+    m = photo(s)
+    return (f'<figure class="guide-hero news-hero"><img src="{h(m["src"])}" srcset="{h(m["small"])} 500w, {h(m["src"])} 960w" '
+            f'sizes="(min-width: 760px) 46rem, 100vw" alt="{h(m["alt"])}" width="960" height="600" fetchpriority="high"{' class="fit-contain"' if m.get("portrait") else ""}>'
+            f'<figcaption class="photo-credit">{h(m["alt"])} Photo: <a href="{h(m["page"])}" rel="noopener">{h(m["credit"])}</a>, '
+            f'<a href="{h(m["license_url"])}" rel="license noopener">{h(m["license"])}</a>, via {h(m.get("via", "Wikimedia Commons"))}</figcaption></figure>')
+
+
+def thumb(s):
+    m = photo(s)
+    return (f'<a class="news-thumb" href="news-{h(s["slug"])}.html" tabindex="-1" aria-hidden="true"><img src="{h(m["small"])}" alt="" '
+            f'width="500" height="375" loading="lazy"{' class="fit-contain"' if m.get("portrait") else ""}></a>')
+
+
 COVERAGE_DAYS = 14
 COVERAGE_TARGET = 2  # stories per field per 14 days
 STATUS = {"published", "draft", "withdrawn"}
@@ -204,6 +238,7 @@ def story_page(s):
       <p class="guide-lede">{h(s["dek"])}</p>
       <p class="guide-byline">Talaash Heritage desk · Published {fmt(s["published"])}{upd}</p>
     </header>
+    {figure(s)}
     {note}
     {spec}
     <div class="news-text">{body}</div>
@@ -229,12 +264,12 @@ def hub(stories):
             continue
         flag = ' · <span class="news-flag">Withdrawn</span>'
         lis = "".join(
-            f'<li class="news-item"><p class="news-meta"><time datetime="{s["published"]}">{fmt(s["published"])}</time>'
+            f'<li class="news-item has-thumb">{thumb(s)}<div><p class="news-meta"><time datetime="{s["published"]}">{fmt(s["published"])}</time>'
             f' · {h(" · ".join(FIELDS[f][0] for f in fields_of(s)))}'
             f'{flag if s["status"] == "withdrawn" else ""}</p>'
             f'<h3><a href="news-{s["slug"]}.html">{h(s["title"])}</a></h3><p>{h(s["dek"])}</p>'
             + (f'<p class="small muted">{" · ".join(h(k + ": " + v) for k, v in facts(s))}</p>' if facts(s) else "")
-            + "</li>" for s in items[:30])
+            + "</div></li>" for s in items[:30])
         sections.append(f'<section class="news-cat" id="{key}" aria-labelledby="h-{key}"><h2 id="h-{key}">{h(name)}</h2><ol class="news-list">{lis}</ol></section>')
     subj = []
     for key, (name, guide) in FIELDS.items():

@@ -36,28 +36,89 @@ function featureCard(p) {
 }
 
 // "Special weekends and special days": the walks carousel under the hero. The slides are in the page
-// itself; this only moves it a slide at a time and switches the arrows off at either end.
+// itself. It moves on by one slide every few seconds and loops; it stops while the visitor points at it,
+// touches it, tabs into it, when it is off screen or the tab is hidden, and for good when the visitor
+// presses pause or asks for reduced motion. Arrows and dots move it by hand.
 function initWalks() {
   const track = $("#walks-track");
   const prev = $("[data-walks-prev]");
   const next = $("[data-walks-next]");
+  const dotsHost = $("[data-walks-dots]");
+  const play = $("[data-walks-play]");
   if (!track || !prev || !next) return;
-  const step = () => {
-    const slide = track.querySelector(".walk-slide");
-    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-    return slide ? slide.getBoundingClientRect().width + gap : track.clientWidth * 0.8;
+  const slides = [...track.querySelectorAll(".walk-slide")];
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const behavior = reduce ? "auto" : "smooth";
+  const hi = lang === "hi";
+  const gap = () => parseFloat(getComputedStyle(track).columnGap) || 0;
+  const stepW = () => (slides[0] ? slides[0].getBoundingClientRect().width + gap() : track.clientWidth * 0.8);
+  const maxLeft = () => track.scrollWidth - track.clientWidth;
+  const current = () => Math.round(track.scrollLeft / stepW());
+  // Positions a visitor can land on: every slide until the last screenful is in view.
+  const stops = () => Math.max(1, Math.round(maxLeft() / stepW()) + 1);
+  const goTo = (i) => track.scrollTo({ left: Math.min(i * stepW(), maxLeft()), behavior });
+
+  let dots = [];
+  const drawDots = () => {
+    if (!dotsHost) return;
+    const n = stops();
+    if (dots.length === n) return;
+    dotsHost.innerHTML = Array.from({ length: n }, (_, i) =>
+      `<button type="button" class="walks-dot" aria-label="${hi ? `स्लाइड ${i + 1}` : `Go to slide ${i + 1}`}"></button>`).join("");
+    dots = [...dotsHost.querySelectorAll(".walks-dot")];
+    dots.forEach((d, i) => d.addEventListener("click", () => { goTo(i); hold(); }));
   };
   const sync = () => {
-    const max = track.scrollWidth - track.clientWidth - 2;
-    prev.disabled = track.scrollLeft <= 2;
-    next.disabled = track.scrollLeft >= max;
+    drawDots();
+    const atEnd = track.scrollLeft >= maxLeft() - 2;
+    const i = atEnd ? stops() - 1 : current();
+    dots.forEach((d, k) => d.setAttribute("aria-current", k === i ? "true" : "false"));
   };
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  prev.addEventListener("click", () => track.scrollBy({ left: -step(), behavior: reduce ? "auto" : "smooth" }));
-  next.addEventListener("click", () => track.scrollBy({ left: step(), behavior: reduce ? "auto" : "smooth" }));
+
+  // Autoplay
+  let stopped = reduce;
+  let paused = false;
+  let visible = true;
+  let timer = null;
+  const tick = () => {
+    if (stopped || paused || !visible || document.hidden) return;
+    const atEnd = track.scrollLeft >= maxLeft() - 2;
+    if (atEnd) goTo(0);
+    else goTo(current() + 1);
+  };
+  const start = () => { clearInterval(timer); timer = setInterval(tick, 4500); };
+  let resume = null;
+  const hold = () => { paused = true; clearTimeout(resume); resume = setTimeout(() => { paused = false; }, 8000); };
+  const setPlayLabel = () => {
+    if (!play) return;
+    play.setAttribute("aria-pressed", stopped ? "true" : "false");
+    play.setAttribute("aria-label", stopped ? (hi ? "स्लाइड शो चलाएँ" : "Play the slideshow") : (hi ? "स्लाइड शो रोकें" : "Pause the slideshow"));
+    play.classList.toggle("is-stopped", stopped);
+  };
+
+  prev.addEventListener("click", () => {
+    hold();
+    if (track.scrollLeft <= 2) goTo(stops() - 1); else goTo(current() - 1);
+  });
+  next.addEventListener("click", () => {
+    hold();
+    if (track.scrollLeft >= maxLeft() - 2) goTo(0); else goTo(current() + 1);
+  });
+  play?.addEventListener("click", () => { stopped = !stopped; paused = false; setPlayLabel(); });
+  track.addEventListener("mouseenter", () => { paused = true; });
+  track.addEventListener("mouseleave", () => { paused = false; });
+  track.addEventListener("focusin", () => { paused = true; });
+  track.addEventListener("focusout", () => { paused = false; });
+  track.addEventListener("touchstart", hold, { passive: true });
+  track.addEventListener("wheel", hold, { passive: true });
   track.addEventListener("scroll", sync, { passive: true });
-  addEventListener("resize", sync);
+  addEventListener("resize", () => { dots = []; sync(); });
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; }, { threshold: 0.4 }).observe(track);
+  }
+  setPlayLabel();
   sync();
+  start();
 }
 
 async function render() {

@@ -705,7 +705,7 @@ def attach(p):
     m = MEDIA.get(p["slug"])
     if m:
         p["image_url"], p["image_small"], p["image_alt"] = m["src"], m["small"], m["alt"]
-        p["image_credit"] = {"by": m["credit"], "license": m["license"], "license_url": m["license_url"], "page": m["page"]}
+        p["image_credit"] = {"by": m["credit"], "license": m["license"], "license_url": m["license_url"], "page": m["page"], "via": m.get("via", "Wikimedia Commons")}
         # Tall photos (a minaret, a manuscript folio) are shown whole instead of cropped through the middle.
         if m.get("portrait"):
             p["image_fit"] = "contain"
@@ -889,7 +889,7 @@ def credit_html(p):
     if not c:
         return ""
     return (f'<p class="photo-credit">Photo: <a href="{h(c["page"])}" rel="noopener">{h(c["by"])}</a>, '
-            f'<a href="{h(c["license_url"])}" rel="license noopener">{h(c["license"])}</a>, via Wikimedia Commons</p>')
+            f'<a href="{h(c["license_url"])}" rel="license noopener">{h(c["license"])}</a>, via {h(c.get("via", "Wikimedia Commons"))}</p>')
 
 
 site = os.path.dirname(os.path.dirname(os.path.abspath(out)))
