@@ -79,7 +79,7 @@ export function requestLinks(p, group = "") {
 
 /** What the card says under the picture: type, plus the date for dated things. */
 export function typeLine(p) {
-  if (isRequest(p)) return `${kindLabel(p)} · ${p.pricing?.card || "On request"}`;
+  if (isRequest(p)) return p.pricing?.card ? `${kindLabel(p)} · ${p.pricing.card}` : kindLabel(p);
   if (isSoon(p)) return `${p.type === "physical" ? "Printed item" : typeLabel(p.type)} · Coming soon`;
   const when = p.starts_at ? formatWhen(p.starts_at) : "";
   if (p.type === "course" && when) return `Course, starts ${when}`;
@@ -193,10 +193,24 @@ export function photoCredit(p) {
   return `<p class="photo-credit">Photo: <a href="${esc(c.page)}" rel="noopener">${esc(c.by)}</a>, <a href="${esc(c.license_url)}" rel="license noopener">${esc(c.license)}</a>, via Wikimedia Commons</p>`;
 }
 
+// Shown in place of prices (tools/pricing.py SHOW_PRICES is False). Mirrors tailor_html() in tools/build_catalogue.py.
+export const TAILOR_LEAD = "Made for your group";
+const TAILOR_POINTS = [
+  "Your day and start time, weekends and special days included",
+  "Any group size, from one person to a whole class",
+  "Your pace and your language: English, Hindi or both",
+];
+const ENTRY_KINDS = ["Heritage walk", "Museum visit", "Day trip", "Study tour"];
+const ENTRY_NOTE = "Monument and museum entry fees, where charged, are paid at the site.";
+function tailorHtml(p) {
+  const opts = Array.from({ length: 25 }, (_, i) => `<option value="${i + 1}"${i + 1 === 2 ? " selected" : ""}>${i + 1}</option>`).join("");
+  return `<section class="tailor" aria-label="${esc(t(TAILOR_LEAD))}"><ul class="tailor-points">${TAILOR_POINTS.map((x) => `<li>${esc(x)}</li>`).join("")}</ul><div class="pcalc"><label for="pcalc-size">How many people?</label> <select id="pcalc-size" data-pcalc>${opts}<option value="26">More than 25</option></select></div>${ENTRY_KINDS.includes(kindLabel(p)) ? `<p class="tailor-small">${esc(ENTRY_NOTE)}</p>` : ""}</section>`;
+}
+
 /** Price options for a programme run on request. Mirrors pricing_html() in tools/build_catalogue.py. */
 export function pricingHtml(p) {
   const pb = p.pricing;
-  if (!pb) return "";
+  if (!pb) return tailorHtml(p);
   const cells = pb.tiers.map((t) => `<li class="ptier${t.bands ? " ptier-wide" : ""}"><p class="ptier-label">${esc(t.label)}</p><p class="ptier-price">${esc(t.amount)}</p><p class="ptier-unit">${esc(t.unit)}</p>${bandsHtml(t.bands)}${t.note ? `<p class="ptier-note">${esc(t.note)}</p>` : ""}${calcHtml(t.bands)}</li>`).join("");
   const notes = [...pb.notes, pb.gst].map((n) => `<li>${esc(n)}</li>`).join("");
   return `<section class="pricing" aria-label="Prices"><ul class="ptiers ptiers-${pb.tiers.length}">${cells}</ul><ul class="pricing-notes">${notes}</ul></section>`;
@@ -255,8 +269,7 @@ export function productCard(p) {
         ? `<div class="card-foot card-foot-wide"><a class="btn btn-outline btn-small" href="${href}">${esc(requestAction(p))}</a></div>`
         : soon
         ? `<div class="card-foot card-foot-wide"><a class="btn btn-outline btn-small" href="${href}">Notify me when available</a></div>`
-        : `<div class="card-foot">
-      <span class="price">${priceHtml(p)}</span>
+        : `<div class="card-foot card-foot-wide">
       ${
         flag?.soldOut || CONFIG.sampleNotice
           ? `<a class="btn btn-outline btn-small" href="${href}">View details</a>`

@@ -145,8 +145,6 @@ chips.innerHTML =
     <select id="shop-sort">
       <option value="featured">Featured</option>
       <option value="date">Date, soonest first</option>
-      <option value="price-asc">Price, low to high</option>
-      <option value="price-desc">Price, high to low</option>
     </select>
   </label>`;
 

@@ -152,12 +152,12 @@ const HANDOVER: Record<Lang, string> = {
 };
 const PRICE: Record<Lang, { found: string; none: string }> = {
   en: {
-    found: "You'll find the current price, GST included, on the page below. If it's for a group, send us your group size and dates on WhatsApp and we'll put a quotation together.",
-    none: "It depends on the programme, and each page shows its current price with GST included. Which walk, course or trip do you have in mind? For a group, send us your size and dates on WhatsApp and we'll put a quotation together.",
+    found: "The page below has the details. Walks, visits and trips are quoted for your group, so send us how many of you are coming and the day you have in mind on WhatsApp, and we'll put a quotation together. For a career course, the fee is shown when you pick your time.",
+    none: "Each programme is quoted for the group that asks, so it depends on how many of you are coming, when and where. Which walk, course or trip do you have in mind? Send us your group size and the day on WhatsApp and we'll put a quotation together.",
   },
   hi: {
-    found: "वर्तमान मूल्य, GST सहित, नीचे दिए गए पृष्ठ पर मिल जाएगा। अगर समूह के लिए चाहिए, तो WhatsApp पर समूह का आकार और तिथियाँ भेज दीजिए, हम कोटेशन तैयार कर देंगे।",
-    none: "यह कार्यक्रम पर निर्भर करता है, और हर पृष्ठ पर वर्तमान मूल्य GST सहित दिया गया है। आप किस भ्रमण, पाठ्यक्रम या यात्रा के बारे में सोच रहे हैं? समूह के लिए WhatsApp पर आकार और तिथियाँ भेज दीजिए, हम कोटेशन तैयार कर देंगे।",
+    found: "विवरण नीचे दिए गए पृष्ठ पर है। भ्रमण और यात्राओं का कोटेशन आपके समूह के अनुसार बनता है, इसलिए WhatsApp पर बताइए कि कितने लोग आ रहे हैं और आप कौन-सा दिन सोच रहे हैं, हम कोटेशन तैयार कर देंगे। करियर पाठ्यक्रम का शुल्क समय चुनते समय दिखाया जाता है।",
+    none: "हर कार्यक्रम का कोटेशन अनुरोध करने वाले समूह के अनुसार बनता है, इसलिए यह इस पर निर्भर है कि कितने लोग, कब और कहाँ। आप किस भ्रमण, पाठ्यक्रम या यात्रा के बारे में सोच रहे हैं? WhatsApp पर समूह का आकार और दिन भेज दीजिए, हम कोटेशन तैयार कर देंगे।",
   },
 };
 const SORRY: Record<Lang, string> = {
@@ -165,8 +165,8 @@ const SORRY: Record<Lang, string> = {
   hi: "इसके लिए क्षमा करें। कृपया WhatsApp पर हमारी टीम को संदेश भेजें, ऑर्डर नंबर हो तो वह भी लिख दें, वे इसे देख लेंगे।",
 };
 const ONE_TO_ONE: Record<Lang, string> = {
-  en: "Yes, and you can choose what suits you: a single online counselling session of about 60 minutes, an application clinic with a review of your statement of purpose and CV, a 2-hour career course on one evening, or a career course over a weekend, with two sessions of 1 hour 30 minutes. Details and prices are on the pages below.",
-  hi: "हाँ, आप अपनी सुविधा से चुन सकते हैं: लगभग 60 मिनट का एक ऑनलाइन परामर्श सत्र, आपके उद्देश्य-विवरण और CV की समीक्षा के साथ आवेदन क्लिनिक, एक शाम का 2 घंटे का करियर पाठ्यक्रम, या सप्ताहांत का करियर पाठ्यक्रम जिसमें 1 घंटे 30 मिनट के दो सत्र होते हैं। विवरण और मूल्य नीचे के पृष्ठों पर हैं।",
+  en: "Yes, and you can choose what suits you: a single online counselling session of about 60 minutes, an application clinic with a review of your statement of purpose and CV, a 2-hour career course on one evening, or a career course over a weekend, with two sessions of 1 hour 30 minutes. Details are on the pages below.",
+  hi: "हाँ, आप अपनी सुविधा से चुन सकते हैं: लगभग 60 मिनट का एक ऑनलाइन परामर्श सत्र, आपके उद्देश्य-विवरण और CV की समीक्षा के साथ आवेदन क्लिनिक, एक शाम का 2 घंटे का करियर पाठ्यक्रम, या सप्ताहांत का करियर पाठ्यक्रम जिसमें 1 घंटे 30 मिनट के दो सत्र होते हैं। विवरण नीचे के पृष्ठों पर है।",
 };
 const ONE_TO_ONE_ROWS = ["product.html?slug=counselling-archaeology-careers", "product.html?slug=career-course-one-evening", "product.html?slug=career-course-weekend"]
   .map((u) => ROWS.find((r) => r.u === u)!);

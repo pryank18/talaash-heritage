@@ -106,8 +106,8 @@ def prog_card(page):
                f'alt="{h("Illustration for " + p["title"])}" width="560" height="420" loading="lazy"></a>')
     else:
         art = ""
-    price = p["pricing"]["card"] if p.get("pricing") else "On request"
-    return (f'<article class="card{"" if art else " card-text"}">{art}<p class="card-type">{h(p["kind"])} · {h(price)}</p>'
+    kind = f'{p["kind"]} · {p["pricing"]["card"]}' if p.get("pricing") else p["kind"]  # no price unless pricing.SHOW_PRICES
+    return (f'<article class="card{"" if art else " card-text"}">{art}<p class="card-type">{h(kind)}</p>'
             f'<h3><a href="{h(page)}">{h(p["title"])}</a></h3><p class="card-meta">{h(meta)}</p>'
             f'<div class="card-foot card-foot-wide"><a class="btn btn-outline btn-small" href="{h(page)}">See the plan</a></div></article>')
 

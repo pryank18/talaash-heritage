@@ -5,7 +5,7 @@ import { addToCart, getCart, MAX_QTY } from "../store.js";
 import { t } from "../i18n.js";
 import { track } from "../track.js";
 import { isBookable, mountBooking } from "../booking.js";
-import { $, esc, formatDuration, formatWhen, groupTotal, isRequest, isSoon, kindLabel, money, photoCredit, priceHtml, pricingHtml, productArt, productHref, requestLinks, stockFlag, toast } from "../ui.js";
+import { $, esc, formatDuration, formatWhen, groupTotal, TAILOR_LEAD, isRequest, isSoon, kindLabel, money, photoCredit, priceHtml, pricingHtml, productArt, productHref, requestLinks, stockFlag, toast } from "../ui.js";
 
 const root = $("#product-root");
 // Static programme pages carry their slug on <body>; the dynamic page takes it from the link.
@@ -173,7 +173,7 @@ async function render() {
         <h1>${esc(p.title)}</h1>
         ${p.subtitle ? `<p class="product-sub">${esc(p.subtitle)}</p>` : ""}
         <div class="share-row">${shareButton()}</div>
-        <p class="product-price">${request ? esc(p.pricing?.card || "On request") : soon ? "Coming soon" : priceHtml(p)}</p>
+        ${request ? `<p class="product-price">${esc(p.pricing?.card || t(TAILOR_LEAD))}</p>` : soon ? `<p class="product-price">${t("Coming soon")}</p>` : `<p class="product-fee">${priceHtml(p)}</p>`}
         ${request ? pricingHtml(p) : ""}
         ${flag ? `<p><strong>${esc(flag.text)}</strong></p>` : ""}
         ${
@@ -266,15 +266,20 @@ document.addEventListener("change", (e) => {
   const sel = e.target.closest("[data-pcalc]");
   if (!sel || !current) return;
   const bands = current.pricing?.tiers?.find((t) => t.bands)?.bands;
-  if (!bands) return;
   const n = Number(sel.value);
-  const r = groupTotal(bands, n);
-  sel.closest(".pcalc").querySelector(".pcalc-out").textContent = r.text;
-  const max = bands[bands.length - 1].to;
   const hi = document.documentElement.getAttribute("data-lang") === "hi";
-  const group = n > max
-    ? (hi ? `${max} से अधिक` : `more than ${max}`)
-    : hi ? `${n} (निजी, कुल ${money(r.total * 100)})` : `${n} (private, ${money(r.total * 100)} in total)`;
+  let group;
+  if (bands) {
+    const r = groupTotal(bands, n);
+    sel.closest(".pcalc").querySelector(".pcalc-out").textContent = r.text;
+    const max = bands[bands.length - 1].to;
+    group = n > max
+      ? (hi ? `${max} से अधिक` : `more than ${max}`)
+      : hi ? `${n} (निजी, कुल ${money(r.total * 100)})` : `${n} (private, ${money(r.total * 100)} in total)`;
+  } else {
+    // No prices on the site: the picker only carries the group size into the request.
+    group = n > 25 ? (hi ? "25 से अधिक" : "more than 25") : String(n);
+  }
   const links = requestLinks(current, group);
   document.querySelectorAll('[data-req="whatsapp"]').forEach((a) => (a.href = links.whatsapp));
   document.querySelectorAll('[data-req="email"]').forEach((a) => (a.href = links.email));

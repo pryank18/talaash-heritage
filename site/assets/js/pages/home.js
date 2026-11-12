@@ -16,7 +16,7 @@ function featureCard(p) {
     <h2><a href="${href}">${esc(p.title)}</a></h2>
     <ul class="feature-meta">${meta.map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
     <div class="feature-foot">
-      <span class="price">${esc(p.pricing?.card || "On request")}</span>
+      <span class="price">${esc(kindLabel(p))}</span>
       <a class="btn btn-primary" href="${href}">${esc(requestAction(p))}</a>
     </div>`;
   }
@@ -30,45 +30,34 @@ function featureCard(p) {
     <h2><a href="${href}">${esc(p.title)}</a></h2>
     <ul class="feature-meta">${meta.map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
     <div class="feature-foot">
-      <span class="price">${money(p.price_paise)}</span>
+      <span class="price">${esc(typeLabel(p.type))}</span>
       <a class="btn btn-primary" href="${href}">View details</a>
     </div>`;
 }
 
-// "Walk Delhi with us this weekend": six walks that run any day, the coming Saturday and
-// Sunday (India time), and a WhatsApp message with those dates filled in.
-const WEEKEND_WALKS = [
-  "req-mehrauli-archaeological-park", "req-the-qutb-complex", "req-humayuns-tomb",
-  "req-lodhi-garden-monuments", "req-hauz-khas", "req-purana-qila",
-];
-function comingWeekend() {
-  // Today's date in India, whatever the visitor's own time zone.
-  const ist = new Date(Date.now() + (330 + new Date().getTimezoneOffset()) * 60000);
-  const day = ist.getDay(); // 0 Sunday … 6 Saturday
-  const late = ist.getHours() >= 15; // after 3 pm a same-day walk is no longer on offer
-  // Sunday afternoon: show next weekend. Saturday afternoon or Sunday morning: Sunday only.
-  const toSat = day === 0 ? (late ? 6 : -1) : 6 - day;
-  const sat = new Date(ist); sat.setDate(ist.getDate() + toSat);
-  const sun = new Date(sat); sun.setDate(sat.getDate() + 1);
-  return { sat, sun, sundayOnly: (day === 6 && late) || (day === 0 && !late) };
-}
-function renderWeekend(products) {
-  const host = $("#weekend-walks");
-  if (!host) return;
-  const { sat, sun, sundayOnly } = comingWeekend();
-  const loc = lang === "hi" ? "hi-IN" : "en-GB";
-  const fmt = (d) => d.toLocaleDateString(loc, { weekday: "long", day: "numeric", month: "long" });
-  const dates = sundayOnly ? fmt(sun) : `${fmt(sat)} ${lang === "hi" ? "और" : "and"} ${fmt(sun)}`;
-  const datesEl = $("[data-weekend-dates]");
-  if (datesEl) datesEl.textContent = dates;
-  const wa = $("[data-weekend-wa]");
-  if (wa) {
-    const msg = `Hello Talaash Heritage, I would like to book a heritage walk on ${sundayOnly ? fmt(sun) : `${fmt(sat)} or ${fmt(sun)}`}.\nWalk:\nNumber of people:\nPreferred start time:\n(ref: home-weekend)`;
-    wa.href = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`;
-    wa.target = "_blank"; wa.rel = "noopener";
-  }
-  const picks = WEEKEND_WALKS.map((id) => products.find((p) => p.id === id)).filter(Boolean);
-  if (picks.length === WEEKEND_WALKS.length) host.innerHTML = picks.map(productCard).join("");
+// "Special weekends and special days": the walks carousel under the hero. The slides are in the page
+// itself; this only moves it a slide at a time and switches the arrows off at either end.
+function initWalks() {
+  const track = $("#walks-track");
+  const prev = $("[data-walks-prev]");
+  const next = $("[data-walks-next]");
+  if (!track || !prev || !next) return;
+  const step = () => {
+    const slide = track.querySelector(".walk-slide");
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    return slide ? slide.getBoundingClientRect().width + gap : track.clientWidth * 0.8;
+  };
+  const sync = () => {
+    const max = track.scrollWidth - track.clientWidth - 2;
+    prev.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft >= max;
+  };
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  prev.addEventListener("click", () => track.scrollBy({ left: -step(), behavior: reduce ? "auto" : "smooth" }));
+  next.addEventListener("click", () => track.scrollBy({ left: step(), behavior: reduce ? "auto" : "smooth" }));
+  track.addEventListener("scroll", sync, { passive: true });
+  addEventListener("resize", sync);
+  sync();
 }
 
 async function render() {
@@ -76,10 +65,8 @@ async function render() {
   const featureSection = $("#feature-section");
   const sessions = $("#home-rails");
   const goods = $("#home-goods");
-  renderWeekend([]); // dates and the WhatsApp message first; the cards once the catalogue loads
   try {
     const products = await getProducts();
-    renderWeekend(products);
     const now = Date.now();
     const upcoming = products
       .filter((p) => p.starts_at && new Date(p.starts_at).getTime() > now && !stockFlag(p)?.soldOut)
@@ -127,5 +114,6 @@ function greet() {
 }
 
 greet();
+initWalks();
 document.addEventListener("th:visitor", greet);
 render();
