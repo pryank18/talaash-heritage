@@ -89,6 +89,13 @@
    "format": "weekly: blog on archaeologywala.pages.dev/deep-dive/ + narrated slide video (YouTube on the Talaash channel, playlist 'archaeologywala Deep Dive', and on the blog) + IG launch reel (Thu) + IG notes carousel (Tue) + YouTube Short + link posts on Talaash LinkedIn and Facebook",
    "used": "",
    "note": "Set up 12 Nov 2026 (Pryank: one rare, scholarly topic a week, every platform cross-linked). Every Thursday from 26 Nov 2026. Rules: claude/deep-dive.md in the archaeologywala project. One topic per Deep Dive; its topic_lock covers both accounts for 30 days."
+  },
+  "gaon-file": {
+   "name": "Gaon File",
+   "account": "talaashheritage",
+   "format": "carousel",
+   "used": "Sasaram (18 Nov)",
+   "note": "Unnumbered; one place, one printed record (off-track test from 13 Nov 2026, claude/talaash-offtrack-strategy.md)."
   }
  },
  "items": [
@@ -99,14 +106,14 @@
    "number": 9,
    "field": "history",
    "title": "Junagadh: a dam breach 420 cubits long",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-12T19:30",
    "platforms": [
     "instagram",
     "facebook"
    ],
    "page": null,
-   "sources": "queue sheet row 36"
+   "sources": "queue sheet row 36; posted 12 Nov 20:55, IG 18399977170205510, FB 109410924674841_1444441341202618"
   },
   {
    "id": "tl-boli-kaithi",
@@ -227,14 +234,34 @@
    "number": 11,
    "field": "arts",
    "title": "Fact 011: Didarganj Yakshi",
-   "status": "building",
+   "status": "scheduled",
    "slot": "2026-11-17T19:30",
    "platforms": [
     "instagram",
     "facebook"
    ],
    "page": null,
-   "sources": "render/queue/20261117-fact-didarganj-yakshi"
+   "sources": "render/queue/20261117-fact-didarganj-yakshi; queue sheet row 43"
+  },
+  {
+   "id": "tl-gaon-file-sasaram",
+   "brand": "talaash",
+   "series": "gaon-file",
+   "number": null,
+   "field": "history",
+   "title": "Gaon File: Sasaram, 1812-13, a raft of earthen pots to Sher Shah's tomb",
+   "status": "scheduled",
+   "slot": "2026-11-18T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": "heritage-sites-in-bihar",
+   "topic_lock": [
+    "sasaram",
+    "sher-shah-tomb"
+   ],
+   "sources": "render/queue/20261118-gaon-file-sasaram; Buchanan, Account of the District of Shahabad in 1812-13 (Patna, 1934), pp. 1, 91-94; queue sheet row 44"
   },
   {
    "id": "aw-3d-01-burials",
