@@ -75,7 +75,7 @@ const MARKUP = `
 <button type="button" role="tab" class="{{ tb.cls }}" aria-selected="{{ tb.sel }}" onClick="{{ tb.pick }}">{{ tb.label }}</button>
 </sc-for>
 </div>
-<div class="k-panel-body" style="padding: 16px 18px 20px; display: flex; flex-direction: column; gap: 12px; max-height: 900px; overflow-y: auto">
+<div class="k-panel-body" tabindex="0" role="region" aria-label="Facts and controls" style="padding: 16px 18px 20px; display: flex; flex-direction: column; gap: 12px; max-height: 900px; overflow-y: auto">
 <sc-if value="{{ tabFacts }}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-direction: column; gap: 10px">
 <sc-for list="{{ facts }}" as="f" hint-placeholder-count="8">

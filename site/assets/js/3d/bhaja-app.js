@@ -25,7 +25,7 @@ const MARKUP = `
 <button type="button" onClick="{{ setM }}" aria-pressed="{{ mPressed }}" style="{{ mStyle }}">Metres</button>
 </div>
 </div>
-<div class="bj-scroll" style="overflow-y: auto; padding: 8px 20px 16px 20px; display: flex; flex-direction: column">
+<div class="bj-scroll" tabindex="0" role="region" aria-label="Facts and controls" style="overflow-y: auto; padding: 8px 20px 16px 20px; display: flex; flex-direction: column">
 <sc-for list="{{ facts }}" as="f" hint-placeholder-count="10">
 <div style="padding: 10px 0; border-bottom: 1px solid #2c2621; display: flex; flex-direction: column; gap: 3px">
 <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px">
