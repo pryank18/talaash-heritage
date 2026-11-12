@@ -91,6 +91,75 @@
       "unconfirmed_recheck": [
         "Superintending Archaeologists head circles; Hampi is a mini circle"
       ]
+    },
+    {
+      "slug": "archaeology-courses-in-india",
+      "date": "2026-11-12",
+      "claims_checked": 18,
+      "changed": [
+        "Indian Institute of Heritage named as the deemed university formerly called the National Museum Institute (IIH notices; ThePrint 20 Apr 2026)",
+        "PG Diploma kept as one year: ThePrint 20 Apr 2026 reports it was cut from two years to one",
+        "'Some universities' replaces 'a few universities' in FAQ"
+      ],
+      "held": [
+        "'Very few universities offer a BA in archaeology alone' removed: no source counts them",
+        "University of Delhi removed from list of archaeology departments: no archaeology department found"
+      ]
+    },
+    {
+      "slug": "archaeology-in-india",
+      "date": "2026-11-12",
+      "claims_checked": 34,
+      "changed": [
+        "'Written records' now 'securely dated, readable written records' begin with Ashoka",
+        "Cunningham 'published' (not collected) the Harappa seal (ASR vol. 5, 1875)",
+        "Antiquities Act 1972: export barred except by the Central Government or an authorised agency (s.3), was 'without a licence'",
+        "Excavation 'needs official permission' (licence strictly for protected areas)",
+        "Social hook 'a thousand years of history' replaced with 'the inscriptions of early India'"
+      ],
+      "held": [
+        "'Pushed back by some two thousand years' softened to 'many centuries': sources disagree on the figure",
+        "Sarnath dropped from Cunningham's identifications: ASI history names Sankisa, Sravasti, Kausambi",
+        "'through its Central Advisory Board of Archaeology' removed: not confirmed in the Rules",
+        "FAQ: William Jones as 'father of Indian archaeology' removed: no reputable source",
+        "FAQ: 'Hampi one of the largest historic city sites' removed: UNESCO gives area only"
+      ]
+    },
+    {
+      "slug": "ashoka-and-his-edicts",
+      "date": "2026-11-12",
+      "claims_checked": 30,
+      "changed": [
+        "Taxila: 'sent to Taxila' (Ashokavadana), not governor",
+        "Pillar edicts: six at most sites, all seven only at Delhi-Topra (Hultzsch CII 1)",
+        "Rest houses attributed to Pillar Edict 7, not Rock Edict 2",
+        "Prinsep sentence no longer says he used the edicts 'largely' (he used Sanchi donor inscriptions)",
+        "Delhi-Topra 'set up in his citadel' (was 'on top of his palace'); Delhi-Meerut 'on the Ridge in north Delhi' (Hindu Rao detail lightly sourced)",
+        "Reel line: 'over 2,200 years old' (was 2,250)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "best-archaeology-museums-in-india",
+      "date": "2026-11-12",
+      "claims_checked": 22,
+      "changed": [
+        "FAQ: National Museum has 'a major Harappan gallery' (was 'the largest in India', unsourced)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "brahmi-script",
+      "date": "2026-11-12",
+      "claims_checked": 20,
+      "changed": [
+        "Name 'traditionally traced' to Buddhist and Jain script lists",
+        "'about forty basic signs' now 'a small set of basic signs' (count depends on method)",
+        "Devanagari FAQ: date 'end of first millennium CE' dropped"
+      ],
+      "held": [
+        "Kodumanal removed from pre-Ashokan potsherd sites: not confirmed by checker A"
+      ]
     }
   ]
 }
