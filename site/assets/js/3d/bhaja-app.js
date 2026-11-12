@@ -17,7 +17,7 @@ const MARKUP = `
 
 <div class="{{ panelCls }}" style="position: absolute; top: 20px; left: 20px; width: 340px; max-height: calc(100% - 205px); display: flex; flex-direction: column; background: rgba(20,17,15,0.86); border: 1px solid #3a322b; border-radius: 12px; overflow: hidden">
 <div style="padding: 18px 20px 14px 20px; border-bottom: 1px solid #3a322b; display: flex; flex-direction: column; gap: 6px">
-<div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #c9b9a4">Bhaja Caves · Maval, Pune district</div>
+<div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #c9b9a4">Bhaja Caves · Pune district</div>
 <p style="margin: 0; font-family: Spectral, Georgia, serif; font-weight: 600; font-size: 26px; line-height: 1.15; color: #f6efe4">Chaitya Hall, Cave 12</p>
 <div style="font-size: 13px; line-height: 1.45; color: #c9b9a4">Rock-cut Buddhist prayer hall of about the 2nd century BCE. Modelled to the measured survey of 1880; estimated parts are tagged.</div>
 <div style="display: flex; gap: 8px; margin-top: 6px">
@@ -1025,7 +1025,7 @@ class Component extends DCLogic {
       extra.push(F('What is shown', n, n, 'ill'));
     }
     if (s.real) {
-      const r = 'Basalt and teak surfaces are generated textures, with lava-flow banding and darker light deep in the hall. Colours are approximate, not taken from photographs; trees and sky are generic.';
+      const r = 'Rock and teak surfaces are generated textures, with banding in the rock and darker light deep in the hall. Colours are approximate, not taken from photographs; trees and sky are generic.';
       extra.push(F('Realistic look', r, r, 'ill'));
     }
     const facts = extra.concat([

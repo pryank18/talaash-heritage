@@ -1,6 +1,6 @@
 # Heliodorus pillar, Vidisha (Besnagar): 3D evidence sheet (linguistics / Sanskrit)
 
-Started 11 Nov 2026 by the Talaash 3D studio. **Status (12 Nov 2026): check 1 extraction done (below); checks 2 and 3 not yet run, and every quote must be re-read against the page scans because it was taken from OCR. Nothing on this sheet may be built until each figure below is taken from the source named and passes the THREE CHECKS (render/3d/README.md).**
+Started 11 Nov 2026 by the Talaash 3D studio. **Status (12 Nov 2026): three checks done; use only the "Kept" list at the end. Still to do before building: a design canvas, and a published plate of the letters (Plate XLVI) for the inscription. Nothing on this sheet may be built until each figure below is taken from the source named and passes the THREE CHECKS (render/3d/README.md).**
 
 ## The object
 A stone pillar at Besnagar near Vidisha, Madhya Pradesh, with a Brahmi inscription naming Heliodorus, an envoy of the Indo-Greek king Antialkidas. Model: the shaft and capital as a stone you can turn, with the inscription's letters drawn after a published plate, letter by letter, and a transliteration panel.
@@ -33,3 +33,15 @@ Main source: J. Ph. Vogel, "The Garuda Pillar of Besnagar", *ASI Annual Report 1
 - Date (Documented): Antialkidas about the middle of the 2nd century BCE (AR 1908-09 p. 127, after Gardner; Marshall, JRAS 1909: c. 140 BCE). Show as a range with the sources.
 - Script: the word "Brahmi" was not found in the passages read; take it from Sircar or *Epigraphia Indica* before it is stated. Language: Prakrit (Vigasin 2024, abstract).
 - Letter forms: no dedicated plate reached yet (Fleet's photograph/impression in JRAS 1909; Sircar). No letters may be drawn until a plate is in hand.
+
+## Three checks, 12 Nov 2026 (result: use only this list)
+Kept (both checks confirmed):
+- Shaft a monolith, octagonal at the base, sixteen-sided in the middle and thirty-two-sided above (Marshall, quoted by Vogel, ASI AR 1908-09, p. 126). Measured/Documented.
+- Capital of the Persepolitan bell-shaped type with a massive abacus (same, p. 126). Documented. A Garuda figure on top is HYPOTHETICAL (inferred from "Garuda-standard"); show a plain labelled block only.
+- Inscription A: seven lines (AR 1908-09, p. 128). Vogel's translation (p. 129): "This Garuda-standard was made by order of the Bhagavata … Heliodoros, the son of Dion, a man of Taxila, a Greek ambassador from King Antialkidas, to King Bhagabhadra, the son of the Princess from Benares, the saviour, while prospering in the fourteenth year of his reign." Line 1 of the text names Vāsudeva, god of gods (devadeva).
+- Inscription B on the other side, two lines (p. 129): "Three are the steps to immortality which … followed lead to heaven, [namely] self-control, self-denial and watchfulness."
+- Noticed by Cunningham in January 1877; in January 1909, during Marshall's visit, the State Engineer Mr Lake spotted lettering under the vermilion paint (AR 1908-09); published in 1909 (JRAS).
+- Antialkidas dated in 1909 to about the middle of the 2nd century BCE (Gardner, in AR p. 127; "c. B.C. 140", JRAS 1909, p. 1055 n.): show as the 1909 dating, tagged ESTIMATED.
+- Inscribed area about 1 ft 10 in wide by 1 ft 8½ in high; letters about 1⅛ to 1⅞ in (Fleet, JRAS 1909, p. 1087). Measured.
+- Plate XLV, "The Garuda pillar of Besnagar"; Plate XLVI, "Besnagar pillar inscription" (AR 1908-09).
+Dropped or held: "Kasiputra" as the king's name (the AR reads Kāsiputa, "son of the Princess from Benares"); "(or generosity)"; "first published"; "Gwalior State Engineer"; script and language (Brahmi, Prakrit) held until a second source confirms (Sircar not reached); pillar height still not found.
