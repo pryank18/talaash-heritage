@@ -190,7 +190,7 @@ export function productArt(p, sizes = "(min-width: 1000px) 25vw, (min-width: 560
 export function photoCredit(p) {
   const c = p.image_credit;
   if (!c) return "";
-  return `<p class="photo-credit">Photo: <a href="${esc(c.page)}" rel="noopener">${esc(c.by)}</a>, <a href="${esc(c.license_url)}" rel="license noopener">${esc(c.license)}</a>, via Wikimedia Commons</p>`;
+  return `<p class="photo-credit">Photo: <a href="${esc(c.page)}" rel="noopener">${esc(c.by)}</a>, <a href="${esc(c.license_url)}" rel="license noopener">${esc(c.license)}</a>, via ${esc(c.via || "Wikimedia Commons")}</p>`;
 }
 
 // Shown in place of prices (tools/pricing.py SHOW_PRICES is False). Mirrors tailor_html() in tools/build_catalogue.py.

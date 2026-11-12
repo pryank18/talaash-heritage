@@ -119,7 +119,7 @@ def hero(g):
     return (f'<figure class="guide-hero"><img src="{h(m["src"])}" srcset="{h(m["small"])} 500w, {h(m["src"])} 960w" '
             f'sizes="(min-width: 760px) 46rem, 100vw" alt="{h(m["alt"])}" width="960" height="600" fetchpriority="high"{' class="fit-contain"' if m.get("portrait") else ""}>'
             f'<figcaption class="photo-credit">Photo: <a href="{h(m["page"])}" rel="noopener">{h(m["credit"])}</a>, '
-            f'<a href="{h(m["license_url"])}" rel="license noopener">{h(m["license"])}</a>, via Wikimedia Commons</figcaption></figure>')
+            f'<a href="{h(m["license_url"])}" rel="license noopener">{h(m["license"])}</a>, via {h(m.get("via", "Wikimedia Commons"))}</figcaption></figure>')
 
 
 def section_html(s, i):
@@ -429,9 +429,9 @@ def credits_page():
     for k, m in MEDIA.items():
         used.setdefault(m["file"], m)
     rows = "".join(
-        f'<tr><td><a href="{h(m["page"])}" rel="noopener" aria-label="Original on Wikimedia Commons: {h(m["alt"])}"><img src="{h(m["small"])}" alt="" width="120" height="90" loading="lazy"></a></td>'
+        f'<tr><td><a href="{h(m["page"])}" rel="noopener" aria-label="Original on {h(m.get("via", "Wikimedia Commons"))}: {h(m["alt"])}"><img src="{h(m["small"])}" alt="" width="120" height="90" loading="lazy"></a></td>'
         f'<td>{h(m["alt"])}</td><td>{h(m["credit"])}</td><td><a href="{h(m["license_url"])}" rel="license noopener">{h(m["license"])}</a></td>'
-        f'<td><a href="{h(m["page"])}" rel="noopener">Wikimedia Commons</a></td></tr>'
+        f'<td><a href="{h(m["page"])}" rel="noopener">{h(m.get("via", "Wikimedia Commons"))}</a></td></tr>'
         for f, m in sorted(used.items(), key=lambda kv: kv[1]["alt"]))
     url = SITE_URL + "credits.html"
     return head("Photo credits | Talaash Heritage", "Credits and licences for the photographs used on the Talaash Heritage website.", url,
@@ -443,7 +443,7 @@ def credits_page():
 <div class="wrap">
   <header class="page-head"><h1>Photo credits</h1></header>
   <div class="doc credits">
-    <p>Most photographs on this site are by photographers who share their work on Wikimedia Commons under Creative Commons licences or in the public domain. We are grateful to them. Each is listed below with its author, licence and source; select a photograph to see the original. Photographs shown with a licence ending in SA are shared under the same licence. Our own illustrations and photographs are not listed.</p>
+    <p>Most photographs on this site are by photographers who share their work on Wikimedia Commons under Creative Commons licences or in the public domain, and a few on Unsplash under the Unsplash Licence. We are grateful to them. Each is listed below with its author, licence and source; select a photograph to see the original. Photographs shown with a licence ending in SA are shared under the same licence. Our own illustrations and photographs are not listed.</p>
     <p>If you are the author of a photograph here and would like the credit changed, write to <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
     <div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrolls sideways"><table><thead><tr><th>Photo</th><th>Subject</th><th>Author</th><th>Licence</th><th>Source</th></tr></thead><tbody>{rows}</tbody></table></div>
   </div>

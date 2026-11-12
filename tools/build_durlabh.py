@@ -71,6 +71,24 @@ def date_text(dt):
     return dt.astimezone(IST).strftime("%-d %B %Y")
 
 
+# Every page carries a photograph (Pryank, 12 Nov 2026). A piece may name its own with "image":
+# <key in content/media.json>; otherwise it gets the photo for its field. The caption says what it shows.
+FIELD_PHOTO = {
+    "archaeology": "guide:what-is-archaeology", "linguistics": "guide:brahmi-script", "anthropology": "guide:what-is-ethnography",
+    "arts": "guide:folk-dances-of-india-state-wise", "sanskrit": "guide:learn-sanskrit-for-beginners", "history": "red-fort-complex",
+    "heritage": "humayuns-tomb",
+}
+INDEX_PHOTO = "guide:sanskrit-and-indian-knowledge-systems"
+
+
+def photo_figure(key):
+    m = bl.MEDIA[key]
+    return (f'<figure class="guide-hero"><img src="{h(m["src"])}" srcset="{h(m["small"])} 500w, {h(m["src"])} 960w" '
+            f'sizes="(min-width: 760px) 46rem, 100vw" alt="{h(m["alt"])}" width="960" height="600" fetchpriority="high"{' class="fit-contain"' if m.get("portrait") else ""}>'
+            f'<figcaption class="photo-credit">{h(m["alt"])} Photo: <a href="{h(m["page"])}" rel="noopener">{h(m["credit"])}</a>, '
+            f'<a href="{h(m["license_url"])}" rel="license noopener">{h(m["license"])}</a>, via {h(m.get("via", "Wikimedia Commons"))}</figcaption></figure>')
+
+
 def video_block(d):
     if not (d["video_public"] and d["youtube"]):
         return ""
@@ -141,6 +159,7 @@ def piece_page(d, prev_next):
       <div class="share-row"><button type="button" class="share-btn" data-share aria-haspopup="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="m8.2 10.8 7.6-4.1M8.2 13.2l7.6 4.1"/></svg><span>Share</span></button></div>
       <p class="guide-lede">{inline(d["summary"])}</p>
     </header>
+    {photo_figure(d.get("image") or FIELD_PHOTO[d["field"]])}
     {video_block(d)}
     <details class="guide-toc"><summary>On this page</summary><ol>{toc}<li><a href="#src-title">Sources</a></li><li><a href="#faq">Questions</a></li></ol></details>
     <div class="doc guide-text">
@@ -195,6 +214,7 @@ def index_page(live, upcoming_date):
     <p class="guide-lede"><em>Durlabh</em> means rare, hard to find. Every Sunday Talaash Heritage takes one subject most people have never heard of, from archaeology, linguistics, anthropology, arts, Sanskrit, history or heritage, and studies it properly: a long read here with every source listed, a narrated lecture on YouTube, and short cuts on Instagram, Facebook and LinkedIn through the week.</p>
     {nxt}
   </header>
+  {photo_figure(INDEX_PHOTO)}
   <div class="durlabh-list">{rows}</div>
   <p class="small muted">Every claim is checked three times against primary sources or standard scholarly works before it is published. Spotted an error? Write to talaashheritage@gmail.com and we will correct it with a note.</p>
 </div>

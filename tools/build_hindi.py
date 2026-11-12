@@ -33,8 +33,9 @@ TEXT = {
     "Join a heritage walk": "धरोहर भ्रमण में शामिल हों",
     "Monuments, museums and old cities, with an archaeologist or historian beside you. Choose a place, tell us the day that suits you, and we shape the walk around your group.":
         "स्मारक, संग्रहालय और पुराने शहर, आपके साथ एक पुरातत्वविद् या इतिहासकार। कोई जगह चुनें, हमें वह दिन बताएँ जो आपके लिए ठीक हो, और हम भ्रमण को आपके समूह के अनुसार ढाल देंगे।",
-    "Previous walks": "पिछले भ्रमण",
-    "More walks": "और भ्रमण",
+    "Previous walk": "पिछला भ्रमण",
+    "Next walk": "अगला भ्रमण",
+    "Pause the slideshow": "स्लाइड शो रोकें",
     "Walks and day trips": "भ्रमण और एक दिन की यात्राएँ",
     "Plan a walk on WhatsApp": "WhatsApp पर भ्रमण की योजना बनाएँ",
     "See the walk": "भ्रमण देखें",
