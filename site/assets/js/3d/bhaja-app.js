@@ -420,7 +420,7 @@ class Component extends DCLogic {
       { n: 8, name: 'Hand prints (ritual touching)', p: new T.Vector3(0.6, 2.6, ZC + 6.0), color: true },
       { n: 9, name: 'Painted relief (hypothetical)', p: new T.Vector3(HW + 7, SPR + 5.6, 0.7), color: true },
       { n: 'I1', name: 'Stupa: no Buddha figure recorded', p: new T.Vector3(0, 10.6, ZC + 4.6), ico: true },
-      { n: 'I2', name: 'Symbols on 7th–8th pillars (row not recorded)', p: new T.Vector3(-(NB - 0.9), 9.2, (g.symZ[0] + g.symZ[1]) / 2), ico: true },
+      { n: 'I2', name: 'Symbols on 7th–8th pillars (exact place uncertain)', p: new T.Vector3(-(NB - 0.9), 9.2, (g.symZ[0] + g.symZ[1]) / 2), ico: true },
       { n: 'I3', name: 'Female figure, beaded belt', p: new T.Vector3(-(HW + 2.2), 31.0, 0.7), ico: true },
       { n: 'I4', name: 'Window with two half-figures', p: new T.Vector3(HW + 4, 17.3, 0.7), ico: true },
       { n: 'I5', name: 'Two heads in compartments', p: new T.Vector3(HW + 2.8, 29.2, 0.7), ico: true }
@@ -985,9 +985,9 @@ class Component extends DCLogic {
     if (s.ico) {
       const i1 = 'The 1880 and 1885 surveys record no image of the Buddha in the hall. The stupa stands at its far end; no figure is shown.';
       extra.push(F('I1 · Stupa', i1, i1, 'doc'));
-      const i2 = 'On four of the pillars, seven ornaments or Buddhist symbols are carved in low relief (Fergusson and Burgess 1880; Gazetteer 1885). On the left of the 7th pillar: four tridents round a centre which perhaps held a face (the Gazetteer prints "fan"), with buds and leaves at the corners. On the 8th pillar: two flowers and what looks like a fan on the right side, and a posy of holy flowers on the left. The other symbols are not described.';
+      const i2 = 'On four of the pillars, seven ornaments or Buddhist symbols are carved in low relief (Fergusson and Burgess 1880, p. 225; Gazetteer 1885). On the 7th pillar, on the left: four tridents round a centre which perhaps contained a face (the Gazetteer prints "fan"), with buds and leaves at the corners. On the 8th pillar: a posy of sacred flowers on the left, and on the right two flowers and what appears to be a fan. Fergusson and Burgess also describe a wreath "on the right-hand face". The fourth pillar is not identified.';
       extra.push(F('I2 · Pillar symbols', i2, i2, 'doc'));
-      const i2b = 'The sources do not say which row these pillars are in, or which end they count from. The model highlights the 7th and 8th pillars of both rows, counting from the entrance, so the placement is uncertain.';
+      const i2b = 'The sources do not make clear whether "left" and "right" mean the two rows of pillars or two faces of the same pillar, or which end they count from. The model highlights the 7th and 8th pillars of both rows, counting from the entrance, so the exact placement is uncertain.';
       extra.push(F('I2 · Where they are', i2b, i2b, 'unc'));
       const i3 = 'High up on the left of the front: a female figure, much weather-worn, with a beaded belt about the loins (Fergusson and Burgess 1880; the 1885 Gazetteer prints "lions").';
       extra.push(F('I3 · Female figure', i3, i3, 'doc'));
