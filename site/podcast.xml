@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Durlabh Sunday · Talaash Heritage</title>
+  <link>https://talaash-heritage.pages.dev/durlabh</link>
+  <atom:link href="https://talaash-heritage.pages.dev/podcast.xml" rel="self" type="application/rss+xml"/>
+  <language>en-in</language>
+  <copyright>© Talaash Heritage</copyright>
+  <description>Durlabh means rare, hard to find. Every Sunday Talaash Heritage takes one rare subject from India's past, in archaeology, linguistics, anthropology, arts, Sanskrit, history or heritage, and studies it properly. Each episode is the narrated lecture; the full long read, with every source listed, is on talaash-heritage.pages.dev/durlabh.</description>
+  <itunes:summary>Durlabh means rare, hard to find. Every Sunday Talaash Heritage takes one rare subject from India's past, in archaeology, linguistics, anthropology, arts, Sanskrit, history or heritage, and studies it properly. Each episode is the narrated lecture; the full long read, with every source listed, is on talaash-heritage.pages.dev/durlabh.</itunes:summary>
+  <itunes:author>Talaash Heritage</itunes:author>
+  <itunes:owner><itunes:name>Talaash Heritage</itunes:name><itunes:email>talaashheritage@gmail.com</itunes:email></itunes:owner>
+  <itunes:image href="https://talaash-heritage.pages.dev/assets/img/podcast-durlabh.jpg"/>
+  <image><url>https://talaash-heritage.pages.dev/assets/img/podcast-durlabh.jpg</url><title>Durlabh Sunday · Talaash Heritage</title><link>https://talaash-heritage.pages.dev/durlabh</link></image>
+  <itunes:category text="History"/>
+  <itunes:category text="Education"/>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:type>episodic</itunes:type>
+  <lastBuildDate>Thu, 12 Nov 2026 21:14:00 +0530</lastBuildDate>
+</channel>
+</rss>

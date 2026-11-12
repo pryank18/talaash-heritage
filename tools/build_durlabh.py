@@ -11,6 +11,11 @@ The GitHub Action "Durlabh Sunday: release" runs this every Sunday morning and c
 Video: the YouTube parts in "youtube" are embedded only when "video_public" is true
 (the Sunday review / release task sets it after reading the videos back as public).
 
+Podcast: a piece with an optional "audio" entry {"file": "media/podcast/durlabh-NN-slug.mp3",
+"bytes": <size>, "seconds": <length>} gets an audio player on its page and an episode in
+site/podcast.xml (the "Durlabh Sunday" podcast feed, submitted once to Spotify and Apple).
+The file must exist under site/ with exactly that size. Episodes appear with the page, not earlier.
+
 Usage: python3 tools/build_durlabh.py [--now 2026-11-22T11:05+05:30]   (--now is for tests)
 """
 import datetime, json, os, re, sys
@@ -89,6 +94,78 @@ def photo_figure(key):
             f'<a href="{h(m["license_url"])}" rel="license noopener">{h(m["license"])}</a>, via {h(m.get("via", "Wikimedia Commons"))}</figcaption></figure>')
 
 
+def audio_block(d):
+    a = d.get("audio")
+    if not a:
+        return ""
+    return (f'<figure class="durlabh-audio"><audio controls preload="none" src="{h(a["file"])}"></audio>'
+            f'<figcaption>Listen: {h(d["title"])} ({round(a["seconds"] / 60)} min) · also on the '
+            f'<a href="podcast.xml">Durlabh Sunday podcast feed</a></figcaption></figure>')
+
+
+def check_audio(d):
+    a = d.get("audio")
+    if not a:
+        return
+    f = os.path.join(SITE, a["file"])
+    assert a["file"].startswith("media/podcast/") and a["file"].endswith(".mp3"), f'{d["page"]}: audio must be media/podcast/*.mp3'
+    assert os.path.isfile(f), f'{d["page"]}: audio file {a["file"]} missing'
+    assert os.path.getsize(f) == a["bytes"], f'{d["page"]}: audio bytes {a["bytes"]} != file size {os.path.getsize(f)}'
+    assert a["seconds"] > 60, f'{d["page"]}: audio seconds looks wrong'
+
+
+PODCAST_COVER = "assets/img/podcast-durlabh.jpg"
+PODCAST_DESC = ("Durlabh means rare, hard to find. Every Sunday Talaash Heritage takes one rare subject from India's past, "
+                "in archaeology, linguistics, anthropology, arts, Sanskrit, history or heritage, and studies it properly. "
+                "Each episode is the narrated lecture; the full long read, with every source listed, is on talaash-heritage.pages.dev/durlabh.")
+
+
+def podcast_feed(live, now):
+    from email.utils import format_datetime
+    from xml.sax.saxutils import escape as x
+    eps = [d for d in live if d.get("audio")]
+    items = ""
+    for d in reversed(eps):
+        a, page = d["audio"], url_of(d["page"])
+        m, sec = divmod(int(a["seconds"]), 60)
+        notes = f'{d["summary"]} Read the full piece with sources: {page}'
+        items += f"""  <item>
+    <title>{x(d["title"])}</title>
+    <description>{x(notes)}</description>
+    <link>{x(page)}</link>
+    <guid isPermaLink="false">talaash-{x(d["page"])}</guid>
+    <pubDate>{format_datetime(d["_release"])}</pubDate>
+    <enclosure url="{x(SITE_URL + a["file"])}" length="{a["bytes"]}" type="audio/mpeg"/>
+    <itunes:duration>{m // 60:d}:{m % 60:02d}:{sec:02d}</itunes:duration>
+    <itunes:episode>{d["number"]}</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:explicit>false</itunes:explicit>
+  </item>
+"""
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Durlabh Sunday · Talaash Heritage</title>
+  <link>{SITE_URL}durlabh</link>
+  <atom:link href="{SITE_URL}podcast.xml" rel="self" type="application/rss+xml"/>
+  <language>en-in</language>
+  <copyright>© Talaash Heritage</copyright>
+  <description>{x(PODCAST_DESC)}</description>
+  <itunes:summary>{x(PODCAST_DESC)}</itunes:summary>
+  <itunes:author>Talaash Heritage</itunes:author>
+  <itunes:owner><itunes:name>Talaash Heritage</itunes:name><itunes:email>talaashheritage@gmail.com</itunes:email></itunes:owner>
+  <itunes:image href="{SITE_URL}{PODCAST_COVER}"/>
+  <image><url>{SITE_URL}{PODCAST_COVER}</url><title>Durlabh Sunday · Talaash Heritage</title><link>{SITE_URL}durlabh</link></image>
+  <itunes:category text="History"/>
+  <itunes:category text="Education"/>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:type>episodic</itunes:type>
+  <lastBuildDate>{format_datetime(now)}</lastBuildDate>
+{items}</channel>
+</rss>
+"""
+
+
 def video_block(d):
     if not (d["video_public"] and d["youtube"]):
         return ""
@@ -145,7 +222,7 @@ def piece_page(d, prev_next):
     nav = "".join(f'<li>{lab}: <a href="{p["page"]}.html">{h(p["title"])}</a></li>' for lab, p in prev_next if p)
     eyebrow = f'Durlabh Sunday #{d["number"]:02d} · {FIELDS[d["field"]]}'
     return bl.head(d["seo_title"] + " | Talaash Heritage", d["meta_description"], url, d["og_title"], d["og_description"],
-                   SITE_URL + "assets/img/logo-badge.png", jsonld(d, url)).replace(bl.MARK, MARK) + f"""
+                   SITE_URL + "assets/img/logo-badge.png", jsonld(d, url)).replace(bl.MARK, MARK).replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<link rel="alternate" type="application/rss+xml" title="Durlabh Sunday podcast" href="podcast.xml">', 1) + f"""
 <body data-gate="open" data-english-only="1" class="guide-page durlabh-page">
 <div id="site-header"></div>
 <main id="main">
@@ -161,6 +238,7 @@ def piece_page(d, prev_next):
     </header>
     {photo_figure(d.get("image") or FIELD_PHOTO[d["field"]])}
     {video_block(d)}
+    {audio_block(d)}
     <details class="guide-toc"><summary>On this page</summary><ol>{toc}<li><a href="#src-title">Sources</a></li><li><a href="#faq">Questions</a></li></ol></details>
     <div class="doc guide-text">
 {body}
@@ -187,6 +265,9 @@ def piece_page(d, prev_next):
 
 
 def index_page(live, upcoming_date):
+    pod = ('<p class="small">Prefer to listen? Every lecture is also a podcast episode: add '
+           '<a href="podcast.xml">talaash-heritage.pages.dev/podcast.xml</a> to any podcast app.</p>'
+           if any(d.get("audio") for d in live) else "")
     url = SITE_URL + "durlabh"
     if live:
         rows = "".join(
@@ -202,7 +283,7 @@ def index_page(live, upcoming_date):
     return bl.head("Durlabh Sunday: rare reads on India's past | Talaash Heritage",
                    "Every Sunday Talaash Heritage publishes one rare, well-sourced subject from archaeology, linguistics, anthropology, arts, Sanskrit, history or heritage, with a narrated lecture.",
                    url, "Durlabh Sunday", "One rare subject every Sunday: a long read, a narrated lecture and short cuts all week.",
-                   SITE_URL + "assets/img/logo-badge.png", ld, og_type="website").replace(bl.MARK, MARK) + f"""
+                   SITE_URL + "assets/img/logo-badge.png", ld, og_type="website").replace(bl.MARK, MARK).replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<link rel="alternate" type="application/rss+xml" title="Durlabh Sunday podcast" href="podcast.xml">', 1) + f"""
 <body data-gate="open" data-english-only="1" class="guide-page durlabh-page">
 <div id="site-header"></div>
 <main id="main">
@@ -216,6 +297,7 @@ def index_page(live, upcoming_date):
   </header>
   {photo_figure(INDEX_PHOTO)}
   <div class="durlabh-list">{rows}</div>
+  {pod}
   <p class="small muted">Every claim is checked three times against primary sources or standard scholarly works before it is published. Spotted an error? Write to talaashheritage@gmail.com and we will correct it with a note.</p>
 </div>
 </main>
@@ -246,7 +328,10 @@ def main():
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
         f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>\n" for u in urls) + "</urlset>\n"
     open(os.path.join(SITE, "sitemap-durlabh.xml"), "w", encoding="utf-8").write(sm)
-    print(f"durlabh: {len(live)} live, {len(upcoming)} upcoming" + (f", next {upcoming[0]['page']} at {upcoming[0]['release']}" if upcoming else ""))
+    for d in live:
+        check_audio(d)
+    open(os.path.join(SITE, "podcast.xml"), "w", encoding="utf-8").write(podcast_feed(live, now))
+    print(f"durlabh: {len(live)} live ({sum(1 for d in live if d.get('audio'))} with podcast audio), {len(upcoming)} upcoming" + (f", next {upcoming[0]['page']} at {upcoming[0]['release']}" if upcoming else ""))
 
 
 if __name__ == "__main__":
