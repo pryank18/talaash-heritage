@@ -55,3 +55,18 @@ Every Talaash post carries the Talaash Heritage logo and the other social links.
 - Never "link in bio" until the bio actually points to the site.
 - Three checks before anything is queued: own source check, a subagent that confirms every claim against the sources, and a second subagent that tries to disprove each claim independently.
 - Fact numbers rise with the date and never repeat (001-010 used by 14 Nov 2026).
+
+## Walk and event posts: lessons from a benchmark (12 Nov 2026)
+Studied: Varaha Heritage, Mehrauli walk poster (instagram.com/p/DfofGxlMD66, posted 12 Nov 2026, run as a paid ad). Reference only; nothing is copied and no collab follows.
+
+Adopt
+- Story title first. A walk or event post leads with a theme title, not the monument's name ("Cities Beneath Cities" style), then one line saying what the visitor will see, in date order.
+- Name the place and city in plain words in the first two lines of the caption. Instagram search reads captions, so the place name, city and field ("heritage walk", "Brahmi script", "Mughal architecture") belong in real sentences. No keyword dumps, no lists in brackets.
+- Logistics block for any dated Event post, one line each, in this order: date and day; time (IST, start to end); meeting point; price "per person, including GST" plus "monument entry extra" where it applies; how to book (the plain Talaash page address and wa.me/917397829282). Price only if it matches the live `products` rows and `tools/pricing.py`; walks never show a minimum, a headcount or a group total.
+- Name who leads or researched the piece, with one credential line.
+- Duration and depth in one line ("Three hours, a thousand years") is fine on covers.
+
+Never copy
+- "DM us", "link in bio" or a Google Form link. Booking goes through the Talaash page and checkout.
+- Paid boosting or a joint post with another organisation (no spend, no collabs for now).
+- Hashtags without "#" or more than 5. The queue check counts exactly 5, each starting with "#".
