@@ -16,7 +16,7 @@
    "account": "talaashheritage",
    "format": "carousel",
    "used": "001-005, 008-011",
-   "note": "006 and 007 were never posted (the feed went 005 on 7 Nov to 008 on 10 Nov). Never reuse them; numbers only rise."
+   "note": "006 and 007 were never posted (the feed went 005 on 7 Nov to 008 on 10 Nov). Never reuse them; numbers only rise. From 21 Nov 2026 the Saturday Fact is a Word story: an everyday word or object traced to its Indian root and history (docs/UNIVERSE.md section 4); numbered like every Fact."
   },
   "jaisa-tha": {
    "name": "Jaisa Tha",
@@ -916,6 +916,28 @@
    "page": "durlabh-05-sora-ittal",
    "durlabh": 5,
    "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
+  },
+  {
+   "id": "tl-fact-word-shampoo",
+   "brand": "talaash",
+   "series": "fact",
+   "number": null,
+   "field": "linguistics",
+   "title": "Word story: shampoo, from Hindi chāmpo",
+   "status": "idea",
+   "slot": "2026-11-21T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "india-s-linguistic-heritage",
+   "topic_lock": [
+    "shampoo",
+    "sake-dean-mahomed"
+   ],
+   "sources": "render/queue/20261121-fact-word-shampoo/brief.md",
+   "notes": "First weekly Word story Fact (docs/UNIVERSE.md section 4, Word story; decided 12 Nov 2026 from the Enroute Indian History benchmark). Fact number given by the queue task at queue time from check_universe.py (numbers rise by date). Three checks before queueing; the brief lists what is contested."
   }
  ]
 }

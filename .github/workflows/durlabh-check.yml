@@ -2,6 +2,7 @@
 # Runs on GitHub's servers, so it needs no laptop and no Claude session. A failed run makes
 # GitHub email the repository owner, which is the alarm.
 #  - every released long read loads with its title, and the index lists it;
+#  - a released piece with podcast audio is in podcast.xml and its MP3 is served;
 #  - every Durlabh carousel or teaser due within the next 48 hours is "scheduled" in the ledger
 #    (the 21:43 queue task sets that when it writes the posting row) and its media files are served.
 name: "Durlabh Sunday: live check"
@@ -64,6 +65,13 @@ jobs:
                   ok.append(d["page"])
               if d["page"] not in idx:
                   problems.append(f"/durlabh does not list {d['page']}")
+              if d.get("audio"):
+                  st, feed = get(BASE + "podcast.xml")
+                  if st != 200 or d["page"].encode() not in feed:
+                      problems.append(f"podcast.xml ({st}) does not list {d['page']}")
+                  st, _ = get(BASE + d["audio"]["file"])
+                  if st != 200:
+                      problems.append(f"podcast audio {d['audio']['file']} returned {st}")
           u = json.load(open("content/universe.json", encoding="utf-8"))
           for it in u["items"]:
               if not it["id"].startswith("tl-durlabh-") or not it.get("slot"):
