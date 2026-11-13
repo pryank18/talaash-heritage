@@ -96,6 +96,13 @@
    "format": "carousel",
    "used": "Sasaram (18 Nov)",
    "note": "Unnumbered; one place, one printed record (off-track test from 13 Nov 2026, claude/talaash-offtrack-strategy.md)."
+  },
+  "since-when": {
+   "name": "Since When?",
+   "account": "talaashheritage",
+   "format": "animated reel (cloned English voice), then YouTube Short",
+   "used": "",
+   "note": "Set up 13 Nov 2026 (Pryank: concept inspired by a 'Your tradition was sold to you' Short, different stories, 10 videos across platforms, no mistakes). Tuesday 19:30 main post from 1 Dec 2026: an everyday Indian 'tradition' traced to where and when it really began. Locked list and wording: Projects doc claude/since-when.md. Built by the 'Since When? studio' task."
   }
  },
  "items": [
@@ -965,6 +972,218 @@
    ],
    "sources": "render/queue/20261121-fact-word-shampoo/brief.md",
    "notes": "First weekly Word story Fact (docs/UNIVERSE.md section 4, Word story; decided 12 Nov 2026 from the Enroute Indian History benchmark). Fact number given by the queue task at queue time from check_universe.py (numbers rise by date). Three checks before queueing; the brief lists what is contested."
+  },
+  {
+   "id": "tl-since-when-01-rupee",
+   "brand": "talaash",
+   "series": "since-when",
+   "number": 1,
+   "field": "history",
+   "title": "Since When? #01: The rupee: Sher Shah's silver coin",
+   "status": "idea",
+   "slot": "2026-12-01T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube"
+   ],
+   "page": "introduction-to-numismatics-with-replicas",
+   "topic_lock": [
+    "rupee"
+   ],
+   "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 01). Files: render/since-when/01-rupee/"
+  },
+  {
+   "id": "tl-since-when-02-marigold",
+   "brand": "talaash",
+   "series": "since-when",
+   "number": 2,
+   "field": "anthropology",
+   "title": "Since When? #02: The marigold garland: a flower from Mexico",
+   "status": "idea",
+   "slot": "2026-12-08T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube"
+   ],
+   "page": "foods-as-historical-evidence-coconut-spice-and-exchange",
+   "topic_lock": [
+    "marigold"
+   ],
+   "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 02). Files: render/since-when/02-marigold/"
+  },
+  {
+   "id": "tl-since-when-03-harmonium",
+   "brand": "talaash",
+   "series": "since-when",
+   "number": 3,
+   "field": "arts",
+   "title": "Since When? #03: The harmonium: kept off All India Radio for 31 years",
+   "status": "idea",
+   "slot": "2026-12-15T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube"
+   ],
+   "page": "culture-and-heritage-what-we-inherit-and-why-it-matters",
+   "topic_lock": [
+    "harmonium"
+   ],
+   "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 03). Files: render/since-when/03-harmonium/"
+  },
+  {
+   "id": "tl-since-when-04-snakes-ladders",
+   "brand": "talaash",
+   "series": "since-when",
+   "number": 4,
+   "field": "arts",
+   "title": "Since When? #04: Snakes and ladders: a game of virtues and vices",
+   "status": "idea",
+   "slot": "2026-12-22T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube"
+   ],
+   "page": "indian-heritage-guide",
+   "topic_lock": [
+    "snakes-and-ladders",
+    "gyan-chaupar"
+   ],
+   "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 04). Files: render/since-when/04-snakes-ladders/"
+  },
+  {
+   "id": "tl-since-when-05-samosa",
+   "brand": "talaash",
+   "series": "since-when",
+   "number": 5,
+   "field": "linguistics",
+   "title": "Since When? #05: The samosa: a Persian name at a Delhi sultan's table",
+   "status": "idea",
+   "slot": "2026-12-29T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube"
+   ],
+   "page": "delhi-sultanate",
+   "topic_lock": [
+    "samosa"
+   ],
+   "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 05). Files: render/since-when/05-samosa/"
+  },
+  {
+   "id": "tl-since-when-06-cricket",
+   "brand": "talaash",
+   "series": "since-when",
+   "number": 6,
+   "field": "history",
+   "title": "Since When? #06: Cricket in India: seamen near Cambay, 1721",
+   "status": "idea",
+   "slot": "2027-01-05T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube"
+   ],
+   "page": "indian-history-timeline",
+   "topic_lock": [
+    "cricket"
+   ],
+   "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 06). Files: render/since-when/06-cricket/"
+  },
+  {
+   "id": "tl-since-when-07-chilli",
+   "brand": "talaash",
+   "series": "since-when",
+   "number": 7,
+   "field": "history",
+   "title": "Since When? #07: The chilli: India's heat came by sea",
+   "status": "idea",
+   "slot": "2027-01-12T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube"
+   ],
+   "page": "foods-as-historical-evidence-coconut-spice-and-exchange",
+   "topic_lock": [
+    "chilli"
+   ],
+   "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 07). Files: render/since-when/07-chilli/"
+  },
+  {
+   "id": "tl-since-when-08-chess",
+   "brand": "talaash",
+   "series": "since-when",
+   "number": 8,
+   "field": "sanskrit",
+   "title": "Since When? #08: Chess: when the queen was a minor piece",
+   "status": "idea",
+   "slot": "2027-01-19T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube"
+   ],
+   "page": "sanskrit-literature",
+   "topic_lock": [
+    "chess",
+    "chaturanga"
+   ],
+   "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 08). Files: render/since-when/08-chess/"
+  },
+  {
+   "id": "tl-since-when-09-sari-blouse",
+   "brand": "talaash",
+   "series": "since-when",
+   "number": 9,
+   "field": "anthropology",
+   "title": "Since When? #09: The sari blouse: Bengal's 1860s new look",
+   "status": "idea",
+   "slot": "2027-01-26T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube"
+   ],
+   "page": "heritage-walk-in-kolkata",
+   "topic_lock": [
+    "sari-blouse"
+   ],
+   "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 09). Files: render/since-when/09-sari-blouse/"
+  },
+  {
+   "id": "tl-since-when-10-ist",
+   "brand": "talaash",
+   "series": "since-when",
+   "number": 10,
+   "field": "heritage",
+   "title": "Since When? #10: Indian Standard Time: younger than you think",
+   "status": "idea",
+   "slot": "2027-02-02T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube"
+   ],
+   "page": "jantar-mantar-delhi",
+   "topic_lock": [
+    "indian-standard-time"
+   ],
+   "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 10). Files: render/since-when/10-ist/"
   }
  ]
 }
