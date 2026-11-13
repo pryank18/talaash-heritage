@@ -4,13 +4,13 @@ Slides: render/queue/20261125-durlabh-01-raya-asoko/1.html … 8.html → site/m
 Every claim comes from the checked long read content/durlabh/01-raya-asoko.json (checks: checks.md in this folder). Slide 6's Brāhmī is typed in Noto Sans Brahmi and labelled as such on the slide.
 
 ## Caption
-Durlabh Sunday #01 | The only portrait that names Ashoka
+Durlabh Sunday #01 | The only carvings that name Ashoka
 
 Ashoka put his words on rocks and pillars from Afghanistan to Karnataka. No likeness of him from his own lifetime survives.
 
-Only one carved portrait names him. It comes from a ruined stupa at Kanaganahalli, near Sannati in Karnataka, and its label is two words in Brāhmī: rāya asoko, "King Ashoka".
+Only one place has carvings that name him: a ruined stupa at Kanaganahalli, near Sannati in Karnataka. The label is two words in Brāhmī, usually printed rāya asoko, "King Ashoka".
 
-The trail began in 1986, when a temple roof at Sannati collapsed and the slab beneath the image turned out to carry Ashokan edicts. Excavations near Kanaganahalli from 1994 uncovered the stupa and its labelled kings.
+The trail began in 1986, when a temple roof at Sannati collapsed and the slab beneath the image turned out to carry Ashokan edicts. Excavations near Kanaganahalli from 1994 uncovered the stupa and the slabs that name him.
 
 The catch: the panel was carved some three to four centuries after Ashoka died. It cannot show us his face. It shows us how he was remembered.
 
@@ -29,9 +29,9 @@ Website: talaash-heritage.pages.dev
 #Ashoka #Brahmi #Epigraphy #KarnatakaHistory #TalaashHeritage
 
 ## LinkedIn text
-Durlabh Sunday #01: the only portrait that names Ashoka.
+Durlabh Sunday #01: the only carvings that name Ashoka.
 
-Ashoka's edicts run from Afghanistan to Karnataka, yet no likeness of him from his lifetime survives. The one carved portrait that names him, with the Brāhmī label rāya asoko ("King Ashoka"), comes from the stupa at Kanaganahalli near Sannati, excavated by the Archaeological Survey of India from 1994.
+Ashoka's edicts run from Afghanistan to Karnataka, yet no likeness of him from his lifetime survives. The only known carvings that name him, labelled in Brāhmī "King Asoka" (usually printed rāya asoko), come from the stupa at Kanaganahalli near Sannati, excavated by the Archaeological Survey of India from 1994.
 
 It was carved some three to four centuries after his death, so it records memory, not a face. That distinction is the whole craft of reading the past.
 
