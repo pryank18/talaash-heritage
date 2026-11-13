@@ -1,6 +1,6 @@
 {
  "_readme": "The single ledger for everything Talaash Heritage and archaeologywala make: posts, reels, 3D models, lectures, web pages. Every piece gets one id here before it is built, and its status is updated when it goes live. Series numbers are taken only from this ledger: run tools/check_universe.py and use the 'next' number it prints, then add the item here before building it. Rules: docs/UNIVERSE.md. Check with python3 tools/check_universe.py before every commit that touches this file. Talaash tasks write here; archaeologywala tasks read it and log in their run book, and the Sunday universe review copies their live posts in.",
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "fields": [
   "archaeology",
   "linguistics",
@@ -15,7 +15,7 @@
    "name": "Fact",
    "account": "talaashheritage",
    "format": "carousel",
-   "used": "001-005, 008-011",
+   "used": "001-005, 008-012",
    "note": "006 and 007 were never posted (the feed went 005 on 7 Nov to 008 on 10 Nov). Never reuse them; numbers only rise. From 21 Nov 2026 the Saturday Fact is a Word story: an everyday word or object traced to its Indian root and history (docs/UNIVERSE.md section 4); numbered like every Fact."
   },
   "jaisa-tha": {
@@ -129,7 +129,7 @@
    "number": null,
    "field": "linguistics",
    "title": "Boli: Kaithi, the script of Bihar's courts",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-13T19:30",
    "platforms": [
     "instagram",
@@ -269,6 +269,25 @@
     "sher-shah-tomb"
    ],
    "sources": "render/queue/20261118-gaon-file-sasaram; Buchanan, Account of the District of Shahabad in 1812-13 (Patna, 1934), pp. 1, 91-94; queue sheet row 44"
+  },
+  {
+   "id": "tl-fact-012-prajnaparamita",
+   "brand": "talaash",
+   "series": "fact",
+   "number": 12,
+   "field": "sanskrit",
+   "title": "Fact 012: 100,000 lines or one syllable, the Perfection of Wisdom",
+   "status": "scheduled",
+   "slot": "2026-11-19T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": "indian-manuscripts",
+   "sources": "render/queue/20261119-fact-prajnaparamita slides 1, 2, 4; queue sheet row 45; 84000 Toh 12 and Toh 23; Asia Society 1979.53.1-4",
+   "topic_lock": [
+    "prajnaparamita"
+   ]
   },
   {
    "id": "aw-3d-01-burials",
