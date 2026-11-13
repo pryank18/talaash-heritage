@@ -765,7 +765,7 @@
    "id": "tl-lecture-01-raya-asoko",
    "number": 1,
    "field": "history",
-   "title": "Durlabh #01 · Rāya Asoko: the only portrait that names Ashoka",
+   "title": "Durlabh #01 · Rāya Asoko: the only carvings that name Ashoka",
    "slot": "2026-11-22T12:00",
    "page": "durlabh-01-raya-asoko",
    "sells": "write-like-asoka-s-scribes-a-brahmi-workshop",
@@ -773,7 +773,7 @@
     "kanaganahalli",
     "raya-asoko"
    ],
-   "status": "idea",
+   "status": "building",
    "notes": "Long read written and three-checked 12 Nov 2026: content/durlabh/01-raya-asoko.json (checks: render/lectures/01-raya-asoko/checks.md). Lecture studio builds the video from that text on Fri 13 Nov.",
    "brand": "talaash",
    "series": "talaash-lectures",
