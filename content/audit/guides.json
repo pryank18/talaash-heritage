@@ -160,6 +160,63 @@
       "held": [
         "Kodumanal removed from pre-Ashokan potsherd sites: not confirmed by checker A"
       ]
+    },
+    {
+      "slug": "branches-of-anthropology",
+      "date": "2026-11-13",
+      "claims_checked": 12,
+      "changed": [
+        "Four-field model now 'associated with Franz Boas and American anthropology' (early 20th century dating dropped)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "buddhist-caves-in-india",
+      "date": "2026-11-13",
+      "claims_checked": 26,
+      "changed": [
+        "Karla chaitya dated 'around the turn of the Common Era' (Britannica late 1st c BCE vs Dehejia 1st c CE)",
+        "Ajanta later phase now 5th to 6th c CE, linked with the Vakatakas (UNESCO); 'horseshoe bend' wording replaced",
+        "Udayagiri (Vidisha) caves 'mostly Hindu'",
+        "FAQ: early caves 'around the 2nd and 1st centuries BCE'"
+      ],
+      "held": [
+        "'Well over a thousand rock-cut caves in Maharashtra' removed: no acceptable source; now 'hundreds'"
+      ]
+    },
+    {
+      "slug": "chola-dynasty",
+      "date": "2026-11-13",
+      "claims_checked": 34,
+      "changed": [
+        "Thanjavur vimana now 'about 60 metres' (UNESCO 59.82 m; 66 m unsupported)",
+        "Reigns softened: Vijayalaya to about 870, Parantaka I to the mid-950s, Rajaraja I/Rajendra I about 1014 (UNESCO 1012 vs Britannica 1014)",
+        "Gangaikonda Cholapuram capital 'in the 1020s'; Srivijaya raid 'known from his inscriptions'",
+        "Decline dated to the 13th century (Britannica: Hoysalas from 1216, Pandyas 1257)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "classical-dances-of-india",
+      "date": "2026-11-13",
+      "claims_checked": 24,
+      "changed": [
+        "Natya Shastra dated 'about the 2nd century BCE to the 3rd century CE' (Britannica range)"
+      ],
+      "held": [
+        "'Ministry of Culture has listed Chhau' removed: no government source found; now 'some books also count Chhau'"
+      ]
+    },
+    {
+      "slug": "classical-languages-of-india",
+      "date": "2026-11-13",
+      "claims_checked": 22,
+      "changed": [
+        "Pali and Prakrit 'like Sanskrit' not the main language of any state (Sanskrit was wrongly excluded)",
+        "Expert committee named: set up by Ministry of Culture under Sahitya Akademi (pmindia.gov.in)",
+        "Sanskrit tradition 'about three thousand years'"
+      ],
+      "held": []
     }
   ]
 }
