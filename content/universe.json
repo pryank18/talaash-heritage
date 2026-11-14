@@ -401,16 +401,21 @@
    "series": "jaisa-tha",
    "number": 2,
    "field": "arts",
-   "title": "Jaisa Tha #2 (Arts: a painting, mural or craft as it looked new; original colours documented in a published source)",
-   "status": "idea",
+   "title": "Jaisa Tha #2: Sabz Burj, Delhi",
+   "status": "ready",
    "slot": "2026-11-27T19:30",
    "platforms": [
     "instagram",
     "facebook",
     "youtube-short"
    ],
-   "page": null,
-   "sources": "Talaash 3D studio, Sat 21 Nov run"
+   "page": "humayuns-tomb",
+   "sells": "humayuns-tomb",
+   "sources": "render/jaisatha/02-sabz-burj.md",
+   "topic_lock": [
+    "sabz-burj"
+   ],
+   "notes": "built 2026-11-14; caption in render/jaisatha/02-sabz-burj.md; media site/media/ig/jaisatha-02-sabz-burj.mp4 (55.7 s, 3.45 MB); three checks passed 14 Nov (claims dropped listed in the .md); both logos on every frame; edgecheck 0"
   },
   {
    "id": "aw-guess-03",
