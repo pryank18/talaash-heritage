@@ -1,6 +1,6 @@
 {
  "_readme": "The single ledger for everything Talaash Heritage and archaeologywala make: posts, reels, 3D models, lectures, web pages. Every piece gets one id here before it is built, and its status is updated when it goes live. Series numbers are taken only from this ledger: run tools/check_universe.py and use the 'next' number it prints, then add the item here before building it. Rules: docs/UNIVERSE.md. Check with python3 tools/check_universe.py before every commit that touches this file. Talaash tasks write here; archaeologywala tasks read it and log in their run book, and the Sunday universe review copies their live posts in.",
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "fields": [
   "archaeology",
   "linguistics",
@@ -145,14 +145,14 @@
    "number": 10,
    "field": "linguistics",
    "title": "Coins helped unlock Kharosthi",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-14T19:30",
    "platforms": [
     "instagram",
     "facebook"
    ],
    "page": null,
-   "sources": "queue sheet row 38"
+   "sources": "queue sheet row 38; posted 14 Nov 20:55, IG 18115721480157326, FB 109410924674841_1446502927663126"
   },
   {
    "id": "tl-chhath-2026",
@@ -290,6 +290,25 @@
    ]
   },
   {
+   "id": "tl-devutthana-2026",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "Devutthana Ekadashi: 118 days asleep, and Vishnu asleep in stone at Deogarh",
+   "status": "scheduled",
+   "slot": "2026-11-20T08:00",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "topic_lock": [
+    "deogarh-dashavatara"
+   ],
+   "sources": "render/queue/20261120-devutthana-deogarh slides 1-4; queue sheet row 53; Drik Panchang Prabodhini and Devshayani Ekadashi 2026 (New Delhi); Smarthistory/MAP Academy Dashavatara Temple, Deogarh; British Library Photo 1003/(751)"
+  },
+  {
    "id": "aw-3d-01-burials",
    "brand": "archaeologywala",
    "series": "ancient-india-3d",
@@ -350,7 +369,7 @@
    "number": 1,
    "field": "archaeology",
    "title": "Jaisa Tha #1: Purana Qila",
-   "status": "ready",
+   "status": "scheduled",
    "slot": "2026-11-20T19:30",
    "platforms": [
     "instagram",
@@ -358,7 +377,7 @@
     "youtube-short"
    ],
    "page": "purana-qila",
-   "sources": "render/jaisatha/01-purana-qila.md",
+   "sources": "render/jaisatha/01-purana-qila.md; queue sheet row 54 (Reel, N Not needed), written 14 Nov",
    "topic_lock": [
     "purana-qila"
    ]
