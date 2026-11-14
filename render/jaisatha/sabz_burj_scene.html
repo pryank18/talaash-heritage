@@ -1,0 +1,192 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><script src="three.min.js"></script><script>
+// Jaisa Tha #2: Sabz Burj. Plain shapes from the AKTC conservation documents; not to scale.
+// Colours: finial green, dome turquoise blue, drum lapis blue / turquoise blue-green / yellow in equal measure (AKTC flier).
+const P = new URLSearchParams(location.search);
+const SCENE = P.get('s') || 'hero';
+const W = 1080, H = 1920;
+const R = new THREE.WebGLRenderer({antialias: true, preserveDrawingBuffer: true});
+R.setSize(W, H); R.setPixelRatio(1); R.localClippingEnabled = true;
+R.outputColorSpace = THREE.SRGBColorSpace; R.toneMapping = THREE.ACESFilmicToneMapping; R.toneMappingExposure = 1.05;
+document.body.appendChild(R.domElement);
+const S = new THREE.Scene();
+const cam = new THREE.PerspectiveCamera(34, W / H, 0.1, 400);
+
+// sky
+const sky = document.createElement('canvas'); sky.width = 4; sky.height = 512;
+const g = sky.getContext('2d'); const gr = g.createLinearGradient(0, 0, 0, 512);
+gr.addColorStop(0, '#1d2433'); gr.addColorStop(0.55, '#3d3d48'); gr.addColorStop(1, '#6b5444');
+g.fillStyle = gr; g.fillRect(0, 0, 4, 512);
+const skyT = new THREE.CanvasTexture(sky); skyT.colorSpace = THREE.SRGBColorSpace; S.background = skyT;
+
+S.add(new THREE.HemisphereLight(0xdfe6f5, 0x5a4a3a, 1.1));
+const sun = new THREE.DirectionalLight(0xffd7a8, 2.2); sun.position.set(-18, 22, 14); S.add(sun);
+const fill = new THREE.DirectionalLight(0x9fb4d8, 0.5); fill.position.set(16, 8, -10); S.add(fill);
+
+const MODE = {hero: 'today', aerial: 'today', section: 'today', tiles: 'today', police: 'police', asi: 'asi', reveal: 'reveal', palette: 'reveal', plan: 'today'}[SCENE];
+const CUT = ['section', 'police', 'asi', 'reveal', 'palette'].includes(SCENE);
+const clip = CUT ? [new THREE.Plane(new THREE.Vector3(0, 0, -1), 0.0)] : [];
+const M = (c, o = {}) => new THREE.MeshStandardMaterial(Object.assign({color: c, roughness: 0.85, metalness: 0, clippingPlanes: clip, clipShadows: true, side: THREE.DoubleSide}, o));
+
+// ground: traffic island (grass) and the road ring around it
+const ground = new THREE.Mesh(new THREE.RingGeometry(22.9, 120, 96), M(0x3e3c38, {clippingPlanes: []})); ground.rotation.x = -Math.PI / 2; S.add(ground);
+const road = new THREE.Mesh(new THREE.RingGeometry(15, 23, 96), M(0x3b3b3e, {clippingPlanes: []})); road.rotation.x = -Math.PI / 2; road.position.y = 0.01; S.add(road);
+const kerb = new THREE.Mesh(new THREE.RingGeometry(14.6, 15, 96), M(0x6e6a62, {clippingPlanes: []})); kerb.rotation.x = -Math.PI / 2; kerb.position.y = 0.02; S.add(kerb);
+const grass = new THREE.Mesh(new THREE.CircleGeometry(14.6, 96), M(0x5f7a45, {clippingPlanes: []})); grass.rotation.x = -Math.PI / 2; grass.position.y = 0.02; S.add(grass);
+// road lane marks
+for (let i = 0; i < 48; i++) {
+  const a = i / 48 * Math.PI * 2; const d = new THREE.Mesh(new THREE.PlaneGeometry(0.18, 1.4), M(0x5e5c56, {clippingPlanes: []}));
+  d.rotation.x = -Math.PI / 2; d.rotation.z = -a; d.position.set(Math.sin(a) * 19, 0.03, Math.cos(a) * 19); S.add(d);
+}
+
+// irregular octagon: four wide main faces, four narrow diagonal faces
+const A = 4.2, C = 2.6; // half-width of main face, chamfer
+function octShape(a, c) {
+  const s = new THREE.Shape();
+  const pts = [[a - c, a], [-(a - c), a], [-a, a - c], [-a, -(a - c)], [-(a - c), -a], [a - c, -a], [a, -(a - c)], [a, a - c]];
+  s.moveTo(pts[0][0], pts[0][1]); pts.slice(1).forEach(p => s.lineTo(p[0], p[1])); s.closePath(); return s;
+}
+const plaster = {today: 0xd8ccb2, police: 0xa8a49c, asi: 0xbdb6a6, reveal: 0x4a443b}[MODE];
+const bodyH = 6.4;
+const shape = octShape(A, C);
+const hole = new THREE.Path(); const q = 2.3; // square chamber inside
+hole.moveTo(-q, -q); hole.lineTo(q, -q); hole.lineTo(q, q); hole.lineTo(-q, q); hole.closePath();
+shape.holes.push(hole);
+const body = new THREE.Mesh(new THREE.ExtrudeGeometry(shape, {depth: bodyH, bevelEnabled: false}), M(plaster));
+body.rotation.x = -Math.PI / 2; S.add(body);
+// chamber floor
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(2 * q, 2 * q), M(0xb9ad95)); floor.rotation.x = -Math.PI / 2; floor.position.y = 0.04; S.add(floor);
+// roof slab with round opening for the inner dome
+const roofS = octShape(A, C); const rh = new THREE.Path(); rh.absarc(0, 0, q * 1.0, 0, Math.PI * 2, true); roofS.holes.push(rh);
+const roof = new THREE.Mesh(new THREE.ExtrudeGeometry(roofS, {depth: 0.5, bevelEnabled: false}), M(plaster)); roof.rotation.x = -Math.PI / 2; roof.position.y = bodyH; S.add(roof);
+
+// pishtaq (tall arched recess) on each main face; small arched niches on the narrow faces
+function archShape(w, h) { const s = new THREE.Shape(); const r = w / 2; s.moveTo(-r, 0); s.lineTo(-r, h - r * 1.1); s.quadraticCurveTo(-r, h, 0, h + r * 0.15); s.quadraticCurveTo(r, h, r, h - r * 1.1); s.lineTo(r, 0); s.closePath(); return s; }
+const recess = {today: 0x8d7f69, police: 0x6f6b64, asi: 0x7a7266, reveal: 0x8d7f69}[MODE];
+const faces = [];
+for (let k = 0; k < 4; k++) {
+  const ang = k * Math.PI / 2;
+  const m = new THREE.Mesh(new THREE.ShapeGeometry(archShape(3.0, 5.0)), M(recess));
+  const n = new THREE.Vector3(Math.sin(ang), 0, Math.cos(ang));
+  m.position.copy(n.clone().multiplyScalar(A + 0.03)); m.position.y = 0.0; m.rotation.y = ang; S.add(m);
+  faces.push(n.clone().multiplyScalar(A + 0.05).add(new THREE.Vector3(0, 3.2, 0)));
+  const k2 = ang + Math.PI / 4; const d = (A - C / 2) * 1.0;
+  const n2 = new THREE.Vector3(Math.sin(k2), 0, Math.cos(k2));
+  const mm = new THREE.Mesh(new THREE.ShapeGeometry(archShape(1.25, 2.4)), M(recess));
+  mm.position.copy(n2.clone().multiplyScalar(d * Math.SQRT2 * 0.5 + 0.0)).setLength((A - C / 2) * Math.SQRT2 * 0.5 + 0.03 + (A - (A - C / 2)) * 0.0);
+  // place on the diagonal face plane
+  const mid = new THREE.Vector3((A - C / 2) * Math.sin(k2) * Math.SQRT2, 0, (A - C / 2) * Math.cos(k2) * Math.SQRT2);
+  mm.position.set(mid.x * 1.0, 0.9, mid.z * 1.0).add(n2.clone().multiplyScalar(0.03)); mm.rotation.y = k2; S.add(mm);
+  faces.push(mid.clone().add(new THREE.Vector3(0, 2.4, 0)));
+}
+// police-era cement patches on the facades
+if (MODE === 'police') {
+  for (let i = 0; i < 18; i++) {
+    const a = (i * 2.399) % (Math.PI * 2); const n = new THREE.Vector3(Math.sin(a), 0, Math.cos(a));
+    const p = new THREE.Mesh(new THREE.PlaneGeometry(0.9 + (i % 3) * 0.5, 0.7 + (i % 4) * 0.4), M(0x8b8b8b));
+    p.position.copy(n.multiplyScalar(A * 0.98 + 0.08)); p.position.y = 0.8 + (i * 1.7) % 5; p.rotation.y = a; S.add(p);
+  }
+}
+
+// drum with tiles in three colours in equal measure (pattern simplified to bands)
+const drumR = 2.75, drumH = 3.0, drumY = bodyH + 0.5;
+function stripeTex(cols, n) {
+  const c = document.createElement('canvas'); c.width = 1024; c.height = 64; const x = c.getContext('2d');
+  for (let i = 0; i < n; i++) { x.fillStyle = cols[i % cols.length]; x.fillRect(i * 1024 / n, 0, 1024 / n + 1, 64); }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+let drumMat;
+if (MODE === 'today' || MODE === 'reveal') drumMat = M(0xffffff, {map: stripeTex(['#2a4f9c', '#2aa198', '#d9b23a', '#3f8f4c'], 48), roughness: 0.35});
+else if (MODE === 'police') drumMat = M(0xffffff, {map: stripeTex(['#56627a', '#6b8580', '#8f8466', '#7d776c'], 48), roughness: 0.9});
+else drumMat = M(0xffffff, {map: stripeTex(['#2a4f9c', '#2aa198', '#d9b23a', '#3f8f4c'], 48), roughness: 0.35});
+const drum = new THREE.Mesh(new THREE.CylinderGeometry(drumR, drumR, drumH, 64, 1, true), drumMat); drum.position.y = drumY + drumH / 2; S.add(drum);
+const drumCap = new THREE.Mesh(new THREE.RingGeometry(0.0, drumR, 64), M(0xcfc3a8)); drumCap.rotation.x = -Math.PI / 2; drumCap.position.y = drumY + 0.01; S.add(drumCap);
+
+// outer onion dome (lathe profile)
+const prK = [[2.75,0],[3.05,0.55],[3.15,1.25],[2.95,2.05],[2.45,2.8],[1.7,3.4],[0.9,3.85],[0.35,4.2],[0.05,4.35]];
+const pr = new THREE.SplineCurve(prK.map(p => new THREE.Vector2(p[0], p[1]))).getPoints(48);
+const DOMEH = 4.35;
+const domeCol = {today: 0x2c9aa8, police: 0x6f7f7e, asi: 0x2c9aa8, reveal: 0x2c9aa8}[MODE];
+const outer = new THREE.Mesh(new THREE.LatheGeometry(pr, 96), M(domeCol, {roughness: MODE === 'police' ? 0.95 : 0.3}));
+outer.position.y = drumY + drumH; S.add(outer);
+if (MODE === 'police') { // fallen tiles: patches of bare masonry
+  for (let i = 0; i < 26; i++) {
+    const a = i * 2.4, t = 0.15 + (i * 0.37) % 0.7; const idx = Math.floor(t * 48); const p = pr[idx];
+    const s = new THREE.Mesh(new THREE.SphereGeometry(0.42 + (i % 3) * 0.12, 12, 8), M(0xa59a86));
+    s.scale.set(1.2, 0.7, 0.08); s.position.set(Math.sin(a) * p.x, drumY + drumH + p.y, Math.cos(a) * p.x); s.lookAt(0, s.position.y, 0); S.add(s);
+  }
+}
+// lotus finial, green tiles
+const fin = new THREE.Group();
+const lot = new THREE.Mesh(new THREE.CylinderGeometry(0.75, 0.18, 0.55, 16), M(MODE === 'police' ? 0x6e7a6a : 0x3f8f4c, {roughness: 0.35})); fin.add(lot);
+const st = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.07, 1.2, 8), M(0x8c7a52, {metalness: 0.3})); st.position.y = 0.8; fin.add(st);
+const kb = new THREE.Mesh(new THREE.SphereGeometry(0.17, 12, 8), M(0x8c7a52, {metalness: 0.3})); kb.position.y = 1.1; fin.add(kb);
+fin.position.y = drumY + drumH + DOMEH + 0.15; S.add(fin);
+
+// inner dome = the painted ceiling, seen only in the section scenes
+const ip = []; for (let i = 0; i <= 32; i++) { const a = i / 32 * Math.PI / 2; ip.push(new THREE.Vector2(q * Math.cos(a) + 0.001, bodyH + 0.5 + q * 0.85 * Math.sin(a))); }
+let ceilTex = null;
+if (MODE === 'reveal' || MODE === 'asi' || MODE === 'police') {
+  const c = document.createElement('canvas'); c.width = 64; c.height = 512; const x = c.getContext('2d');
+  // v=0 at the rim, v=1 at the crown
+  if (MODE === 'reveal') { x.fillStyle = '#23408f'; x.fillRect(0, 0, 64, 512); x.fillStyle = '#9a9384'; x.fillRect(0, 512 - 70, 64, 70); }
+  if (MODE === 'police') { x.fillStyle = '#b8b3aa'; x.fillRect(0, 0, 64, 512); }
+  if (MODE === 'asi') { x.fillStyle = '#b8b3aa'; x.fillRect(0, 0, 64, 512); const gg = x.createLinearGradient(0, 512, 0, 300); gg.addColorStop(0, 'rgba(70,62,50,0.85)'); gg.addColorStop(1, 'rgba(70,62,50,0)'); x.fillStyle = gg; x.fillRect(0, 300, 64, 212); }
+  ceilTex = new THREE.CanvasTexture(c); ceilTex.colorSpace = THREE.SRGBColorSpace;
+}
+const innerMat = ceilTex ? M(0xffffff, {map: ceilTex, roughness: 0.8}) : M(0xcabfa6);
+const inner = new THREE.Mesh(new THREE.LatheGeometry(ip, 96), innerMat); S.add(inner);
+// gold specks on the revealed ceiling (gold survives only in specks)
+if (MODE === 'reveal') {
+  const gm = M(0xd9a83a, {metalness: 0.8, roughness: 0.3});
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  for (let i = 0; i < 260; i++) {
+    const a = rnd() * Math.PI * 2, e = 0.12 + rnd() * 1.3; const r = q * Math.cos(e) - 0.02, y = bodyH + 0.5 + q * 0.85 * Math.sin(e) - 0.02;
+    const s = new THREE.Mesh(new THREE.SphereGeometry(0.018 + rnd() * 0.02, 6, 4), gm); s.position.set(Math.cos(a) * r, y, Math.sin(a) * r); S.add(s);
+  }
+}
+// water seeping through from the 1980s tiles
+if (MODE === 'asi') {
+  const wm = M(0x9cc3e0, {transparent: true, opacity: 0.85, roughness: 0.1});
+  for (let i = 0; i < 40; i++) { const a = i * 2.2, r = 0.6 + (i * 0.53) % 2.0; const d = new THREE.Mesh(new THREE.SphereGeometry(0.06, 8, 6), wm); d.scale.y = 1.6; d.position.set(Math.cos(a) * r, bodyH + 0.5 + (i * 0.71) % 2.2, Math.sin(a) * r); S.add(d); }
+}
+
+// cornice line inside the chamber
+const corn = new THREE.Mesh(new THREE.BoxGeometry(2 * q, 0.18, 2 * q), M(0xb0a48c)); corn.position.y = bodyH * 0.55; corn.scale.set(1.0, 1, 1.0);
+const cornHole = new THREE.Mesh(new THREE.BoxGeometry(2 * q - 0.3, 0.2, 2 * q - 0.3), M(0xb0a48c));
+if (CUT) { // thin cornice ring inside
+  [[0, q - 0.07, 2 * q, 0.14], [0, -q + 0.07, 2 * q, 0.14], [q - 0.07, 0, 0.14, 2 * q], [-q + 0.07, 0, 0.14, 2 * q]].forEach(([x, z, w, d]) => { const b = new THREE.Mesh(new THREE.BoxGeometry(w, 0.16, d), M(0xa8997e)); b.position.set(x, bodyH * 0.55, z); S.add(b); });
+}
+
+// person for scale: no, the reel says "Not to scale"; no figures.
+
+// cameras
+const cams = {
+  hero: [[25, 7.5, 35], [0, 8.4, 0], 34, 360],
+  aerial: [[36, 44, 41], [0, 3.0, 0], 34, 330],
+  section: [[21, 12.5, 41], [0, 8.6, 0], 34, 400],
+  tiles: [[14.5, 16.5, 23], [0, 12.4, 0], 34, 250],
+  police: [[21, 12.5, 41], [0, 8.6, 0], 34, 400],
+  asi: [[21, 12.5, 41], [0, 8.6, 0], 34, 400],
+  reveal: [[0, 3.4, 11.8], [0, 7.6, 0], 46, 360],
+  palette: [[0, 3.4, 11.8], [0, 7.6, 0], 46, 360],
+  plan: [[0.01, 44, 0.01], [0, 0, 0], 30, 300],
+};
+if (SCENE === 'reveal' || SCENE === 'palette') { outer.visible = false; fin.visible = false; drum.visible = false; drumCap.visible = false; }
+const [cp, ct, fov, off] = cams[SCENE];
+cam.position.set(...cp); cam.fov = fov; cam.setViewOffset(W, H, 0, -off, W, H); cam.updateProjectionMatrix(); cam.lookAt(...ct);
+if (SCENE === 'plan') { cam.up.set(0, 0, -1); cam.lookAt(0, 0, 0); }
+
+// label anchors (world) -> screen
+const anchors = {
+  finial: [0, drumY + drumH + DOMEH + 0.4, 0], dome: [drumR * 0.9, drumY + drumH + 1.6, 1.2], drum: [drumR * 0.7, drumY + drumH * (SCENE === 'tiles' ? 0.5 : 0.92), drumR * 0.7],
+  pishtaq: [0, 3.6, A], inner: [-q * 0.5, bodyH + 0.5 + q * 0.35, 0.0], outer: [-drumR * 0.8, drumY + drumH + 2.2, 0.0], chamber: [-1.2, 4.6, 0.0],
+  ceiling: [0.4, bodyH + 0.5 + q * 0.6, -1.0], edge: [q * 0.97, bodyH + 0.62, -0.2], island: [9, 0, 6], road: [-14, 0, 14],
+};
+faces.forEach((f, i) => anchors['face' + i] = [f.x, SCENE === 'plan' ? bodyH + 0.6 : f.y, f.z]);
+R.render(S, cam);
+const out = {};
+for (const [k, v] of Object.entries(anchors)) { const p = new THREE.Vector3(...v).project(cam); out[k] = [Math.round((p.x + 1) / 2 * W), Math.round((1 - p.y) / 2 * H), p.z < 1]; }
+window.LABELS = out; window.DONE = true;
+</script></body></html>

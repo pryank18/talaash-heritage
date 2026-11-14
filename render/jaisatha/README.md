@@ -8,6 +8,11 @@ One episode per field of TALAASH (archaeology, linguistics, anthropology, arts, 
 - Assembly: `python3 purana_qila_compose.py` (needs the stills in frames/, the Noto Sans and Tiro Devanagari Sanskrit fonts in fonts/, and site/assets/img/logo-badge.png), then the two-pass encode at 560 kbit/s video + 64 kbit/s mono AAC keeps a 46 s reel under 3.8 MB, the largest file the browser upload accepts.
 - Paths inside the scripts point to /home/claude/jaisatha; change them when reusing.
 
+## Episode 2: Sabz Burj, Delhi (made 14 Nov 2026, arts)
+- Script, caption, sources, three-check notes: 02-sabz-burj.md
+- Stills: three.js r158 in headless Chromium, `python3 sabz_burj_shoot.py` (renders sabz_burj_scene.html for 9 scenes and writes label positions); then `python3 sabz_burj_compose.py` and the two-pass encode at 420 kbit/s + 64 kbit/s mono AAC (55.7 s, 3.45 MB). Paths in the scripts point to /tmp/claude-0/jt2 and /tmp/claude-0/fonts (Noto Sans and Tiro from @fontsource, converted to TTF); change them when reusing.
+- From this episode on, both logos sit on every frame: archaeologywala top left, Talaash top right, and both on the end card.
+
 ## Making the next episode
 1. Script from primary sources; two independent fact checks (one opens every source, one tries to disprove each claim) before rendering.
 2. Render, then check every segment frame by frame: text clear of objects, labels on the right layers. Run `python3 edgecheck.py <reel.mp4>`: it must report 0 frames touching an edge (a vertical frame is narrow, so the camera auto-fits each scene inside 110–970 px; the push-in is kept to 3.5% and the sway to 12 px so they never crop).
