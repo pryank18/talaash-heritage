@@ -1,0 +1,132 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Tiro;src:url(../fonts/fontsource-tiro-devanagari-sanskrit-5.3.0/files/tiro-devanagari-sanskrit-latin-400-normal.woff2)}
+@font-face{font-family:Tiro;src:url(../fonts/fontsource-tiro-devanagari-sanskrit-5.3.0/files/tiro-devanagari-sanskrit-latin-ext-400-normal.woff2);unicode-range:U+0100-024F,U+1E00-1EFF}
+@font-face{font-family:Tiro;src:url(../fonts/fontsource-tiro-devanagari-sanskrit-5.3.0/files/tiro-devanagari-sanskrit-devanagari-400-normal.woff2);unicode-range:U+0900-097F,U+1CD0-1CFF,U+A8E0-A8FF}
+@font-face{font-family:Sans;font-weight:400;src:url(../fonts/fontsource-noto-sans-5.3.0/files/noto-sans-latin-400-normal.woff2)}
+@font-face{font-family:Sans;font-weight:400;src:url(../fonts/fontsource-noto-sans-5.3.0/files/noto-sans-latin-ext-400-normal.woff2);unicode-range:U+0100-024F,U+1E00-1EFF}
+@font-face{font-family:Sans;font-weight:700;src:url(../fonts/fontsource-noto-sans-5.3.0/files/noto-sans-latin-700-normal.woff2)}
+@font-face{font-family:Sans;font-weight:700;src:url(../fonts/fontsource-noto-sans-5.3.0/files/noto-sans-latin-ext-700-normal.woff2);unicode-range:U+0100-024F,U+1E00-1EFF}
+@font-face{font-family:Naskh;src:url(../fonts/fontsource-noto-naskh-arabic-5.3.0/files/noto-naskh-arabic-arabic-600-normal.woff2)}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--k:#8A1A14;--c:#F4E4C1;--h:#EFB02E;--d:#5e100c}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{background:radial-gradient(ellipse at 50% 38%,#9a2219 0%,#8A1A14 45%,#5e100c 100%);color:var(--c);font-family:Tiro,serif;position:relative;-webkit-font-smoothing:antialiased}
+.rule{position:absolute;top:0;bottom:0;width:2px;background:var(--h);opacity:.45}
+#top{position:absolute;left:70px;top:92px;font-family:Sans;font-weight:700;font-size:30px;letter-spacing:.16em;color:var(--h)}
+#top small{display:block;font-family:Tiro;font-weight:400;font-size:30px;letter-spacing:0;color:var(--c);opacity:.85;margin-top:8px;font-style:italic}
+#logo{position:absolute;right:56px;top:54px;width:150px;height:150px}
+#stage{position:absolute;left:0;right:0;top:250px;height:1150px;transform-origin:50% 0}
+.node{position:absolute;width:420px;padding:22px 26px 20px;border-radius:18px;background:var(--c);color:var(--k);text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.28)}
+.node .lang{font-family:Sans;font-weight:700;font-size:22px;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+.node .w{font-size:64px;line-height:1.15;margin-top:4px}
+.node .g{font-size:30px;font-style:italic;margin-top:2px}
+.node .scr{font-size:70px;line-height:1.2}
+.node.ar .scr{font-family:Naskh;direction:rtl}
+.node.big{width:520px}
+.node.hl{box-shadow:0 0 0 6px var(--h),0 10px 40px rgba(0,0,0,.35)}
+svg#arrows{position:absolute;left:0;top:0;width:1080px;height:1150px;overflow:visible}
+svg#arrows path{fill:none;stroke:var(--h);stroke-width:5;stroke-linecap:round}
+svg#arrows text{fill:var(--h);font-family:Sans;font-weight:700;font-size:24px;letter-spacing:.1em}
+#hook{position:absolute;left:80px;right:80px;top:520px;text-align:center}
+#hook .q{font-size:96px;line-height:1.1}
+#hook .z{font-family:Sans;font-weight:700;font-size:300px;color:var(--h);line-height:1;margin-top:40px}
+.card{position:absolute;left:90px;right:90px;top:560px;background:#fbf3df;color:#2a1a10;border-radius:10px;padding:46px 54px 40px;box-shadow:0 20px 60px rgba(0,0,0,.45);border-left:14px solid var(--h)}
+.card .src{font-family:Sans;font-weight:700;font-size:24px;letter-spacing:.12em;text-transform:uppercase;color:var(--k)}
+.card .hw{font-size:76px;margin:18px 0 6px}
+.card .hw .dv{font-size:70px;margin-left:18px}
+.card .pos{font-style:italic;font-size:34px;opacity:.8}
+.card .sense{font-size:44px;line-height:1.35;margin-top:14px}
+.card .sense b{font-family:Sans;font-size:30px;color:var(--k);margin-right:14px}
+.card .mark{background:rgba(239,176,46,.45);padding:0 6px;border-radius:4px}
+.card .foot{font-family:Sans;font-size:22px;opacity:.7;margin-top:26px}
+#dim{position:absolute;inset:0;background:#2a0806}
+#srcline{position:absolute;left:70px;right:70px;top:1408px;font-family:Sans;font-size:24px;color:var(--c);opacity:.8;text-align:center}
+#cap{position:absolute;z-index:5;left:70px;right:70px;top:1500px;height:250px;display:flex;align-items:center;justify-content:center;text-align:center}
+#cap span{font-family:Sans;font-weight:700;font-size:50px;line-height:1.28;color:#fff;text-shadow:0 3px 0 #000,0 0 14px rgba(0,0,0,.8);background:rgba(40,8,6,.55);padding:12px 26px;border-radius:14px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+#end{position:absolute;inset:0;background:var(--k);text-align:center}
+#end .bl{position:absolute;left:340px;top:260px;width:400px;height:400px}
+#end .t1{position:absolute;left:60px;right:60px;top:700px;font-size:50px;line-height:1.2}
+#end .t2{position:absolute;left:60px;right:60px;top:880px;font-family:Sans;font-weight:700;font-size:40px;color:var(--h);line-height:1.35}
+#end .t3{position:absolute;left:60px;right:60px;top:1060px;font-family:Sans;font-size:34px;line-height:1.7}
+</style></head>
+<body>
+<div class="rule" style="left:40px"></div><div class="rule" style="left:48px"></div>
+<div class="rule" style="right:40px"></div><div class="rule" style="right:48px"></div>
+<div id="stage">
+  <svg id="arrows"></svg>
+  <div class="node" id="n_en0" style="left:60px;top:40px"><div class="lang">English</div><div class="w">zero</div></div>
+  <div class="node" id="n_en1" style="left:600px;top:40px"><div class="lang">English</div><div class="w">cipher</div></div>
+  <div class="node" id="n_it" style="left:60px;top:260px"><div class="lang">Italian</div><div class="w">zero</div><div class="g">directly or through French</div></div>
+  <div class="node" id="n_ml0" style="left:60px;top:520px"><div class="lang">Medieval Latin</div><div class="w">zephirum</div></div>
+  <div class="node" id="n_ml1" style="left:600px;top:520px"><div class="lang">Medieval Latin</div><div class="w">cifra</div></div>
+  <div class="node big ar" id="n_ar" style="left:280px;top:750px"><div class="lang">Arabic</div><div class="scr">صفر</div><div class="w" style="font-size:52px;margin-top:-6px">ṣifr</div><div class="g">“empty”</div></div>
+  <div class="node big" id="n_sa" style="left:280px;top:1150px"><div class="lang">Sanskrit</div><div class="scr">शून्य</div><div class="w" style="font-size:52px;margin-top:-6px">śūnya</div><div class="g">“empty”</div></div>
+</div>
+<div id="hook"><div class="q">Why do we call nothing “zero”?</div><div class="z">0</div></div>
+<div id="dim"></div>
+<div class="card" id="c_mw"><div class="src">Merriam-Webster · cipher</div><div class="hw">ci·pher</div><div class="pos">noun</div><div class="sense"><b>1a</b><span class="mark">zero</span></div><div class="sense" style="font-size:34px;opacity:.85;margin-top:24px">Etymology: Middle English, from Medieval Latin <i>cifra</i>, from Arabic <i>ṣifr</i> empty, cipher, zero</div><div class="foot">merriam-webster.com/dictionary/cipher</div></div>
+<div class="card" id="c_ap"><div class="src">V. S. Apte · Sanskrit-English Dictionary · 1890 · p. 1052</div><div class="hw">śūnya<span class="dv">शून्य</span></div><div class="sense"><b>adj. 1</b><span class="mark">Empty</span>, void.</div><div class="sense"><b>noun 1</b>A vacuum, void, blank.</div><div class="sense"><b>noun 3</b><span class="mark">A cipher</span>, dot.</div><div class="foot">Entry quoted in part, as printed.</div></div>
+<div id="srcline"></div>
+<div id="cap"><span id="capt"></span></div>
+<div id="end"><img class="bl" src="logo-badge.png"><div class="t1">Read the guide:<br>Sanskrit and Indian knowledge systems</div><div class="t2">talaash-heritage.pages.dev/<br>sanskrit-and-indian-knowledge-systems</div><div class="t3">Instagram @talaashheritage<br>YouTube @talaashheritage1967<br>linkedin.com/company/talaashheritage<br>facebook.com/109410924674841</div></div>
+<div id="top">WHAT THE TEXT SAYS #01<small>Where did “zero” come from?</small></div>
+<img id="logo" src="logo-badge.png">
+<script>
+// timeline injected as window.TL = {L:[[start,end],...12], caps:[[start,end,text],...], dur}
+const $=id=>document.getElementById(id);
+const ease=x=>x<0?0:x>1?1:x*x*(3-2*x);
+function fade(t,a,b,d=0.35){ if(t<a||t>b) return 0; return Math.min(ease((t-a)/d),ease((b-t)/d)); }
+function fin(t,a,d=0.4){return ease((t-a)/d);}
+const C=(id)=>{const e=$(id).getBoundingClientRect(),s=$('stage').getBoundingClientRect();return e;};
+function P(id,side){const e=$(id);const x=e.offsetLeft,y=e.offsetTop,w=e.offsetWidth,h=e.offsetHeight;
+ return side=='top'?[x+w/2,y]:side=='bot'?[x+w/2,y+h]:[x+w/2,y+h/2];}
+const ARROWS=[ // [from(lower, older) -> to(upper, newer)], appear-line index
+ ['n_it','n_en0',1],['n_ml0','n_it',2],['n_ar','n_ml0',3],['n_ar','n_ml1',5],['n_ml1','n_en1',5],['n_sa','n_ar',7]];
+let paths=[];
+function build(){const svg=$('arrows');svg.innerHTML='';paths=[];
+ for(const [a,b,li] of ARROWS){const [x1,y1]=P(a,'top'),[x2,y2]=P(b,'bot');
+  const p=document.createElementNS('http://www.w3.org/2000/svg','path');
+  const my=(y1+y2)/2;p.setAttribute('d',`M${x1},${y1-6} C${x1},${my} ${x2},${my} ${x2},${y2+14}`);svg.appendChild(p);
+  const L=p.getTotalLength();p.style.strokeDasharray=L;
+  const h=document.createElementNS('http://www.w3.org/2000/svg','path');h.setAttribute('d',`M${x2-14},${y2+30} L${x2},${y2+12} L${x2+14},${y2+30}`);svg.appendChild(h);
+  paths.push({p,h,L,li,a,b});}
+ const tx=document.createElementNS('http://www.w3.org/2000/svg','text');tx.id='trl';tx.setAttribute('x',560);tx.setAttribute('y',1100);tx.textContent='TRANSLATED AS';svg.appendChild(tx);
+}
+const NODES=[['n_en0',0.85],['n_it',1],['n_ml0',2],['n_ar',3],['n_en1',4],['n_ml1',5],['n_sa',7]]; // [id, line index (0-based), appear at start of that line (n_en0 near end of line 0)]
+function render(t){
+ const T=window.TL,L=T.L;
+ const endStart=L[10][0];
+ // hook
+ $('hook').style.opacity=fade(t,-1,L[0][1]-0.1,0.4);
+ // stage zoom: slow drift; move camera so new nodes stay framed
+ let z=1+0.03*Math.min(1,t/L[6][0]);
+ if(t>L[6][0]) z=z+(0.8-z)*ease((t-L[6][0])/1.2);
+ $('stage').style.transform=`scale(${z})`;
+ for(const [id,li] of NODES){const st=li%1? L[0][0]+ (L[0][1]-L[0][0])*0.75 : L[li][0];
+  const o=fin(t,st,0.45); const e=$(id); e.style.opacity=o; e.style.transform=`translateY(${(1-o)*24}px)`;
+  e.classList.toggle('hl', (id=='n_ar'&&t>=L[6][0]&&t<L[7][1]) || (t>=L[9][0]&&t<endStart));}
+ for(const a of paths){const st=L[a.li][0]+0.35;const k=ease((t-st)/0.7);a.p.style.strokeDashoffset=a.L*(1-k);a.h.style.opacity=k>0.95?1:0;}
+ $('trl').style.opacity=fin(t,L[7][0]+0.9,0.4);
+ // cards
+ const mw=fade(t,L[5][0]+1.1,L[6][0]+0.6,0.35), ap=fade(t,L[8][0],L[8][1]+0.15,0.35);
+ $('c_mw').style.opacity=mw;$('c_mw').style.transform=`translateY(${(1-mw)*40}px)`;
+ $('c_ap').style.opacity=ap;$('c_ap').style.transform=`translateY(${(1-ap)*40}px)`;
+ $('dim').style.opacity=0.6*Math.max(mw,ap);
+ // source line
+ let s='';
+ if(t>=L[1][0]&&t<L[6][0]) s='Source: Merriam-Webster, etymologies of “zero” and “cipher”';
+ else if(t>=L[6][0]&&t<L[8][0]) s='Source: K. Jaouiche, “India’s Contribution to Arab Mathematics” (1998), p. 5';
+ else if(t>=L[8][0]&&t<L[9][0]) s='Source: V. S. Apte, The Practical Sanskrit-English Dictionary (Poona, 1890), p. 1052';
+ else if(t>=L[9][0]&&t<endStart) s='Sources: Merriam-Webster; Jaouiche (1998), p. 5; Apte (1890), p. 1052';
+ $('srcline').textContent=s;
+ // captions
+ let c='';for(const [a,b,tx] of T.caps){if(t>=a&&t<b){c=tx;break;}}
+ $('capt').textContent=c; $('cap').style.opacity=c?1:0;
+ // end card
+ $('end').style.opacity=fin(t,endStart,0.5);
+ $('top').style.opacity=1-fin(t,endStart,0.5);
+}
+window.addEventListener('load',()=>{build();});
+</script></body></html>
