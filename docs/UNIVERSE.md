@@ -68,6 +68,8 @@ Lecture rules: each lecture is 2–3 parts of about 5 minutes, each under 4.8 MB
 | X | Dormant | No free, reliable posting route; revisit when lectures have run for two months |
 | Reddit | Not used | Self-promotion rules and no automation; revisit with lectures |
 
+Routing of site content to social, and the LinkedIn two-a-day count across every route (15 Nov 2026): docs/SOCIAL.md growth rules 7 and 8. Heritage desk stories go out only inside the Sunday digest; new 3D pages launch through their Jaisa Tha episode; archive talks get one LinkedIn-only row each; LinkedIn-only rows never on Sundays or Thursdays.
+
 ## 6. Limits (credits)
 - Make Free: 1,000 operations a month, ceiling 850, only 2 active scenarios. A post costs about 6. If the Sunday review projects more than 600, Talaash drops to the 19:30 slot only.
 - Apify free credit: the weekly reviews and nightly checks only.

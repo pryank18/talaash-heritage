@@ -587,10 +587,12 @@
    "platforms": [
     "instagram",
     "facebook",
-    "youtube-short"
+    "youtube-short",
+    "linkedin"
    ],
    "page": "khajuraho-architecture-deep-dive",
    "sources": "render/3d/kandariya-sources.md (canvas aa5f80ed-5676-496a-aaee-353ea79aee60)",
+   "notes": "Social launch of the live 3D page 3d-kandariya-mahadeva (no separate post before this episode: one topic, one reel, and the 30-day topic rule). Caption and end card name both the 3D page (3d-kandariya-mahadeva) and the programme page; LinkedIn text names the 3D model in words, no pages.dev. Both logos on every frame. Planned 15 Nov 2026.",
    "topic_lock": [
     "khajuraho"
    ]
@@ -624,10 +626,12 @@
    "platforms": [
     "instagram",
     "facebook",
-    "youtube-short"
+    "youtube-short",
+    "linkedin"
    ],
    "page": "buddhist-caves-in-india",
    "sources": "render/3d/bhaja-sources.md (canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2)",
+   "notes": "Social launch of the live 3D page 3d-bhaja-chaitya (no separate post before this episode: one topic, one reel, and the 30-day topic rule). Caption and end card name both the 3D page (3d-bhaja-chaitya) and the programme page; LinkedIn text names the 3D model in words, no pages.dev. Both logos on every frame. Planned 15 Nov 2026.",
    "topic_lock": [
     "bhaja"
    ]
@@ -1492,6 +1496,25 @@
    ],
    "sources": "Projects doc claude/ig-pending-builds.md (Amritsar series, P1 and P3, checked 15 Nov 2026)",
    "notes": "Held for the anniversary so it does not repeat archaeologywala's 29 Nov post within 30 days. Sensitivity fixes to apply: title 'A wall that bears the marks'; say people were killed and wounded; 'many had also come for Baisakhi'; name the event on the cover; 'Indian National Congress' in full. Re-check the copy before use."
+  },
+  {
+   "id": "tl-archive-01-prakrit-2022",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "linguistics",
+   "title": "From the Talaashh Talks archive: Prakrit Language and Its Antiquity (19 June 2022)",
+   "status": "idea",
+   "slot": "2026-12-08T12:00",
+   "platforms": [
+    "linkedin"
+   ],
+   "page": "prakrit-a-first-course",
+   "topic_lock": [
+    "prakrit-antiquity-talk"
+   ],
+   "sources": "Talaash YouTube @talaashheritage1967 (public since 24 Jun 2022); Projects doc claude/recordings-audit.md row 3",
+   "notes": "LinkedIn-only post (Account talaashheritage-li, Due At 2026-12-08T12:00): the talk is already public on YouTube, and the Instagram/Facebook grid is full under the growth plan (four reels, three carousels). Built and queued by the one-shot task 'Prakrit archive talk: LinkedIn post' on 1 Dec: title, speaker and dates read from the YouTube page itself, three checks, cover from our own typeset slide, YouTube link only (no pages.dev). First of the Talaashh Talks archive posts; the rest follow claude/recordings-audit.md. Planned 15 Nov 2026."
   }
  ]
 }
