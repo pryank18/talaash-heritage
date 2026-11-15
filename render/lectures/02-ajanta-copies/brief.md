@@ -9,5 +9,5 @@ Leads already seen (12 Nov; confirm each in the three checks, numbers differ bet
 - Gill also photographed Ajanta (from the late 1850s/1860s); British Library holds his photographs and drawings.
 - Lady Herringham's copies (1909–11) are a later chapter; mention only if checked.
 Sells: reading-sculpture (Identifying sculpture). Read next: buddhist-caves-in-india, heritage-sites-in-maharashtra, best-archaeology-museums-in-india.
-Images: only open-licence or public-domain images checked on their own page (Gill's surviving V&A canvases are 19th-century works; confirm the V&A image licence before use).
+Images: only open-licence or public-domain images checked on their own page (Gill's surviving V&A canvases are 19th-century works, but the V&A's own image downloads are licensed for non-commercial use only, so they are NOT used. Use only scans on Wikimedia Commons marked public domain or CC0/CC BY/CC BY-SA, checked on their own file page, credited on the slide. Copyright audit, 15 Nov 2026).
 Topic lock: ajanta, robert-gill (the Arts Jaisa Tha on 27 Nov must not use Ajanta).

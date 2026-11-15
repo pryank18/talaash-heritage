@@ -1,0 +1,33 @@
+# Checks every third-party image Talaash uses (social slides and website) against
+# Wikimedia Commons and the Met's own records, and writes render/audit/licences.md,
+# render/audit/licences.json and content/social-credits.json. Runs on every change to
+# slides or site photos, every Sunday, and by hand. Nothing under render/ is published.
+name: Licence audit
+on:
+  push:
+    branches: [main]
+    paths: ['render/queue/**', 'content/media.json', 'tools/check_licences.py', 'render/audit/legacy-macaly-urls.txt', '.github/workflows/licence-audit.yml']
+  schedule:
+    - cron: '17 3 * * 0'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: licence-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit
+        run: python3 tools/check_licences.py
+      - name: Commit report
+        run: |
+          git config user.name "talaash-render-bot"
+          git config user.email "talaash-render-bot@users.noreply.github.com"
+          git add render/audit content/social-credits.json
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "audit: licences $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 10; done
