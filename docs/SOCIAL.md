@@ -2,10 +2,10 @@
 
 > Above this file: `docs/UNIVERSE.md` and the ledger `content/universe.json` (11 Nov 2026). Every piece is entered there, with its number from `tools/check_universe.py`, before it is built.
 
-Decided 10 Nov 2026. The full reasoning is in the Claude project note "social-content-split".
+Decided 10 Nov 2026. The full reasoning is in the project note "social-content-split".
 
 ## Growth rules for @talaashheritage (15 Nov 2026; read first)
-Full plan and the numbers behind it: Claude project doc `claude/growth-plan.md`. Where an older line below differs, these rules win.
+Full plan and the numbers behind it: project doc `claude/growth-plan.md`. Where an older line below differs, these rules win.
 
 Why: 17 Oct to 15 Nov, 27 posts, all carousels, no reels. Median reach 64 (below our 833 followers), median interactions 6, about one new follower a month. Carousels reach mostly existing followers; reels are what reaches new people.
 
