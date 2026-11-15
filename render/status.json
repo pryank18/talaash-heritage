@@ -1,11 +1,6 @@
 {
- "at": "2026-11-14T16:29:52.346Z",
- "rendered": [
-  "site/media/ig/20261120-devutthana-deogarh-1.jpg",
-  "site/media/ig/20261120-devutthana-deogarh-2.jpg",
-  "site/media/ig/20261120-devutthana-deogarh-3.jpg",
-  "site/media/ig/20261120-devutthana-deogarh-4.jpg"
- ],
+ "at": "2026-11-15T06:36:22.291Z",
+ "rendered": [],
  "skipped": [
   "site/media/ig/20261025-sharad-purnima-1.jpg",
   "site/media/ig/20261025-sharad-purnima-2.jpg",
@@ -138,6 +133,10 @@
   "site/media/ig/20261119-fact-prajnaparamita-2.jpg",
   "site/media/ig/20261119-fact-prajnaparamita-3.jpg",
   "site/media/ig/20261119-fact-prajnaparamita-4.jpg",
+  "site/media/ig/20261120-devutthana-deogarh-1.jpg",
+  "site/media/ig/20261120-devutthana-deogarh-2.jpg",
+  "site/media/ig/20261120-devutthana-deogarh-3.jpg",
+  "site/media/ig/20261120-devutthana-deogarh-4.jpg",
   "site/media/ig/20261125-durlabh-01-raya-asoko-1.jpg",
   "site/media/ig/20261125-durlabh-01-raya-asoko-2.jpg",
   "site/media/ig/20261125-durlabh-01-raya-asoko-3.jpg",
@@ -158,7 +157,10 @@
  ],
  "failed": [],
  "shorts": {
-  "built": [],
+  "built": [
+   "site/media/ig/20261117-fact-didarganj-yakshi-reel.mp4",
+   "site/media/ig/20261119-fact-prajnaparamita-reel.mp4"
+  ],
   "diplomaFixed": false
  }
 }
