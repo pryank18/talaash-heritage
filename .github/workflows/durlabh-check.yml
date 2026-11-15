@@ -1,5 +1,5 @@
 # Durlabh Sunday: independent live checks (docs/UNIVERSE.md, section 10).
-# Runs on GitHub's servers, so it needs no laptop and no Claude session. A failed run makes
+# Runs on GitHub's servers, so it needs no laptop and no interactive session. A failed run makes
 # GitHub email the repository owner, which is the alarm.
 #  - every released long read loads with its title, and the index lists it;
 #  - a released piece with podcast audio is in podcast.xml and its MP3 is served;
