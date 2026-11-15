@@ -1010,7 +1010,7 @@
    "id": "tl-fact-word-shampoo",
    "brand": "talaash",
    "series": "fact",
-   "number": null,
+   "number": 13,
    "field": "linguistics",
    "title": "Word story: shampoo, from Hindi chāmpo",
    "status": "idea",
@@ -1026,7 +1026,7 @@
     "sake-dean-mahomed"
    ],
    "sources": "render/queue/20261121-fact-word-shampoo/brief.md",
-   "notes": "First weekly Word story Fact (docs/UNIVERSE.md section 4, Word story; decided 12 Nov 2026). Fact number given by the queue task at queue time from check_universe.py (numbers rise by date). Three checks before queueing; the brief lists what is contested."
+   "notes": "First weekly Word story Fact (docs/UNIVERSE.md section 4, Word story; decided 12 Nov 2026). Fact number given by the queue task at queue time from check_universe.py (numbers rise by date). Three checks before queueing; the brief lists what is contested. Number 013 fixed on 15 Nov so Fact 014 (24 Nov, Amritsar Town Hall reel) keeps numbers rising by date."
   },
   {
    "id": "tl-since-when-01-rupee",
@@ -1409,6 +1409,86 @@
    "page": null,
    "sources": "Universe review 15 Nov, rule 'what performs moves up': archaeologywala's top post of the 28 days was ASI Watch #1 (Yuge Yugeen Bharat Museum, 14 Nov; 2 comments, likes hidden, only 2 posts in the window, so a weak signal). Heritage is a field the Durlabh plan still needs. Durlabh desk may replace the angle; needs a rarity check and two scholarly sources before it is locked.",
    "notes": "Not topic-locked. Must not become find-news; the subject is the site-museum system, not the new museum announcement."
+  },
+  {
+   "id": "tl-gurpurab-2026",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "Gurpurab: the 557th Prakash Purab of Guru Nanak Dev Ji, from Harmandir Sahib (own photos)",
+   "status": "building",
+   "slot": "2026-11-24T08:00",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": "heritage-walk-in-amritsar",
+   "topic_lock": [
+    "harmandir-sahib"
+   ],
+   "sources": "render/queue/20261124-gurpurab-harmandir-sahib/caption.md",
+   "notes": "Special Day carousel, 6 slides, Pryank's own photos of 5 Nov 2026. Sober wording, no 'Happy': some keep Guru Tegh Bahadur Ji's Shaheedi Purab on 24 Nov."
+  },
+  {
+   "id": "tl-fact-014-amritsar-town-hall",
+   "brand": "talaash",
+   "series": "fact",
+   "number": 14,
+   "field": "heritage",
+   "title": "Fact 014: Amritsar's colonial Town Hall now houses the Partition Museum",
+   "status": "building",
+   "slot": "2026-11-24T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": "heritage-walk-in-amritsar",
+   "topic_lock": [
+    "partition-museum",
+    "amritsar-town-hall"
+   ],
+   "sources": "render/queue/_shorts/20261124-fact-amritsar-town-hall-reel/caption.md",
+   "notes": "Tuesday Fact as a vertical reel (growth rules 15 Nov). Own photo, cropped so no people show."
+  },
+  {
+   "id": "aw-jallianwala-wall",
+   "brand": "archaeologywala",
+   "series": null,
+   "number": null,
+   "field": "history",
+   "title": "Jallianwala Bagh: the wall with 28 recorded bullet marks (archaeology of conflict)",
+   "status": "building",
+   "slot": "2026-11-29T21:00",
+   "platforms": [
+    "instagram"
+   ],
+   "page": "heritage-walk-in-amritsar",
+   "topic_lock": [
+    "jallianwala-bagh"
+   ],
+   "sources": "render/queue/20261129-aw-jallianwala-wall/caption.md",
+   "notes": "Own photos. The only Jallianwala piece on either account until 13 Apr 2027. Not a Collab."
+  },
+  {
+   "id": "tl-jallianwala-2027-anniversary",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "history",
+   "title": "Jallianwala Bagh, 13 April 1919: the wall that bears the marks, and the two inquiries (379 and about 1,000)",
+   "status": "idea",
+   "slot": "2027-04-13T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": "heritage-walk-in-amritsar",
+   "topic_lock": [
+    "jallianwala-bagh"
+   ],
+   "sources": "Projects doc claude/ig-pending-builds.md (Amritsar series, P1 and P3, checked 15 Nov 2026)",
+   "notes": "Held for the anniversary so it does not repeat archaeologywala's 29 Nov post within 30 days. Sensitivity fixes to apply: title 'A wall that bears the marks'; say people were killed and wounded; 'many had also come for Baisakhi'; name the event on the cover; 'Indian National Congress' in full. Re-check the copy before use."
   }
  ]
 }
