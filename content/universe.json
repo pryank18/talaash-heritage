@@ -704,7 +704,7 @@
    "number": 2,
    "field": "archaeology",
    "title": "Deep Dive #2: The Bhimbetka 'fossil' that was a beehive",
-   "status": "idea",
+   "status": "ready",
    "slot": "2026-12-03T18:00",
    "collab": null,
    "platforms": [
@@ -720,7 +720,7 @@
    "topic_lock": [
     "bhimbetka"
    ],
-   "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage)."
+   "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage). | ready 2026-11-15: video site/media/aw/deep-dive/bhimbetka.mp4 (+ bhimbetka-yt.mp4, bhimbetka-poster.jpg); IG reel staged 2026-12-03 21:00, notes carousel 2026-12-08 21:00; package Drive archaeologywala › Deep Dive › 02 bhimbetka-fossil-that-was-a-beehive; site slug bhimbetka-fossil-that-was-a-beehive (site JSON push pending a run with archaeologywala-site access)"
   },
   {
    "id": "aw-deep-dive-03-arikamedu",
