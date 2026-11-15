@@ -1,16 +1,6 @@
 {
- "at": "2026-11-15T07:01:48.896Z",
- "rendered": [
-  "site/media/ig/20261124-gurpurab-harmandir-sahib-1.jpg",
-  "site/media/ig/20261124-gurpurab-harmandir-sahib-2.jpg",
-  "site/media/ig/20261124-gurpurab-harmandir-sahib-3.jpg",
-  "site/media/ig/20261124-gurpurab-harmandir-sahib-4.jpg",
-  "site/media/ig/20261124-gurpurab-harmandir-sahib-5.jpg",
-  "site/media/ig/20261124-gurpurab-harmandir-sahib-6.jpg",
-  "site/media/ig/20261129-aw-jallianwala-wall-1.jpg",
-  "site/media/ig/20261129-aw-jallianwala-wall-2.jpg",
-  "site/media/ig/20261129-aw-jallianwala-wall-3.jpg"
- ],
+ "at": "2026-11-15T07:35:49.046Z",
+ "rendered": [],
  "skipped": [
   "site/media/ig/20261025-sharad-purnima-1.jpg",
   "site/media/ig/20261025-sharad-purnima-2.jpg",
@@ -147,6 +137,12 @@
   "site/media/ig/20261120-devutthana-deogarh-2.jpg",
   "site/media/ig/20261120-devutthana-deogarh-3.jpg",
   "site/media/ig/20261120-devutthana-deogarh-4.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-1.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-2.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-3.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-4.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-5.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-6.jpg",
   "site/media/ig/20261125-durlabh-01-raya-asoko-1.jpg",
   "site/media/ig/20261125-durlabh-01-raya-asoko-2.jpg",
   "site/media/ig/20261125-durlabh-01-raya-asoko-3.jpg",
@@ -155,6 +151,9 @@
   "site/media/ig/20261125-durlabh-01-raya-asoko-6.jpg",
   "site/media/ig/20261125-durlabh-01-raya-asoko-7.jpg",
   "site/media/ig/20261125-durlabh-01-raya-asoko-8.jpg",
+  "site/media/ig/20261129-aw-jallianwala-wall-1.jpg",
+  "site/media/ig/20261129-aw-jallianwala-wall-2.jpg",
+  "site/media/ig/20261129-aw-jallianwala-wall-3.jpg",
   "site/media/ig/_badges-1.jpg",
   "site/media/ig/_badges-2.jpg",
   "site/media/ig/_badges-3.jpg",
@@ -167,9 +166,7 @@
  ],
  "failed": [],
  "shorts": {
-  "built": [
-   "site/media/ig/20261124-fact-amritsar-town-hall-reel.mp4"
-  ],
+  "built": [],
   "diplomaFixed": false
  }
 }
