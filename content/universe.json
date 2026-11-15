@@ -188,7 +188,7 @@
    "number": null,
    "field": "heritage",
    "title": "Heritage this week (15 Nov)",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-15T19:30",
    "platforms": [
     "instagram",
@@ -1016,8 +1016,8 @@
    "series": "fact",
    "number": 13,
    "field": "linguistics",
-   "title": "Word story: shampoo, from Hindi chāmpo",
-   "status": "idea",
+   "title": "Fact 013: shampoo comes from Hindi-Urdu chāmpo, and first meant a massage",
+   "status": "scheduled",
    "slot": "2026-11-21T19:30",
    "platforms": [
     "instagram",
@@ -1030,7 +1030,29 @@
     "sake-dean-mahomed"
    ],
    "sources": "render/queue/20261121-fact-word-shampoo/brief.md",
-   "notes": "First weekly Word story Fact (docs/UNIVERSE.md section 4, Word story; decided 12 Nov 2026). Fact number given by the queue task at queue time from check_universe.py (numbers rise by date). Three checks before queueing; the brief lists what is contested. Number 013 fixed on 15 Nov so Fact 014 (24 Nov, Amritsar Town Hall reel) keeps numbers rising by date."
+   "notes": "First weekly Word story Fact (docs/UNIVERSE.md section 4, Word story; decided 12 Nov 2026). Fact number given by the queue task at queue time from check_universe.py (numbers rise by date). Three checks before queueing; the brief lists what is contested. Number 013 fixed on 15 Nov so Fact 014 (24 Nov, Amritsar Town Hall reel) keeps numbers rising by date. Built 15 Nov 2026 21:43 run: 4 text slides render/queue/20261121-fact-word-shampoo; three checks done (Hindi -> Hindi-Urdu; Hobson-Jobson year and definition quote dropped as not confirmed by both checkers; Brighton year left out).",
+   "queue_row": 73
+  },
+  {
+   "id": "tl-fact-word-jungle",
+   "brand": "talaash",
+   "series": "fact",
+   "number": null,
+   "field": "linguistics",
+   "title": "Word story: jungle, from Hindi-Urdu jangal and Sanskrit jāṅgala",
+   "status": "idea",
+   "slot": "2026-11-28T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "india-s-linguistic-heritage",
+   "topic_lock": [
+    "jungle"
+   ],
+   "sources": "render/queue/20261128-fact-word-jungle/brief.md",
+   "notes": "Saturday Word story brief written 15 Nov 2026 by the 21:43 queue run. Fact number from check_universe.py at queue time."
   },
   {
    "id": "tl-since-when-01-rupee",
@@ -1500,7 +1522,7 @@
   {
    "id": "tl-archive-01-prakrit-2022",
    "brand": "talaash",
-   "series": null,
+   "series": "null",
    "number": null,
    "field": "linguistics",
    "title": "From the Talaashh Talks archive: Prakrit Language and Its Antiquity (19 June 2022)",
