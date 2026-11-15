@@ -1,4 +1,4 @@
-// dc-lite: a small runtime for the 3D model apps first built as Claude Design canvases.
+// dc-lite: a small runtime for the 3D model apps first built as design canvases.
 // It runs the canvas's own markup (with {{ bindings }}, <sc-for>, <sc-if>, on* events and ref)
 // and its own Component class, so the website shows the same model and interface as the canvas.
 // Rendering patches the live DOM in place, so the WebGL canvas and any control being dragged
