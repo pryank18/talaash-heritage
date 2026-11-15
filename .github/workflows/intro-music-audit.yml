@@ -1,0 +1,85 @@
+# One-off audit: identifies the music at the start of the videos on
+# YouTube @talaashheritage1967. Reads YouTube's own metadata (licence, any
+# "Music in this video" track it detected) and fingerprints the first two
+# minutes of audio against Shazam's catalogue. Writes render/audit/intro/.
+name: Intro music audit
+on:
+  push:
+    branches: ['copyright-audit-*']
+    paths: ['.github/workflows/intro-music-audit.yml']
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          sudo apt-get install -y -qq ffmpeg >/dev/null || true
+          pip install -q yt-dlp shazamio
+      - name: List channel and read metadata
+        run: |
+          mkdir -p render/audit/intro
+          yt-dlp --flat-playlist -J "https://www.youtube.com/@talaashheritage1967/videos" > render/audit/intro/channel.json || echo '{}' > render/audit/intro/channel.json
+          yt-dlp --flat-playlist -J "https://www.youtube.com/@talaashheritage1967/streams" > render/audit/intro/streams.json || echo '{}' > render/audit/intro/streams.json
+          python3 - <<'PY'
+          import json
+          ids=[]
+          for f in ["channel.json","streams.json"]:
+              d=json.load(open("render/audit/intro/"+f))
+              ids += [e["id"] for e in d.get("entries",[]) or [] if e.get("id")]
+          open("render/audit/intro/ids.txt","w").write("\n".join(dict.fromkeys(ids)))
+          print(ids)
+          PY
+      - name: Download first 3 minutes of audio
+        run: |
+          cd render/audit/intro
+          for id in $(cat ids.txt); do
+            yt-dlp -J "https://www.youtube.com/watch?v=$id" > meta-$id.json || true
+            yt-dlp -f bestaudio --download-sections "*0-180" -x --audio-format mp3 -o "intro-$id.%(ext)s" "https://www.youtube.com/watch?v=$id" || echo "download failed $id"
+          done
+          ls -la
+      - name: Identify
+        run: |
+          cd render/audit/intro
+          python3 - <<'PY'
+          import asyncio, glob, json, subprocess, os
+          from shazamio import Shazam
+          out = {}
+          async def main():
+              sh = Shazam()
+              for f in sorted(glob.glob("intro-*.mp3")):
+                  vid = f[6:-4]
+                  res = []
+                  for start in range(0, 180, 10):
+                      seg = f"seg-{vid}-{start}.mp3"
+                      subprocess.run(["ffmpeg","-loglevel","error","-y","-ss",str(start),"-t","12","-i",f,seg])
+                      if not os.path.exists(seg): continue
+                      try:
+                          r = await sh.recognize(seg)
+                          t = r.get("track") or {}
+                          res.append({"start": start, "title": t.get("title"), "artist": t.get("subtitle"), "url": t.get("url")})
+                      except Exception as e:
+                          res.append({"start": start, "error": str(e)})
+                      os.remove(seg)
+                  out[vid] = res
+          asyncio.run(main())
+          meta = {}
+          for m in glob.glob("meta-*.json"):
+              try: d = json.load(open(m))
+              except Exception: continue
+              meta[d.get("id")] = {k: d.get(k) for k in ["title","upload_date","license","track","artist","album","creator","duration","availability","categories"]}
+              meta[d.get("id")]["description_head"] = (d.get("description") or "")[:1500]
+          json.dump({"shazam": out, "youtube": meta}, open("report.json","w"), indent=1, ensure_ascii=False)
+          print(json.dumps({"shazam": out, "youtube": meta}, indent=1, ensure_ascii=False)[:6000])
+          PY
+      - name: Commit report (audio clips kept for listening checks)
+        run: |
+          git config user.name "talaash-render-bot"
+          git config user.email "talaash-render-bot@users.noreply.github.com"
+          git add render/audit/intro
+          git commit -m "audit: intro music $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          git push origin HEAD:"$GITHUB_REF_NAME"
