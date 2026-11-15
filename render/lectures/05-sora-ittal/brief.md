@@ -5,3 +5,5 @@ Leads (confirm in checks): Elwin, The Religion of an Indian Tribe (OUP, 1955); P
 Respect rules (Talaash anthropology standard): published ethnography only; no rites described in detail, nothing secret, no identifiable people or village photographs; the community's own terms first; say clearly that practice varies and has changed. Lanjia Saora are listed as a Particularly Vulnerable Tribal Group: state it only if confirmed from a government source.
 Sells: bhopal-tribal-museum-material-culture-interpretation. Read next: anthropology-and-tribal-india, heritage-sites-in-odisha, what-is-anthropology.
 Topic lock: sora-ittal, saora-painting (the Anthropology Jaisa Tha on 18 Dec must not use the Sora).
+
+Images (copyright audit, 15 Nov 2026): no photographs of ittal or of "Saora painting" made for sale. Contemporary paintings are the living artists' copyright, and ritual walls are not ours to show. Use plain labelled shapes and typeset terms only; if a historical image is ever needed, only a public-domain or CC0/CC BY/CC BY-SA file checked on its own page, with no identifiable people.

@@ -1,0 +1,5 @@
+{
+ "_readme": "Met objects whose public-domain (Open Access) status was confirmed by hand on the Met's own object page, used by tools/check_licences.py when the Met API does not answer. Re-check if an object page changes.",
+ "28.63.1": {"title": "Krishna Holds Up Mount Govardhan to Shelter the Villagers of Braj, folio from a Harivamsa", "url": "https://www.metmuseum.org/art/collection/search/448183", "isPublicDomain": true, "checked": "2026-11-15"},
+ "1987.142.334": {"title": "Surya, the Sun God, with Attendants", "url": "https://www.metmuseum.org/art/collection/search/38943", "isPublicDomain": true, "checked": "2026-11-15 (object page marks the image Public Domain, with Download Image)"}
+}
