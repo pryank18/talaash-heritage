@@ -1,6 +1,16 @@
 {
- "at": "2026-11-15T06:39:48.407Z",
- "rendered": [],
+ "at": "2026-11-15T07:01:48.896Z",
+ "rendered": [
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-1.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-2.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-3.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-4.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-5.jpg",
+  "site/media/ig/20261124-gurpurab-harmandir-sahib-6.jpg",
+  "site/media/ig/20261129-aw-jallianwala-wall-1.jpg",
+  "site/media/ig/20261129-aw-jallianwala-wall-2.jpg",
+  "site/media/ig/20261129-aw-jallianwala-wall-3.jpg"
+ ],
  "skipped": [
   "site/media/ig/20261025-sharad-purnima-1.jpg",
   "site/media/ig/20261025-sharad-purnima-2.jpg",
@@ -158,7 +168,7 @@
  "failed": [],
  "shorts": {
   "built": [
-   "site/media/ig/20261119-fact-prajnaparamita-reel.mp4"
+   "site/media/ig/20261124-fact-amritsar-town-hall-reel.mp4"
   ],
   "diplomaFixed": false
  }
