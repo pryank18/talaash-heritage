@@ -1,1 +1,12 @@
 *{margin:0;box-sizing:border-box}html,body{width:1080px;height:1920px}body{font-family:"Tiro Devanagari Sanskrit",serif;display:flex;flex-direction:column;justify-content:center;padding:260px 100px 340px;text-align:center;overflow:hidden}.r{background:#8A1A14;color:#F4E4C1}.c{background:#F4E4C1;color:#8A1A14}h1{font-weight:400;font-size:104px;line-height:1.12;text-wrap:balance}p{font-size:54px;line-height:1.35;margin-top:44px;text-wrap:balance}.s{font-size:38px;opacity:.8}.b{font-family:"Noto Sans Brahmi";line-height:1.25}.x{font-size:300px}.row{display:flex;justify-content:center;gap:110px;margin-top:70px}.row div{font-size:64px}.row .b{font-size:230px;display:block}.ph{width:880px;border:3px solid #EFB02E;align-self:center}.lg{width:190px;align-self:center;margin-bottom:50px}.lg.e{margin:60px 0 0}
+/* Reel scenes (15 Nov 2026): logo on every scene, photo scenes with text in the lower third. */
+.lgc{position:absolute;top:70px;right:70px;width:130px;height:130px}
+.tag{position:absolute;top:96px;left:100px;font-size:34px;font-style:italic;opacity:.85;text-align:left}
+.pf{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover}
+.gr{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,8,6,.55) 0,rgba(20,8,6,0) 22%,rgba(20,8,6,0) 45%,rgba(20,8,6,.92) 78%)}
+body.phs{justify-content:flex-end;padding-bottom:300px}
+body.phs h1,body.phs p{text-shadow:0 2px 18px rgba(0,0,0,.6)}
+.ov{position:relative}
+.cr{position:absolute;left:90px;right:90px;bottom:120px;font-size:28px;line-height:1.35;opacity:.85}
+.big{font-size:120px}
+.k{color:#EFB02E}
