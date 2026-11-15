@@ -102,7 +102,7 @@ Primary sources or two independent reputable ones; nothing from memory; three ch
 **One piece, every platform, all linked.**
 | When (IST) | What | Where | Links to |
 |---|---|---|---|
-| Sun 11:00 | Long read (900–1,600 words, every source listed, FAQ) | site/durlabh-NN-slug, index site/durlabh, sitemap-durlabh.xml; published by the GitHub Action "Durlabh Sunday: release" (no laptop, no Claude session needed) | the programme in `sells`, guides, the video once public |
+| Sun 11:00 | Long read (900–1,600 words, every source listed, FAQ) | site/durlabh-NN-slug, index site/durlabh, sitemap-durlabh.xml; published by the GitHub Action "Durlabh Sunday: release" (no laptop or manual step needed) | the programme in `sells`, guides, the video once public |
 | Sun ~11:40 | Narrated lecture, 2–3 parts, English, cloned voice | YouTube @talaashheritage1967 (Sunday review makes it public) | the long read and the `sells` page, UTM campaign durlabh-NN |
 | Sun 12:13 | Release check (trig_01Y9XTQVyB7kCx1ArpncZ5V2): page live, video embedded once public | site | long read |
 | Sun evening | "Heritage this week" opens with the Durlabh piece (cover line and the page address) | IG, FB, LinkedIn | long read, YouTube |
