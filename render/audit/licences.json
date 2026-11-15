@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-15 09:15 UTC",
+ "checked_at": "2026-11-15 09:20 UTC",
  "slides": [
   {
    "post": "20261025-sharad-purnima",
@@ -138,9 +138,13 @@
    "slide": "2.html",
    "url": "https://images.metmuseum.org/CRDImages/is/web-large/DP231327.jpg",
    "met": {
-    "error": "HTTP Error 410: Gone"
-   },
-   "problem": "Met Open Access not confirmed: {'error': 'HTTP Error 410: Gone'}"
+    "title": "Krishna Holds Up Mount Govardhan to Shelter the Villagers of Braj, folio from a Harivamsa",
+    "url": "https://www.metmuseum.org/art/collection/search/448183",
+    "isPublicDomain": true,
+    "checked": "2026-11-15",
+    "via": "met-verified.json",
+    "api_error": "HTTP Error 410: Gone"
+   }
   },
   {
    "post": "20261111-bhai-dooj",
@@ -291,9 +295,13 @@
    "slide": "4.html",
    "url": "https://images.metmuseum.org/CRDImages/as/web-large/1987_142_334_F_sf.jpg",
    "met": {
-    "error": "HTTP Error 410: Gone"
-   },
-   "problem": "Met Open Access not confirmed: {'error': 'HTTP Error 410: Gone'}"
+    "title": "Surya, the Sun God, with Attendants",
+    "url": "https://www.metmuseum.org/art/collection/search/38943",
+    "isPublicDomain": true,
+    "checked": "2026-11-15 (object page marks the image Public Domain, with Download Image)",
+    "via": "met-verified.json",
+    "api_error": "HTTP Error 410: Gone"
+   }
   },
   {
    "post": "20261116-world-heritage-convention",
@@ -4589,8 +4597,5 @@
    "note": "could not open Unsplash page: HTTP Error 401: Unauthorized"
   }
  ],
- "problems": [
-  "slide 20261110-govardhan-puja/2.html: Met Open Access not confirmed: {'error': 'HTTP Error 410: Gone'} (https://images.metmuseum.org/CRDImages/is/web-large/DP231327.jpg)",
-  "slide 20261115-chhath/4.html: Met Open Access not confirmed: {'error': 'HTTP Error 410: Gone'} (https://images.metmuseum.org/CRDImages/as/web-large/1987_142_334_F_sf.jpg)"
- ]
+ "problems": []
 }
