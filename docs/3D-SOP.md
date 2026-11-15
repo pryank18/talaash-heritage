@@ -55,7 +55,7 @@ One entry per model. `tools/build_3d.py` refuses to build if a required field is
 
 ## 6. The scene: the design canvas, run on the website as it is
 
-Each model is first designed as a Claude Design canvas (an interactive artboard with its own three.js scene, views, layers, sun, walk mode and facts panel). The website runs that same canvas, so the page looks and behaves like the design. Do not rebuild a canvas from scratch for the site.
+Each model is first designed as a design canvas (an interactive artboard with its own three.js scene, views, layers, sun, walk mode and facts panel). The website runs that same canvas, so the page looks and behaves like the design. Do not rebuild a canvas from scratch for the site.
 
 1. Read the canvas's `project/Main.dc.html` and its three.js asset (Artifact tool, `read`). Note the three.js version from the asset's header (`const e="147"` etc.) and vendor the official build of that version from npm into `site/assets/js/vendor/three-r<version>/three.min.js` with its LICENSE. Check the sha256 against the canvas asset; they must match. For r150 and later, remove only the first `console.warn(...)` line and put `!` before the function (see `three-r158/README.txt`).
 2. Make `site/assets/js/3d/<slug>-app.js`: the canvas's `<x-dc>` markup (without `<helmet>`) as `MARKUP`, then its `Component` class unchanged except for the edits below, then `export function start(host) { return mount(host, MARKUP, Component); }`. `dc-lite.js` runs `{{ bindings }}`, `<sc-for>`, `<sc-if>`, `on…` events and `ref` exactly as the canvas does.
@@ -102,7 +102,7 @@ Serve `site/` locally and use Playwright Chromium (SwiftShader WebGL). Take scre
 
 ## 9. Publish and confirm
 
-1. Run `python3 tools/check_universe.py`. Commit as `pryank18 <pryank18@users.noreply.github.com>` ending with the Co-Authored-By line, and push to `main`.
+1. Run `python3 tools/check_universe.py`. Commit as `pryank18 <pryank18@users.noreply.github.com>` with no AI attribution or trailer lines in the message, and push to `main`.
 2. Wait for Cloudflare Pages (about a minute), then open https://talaash-heritage.pages.dev/3d-<page> with web fetch. Confirm the h1, the reconstruction label, both logo alt texts and a facts row. If the clean address errors once, fetch the `.html` address; it redirects to the same page.
 3. Only then set the ledger item to `live` with `url` and a dated note, and add a dated line to the project doc `claude/talaash-site-status.md`.
 
