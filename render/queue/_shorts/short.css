@@ -10,3 +10,5 @@ body.phs h1,body.phs p{text-shadow:0 2px 18px rgba(0,0,0,.6)}
 .cr{position:absolute;left:90px;right:90px;bottom:120px;font-size:28px;line-height:1.35;opacity:.85}
 .big{font-size:120px}
 .k{color:#EFB02E}
+/* Framed photo above the text, whole image shown (for photos that must not be cropped). */
+.phm{max-height:760px;object-fit:contain;margin-bottom:70px}
