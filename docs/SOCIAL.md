@@ -4,6 +4,18 @@
 
 Decided 10 Nov 2026. The full reasoning is in the Claude project note "social-content-split".
 
+## Growth rules for @talaashheritage (15 Nov 2026; read first)
+Full plan and the numbers behind it: Claude project doc `claude/growth-plan.md`. Where an older line below differs, these rules win.
+
+Why: 17 Oct to 15 Nov, 27 posts, all carousels, no reels. Median reach 64 (below our 833 followers), median interactions 6, about one new follower a month. Carousels reach mostly existing followers; reels are what reaches new people.
+
+1. **Weekly grid** (one evening main post a day, published about 21:00): Mon reel (Durlabh teaser from 23 Nov); **Tue Fact as a vertical reel**; Wed carousel (Durlabh / Deep Story); Thu reel (What the Text Says from 26 Nov; until then the Fact as a reel); Fri reel (Jaisa Tha); Sat carousel (word story Fact); Sun carousel (Heritage this week, jobs, exams and deadlines on the cover). Four reels, three carousels.
+2. **Fact reels**: scenes in `render/queue/_shorts/<YYYYMMDD>-fact-<slug>-reel/` (N.html + scenes.json), classes from `render/queue/_shorts/short.css`; copy `20261117-fact-didarganj-yakshi-reel`. 6 to 8 scenes, 25 to 35 s: hook over the best licensed photo first, one checked sentence per scene, one photo scene, end scene with the takeaway, talaash-heritage.pages.dev and sources. Logo `.lgc` on every scene. Photos that must not be cropped (manuscripts, wide objects) use `<img class="ph phm">` above the text instead of the full-bleed `.pf`. Text comes word for word from checked copy; the hook adds no new claim. The "Render social slides" Action builds `site/media/ig/<slug>.mp4` (own drone, no voice, no AI frames). Confirm it is served and under 4.8 MB, look at frames, then queue the row as Type Reel, Media = the mp4 URL, column N = "Not needed". Captions must not say "swipe" or "slide".
+3. **Hooks** (cover line and first scene): give a 25 to 34 reader a reason to stop: a career or exam stake, a mystery or dispute, a big checked number, or an everyday link. Never open with an object description ("One stone pillar at...") or a series label ("Day 8 of...").
+4. **Morning 08:00**: major pan-India festivals only. No daily festival series, no minor observances.
+5. **Captions**: line 1 is the hook and names the place or subject in plain words, under about 125 characters. One genuine question at the end is fine; no engagement bait. Follow block and exactly 5 hashtags stay: #TalaashHeritage once plus 4 subject or place tags people search. No #TalaashFact.
+6. **Weekly check** (Sunday review): Business Suite → Insights → Content (Instagram), last 7 days; log reach, interactions and follows per post by format; top 2 and bottom 2 with the reason. A format below the account median three weeks running is rebuilt or cut. Targets by 13 Dec: median reach ≥ 200, net +40 followers.
+
 ## Who posts what
 - **@archaeologywala** is Pryank's own page. It posts Khudai Khabar (satire, never a Collab), Explorer episodes and faceless news reels. Explorer and news reels are Instagram Collabs with @talaashheritage.
 - **@talaashheritage** is the business. It posts the daily slides and Shorts from `render/`, and the 3D series **Jaisa Tha**, which only covers sites with a Talaash programme page.
