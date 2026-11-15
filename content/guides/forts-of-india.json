@@ -11,11 +11,11 @@
     {
       "h2": "Types of forts in India",
       "paras": [
-        "Old Indian texts on statecraft, including the Arthashastra and later treatises, classified forts (durga) by the natural defence they used. The categories are still a useful way to understand what you see on the ground."
+        "Old Indian texts on statecraft, including the Arthashastra and later treatises, classified forts (durga) by the natural defence they used. The lists and names differ between texts, but the categories are still a useful way to understand what you see on the ground."
       ],
       "list": [
         "Giri durga, hill forts: built on ridges or flat-topped hills, such as Chittorgarh, Kumbhalgarh, Raigad and Gwalior.",
-        "Jala durga, water forts: protected by sea, river or lake, such as Sindhudurg and Janjira on the Konkan coast, or Gagron in Rajasthan, ringed by two rivers.",
+        "Jala durga, water forts: protected by sea, river or lake, such as Sindhudurg and Janjira on the Konkan coast, or Gagron in Rajasthan, with water on three sides where two rivers meet.",
         "Dhanvana durga, desert forts: protected by surrounding arid land, such as Jaisalmer.",
         "Vana durga, forest forts: protected by dense forest, such as Ranthambore in its jungle setting.",
         "Mahi durga, earth or plains forts: with walls of mud, brick or stone on level ground, such as the city walls of Delhi's Tughlaqabad and the Red Fort."
@@ -38,7 +38,7 @@
           ["Agra Fort", "Uttar Pradesh", "Akbar, from 1565; later additions by Shah Jahan", "UNESCO World Heritage Site (1983)"],
           ["Chittorgarh", "Rajasthan", "Mauryan legend, built up by Guhila and Sisodia rulers", "One of the largest forts in India; Hill Forts of Rajasthan (2013)"],
           ["Kumbhalgarh", "Rajasthan", "Rana Kumbha, 15th century", "Very long perimeter wall; Hill Forts of Rajasthan"],
-          ["Amber", "Rajasthan", "Kachhwaha rulers, from the late 16th century", "Hill Forts of Rajasthan"],
+          ["Amber", "Rajasthan", "Kachhwaha rulers, from the 16th century", "Hill Forts of Rajasthan"],
           ["Jaisalmer", "Rajasthan", "Bhati Rajputs, from 1156", "Living fort with homes inside; Hill Forts of Rajasthan"],
           ["Mehrangarh", "Rajasthan", "Rao Jodha, from 1459", "Rises above Jodhpur on a steep rock"],
           ["Gwalior Fort", "Madhya Pradesh", "Many dynasties; Man Mandir palace by Raja Man Singh Tomar", "Jain rock-cut images on the hillsides"],
@@ -83,7 +83,7 @@
     }
   ],
   "faq": [
-    {"q": "Which is the largest fort in India?", "a": "Chittorgarh in Rajasthan is often called the largest fort in India by area, and Mehrangarh and Gwalior are among the most massive. Kumbhalgarh is famous for one of the longest continuous fort walls in the world. Exact rankings depend on how area and walls are measured."},
+    {"q": "Which is the largest fort in India?", "a": "Chittorgarh in Rajasthan is often called the largest fort in India by area, and Mehrangarh and Gwalior are among the most massive. Kumbhalgarh is famous for its very long perimeter wall. Exact rankings depend on how area and walls are measured."},
     {"q": "How many forts in India are UNESCO World Heritage Sites?", "a": "Agra Fort and the Red Fort Complex are listed separately, the Hill Forts of Rajasthan group covers six forts, and the Maratha Military Landscapes group covers twelve. Together that is twenty forts within World Heritage listings, plus fortifications at sites such as Champaner-Pavagadh."},
     {"q": "Which state has the most forts in India?", "a": "Maharashtra is usually said to have the largest number of forts, many of them hill forts linked to the Marathas in the 17th century. Rajasthan is also very rich in forts and is better known for its large palace forts."},
     {"q": "What are the types of forts mentioned in ancient Indian texts?", "a": "Texts on statecraft group forts by their natural defence: hill forts (giri durga), water forts (jala durga), desert forts (dhanvana durga), forest forts (vana durga) and plains or earth forts. Lists differ slightly between texts."}

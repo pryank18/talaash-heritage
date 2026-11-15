@@ -257,6 +257,60 @@
     "Ajanta paintings 'the best known of them from the 5th century CE' (Ajanta also has 2nd-1st century BCE paintings)"
    ],
    "held": []
+  },
+  {
+   "slug": "folk-dances-of-india-state-wise",
+   "date": "2026-11-15",
+   "claims_checked": 30,
+   "changed": [
+    "Chhattisgarh: 'Gaur Maria' renamed to the Gaur (bison-horn) dance of the Maria of Bastar",
+    "Thang-Ta: 'performed as dance' softened to 'a martial art with dance-like display forms'"
+   ],
+   "held": [
+    "FAQ: 'the Ministry of Culture has at times included Chhau among classical forms' removed: no official page confirmed it"
+   ]
+  },
+  {
+   "slug": "folklore-of-india",
+   "date": "2026-11-15",
+   "claims_checked": 17,
+   "changed": [
+    "Baul: UNESCO 2005 recognition was on Bangladesh's nomination, now stated",
+    "Burra katha: 'storyteller with a drum' softened (sources disagree whether the lead plays a tambura or drum)"
+   ],
+   "held": []
+  },
+  {
+   "slug": "forts-of-india",
+   "date": "2026-11-15",
+   "claims_checked": 22,
+   "changed": [
+    "Fort types: noted that lists and names differ between texts (Arthashastra gives four, other texts more)",
+    "Gagron: 'ringed by two rivers' corrected to water on three sides where two rivers meet",
+    "Amber: 'from the late 16th century' corrected to 'from the 16th century' (palace begun under Bharmal)",
+    "FAQ Kumbhalgarh: 'one of the longest continuous fort walls in the world' softened to 'very long perimeter wall'"
+   ],
+   "held": []
+  },
+  {
+   "slug": "gupta-empire",
+   "date": "2026-11-15",
+   "claims_checked": 20,
+   "changed": [
+    "'the first free-standing stone temples' corrected to 'some of the earliest surviving' (summary, FAQ, OG, reel)",
+    "Western Kshatrapa conquest dated 'around 400 CE' (estimates range c. 388 to 409)",
+    "'largest quantity of gold coins in early India' softened to 'in large numbers and many designs'",
+    "Chandragupta I coins: attribution softened to 'gold coins show the two together'",
+    "Reign table header: 'sources differ' added"
+   ],
+   "held": []
+  },
+  {
+   "slug": "heritage-conservation-in-india",
+   "date": "2026-11-15",
+   "claims_checked": 11,
+   "changed": [],
+   "held": []
   }
  ]
 }
