@@ -74,7 +74,11 @@ def commons_meta(names):
     return out
 
 
+MET_VERIFIED = os.path.join(ROOT, "render/audit/met-verified.json")
+
+
 def met_status(acc):
+    known = json.load(open(MET_VERIFIED)) if os.path.exists(MET_VERIFIED) else {}
     try:
         d = json.loads(get("https://collectionapi.metmuseum.org/public/collection/v1/search?q=" + urllib.parse.quote(acc)))
         for oid in (d.get("objectIDs") or [])[:25]:
@@ -82,9 +86,12 @@ def met_status(acc):
             if o.get("accessionNumber") == acc:
                 return {"object": oid, "isPublicDomain": o.get("isPublicDomain"), "title": o.get("title"),
                         "url": o.get("objectURL")}
-        return {"error": "accession not found"}
+        err = "accession not found"
     except Exception as e:  # noqa: BLE001
-        return {"error": str(e)}
+        err = str(e)
+    if acc in known:
+        return {**known[acc], "via": "met-verified.json", "api_error": err}
+    return {"error": err}
 
 
 def main():

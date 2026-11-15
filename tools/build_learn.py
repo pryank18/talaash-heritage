@@ -433,6 +433,30 @@ def credits_page():
         f'<td>{h(m["alt"])}</td><td>{h(m["credit"])}</td><td><a href="{h(m["license_url"])}" rel="license noopener">{h(m["license"])}</a></td>'
         f'<td><a href="{h(m["page"])}" rel="noopener">{h(m.get("via", "Wikimedia Commons"))}</a></td></tr>'
         for f, m in sorted(used.items(), key=lambda kv: kv[1]["alt"]))
+    social_rows = ""
+    sc_path = os.path.join(ROOT, "content", "social-credits.json")
+    if os.path.exists(sc_path):
+        def who(a):
+            a = re.sub(r"\s+", " ", a or "").strip()
+            words = a.split(" ")
+            half = len(words) // 2
+            if half and words[:half] == words[half:]:
+                a = " ".join(words[:half])
+            return (a[:90].rsplit(" ", 1)[0] + "…") if len(a) > 90 else (a or "Unknown")
+        def lic(it):
+            if it.get("license_url"):
+                return f'<a href="{h(it["license_url"])}" rel="license noopener">{h(it["license"])}</a>'
+            return h(it["license"])
+        items = json.load(open(sc_path, encoding="utf-8")).get("items", [])
+        social_rows = "".join(
+            f'<tr><td>{h(it["file"].replace("_", " ").rsplit(".", 1)[0])}</td><td>{h(who(it["author"]))}</td>'
+            f'<td>{lic(it)}</td>'
+            f'<td><a href="{h(it["page"])}" rel="noopener">Source</a></td></tr>'
+            for it in items)
+    social = (f"""
+    <h2 id="social">Images in our social media posts</h2>
+    <p>Our Instagram, Facebook, LinkedIn and YouTube posts also use photographs and artworks shared under open licences or in the public domain. Each carries a small credit on its own slide; they are listed here too.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrolls sideways"><table><thead><tr><th>Image</th><th>Author</th><th>Licence</th><th>Source</th></tr></thead><tbody>{social_rows}</tbody></table></div>""" if social_rows else "")
     url = SITE_URL + "credits.html"
     return head("Photo credits | Talaash Heritage", "Credits and licences for the photographs used on the Talaash Heritage website.", url,
                 "Photo credits", "Credits and licences for the photographs on this site.", SITE_URL + "assets/img/logo-badge.png",
@@ -445,7 +469,7 @@ def credits_page():
   <div class="doc credits">
     <p>Most photographs on this site are by photographers who share their work on Wikimedia Commons under Creative Commons licences or in the public domain, and a few on Unsplash under the Unsplash Licence. We are grateful to them. Each is listed below with its author, licence and source; select a photograph to see the original. Photographs shown with a licence ending in SA are shared under the same licence. Our own illustrations and photographs are not listed.</p>
     <p>If you are the author of a photograph here and would like the credit changed, write to <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
-    <div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrolls sideways"><table><thead><tr><th>Photo</th><th>Subject</th><th>Author</th><th>Licence</th><th>Source</th></tr></thead><tbody>{rows}</tbody></table></div>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Table, scrolls sideways"><table><thead><tr><th>Photo</th><th>Subject</th><th>Author</th><th>Licence</th><th>Source</th></tr></thead><tbody>{rows}</tbody></table></div>{social}
   </div>
 </div>
 </main>
