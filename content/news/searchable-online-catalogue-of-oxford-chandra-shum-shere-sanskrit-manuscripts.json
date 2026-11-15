@@ -1,0 +1,45 @@
+{
+  "slug": "searchable-online-catalogue-of-oxford-chandra-shum-shere-sanskrit-manuscripts",
+  "title": "Handwritten catalogue of Oxford's Chandra Shum Shere Sanskrit manuscripts made searchable online",
+  "dek": "A machine-read version of the old handwritten catalogue lets readers search the Bodleian's Chandra Shum Shere collection by title, author and shelfmark. Its maker says it covers about 7,000 manuscripts; the text has not been checked line by line.",
+  "body": [
+    "A searchable online version of the handwritten catalogue of the Chandra Shum Shere manuscripts at the Bodleian Libraries, Oxford, has been released by Suhas Mahesh. His announcement was posted to the INDOLOGY mailing list on 13 November 2026 by Dominik Wujastyk, who forwarded it at Mahesh's request. Mahesh says the catalogue covers about 7,000 manuscripts.",
+    "The collection is mainly Sanskrit, with some manuscripts in other Indian languages, and dates largely from the 17th to the 19th century. According to the Bodleian's collection record, it was bought from a library in Benares and presented to the library in 1909 by Chandra Shum Shere Jung Bahadur Rana, then Maharaja and Prime Minister of Nepal. The record lists 2,127 shelfmarks, and the Bodleian's special collections page puts the collection at more than 6,000 manuscripts. A printed descriptive catalogue planned in ten volumes has reached three since 1984, on jyotiḥśāstra, on the epics and purāṇas, and on stotras. For the rest, the collection record points readers to a card catalogue arranged by shelfmark.",
+    "The new site transcribes a handwritten catalogue that, its description says, was begun by Thomas Gambier-Parry and completed by E. H. Johnston. Entries can be searched by title, author, shelfmark or catalogue text and filtered by subject and tradition, and, Mahesh says, each one links to the Bodleian's scanned image of the catalogue page it comes from.",
+    "The transcription is the work of software, and the site labels it as machine transcription without human editing. Mahesh says an AI model did most of the reading of the handwriting, and that he compared the output of different models and spot-checked 100 entries, which he found \"accurate enough to trust\". Doubtful readings are marked on the site. Anyone citing an entry should check it against the linked image of the original page."
+  ],
+  "category": "research",
+  "field": "sanskrit",
+  "also_fields": [
+    "heritage"
+  ],
+  "published": "2026-11-15",
+  "place": "Bodleian Libraries, Oxford (online)",
+  "sources": [
+    {
+      "title": "The Chandra Shum Shere Manuscripts at Oxford, searchable catalogue",
+      "publisher": "Suhas Mahesh",
+      "url": "https://suhasmahesh.com/oxford-css-manuscripts/",
+      "date": "2026-11-15"
+    },
+    {
+      "title": "Chandra Shum Shere catalogue: searchable online, list announcement",
+      "publisher": "INDOLOGY mailing list",
+      "url": "https://list.indology.info/pipermail/indology/2026-November/062627.html",
+      "date": "2026-11-13"
+    },
+    {
+      "title": "Sanskrit manuscripts presented by Maharajah Sir Chandra Shum Shere, collection record",
+      "publisher": "Archives Hub (Bodleian Library)",
+      "url": "https://archiveshub.ac.uk/search/archives/93d411a2-34c7-3419-8713-66ab2aeb5c78",
+      "date": "2026-11-15"
+    },
+    {
+      "title": "Special collections: South and Inner Asian manuscripts and rare books",
+      "publisher": "Bodleian Libraries",
+      "url": "https://www.bodleian.ox.ac.uk/node/2203681",
+      "date": "2026-11-15"
+    }
+  ],
+  "status": "published"
+}
