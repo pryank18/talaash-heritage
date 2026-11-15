@@ -1417,7 +1417,7 @@
    "number": null,
    "field": "heritage",
    "title": "Gurpurab: the 557th Prakash Purab of Guru Nanak Dev Ji, from Harmandir Sahib (own photos)",
-   "status": "building",
+   "status": "scheduled",
    "slot": "2026-11-24T08:00",
    "platforms": [
     "instagram",
@@ -1428,7 +1428,8 @@
     "harmandir-sahib"
    ],
    "sources": "render/queue/20261124-gurpurab-harmandir-sahib/caption.md",
-   "notes": "Special Day carousel, 6 slides, Pryank's own photos of 5 Nov 2026. Sober wording, no 'Happy': some keep Guru Tegh Bahadur Ji's Shaheedi Purab on 24 Nov."
+   "notes": "Special Day carousel, 6 slides, Pryank's own photos of 5 Nov 2026. Sober wording, no 'Happy': some keep Guru Tegh Bahadur Ji's Shaheedi Purab on 24 Nov.",
+   "queue_row": 69
   },
   {
    "id": "tl-fact-014-amritsar-town-hall",
@@ -1437,7 +1438,7 @@
    "number": 14,
    "field": "heritage",
    "title": "Fact 014: Amritsar's colonial Town Hall now houses the Partition Museum",
-   "status": "building",
+   "status": "scheduled",
    "slot": "2026-11-24T19:30",
    "platforms": [
     "instagram",
@@ -1449,7 +1450,8 @@
     "amritsar-town-hall"
    ],
    "sources": "render/queue/_shorts/20261124-fact-amritsar-town-hall-reel/caption.md",
-   "notes": "Tuesday Fact as a vertical reel (growth rules 15 Nov). Own photo, cropped so no people show."
+   "notes": "Tuesday Fact as a vertical reel (growth rules 15 Nov). Own photo, cropped so no people show.",
+   "queue_row": 70
   },
   {
    "id": "aw-jallianwala-wall",
@@ -1458,7 +1460,7 @@
    "number": null,
    "field": "history",
    "title": "Jallianwala Bagh: the wall with 28 recorded bullet marks (archaeology of conflict)",
-   "status": "building",
+   "status": "scheduled",
    "slot": "2026-11-29T21:00",
    "platforms": [
     "instagram"
@@ -1468,7 +1470,8 @@
     "jallianwala-bagh"
    ],
    "sources": "render/queue/20261129-aw-jallianwala-wall/caption.md",
-   "notes": "Own photos. The only Jallianwala piece on either account until 13 Apr 2027. Not a Collab."
+   "notes": "Own photos. The only Jallianwala piece on either account until 13 Apr 2027. Not a Collab.",
+   "queue_row": 71
   },
   {
    "id": "tl-jallianwala-2027-anniversary",
