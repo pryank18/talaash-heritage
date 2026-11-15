@@ -1,6 +1,6 @@
 {
  "_readme": "The single ledger for everything Talaash Heritage and archaeologywala make: posts, reels, 3D models, lectures, web pages. Every piece gets one id here before it is built, and its status is updated when it goes live. Series numbers are taken only from this ledger: run tools/check_universe.py and use the 'next' number it prints, then add the item here before building it. Rules: docs/UNIVERSE.md. Check with python3 tools/check_universe.py before every commit that touches this file. Talaash tasks write here; archaeologywala tasks read it and log in their run book, and the Sunday universe review copies their live posts in.",
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "fields": [
   "archaeology",
   "linguistics",
@@ -30,7 +30,7 @@
    "account": "talaashheritage",
    "format": "YouTube lecture (animated slides, Pryank's voice)",
    "used": "",
-   "note": "Weekly from 22 Nov 2026 as Durlabh Sunday (docs/UNIVERSE.md section 10). Planned: #1 Rāya Asoko 22 Nov, #2 Ajanta copies 29 Nov, #3 Read Brāhmī 6 Dec, #4 Knight's tour 13 Dec, #5 Sora ittal 20 Dec."
+   "note": "Weekly from 22 Nov 2026 as Durlabh Sunday (docs/UNIVERSE.md section 10). Planned: #1 Rāya Asoko 22 Nov, #2 Ajanta copies 29 Nov, #3 Read Brāhmī 6 Dec, #4 Knight's tour 13 Dec, #5 Sora ittal 20 Dec. #6 idea (27 Dec, Heritage: ASI site museums) added by the universe review 15 Nov from archaeologywala's top post."
   },
   "boli": {
    "name": "Boli",
@@ -103,6 +103,13 @@
    "format": "animated reel (cloned English voice), then YouTube Short",
    "used": "",
    "note": "Set up 13 Nov 2026 (Pryank: concept inspired by a 'Your tradition was sold to you' Short, different stories, 10 videos across platforms, no mistakes). Tuesday 19:30 main post from 1 Dec 2026: an everyday Indian 'tradition' traced to where and when it really began. Locked list and wording: Projects doc claude/since-when.md. Built by the 'Since When? studio' task."
+  },
+  "asi-watch": {
+   "name": "ASI Watch",
+   "account": "archaeologywala",
+   "format": "carousel",
+   "used": "1",
+   "note": "archaeologywala's reading of ASI and Ministry of Culture decisions. #1 = 14 Nov 2026 (Yuge Yugeen Bharat Museum). Added by the universe review 15 Nov."
   }
  },
  "items": [
@@ -120,7 +127,8 @@
     "facebook"
    ],
    "page": null,
-   "sources": "queue sheet row 36; posted 12 Nov 20:55, IG 18399977170205510, FB 109410924674841_1444441341202618"
+   "sources": "queue sheet row 36; posted 12 Nov 20:55, IG 18399977170205510, FB 109410924674841_1444441341202618",
+   "link": "https://www.instagram.com/p/DfpX2fkF3MC/"
   },
   {
    "id": "tl-boli-kaithi",
@@ -136,7 +144,8 @@
     "facebook"
    ],
    "page": null,
-   "sources": "queue sheet row 37"
+   "sources": "queue sheet row 37",
+   "link": "https://www.instagram.com/p/Dfr8rMIF-kc/"
   },
   {
    "id": "tl-fact-010-kharosthi",
@@ -152,7 +161,8 @@
     "facebook"
    ],
    "page": null,
-   "sources": "queue sheet row 38; posted 14 Nov 20:55, IG 18115721480157326, FB 109410924674841_1446502927663126"
+   "sources": "queue sheet row 38; posted 14 Nov 20:55, IG 18115721480157326, FB 109410924674841_1446502927663126",
+   "link": "https://www.instagram.com/p/Dfuhcapl8xs/"
   },
   {
    "id": "tl-chhath-2026",
@@ -161,14 +171,15 @@
    "number": null,
    "field": "heritage",
    "title": "Chhath: the first arghya goes to the setting sun",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-15T08:00",
    "platforms": [
     "instagram",
     "facebook"
    ],
    "page": null,
-   "sources": "queue sheet row 39"
+   "sources": "queue sheet row 39; posted 15 Nov 08:10, IG 18110819405276122, FB 109410924674841_1446935734286512",
+   "link": "https://www.instagram.com/p/DfvutDCDGGV/"
   },
   {
    "id": "tl-week-2026-11-15",
@@ -193,14 +204,15 @@
    "number": null,
    "field": "history",
    "title": "Kothakota: a 900-year-old land gift, read on a temple pillar",
-   "status": "building",
+   "status": "hold",
    "slot": "2026-11-15T21:30",
    "collab": "talaashheritage",
    "platforms": [
     "instagram"
    ],
    "page": "news-chalukya-pillar-inscription-of-vikramaditya-vi-read-at-kothakota",
-   "sources": "reels.json news-kothakota-pillar"
+   "sources": "reels.json news-kothakota-pillar",
+   "hold_reason": "Cancelled in the queue sheet (row 47, AW 15 Nov 21:00 reel) by the archaeologywala cloud queue; not posted. Universe review 15 Nov."
   },
   {
    "id": "tl-whc-54",
@@ -1227,6 +1239,176 @@
     "indian-standard-time"
    ],
    "sources": "Locked core claim, sources and conditions: Projects doc claude/since-when.md (episode 10). Files: render/since-when/10-ist/"
+  },
+  {
+   "id": "tl-diwali-2026",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "Diwali: a row of lamps, three stories",
+   "status": "live",
+   "slot": "2026-11-08T08:00",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "link": "https://www.instagram.com/p/DfdtIrbF4wS/",
+   "sources": "queue sheet row 29; IG 18231123160330556, FB 109410924674841_1439438615036224; added by the universe review 15 Nov"
+  },
+  {
+   "id": "tl-jain-sikh-diwali-2026",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "history",
+   "title": "Same new moon, other reasons: Jain and Sikh Diwali",
+   "status": "live",
+   "slot": "2026-11-08T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "link": "https://www.instagram.com/p/Dfe8GP0lx1X/",
+   "sources": "queue sheet row 30; IG 18107912459198680, FB 109410924674841_1439960174984068; added by the universe review 15 Nov"
+  },
+  {
+   "id": "tl-careers-asi-vacancies",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "archaeology",
+   "title": "ASI has 3,073 empty posts (careers)",
+   "status": "live",
+   "slot": "2026-11-09T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": "archaeological-survey-of-india",
+   "link": "https://www.instagram.com/p/Dfhg6XsF1qF/",
+   "sources": "queue sheet row 31; IG 18108483400980569, FB 109410924674841_1441064668206952; LinkedIn module failed; added by the universe review 15 Nov"
+  },
+  {
+   "id": "tl-govardhan-2026",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "arts",
+   "title": "Govardhan Puja: Krishna and the mountain (Akbar's Harivamsa)",
+   "status": "live",
+   "slot": "2026-11-10T08:00",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "link": "https://www.instagram.com/p/Dfi2vBTl_vl/",
+   "sources": "queue sheet row 32; IG 17960170104257803, FB 109410924674841_1441617964818289; added by the universe review 15 Nov"
+  },
+  {
+   "id": "tl-fact-008-people-of-india",
+   "brand": "talaash",
+   "series": "fact",
+   "number": 8,
+   "field": "anthropology",
+   "title": "Fact 008: 2,753 or 4,635 communities (People of India)",
+   "status": "live",
+   "slot": "2026-11-10T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "link": "https://www.instagram.com/p/DfkFrevl6P0/",
+   "sources": "queue sheet row 33; IG 17919856983524012, FB 109410924674841_1442156958097723; added by the universe review 15 Nov"
+  },
+  {
+   "id": "tl-bhai-dooj-2026",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "sanskrit",
+   "title": "Bhai Dooj: the god of death goes to his sister's",
+   "status": "live",
+   "slot": "2026-11-11T08:00",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": null,
+   "link": "https://www.instagram.com/p/DflbhaplyQu/",
+   "sources": "queue sheet row 34; IG 17990347707078026, FB 109410924674841_1442746584705427; added by the universe review 15 Nov"
+  },
+  {
+   "id": "tl-read-brahmi-post",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "linguistics",
+   "title": "Read Brahmi in five minutes: dhamma and Piyadasi",
+   "status": "live",
+   "slot": "2026-11-11T19:30",
+   "platforms": [
+    "instagram",
+    "facebook"
+   ],
+   "page": "brahmi-script",
+   "link": "https://www.instagram.com/p/Dfmqgawl06P/",
+   "sources": "queue sheet row 35; IG 17950933464342246, FB 109410924674841_1443311257982293; LinkedIn backfill row 55 posted 15 Nov; added by the universe review 15 Nov"
+  },
+  {
+   "id": "aw-kartik-season-2026",
+   "brand": "archaeologywala",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "Kartik season: Dhanteras to Dev Deepawali (festival carousel)",
+   "status": "live",
+   "slot": "2026-11-08T12:00",
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "link": "https://www.instagram.com/p/DfeHbTUk6Bm/",
+   "sources": "Instagram (Apify run jdgYCC4ezb98ioiEt); copied in by the universe review 15 Nov"
+  },
+  {
+   "id": "aw-asi-watch-01-yuge-yugeen",
+   "brand": "archaeologywala",
+   "series": "asi-watch",
+   "number": 1,
+   "field": "heritage",
+   "title": "ASI Watch #1: Yuge Yugeen Bharat Museum, ₹3,230 crore",
+   "status": "live",
+   "slot": "2026-11-14T21:00",
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "link": "https://www.instagram.com/p/DfujOB3F_WG/",
+   "sources": "queue sheet row 46 (posted 14 Nov 21:10, IG 18104036405056936); copied in by the universe review 15 Nov"
+  },
+  {
+   "id": "tl-lecture-06-asi-site-museums",
+   "brand": "talaash",
+   "series": "talaash-lectures",
+   "number": 6,
+   "field": "heritage",
+   "title": "Durlabh #06 (idea) · ASI site museums: why finds stay beside the sites they came from (Sarnath, 1904)",
+   "status": "idea",
+   "slot": "2026-12-27T12:00",
+   "platforms": [
+    "youtube",
+    "website",
+    "instagram-cutdown",
+    "linkedin"
+   ],
+   "page": null,
+   "sources": "Universe review 15 Nov, rule 'what performs moves up': archaeologywala's top post of the 28 days was ASI Watch #1 (Yuge Yugeen Bharat Museum, 14 Nov; 2 comments, likes hidden, only 2 posts in the window, so a weak signal). Heritage is a field the Durlabh plan still needs. Durlabh desk may replace the angle; needs a rarity check and two scholarly sources before it is locked.",
+   "notes": "Not topic-locked. Must not become find-news; the subject is the site-museum system, not the new museum announcement."
   }
  ]
 }
