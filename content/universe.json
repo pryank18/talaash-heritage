@@ -1603,6 +1603,22 @@
    "page": "brahmi-script",
    "sources": "render/queue/_shorts/20261111-read-brahmi-short",
    "notes": "YouTube Short 7EGFJ22Ke6A, uploaded 11 Nov and kept private since; made public 17 Nov 2026 (read back public, no publishAt)."
+  },
+  {
+   "id": "tl-fact-014-amritsar-town-hall-short",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "Fact 014 YouTube Short: Amritsar's colonial Town Hall",
+   "status": "live",
+   "slot": "2026-11-17T02:05",
+   "platforms": [
+    "youtube"
+   ],
+   "page": "heritage-walk-in-amritsar",
+   "sources": "site/media/ig/20261124-fact-amritsar-town-hall-reel.mp4; caption from queue sheet row 70",
+   "notes": "YouTube Short zeziW0iCsZM (public, embeddable, no publishAt, read back 17 Nov 2026). Uploaded when built, ahead of the Instagram post on 24 Nov."
   }
  ]
 }
