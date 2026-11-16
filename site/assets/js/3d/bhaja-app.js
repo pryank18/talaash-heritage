@@ -1,4 +1,4 @@
-// bhaja: the 3D model app from the Claude Design canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2 (version 1794414610-88ae),
+// bhaja: the 3D model app from design canvas 478bfafe-eaef-4987-bd7d-5d54414d37e2 (version 1794414610-88ae),
 // run on the website by dc-lite.js. Texts and facts are the checked ones (render/3d/*-sources.md).
 import { DCLogic, mount } from './dc-lite.js';
 

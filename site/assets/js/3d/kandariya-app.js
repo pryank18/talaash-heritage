@@ -1,4 +1,4 @@
-// kandariya: the 3D model app from the Claude Design canvas aa5f80ed-5676-496a-aaee-353ea79aee60 (version 1794415643-22a3),
+// kandariya: the 3D model app from design canvas aa5f80ed-5676-496a-aaee-353ea79aee60 (version 1794415643-22a3),
 // run on the website by dc-lite.js. Texts and facts are the checked ones (render/3d/*-sources.md).
 import { DCLogic, mount } from './dc-lite.js';
 
