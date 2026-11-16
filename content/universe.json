@@ -1555,6 +1555,54 @@
    ],
    "sources": "Talaash YouTube @talaashheritage1967 (public since 24 Jun 2022); Projects doc claude/recordings-audit.md row 3",
    "notes": "LinkedIn-only post (Account talaashheritage-li, Due At 2026-12-08T12:00): the talk is already public on YouTube, and the Instagram/Facebook grid is full under the growth plan (four reels, three carousels). Built and queued by the one-shot task 'Prakrit archive talk: LinkedIn post' on 1 Dec: title, speaker and dates read from the YouTube page itself, three checks, cover from our own typeset slide, YouTube link only (no pages.dev). First of the Talaashh Talks archive posts; the rest follow claude/recordings-audit.md. Planned 15 Nov 2026."
+  },
+  {
+   "id": "tl-fact-011-didarganj-short",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "arts",
+   "title": "Fact 011 YouTube Short: Didarganj Yakshi",
+   "status": "live",
+   "slot": "2026-11-17T00:40",
+   "platforms": [
+    "youtube"
+   ],
+   "page": null,
+   "sources": "site/media/ig/20261117-fact-didarganj-yakshi-reel.mp4; caption from queue sheet row 43",
+   "notes": "YouTube Short YROIBsSNb0Q (public, no publishAt, read back 17 Nov 2026). Uploaded ahead of the Instagram post on owner's decision so Shorts no longer wait for the Sunday review."
+  },
+  {
+   "id": "tl-fact-012-prajnaparamita-short",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "sanskrit",
+   "title": "Fact 012 YouTube Short: 100,000 lines or one syllable",
+   "status": "live",
+   "slot": "2026-11-17T00:41",
+   "platforms": [
+    "youtube"
+   ],
+   "page": "indian-manuscripts",
+   "sources": "site/media/ig/20261119-fact-prajnaparamita-reel.mp4; caption from queue sheet row 45",
+   "notes": "YouTube Short BIcAqx_P5Qw (public, no publishAt, read back 17 Nov 2026)."
+  },
+  {
+   "id": "tl-read-brahmi-short",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "linguistics",
+   "title": "Read one word of Ashoka's Brahmi in 20 seconds (YouTube Short)",
+   "status": "live",
+   "slot": "2026-11-17T00:42",
+   "platforms": [
+    "youtube"
+   ],
+   "page": "brahmi-script",
+   "sources": "render/queue/_shorts/20261111-read-brahmi-short",
+   "notes": "YouTube Short 7EGFJ22Ke6A, uploaded 11 Nov and kept private since; made public 17 Nov 2026 (read back public, no publishAt)."
   }
  ]
 }
