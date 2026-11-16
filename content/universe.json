@@ -655,6 +655,29 @@
    ]
   },
   {
+   "id": "tl-jaisa-tha-07-nahr-i-bihisht",
+   "brand": "talaash",
+   "series": "jaisa-tha",
+   "number": 7,
+   "field": "heritage",
+   "title": "Jaisa Tha #7: Nahr-i-Bihisht, the water channel of the Red Fort palaces",
+   "status": "idea",
+   "slot": "2027-01-01T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin",
+    "youtube-short"
+   ],
+   "page": "red-fort-complex",
+   "sells": "red-fort-complex",
+   "topic_lock": [
+    "nahr-i-bihisht"
+   ],
+   "sources": "To be built from primary and standard scholarly sources only (ASI Red Fort conservation and nomination documents; Shahjahan-period chronicles in standard translation; canal histories). Three checks per docs/3D-SOP.md.",
+   "notes": "Opened 17 Nov 2026 after a viral outside reel on the same subject (photorealistic AI, labelled as AI content; outside account not named per the 15 Nov rule). Our version: evidence-led, non-photorealistic plain-shape 3D, no human figures needed, both logos. Unverified claims in that reel to test, not repeat: 'every room' had water; 'no pumps' (how water was raised at the Shah Burj end must come from a scholarly source or be left out); exact dates. Hook = a checked number or the everyday link to the walk; no comment bait. Slot after the 30-day gap from aw-reel-delhi-whs (18 Nov). Field heritage follows #6 archaeology."
+  },
+  {
    "id": "web-3d-kandariya",
    "brand": "talaash",
    "series": "3d-model",
