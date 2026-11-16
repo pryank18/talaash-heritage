@@ -1,6 +1,6 @@
 {
  "_readme": "The single ledger for everything Talaash Heritage and archaeologywala make: posts, reels, 3D models, lectures, web pages. Every piece gets one id here before it is built, and its status is updated when it goes live. Series numbers are taken only from this ledger: run tools/check_universe.py and use the 'next' number it prints, then add the item here before building it. Rules: docs/UNIVERSE.md. Check with python3 tools/check_universe.py before every commit that touches this file. Talaash tasks write here; archaeologywala tasks read it and log in their run book, and the Sunday universe review copies their live posts in.",
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "fields": [
   "archaeology",
   "linguistics",
@@ -198,6 +198,24 @@
    "sources": "queue sheet row 40"
   },
   {
+   "id": "tl-week-2026-11-22",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "Heritage this week (22 Nov): two open calls, the nearest closing 11 January",
+   "status": "scheduled",
+   "slot": "2026-11-22T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "news",
+   "sources": "queue sheet row 74; render/queue/20261122-heritage-this-week",
+   "notes": "Stories used: uppsala-university-senior-lecturer-in-hindi, toronto-newar-summer-school-2027-online-and-free, searchable-online-catalogue-of-oxford-chandra-shum-shere-sanskrit-manuscripts, hornbill-festival-2026-at-kisama-1-to-10-december, serendipity-arts-festival-2026-panjim-13-to-20-december, deccan-college-hosts-9th-sanskrit-computational-linguistics-symposium-january-2027. Left out: india-biennale (Purana Qila topic lock), bengal-biennale (start date conflicts in sources: 15 vs 25 Nov), spalding (deadline before 22 Nov)."
+  },
+  {
    "id": "aw-news-kothakota",
    "brand": "archaeologywala",
    "series": "aw-news",
@@ -221,7 +239,7 @@
    "number": null,
    "field": "heritage",
    "title": "World Heritage Convention at 54: India's 45 sites",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-16T08:00",
    "platforms": [
     "instagram",
@@ -237,7 +255,7 @@
    "number": null,
    "field": "heritage",
    "title": "UGC-NET December 2026: the 6% cut and your subject code",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-16T19:30",
    "platforms": [
     "instagram",
