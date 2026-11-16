@@ -1,316 +1,377 @@
 {
- "_readme": "Three-check audit of content/guides/*.json, 5 a night.",
- "done": [
-  {
-   "slug": "ancient-indian-history",
-   "date": "2026-11-12",
-   "claims_checked": 28,
-   "changed": [
-    "Magadha capital: Rajagriha first, later Pataliputra",
-    "Ashoka's reign 268 to 232 BCE: added 'scholars differ by a few years'",
-    "Ashoka's edicts: 'earliest securely dated, deciphered' records (body and FAQ)",
-    "Nalanda 'continued', Vikramashila 'flourished' under the Palas",
-    "Mesolithic table row: from about 12,000 years ago, later in some regions",
-    "Harappan: 'most extensive of the early Bronze Age urban civilisations' (was 'largest')",
-    "UPSC FAQ: Prelims history of India; Mains GS I culture from ancient to modern times (Mains has no ancient-history item)"
-   ],
-   "held": [],
-   "unconfirmed_recheck": [
-    "Isampur and 300,000-year boundary",
-    "Haryanka/Shishunaga/Nanda",
-    "Ahar/Jorwe and Deccan ashmounds",
-    "Arikamedu/Keeladi/Pattanam Tamil Brahmi",
-    "Megasthenes/Faxian/Xuanzang: verifier 2 tools blocked; verifier 3 found them standing"
-   ]
-  },
-  {
-   "slug": "ancient-scripts-of-india",
-   "date": "2026-11-12",
-   "claims_checked": 19,
-   "changed": [
-    "Indus inscriptions: 'on average about five signs' (Mahadevan), was 'most have fewer than six'",
-    "Indus non-linguistic view: 'many specialists dispute', was 'most specialists reject'",
-    "Kharosthi in use until about the 4th or 5th century CE (body, table, FAQ; Britannica)",
-    "Gandharan birch-bark manuscripts dated about 1st century BCE to 2nd century CE (was 'around 1st century CE')",
-    "Grantha from about the 5th or 6th century CE (body, table)",
-    "Nagari table: from about the 7th or 8th century CE",
-    "'nearly every indigenous Indian script' descends from Brahmi (body, social caption)"
-   ],
-   "held": [],
-   "unconfirmed_recheck": [
-    "Indus objects list (tablets, copper)",
-    "Tamil-Brahmi letters and Vatteluttu",
-    "Siddham in East Asia: verifier 2 tools blocked; verifier 3 found them standing (Salomon 1998)"
-   ]
-  },
-  {
-   "slug": "anthropology-and-tribal-india",
-   "date": "2026-11-12",
-   "claims_checked": 23,
-   "changed": [
-    "Calcutta University anthropology department: 1921, was 1920 (caluniv.ac.in)",
-    "AnSI: set up 1945, HQ in Kolkata since 1948 (began in Varanasi)",
-    "South India row: 'Nilgiri and other southern hill communities' (Soliga and Chenchu are not Nilgiri)",
-    "'Gond Pandvani' changed to 'the Pandvani of Chhattisgarh'",
-    "Bhopal Tribal Museum: tribal artists made the displays (was 'helped design the galleries')"
-   ],
-   "held": [],
-   "unconfirmed_recheck": [
-    "705+ ST communities",
-    "largest ST groups",
-    "language families",
-    "Fifth/Sixth Schedule, PESA, FRA",
-    "Ramanujan",
-    "DNA studies",
-    "university list: verifier 2 tools blocked; verifier 3 found them standing"
-   ]
-  },
-  {
-   "slug": "anthropology-optional-for-upsc",
-   "date": "2026-11-12",
-   "claims_checked": 10,
-   "changed": [
-    "Paper II bullet: the syllabus does not name the Fifth/Sixth Schedules or PESA; now 'history of tribal policies and development programmes, constitutional safeguards, forest policy and welfare programmes'",
-    "FAQ GS overlap: 'related themes ... constitutional provisions' (GS syllabus does not name the Schedules or forest rights)"
-   ],
-   "held": [],
-   "unconfirmed_recheck": [
-    "250 marks x 2, 3 hours, free choice of optional: upsc.gov.in blocked for verifier 2; verifier 3 confirmed from CSE rules; re-read the official notification"
-   ]
-  },
-  {
-   "slug": "archaeological-survey-of-india",
-   "date": "2026-11-12",
-   "claims_checked": 20,
-   "changed": [
-    "Blue board: 'usually carry a board' (no source for 'blue' or 'every'; CAG found signage gaps), also social hook, caption, reel",
-    "Social hook 'older than most Indian railways' replaced with 'The ASI has been at work since 1861.'",
-    "Survey 'wound up in 1866', was 'suspended for a few years' (ASI history)"
-   ],
-   "held": [],
-   "unconfirmed_recheck": [
-    "Superintending Archaeologists head circles; Hampi is a mini circle"
-   ]
-  },
-  {
-   "slug": "archaeology-courses-in-india",
-   "date": "2026-11-12",
-   "claims_checked": 18,
-   "changed": [
-    "Indian Institute of Heritage named as the deemed university formerly called the National Museum Institute (IIH notices; ThePrint 20 Apr 2026)",
-    "PG Diploma kept as one year: ThePrint 20 Apr 2026 reports it was cut from two years to one",
-    "'Some universities' replaces 'a few universities' in FAQ"
-   ],
-   "held": [
-    "'Very few universities offer a BA in archaeology alone' removed: no source counts them",
-    "University of Delhi removed from list of archaeology departments: no archaeology department found"
-   ]
-  },
-  {
-   "slug": "archaeology-in-india",
-   "date": "2026-11-12",
-   "claims_checked": 34,
-   "changed": [
-    "'Written records' now 'securely dated, readable written records' begin with Ashoka",
-    "Cunningham 'published' (not collected) the Harappa seal (ASR vol. 5, 1875)",
-    "Antiquities Act 1972: export barred except by the Central Government or an authorised agency (s.3), was 'without a licence'",
-    "Excavation 'needs official permission' (licence strictly for protected areas)",
-    "Social hook 'a thousand years of history' replaced with 'the inscriptions of early India'"
-   ],
-   "held": [
-    "'Pushed back by some two thousand years' softened to 'many centuries': sources disagree on the figure",
-    "Sarnath dropped from Cunningham's identifications: ASI history names Sankisa, Sravasti, Kausambi",
-    "'through its Central Advisory Board of Archaeology' removed: not confirmed in the Rules",
-    "FAQ: William Jones as 'father of Indian archaeology' removed: no reputable source",
-    "FAQ: 'Hampi one of the largest historic city sites' removed: UNESCO gives area only"
-   ]
-  },
-  {
-   "slug": "ashoka-and-his-edicts",
-   "date": "2026-11-12",
-   "claims_checked": 30,
-   "changed": [
-    "Taxila: 'sent to Taxila' (Ashokavadana), not governor",
-    "Pillar edicts: six at most sites, all seven only at Delhi-Topra (Hultzsch CII 1)",
-    "Rest houses attributed to Pillar Edict 7, not Rock Edict 2",
-    "Prinsep sentence no longer says he used the edicts 'largely' (he used Sanchi donor inscriptions)",
-    "Delhi-Topra 'set up in his citadel' (was 'on top of his palace'); Delhi-Meerut 'on the Ridge in north Delhi' (Hindu Rao detail lightly sourced)",
-    "Reel line: 'over 2,200 years old' (was 2,250)"
-   ],
-   "held": []
-  },
-  {
-   "slug": "best-archaeology-museums-in-india",
-   "date": "2026-11-12",
-   "claims_checked": 22,
-   "changed": [
-    "FAQ: National Museum has 'a major Harappan gallery' (was 'the largest in India', unsourced)"
-   ],
-   "held": []
-  },
-  {
-   "slug": "brahmi-script",
-   "date": "2026-11-12",
-   "claims_checked": 20,
-   "changed": [
-    "Name 'traditionally traced' to Buddhist and Jain script lists",
-    "'about forty basic signs' now 'a small set of basic signs' (count depends on method)",
-    "Devanagari FAQ: date 'end of first millennium CE' dropped"
-   ],
-   "held": [
-    "Kodumanal removed from pre-Ashokan potsherd sites: not confirmed by checker A"
-   ]
-  },
-  {
-   "slug": "branches-of-anthropology",
-   "date": "2026-11-13",
-   "claims_checked": 12,
-   "changed": [
-    "Four-field model now 'associated with Franz Boas and American anthropology' (early 20th century dating dropped)"
-   ],
-   "held": []
-  },
-  {
-   "slug": "buddhist-caves-in-india",
-   "date": "2026-11-13",
-   "claims_checked": 26,
-   "changed": [
-    "Karla chaitya dated 'around the turn of the Common Era' (Britannica late 1st c BCE vs Dehejia 1st c CE)",
-    "Ajanta later phase now 5th to 6th c CE, linked with the Vakatakas (UNESCO); 'horseshoe bend' wording replaced",
-    "Udayagiri (Vidisha) caves 'mostly Hindu'",
-    "FAQ: early caves 'around the 2nd and 1st centuries BCE'"
-   ],
-   "held": [
-    "'Well over a thousand rock-cut caves in Maharashtra' removed: no acceptable source; now 'hundreds'"
-   ]
-  },
-  {
-   "slug": "chola-dynasty",
-   "date": "2026-11-13",
-   "claims_checked": 34,
-   "changed": [
-    "Thanjavur vimana now 'about 60 metres' (UNESCO 59.82 m; 66 m unsupported)",
-    "Reigns softened: Vijayalaya to about 870, Parantaka I to the mid-950s, Rajaraja I/Rajendra I about 1014 (UNESCO 1012 vs Britannica 1014)",
-    "Gangaikonda Cholapuram capital 'in the 1020s'; Srivijaya raid 'known from his inscriptions'",
-    "Decline dated to the 13th century (Britannica: Hoysalas from 1216, Pandyas 1257)"
-   ],
-   "held": []
-  },
-  {
-   "slug": "classical-dances-of-india",
-   "date": "2026-11-13",
-   "claims_checked": 24,
-   "changed": [
-    "Natya Shastra dated 'about the 2nd century BCE to the 3rd century CE' (Britannica range)"
-   ],
-   "held": [
-    "'Ministry of Culture has listed Chhau' removed: no government source found; now 'some books also count Chhau'"
-   ]
-  },
-  {
-   "slug": "classical-languages-of-india",
-   "date": "2026-11-13",
-   "claims_checked": 22,
-   "changed": [
-    "Pali and Prakrit 'like Sanskrit' not the main language of any state (Sanskrit was wrongly excluded)",
-    "Expert committee named: set up by Ministry of Culture under Sahitya Akademi (pmindia.gov.in)",
-    "Sanskrit tradition 'about three thousand years'"
-   ],
-   "held": []
-  },
-  {
-   "slug": "delhi-sultanate",
-   "date": "2026-11-14",
-   "claims_checked": 38,
-   "changed": [
-    "Sikandar Lodi 'made Agra his capital around 1504' (Agra predates him; was 'founded Agra')",
-    "Iltutmish 'issued' the silver tanka and copper jital (jitals were struck before him; was 'introduced')"
-   ],
-   "held": []
-  },
-  {
-   "slug": "difference-between-anthropology-and-sociology",
-   "date": "2026-11-14",
-   "claims_checked": 9,
-   "changed": [],
-   "held": []
-  },
-  {
-   "slug": "difference-between-archaeology-and-history",
-   "date": "2026-11-14",
-   "claims_checked": 12,
-   "changed": [],
-   "held": []
-  },
-  {
-   "slug": "difference-between-heritage-and-history",
-   "date": "2026-11-14",
-   "claims_checked": 8,
-   "changed": [],
-   "held": []
-  },
-  {
-   "slug": "famous-archaeological-sites-in-india",
-   "date": "2026-11-14",
-   "claims_checked": 40,
-   "changed": [
-    "Ajanta paintings 'the best known of them from the 5th century CE' (Ajanta also has 2nd-1st century BCE paintings)"
-   ],
-   "held": []
-  },
-  {
-   "slug": "folk-dances-of-india-state-wise",
-   "date": "2026-11-15",
-   "claims_checked": 30,
-   "changed": [
-    "Chhattisgarh: 'Gaur Maria' renamed to the Gaur (bison-horn) dance of the Maria of Bastar",
-    "Thang-Ta: 'performed as dance' softened to 'a martial art with dance-like display forms'"
-   ],
-   "held": [
-    "FAQ: 'the Ministry of Culture has at times included Chhau among classical forms' removed: no official page confirmed it"
-   ]
-  },
-  {
-   "slug": "folklore-of-india",
-   "date": "2026-11-15",
-   "claims_checked": 17,
-   "changed": [
-    "Baul: UNESCO 2005 recognition was on Bangladesh's nomination, now stated",
-    "Burra katha: 'storyteller with a drum' softened (sources disagree whether the lead plays a tambura or drum)"
-   ],
-   "held": []
-  },
-  {
-   "slug": "forts-of-india",
-   "date": "2026-11-15",
-   "claims_checked": 22,
-   "changed": [
-    "Fort types: noted that lists and names differ between texts (Arthashastra gives four, other texts more)",
-    "Gagron: 'ringed by two rivers' corrected to water on three sides where two rivers meet",
-    "Amber: 'from the late 16th century' corrected to 'from the 16th century' (palace begun under Bharmal)",
-    "FAQ Kumbhalgarh: 'one of the longest continuous fort walls in the world' softened to 'very long perimeter wall'"
-   ],
-   "held": []
-  },
-  {
-   "slug": "gupta-empire",
-   "date": "2026-11-15",
-   "claims_checked": 20,
-   "changed": [
-    "'the first free-standing stone temples' corrected to 'some of the earliest surviving' (summary, FAQ, OG, reel)",
-    "Western Kshatrapa conquest dated 'around 400 CE' (estimates range c. 388 to 409)",
-    "'largest quantity of gold coins in early India' softened to 'in large numbers and many designs'",
-    "Chandragupta I coins: attribution softened to 'gold coins show the two together'",
-    "Reign table header: 'sources differ' added"
-   ],
-   "held": []
-  },
-  {
-   "slug": "heritage-conservation-in-india",
-   "date": "2026-11-15",
-   "claims_checked": 11,
-   "changed": [],
-   "held": []
-  }
- ]
+  "_readme": "Three-check audit of content/guides/*.json, 5 a night.",
+  "done": [
+    {
+      "slug": "ancient-indian-history",
+      "date": "2026-11-12",
+      "claims_checked": 28,
+      "changed": [
+        "Magadha capital: Rajagriha first, later Pataliputra",
+        "Ashoka's reign 268 to 232 BCE: added 'scholars differ by a few years'",
+        "Ashoka's edicts: 'earliest securely dated, deciphered' records (body and FAQ)",
+        "Nalanda 'continued', Vikramashila 'flourished' under the Palas",
+        "Mesolithic table row: from about 12,000 years ago, later in some regions",
+        "Harappan: 'most extensive of the early Bronze Age urban civilisations' (was 'largest')",
+        "UPSC FAQ: Prelims history of India; Mains GS I culture from ancient to modern times (Mains has no ancient-history item)"
+      ],
+      "held": [],
+      "unconfirmed_recheck": [
+        "Isampur and 300,000-year boundary",
+        "Haryanka/Shishunaga/Nanda",
+        "Ahar/Jorwe and Deccan ashmounds",
+        "Arikamedu/Keeladi/Pattanam Tamil Brahmi",
+        "Megasthenes/Faxian/Xuanzang: verifier 2 tools blocked; verifier 3 found them standing"
+      ]
+    },
+    {
+      "slug": "ancient-scripts-of-india",
+      "date": "2026-11-12",
+      "claims_checked": 19,
+      "changed": [
+        "Indus inscriptions: 'on average about five signs' (Mahadevan), was 'most have fewer than six'",
+        "Indus non-linguistic view: 'many specialists dispute', was 'most specialists reject'",
+        "Kharosthi in use until about the 4th or 5th century CE (body, table, FAQ; Britannica)",
+        "Gandharan birch-bark manuscripts dated about 1st century BCE to 2nd century CE (was 'around 1st century CE')",
+        "Grantha from about the 5th or 6th century CE (body, table)",
+        "Nagari table: from about the 7th or 8th century CE",
+        "'nearly every indigenous Indian script' descends from Brahmi (body, social caption)"
+      ],
+      "held": [],
+      "unconfirmed_recheck": [
+        "Indus objects list (tablets, copper)",
+        "Tamil-Brahmi letters and Vatteluttu",
+        "Siddham in East Asia: verifier 2 tools blocked; verifier 3 found them standing (Salomon 1998)"
+      ]
+    },
+    {
+      "slug": "anthropology-and-tribal-india",
+      "date": "2026-11-12",
+      "claims_checked": 23,
+      "changed": [
+        "Calcutta University anthropology department: 1921, was 1920 (caluniv.ac.in)",
+        "AnSI: set up 1945, HQ in Kolkata since 1948 (began in Varanasi)",
+        "South India row: 'Nilgiri and other southern hill communities' (Soliga and Chenchu are not Nilgiri)",
+        "'Gond Pandvani' changed to 'the Pandvani of Chhattisgarh'",
+        "Bhopal Tribal Museum: tribal artists made the displays (was 'helped design the galleries')"
+      ],
+      "held": [],
+      "unconfirmed_recheck": [
+        "705+ ST communities",
+        "largest ST groups",
+        "language families",
+        "Fifth/Sixth Schedule, PESA, FRA",
+        "Ramanujan",
+        "DNA studies",
+        "university list: verifier 2 tools blocked; verifier 3 found them standing"
+      ]
+    },
+    {
+      "slug": "anthropology-optional-for-upsc",
+      "date": "2026-11-12",
+      "claims_checked": 10,
+      "changed": [
+        "Paper II bullet: the syllabus does not name the Fifth/Sixth Schedules or PESA; now 'history of tribal policies and development programmes, constitutional safeguards, forest policy and welfare programmes'",
+        "FAQ GS overlap: 'related themes ... constitutional provisions' (GS syllabus does not name the Schedules or forest rights)"
+      ],
+      "held": [],
+      "unconfirmed_recheck": [
+        "250 marks x 2, 3 hours, free choice of optional: upsc.gov.in blocked for verifier 2; verifier 3 confirmed from CSE rules; re-read the official notification"
+      ]
+    },
+    {
+      "slug": "archaeological-survey-of-india",
+      "date": "2026-11-12",
+      "claims_checked": 20,
+      "changed": [
+        "Blue board: 'usually carry a board' (no source for 'blue' or 'every'; CAG found signage gaps), also social hook, caption, reel",
+        "Social hook 'older than most Indian railways' replaced with 'The ASI has been at work since 1861.'",
+        "Survey 'wound up in 1866', was 'suspended for a few years' (ASI history)"
+      ],
+      "held": [],
+      "unconfirmed_recheck": [
+        "Superintending Archaeologists head circles; Hampi is a mini circle"
+      ]
+    },
+    {
+      "slug": "archaeology-courses-in-india",
+      "date": "2026-11-12",
+      "claims_checked": 18,
+      "changed": [
+        "Indian Institute of Heritage named as the deemed university formerly called the National Museum Institute (IIH notices; ThePrint 20 Apr 2026)",
+        "PG Diploma kept as one year: ThePrint 20 Apr 2026 reports it was cut from two years to one",
+        "'Some universities' replaces 'a few universities' in FAQ"
+      ],
+      "held": [
+        "'Very few universities offer a BA in archaeology alone' removed: no source counts them",
+        "University of Delhi removed from list of archaeology departments: no archaeology department found"
+      ]
+    },
+    {
+      "slug": "archaeology-in-india",
+      "date": "2026-11-12",
+      "claims_checked": 34,
+      "changed": [
+        "'Written records' now 'securely dated, readable written records' begin with Ashoka",
+        "Cunningham 'published' (not collected) the Harappa seal (ASR vol. 5, 1875)",
+        "Antiquities Act 1972: export barred except by the Central Government or an authorised agency (s.3), was 'without a licence'",
+        "Excavation 'needs official permission' (licence strictly for protected areas)",
+        "Social hook 'a thousand years of history' replaced with 'the inscriptions of early India'"
+      ],
+      "held": [
+        "'Pushed back by some two thousand years' softened to 'many centuries': sources disagree on the figure",
+        "Sarnath dropped from Cunningham's identifications: ASI history names Sankisa, Sravasti, Kausambi",
+        "'through its Central Advisory Board of Archaeology' removed: not confirmed in the Rules",
+        "FAQ: William Jones as 'father of Indian archaeology' removed: no reputable source",
+        "FAQ: 'Hampi one of the largest historic city sites' removed: UNESCO gives area only"
+      ]
+    },
+    {
+      "slug": "ashoka-and-his-edicts",
+      "date": "2026-11-12",
+      "claims_checked": 30,
+      "changed": [
+        "Taxila: 'sent to Taxila' (Ashokavadana), not governor",
+        "Pillar edicts: six at most sites, all seven only at Delhi-Topra (Hultzsch CII 1)",
+        "Rest houses attributed to Pillar Edict 7, not Rock Edict 2",
+        "Prinsep sentence no longer says he used the edicts 'largely' (he used Sanchi donor inscriptions)",
+        "Delhi-Topra 'set up in his citadel' (was 'on top of his palace'); Delhi-Meerut 'on the Ridge in north Delhi' (Hindu Rao detail lightly sourced)",
+        "Reel line: 'over 2,200 years old' (was 2,250)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "best-archaeology-museums-in-india",
+      "date": "2026-11-12",
+      "claims_checked": 22,
+      "changed": [
+        "FAQ: National Museum has 'a major Harappan gallery' (was 'the largest in India', unsourced)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "brahmi-script",
+      "date": "2026-11-12",
+      "claims_checked": 20,
+      "changed": [
+        "Name 'traditionally traced' to Buddhist and Jain script lists",
+        "'about forty basic signs' now 'a small set of basic signs' (count depends on method)",
+        "Devanagari FAQ: date 'end of first millennium CE' dropped"
+      ],
+      "held": [
+        "Kodumanal removed from pre-Ashokan potsherd sites: not confirmed by checker A"
+      ]
+    },
+    {
+      "slug": "branches-of-anthropology",
+      "date": "2026-11-13",
+      "claims_checked": 12,
+      "changed": [
+        "Four-field model now 'associated with Franz Boas and American anthropology' (early 20th century dating dropped)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "buddhist-caves-in-india",
+      "date": "2026-11-13",
+      "claims_checked": 26,
+      "changed": [
+        "Karla chaitya dated 'around the turn of the Common Era' (Britannica late 1st c BCE vs Dehejia 1st c CE)",
+        "Ajanta later phase now 5th to 6th c CE, linked with the Vakatakas (UNESCO); 'horseshoe bend' wording replaced",
+        "Udayagiri (Vidisha) caves 'mostly Hindu'",
+        "FAQ: early caves 'around the 2nd and 1st centuries BCE'"
+      ],
+      "held": [
+        "'Well over a thousand rock-cut caves in Maharashtra' removed: no acceptable source; now 'hundreds'"
+      ]
+    },
+    {
+      "slug": "chola-dynasty",
+      "date": "2026-11-13",
+      "claims_checked": 34,
+      "changed": [
+        "Thanjavur vimana now 'about 60 metres' (UNESCO 59.82 m; 66 m unsupported)",
+        "Reigns softened: Vijayalaya to about 870, Parantaka I to the mid-950s, Rajaraja I/Rajendra I about 1014 (UNESCO 1012 vs Britannica 1014)",
+        "Gangaikonda Cholapuram capital 'in the 1020s'; Srivijaya raid 'known from his inscriptions'",
+        "Decline dated to the 13th century (Britannica: Hoysalas from 1216, Pandyas 1257)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "classical-dances-of-india",
+      "date": "2026-11-13",
+      "claims_checked": 24,
+      "changed": [
+        "Natya Shastra dated 'about the 2nd century BCE to the 3rd century CE' (Britannica range)"
+      ],
+      "held": [
+        "'Ministry of Culture has listed Chhau' removed: no government source found; now 'some books also count Chhau'"
+      ]
+    },
+    {
+      "slug": "classical-languages-of-india",
+      "date": "2026-11-13",
+      "claims_checked": 22,
+      "changed": [
+        "Pali and Prakrit 'like Sanskrit' not the main language of any state (Sanskrit was wrongly excluded)",
+        "Expert committee named: set up by Ministry of Culture under Sahitya Akademi (pmindia.gov.in)",
+        "Sanskrit tradition 'about three thousand years'"
+      ],
+      "held": []
+    },
+    {
+      "slug": "delhi-sultanate",
+      "date": "2026-11-14",
+      "claims_checked": 38,
+      "changed": [
+        "Sikandar Lodi 'made Agra his capital around 1504' (Agra predates him; was 'founded Agra')",
+        "Iltutmish 'issued' the silver tanka and copper jital (jitals were struck before him; was 'introduced')"
+      ],
+      "held": []
+    },
+    {
+      "slug": "difference-between-anthropology-and-sociology",
+      "date": "2026-11-14",
+      "claims_checked": 9,
+      "changed": [],
+      "held": []
+    },
+    {
+      "slug": "difference-between-archaeology-and-history",
+      "date": "2026-11-14",
+      "claims_checked": 12,
+      "changed": [],
+      "held": []
+    },
+    {
+      "slug": "difference-between-heritage-and-history",
+      "date": "2026-11-14",
+      "claims_checked": 8,
+      "changed": [],
+      "held": []
+    },
+    {
+      "slug": "famous-archaeological-sites-in-india",
+      "date": "2026-11-14",
+      "claims_checked": 40,
+      "changed": [
+        "Ajanta paintings 'the best known of them from the 5th century CE' (Ajanta also has 2nd-1st century BCE paintings)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "folk-dances-of-india-state-wise",
+      "date": "2026-11-15",
+      "claims_checked": 30,
+      "changed": [
+        "Chhattisgarh: 'Gaur Maria' renamed to the Gaur (bison-horn) dance of the Maria of Bastar",
+        "Thang-Ta: 'performed as dance' softened to 'a martial art with dance-like display forms'"
+      ],
+      "held": [
+        "FAQ: 'the Ministry of Culture has at times included Chhau among classical forms' removed: no official page confirmed it"
+      ]
+    },
+    {
+      "slug": "folklore-of-india",
+      "date": "2026-11-15",
+      "claims_checked": 17,
+      "changed": [
+        "Baul: UNESCO 2005 recognition was on Bangladesh's nomination, now stated",
+        "Burra katha: 'storyteller with a drum' softened (sources disagree whether the lead plays a tambura or drum)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "forts-of-india",
+      "date": "2026-11-15",
+      "claims_checked": 22,
+      "changed": [
+        "Fort types: noted that lists and names differ between texts (Arthashastra gives four, other texts more)",
+        "Gagron: 'ringed by two rivers' corrected to water on three sides where two rivers meet",
+        "Amber: 'from the late 16th century' corrected to 'from the 16th century' (palace begun under Bharmal)",
+        "FAQ Kumbhalgarh: 'one of the longest continuous fort walls in the world' softened to 'very long perimeter wall'"
+      ],
+      "held": []
+    },
+    {
+      "slug": "gupta-empire",
+      "date": "2026-11-15",
+      "claims_checked": 20,
+      "changed": [
+        "'the first free-standing stone temples' corrected to 'some of the earliest surviving' (summary, FAQ, OG, reel)",
+        "Western Kshatrapa conquest dated 'around 400 CE' (estimates range c. 388 to 409)",
+        "'largest quantity of gold coins in early India' softened to 'in large numbers and many designs'",
+        "Chandragupta I coins: attribution softened to 'gold coins show the two together'",
+        "Reign table header: 'sources differ' added"
+      ],
+      "held": []
+    },
+    {
+      "slug": "heritage-conservation-in-india",
+      "date": "2026-11-15",
+      "claims_checked": 11,
+      "changed": [],
+      "held": []
+    },
+    {
+      "slug": "heritage-sites-in-andhra-pradesh",
+      "date": "2026-11-16",
+      "claims_checked": 20,
+      "changed": [
+        "Buddhist Krishna-Godavari region 'for many centuries' (was 'about a thousand years'); donors in 'many' inscriptions (was 'hundreds')",
+        "Amaravati sculpture: much stone burnt for lime in the 19th c.; largest groups in the site museum, Chennai and the British Museum, with smaller groups elsewhere (body, FAQ); only the plinth survives on site (ASI)",
+        "Thotlakonda group 'near the sea' (sea view sourced for Pavurallakonda only)",
+        "Undavalli 'often dated to about the 7th century' (was 5th to 7th)",
+        "Srisailam panels: Vijayanagara dating dropped (body, site note)",
+        "Lepakshi 'built mainly in the 16th century'; 'among the largest surviving murals' and 'unfinished' kalyana mandapa dropped (body, social caption)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "heritage-sites-in-arunachal-pradesh",
+      "date": "2026-11-16",
+      "claims_checked": 13,
+      "changed": [
+        "Bhismaknagar: 'early second millennium' replaced by 'proposed dates vary widely' (body, FAQ)",
+        "Malinithan dated 'between about the 10th and 14th centuries' (sources range 10th to 14th; was 13th to 14th)",
+        "Ita Fort 'often dated to the 14th or 15th century though some place it later' (Incredible India notes a 1688 view) (body, site note, social)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "heritage-sites-in-assam",
+      "date": "2026-11-16",
+      "claims_checked": 17,
+      "changed": [
+        "Ahom rule ended with 'the Burmese invasions and the British takeover of the 1820s and 1830s' (was 'British annexation of 1826'; Britannica: British rule 1838)",
+        "Rang Ghar: 'oval' dropped (sources say oval or octagonal) (body, social)",
+        "Kareng Ghar naming: now 'royal palace at Garhgaon' (district site uses Kareng Ghar for Talatal Ghar's upper floors) (body, site list, FAQ)",
+        "Majuli 'the largest island in the Brahmaputra' (was 'one of the largest river islands in the world'); 'communities have had to move' (was 'satras')",
+        "Da Parbatia 'about the 6th century' per ASI (was 5th to 6th)",
+        "Ambari layers go back to the early centuries CE (was early medieval)",
+        "Khaspur: 'last Dimasa Kachari capital' (17th to 18th c. dating unsourced)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "heritage-sites-in-bihar",
+      "date": "2026-11-16",
+      "claims_checked": 16,
+      "changed": [
+        "Nalanda active from about the 5th century until the 12th or 13th (ASI 12th, UNESCO 13th) (body, site note)",
+        "Sariputra stupa 'Site 3' (UNESCO dossier term)",
+        "Patna palisade 'often linked to' Megasthenes' wooden walls",
+        "Didarganj Yakshi: same Chunar stone, 'its date is debated' (no longer implied Mauryan)"
+      ],
+      "held": []
+    },
+    {
+      "slug": "heritage-sites-in-chhattisgarh",
+      "date": "2026-11-16",
+      "claims_checked": 11,
+      "changed": [
+        "Tala figure: 'identity is debated, though it is often called Rudra Shiva'"
+      ],
+      "held": []
+    }
+  ]
 }

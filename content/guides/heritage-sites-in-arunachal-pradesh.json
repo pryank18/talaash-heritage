@@ -37,8 +37,8 @@
   {
    "h2": "Archaeological sites in Arunachal Pradesh",
    "paras": [
-    "Bhismaknagar, near Roing in Lower Dibang Valley, is the state's best known excavated site. It has a large brick fortification, gateways and building platforms, and is generally linked to the Chutiya rulers of the upper Brahmaputra valley, with dates usually placed in the early second millennium CE. Local tradition connects it with King Bhishmaka of the Mahabharata, a story worth noting as tradition rather than evidence.",
-    "Malinithan, near Likabali in Lower Siang district, is a hilltop temple site where excavation exposed a temple plinth and granite sculptures, including images of deities and animals, broadly dated to around the 13th to 14th centuries. Ita Fort in Itanagar is an irregular brick enclosure, also usually dated to roughly the 14th to 15th centuries, and gives the capital its name.",
+    "Bhismaknagar, near Roing in Lower Dibang Valley, is the state's best known excavated site. It has a large brick fortification, gateways and building platforms, and is generally linked to the Chutiya rulers of the upper Brahmaputra valley, though the dates proposed for it vary widely. Local tradition connects it with King Bhishmaka of the Mahabharata, a story worth noting as tradition rather than evidence.",
+    "Malinithan, near Likabali in Lower Siang district, is a hilltop temple site where excavation exposed a temple plinth and granite sculptures, including images of deities and animals, with dates proposed between about the 10th and 14th centuries. Ita Fort in Itanagar is an irregular brick enclosure, often dated to the 14th or 15th century though some place it later, and gives the capital its name.",
     "Parshuram Kund in Lohit district is a pilgrimage site on the Lohit river with a large January gathering. For readers new to the methods behind these dates, our [how archaeologists date artifacts](how-archaeologists-date-artifacts.html) explainer shows why foothill sites often carry broad ranges."
    ]
   },
@@ -88,12 +88,12 @@
   },
   {
    "name": "Malinithan",
-   "note": "Hilltop temple site near Likabali with granite sculptures of around the 13th to 14th centuries.",
+   "note": "Hilltop temple site near Likabali with granite sculptures, dated by scholars between about the 10th and 14th centuries.",
    "unesco": false
   },
   {
    "name": "Ita Fort",
-   "note": "Brick fort ruins in Itanagar, broadly dated to the 14th to 15th centuries.",
+   "note": "Brick fort ruins in Itanagar, often dated to the 14th or 15th century.",
    "unesco": false
   },
   {
@@ -154,7 +154,7 @@
   },
   {
    "q": "Who built Bhismaknagar?",
-   "a": "Archaeologists usually link the brick fort to the Chutiya kingdom of the upper Brahmaputra valley, in the early second millennium CE. Local tradition ties it to King Bhishmaka of the Mahabharata, which is a story rather than dated evidence."
+   "a": "Archaeologists usually link the brick fort to the Chutiya kingdom of the upper Brahmaputra valley, though proposed dates vary widely. Local tradition ties it to King Bhishmaka of the Mahabharata, which is a story rather than dated evidence."
   },
   {
    "q": "Do I need a permit to visit Arunachal Pradesh?",
@@ -226,7 +226,7 @@
    {
     "angle": "fact",
     "hook": "Itanagar is named after a brick fort.",
-    "caption": "Ita Fort, in the capital, is an irregular brick enclosure usually dated to around the 14th to 15th centuries. 'Ita' means brick."
+    "caption": "Ita Fort, in the capital, is an irregular brick enclosure often dated to the 14th or 15th century. 'Ita' means brick."
    },
    {
     "angle": "tip",
