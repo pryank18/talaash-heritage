@@ -1,0 +1,19 @@
+# Durlabh #02 · The Ajanta copies that burned twice: three checks (17 Nov 2026)
+
+1. Own check: V&A Conservation Journal 52 (2006) opened (Gill commissioned 1844, at Ajanta 1844–1863, about 30 canvases, displayed in the Indian Court at Sydenham, most destroyed 1866, four survive; Griffiths from 1872, 13 years, £30,000, 300 shipped; June 1885 fire "in one of the stores in the institute", well over a hundred destroyed; 166 held; 81 treated in June 2005; red-paint dates; Pestonji Bomanjie; murals 1st c. BC to about AD 480). V&A API records O115443, O115444 (Gill, Cave 1, 1856, "one of only four surviving examples"), O115470 (Griffiths, Cave 6, "badly damaged by fire"), O115182 (deposited in the India Museum; "pre fire of June 1885 - check"). RAS post (1 Dec 2016): Griffiths 1837–1918, seven students every winter 1872–1885, about 300. Who Was Who in Indology (Griffiths). Royal Academy catalogue: Griffiths 2 vols, W. Griggs, 1896 and 1897, by order of the Secretary of State; Herringham, Ajanta Frescoes, Humphrey Milford/OUP 1915, copies 1909–1911. CCA: Fergusson, Rock-Cut Temples of India, 74 photographs by Major Gill, John Murray 1864. Buckland 1906 (Gill entry). The Spectator 5 Jan 1867 (fire about 2 pm on Sunday, gas, Indian Court "irreparably injured"); 30 Dec 1866 computed as a Sunday.
+2. Subagent A (with sources): confirmed nearly all. Not confirmed: RAS pressing the Court of Directors; "Madras army" (only Who Was Who); "peeling, smoked and scratched"; colour photography line; "ceiling" (record says a strip of floral decoration); "almost all"; "decades in storage"; "students spent winters on ceilings"; "India Society published". Misleading: "over nearly twenty years" (the set was shipped about 1855).
+3. Subagent B (no sources): nothing proven wrong. Doubtful: India Museum (dissolved 1879); 1885 fire building (V&A says the Institute, anachronistic; others say South Kensington Museum); counts for both fires conflict (Gill 25 burnt / 4–5 survive; Griffiths 87, 100, "well over a hundred"; about 300 vs 335); Gill "stayed until 1863" (he lived at Ajanta until his death); "five months" is working time, not calendar time; Herringham publisher is OUP; Ajanta dating attribution.
+
+Changes made (rule: keep only what both confirm):
+- Fire: "broke out at the Crystal Palace ... and burned down its north transept"; date kept (Historic England dates the fire 30 Dec 1866; the Spectator says Sunday).
+- "over nearly twenty years" → "over more than a decade". Section renamed "Major Gill's commission". RAS/Court of Directors line and "Madras army" removed: "In 1844 the commission to copy them went to Major Robert Gill, an army officer. His copying ran until 1863."
+- Buckland quoted exactly ("antiquary, artist and sportsman"; more than 150 tigers).
+- Deterioration line now follows the V&A; colour-photography sentence cut.
+- "to the India Museum" → "were sent to London". 1885 fire placed only in "a London storeroom", "by the V&A's account", wherever a number is given.
+- Five months → "about five months of work, by the V&A's estimate". Cave 6 → "a strip of floral decoration ... 'has been badly damaged by fire'"; "pulled out" line removed.
+- Volumes: pictorial subjects / decorative details. 166 → "In 2006 the V&A's conservators counted 166"; "almost all" and "decades in storage" removed.
+- Herringham: published by OUP with essays by members of the India Society. Ceilings line cut. Summary dating attributed to the V&A.
+- No single figure printed for Gill's survivors other than the V&A's four at the V&A.
+Ledger title changed from "South Kensington, 1885" to "John Griffiths, 1885" because the building of the 1885 fire is disputed.
+
+For the lecture studio: no image of a V&A copy (V&A downloads are non-commercial only). Any Commons scan only after its licence is checked on its own file page.

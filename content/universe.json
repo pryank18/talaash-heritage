@@ -574,7 +574,7 @@
    "page": "brahmi-script",
    "sources": "Talaash lecture studio, Fri 27 Nov run; made public by the Sunday universe review",
    "sells": "write-like-asoka-s-scribes-a-brahmi-workshop",
-   "notes": "English narration (Talaash audience is pan-India; Hindi fallback only if the English voice clone fails its checks) Renumbered #1 → #3 on 12 Nov 2026 when Talaash Lectures became the weekly Durlabh Sunday anchor (nothing had been built or published). Long read: content/durlabh/03-read-brahmi.json (page durlabh-03-read-brahmi), written by the Durlabh desk.",
+   "notes": "English narration (Talaash audience is pan-India; Hindi fallback only if the English voice clone fails its checks) Renumbered #1 → #3 on 12 Nov 2026 when Talaash Lectures became the weekly Durlabh Sunday anchor (nothing had been built or published). Long read: content/durlabh/03-read-brahmi.json (page durlabh-03-read-brahmi), written by the Durlabh desk. Long read written and three-checked 17 Nov 2026: content/durlabh/03-read-brahmi.json (checks: render/lectures/03-read-brahmi/checks.md).",
    "durlabh": 3,
    "durlabh_page": "durlabh-03-read-brahmi"
   },
@@ -891,7 +891,7 @@
    "id": "tl-lecture-02-ajanta-copies",
    "number": 2,
    "field": "arts",
-   "title": "Durlabh #02 · The Ajanta copies that burned twice (Robert Gill, 1866; South Kensington, 1885)",
+   "title": "Durlabh #02 · The Ajanta copies that burned twice (Robert Gill, 1866; John Griffiths, 1885)",
    "slot": "2026-11-29T12:00",
    "page": "durlabh-02-ajanta-copies",
    "sells": "reading-sculpture",
@@ -900,7 +900,7 @@
     "robert-gill"
    ],
    "status": "idea",
-   "notes": "Brief: render/lectures/02-ajanta-copies/brief.md. Durlabh desk writes the long read by Tue 17 Nov.",
+   "notes": "Brief: render/lectures/02-ajanta-copies/brief.md. Long read written and three-checked 17 Nov 2026: content/durlabh/02-ajanta-copies.json (checks: render/lectures/02-ajanta-copies/checks.md). The 1885 fire is placed only as 'a London storeroom' (sources disagree on the building). Lecture studio builds the video from that text on Fri 20 Nov.",
    "brand": "talaash",
    "series": "talaash-lectures",
    "platforms": [
@@ -1464,19 +1464,26 @@
    "brand": "talaash",
    "series": "talaash-lectures",
    "number": 6,
-   "field": "heritage",
-   "title": "Durlabh #06 (idea) · ASI site museums: why finds stay beside the sites they came from (Sarnath, 1904)",
+   "field": "history",
+   "title": "Durlabh #06 · The Delhi Urdu Akhbar: a newspaper inside the siege of 1857 (Maulvi Muhammad Baqir)",
    "status": "idea",
    "slot": "2026-12-27T12:00",
    "platforms": [
     "youtube",
     "website",
-    "instagram-cutdown",
+    "instagram",
+    "facebook",
     "linkedin"
    ],
-   "page": null,
-   "sources": "Universe review 15 Nov, rule 'what performs moves up': archaeologywala's top post of the 28 days was ASI Watch #1 (Yuge Yugeen Bharat Museum, 14 Nov; 2 comments, likes hidden, only 2 posts in the window, so a weak signal). Heritage is a field the Durlabh plan still needs. Durlabh desk may replace the angle; needs a rarity check and two scholarly sources before it is locked.",
-   "notes": "Not topic-locked. Must not become find-news; the subject is the site-museum system, not the new museum announcement."
+   "page": "durlabh-06-delhi-urdu-akhbar",
+   "sources": "Durlabh desk, 17 Nov 2026 (rarity and field rotation). Earlier idea from the universe review of 15 Nov (site museums) dropped as not rare.",
+   "notes": "Locked 17 Nov 2026 by the Durlabh desk. Brief: render/lectures/06-delhi-urdu-akhbar/brief.md. Replaces the site-museums idea (not rare: site museums are covered in the best-archaeology-museums-in-india and archaeological-survey-of-india guides) and moves the field to history, because Friday 1 Jan's Jaisa Tha #7 is heritage. Rarity checked: no Talaash page, ledger item or queue row on the subject; no 1857 post in the queue sheet.",
+   "sells": "kashmere-gate-1857",
+   "topic_lock": [
+    "delhi-urdu-akhbar",
+    "muhammad-baqir"
+   ],
+   "durlabh": 6
   },
   {
    "id": "tl-gurpurab-2026",
@@ -1643,6 +1650,67 @@
    "page": "heritage-walk-in-amritsar",
    "sources": "site/media/ig/20261124-fact-amritsar-town-hall-reel.mp4; caption from queue sheet row 70",
    "notes": "YouTube Short zeziW0iCsZM (public, embeddable, no publishAt, read back 17 Nov 2026). Uploaded when built, ahead of the Instagram post on 24 Nov."
+  },
+  {
+   "id": "tl-lecture-07-bengal-regulation-1810",
+   "brand": "talaash",
+   "series": "talaash-lectures",
+   "number": 7,
+   "field": "heritage",
+   "title": "Durlabh #07 · Regulation XIX of 1810: India's first law to protect old buildings",
+   "status": "idea",
+   "slot": "2027-01-03T12:00",
+   "platforms": [
+    "youtube",
+    "website",
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-07-bengal-regulation-1810",
+   "sells": "who-owns-the-past-heritage-and-urban-development",
+   "topic_lock": [
+    "bengal-regulation-1810",
+    "regulation-xix-1810"
+   ],
+   "durlabh": 7,
+   "notes": "Locked 17 Nov 2026 by the Durlabh desk. Brief: render/lectures/07-bengal-regulation-1810/brief.md. Heritage after #06 history; that week's Jaisa Tha (Fri 8 Jan) is not yet planned and must not be heritage."
+  },
+  {
+   "id": "tl-durlabh-06-carousel",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "history",
+   "title": "Durlabh #06 carousel (Wednesday Deep Story)",
+   "status": "idea",
+   "slot": "2026-12-30T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-06-delhi-urdu-akhbar",
+   "durlabh": 6,
+   "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
+  },
+  {
+   "id": "tl-durlabh-07-carousel",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "heritage",
+   "title": "Durlabh #07 carousel (Wednesday Deep Story)",
+   "status": "idea",
+   "slot": "2027-01-06T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-07-bengal-regulation-1810",
+   "durlabh": 7,
+   "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
   }
  ]
 }

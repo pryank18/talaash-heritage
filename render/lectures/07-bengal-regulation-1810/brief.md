@@ -1,0 +1,11 @@
+# Durlabh #07 · Regulation XIX of 1810: India's first law to protect old buildings (Sun 3 Jan 2027) · Heritage
+
+Angle: nearly a century before the Ancient Monuments Preservation Act of 1904, a Bengal regulation of 1810 gave the government a duty to step in when public buildings and old monuments were at risk. What it actually said (read the text, not summaries), why it was passed, what it did and did not achieve, and how the line runs from 1810 to the 1904 Act and the 1958 Act that governs ASI sites today. Ask the reader the question still argued now: who owns the past, the state, the community that uses a building, or no one?
+
+Leads found 17 Nov 2026 (confirm everything in the three checks):
+- Text: the Bengal Charitable Endowments, Public Buildings and Escheats Regulation, 1810 (Regulation XIX of 1810), as printed in the Bangladesh code: https://lawsofbangladesh.github.io/laws/volume-1/act-details-1316 and the Indian copy at https://www.legitquest.com/act/the-bengal-charitable-endowments-public-buildings-and-escheats-regulation-1810/77DA
+- Archaeological Survey of India, history of the ASI: Regulation XIX of 1810 was "the first attempt to make the government to intervene in case of risks to monuments through legislation". https://asi.nic.in/HQ/history-view/
+- Scholarly context: the Modern Asian Studies article "Devotion, antiquity and colonial custody of the Hindu temple in British India" (Cambridge). https://cambridge.org/core/journals/modern-asian-studies/article/devotion-antiquity-and-colonial-custody-of-the-hindu-temple-in-british-india/7331386ACE9BF57E12D9A2B4680A344A ; also look for Upinder Singh, The Discovery of Ancient India (2004) and Nayanjot Lahiri, Marshalling the Past (2012), and Madras Regulation VII of 1817 (confirm before naming it).
+Avoid: legal advice; any claim about present-day ownership of a named living temple.
+Sells: who-owns-the-past-heritage-and-urban-development. Read next: heritage-conservation-in-india, archaeological-survey-of-india, what-is-cultural-heritage.
+Field rotation: #06 history → #07 heritage; Jaisa Tha on Fri 8 Jan must not be heritage. Rarity: no Talaash page, ledger item or queue row on 1810 (checked 17 Nov). Topic lock: bengal-regulation-1810, regulation-xix-1810.

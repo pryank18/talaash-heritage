@@ -1,0 +1,132 @@
+{
+  "number": 3,
+  "page": "durlabh-03-read-brahmi",
+  "release": "2026-12-06T11:00:00+05:30",
+  "field": "linguistics",
+  "image": "guide:brahmi-script",
+  "title": "Read Brāhmī: a first lesson",
+  "seo_title": "Read Brāhmī: a first lesson in the script of Ashoka's edicts",
+  "meta_description": "Learn how Brāhmī works: the built-in 'a', the vowel strokes, the dot for a nasal, and a dozen common letters. Then read Ashoka's own title, devānaṃpiya, letter by letter.",
+  "og_title": "Read Brāhmī: a first lesson",
+  "og_description": "A plus sign is ka. A square is ba. Learn the system behind Ashoka's script in one sitting, and read your first word.",
+  "keywords": [
+    "learn Brahmi script",
+    "how to read Brahmi",
+    "Brahmi alphabet",
+    "Brahmi vowel signs",
+    "Ashokan Brahmi",
+    "devanampiya",
+    "James Prinsep"
+  ],
+  "summary": "Brāhmī is the script of Ashoka's edicts and the ancestor of most scripts used in South and South-East Asia today. It is easier to start than it looks: every consonant carries a built-in 'a', small strokes change the vowel, and a dot marks a nasal. This first lesson explains the system, gives a dozen common letters with the shapes to look for, and reads Ashoka's title devānaṃpiya, 'Beloved of the Gods', sign by sign.",
+  "sections": [
+    {
+      "h2": "Two words to begin with",
+      "paras": [
+        "Two Sundays ago, Durlabh #01 ended with five signs carved above a royal couple on a stupa at Kanaganahalli in Karnataka: rāyā asoko, 'King Ashoka'. Today we learn the system those signs belong to. By the end you will be able to read Ashoka's own title on the stones, and you will know why a single small stroke can change a word.",
+        "Brāhmī is the script of Ashoka's edicts, cut in the 3rd century BCE. It is also the parent, through many generations of change, of most of the scripts used in South and South-East Asia today, from Devanagari and Bengali to Tamil, Kannada, Thai and Tibetan. Learn its logic once and you will recognise that logic in all of them."
+      ]
+    },
+    {
+      "h2": "How we got it back",
+      "paras": [
+        "For centuries no one could read Brāhmī. James Prinsep, assay master of the Calcutta Mint and secretary of the Asiatic Society of Bengal, completed the decipherment in 1837, building on earlier work. The last keys came from short donor inscriptions on the Buddhist monuments at Sanchi, which gave him the letters d and n. With them the edicts on rocks and pillars could be read again.",
+        "Where Brāhmī itself came from is still argued. Georg Bühler, whose Indian Palaeography (1896; English version 1904) remains a classic source of letter tables, argued that Brāhmī was adapted from a North Semitic script. Other scholars have argued for an invention within India. Richard Salomon's Indian Epigraphy (1998) discusses both cases and the evidence for each. Scholars agree that the Ashokan edicts are the earliest large body of Brāhmī that can be dated with confidence."
+      ]
+    },
+    {
+      "h2": "The one idea you need",
+      "paras": [
+        "Brāhmī is not an alphabet in the English sense. Each consonant letter already contains a short 'a'. The letter shaped like a plus sign is not 'k' but ka. Linguists call a script that works this way an abugida.",
+        "To give a consonant a different vowel, the scribe adds a small stroke to it. As the Noto Sans Brahmi typeface draws them: a short horizontal stroke at the top right gives ā (ka becomes kā); the same stroke turned upwards at its end gives i; a short stroke at the foot gives u; a short stroke at the top left gives e; strokes at top left and top right give o. A dot beside or above the letter, the anusvāra, adds a nasal: ka becomes kaṃ.",
+        "A vowel at the start of a word cannot hang on a consonant, so it has its own letter. Initial a looks like a backwards K: an upright line with two curved strokes on its left. Initial i is three dots. Initial u is an L. Initial e is a triangle.",
+        "One more habit of the Ashokan scribes: where later Pali writes a double mm, the edicts show the nasal dot and a single m. Pali dhamma, 'righteousness', appears on the stones as dhaṃma."
+      ]
+    },
+    {
+      "h2": "Letters to start with",
+      "paras": [
+        "These shapes are taken from the typeface, which follows the Ashokan forms. On the stones they lean, stretch and vary from one edict to another, so treat them as a guide, not a rule.",
+        "ka: a plus sign. ga: an upside-down V. da: like a backwards C. ta: like an upside-down Y. na: an upside-down T. pa: a U. ba: a square. dha: a D. ma: a small circle with a V on top. va: a circle with a short stem rising from it. ya: a cup with a stroke rising from the middle. ra: a wavy upright line. sa: a hooked loop that is easiest to learn by copying it.",
+        "Notice how many are simple geometry: cross, square, circle, triangle, line. That is one reason the script carved so cleanly into rock."
+      ]
+    },
+    {
+      "h2": "Read your first word",
+      "paras": [
+        "In most of his edicts Ashoka calls himself devānaṃpiya, 'Beloved of the Gods'. It is written with five signs. Read it with the rules above:",
+        "de: the letter da with the left-hand e-stroke. vā: the circle-and-stem va with the ā-stroke on the right. naṃ: the upside-down T of na with the nasal dot. pi: the U of pa with the rising i-stroke. ya: the cup with its middle stroke, carrying its own built-in 'a'.",
+        "Put together: de-vā-naṃ-pi-ya. On the stones the word carries endings that change with grammar and region. On the Maski edict in Karnataka it stands in the genitive: devānaṃpiyasa asokasa, '(a proclamation) of the Beloved of the Gods, Asoka'. And go back to Kanaganahalli: rā and yā both carry the ā-stroke; a is the initial letter; so and ko carry the o-strokes. You can now read every sign in it."
+      ]
+    },
+    {
+      "h2": "Practise three letters",
+      "paras": [
+        "Take a pencil. Draw ka (a plus sign) five times. Then pa (a U) and ma (a circle with a V on top). Now add vowels: kā, ki, ku, ke, ko; then pā, pi, pu. Say each one aloud as you write it. Finally write your own name in Brāhmī, one sign per syllable.",
+        "Ten minutes of this is enough to make the shapes stick. When you next see a photograph of an Ashokan edict, look for the crosses, the Us and the upside-down Ts. You will find them at once."
+      ]
+    },
+    {
+      "h2": "Read it yourself",
+      "paras": [
+        "The best free companions are E. Hultzsch's Inscriptions of Asoka (Corpus Inscriptionum Indicarum, vol. I, 1925), which prints the edicts with transliterations and plates, Bühler's letter tables in Indian Palaeography, and the Unicode Standard's Brāhmī code chart. Salomon's Indian Epigraphy is the book to read next.",
+        "If you would like a teacher, Talaash Heritage's [Introduction to Brāhmī script](write-like-asoka-s-scribes-a-brahmi-workshop.html) takes you from these first letters to reading real lines of Ashoka, and [Reading India's scripts: Brāhmī to Śāradā](reading-india-s-scripts-brahmi-to-sarada.html) follows the letters forward in time. Our guides to the [Brāhmī script](brahmi-script.html), [Ashoka and his edicts](ashoka-and-his-edicts.html) and [epigraphy](what-is-epigraphy.html) go further. Next Sunday, 13 December, Durlabh #04: a knight's tour hidden in a Sanskrit verse."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Brāhmī hard to learn?",
+      "a": "The basics are few. Each consonant has a built-in 'a', a few small strokes change the vowel, and many letters are simple shapes: a plus sign for ka, a square for ba, a U for pa."
+    },
+    {
+      "q": "Who deciphered Brāhmī?",
+      "a": "James Prinsep completed it in 1837, building on earlier work; short donor inscriptions at Sanchi gave him the last keys."
+    },
+    {
+      "q": "What does devānaṃpiya mean?",
+      "a": "'Beloved of the Gods'. It is the title Ashoka uses for himself in most of his edicts, usually with the name Piyadasi; only a few edicts, such as Maski, also give the name Asoka."
+    },
+    {
+      "q": "Which modern scripts come from Brāhmī?",
+      "a": "Most scripts of South and South-East Asia, including Devanagari, Bengali, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Sinhala, Tibetan, Thai and Khmer, descend from it through many stages."
+    }
+  ],
+  "sources": [
+    {
+      "text": "Salomon, Richard. Indian Epigraphy: A Guide to the Study of Inscriptions in Sanskrit, Prakrit, and the Other Indo-Aryan Languages. New York: Oxford University Press, 1998 (ch. 2, Brāhmī: structure, origin, decipherment)."
+    },
+    {
+      "text": "Bühler, Georg. Indian Palaeography. English version, appendix to The Indian Antiquary 33. Bombay, 1904 (German original, Indische Palaeographie, Strassburg, 1896)."
+    },
+    {
+      "text": "Hultzsch, E. Inscriptions of Asoka. Corpus Inscriptionum Indicarum, vol. I, new edition. Oxford: Clarendon Press, 1925."
+    },
+    {
+      "text": "Prinsep, James. Papers on the Sanchi inscriptions and the decipherment of Brāhmī, Journal of the Asiatic Society of Bengal 6 (1837), pp. 451–463 among others."
+    },
+    {
+      "text": "The Unicode Consortium. The Unicode Standard: Brahmi, range 11000–1107F (code chart).",
+      "url": "https://www.unicode.org/charts/PDF/U11000.pdf"
+    },
+    {
+      "text": "Nakanishi, Maiko and Oskar von Hinüber. Kanaganahalli Inscriptions. Annual Report of the International Research Institute for Advanced Buddhology at Soka University 17, supplement. Tokyo, 2014; DHARMA digital editions KnI 1 and KnI 2.",
+      "url": "https://dharmalekha.info/"
+    }
+  ],
+  "sells": "write-like-asoka-s-scribes-a-brahmi-workshop",
+  "related_programmes": [
+    "write-like-asoka-s-scribes-a-brahmi-workshop",
+    "reading-india-s-scripts-brahmi-to-sarada",
+    "prakrit-a-first-course"
+  ],
+  "related_guides": [
+    "brahmi-script",
+    "ashoka-and-his-edicts",
+    "what-is-epigraphy",
+    "ancient-scripts-of-india"
+  ],
+  "youtube": [],
+  "video_public": false,
+  "check_log": "render/lectures/03-read-brahmi/checks.md"
+}
