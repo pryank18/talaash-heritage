@@ -19,14 +19,14 @@
     {
       "h2": "Delhi's three UNESCO World Heritage Sites",
       "paras": [
-        "The Qutb Minar and its monuments (1993) include the minar begun by Qutbuddin Aibak around 1199 and completed by Iltutmish, the Quwwat-ul-Islam mosque, the iron pillar of about the 4th to 5th century and Alauddin Khalji's Alai Darwaza. Our programme [The Qutb complex](the-qutb-complex.html) reads the inscriptions and reused temple pillars with your group.",
-        "Humayun's Tomb (1993), built in the 1560s, was the first great garden tomb of the Mughals and a model for the Taj Mahal. Our [Humayun's Tomb](humayuns-tomb.html) walk covers the tomb, Isa Khan's tomb and the Arab Serai. The Red Fort Complex (2007), Shah Jahan's palace-fort of the 1640s, includes the Diwan-i-Am, Diwan-i-Khas and the earlier Salimgarh fort; see [Red Fort Complex](red-fort-complex.html)."
+        "The Qutb Minar and its monuments (1993) include the minar begun by Qutbuddin Aibak around 1200 and completed by Iltutmish, the Quwwat-ul-Islam mosque, the iron pillar of about the 4th to 5th century and Alauddin Khalji's Alai Darwaza. Our programme [The Qutb complex](the-qutb-complex.html) reads the inscriptions and reused temple pillars with your group.",
+        "Humayun's Tomb (1993), built in the 1560s, was the first great garden tomb of the Mughals and a model for the Taj Mahal. Our [Humayun's Tomb](humayuns-tomb.html) walk covers the tomb, Isa Khan's tomb and the Arab Serai. The Red Fort Complex (2007), Shah Jahan's palace-fort built from 1639 to 1648, includes the Diwan-i-Am, Diwan-i-Khas and the earlier Salimgarh fort; see [Red Fort Complex](red-fort-complex.html)."
       ]
     },
     {
       "h2": "The Sultanate cities: Mehrauli to Firozabad",
       "paras": [
-        "Mehrauli has the densest cluster of monuments in Delhi: Jamali Kamali, Balban's tomb, Rajon ki Baoli, the Hauz-i-Shamsi tank and Jahaz Mahal, Adham Khan's tomb and Zafar Mahal. Our [Mehrauli Archaeological Park](mehrauli-archaeological-park.html) walk is the best introduction. Sultan Ghari, the first Islamic tomb in India, lies to the west.",
+        "Mehrauli has one of the densest clusters of monuments in Delhi: Jamali Kamali, Balban's tomb, Rajon ki Baoli, the Hauz-i-Shamsi tank and Jahaz Mahal, Adham Khan's tomb and Zafar Mahal. Our [Mehrauli Archaeological Park](mehrauli-archaeological-park.html) walk is the best introduction. Sultan Ghari, the tomb Iltutmish built in 1231 for his eldest son, lies to the west.",
         "The Khaljis built Siri, the Tughlaqs built Tughlaqabad, Jahanpanah and Firozabad. See [Tughlaqabad Fort](tughlaqabad-fort.html), the [Begumpur Mosque](begumpur-mosque.html), [Khirki Mosque](khirki-mosque.html) and [Firoz Shah Kotla](firoz-shah-kotla.html), where an Ashokan pillar brought from Topra stands on a stepped palace building. Hauz Khas, with its madrasa and reservoir, is covered on our [Hauz Khas](hauz-khas.html) walk."
       ]
     },
@@ -46,23 +46,23 @@
     }
   ],
   "sites": [
-    {"name": "Qutb Minar and its monuments", "note": "Minar begun about 1199, Quwwat-ul-Islam mosque, iron pillar and Alai Darwaza; UNESCO 1993.", "unesco": true},
+    {"name": "Qutb Minar and its monuments", "note": "Minar begun about 1200, Quwwat-ul-Islam mosque, iron pillar and Alai Darwaza; UNESCO 1993.", "unesco": true},
     {"name": "Humayun's Tomb", "note": "First great Mughal garden tomb, built in the 1560s; UNESCO 1993.", "unesco": true},
-    {"name": "Red Fort Complex", "note": "Shah Jahan's palace-fort of the 1640s with Salimgarh; UNESCO 2007.", "unesco": true},
+    {"name": "Red Fort Complex", "note": "Shah Jahan's palace-fort, built 1639 to 1648, with Salimgarh; UNESCO 2007.", "unesco": true},
     {"name": "Mehrauli Archaeological Park", "note": "Jamali Kamali, Balban's tomb, Rajon ki Baoli and many more monuments.", "unesco": false},
     {"name": "Tughlaqabad Fort", "note": "Massive 14th century fort-city of Ghiyasuddin Tughlaq.", "unesco": false},
     {"name": "Ghiyasuddin Tughlaq's tomb", "note": "Sloping-walled tomb in its own fortified enclosure.", "unesco": false},
     {"name": "Purana Qila", "note": "16th century citadel of Humayun and Sher Shah; earlier layers excavated below.", "unesco": false},
     {"name": "Firoz Shah Kotla", "note": "Palace-citadel of Firozabad with an Ashokan pillar from Topra.", "unesco": false},
-    {"name": "Hauz Khas complex", "note": "Firoz Shah's madrasa and tomb beside a Khalji reservoir.", "unesco": false},
+    {"name": "Hauz Khas complex", "note": "Firoz Shah's tomb and a madrasa beside a Khalji reservoir.", "unesco": false},
     {"name": "Begumpur Mosque", "note": "Large 14th century mosque of Jahanpanah.", "unesco": false},
-    {"name": "Khirki Mosque", "note": "Unusual covered Tughlaq mosque with latticed windows.", "unesco": false},
+    {"name": "Khirki Mosque", "note": "Unusual, largely roofed Tughlaq mosque with latticed windows.", "unesco": false},
     {"name": "Lodhi Garden", "note": "Lodi and Sayyid tombs, Bara Gumbad and Shish Gumbad.", "unesco": false},
     {"name": "Safdarjung's Tomb", "note": "Mid-18th century garden tomb, one of the last of its kind.", "unesco": false},
     {"name": "Nizamuddin Dargah precinct", "note": "Sufi shrine with Chausath Khamba and Ghalib's tomb nearby.", "unesco": false},
     {"name": "Jama Masjid, Shahjahanabad", "note": "Shah Jahan's great congregational mosque of the 1650s.", "unesco": false},
     {"name": "Agrasen ki Baoli", "note": "Stepwell near Connaught Place, probably of the Tughlaq or Lodi period.", "unesco": false},
-    {"name": "Sultan Ghari", "note": "Tomb of Iltutmish's son, the first Islamic tomb in India.", "unesco": false},
+    {"name": "Sultan Ghari", "note": "Tomb built in 1231 by Iltutmish for his eldest son.", "unesco": false},
     {"name": "Ashokan rock edict, East of Kailash", "note": "Minor rock edict of Ashoka on an outcrop of the ridge.", "unesco": false},
     {"name": "Jantar Mantar, Delhi", "note": "Early 18th century observatory of Sawai Jai Singh II.", "unesco": false},
     {"name": "India Gate and Kartavya Path", "note": "Lutyens' war memorial arch and ceremonial axis of New Delhi.", "unesco": false}
@@ -76,8 +76,8 @@
   ],
   "faq": [
     {"q": "How many UNESCO World Heritage Sites are in Delhi?", "a": "Three: the Qutb Minar and its monuments (1993), Humayun's Tomb (1993) and the Red Fort Complex (2007). Each is managed by the Archaeological Survey of India."},
-    {"q": "What are the seven cities of Delhi?", "a": "A traditional list of Delhi's historic capitals: Lal Kot and Qila Rai Pithora, Siri, Tughlaqabad, Jahanpanah, Firozabad, Dinpanah (Purana Qila) and Shahjahanabad. Historians now count more, including New Delhi, but the seven remain a useful way to read the city."},
-    {"q": "Which are the oldest monuments in Delhi?", "a": "The Ashokan rock edict near East of Kailash (3rd century BCE), the iron pillar at the Qutb, of about the 4th to 5th century but brought here later, and the Qutb Minar and mosque from around 1192 to 1199 onward. Purana Qila's lower layers are older still."},
+    {"q": "What are the seven cities of Delhi?", "a": "One common list of Delhi's historic capitals (lists vary): Lal Kot and Qila Rai Pithora, Siri, Tughlaqabad, Jahanpanah, Firozabad, Dinpanah (Purana Qila) and Shahjahanabad. Historians now count more, including New Delhi, but the seven remain a useful way to read the city."},
+    {"q": "Which are the oldest monuments in Delhi?", "a": "The Ashokan rock edict near East of Kailash (3rd century BCE), the iron pillar at the Qutb, of about the 4th to 5th century and first set up elsewhere, and the Qutb mosque, begun in 1191 to 1192, with the minar soon after. Purana Qila's lower layers are older still."},
     {"q": "What is the best heritage walk in Delhi for first-time visitors?", "a": "Mehrauli Archaeological Park or the Qutb complex for the Sultanate period, Humayun's Tomb with Nizamuddin for the Mughals, and Shahjahanabad for the old city. Each takes two to three hours with a guide."},
     {"q": "When are Delhi's monuments open?", "a": "Most ASI monuments open daily, from sunrise to sunset, but timings and rules change. Check the ASI website or the site's own page before you go, especially for evening visits or photography."}
   ],
@@ -96,7 +96,7 @@
   "social": {
     "posts": [
       {"angle": "fact", "hook": "Delhi has an Ashokan edict in a residential colony.", "caption": "Near East of Kailash, a rock outcrop of the ridge carries a minor rock edict of Ashoka, more than two thousand years old."},
-      {"angle": "tip", "hook": "At the Qutb, look at the pillars, not just the minar.", "caption": "The mosque's colonnades reuse temple pillars. Read their carvings and the inscription over the east gate to see how the first Sultanate mosque was built."},
+      {"angle": "tip", "hook": "At the Qutb, look at the pillars, not just the minar.", "caption": "The mosque's colonnades reuse temple pillars. Read their carvings and the inscription over the east gate to see how this early Sultanate mosque was built."},
       {"angle": "offer", "hook": "Delhi's three UNESCO sites in one weekend.", "caption": "We run walks at the Qutb, Humayun's Tomb and the Red Fort with an archaeologist. Tell us your group and dates."}
     ],
     "reel": "Look up the Qutb Minar, cut to Humayun's Tomb through its gateway, then the Lahori Gate of the Red Fort. On-screen line: 'Three UNESCO sites, eight cities, one Delhi.' End card: 'Delhi heritage walks, on request.'",

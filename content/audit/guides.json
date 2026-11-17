@@ -372,6 +372,92 @@
         "Tala figure: 'identity is debated, though it is often called Rudra Shiva'"
       ],
       "held": []
+    },
+    {
+      "slug": "heritage-sites-in-delhi",
+      "date": "2026-11-17",
+      "claims_checked": 24,
+      "changed": [
+        "Qutb Minar begun 'around 1200' (sources give 1199 or 1202)",
+        "Red Fort dated 1639 to 1648",
+        "Qutb mosque begun 1191 to 1192; iron pillar 'first set up elsewhere'",
+        "Seven cities: 'one common list (lists vary)'",
+        "Khirki 'largely roofed'; Mehrauli 'one of the densest clusters'"
+      ],
+      "held": [
+        "Sultan Ghari 'the first Islamic tomb in India': superlative not supported by IGNCA or scholarship checked; now 'tomb Iltutmish built in 1231 for his eldest son'",
+        "Social caption 'first Sultanate mosque' softened to 'early Sultanate mosque' (unchecked superlative)"
+      ]
+    },
+    {
+      "slug": "heritage-sites-in-goa",
+      "date": "2026-11-17",
+      "claims_checked": 17,
+      "changed": [
+        "Se Cathedral 'built over the late 16th and 17th centuries' (sources give 1619 or 1652)",
+        "Capital finally moved to Panaji in 1843",
+        "Arvalem caves 'around the 6th century, date debated'",
+        "Ponda temples 'largely rebuilt from the 18th century', deities moved in the 16th; deepastambha tied to Shantadurga",
+        "Fontainhas laid out in the late 18th century",
+        "Rulers after the Kadambas: 'changed hands several times' (Delhi Sultanate and Vijayanagara were omitted)"
+      ],
+      "held": [
+        "'Silting' as a cause of Old Goa's decline: unsupported",
+        "'Marble and' jasper mausoleum: material disputed, now 'a mausoleum made in Florence'",
+        "Usgalimal details (Kushavati river, 100+ carvings, laterite, labyrinth, recorded in the 1990s): no acceptable source; reduced to prehistoric engravings in Sanguem taluka"
+      ]
+    },
+    {
+      "slug": "heritage-sites-in-gujarat",
+      "date": "2026-11-17",
+      "claims_checked": 22,
+      "changed": [
+        "Somnath: consecrated 1951, dedicated to the nation 1995 (not 'completed 1951')",
+        "Girnar carries Ashoka's fourteen major rock edicts, not one",
+        "Dholavira 'among the largest' (UNESCO 6th, ASI top five)",
+        "Modhera: built under Bhima I, inscription dated 1026 to 1027",
+        "Gujarat Sultanate 'from the early 15th century' to 1572 to 1573"
+      ],
+      "held": [
+        "Vadnagar 'from about the 2nd century BCE': sources disagree (ASI 3rd to 2nd c. BCE, 2024 study c. 800 BCE); now 'occupied continuously for well over two thousand years'",
+        "Sidi Saiyyed Mosque year 1573: Britannica gives 1510 to 1515; year dropped",
+        "Khambhat link to Red Sea and Gulf: unsupported; 'ports such as Bharuch'",
+        "'Same families of stone carvers served both': unchecked, softened"
+      ]
+    },
+    {
+      "slug": "heritage-sites-in-haryana",
+      "date": "2026-11-17",
+      "claims_checked": 17,
+      "changed": [
+        "Agroha occupied from about the 4th c. BCE to the 14th c. CE",
+        "Chandigarh the shared capital of Haryana and Punjab",
+        "Rakhigarhi finds: drains, houses, crafts, cemetery"
+      ],
+      "held": [
+        "'Rakhigarhi site museum': not open (under construction); removed from museums and FAQ",
+        "'Asigarh' fort name and 'rebuilt in many periods': no official source; now 'an old fort, much of which was demolished in 1857' (programme link text unchanged)",
+        "'Planned streets' at Rakhigarhi: not in sources checked",
+        "Sheikh Chilli 'Taj Mahal in miniature' comparison: unchecked, removed"
+      ]
+    },
+    {
+      "slug": "heritage-sites-in-himachal-pradesh",
+      "date": "2026-11-17",
+      "claims_checked": 17,
+      "changed": [
+        "Tabo founded 996 under King Yeshe-ö; tradition credits Rinchen Zangpo",
+        "Hidimba temple '16th century' (1553 unsupported)",
+        "Shimla summer capital 'in the mid-1860s' (sources give 1864 or 1865)",
+        "Dharamshala seat of the government-in-exile; Tsuglagkhang in McLeodganj",
+        "Pahari painting: Basohli (now in Jammu), Guler, Kangra; late 17th to 19th c."
+      ],
+      "held": [
+        "Tabo 'one of the oldest continuously working monasteries': no source; now 'in use for over a thousand years'",
+        "Masrur damage dated to the 1905 earthquake: year unsupported; 'earthquakes have damaged them'",
+        "Kuninda coin dates (2nd c. BCE to 3rd c. CE): only non-acceptable sources; now 'early historic period'",
+        "Kangra Fort 'one of the oldest forts in the Himalayan foothills': unchecked superlative removed"
+      ]
     }
   ]
 }
