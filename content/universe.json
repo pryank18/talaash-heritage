@@ -1,6 +1,6 @@
 {
  "_readme": "The single ledger for everything Talaash Heritage and archaeologywala make: posts, reels, 3D models, lectures, web pages. Every piece gets one id here before it is built, and its status is updated when it goes live. Series numbers are taken only from this ledger: run tools/check_universe.py and use the 'next' number it prints, then add the item here before building it. Rules: docs/UNIVERSE.md. Check with python3 tools/check_universe.py before every commit that touches this file. Talaash tasks write here; archaeologywala tasks read it and log in their run book, and the Sunday universe review copies their live posts in.",
- "updated": "2026-11-16",
+ "updated": "2026-11-18",
  "fields": [
   "archaeology",
   "linguistics",
@@ -68,13 +68,15 @@
    "name": "Guess the Artefact",
    "account": "archaeologywala",
    "format": "reel",
-   "used": "1-2"
+   "used": "1-2",
+   "note": "#1 live 16 Nov 2026; #2 Mon 23 Nov 19:00; the series pauses after #2 (Mondays from 30 Nov are the nahi bataya reels). archaeologywala session, 18 Nov 2026."
   },
   "aw-news": {
    "name": "News reels",
    "account": "archaeologywala",
-   "format": "faceless reel, Collab",
-   "used": ""
+   "format": "faceless reel, Collab only when Talaash has a page on that site",
+   "used": "1-2",
+   "note": "Weekly Archaeology News on Sundays 19:00 from 6 Dec 2026: 03 (6 Dec, International), 04 (13 Dec, India), 05 (20 Dec, International), 06 (27 Dec, India), 07 (3 Jan 2027, International). 03 and 05 in English (language test); the rest Hinglish. archaeologywala session, 18 Nov 2026."
   },
   "3d-model": {
    "name": "Interactive 3D models",
@@ -86,7 +88,7 @@
   "deep-dive": {
    "name": "Deep Dive",
    "account": "archaeologywala",
-   "format": "weekly: blog on archaeologywala.pages.dev/deep-dive/ + narrated slide video (YouTube on the Talaash channel, playlist 'archaeologywala Deep Dive', and on the blog) + IG launch reel (Thu) + IG notes carousel (Tue) + YouTube Short + link posts on Talaash LinkedIn and Facebook",
+   "format": "weekly: blog on archaeologywala.pages.dev/deep-dive/ + narrated slide video (YouTube on the Talaash channel, playlist 'archaeologywala Deep Dive', and on the blog) + IG launch reel (Thu) + IG notes carousel (Tue) + launch reel as a YouTube Short on @archaeologywala's own channel (never the Talaash channel) + link posts on Talaash LinkedIn and Facebook",
    "used": "",
    "note": "Set up 12 Nov 2026 (Pryank: one rare, scholarly topic a week, every platform cross-linked). Every Thursday from 26 Nov 2026. Rules: claude/deep-dive.md in the archaeologywala project. One topic per Deep Dive; its topic_lock covers both accounts for 30 days."
   },
@@ -110,6 +112,48 @@
    "format": "carousel",
    "used": "1",
    "note": "archaeologywala's reading of ASI and Ministry of Culture decisions. #1 = 14 Nov 2026 (Yuge Yugeen Bharat Museum). Added by the universe review 15 Nov."
+  },
+  "film-ne-nahi-bataya": {
+   "name": "Film ne nahi bataya",
+   "account": "archaeologywala",
+   "format": "reel",
+   "used": "",
+   "note": "Mondays 19:00 from 30 Nov 2026, alternating with Textbook ne nahi bataya. Added archaeologywala session, 18 Nov 2026."
+  },
+  "textbook-ne-nahi-bataya": {
+   "name": "Textbook ne nahi bataya",
+   "account": "archaeologywala",
+   "format": "reel",
+   "used": "",
+   "note": "From Fri 27 Nov 2026, then Mondays 19:00 alternating with Film ne nahi bataya. Added archaeologywala session, 18 Nov 2026."
+  },
+  "myth-vs-evidence": {
+   "name": "Myth vs Evidence",
+   "account": "archaeologywala",
+   "format": "carousel",
+   "used": "",
+   "note": "Tuesdays 19:00. Added archaeologywala session, 18 Nov 2026."
+  },
+  "object-biography": {
+   "name": "Object Biography",
+   "account": "archaeologywala",
+   "format": "flagship carousel, Collab with talaashheritage",
+   "used": "",
+   "note": "Saturday flagship slot, 19:00. Added archaeologywala session, 18 Nov 2026."
+  },
+  "then-vs-now": {
+   "name": "Then vs Now",
+   "account": "archaeologywala",
+   "format": "flagship carousel, Collab with talaashheritage",
+   "used": "",
+   "note": "Saturday flagship slot, 19:00. Added archaeologywala session, 18 Nov 2026."
+  },
+  "rate-card": {
+   "name": "Rate Card",
+   "account": "archaeologywala",
+   "format": "flagship carousel, Collab with talaashheritage",
+   "used": "",
+   "note": "Saturday flagship slot, 19:00. Added archaeologywala session, 18 Nov 2026."
   }
  },
  "items": [
@@ -219,10 +263,10 @@
    "id": "aw-news-kothakota",
    "brand": "archaeologywala",
    "series": "aw-news",
-   "number": null,
+   "number": 1,
    "field": "history",
    "title": "Kothakota: a 900-year-old land gift, read on a temple pillar",
-   "status": "hold",
+   "status": "live",
    "slot": "2026-11-15T21:30",
    "collab": "talaashheritage",
    "platforms": [
@@ -230,7 +274,8 @@
    ],
    "page": "news-chalukya-pillar-inscription-of-vikramaditya-vi-read-at-kothakota",
    "sources": "reels.json news-kothakota-pillar",
-   "hold_reason": "Cancelled in the queue sheet (row 47, AW 15 Nov 21:00 reel) by the archaeologywala cloud queue; not posted. Universe review 15 Nov."
+   "link": "https://www.instagram.com/reel/DfxKS7tvU4J/",
+   "notes": "18 Nov 2026: live once, 15 Nov 21:30 IST, from Instagram's own calendar (v2 copy), Collab archaeologywala + talaashheritage (checked on Instagram 18 Nov). Queue row 47 was cancelled because Instagram was already posting it."
   },
   {
    "id": "tl-whc-54",
@@ -345,8 +390,8 @@
    "number": 1,
    "field": "archaeology",
    "title": "Teen jagah, teen vidaai: Rakhigarhi, Sinauli and Adichanallur",
-   "status": "scheduled",
-   "slot": "2026-11-17T20:30",
+   "status": "live",
+   "slot": "2026-11-17T19:00",
    "collab": "talaashheritage",
    "platforms": [
     "instagram"
@@ -355,7 +400,9 @@
    "sources": "reels.json burials-rakhigarhi-sinauli-adichanallur",
    "topic_lock": [
     "rakhigarhi"
-   ]
+   ],
+   "link": "https://www.instagram.com/reel/Df2NBk9vDYQ/",
+   "notes": "18 Nov 2026: live 17 Nov 19:00 IST, Collab with talaashheritage (co-author shown; checked on Instagram 18 Nov)."
   },
   {
    "id": "aw-reel-delhi-whs",
@@ -365,13 +412,18 @@
    "field": "heritage",
    "title": "Delhi's three World Heritage Sites",
    "status": "building",
-   "slot": "2026-11-18T20:30",
+   "slot": "2026-11-18T19:00",
    "collab": "talaashheritage",
    "platforms": [
     "instagram"
    ],
    "page": null,
-   "sources": "aw reel studio, Sat 14 Nov run"
+   "sources": "aw reel studio, Sat 14 Nov run",
+   "pages": [
+    "the-qutb-complex",
+    "humayuns-tomb",
+    "red-fort-complex"
+   ]
   },
   {
    "id": "aw-explorer-01-tughlaqabad",
@@ -381,7 +433,7 @@
    "field": "history",
    "title": "Explorer, episode 1: Tughlaqabad",
    "status": "building",
-   "slot": "2026-11-19T20:30",
+   "slot": "2026-11-19T19:00",
    "collab": "talaashheritage",
    "platforms": [
     "instagram"
@@ -416,11 +468,11 @@
    "id": "aw-news-nagapattinam",
    "brand": "archaeologywala",
    "series": "aw-news",
-   "number": null,
+   "number": 2,
    "field": "arts",
    "title": "Chola bronzes of Nataraja and Sivakami found at Nagapattinam",
    "status": "building",
-   "slot": "2026-11-20T20:30",
+   "slot": "2026-11-20T19:00",
    "collab": "talaashheritage",
    "platforms": [
     "instagram"
@@ -436,7 +488,7 @@
    "field": "archaeology",
    "title": "Khudai Khabar EP 01",
    "status": "building",
-   "slot": "2026-11-25T20:30",
+   "slot": "2026-11-25T19:00",
    "collab": null,
    "platforms": [
     "instagram"
@@ -474,13 +526,14 @@
    "field": "archaeology",
    "title": "Guess the Artefact #3",
    "status": "idea",
-   "slot": "2026-11-30T20:30",
+   "slot": null,
    "collab": null,
    "platforms": [
     "instagram"
    ],
    "page": null,
-   "sources": "aw calendar"
+   "sources": "aw calendar",
+   "notes": "18 Nov 2026: moved off Mon 30 Nov; Guess the Artefact pauses after #2. No slot yet."
   },
   {
    "id": "aw-rahasya-01-kailasa",
@@ -490,8 +543,8 @@
    "field": "history",
    "title": "Rahasya #1: Kailasa, Ellora",
    "status": "scheduled",
-   "slot": "2026-12-02T20:30",
-   "collab": null,
+   "slot": "2026-12-02T19:00",
+   "collab": "talaashheritage",
    "platforms": [
     "instagram"
    ],
@@ -500,7 +553,7 @@
    "topic_lock": [
     "kailasa-ellora"
    ],
-   "notes": "Scheduled on Instagram by the archaeologywala scheduler (11 Nov)"
+   "notes": "Scheduled on Instagram's own calendar as a Collab with talaashheritage, Wed 2 Dec 19:00 IST (archaeologywala session, 18 Nov 2026)."
   },
   {
    "id": "tl-jaisa-tha-03-linguistics",
@@ -527,14 +580,14 @@
    "field": "history",
    "title": "Rahasya #2: Konark wheels",
    "status": "idea",
-   "slot": "2026-12-04T19:45",
+   "slot": "2026-12-04T19:00",
    "collab": "talaashheritage",
    "platforms": [
     "instagram"
    ],
    "page": null,
    "sources": "aw calendar",
-   "notes": "17 Nov 2026 clash check: angle changed from mystery to evidence, built from a blank page and our own scholarly sources (docs/SOCIAL.md no-copying rule); popular readings of the wheels only if a scholarly source supports them. Slot moved to T19:45 (poster window 19:35–20:00). Cloud route cannot carry a Collab: plain post tagging @talaashheritage.",
+   "notes": "17 Nov 2026 clash check: angle changed from mystery to evidence, built from a blank page and our own scholarly sources (docs/SOCIAL.md no-copying rule); popular readings of the wheels only if a scholarly source supports them. Slot moved to T19:45 (poster window 19:35–20:00). Cloud route cannot carry a Collab: plain post tagging @talaashheritage. | 18 Nov 2026: built by the archaeologywala Saturday studio and scheduled through Instagram's own scheduler as a Collab with talaashheritage, Fri 4 Dec 19:00 IST; not a cloud-queue row. T19:45 applies only if the cloud fallback ever writes a row.",
    "topic_lock": [
     "konark"
    ]
@@ -547,14 +600,14 @@
    "field": "archaeology",
    "title": "Harappan Civilisation, as the evidence shows it (diorama carousel)",
    "status": "scheduled",
-   "slot": "2026-12-05T21:30",
+   "slot": "2026-12-05T19:00",
    "collab": "talaashheritage",
    "platforms": [
     "instagram"
    ],
    "page": "delhi-and-rakhigarhi-the-harappan-world",
    "sources": "project doc claude/harappan-diorama-carousel.md",
-   "notes": "Scheduled on Instagram by the archaeologywala scheduler (11 Nov)"
+   "notes": "Scheduled on Instagram's own calendar as a Collab with talaashheritage, Sat 5 Dec 19:00 IST (archaeologywala session, 18 Nov 2026)."
   },
   {
    "id": "tl-lecture-03-brahmi",
@@ -728,7 +781,6 @@
     "website",
     "youtube",
     "instagram",
-    "youtube-short",
     "linkedin-talaash",
     "facebook-talaash"
    ],
@@ -737,7 +789,7 @@
    "topic_lock": [
     "roopkund"
    ],
-   "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage)."
+   "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026)."
   },
   {
    "id": "aw-deep-dive-02-bhimbetka-dickinsonia",
@@ -753,7 +805,6 @@
     "website",
     "youtube",
     "instagram",
-    "youtube-short",
     "linkedin-talaash",
     "facebook-talaash"
    ],
@@ -762,7 +813,7 @@
    "topic_lock": [
     "bhimbetka"
    ],
-   "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage). | ready 2026-11-15: video site/media/aw/deep-dive/bhimbetka.mp4 (+ bhimbetka-yt.mp4, bhimbetka-poster.jpg); IG reel staged 2026-12-03 21:00, notes carousel 2026-12-08 21:00; package Drive archaeologywala › Deep Dive › 02 bhimbetka-fossil-that-was-a-beehive; site slug bhimbetka-fossil-that-was-a-beehive (site JSON push pending a run with archaeologywala-site access)"
+   "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026). | ready 2026-11-15: video site/media/aw/deep-dive/bhimbetka.mp4 (+ bhimbetka-yt.mp4, bhimbetka-poster.jpg); IG reel staged 2026-12-03 21:00, notes carousel 2026-12-08 21:00 (both moved to 19:00 on 18 Nov); package Drive archaeologywala › Deep Dive › 02 bhimbetka-fossil-that-was-a-beehive; site slug bhimbetka-fossil-that-was-a-beehive (site JSON push pending a run with archaeologywala-site access)"
   },
   {
    "id": "aw-deep-dive-03-arikamedu",
@@ -778,7 +829,6 @@
     "website",
     "youtube",
     "instagram",
-    "youtube-short",
     "linkedin-talaash",
     "facebook-talaash"
    ],
@@ -787,7 +837,7 @@
    "topic_lock": [
     "arikamedu"
    ],
-   "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage)."
+   "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026)."
   },
   {
    "id": "aw-deep-dive-04-nagardhan",
@@ -803,7 +853,6 @@
     "website",
     "youtube",
     "instagram",
-    "youtube-short",
     "linkedin-talaash",
     "facebook-talaash"
    ],
@@ -812,7 +861,7 @@
    "topic_lock": [
     "nagardhan"
    ],
-   "notes": "IG launch reel Thu 21:00 and notes carousel the following Tue 21:00 via the cloud queue (no Collab possible there; links block carries @talaashheritage)."
+   "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026)."
   },
   {
    "id": "web-3d-heliodorus",
@@ -1536,7 +1585,7 @@
    "field": "history",
    "title": "Jallianwala Bagh: the wall with 28 recorded bullet marks (archaeology of conflict)",
    "status": "scheduled",
-   "slot": "2026-11-29T21:00",
+   "slot": "2026-11-29T19:45",
    "platforms": [
     "instagram"
    ],
@@ -1545,7 +1594,7 @@
     "jallianwala-bagh"
    ],
    "sources": "render/queue/20261129-aw-jallianwala-wall/caption.md",
-   "notes": "Own photos. The only Jallianwala piece on either account until 13 Apr 2027. Not a Collab.",
+   "notes": "Own photos. The only Jallianwala piece on either account until 13 Apr 2027. Not a Collab. | 17 Nov 2026: queue row 71 moved to T19:45 (cloud row, poster window 19:35–20:00).",
    "queue_row": 71
   },
   {
@@ -1711,6 +1760,446 @@
    "page": "durlabh-07-bengal-regulation-1810",
    "durlabh": 7,
    "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
+  },
+  {
+   "id": "aw-guess-01",
+   "brand": "archaeologywala",
+   "series": "guess-the-artefact",
+   "number": 1,
+   "field": "archaeology",
+   "title": "Guess the Artefact #1: Gandharan stone dish (The Met 1987.142.42)",
+   "status": "live",
+   "slot": "2026-11-16T20:30",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "link": "https://www.instagram.com/reel/DfzoQeZPSZH/",
+   "notes": "Not a Collab (checked on Instagram 18 Nov). Photo: The Metropolitan Museum of Art, 1987.142.42 (CC0)."
+  },
+  {
+   "id": "aw-guess-02",
+   "brand": "archaeologywala",
+   "series": "guess-the-artefact",
+   "number": 2,
+   "field": "archaeology",
+   "title": "Guess the Artefact #2",
+   "status": "building",
+   "slot": "2026-11-23T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-news-03",
+   "brand": "archaeologywala",
+   "series": "aw-news",
+   "number": 3,
+   "field": "archaeology",
+   "title": "Archaeology News 03 (International, English)",
+   "status": "idea",
+   "slot": "2026-12-06T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Weekly Sunday news reel; Collab only when Talaash has a page on that site. Topic set by archaeologywala nearer the date."
+  },
+  {
+   "id": "aw-news-04",
+   "brand": "archaeologywala",
+   "series": "aw-news",
+   "number": 4,
+   "field": "archaeology",
+   "title": "Archaeology News 04 (India, Hinglish)",
+   "status": "idea",
+   "slot": "2026-12-13T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Weekly Sunday news reel; Collab only when Talaash has a page on that site. Topic set by archaeologywala nearer the date."
+  },
+  {
+   "id": "aw-news-05",
+   "brand": "archaeologywala",
+   "series": "aw-news",
+   "number": 5,
+   "field": "archaeology",
+   "title": "Archaeology News 05 (International, English)",
+   "status": "idea",
+   "slot": "2026-12-20T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Weekly Sunday news reel; Collab only when Talaash has a page on that site. Topic set by archaeologywala nearer the date."
+  },
+  {
+   "id": "aw-news-06",
+   "brand": "archaeologywala",
+   "series": "aw-news",
+   "number": 6,
+   "field": "archaeology",
+   "title": "Archaeology News 06 (India, Hinglish)",
+   "status": "idea",
+   "slot": "2026-12-27T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Weekly Sunday news reel; Collab only when Talaash has a page on that site. Topic set by archaeologywala nearer the date."
+  },
+  {
+   "id": "aw-news-07",
+   "brand": "archaeologywala",
+   "series": "aw-news",
+   "number": 7,
+   "field": "archaeology",
+   "title": "Archaeology News 07 (International, English)",
+   "status": "idea",
+   "slot": "2027-01-03T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Weekly Sunday news reel; Collab only when Talaash has a page on that site. Topic set by archaeologywala nearer the date."
+  },
+  {
+   "id": "aw-textbook-nahi-bataya-01-elephanta-elephant",
+   "brand": "archaeologywala",
+   "series": "textbook-ne-nahi-bataya",
+   "number": 1,
+   "field": "arts",
+   "title": "Textbook ne nahi bataya #1: Elephanta's elephant",
+   "status": "idea",
+   "slot": "2026-11-27T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "topic_lock": [
+    "elephanta"
+   ]
+  },
+  {
+   "id": "aw-film-nahi-bataya-01-lootera",
+   "brand": "archaeologywala",
+   "series": "film-ne-nahi-bataya",
+   "number": 1,
+   "field": "archaeology",
+   "title": "Film ne nahi bataya #1: Lootera",
+   "status": "idea",
+   "slot": "2026-11-30T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-textbook-nahi-bataya-02-hampi",
+   "brand": "archaeologywala",
+   "series": "textbook-ne-nahi-bataya",
+   "number": 2,
+   "field": "heritage",
+   "title": "Textbook ne nahi bataya #2: Hampi",
+   "status": "idea",
+   "slot": "2026-12-07T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-film-nahi-bataya-02-mughal-e-azam",
+   "brand": "archaeologywala",
+   "series": "film-ne-nahi-bataya",
+   "number": 2,
+   "field": "history",
+   "title": "Film ne nahi bataya #2: Mughal-e-Azam",
+   "status": "idea",
+   "slot": "2026-12-14T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-textbook-nahi-bataya-03-rani-ki-vav",
+   "brand": "archaeologywala",
+   "series": "textbook-ne-nahi-bataya",
+   "number": 3,
+   "field": "heritage",
+   "title": "Textbook ne nahi bataya #3: Rani ki Vav",
+   "status": "idea",
+   "slot": "2026-12-21T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-film-nahi-bataya-03-bajirao-mastani",
+   "brand": "archaeologywala",
+   "series": "film-ne-nahi-bataya",
+   "number": 3,
+   "field": "history",
+   "title": "Film ne nahi bataya #3: Bajirao Mastani",
+   "status": "idea",
+   "slot": "2026-12-28T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-textbook-nahi-bataya-04-mahabalipuram",
+   "brand": "archaeologywala",
+   "series": "textbook-ne-nahi-bataya",
+   "number": 4,
+   "field": "heritage",
+   "title": "Textbook ne nahi bataya #4: Mahabalipuram",
+   "status": "idea",
+   "slot": "2027-01-04T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-film-nahi-bataya-04-ashoka",
+   "brand": "archaeologywala",
+   "series": "film-ne-nahi-bataya",
+   "number": 4,
+   "field": "history",
+   "title": "Film ne nahi bataya #4: Ashoka",
+   "status": "idea",
+   "slot": "2027-01-11T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-textbook-nahi-bataya-05-sanchi-gateways",
+   "brand": "archaeologywala",
+   "series": "textbook-ne-nahi-bataya",
+   "number": 5,
+   "field": "arts",
+   "title": "Textbook ne nahi bataya #5: Sanchi gateways",
+   "status": "idea",
+   "slot": "2027-01-18T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-film-nahi-bataya-05-mohenjo-daro",
+   "brand": "archaeologywala",
+   "series": "film-ne-nahi-bataya",
+   "number": 5,
+   "field": "archaeology",
+   "title": "Film ne nahi bataya #5: Mohenjo Daro",
+   "status": "idea",
+   "slot": "2027-01-25T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-textbook-nahi-bataya-06-red-fort",
+   "brand": "archaeologywala",
+   "series": "textbook-ne-nahi-bataya",
+   "number": 6,
+   "field": "heritage",
+   "title": "Textbook ne nahi bataya #6: Red Fort",
+   "status": "idea",
+   "slot": "2027-02-01T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026"
+  },
+  {
+   "id": "aw-myth-01-vymanika-shastra",
+   "brand": "archaeologywala",
+   "series": "myth-vs-evidence",
+   "number": 1,
+   "field": "sanskrit",
+   "title": "Myth vs Evidence #1: Vymanika Shastra, ancient aircraft?",
+   "status": "building",
+   "slot": "2026-11-24T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "topic_lock": [
+    "vymanika-shastra"
+   ],
+   "notes": "Carousel. Not a Collab."
+  },
+  {
+   "id": "aw-rahasya-03-brihadeeswarar",
+   "brand": "archaeologywala",
+   "series": "rahasya",
+   "number": 3,
+   "field": "history",
+   "title": "Rahasya #3: Brihadeeswarar, Thanjavur",
+   "status": "idea",
+   "slot": "2026-12-11T19:00",
+   "collab": null,
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "topic_lock": [
+    "brihadeeswarar"
+   ],
+   "notes": "Collab not stated by archaeologywala."
+  },
+  {
+   "id": "aw-then-vs-now-01",
+   "brand": "archaeologywala",
+   "series": "then-vs-now",
+   "number": 1,
+   "field": "heritage",
+   "title": "Then vs Now #1",
+   "status": "building",
+   "slot": "2026-11-21T19:00",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Saturday flagship, Collab with talaashheritage. Topic set by archaeologywala."
+  },
+  {
+   "id": "aw-rate-card-01",
+   "brand": "archaeologywala",
+   "series": "rate-card",
+   "number": 1,
+   "field": "heritage",
+   "title": "Rate Card #1",
+   "status": "building",
+   "slot": "2026-11-28T19:00",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Saturday flagship, Collab with talaashheritage. Topic set by archaeologywala."
+  },
+  {
+   "id": "aw-object-biography-01",
+   "brand": "archaeologywala",
+   "series": "object-biography",
+   "number": 1,
+   "field": "archaeology",
+   "title": "Object Biography #1",
+   "status": "idea",
+   "slot": "2026-12-12T19:00",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Saturday flagship, Collab with talaashheritage. Topic set by archaeologywala."
+  },
+  {
+   "id": "aw-asi-watch-02",
+   "brand": "archaeologywala",
+   "series": "asi-watch",
+   "number": 2,
+   "field": "heritage",
+   "title": "ASI Watch #2",
+   "status": "idea",
+   "slot": "2026-12-19T19:00",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Saturday flagship, Collab with talaashheritage. Topic set by archaeologywala."
+  },
+  {
+   "id": "aw-then-vs-now-02",
+   "brand": "archaeologywala",
+   "series": "then-vs-now",
+   "number": 2,
+   "field": "heritage",
+   "title": "Then vs Now #2",
+   "status": "idea",
+   "slot": "2026-12-26T19:00",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Saturday flagship, Collab with talaashheritage. Topic set by archaeologywala."
+  },
+  {
+   "id": "aw-rate-card-02",
+   "brand": "archaeologywala",
+   "series": "rate-card",
+   "number": 2,
+   "field": "heritage",
+   "title": "Rate Card #2",
+   "status": "idea",
+   "slot": "2027-01-02T19:00",
+   "collab": "talaashheritage",
+   "platforms": [
+    "instagram"
+   ],
+   "page": null,
+   "sources": "archaeologywala session, 18 Nov 2026",
+   "notes": "Saturday flagship, Collab with talaashheritage. Topic set by archaeologywala."
   }
  ]
 }
