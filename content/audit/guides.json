@@ -458,6 +458,88 @@
         "Kuninda coin dates (2nd c. BCE to 3rd c. CE): only non-acceptable sources; now 'early historic period'",
         "Kangra Fort 'one of the oldest forts in the Himalayan foothills': unchecked superlative removed"
       ]
+    },
+    {
+      "slug": "heritage-sites-in-jammu-and-kashmir",
+      "date": "2026-11-18",
+      "claims_checked": 20,
+      "changed": [
+        "Burzahom pits 'dug into the ground' (not 'loess')",
+        "Jamia Masjid: deodar pillars under pyramidal roofs; timber walls only for Khanqah-e-Maula",
+        "Pathar Masjid 'traditionally credited to Nur Jahan'",
+        "Harappan site is Manda, near Akhnoor",
+        "Babor and Krimchi: early medieval, dates debated"
+      ],
+      "held": [
+        "Burzahom slab 'two suns': reading contested; now 'a hunting scene'",
+        "Harwan tiles 'dancers' and 'Central Asian dress': not confirmed by acceptable source; now 'human figures, animals and patterns'",
+        "Kushan terracottas at Akhnoor/Manda: belong to Ambaran, not confirmed for Manda; removed",
+        "SPS Museum holding Harwan tiles: press only; removed from museum note"
+      ]
+    },
+    {
+      "slug": "heritage-sites-in-jharkhand",
+      "date": "2026-11-18",
+      "claims_checked": 17,
+      "changed": [
+        "Chokahatu: thousands of stones (Dalton c. 7,360), in Ranchi district",
+        "Ranchi Jagannath temple 1691 by a Nagvanshi chief of Barkagarh",
+        "Palamu new fort built by Chero raja Medini Ray; Mughal attacks 17th c.",
+        "Sohrai-Khovar 'registered as a GI' (application 2019, certificate 2021)",
+        "Isko comparison credited to local researchers"
+      ],
+      "held": [
+        "Navratangarh 'stepwell' and '17th-century': ASI lists a pond, dating traditions differ; now 'pond', 'date debated'",
+        "Maluti '17th to 19th centuries' and 'Baj Basanta': not confirmed by an acceptable source; now 'over several centuries' under the Basanta rulers"
+      ]
+    },
+    {
+      "slug": "heritage-sites-in-karnataka",
+      "date": "2026-11-18",
+      "claims_checked": 22,
+      "changed": [
+        "Badami: four main caves, about 6th to 7th c.",
+        "Ravikirti inscription 634 to 635 CE (Saka 556)",
+        "Gol Gumbaz: tomb of Muhammad Adil Shah (d. 1656), not 'completed 1656'",
+        "Mysore Palace rebuilt 1897 to 1912",
+        "Hoysala frieze order attributed to Halebidu",
+        "Sannati/Kanaganahalli relief labelled with Ashoka's name"
+      ],
+      "held": [
+        "Maski, Brahmagiri and Sannati 'among the southernmost' edicts: wrong for Maski and Sannati; superlative removed",
+        "Inscription naming Lokamahadevi as patron: sources disagree; now 'credited to'",
+        "Gulbarga mosque 'inside its fort': not confirmed; now 'its large Jami Masjid'"
+      ]
+    },
+    {
+      "slug": "heritage-sites-in-kerala",
+      "date": "2026-11-18",
+      "claims_checked": 20,
+      "changed": [
+        "Edakkal: boulder wedged between two others (not a split boulder); 'some later inscriptions'",
+        "Kudakkal = umbrella stones",
+        "Padmanabhaswamy 'renovated' under Marthanda Varma; gopuram Dravidian style"
+      ],
+      "held": [
+        "Padmanabhapuram 'the finest surviving example': unsourced superlative; now 'regarded as a masterpiece' (official site wording)",
+        "Kerala murals '16th to 18th centuries' at the named sites: dates not confirmed; date range removed"
+      ]
+    },
+    {
+      "slug": "heritage-sites-in-ladakh",
+      "date": "2026-11-18",
+      "claims_checked": 18,
+      "changed": [
+        "Namgyal dynasty rose 15th to 16th c.; Dogra conquest 1834 to 1842",
+        "Alchi dating marked as debated (traditional 11th c. vs c. 1200)",
+        "Hemis 'one of the largest and wealthiest' (Ladakh Tourism)",
+        "Mangyu/Sumda: 'early temples comparable to Alchi's'",
+        "Basgo 'earlier royal seat'; Likir 'gilded Maitreya'; Shey 'large Buddha statue'"
+      ],
+      "held": [
+        "Mulbekh Maitreya 'about nine metres' and '7th to 8th c.': sources give 7.5 to 15 m and 7th to 12th c.; now 'tall', 'date debated'",
+        "Alchi dhotis as 'a record of medieval textile design' and 'textiles traded across Asia': Luczanits shows narrative scenes; removed"
+      ]
     }
   ]
 }

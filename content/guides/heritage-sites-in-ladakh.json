@@ -23,29 +23,29 @@
     {
       "h2": "Ladakh's place in Himalayan history",
       "paras": [
-        "Ladakh sits on routes linking Kashmir, Tibet and Central Asia, and its history follows the trade in wool, salt and pashmina that passed through Leh. Rock carvings show people and animals in the region long before Buddhism. From about the 10th century a West Tibetan dynasty ruled, and the second diffusion of Buddhism brought temple building and Kashmiri artists. The Namgyal dynasty ruled from the 16th century until the Dogra conquest in the 1830s.",
+        "Ladakh sits on routes linking Kashmir, Tibet and Central Asia, and its history follows the trade in wool, salt and pashmina that passed through Leh. Rock carvings show people and animals in the region long before Buddhism. From about the 10th century a West Tibetan dynasty ruled, and the second diffusion of Buddhism brought temple building and Kashmiri artists. The Namgyal dynasty, which rose in the 15th and 16th centuries, ruled until the Dogra conquest of 1834 to 1842.",
         "Most of Ladakh's heritage is still in use: monasteries with resident monks, villages of flat-roofed houses and chortens, and festivals with masked cham dances. Our guide to [Buddhist caves in India](buddhist-caves-in-india.html) gives the earlier Indian background to its art."
       ]
     },
     {
       "h2": "Alchi: the painted temples",
       "paras": [
-        "Alchi Choskor, on the Indus west of Leh, is a group of small temples built in about the 11th to 13th centuries. Their walls and ceilings are covered in murals painted in a style closely linked to Kashmir, with mandalas, rows of Buddhas, and scenes of court life with figures in rich textiles. The Sumtsek, a three-storey temple, holds large clay images of Bodhisattvas whose painted dhotis are a record of medieval textile design.",
-        "Mangyu and Sumda Chun, in side valleys, have temples of the same period. The interiors are fragile and photography inside is usually not allowed. Our lecture [Reading sculpture](reading-sculpture.html) and the session on [temple sculpture and iconography](temple-sculpture-iconography.html) help visitors identify the figures they see."
+        "Alchi Choskor, on the Indus west of Leh, is a group of small temples built in about the 11th to 13th centuries; their exact dating is debated. Their walls and ceilings are covered in murals painted in a style closely linked to Kashmir, with mandalas, rows of Buddhas, and scenes of court life with figures in rich textiles. The Sumtsek, a three-storey temple, holds large clay images of Bodhisattvas with richly painted dhotis.",
+        "Mangyu and Sumda Chun, in side valleys, have early temples comparable to Alchi's. The interiors are fragile and photography inside is usually not allowed. Our lecture [Reading sculpture](reading-sculpture.html) and the session on [temple sculpture and iconography](temple-sculpture-iconography.html) help visitors identify the figures they see."
       ]
     },
     {
       "h2": "Monasteries and royal sites",
       "paras": [
-        "Lamayuru, on the old road to Kashmir, is one of the oldest monastic sites in Ladakh, set above eroded clay formations. Likir, Thiksey, built on a hill like a small Potala, and Hemis, the wealthiest monastery and site of a large summer festival, are the most visited. Spituk, Phyang and Diskit in Nubra add more.",
-        "Leh Palace, built in the 17th century under Sengge Namgyal, rises nine storeys above the old town and has been restored by the ASI. Basgo, an earlier Namgyal seat, keeps a mud-brick citadel and temples with murals. Shey Palace has a large seated Buddha. Our [Leh heritage walk guide](heritage-walk-in-leh.html) covers the old town below the palace."
+        "Lamayuru, on the old road to Kashmir, is one of the oldest monastic sites in Ladakh, set above eroded clay formations. Likir, Thiksey, built on a hill like a small Potala, and Hemis, one of the largest and wealthiest monasteries and site of a large summer festival, are the most visited. Spituk, Phyang and Diskit in Nubra add more.",
+        "Leh Palace, built in the 17th century under Sengge Namgyal, rises nine storeys above the old town and has been restored by the ASI. Basgo, an earlier royal seat, keeps a mud-brick citadel and temples with murals. Shey Palace has a large Buddha statue. Our [Leh heritage walk guide](heritage-walk-in-leh.html) covers the old town below the palace."
       ]
     },
     {
       "h2": "Rock art and early carvings",
       "paras": [
         "Petroglyphs are found on boulders along the Indus and its tributaries, at places such as Domkhar, Tangtse and Alchi. They show ibex, yaks, hunters, horse riders and later Buddhist stupas and inscriptions, and span a long period that is hard to date precisely. Our programme [Rock art of India](rock-art-of-india.html) explains how these carvings are recorded.",
-        "At Mulbekh, on the road to Kargil, a standing figure of Maitreya about nine metres high is carved in relief on a rock face, probably in the 7th to 8th centuries. Kartse Khar in the Suru valley has a similar carved image, and Apati has another."
+        "At Mulbekh, on the road to Kargil, a tall standing figure of Maitreya is carved in relief on a rock face; its date is debated. Kartse Khar in the Suru valley has a similar carved image, and Apati has another."
       ]
     },
     {
@@ -79,7 +79,7 @@
     },
     {
       "name": "Likir monastery",
-      "note": "Monastery with a large seated Maitreya image.",
+      "note": "Monastery with a large gilded Maitreya statue.",
       "unesco": false
     },
     {
@@ -99,17 +99,17 @@
     },
     {
       "name": "Basgo",
-      "note": "Earlier Namgyal citadel with temples and murals.",
+      "note": "Earlier royal citadel with temples and murals.",
       "unesco": false
     },
     {
       "name": "Shey Palace",
-      "note": "Former royal residence with a large seated Buddha.",
+      "note": "Former royal residence with a large Buddha statue.",
       "unesco": false
     },
     {
       "name": "Mulbekh Maitreya",
-      "note": "Rock-carved standing Maitreya of about the 7th to 8th centuries.",
+      "note": "Rock-carved standing Maitreya; its date is debated.",
       "unesco": false
     },
     {
@@ -148,7 +148,7 @@
     },
     {
       "q": "Why is Alchi important?",
-      "a": "Alchi's temples, built in about the 11th to 13th centuries, preserve some of the finest early Buddhist murals in the Himalaya, painted in a style linked to Kashmir. The clay Bodhisattvas in the Sumtsek temple are also famous for their painted textiles."
+      "a": "Alchi's temples, built in about the 11th to 13th centuries, preserve some of the finest early Buddhist murals in the Himalaya, painted in a style linked to Kashmir. The clay Bodhisattvas in the Sumtsek temple are also famous for their painted dhotis."
     },
     {
       "q": "Which are the oldest monasteries in Ladakh?",
@@ -223,8 +223,8 @@
     "posts": [
       {
         "angle": "fact",
-        "hook": "Alchi's Bodhisattvas wear a medieval textile catalogue.",
-        "caption": "The clay images in the Sumtsek temple have painted dhotis showing patterns of textiles traded across Asia in the 12th to 13th centuries."
+        "hook": "Look closely at the dhotis of Alchi's Bodhisattvas.",
+        "caption": "The large clay images in the Sumtsek temple wear richly painted dhotis. The detail rewards a slow look."
       },
       {
         "angle": "tip",
