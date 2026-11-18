@@ -29,8 +29,9 @@ SERIES = {
     "explorer": ("Explorer", "@archaeologywala walks a site from end to end."),
     "news": ("From the Heritage desk", "New finds, explained in under a minute."),
     "khudai-khabar": ("Khudai Khabar", "Real archaeology news, told as satire by @archaeologywala."),
+    "special": ("Specials", "@archaeologywala on heritage days and weeks."),
 }
-ORDER = ["jaisa-tha", "ancient-india-3d", "explorer", "news", "khudai-khabar"]
+ORDER = ["jaisa-tha", "ancient-india-3d", "explorer", "news", "special", "khudai-khabar"]
 IG_RE = re.compile(r"^https://www\.instagram\.com/(?:[A-Za-z0-9_.]+/)?(?:reel|p)/[A-Za-z0-9_-]+/?$")
 YT_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
 

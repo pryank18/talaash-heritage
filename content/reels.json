@@ -1,5 +1,5 @@
 {
-  "_readme": "One entry per reel. A reel appears on the site only once \"instagram\" holds its public link (add it after the reel is live, then run python3 tools/build_reels.py and python3 tools/build_catalogue.py site/data/catalogue.json). \"account\" is who posts it; \"collab\" is the co-author. \"pages\" are programme, guide or news pages (file names without .html) the reel sells or explains: the reel is embedded on each programme page listed here. Series: jaisa-tha (Talaash 3D reconstructions), explorer (archaeologywala, collab), khudai-khabar (archaeologywala only, satire: never list programme pages), news (archaeologywala faceless news reels, collab). Full rules: docs/SOCIAL.md.",
+  "_readme": "One entry per reel. A reel appears on the site only once \"instagram\" holds its public link (add it after the reel is live, then run python3 tools/build_reels.py and python3 tools/build_catalogue.py site/data/catalogue.json). \"account\" is who posts it; \"collab\" is the co-author. \"pages\" are programme, guide or news pages (file names without .html) the reel sells or explains: the reel is embedded on each programme page listed here. Series: jaisa-tha (Talaash 3D reconstructions), explorer (archaeologywala, collab), khudai-khabar (archaeologywala only, satire: never list programme pages), news (archaeologywala faceless news reels, collab), special (archaeologywala reels for heritage days and weeks, collab). Full rules: docs/SOCIAL.md.",
   "reels": [
     {
       "id": "burials-rakhigarhi-sinauli-adichanallur",
@@ -8,7 +8,7 @@
       "series": "ancient-india-3d",
       "account": "archaeologywala",
       "collab": "talaashheritage",
-      "date": "2026-11-17T20:30:00+05:30",
+      "date": "2026-11-17T19:00:00+05:30",
       "instagram": null,
       "youtube": null,
       "pages": ["rakhigarhi", "delhi-and-rakhigarhi-the-harappan-world"]
@@ -20,7 +20,7 @@
       "series": "explorer",
       "account": "archaeologywala",
       "collab": "talaashheritage",
-      "date": null,
+      "date": "2026-11-19T19:00:00+05:30",
       "instagram": null,
       "youtube": null,
       "pages": ["tughlaqabad-fort", "ghiyasuddin-tughlaq-s-tomb-focus-walk"]
@@ -32,10 +32,34 @@
       "series": "news",
       "account": "archaeologywala",
       "collab": "talaashheritage",
-      "date": null,
+      "date": "2026-11-15T21:30:00+05:30",
       "instagram": null,
       "youtube": null,
       "pages": ["news-chalukya-pillar-inscription-of-vikramaditya-vi-read-at-kothakota"]
+    },
+    {
+      "id": "news-nagapattinam-chola-bronzes",
+      "title": "Chola bronzes of Nataraja and Sivakami found at Nagapattinam",
+      "blurb": "Chola-period bronzes of Nataraja and Sivakami, found at Nagapattinam.",
+      "series": "news",
+      "account": "archaeologywala",
+      "collab": "talaashheritage",
+      "date": "2026-11-20T19:00:00+05:30",
+      "instagram": null,
+      "youtube": null,
+      "pages": ["news-chola-period-bronzes-of-nataraja-and-sivakami-found-at-nagapattinam"]
+    },
+    {
+      "id": "delhi-world-heritage-sites",
+      "title": "Delhi's three World Heritage Sites",
+      "blurb": "The Qutb complex, Humayun's Tomb and the Red Fort, for World Heritage Week.",
+      "series": "special",
+      "account": "archaeologywala",
+      "collab": "talaashheritage",
+      "date": "2026-11-18T19:00:00+05:30",
+      "instagram": null,
+      "youtube": null,
+      "pages": ["the-qutb-complex", "humayuns-tomb", "red-fort-complex"]
     },
     {
       "id": "jaisa-tha-01-purana-qila",
