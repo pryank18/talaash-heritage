@@ -1,6 +1,6 @@
 # Site File: Talaash's weekly monument and excavation reel
 
-Decided 19 Nov 2026 (Pryank: "Talaash Heritage takes over monuments and excavations in an AI-video style … move across gradually, starting with one piece a week alongside the existing slides and Jaisa Tha … no mistake"). This file is the rule book for the series. Where it differs from an older line in docs/UNIVERSE.md, docs/SOCIAL.md or the 14 Nov monetisation gate, this file wins for Site File only; every other series keeps its rules.
+Decided 19 Nov 2026 (Pryank: "Talaash Heritage takes over monuments and excavations in a new video style … move across gradually, starting with one piece a week alongside the existing slides and Jaisa Tha … no mistake"). This file is the rule book for the series. Where it differs from an older line in docs/UNIVERSE.md, docs/SOCIAL.md or the 14 Nov monetisation gate, this file wins for Site File only; every other series keeps its rules.
 
 ## 1. What it is
 - One reel a week, 45–90 seconds, English, under the series line "TALAASH · SITE FILE #NN".
@@ -33,15 +33,27 @@ First run (19 Nov; items in content/site-file-pending.json until merged into the
 - On-screen tags for this series: Excavated, Reconstructed, Debated. Every reconstructed frame carries "Reconstructed"; where scholars disagree, "Debated" and the caption says so.
 
 ## 5. Pictures
-- Stills made in Nano Banana, animated in code (pan, zoom, parallax, labels), plus 2–4 Google Flow video clips per piece.
+- Generated stills animated in code (pan, zoom, parallax, labels), plus 2–4 generated video clips per piece.
 - Never: deity figures; a Buddha or bodhisattva figure; realistic depictions of real, named people; identifiable people of a living community; sacred rites; maps of India; generated lettering, script or inscriptions (all text is added in the edit; any generated letters = clip rejected); carvings, paintings or colours the evidence does not record.
 - People only as small, unnamed figures at work or seen from behind.
 - Both logos on every frame (TALAASHH; archaeologywala too on a Collab).
 
+## 5a. Style: full explainers (19 Nov 2026)
+Talaash makes explanation videos; archaeologywala makes short story videos with only light touches of this, so the two pages never look alike.
+- First 2 seconds: the strongest visual plus a number or a question. Then a new picture every 2–3 seconds.
+- Numbers that animate on screen (every measurement and date from the brief, with edition and page).
+- Arrows that travel to the part being explained; numbered parts; a short timeline bar with dates.
+- Cutaways of interiors and exteriors, and step-by-step build views of how it was made.
+- The site as excavated or as it stands today, side by side with an illustrated reconstruction of how it looked.
+- Simple diagrams of how things worked (water flow, load paths, layers, tools in use).
+- Locating the site: a zoom that starts no wider than the district, on our own drawn terrain, with the site name and state as typed labels. Never a map of India, and never a national or state boundary line (section 5).
+- Every label, number and line of text is built in code in the edit, never written inside a generated image. Every claim is tagged Excavated, Reconstructed or Debated.
+- Subjects come mainly from monuments and excavations; any Talaash field may take a Site File when it explains well this way. Principles may be learnt from strong explainer reels, but no other page or creator is copied or named.
+
 ## 6. Voice and sound
-- English narration in Pryank's cloned voice from the reference recordings already used for the lectures. Whisper transcript must match the script word for word; likeness check passed before use.
+- English narration in Pryank's cloned voice from the reference recordings already used for the lectures. The transcript must match the script word for word; likeness check passed before use.
 - Burned-in English captions. No drone, hum or generated ambient bed: clean silence under the voice, or licensed or our own recorded sound.
-- Reel quality gate (claude/reel-quality-gate-2026-11-19.md) applies in full: played end to end with sound, at least 5 distinct visuals with real motion, a frame looked at every 3 seconds.
+- The reel quality gate (19 Nov 2026) applies in full: played end to end with sound, at least 5 distinct visuals with real motion, a frame looked at every 3 seconds.
 
 ## 7. Labels and credits
 - Meta's AI label ON (Instagram and Facebook). Make cannot set it, so Site File never goes through the Make poster.
@@ -49,17 +61,17 @@ First run (19 Nov; items in content/site-file-pending.json until merged into the
 - Caption credit line, just before the Follow block: "Visuals: illustrative reconstruction made with AI. Narration: AI version of our founder's voice." No tool names anywhere public.
 - Caption otherwise follows the brand SOP: hook line naming the site, "In short" line, Follow block, exactly 5 hashtags, no engagement bait.
 
-## 8. Flow credits and files
-- Account rule (Pryank, 19 Nov 2026, 23:03: "use that Google account only … no mistake"): every Flow and Nano Banana generation, download and project for Talaash uses talaashheritage@gmail.com only, on its own credits. Never archaeologywala@gmail.com (archaeologywala uses its own), never pryankwadhera@gmail.com, never wadherapryank@gmail.com (film). If the Talaash account is not signed in or lacks the credits, nothing is generated: the piece waits a week. Credits are never borrowed from another account.
-- Read the signed-in email in Flow before every generation and write it, with the credit balance before and after, in render/sitefile/NN-slug/credits.md.
+## 8. Generation credits and files
+- Account rule (Pryank, 19 Nov 2026, 23:03: "use that Google account only … no mistake"): every image and video generation, download and project for Talaash uses talaashheritage@gmail.com only, on its own credits. Never archaeologywala@gmail.com (archaeologywala uses its own), never pryankwadhera@gmail.com, never wadherapryank@gmail.com (film). If the Talaash account is not signed in or lacks the credits, nothing is generated: the piece waits a week. Credits are never borrowed from another account.
+- Read the signed-in email in the generation tool before every generation and write it, with the credit balance before and after, in render/sitefile/NN-slug/credits.md.
 - Budget per piece: at most 4 clips; stills first, clips only for the shots that need real motion.
-- Download every clip with Flow's own Download button (720p original, never upscaled), then bring it from the Mac's Downloads folder into the workspace through the device bridge, and save every clip and the build package to Drive (folder "Talaash Site File/NN-slug"). Nothing lives only inside Flow or one chat.
+- Download every clip with the tool's own Download button (720p original, never upscaled), then bring it from the Mac's Downloads folder into the workspace through the device bridge, and save every clip and the build package to Drive (folder "Talaash Site File/NN-slug"). Nothing lives only inside the generation tool or one session.
 
 ## 9. Pipeline (D = the Sunday)
 | When | Step | Where |
 |---|---|---|
 | D−13 Mon | Desk: read the report, write render/sitefile/NN-slug/brief.md (claims with edition and page), script (60–80 s), shot list, still and clip prompts, captions; three checks in checks.md; item → building | Cloud |
-| D−5 to D−4 | Build session: generate stills and clips in Flow (rules in 8), download, stage, save to Drive; edit, voice, captions, logos, tags; reel quality gate; final file to Drive and site/media/sitefile/ | Mac (Chrome); if the Mac is off, the piece slips one week (it is an extra post, so no slot goes empty) |
+| D−5 to D−4 | Build session: generate stills and clips (rules in 8), download, stage, save to Drive; edit, voice, captions, logos, tags; reel quality gate; final file to Drive and site/media/sitefile/ | Mac (Chrome); if the Mac is off, the piece slips one week (it is an extra post, so no slot goes empty) |
 | D−4 | Schedule Instagram and Facebook in Meta's own planner for D 13:00 with the AI label on and, if selected, the archaeologywala Collab invite; read the schedule back; item → scheduled | Mac (Chrome) |
 | D after 13:00 | Confirm live on Instagram and Facebook; YouTube Short public (7); LinkedIn on the next weekday at 12:00 with the cover still and the LinkedIn text (no "pages.dev"; never on Sundays or Thursdays; two-a-day rule); item → live | Cloud checks |
 | D+7 | Log plays per follower, shares, saves | Sunday review |
