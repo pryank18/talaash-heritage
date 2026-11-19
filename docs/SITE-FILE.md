@@ -50,7 +50,7 @@ First run (19 Nov; items in content/site-file-pending.json until merged into the
 - Caption otherwise follows the brand SOP: hook line naming the site, "In short" line, Follow block, exactly 5 hashtags, no engagement bait.
 
 ## 8. Flow credits and files
-- Accounts, in this order: talaashheritage@gmail.com free credits, then archaeologywala@gmail.com or pryankwadhera@gmail.com free credits only when archaeologywala's stories that week do not need them. Never wadherapryank@gmail.com unless the film project's own status doc says those credits are not needed.
+- Account rule (Pryank, 19 Nov 2026, 23:03: "use that Google account only … no mistake"): every Flow and Nano Banana generation, download and project for Talaash uses talaashheritage@gmail.com only, on its own credits. Never archaeologywala@gmail.com (archaeologywala uses its own), never pryankwadhera@gmail.com, never wadherapryank@gmail.com (film). If the Talaash account is not signed in or lacks the credits, nothing is generated: the piece waits a week. Credits are never borrowed from another account.
 - Read the signed-in email in Flow before every generation and write it, with the credit balance before and after, in render/sitefile/NN-slug/credits.md.
 - Budget per piece: at most 4 clips; stills first, clips only for the shots that need real motion.
 - Download every clip with Flow's own Download button (720p original, never upscaled), then bring it from the Mac's Downloads folder into the workspace through the device bridge, and save every clip and the build package to Drive (folder "Talaash Site File/NN-slug"). Nothing lives only inside Flow or one chat.
@@ -59,9 +59,8 @@ First run (19 Nov; items in content/site-file-pending.json until merged into the
 | When | Step | Where |
 |---|---|---|
 | D−13 Mon | Desk: read the report, write render/sitefile/NN-slug/brief.md (claims with edition and page), script (60–80 s), shot list, still and clip prompts, captions; three checks in checks.md; item → building | Cloud |
-| D−7 to D−4 | Build session: generate stills and clips in Flow (rules in 8), download, stage, save to Drive | Mac (Chrome); if the Mac is off, the piece slips one week (it is an extra post, so no slot goes empty) |
-| D−4 to D−3 | Edit: animate stills, cut clips, voice, captions, logos, tags; reel quality gate; final file to Drive and site/media/sitefile/ | Workspace |
-| D−3 | Schedule Instagram and Facebook in Meta's own planner for D 13:00 with the AI label on and, if selected, the archaeologywala Collab invite; read the schedule back; item → scheduled | Mac (Chrome) |
+| D−5 to D−4 | Build session: generate stills and clips in Flow (rules in 8), download, stage, save to Drive; edit, voice, captions, logos, tags; reel quality gate; final file to Drive and site/media/sitefile/ | Mac (Chrome); if the Mac is off, the piece slips one week (it is an extra post, so no slot goes empty) |
+| D−4 | Schedule Instagram and Facebook in Meta's own planner for D 13:00 with the AI label on and, if selected, the archaeologywala Collab invite; read the schedule back; item → scheduled | Mac (Chrome) |
 | D after 13:00 | Confirm live on Instagram and Facebook; YouTube Short public (7); LinkedIn on the next weekday at 12:00 with the cover still and the LinkedIn text (no "pages.dev"; never on Sundays or Thursdays; two-a-day rule); item → live | Cloud checks |
 | D+7 | Log plays per follower, shares, saves | Sunday review |
 
