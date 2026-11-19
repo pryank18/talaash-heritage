@@ -12,9 +12,9 @@ Checks (all must pass):
             changing spectrum (neighbouring 0.5 s blocks correlate <= 0.86; a drone sits near 0.92+)
   bass      share of energy below 100 Hz <= 25% (phone speakers)
   logos     Talaash logo in the top-right corner on every sampled frame (every 1 s), plus the
-            archaeologywala logo on every sampled frame when --3d is given
-            (the end card, where the large Talaash logo sits in the centre,
-            is allowed to carry only one small logo)
+            archaeologywala logo beside it on every sampled frame when --3d is given
+            (masked template match, so any background colour works; the last
+            4 s, the end card, may carry only one of the two small logos)
   size      file under 100 MB
 Writes a contact sheet (one frame every 3 s) next to the report for the visual review.
 Exit code 0 = PASS, 1 = FAIL.
@@ -82,8 +82,9 @@ def steadiness(x, sr):
     if n < 4:
         return 1.0
     S = np.array([np.log1p(np.abs(np.fft.rfft(x[i * blk:(i + 1) * blk] * np.hanning(blk)))[:4000] * 100) for i in range(n)])
-    d = [np.corrcoef(S[i], S[i + 1])[0, 1] for i in range(n - 1)]
-    return float(np.median(d))
+    with np.errstate(invalid="ignore", divide="ignore"):
+        d = [np.corrcoef(S[i], S[i + 1])[0, 1] for i in range(n - 1)]
+    return float(np.median(np.nan_to_num(d, nan=1.0)))
 
 
 def longest_gap(x, sr, end_skip=3.0):
@@ -115,49 +116,68 @@ def gray_frames(path, fps=1.0, w=540, h=960):
 
 
 def load_logo(png, size):
+    """Grey template plus its alpha mask, so the background behind the logo does not matter."""
     r = subprocess.run(["ffmpeg", "-v", "error", "-i", png, "-vf",
-                        f"scale={size}:{size}:force_original_aspect_ratio=decrease,pad={size}:{size}:(ow-iw)/2:(oh-ih)/2:color=black,format=gray",
+                        f"scale={size}:{size}:force_original_aspect_ratio=decrease,pad={size}:{size}:(ow-iw)/2:(oh-ih)/2:color=black@0,format=rgba",
                         "-f", "rawvideo", "-"], capture_output=True)
-    return np.frombuffer(r.stdout, dtype=np.uint8).reshape(size, size).astype(np.float32)
+    a = np.frombuffer(r.stdout, dtype=np.uint8).reshape(size, size, 4).astype(np.float32)
+    grey = 0.299 * a[..., 0] + 0.587 * a[..., 1] + 0.114 * a[..., 2]
+    mask = a[..., 3] > 128
+    return grey, mask
 
 
-def best_match(frame, tpl, region):
-    """Normalised cross-correlation of tpl over region (y0,y1,x0,x1) with a 2 px stride. Returns max score."""
+def best_match(frame, tpl, region, avoid=None):
+    """Masked normalised cross-correlation of tpl (grey, mask) over region (y0,y1,x0,x1), 2 px stride.
+    Positions overlapping the box `avoid` (y, x, h, w) are skipped. Returns (score, (y, x, h, w))."""
+    grey, mask = tpl
     y0, y1, x0, x1 = region
-    th, tw = tpl.shape
-    t = tpl - tpl.mean(); tn = np.sqrt((t ** 2).sum()) + 1e-6
-    best = -1.0
+    th, tw = grey.shape
+    t = grey[mask]; t = t - t.mean(); tn = np.sqrt((t ** 2).sum()) + 1e-6
+    best, where = -1.0, None
     for y in range(y0, max(y0 + 1, y1 - th), 2):
         for x in range(x0, max(x0 + 1, x1 - tw), 2):
+            if avoid is not None:
+                ay, ax, ah, aw = avoid
+                if y < ay + ah and ay < y + th and x < ax + aw and ax < x + tw:
+                    continue
             p = frame[y:y + th, x:x + tw]
-            if p.shape != tpl.shape:
+            if p.shape != grey.shape:
                 continue
-            p = p - p.mean(); pn = np.sqrt((p ** 2).sum()) + 1e-6
-            s = float((p * t).sum() / (pn * tn))
-            if s > best:
-                best = s
-    return best
+            p = p[mask]; p = p - p.mean(); pn = np.sqrt((p ** 2).sum()) + 1e-6
+            sc = float((p * t).sum() / (pn * tn))
+            if sc > best:
+                best, where = sc, (y, x, th, tw)
+    return best, where
+
+
+T_MIN, AW_MIN = 0.60, 0.75
 
 
 def logo_check(path, need_aw):
     fr = gray_frames(path)
     region = (0, 140, 300, 540)  # top-right band at 540x960
     res = {"frames": len(fr), "talaash_min": None, "aw_min": None, "fail_at": []}
-    if not os.path.exists(TALAASH_LOGO):
-        res["error"] = "logo file missing: " + TALAASH_LOGO
-        return False, res
-    scores_t, scores_a = [], []
+    for f in (TALAASH_LOGO, AW_LOGO if need_aw else TALAASH_LOGO):
+        if not os.path.exists(f):
+            res["error"] = "logo file missing: " + f
+            return False, res
     tals = [load_logo(TALAASH_LOGO, s) for s in (56, 64, 72)]
     aws = [load_logo(AW_LOGO, s) for s in (40, 48, 56)] if need_aw else []
+    scores_t, scores_a = [], []
     end_card_from = len(fr) - 4
     ok = True
     for i, f in enumerate(fr):
-        st = max(best_match(f, t, region) for t in tals)
+        st, box = max((best_match(f, t, region) for t in tals), key=lambda r: r[0])
         scores_t.append(st)
-        sa = max(best_match(f, a, region) for a in aws) if need_aw else 1.0
+        if need_aw:
+            # the archaeologywala logo must be found somewhere other than on the Talaash logo
+            sa = max(best_match(f, a, region, avoid=box if st >= T_MIN else None)[0] for a in aws)
+        else:
+            sa = 1.0
         scores_a.append(sa)
+        t_ok, a_ok = st >= T_MIN, sa >= AW_MIN
         on_end = i >= end_card_from
-        if (st < 0.55 or sa < 0.55) and not (on_end and max(st, sa) >= 0.55):
+        if not (t_ok and a_ok) and not (on_end and (t_ok or a_ok)):
             ok = False
             res["fail_at"].append({"t": i, "talaash": round(st, 2), "aw": round(sa, 2)})
     res["talaash_min"] = round(min(scores_t), 2) if scores_t else None
