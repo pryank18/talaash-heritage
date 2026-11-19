@@ -19,14 +19,14 @@
     {
       "h2": "Vangchhia: the menhirs of Kawtchhuah Ropui",
       "paras": [
-        "Vangchhia, close to the Myanmar border in Champhai district, is Mizoram's most important archaeological site and is protected by the Archaeological Survey of India. Rows of upright stones stand on a ridge, many carved with human figures, animals such as mithun, gongs, weapons and geometric motifs. Excavation and survey have also recorded terraces, possible ponds and stone-lined features, which suggest a settled village with organised ritual space.",
+        "Vangchhia, close to the Myanmar border in Champhai district, is Mizoram's most important archaeological site and is protected by the Archaeological Survey of India. Rows of upright stones stand on a ridge, many carved with human figures, animals such as mithun, gongs, weapons and geometric motifs. Excavation and survey have also recorded terraces, stone-paved paths and post holes, which suggest a settled village with organised ritual space.",
         "The stones are best read as memorials. Across the north-east, menhirs were raised to commemorate the dead or to mark feasts of merit, where a person gained status by hosting the community. The carvings are a record of what mattered: animals sacrificed, wealth displayed, enemies and hunts. Dating is still being worked out, so treat any single date you read online with caution. Our lecture on [burials and bioarchaeology](burials-and-bioarchaeology.html) explains how such memorial sites are studied and dated."
       ]
     },
     {
       "h2": "Memorial stones and places of legend",
       "paras": [
-        "Scattered across the state are named memorial stones (lung) tied to particular people. Sibuta Lung near Aizawl and Mangkahia Lung in Champhai district are the best known. Places such as Lianchhiari Lunglen Tlang, a cliff linked to a famous love story, and Thasiama Seno Neihna, associated with a feast-giving hero, show how landscape and memory work together. These are folk traditions, not historical records, and that is exactly why they interest anthropologists.",
+        "Scattered across the state are named memorial stones (lung) tied to particular people. Sibuta Lung near Aizawl and Mangkahia Lung in Champhai district are the best known. Places such as Lianchhiari Lunglen Tlang, a cliff linked to a famous love story, and Thasiama Seno Neihna, where in legend Thasiama's mithun gave birth, show how landscape and memory work together. These are folk traditions, not historical records, and that is exactly why they interest anthropologists.",
         "A useful way to visit is to pair a stone with the story told about it locally, then compare that story with what survey and excavation can and cannot confirm. Our [oral history and neighbourhood memory lab](oral-history-and-neighbourhood-memory-lab.html) teaches this method to students."
       ]
     },
@@ -50,7 +50,7 @@
     {"name": "Sibuta Lung", "note": "Named memorial stone near Aizawl, tied to a local chief in oral tradition.", "unesco": false},
     {"name": "Mangkahia Lung", "note": "Memorial stone in Champhai district, linked in tradition to a village chief.", "unesco": false},
     {"name": "Lianchhiari Lunglen Tlang", "note": "Cliff near Champhai linked to one of the best known Mizo love legends.", "unesco": false},
-    {"name": "Thasiama Seno Neihna", "note": "Site remembered in Mizo tradition for a legendary feast of merit.", "unesco": false},
+    {"name": "Thasiama Seno Neihna", "note": "Site linked in Mizo legend to Thasiama and his mithun.", "unesco": false},
     {"name": "Mizoram State Museum, Aizawl", "note": "Textiles, ornaments, tools and ethnographic objects from Mizo communities.", "unesco": false},
     {"name": "Reiek heritage village", "note": "Reconstructed traditional houses, including a zawlbuk dormitory, near Aizawl.", "unesco": false},
     {"name": "Serkawn, Lunglei", "note": "Early Baptist mission station of the early 20th century, key to Mizo literacy history.", "unesco": false},
