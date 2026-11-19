@@ -20,7 +20,7 @@ Decided 19 Nov 2026 (Pryank: "Talaash Heritage takes over monuments and excavati
 - Selected excavation episodes invite @archaeologywala as Collab (ledger `collab`). Monuments stay Talaash-only.
 - archaeologywala's story reels keep at least 14 days clear of a Site File topic; the ledger's 30-day topic lock across both accounts still applies and is stricter.
 
-First run (19 Nov; items in content/site-file-pending.json until merged into the ledger): #1 Burzahom (6 Dec, Collab), #2 Bhitargaon (13 Dec), #3 Inamgaon (20 Dec, Collab), #4 Kanheri water system (27 Dec), #5 Kalibangan ploughed field (10 Jan 2027, Collab). 3 Jan is open for the desk to fill.
+First run (locked in content/universe.json on 19 Nov): #1 Burzahom (6 Dec, Collab), #2 Bhitargaon (13 Dec), #3 Inamgaon (20 Dec, Collab), #4 Kanheri water system (27 Dec), #5 Kalibangan ploughed field (10 Jan 2027, Collab). 3 Jan is open for the desk to fill.
 
 ## 3. Day and time (a test, judged on data)
 - Sunday 13:00 IST, as a second post that day. Every evening slot already holds a main post (four reels and three carousels a week), and the Sunday evening "Heritage this week" carousel (careers lead, our best type) stays.
