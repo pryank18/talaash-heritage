@@ -1,4 +1,4 @@
-# Licence audit (2026-11-22 17:24 UTC)
+# Licence audit (2026-11-22 17:33 UTC)
 
 Slides checked: 32 image uses. Site photos checked: 303.
 
