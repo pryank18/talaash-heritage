@@ -1581,7 +1581,7 @@
     "amritsar-town-hall"
    ],
    "sources": "render/queue/_shorts/20261124-fact-amritsar-town-hall-reel/caption.md",
-   "notes": "Tuesday Fact as a vertical reel (growth rules 15 Nov). Own photo, cropped so no people show.",
+   "notes": "22 Nov 2026: reel failed tools/reel_qc.py (audio), so the slot posts as a 4-slide carousel (render/queue/20261124-fact-amritsar-town-hall); reel held for a rescore. Tuesday Fact as a vertical reel (growth rules 15 Nov). Own photo, cropped so no people show.",
    "queue_row": 70
   },
   {
