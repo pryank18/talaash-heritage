@@ -1,0 +1,6 @@
+# Fact 015 jungle: three checks (22 Nov 2026, owner session)
+1. Own check: Merriam-Webster, jungle ("Hindi jaṅgal & Urdu jangal forest, from Sanskrit jaṅgala desert region"; first known use 1776, sense 1b); Hobson-Jobson (Wikisource, J), JUNGLE ("from Skt. jaṇgala (a word which occurs chiefly in medical treatises)"; "The native word means in strictness only waste, uncultivated ground"; Susruta quotation "the land is humid, jungle (jangalah), or of the ordinary kind"; Halhed 1776).
+2. Subagent A (claims + sources): confirmed all but the spelling: sources give jaṅgala (short a); Monier-Williams lists jāṅgala as derived from jaṅgala. anupa not in the sources opened.
+3. Subagent B (independent): nothing disproved. Halhed's exact words checked in the 1776 text (archive.org codeofgentoolaws00halh, ch. XIII, p. 190): "Land Waste for Five Years, or whatever longer Time it may happen, such Land is called Jungle." Zimmermann, Soc. Sci. Med. 27(3) 1988, supports dry, open land. OED not reachable, so the copy says "Merriam-Webster dates the first known use", not "first recorded".
+Applied: jaṅgala throughout; anupa dropped; Halhed quoted in full; "first known use" attributed to Merriam-Webster.
+Badge Fact; logo on slides 1 and 4; Follow block; 5 hashtags; Devanagari typed in plain type.
