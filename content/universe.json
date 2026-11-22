@@ -829,7 +829,7 @@
    "number": 3,
    "field": "history",
    "title": "Deep Dive #3: Arikamedu, Rome's trading post near Puducherry, and how its dates were rewritten",
-   "status": "idea",
+   "status": "ready",
    "slot": "2026-12-10T18:00",
    "collab": null,
    "platforms": [
@@ -844,7 +844,7 @@
    "topic_lock": [
     "arikamedu"
    ],
-   "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026)."
+   "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026). Built 22–23 Nov 2026: video, Reel A and notes carousel staged (reel 2026-12-10 19:00, notes 2026-12-15 19:00); hosted files site/media/aw/deep-dive/arikamedu*.mp4 and poster."
   },
   {
    "id": "aw-deep-dive-04-nagardhan",
@@ -867,6 +867,79 @@
    "sources": "archaeologywala project: claude/deep-dive.md; build packages on Drive › archaeologywala › Deep Dive",
    "topic_lock": [
     "nagardhan"
+   ],
+   "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026)."
+  },
+  {
+   "id": "aw-deep-dive-05-daimabad",
+   "brand": "archaeologywala",
+   "series": "deep-dive",
+   "number": 5,
+   "field": "archaeology",
+   "title": "Deep Dive #5: The Daimabad bronzes and the question of their date",
+   "status": "idea",
+   "slot": "2026-12-24T18:00",
+   "collab": null,
+   "platforms": [
+    "website",
+    "youtube",
+    "instagram",
+    "linkedin-talaash",
+    "facebook-talaash"
+   ],
+   "page": null,
+   "sources": "archaeologywala project: claude/deep-dive.md; build packages on Drive › archaeologywala › Deep Dive",
+   "topic_lock": [
+    "daimabad"
+   ],
+   "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026)."
+  },
+  {
+   "id": "aw-deep-dive-06-mehrgarh-dentistry",
+   "brand": "archaeologywala",
+   "series": "deep-dive",
+   "number": 6,
+   "field": "archaeology",
+   "title": "Deep Dive #6: Mehrgarh, the Neolithic teeth that were drilled",
+   "status": "idea",
+   "slot": "2026-12-31T18:00",
+   "collab": null,
+   "platforms": [
+    "website",
+    "youtube",
+    "instagram",
+    "linkedin-talaash",
+    "facebook-talaash"
+   ],
+   "page": null,
+   "sources": "archaeologywala project: claude/deep-dive.md; build packages on Drive › archaeologywala › Deep Dive",
+   "topic_lock": [
+    "mehrgarh"
+   ],
+   "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026)."
+  },
+  {
+   "id": "aw-deep-dive-07-pattanam",
+   "brand": "archaeologywala",
+   "series": "deep-dive",
+   "number": 7,
+   "field": "archaeology",
+   "title": "Deep Dive #7: Pattanam and the Muziris question",
+   "status": "idea",
+   "slot": "2027-01-07T18:00",
+   "collab": null,
+   "platforms": [
+    "website",
+    "youtube",
+    "instagram",
+    "linkedin-talaash",
+    "facebook-talaash"
+   ],
+   "page": null,
+   "sources": "archaeologywala project: claude/deep-dive.md; build packages on Drive › archaeologywala › Deep Dive",
+   "topic_lock": [
+    "pattanam",
+    "muziris"
    ],
    "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026)."
   },
