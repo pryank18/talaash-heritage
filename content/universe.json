@@ -1026,7 +1026,7 @@
    "field": "history",
    "title": "Durlabh #01 carousel (Wednesday Deep Story)",
    "status": "ready",
-   "slot": "2026-11-25T19:30",
+   "slot": "2026-11-23T19:30",
    "platforms": [
     "instagram",
     "facebook",
@@ -1034,7 +1034,7 @@
    ],
    "page": "durlabh-01-raya-asoko",
    "durlabh": 1,
-   "notes": "built 12 Nov 2026; slides site/media/ig/20261125-durlabh-01-raya-asoko-1.jpg … -8.jpg (8, rendered and checked by eye, 1080×1350, logo on 1 and 8); caption and LinkedIn text in render/lectures/01-raya-asoko/carousel.md. Badge Deep Story."
+   "notes": "built 12 Nov 2026; slides site/media/ig/20261125-durlabh-01-raya-asoko-1.jpg … -8.jpg (8, rendered and checked by eye, 1080×1350, logo on 1 and 8); caption and LinkedIn text in render/lectures/01-raya-asoko/carousel.md. Badge Deep Story. 22 Nov 2026: moved to Mon 23 Nov (teaser video not built); YouTube lecture line removed from slide 8 and both texts."
   },
   {
    "id": "tl-durlabh-02-carousel",
