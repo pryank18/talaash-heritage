@@ -27,20 +27,20 @@
       "h2": "Amritsar: gurdwara, garden and fort",
       "paras": [
         "Amritsar grew around the tank and temple founded by the Sikh Gurus in the late 16th century. Harmandir Sahib, its upper storeys covered in gilded copper under Maharaja Ranjit Singh, faces the Akal Takht across the causeway. The old city's katras (merchant quarters) and bazaars grew around it.",
-        "Jallianwala Bagh, a short walk away, is the walled garden where troops under General Dyer fired on an unarmed crowd on 13 April 1919. Gobindgarh Fort, rebuilt by Ranjit Singh, is on the city's edge. See our [Amritsar heritage walk guide](heritage-walk-in-amritsar.html) for a route through the old city."
+        "Jallianwala Bagh, a short walk away, is the walled garden where troops under Brigadier-General Dyer fired on an unarmed crowd on 13 April 1919. Gobindgarh Fort, rebuilt by Ranjit Singh, is on the city's edge. See our [Amritsar heritage walk guide](heritage-walk-in-amritsar.html) for a route through the old city."
       ]
     },
     {
       "h2": "Forts, palaces and serais",
       "paras": [
-        "Patiala's Qila Mubarak is the core of the princely state's capital, with the Qila Androon palace, painted walls and a durbar hall. Bathinda has its own Qila Mubarak, a massive brick fort whose origins are early medieval and which is linked in tradition to Razia Sultan's imprisonment. Kapurthala's Jagatjit Palace, modelled on French palaces, shows the taste of a late princely ruler.",
+        "Patiala's Qila Mubarak is the core of the princely state's capital, with the Qila Androon palace, painted walls and a durbar hall. Bathinda has its own Qila Mubarak, a massive fort of early but uncertain origins where Razia Sultan was held prisoner. Kapurthala's Jagatjit Palace, modelled on French palaces, shows the taste of a late princely ruler.",
         "Along the old road, the Mughal serai at Doraha and the Shambhu and Nurmahal serais recall the imperial highway, and Nurmahal's gate is a fine piece of Mughal brick and stone carving. Our programme [Forts of Rajasthan](forts-of-rajasthan.html) is a good companion for anyone studying how forts were planned."
       ]
     },
     {
       "h2": "Sikh heritage beyond Amritsar",
       "paras": [
-        "Anandpur Sahib, with Takht Sri Kesgarh Sahib, is linked to the founding of the Khalsa in 1699. Talwandi Sabo has Takht Sri Damdama Sahib. Fatehgarh Sahib and Chamkaur Sahib are tied to the events of 1704 to 1705. Sultanpur Lodhi is associated with Guru Nanak's early life, and the Virasat-e-Khalsa museum at Anandpur Sahib tells Sikh history through galleries.",
+        "Anandpur Sahib, with Takht Sri Kesgarh Sahib, is linked to the founding of the Khalsa in 1699. Talwandi Sabo has Takht Sri Damdama Sahib. Fatehgarh Sahib and Chamkaur Sahib are tied to the events of 1704 to 1705. Sultanpur Lodhi is associated with Guru Nanak, whose mission is said to have begun there, and the Virasat-e-Khalsa museum at Anandpur Sahib tells Sikh history through galleries.",
         "For groups, we combine Amritsar, Ropar and Sanghol with Chandigarh into a [study tour built for your group](a-study-tour-built-for-your-group.html)."
       ]
     }
@@ -53,7 +53,7 @@
     {"name": "Ropar (Rupnagar)", "note": "Harappan and later settlement on the Sutlej, with an ASI site museum.", "unesco": false},
     {"name": "Sanghol", "note": "Buddhist stupa and monastery; source of Kushan-period carved railing pillars.", "unesco": false},
     {"name": "Qila Mubarak, Patiala", "note": "Core palace-fort of the Patiala state with painted rooms and a durbar hall.", "unesco": false},
-    {"name": "Qila Mubarak, Bathinda", "note": "Massive brick fort with early medieval origins, linked in tradition to Razia Sultan.", "unesco": false},
+    {"name": "Qila Mubarak, Bathinda", "note": "Massive fort of early but uncertain origins, where Razia Sultan was held prisoner.", "unesco": false},
     {"name": "Jagatjit Palace, Kapurthala", "note": "Early 20th century palace built on French models.", "unesco": false},
     {"name": "Serai Nurmahal", "note": "Mughal serai of the 17th century with a richly carved gateway.", "unesco": false},
     {"name": "Doraha Serai", "note": "Mughal serai on the old imperial road between Delhi and Lahore.", "unesco": false},
@@ -71,7 +71,7 @@
   "faq": [
     {"q": "Are there any UNESCO World Heritage Sites in Punjab?", "a": "No. The state of Punjab has no UNESCO World Heritage Site. The nearest is Le Corbusier's Capitol Complex in Chandigarh, the shared capital, which is part of a transnational serial listing inscribed in 2016."},
     {"q": "What are the main archaeological sites in Punjab?", "a": "Ropar (Rupnagar), a Harappan and later settlement on the Sutlej with a site museum, and Sanghol, a Buddhist stupa site that produced Kushan-period carved railing pillars. Both are protected by the Archaeological Survey of India."},
-    {"q": "What happened at Jallianwala Bagh?", "a": "On 13 April 1919, troops under General Reginald Dyer fired on an unarmed crowd gathered in the walled garden in Amritsar, killing hundreds. The massacre became a turning point in the national movement. The garden is now a memorial."},
+    {"q": "What happened at Jallianwala Bagh?", "a": "On 13 April 1919, troops under Brigadier-General Reginald Dyer fired on an unarmed crowd gathered in the walled garden in Amritsar, killing hundreds. The massacre became a turning point in the national movement. The garden is now a memorial."},
     {"q": "Which forts can you visit in Punjab?", "a": "Gobindgarh Fort in Amritsar, Qila Mubarak in Patiala, Qila Mubarak in Bathinda and the remains at Phillaur are the main ones. Check visiting arrangements before you go, as some are managed by different agencies."}
   ],
   "related_programmes": ["a-study-tour-built-for-your-group.html", "delhi-and-rakhigarhi-the-harappan-world.html", "chronology-and-archaeological-dating.html", "rakhigarhi.html", "forts-of-rajasthan.html", "sacred-architecture-across-communities.html", "oral-history-and-neighbourhood-memory-lab.html"],
@@ -92,7 +92,7 @@
       {"angle": "tip", "hook": "In Amritsar, walk the katras.", "caption": "After Harmandir Sahib, step into the old merchant quarters around it. The city's plan grew from the tank outward."},
       {"angle": "offer", "hook": "A Punjab study tour, planned for you.", "caption": "We join Amritsar, Ropar, Sanghol and Chandigarh into one itinerary with a briefing lecture. Tell us your group and dates."}
     ],
-    "reel": "Dawn at Harmandir Sahib, cut to Sanghol's carved railing pillars, then Patiala's Qila Mubarak. On-screen line: 'Five thousand years along the Sutlej.' End card: 'Punjab study tours, on request.'",
+    "reel": "Dawn at Harmandir Sahib, cut to Sanghol's carved railing pillars, then Patiala's Qila Mubarak. On-screen line: 'Four thousand years along the Sutlej.' End card: 'Punjab study tours, on request.'",
     "hashtags": ["#Punjab", "#Amritsar", "#IndianHeritage", "#SikhHeritage", "#Harappan", "#Archaeology", "#Patiala", "#JallianwalaBagh"]
   },
   "og_title": "Punjab: from Harappan Ropar to Amritsar",
