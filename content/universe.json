@@ -255,7 +255,7 @@
    "number": null,
    "field": "heritage",
    "title": "Heritage this week (22 Nov): two open calls, the nearest closing 11 January",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-22T19:30",
    "platforms": [
     "instagram",
@@ -323,7 +323,7 @@
    "number": 11,
    "field": "arts",
    "title": "Fact 011: Didarganj Yakshi",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-17T19:30",
    "platforms": [
     "instagram",
@@ -339,7 +339,7 @@
    "number": null,
    "field": "history",
    "title": "Gaon File: Sasaram, 1812-13, a raft of earthen pots to Sher Shah's tomb",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-18T19:30",
    "platforms": [
     "instagram",
@@ -359,7 +359,7 @@
    "number": 12,
    "field": "sanskrit",
    "title": "Fact 012: 100,000 lines or one syllable, the Perfection of Wisdom",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-19T19:30",
    "platforms": [
     "instagram",
@@ -378,7 +378,7 @@
    "number": null,
    "field": "heritage",
    "title": "Devutthana Ekadashi: 118 days asleep, and Vishnu asleep in stone at Deogarh",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-20T08:00",
    "platforms": [
     "instagram",
@@ -458,7 +458,7 @@
    "number": 1,
    "field": "archaeology",
    "title": "Jaisa Tha #1: Purana Qila",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-20T19:30",
    "platforms": [
     "instagram",
@@ -523,7 +523,7 @@
    "topic_lock": [
     "sabz-burj"
    ],
-   "notes": "built 2026-11-14; caption in render/jaisatha/02-sabz-burj.md; media site/media/ig/jaisatha-02-sabz-burj.mp4 (55.7 s, 3.45 MB); three checks passed 14 Nov (claims dropped listed in the .md); both logos on every frame; edgecheck 0"
+   "notes": "22 Nov 2026: first file failed tools/reel_qc.py on audio; rescored with an original score written in code (render/jaisatha/score/sabz_score.py) and the archaeologywala logo moved beside the Talaash logo; new file site/media/ig/jaisatha-02-sabz-burj-v2.mp4, QC PASS (render/jaisatha/score/jaisatha-02-sabz-burj-v2.qc.json), sha256 4808d57326b2. built 2026-11-14; caption in render/jaisatha/02-sabz-burj.md; media site/media/ig/jaisatha-02-sabz-burj.mp4 (55.7 s, 3.45 MB); three checks passed 14 Nov (claims dropped listed in the .md); both logos on every frame; edgecheck 0"
   },
   {
    "id": "aw-guess-03",
@@ -1115,7 +1115,7 @@
    "number": 13,
    "field": "linguistics",
    "title": "Fact 013: shampoo comes from Hindi-Urdu chāmpo, and first meant a massage",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-21T19:30",
    "platforms": [
     "instagram",
