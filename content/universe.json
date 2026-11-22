@@ -919,12 +919,12 @@
    "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026)."
   },
   {
-   "id": "aw-deep-dive-07-pattanam",
+   "id": "aw-deep-dive-07-chandraketugarh",
    "brand": "archaeologywala",
    "series": "deep-dive",
    "number": 7,
    "field": "archaeology",
-   "title": "Deep Dive #7: Pattanam and the Muziris question",
+   "title": "Deep Dive #7: Chandraketugarh terracottas: what was excavated, and why fakes trouble the record",
    "status": "idea",
    "slot": "2027-01-07T18:00",
    "collab": null,
@@ -938,8 +938,7 @@
    "page": null,
    "sources": "archaeologywala project: claude/deep-dive.md; build packages on Drive › archaeologywala › Deep Dive",
    "topic_lock": [
-    "pattanam",
-    "muziris"
+    "chandraketugarh"
    ],
    "notes": "IG launch reel Thu 19:00 and notes carousel the following Tue 19:00 through Instagram's own scheduler; the article stays at 18:00. The launch reel goes as a Short on @archaeologywala's own YouTube channel only; the Talaash channel gets only the full-length Deep Dive video (18 Nov 2026)."
   },
