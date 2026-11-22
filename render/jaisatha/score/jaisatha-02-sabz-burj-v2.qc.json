@@ -1,0 +1,39 @@
+{
+ "file": "sabz_final.mp4",
+ "result": "PASS",
+ "checks": {
+  "format": {
+   "pass": true,
+   "video": "h264 1080x1920 30.00fps",
+   "audio": "aac 44100Hz 1ch",
+   "duration": 55.67
+  },
+  "size": {
+   "pass": true,
+   "bytes": 4142907
+  },
+  "loudness": {
+   "pass": true,
+   "lufs": -14.0,
+   "true_peak": -1.5
+  },
+  "music": {
+   "pass": true,
+   "onsets_per_s": 2.77,
+   "longest_silence_s": 0.0,
+   "steadiness": 0.608
+  },
+  "bass": {
+   "pass": true,
+   "share_below_100hz": 0.028
+  },
+  "logos": {
+   "frames": 56,
+   "talaash_min": 0.71,
+   "aw_min": 0.83,
+   "fail_at": [],
+   "pass": true
+  }
+ },
+ "contact_sheet": "/tmp/qf.sheet.png"
+}
