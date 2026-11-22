@@ -510,7 +510,7 @@
    "number": 2,
    "field": "arts",
    "title": "Jaisa Tha #2: Sabz Burj, Delhi",
-   "status": "ready",
+   "status": "scheduled",
    "slot": "2026-11-27T19:30",
    "platforms": [
     "instagram",
@@ -523,7 +523,7 @@
    "topic_lock": [
     "sabz-burj"
    ],
-   "notes": "22 Nov 2026: first file failed tools/reel_qc.py on audio; rescored with an original score written in code (render/jaisatha/score/sabz_score.py) and the archaeologywala logo moved beside the Talaash logo; new file site/media/ig/jaisatha-02-sabz-burj-v2.mp4, QC PASS (render/jaisatha/score/jaisatha-02-sabz-burj-v2.qc.json), sha256 4808d57326b2. built 2026-11-14; caption in render/jaisatha/02-sabz-burj.md; media site/media/ig/jaisatha-02-sabz-burj.mp4 (55.7 s, 3.45 MB); three checks passed 14 Nov (claims dropped listed in the .md); both logos on every frame; edgecheck 0"
+   "notes": "22 Nov 2026: first file failed tools/reel_qc.py on audio; rescored with an original score written in code (render/jaisatha/score/sabz_score.py) and the archaeologywala logo moved beside the Talaash logo; new file site/media/ig/jaisatha-02-sabz-burj-v2.mp4, QC PASS (render/jaisatha/score/jaisatha-02-sabz-burj-v2.qc.json), sha256 4808d57326b2. built 2026-11-14; caption in render/jaisatha/02-sabz-burj.md; media site/media/ig/jaisatha-02-sabz-burj.mp4 (55.7 s, 3.45 MB); three checks passed 14 Nov (claims dropped listed in the .md); both logos on every frame; edgecheck 0 Queue row 78 (v2 file)."
   },
   {
    "id": "aw-guess-03",
@@ -1135,10 +1135,10 @@
    "id": "tl-fact-word-jungle",
    "brand": "talaash",
    "series": "fact",
-   "number": null,
+   "number": 16,
    "field": "linguistics",
    "title": "Word story: jungle, from Hindi-Urdu jangal and Sanskrit jāṅgala",
-   "status": "idea",
+   "status": "scheduled",
    "slot": "2026-11-28T19:30",
    "platforms": [
     "instagram",
@@ -1150,7 +1150,7 @@
     "jungle"
    ],
    "sources": "render/queue/20261128-fact-word-jungle/brief.md",
-   "notes": "Saturday Word story brief written 15 Nov 2026 by the 21:43 queue run. Fact number from check_universe.py at queue time."
+   "notes": "Saturday Word story brief written 15 Nov 2026 by the 21:43 queue run. Fact number from check_universe.py at queue time. 22–23 Nov 2026: built as Fact 016 (5 slides), three checks in render/queue/20261128-fact-word-jungle/checks.md; queue row 79."
   },
   {
    "id": "tl-since-when-01-rupee",
@@ -2338,6 +2338,48 @@
    "page": "purana-qila",
    "sources": "site/media/ig/jaisatha-01-purana-qila.mp4; caption from queue sheet row 54",
    "notes": "YouTube Short B77NVW_8nJg (public, embeddable, no publishAt, synthetic media false; read back in the channel feed 22 Nov 2026 23:55). Uploaded by the owner session after the 21 Nov 3D studio run failed on the usage limit."
+  },
+  {
+   "id": "tl-deep-ansi-2026",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "anthropology",
+   "title": "Deep Story: the Anthropological Survey of India",
+   "status": "scheduled",
+   "slot": "2026-11-25T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "what-is-anthropology",
+   "topic_lock": [
+    "anthropological-survey-of-india"
+   ],
+   "sources": "render/queue/20261125-anthropological-survey/checks.md",
+   "notes": "Wednesday Deep Story after the Durlabh #01 carousel moved to Mon 23 Nov. Built and three-checked 22–23 Nov 2026 by the owner session; queue row 76."
+  },
+  {
+   "id": "tl-fact-015-panini-backus",
+   "brand": "talaash",
+   "series": "fact",
+   "number": 15,
+   "field": "sanskrit",
+   "title": "Fact 015: 'Pānini-Backus Form' suggested, 1967",
+   "status": "scheduled",
+   "slot": "2026-11-26T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "sanskrit-grammar-basics",
+   "topic_lock": [
+    "panini-backus"
+   ],
+   "sources": "render/queue/20261126-fact-panini-backus/checks.md",
+   "notes": "Thursday Fact (no What the Text Says episode scheduled). Carousel. Three checks 22–23 Nov 2026; queue row 77. Do not claim Pāṇini invented BNF."
   }
  ]
 }
