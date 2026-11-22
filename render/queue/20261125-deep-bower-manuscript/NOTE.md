@@ -1,0 +1,2 @@
+# Not queued (22-23 Nov 2026)
+Built and three-checked on 22 Nov by an owner session for Wed 25 Nov, in parallel with the queue run that built tl-deep-ansi-2026 for the same slot. Its sheet row (76) was set to Cancelled so only one post goes out. Kept as a ready reserve Deep Story (Sanskrit): slides served at site/media/ig/20261125-deep-bower-manuscript-1..6.jpg, caption in caption.md, checks in checks.md. Before using it, add a ledger item (topic_lock bower-manuscript) and rename the slot.
