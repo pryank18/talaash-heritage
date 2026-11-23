@@ -1,0 +1,23 @@
+{
+ "_note": "Ledger changes made 23 Nov 2026 by the 21:43 queue run and checked locally with tools/check_universe.py (OK, 121 items). Not yet in content/universe.json because the connector can only push the whole 82 KB file. The next session that commits universe.json applies these three changes, then deletes this file.",
+ "add_after": "tl-week-2026-11-22",
+ "add": {
+  "id": "tl-week-2026-11-29",
+  "brand": "talaash",
+  "series": null,
+  "number": null,
+  "field": "heritage",
+  "title": "Heritage this week (29 Nov): two fellowships, the nearest closing 15 January",
+  "status": "scheduled",
+  "slot": "2026-11-29T19:30",
+  "platforms": ["instagram", "facebook", "linkedin"],
+  "page": "news",
+  "sources": "queue sheet row 86; render/queue/20261129-heritage-this-week",
+  "notes": "Stories used: rocher-foundation-postdoctoral-fellowship-in-classical-indology-2027, queens-college-oxford-career-development-fellowship-in-sanskrit, dharma-project-ends-with-database-of-more-than-10000-text-editions, sanskrit-wikisource-texts-released-as-one-iast-download, pampa-textiles-of-karnataka-at-ngma-bengaluru-until-15-december. Left out: india-biennale (Purana Qila lock); ropuiliani museum and older stories (published more than 7 days before, no date ahead). No Durlabh #02 line (long read not live). Three checks 23 Nov 2026; see checks.md."
+ },
+ "update": {
+  "tl-durlabh-01-carousel": {"status": "live", "notes_append": " Posted 23 Nov 2026 19:35 (row 75) with IG, FB and LinkedIn ids."},
+  "tl-gaon-file-sasaram": {"slot": "2026-11-21T12:00", "platforms": ["instagram", "facebook", "linkedin"], "notes": "Failed 18 Nov 19:35 (caption over 2,200 characters); fixed and posted 21 Nov 12:20 (row 44) with IG, FB and LinkedIn ids."}
+ },
+ "updated": "2026-11-23"
+}
