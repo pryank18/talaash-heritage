@@ -1,0 +1,41 @@
+{
+  "slug": "dharma-project-ends-with-database-of-more-than-10000-text-editions",
+  "title": "DHARMA project ends, leaving a database of more than 10,000 text editions",
+  "dek": "The European-funded DHARMA project, whose work centred on inscriptions from South and Southeast Asia, closed in October after seven and a half years. Its main result, the online database dharmalekha.info, now holds more than 10,000 editions, most of them inscriptions.",
+  "body": [
+    "DHARMA, a European research project on premodern sources from South and Southeast Asia, has ended, and its team has pointed scholars to the database it leaves behind, titled \"Digital Sources for the History of South and Southeast Asia\" and found at dharmalekha.info. Arlo Griffiths, one of the project's principal investigators, announced this on the INDOLOGY mailing list on 20 November 2026, on behalf of the DHARMA consortium.",
+    "According to the database's About page, the project was funded by a European Research Council Synergy Grant (no. 809994) under Horizon 2020 and ran from May 2019 to October 2026. Its principal investigators were Emmanuel Francis, Arlo Griffiths and Annette Schmiedchen. The home page lists four host institutions: the Centre d'études sud-asiatiques et himalayennes (CNRS-EHESS), the École française d'Extrême-Orient, Humboldt-Universität zu Berlin and the Università di Napoli L'Orientale.",
+    "The database is made up almost entirely of premodern sources in Indic scripts, with the weight on inscriptions; it also holds some critical and diplomatic editions of manuscript texts, but for now only the inscriptions can be searched. When we checked on 23 November, the search page listed 10,102 documents. By language, Tamil led with 5,128 texts and Sanskrit came next with 2,043; 1,068 were marked as undetermined, and there were 955 in Old Khmer and 690 in Middle Indo-Aryan, with smaller numbers in Telugu, Old Javanese, Kannada, Old Cham and Pyu.",
+    "According to the About page, the editions are encoded in TEI and its epigraphy version, EpiDoc, and the source files are kept in the erc-dharma organisation on GitHub. The site also sets out the project's editorial conventions and has a Resources menu of reference works, among them South Indian Inscriptions, Epigraphia Carnatica and the Annual Reports on Indian Epigraphy.",
+    "The About page says the platform is now run by a consortium that keeps the DHARMA name, with five scholars at its head: Dániel Balogh, Florinda De Simini, Emmanuel Francis, Griffiths and Schmiedchen. Griffiths wrote that the team means to go on adding texts regularly, so the figures above will change; the search page shows when the database was last updated."
+  ],
+  "category": "research",
+  "field": "history",
+  "also_fields": [
+    "linguistics",
+    "sanskrit"
+  ],
+  "published": "2026-11-23",
+  "place": "Online (dharmalekha.info)",
+  "sources": [
+    {
+      "title": "About the ERC Synergy Project DHARMA",
+      "publisher": "DHARMA (dharmalekha.info)",
+      "url": "https://dharmalekha.info/about",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "Digital Sources for the History of South and Southeast Asia: search",
+      "publisher": "DHARMA (dharmalekha.info)",
+      "url": "https://dharmalekha.info/search",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "dharmalekha.info",
+      "publisher": "INDOLOGY mailing list",
+      "url": "https://list.indology.info/pipermail/indology/2026-November/062637.html",
+      "date": "2026-11-20"
+    }
+  ],
+  "status": "published"
+}
