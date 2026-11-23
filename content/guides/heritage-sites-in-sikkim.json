@@ -18,40 +18,40 @@
     "rumtek monastery",
     "namgyal institute of tibetology"
   ],
-  "summary": "Sikkim has one UNESCO World Heritage Site, Khangchendzonga National Park, inscribed in 2016 as India's only mixed site for both its natural and cultural value. The state's historic core lies in West Sikkim: Yuksom, where the first Chogyal was consecrated in the 17th century, the Rabdentse palace ruins, and the monasteries of Pemayangtse, Tashiding and Dubdi. Rumtek and Enchey are near Gangtok.",
+  "summary": "Sikkim has one UNESCO World Heritage Site, Khangchendzonga National Park, inscribed in 2016 as India's first mixed site, listed for both its natural and cultural value. The state's historic core lies in West Sikkim: Yuksom, where the first Chogyal was consecrated in the 17th century, the Rabdentse palace ruins, and the monasteries of Pemayangtse, Tashiding and Dubdi. Rumtek and Enchey are near Gangtok.",
   "sections": [
     {
       "h2": "Sikkim's history in brief",
       "paras": [
-        "Sikkim was a Buddhist kingdom ruled by the Namgyal dynasty of Chogyals from the 17th century until it became a state of India in 1975. Its population includes the Lepcha, regarded as the earliest inhabitants, the Bhutia, who came from Tibet, and Nepali communities who settled mostly from the 19th century. Each has its own language, festivals and sacred places.",
+        "Sikkim was a Buddhist kingdom ruled by the Namgyal dynasty of Chogyals from the 17th century until it became a state of India in 1975. Its population includes the Lepcha, regarded as the earliest inhabitants, the Bhutia, who came from Tibet, and Nepali communities. Each has its own language, festivals and sacred places.",
         "The state's heritage is therefore mainly religious architecture, royal sites, sacred landscape and living tradition, rather than excavated cities. For how monasteries fit into the longer story of Buddhist architecture, see our guide to [Buddhist caves in India](buddhist-caves-in-india.html)."
       ]
     },
     {
       "h2": "Khangchendzonga National Park: India's mixed UNESCO site",
       "paras": [
-        "Khangchendzonga National Park was inscribed in 2016 as a mixed World Heritage Site, the only one in India. Its natural value lies in glaciers, high peaks and forests around Kangchenjunga, the world's third highest mountain. Its cultural value lies in the way the mountain, lakes, caves and rocks are sacred to both Lepcha and Buddhist traditions, which treat the whole region as a hidden land.",
+        "Khangchendzonga National Park was inscribed in 2016 as a mixed World Heritage Site, the first in India. Its natural value lies in glaciers, high peaks and forests around Kangchenjunga, the world's third highest mountain. Its cultural value lies in the way the mountain, lakes and caves are sacred to both Lepcha and Buddhist traditions, which treat the whole region as a hidden land (Mayel Lyang to the Lepcha, a beyul to Buddhists).",
         "Most of the park is accessible only on permitted treks from Yuksom. For school groups, the cultural side is best explained before the trip. Our lecture on [culture and heritage](culture-and-heritage-what-we-inherit-and-why-it-matters.html) uses sacred landscapes like this one to explain why UNESCO lists both nature and culture."
       ]
     },
     {
       "h2": "West Sikkim: Yuksom, Rabdentse and Pemayangtse",
       "paras": [
-        "At Yuksom stands Norbugang, the stone throne where, according to tradition, three lamas consecrated Phuntsog Namgyal as the first Chogyal in 1642. Dubdi monastery, on a ridge above Yuksom, is among the oldest in the state. From Yuksom the capital moved to Rabdentse, near Pelling, whose ruined palace walls and chortens are protected by the Archaeological Survey of India.",
+        "At Yuksom stands Norbugang, the stone throne where, according to tradition, three lamas consecrated Phuntsog Namgyal as the first Chogyal in 1642 (the ASI gives 1641). Dubdi monastery, on a ridge above Yuksom, is among the oldest in the state. From Yuksom the capital moved to Rabdentse, near Pelling, whose ruined palace walls and chortens are protected by the Archaeological Survey of India.",
         "Pemayangtse monastery, close to Rabdentse, is an important Nyingma monastery known for a carved wooden model of the celestial palace of Guru Rinpoche. Tashiding, on a hill between two rivers, is associated with the Bhumchu ceremony. A day linking these sites shows how royal power and Buddhist institutions grew together."
       ]
     },
     {
       "h2": "Gangtok and East Sikkim",
       "paras": [
-        "Rumtek monastery, near Gangtok, was rebuilt in the 1960s as the seat of the Karmapa in exile and follows the plan of Tsurphu in Tibet. Enchey monastery is a smaller Nyingma monastery in the town itself. The Namgyal Institute of Tibetology holds manuscripts, thangkas and icons and is the best place to learn about Sikkim's Buddhist art.",
-        "Along the old trade route to Tibet, the Nathu La pass and the Zuluk road recall the wool and salt trade that linked Sikkim to Lhasa until 1962. Our lecture on [rock-cut sacred architecture](rock-cut-sacred-architecture.html) and the Prakrit and Pali courses help students follow Buddhist art and texts from India to the Himalaya."
+        "Rumtek monastery, near Gangtok, is the seat of the Gyalwa Karmapa and closely follows the plan of Tsurphu in Tibet. Enchey monastery is a smaller monastery in the town itself. The Namgyal Institute of Tibetology holds manuscripts, thangkas and icons and is the best place to learn about Sikkim's Buddhist art.",
+        "The Nathu La pass lies on an old India to Tibet trade route, wool among its goods, which closed after 1962 and reopened for border trade in 2006. Our lecture on [rock-cut sacred architecture](rock-cut-sacred-architecture.html) and the Prakrit and Pali courses help students follow Buddhist art and texts from India to the Himalaya."
       ]
     },
     {
       "h2": "Planning a heritage visit",
       "paras": [
-        "Indian visitors do not need a permit for most of Sikkim, but protected areas such as Nathu La and North Sikkim need permits, and foreign visitors need a Restricted Area Permit. October to December and March to May are the clearest seasons.",
+        "Indian visitors do not need a permit for most of Sikkim, but protected areas such as Nathu La, Tsomgo Lake and North Sikkim need permits, and foreign visitors need a Restricted Area Permit. October to December and March to May are the clearest seasons.",
         "We build a [study tour for your group](a-study-tour-built-for-your-group.html) linking Gangtok and West Sikkim, and a [Pali course](pali-a-first-course.html) is a good start for anyone interested in Buddhist texts."
       ]
     }
@@ -64,7 +64,7 @@
     },
     {
       "name": "Norbugang, Yuksom",
-      "note": "Stone throne where the first Chogyal was consecrated in 1642, by tradition.",
+      "note": "Stone throne where, by tradition, the first Chogyal was consecrated in 1642 (ASI: 1641).",
       "unesco": false
     },
     {
@@ -99,22 +99,17 @@
     },
     {
       "name": "Rumtek monastery",
-      "note": "Seat of the Karmapa in exile, rebuilt in the 1960s near Gangtok.",
+      "note": "Seat of the Gyalwa Karmapa near Gangtok, modelled on Tsurphu in Tibet.",
       "unesco": false
     },
     {
       "name": "Enchey monastery, Gangtok",
-      "note": "Nyingma monastery in Gangtok known for its cham dances.",
+      "note": "Monastery on a ridge in Gangtok.",
       "unesco": false
     },
     {
       "name": "Namgyal Institute of Tibetology",
       "note": "Research institute and museum with manuscripts, thangkas and icons.",
-      "unesco": false
-    },
-    {
-      "name": "Tsuklakhang, Gangtok",
-      "note": "Royal chapel of the Chogyals beside the old palace.",
       "unesco": false
     },
     {
@@ -131,17 +126,17 @@
     },
     {
       "name": "Pemayangtse monastery",
-      "note": "Its upper floor holds the carved wooden model of Guru Rinpoche's celestial palace."
+      "note": "Holds the carved wooden model of Guru Rinpoche's celestial palace."
     }
   ],
   "faq": [
     {
       "q": "Is there a UNESCO World Heritage Site in Sikkim?",
-      "a": "Yes. Khangchendzonga National Park was inscribed in 2016 as a mixed site, valued for both its natural features and its cultural meaning as a sacred landscape for Lepcha and Buddhist communities. It is India's only mixed World Heritage Site."
+      "a": "Yes. Khangchendzonga National Park was inscribed in 2016 as a mixed site, valued for both its natural features and its cultural meaning as a sacred landscape for Lepcha and Buddhist communities. It was India's first mixed World Heritage Site."
     },
     {
       "q": "What is the historical significance of Yuksom?",
-      "a": "Yuksom was the first capital of the Sikkim kingdom. According to tradition, Phuntsog Namgyal was consecrated as the first Chogyal at the Norbugang throne here in 1642. Dubdi monastery stands on the ridge above."
+      "a": "Yuksom was the first capital of the Sikkim kingdom. According to tradition, Phuntsog Namgyal was consecrated as the first Chogyal at the Norbugang throne here in 1642 (the ASI gives 1641). Dubdi monastery stands on the ridge above."
     },
     {
       "q": "What are the Rabdentse ruins?",
@@ -149,7 +144,7 @@
     },
     {
       "q": "Which are the most important monasteries in Sikkim?",
-      "a": "Pemayangtse, Tashiding, Dubdi and Sanga Choeling in West Sikkim, and Rumtek and Enchey near Gangtok. The Tsuklakhang royal chapel in Gangtok is also historically important."
+      "a": "Pemayangtse, Tashiding, Dubdi and Sanga Choeling in West Sikkim, and Rumtek and Enchey near Gangtok."
     }
   ],
   "related_programmes": [
@@ -216,7 +211,7 @@
     "posts": [
       {
         "angle": "fact",
-        "hook": "India has one mixed World Heritage Site, and it is in Sikkim.",
+        "hook": "India's first mixed World Heritage Site is in Sikkim.",
         "caption": "Khangchendzonga National Park is listed for its glaciers and forests and for its meaning as a sacred land to Lepcha and Buddhist communities."
       },
       {
@@ -243,5 +238,5 @@
     ]
   },
   "og_title": "Sikkim: monasteries, royal capitals and a sacred peak",
-  "og_description": "Yuksom's coronation throne, Rabdentse's ruins, Pemayangtse and India's only mixed UNESCO site."
+  "og_description": "Yuksom's coronation throne, Rabdentse's ruins, Pemayangtse and India's first mixed UNESCO site."
 }
