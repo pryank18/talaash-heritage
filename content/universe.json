@@ -1053,7 +1053,7 @@
     "rudrata"
    ],
    "status": "idea",
-   "notes": "Brief: render/lectures/04-knights-tour/brief.md.",
+   "notes": "Brief: render/lectures/04-knights-tour/brief.md. Long read written and three-checked 24 Nov 2026: content/durlabh/04-knights-tour.json (checks: render/lectures/04-knights-tour/checks.md).",
    "brand": "talaash",
    "series": "talaash-lectures",
    "platforms": [
@@ -1115,7 +1115,7 @@
    "number": null,
    "field": "arts",
    "title": "Durlabh #02 carousel (Wednesday Deep Story)",
-   "status": "idea",
+   "status": "ready",
    "slot": "2026-12-02T19:30",
    "platforms": [
     "instagram",
@@ -1124,7 +1124,7 @@
    ],
    "page": "durlabh-02-ajanta-copies",
    "durlabh": 2,
-   "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
+   "notes": "Built 24 Nov 2026 by the Durlabh desk from the checked long read. Slides site/media/ig/20261202-durlabh-02-ajanta-copies-1.jpg … -8.jpg (8, in order; Deep Story badge and logo on 1, logo on 8). Caption and LinkedIn text: render/lectures/02-ajanta-copies/carousel.md (## Caption, ## LinkedIn text). No lecture line: no Durlabh video exists yet."
   },
   {
    "id": "tl-durlabh-03-carousel",
@@ -2452,6 +2452,49 @@
    ],
    "sources": "render/queue/20261126-fact-panini-backus/checks.md",
    "notes": "Thursday Fact (no What the Text Says episode scheduled). Carousel. Three checks 22–23 Nov 2026; queue row 77. Do not claim Pāṇini invented BNF."
+  },
+  {
+   "id": "tl-lecture-08-lsi-gramophone",
+   "brand": "talaash",
+   "series": "talaash-lectures",
+   "number": 8,
+   "field": "linguistics",
+   "title": "Durlabh #08 · The Linguistic Survey's gramophone records: India's voices, 1913–1929",
+   "status": "idea",
+   "slot": "2027-01-10T12:00",
+   "platforms": [
+    "youtube",
+    "website",
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-08-lsi-gramophone",
+   "sells": "india-s-linguistic-heritage",
+   "topic_lock": [
+    "lsi-gramophone-records",
+    "linguistic-survey-of-india"
+   ],
+   "durlabh": 8,
+   "notes": "Locked 24 Nov 2026 by the Durlabh desk. Brief: render/lectures/08-lsi-gramophone/brief.md. Linguistics after #07 heritage; that week's Jaisa Tha (Fri 15 Jan) is not yet planned and must not be linguistics."
+  },
+  {
+   "id": "tl-durlabh-08-carousel",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "linguistics",
+   "title": "Durlabh #08 carousel (Wednesday Deep Story)",
+   "status": "idea",
+   "slot": "2027-01-13T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-08-lsi-gramophone",
+   "durlabh": 8,
+   "notes": "Built by the Durlabh desk from the checked long read; caption ends with the Follow block; links the page as plain text."
   }
  ]
 }

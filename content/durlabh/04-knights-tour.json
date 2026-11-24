@@ -1,0 +1,129 @@
+{
+  "number": 4,
+  "page": "durlabh-04-knights-tour",
+  "release": "2026-12-13T11:00:00+05:30",
+  "field": "sanskrit",
+  "image": "guide:heritage-sites-in-jammu-and-kashmir",
+  "title": "A knight's tour in a Sanskrit verse",
+  "seo_title": "A knight's tour in a Sanskrit verse: Rudraṭa's Kāvyālaṅkāra and the chess knight's path, nine centuries before Euler",
+  "meta_description": "In ninth-century Kashmir, the poetician Rudraṭa wrote a 32-syllable verse that reads the same when you follow a chess knight across half a chessboard. How it works, how we know, and how to try it yourself.",
+  "og_title": "A knight's tour in a Sanskrit verse",
+  "og_description": "Thirty-two syllables, four different sounds, and a chess knight's path hidden inside them. Kashmir, ninth century.",
+  "keywords": [
+    "knight's tour Sanskrit",
+    "Rudrata Kavyalankara",
+    "Rudraṭa knight's tour",
+    "chitrakavya",
+    "citrakāvya figure poetry",
+    "turagapada",
+    "Sanskrit poetry and mathematics",
+    "Vedanta Desika Padukasahasra knight's tour"
+  ],
+  "summary": "Verse 15 of the fifth chapter of Rudraṭa's Kāvyālaṅkāra, a ninth-century Kashmiri treatise on poetics, is 32 syllables long and uses only four different syllables. Written row by row into a grid of four rows and eight squares, half a chessboard, it can be read again by following a chess knight from square to square, and it comes out as the same verse. Donald Knuth, in his history of the knight's tour, notes that such half-board tours were published by Kashmiri poets even earlier than the earliest known full-board tours, recorded around 842. Euler's classic paper on the problem came more than nine centuries after Rudraṭa.",
+  "sections": [
+    {
+      "h2": "Thirty-two syllables, four sounds",
+      "paras": [
+        "Here is a verse from ninth-century Kashmir, in transliteration: senā līlīlīnā nālī līnānā nānālīlīlī / nālīnālīle nālīnā līlīlī nānānānālī. Read it aloud and it sounds like a tongue-twister. Count the syllables and there are exactly thirty-two. Count the different syllables and there are only four: se, nā, lī and le.",
+        "It does have a meaning. G. S. S. Murthy, who studied the verse in the journal Resonance in 2020, translates it: 'I, a truthful well-read man, a leader of a group, helpful to servants, praise the army which has as its leader a man who praises playful persons.' Nobody would call it great poetry. It was not written to be. It was written to hide a chess problem."
+      ]
+    },
+    {
+      "h2": "Rudraṭa and figure poetry",
+      "paras": [
+        "The verse comes from the Kāvyālaṅkāra, a Sanskrit treatise on literary theory by Rudraṭa, a Kashmiri writer of the ninth century. Donald Knuth puts him around 815. It is verse 15 of the fifth chapter.",
+        "Rudraṭa discusses citrakāvya in detail: figure poetry, verses whose syllables, set out in a pattern, form a shape or trace a path. Setting a verse on a board was one such figure. The Sanskrit name for the way a knight moves on the board is turaga-pada; turaga means a horse.",
+        "Knuth points out that the verse just before it, 5.14, does the same with a rook's tour. Verse 15 does it with the knight."
+      ]
+    },
+    {
+      "h2": "How the trick works",
+      "paras": [
+        "Draw a grid of four rows and eight columns, half an ordinary chessboard. Write the verse into it one syllable per square, left to right, row by row. Now put a knight on the top-left square and move it as a knight moves in chess: two squares in one direction and one at right angles. If you follow the right path, the knight lands on each of the thirty-two squares exactly once, and the syllables it lands on, in order, spell out the verse again.",
+        "That is what mathematicians call a knight's tour: a path that visits every square of the board once. Rudraṭa's tour does not end a knight's move from where it began, so it is an open tour rather than a closed one. Knuth adds that two copies of the half-board tour, set one above the other, make an open tour of the full board, and that there are in fact two knight's paths consistent with the verse.",
+        "The repetition of four syllables is not a weakness of the poem. It is the engineering. With only four sounds to place, the poet could make the row-by-row reading and the knight's reading produce the same string of syllables."
+      ]
+    },
+    {
+      "h2": "How we know: the commentator's key",
+      "paras": [
+        "The path is supplied by Rudraṭa's commentator Namisādhu, in the form of a second, coded verse. Write that key verse letter by letter over the verse on the grid, Murthy explains, and follow its letters in alphabetical order: that order is the knight's path.",
+        "Murthy also noticed that the key, as printed, is slightly wrong. It reads the letter tha where dha is needed, so tha appears twice and dha not at all. Somewhere in copying or printing, one letter went astray, and the path breaks. With the letter corrected, the key gives a complete tour."
+      ]
+    },
+    {
+      "h2": "What is debated",
+      "paras": [
+        "Was this the first knight's tour anywhere? It depends on what you count. Knuth, in the draft of the Hamiltonian paths and cycles section of The Art of Computer Programming, calls the earliest known solutions on the full board a closed tour presented by the chess writer al-ʿAdlī, whose book he dates to 842, and an open tour credited to an otherwise unknown author, Ibn Manīʿ. He then notes that knight's tours on half a chessboard had been published even earlier, by Kashmiri poets.",
+        "Rudraṭa was not alone. Ratnākara, another Kashmiri, put a pair of knight's tour verses into his long poem Haravijaya, and Knuth puts him around 830. Knuth calls Ratnākara's approach a better idea: two different verses, one read row by row and the other along the knight's path. He also notes that two copies of Ratnākara's half-board tour, one rotated, make a closed tour of the whole board.",
+        "Who came first is not agreed. Knuth places Ratnākara a few years after Rudraṭa; Murthy calls the Haravijaya the earliest poetic work in which the tour appears. Both writers' dates are approximate.",
+        "The idea lasted. Knuth records the figure in Bhoja's Sarasvatīkaṇṭhābharaṇa, around 1050, and in the Pādukāsahasra of Vedānta Deśika, a devotional hymn on the Lord's sandals that Knuth dates to 1313. Deśika wrote a pair of verses: the first is written into the grid row by row, and the second is read off it along the knight's path.",
+        "In Europe, Leonhard Euler wrote the classic mathematical paper on the knight's tour, in volume 15 of the Mémoires of the Berlin Academy, dated 1759. That is more than nine centuries after Rudraṭa."
+      ]
+    },
+    {
+      "h2": "Try it yourself",
+      "paras": [
+        "You need squared paper and a pencil. Number the squares of a four-by-eight grid from 1 to 32, left to right and top to bottom. Write the verse in, one syllable per square. Then visit the squares in this order: 1, 11, 5, 15, 32, 22, 28, 18, 3, 13, 7, 24, 30, 20, 26, 9, 19, 25, 10, 4, 21, 31, 16, 6, 23, 8, 14, 29, 12, 2, 17, 27. Check that every step is a knight's move, and read out the syllables as you go. This is the path Murthy derives from Namisādhu's key.",
+        "Murthy's article, with the verse in Devanagari, the key and the grids, is free to read on the Indian Academy of Sciences website. Knuth's draft, with Rudraṭa's and Ratnākara's grids side by side, is free on his Stanford page."
+      ]
+    },
+    {
+      "h2": "Where this leads",
+      "paras": [
+        "Rudraṭa wrote in Kashmir, and Kashmir's own script for Sanskrit was Śāradā. Our [Reading Śāradā script](sarada-script.html) programme teaches you to read it from manuscripts and inscriptions, and [India's scripts: from Brāhmī to Śāradā](reading-india-s-scripts-brahmi-to-sarada.html) traces how it grew. Our guides to [Sanskrit literature](sanskrit-literature.html), [Sanskrit and Indian knowledge systems](sanskrit-and-indian-knowledge-systems.html) and [heritage sites in Jammu and Kashmir](heritage-sites-in-jammu-and-kashmir.html) take the story further. Next Sunday, 20 December, Durlabh #05 is 'Ittal: the wall paintings of the Sora of Odisha'."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a knight's tour?",
+      "a": "A path on which a chess knight visits every square of a board exactly once. If the last square is a knight's move from the first, the tour is closed; otherwise it is open."
+    },
+    {
+      "q": "Where is Rudraṭa's knight's tour verse?",
+      "a": "In his Kāvyālaṅkāra, a ninth-century Sanskrit treatise on poetics from Kashmir, chapter 5, verse 15. The path is given by the commentator Namisādhu in a coded key verse."
+    },
+    {
+      "q": "Is it the earliest knight's tour?",
+      "a": "It is among the earliest. Donald Knuth gives the tours recorded from al-ʿAdlī's time, around 842, as the earliest known on the full board, and notes that half-board tours had been published even earlier by Kashmiri poets, Rudraṭa and Ratnākara, whose exact dates are uncertain."
+    },
+    {
+      "q": "Did anyone else use the form?",
+      "a": "Yes. Ratnākara's Haravijaya, Bhoja's Sarasvatīkaṇṭhābharaṇa and Vedānta Deśika's Pādukāsahasra all contain knight's tour verses."
+    }
+  ],
+  "sources": [
+    {
+      "text": "Murthy, G. S. S. 'The Knight's Tour Problem and Rudrata's Verse'. Resonance: Journal of Science Education 25, no. 8 (2020): 1095–1116. doi:10.1007/s12045-020-1026-7.",
+      "url": "https://www.ias.ac.in/article/fulltext/reso/025/08/1095-1116"
+    },
+    {
+      "text": "Knuth, Donald E. The Art of Computer Programming, Volume 4, Pre-Fascicle 8A: Hamiltonian Paths and Cycles (section 7.2.2.4, draft dated 4 December 2025), pp. 3–5 and 9.",
+      "url": "https://cs.stanford.edu/content/contacting-donald-knuth/fasc8a.pdf"
+    },
+    {
+      "text": "Rudraṭa. Kāvyālaṅkāra, chapter 5, verses 14–15, with the commentary of Namisādhu (as quoted and translated by Murthy 2020)."
+    },
+    {
+      "text": "Euler, Leonhard. Paper on the knight's tour, Mémoires de l'Académie des sciences de Berlin 15 (1759): 310–337 (cited by Knuth)."
+    },
+    {
+      "text": "Murray, H. J. R. A History of Chess. Oxford, 1913, pp. 175–176 and 336 (on al-ʿAdlī's tours; cited by Knuth)."
+    }
+  ],
+  "sells": "sarada-script",
+  "related_programmes": [
+    "sarada-script",
+    "reading-india-s-scripts-brahmi-to-sarada"
+  ],
+  "related_guides": [
+    "sanskrit-literature",
+    "sanskrit-and-indian-knowledge-systems",
+    "heritage-sites-in-jammu-and-kashmir",
+    "indian-manuscripts"
+  ],
+  "youtube": [],
+  "video_public": false,
+  "check_log": "render/lectures/04-knights-tour/checks.md"
+}
