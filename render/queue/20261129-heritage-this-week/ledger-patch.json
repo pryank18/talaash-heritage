@@ -1,23 +1,78 @@
 {
- "_note": "Ledger changes made 23 Nov 2026 by the 21:43 queue run and checked locally with tools/check_universe.py (OK, 121 items). Not yet in content/universe.json because the connector can only push the whole 82 KB file. The next session that commits universe.json applies these three changes, then deletes this file.",
- "add_after": "tl-week-2026-11-22",
- "add": {
-  "id": "tl-week-2026-11-29",
-  "brand": "talaash",
-  "series": null,
-  "number": null,
-  "field": "heritage",
-  "title": "Heritage this week (29 Nov): two fellowships, the nearest closing 15 January",
-  "status": "scheduled",
-  "slot": "2026-11-29T19:30",
-  "platforms": ["instagram", "facebook", "linkedin"],
-  "page": "news",
-  "sources": "queue sheet row 86; render/queue/20261129-heritage-this-week",
-  "notes": "Stories used: rocher-foundation-postdoctoral-fellowship-in-classical-indology-2027, queens-college-oxford-career-development-fellowship-in-sanskrit, dharma-project-ends-with-database-of-more-than-10000-text-editions, sanskrit-wikisource-texts-released-as-one-iast-download, pampa-textiles-of-karnataka-at-ngma-bengaluru-until-15-december. Left out: india-biennale (Purana Qila lock); ropuiliani museum and older stories (published more than 7 days before, no date ahead). No Durlabh #02 line (long read not live). Three checks 23 Nov 2026; see checks.md."
+ "_note": "Pending ledger changes for content/universe.json, consolidated 24 Nov 2026 21:43 run (replaces the 23 Nov version of this file). Applied locally to universe.json at c92c252 and checked with tools/check_universe.py: OK, 124 items. Not pushed as a whole file because the connector can only push the full 86 KB file. The next session that commits universe.json: insert each 'adds' item after its add_after id, set each field in 'set', set updated to the patch date, run the checker, then empty this file.",
+ "adds": [
+  {
+   "add_after": "tl-week-2026-11-22",
+   "item": {
+    "id": "tl-week-2026-11-29",
+    "brand": "talaash",
+    "series": null,
+    "number": null,
+    "field": "heritage",
+    "title": "Heritage this week (29 Nov): two fellowships, the nearest closing 15 January",
+    "status": "scheduled",
+    "slot": "2026-11-29T19:30",
+    "platforms": [
+     "instagram",
+     "facebook",
+     "linkedin"
+    ],
+    "page": "news",
+    "sources": "queue sheet row 86; render/queue/20261129-heritage-this-week",
+    "notes": "Stories used: rocher-foundation-postdoctoral-fellowship-in-classical-indology-2027, queens-college-oxford-career-development-fellowship-in-sanskrit, dharma-project-ends-with-database-of-more-than-10000-text-editions, sanskrit-wikisource-texts-released-as-one-iast-download, pampa-textiles-of-karnataka-at-ngma-bengaluru-until-15-december. Left out: india-biennale (Purana Qila lock); ropuiliani museum and older stories (published more than 7 days before, no date ahead). No Durlabh #02 line (long read not live). Three checks 23 Nov 2026; see checks.md."
+   }
+  },
+  {
+   "add_after": "tl-deep-ansi-2026",
+   "item": {
+    "id": "tl-deep-bower-manuscript",
+    "brand": "talaash",
+    "series": null,
+    "number": null,
+    "field": "sanskrit",
+    "title": "Deep Story: the Bower Manuscript, Sanskrit on birch bark",
+    "status": "scheduled",
+    "slot": "2026-11-30T19:30",
+    "platforms": [
+     "instagram",
+     "facebook",
+     "linkedin"
+    ],
+    "page": "indian-manuscripts",
+    "topic_lock": [
+     "bower-manuscript"
+    ],
+    "sources": "render/queue/20261125-deep-bower-manuscript/checks.md",
+    "notes": "Built and three-checked 22 Nov 2026 by an owner session as a reserve Deep Story; queued as sheet row 87 for Mon 30 Nov 19:30 by the 24 Nov owner session (Monday careers slot: no dated official careers source yet). Ledger item added 24 Nov 2026 by the 21:43 queue run."
+   }
+  }
+ ],
+ "set": {
+  "tl-gaon-file-sasaram": {
+   "slot": "2026-11-21T12:00",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "notes": "Failed 18 Nov 19:35 (caption over 2,200 characters); fixed and posted 21 Nov 12:20 (row 44) with IG, FB and LinkedIn ids."
+  },
+  "tl-durlabh-01-carousel": {
+   "status": "live",
+   "notes": "built 12 Nov 2026; slides site/media/ig/20261125-durlabh-01-raya-asoko-1.jpg … -8.jpg (8, rendered and checked by eye, 1080×1350, logo on 1 and 8); caption and LinkedIn text in render/lectures/01-raya-asoko/carousel.md. Badge Deep Story. 22 Nov 2026: moved to Mon 23 Nov (teaser video not built); YouTube lecture line removed from slide 8 and both texts. Posted 23 Nov 2026 19:35 (row 75) with IG, FB and LinkedIn ids."
+  },
+  "tl-durlabh-02-carousel": {
+   "status": "scheduled",
+   "notes": "Built 24 Nov 2026 by the Durlabh desk from the checked long read. Slides site/media/ig/20261202-durlabh-02-ajanta-copies-1.jpg … -8.jpg (8, in order; Deep Story badge and logo on 1, logo on 8). Caption and LinkedIn text: render/lectures/02-ajanta-copies/carousel.md (## Caption, ## LinkedIn text). No lecture line: no Durlabh video exists yet. Queued as sheet row 88 (Ready, 2 Dec 19:30) by the 24 Nov owner session (commit c92c252)."
+  },
+  "tl-gurpurab-2026": {
+   "status": "live",
+   "notes": "Special Day carousel, 6 slides, Pryank's own photos of 5 Nov 2026. Sober wording, no 'Happy': some keep Guru Tegh Bahadur Ji's Shaheedi Purab on 24 Nov. Posted 24 Nov 2026 08:10 (row 69) with IG, FB and LinkedIn ids."
+  },
+  "tl-fact-014-amritsar-town-hall": {
+   "status": "live",
+   "notes": "22 Nov 2026: reel failed tools/reel_qc.py (audio), so the slot posts as a 4-slide carousel (render/queue/20261124-fact-amritsar-town-hall); reel held for a rescore. Tuesday Fact as a vertical reel (growth rules 15 Nov). Own photo, cropped so no people show. Posted 24 Nov 2026 19:35 (row 70) with IG, FB and LinkedIn ids."
+  }
  },
- "update": {
-  "tl-durlabh-01-carousel": {"status": "live", "notes_append": " Posted 23 Nov 2026 19:35 (row 75) with IG, FB and LinkedIn ids."},
-  "tl-gaon-file-sasaram": {"slot": "2026-11-21T12:00", "platforms": ["instagram", "facebook", "linkedin"], "notes": "Failed 18 Nov 19:35 (caption over 2,200 characters); fixed and posted 21 Nov 12:20 (row 44) with IG, FB and LinkedIn ids."}
- },
- "updated": "2026-11-23"
+ "updated": "2026-11-24"
 }
