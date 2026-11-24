@@ -23,21 +23,21 @@
     {
       "h2": "Bengal's history in its monuments",
       "paras": [
-        "Bengal's history is written in brick and clay, because the delta has little building stone. Early historic sites such as Chandraketugarh and Pandu Rajar Dhibi produced terracottas and pottery, the Pala kings of the 8th to 12th centuries supported great Buddhist monasteries, and from the 13th century the Bengal Sultans built mosques with curved cornices and brick ornament at Gaur and Pandua.",
-        "Later, the Malla kings of Bishnupur raised terracotta temples, the Nawabs ruled from Murshidabad, and Portuguese, Dutch, Danish, French and British traders founded towns along the Hooghly. Kolkata became the capital of British India until 1911. Our explainer on [indo-islamic architecture](indo-islamic-architecture.html) covers the Sultanate layer."
+        "Bengal's history is written in brick and clay, because the delta has little building stone. Early historic sites such as Chandraketugarh and Pandu Rajar Dhibi produced terracottas and pottery, the Pala kings of the 8th to 12th centuries supported great Buddhist monasteries, and from the 14th century the Bengal Sultans built mosques with curved cornices and brick ornament at Gaur and Pandua.",
+        "Later, the Malla kings of Bishnupur raised terracotta temples, the Nawabs ruled from Murshidabad, and Portuguese, Dutch, Danish, French and British traders founded towns along the Hooghly. Kolkata was the capital of British India until the move to Delhi, announced in 1911. Our explainer on [indo-islamic architecture](indo-islamic-architecture.html) covers the Sultanate layer."
       ]
     },
     {
       "h2": "UNESCO World Heritage Sites in West Bengal",
       "paras": [
-        "Santiniketan, inscribed in 2023, was founded by Rabindranath Tagore as an ashram school in 1901 and grew into Visva-Bharati. It is listed for its experiment in education and for buildings and murals by artists such as Nandalal Bose, Ramkinkar Baij and Benode Behari Mukherjee, which drew on Asian traditions and local materials.",
+        "Santiniketan, inscribed in 2023, grew from the ashram set up by Debendranath Tagore in 1863, where Rabindranath Tagore opened a school in 1901 that grew into Visva-Bharati. It is listed for its experiment in education and for buildings and murals by artists such as Nandalal Bose, which drew on Asian traditions and local materials.",
         "The Darjeeling Himalayan Railway, opened in 1881, was the first of the Mountain Railways of India listed by UNESCO, in 1999. Its loops and zigzags climb to Darjeeling on a two-foot gauge. The Sundarbans National Park, listed in 1987, is a natural site, the mangrove delta home to the Bengal tiger. Our lecture [Culture and heritage](culture-and-heritage-what-we-inherit-and-why-it-matters.html) uses Santiniketan to explain why modern places can be world heritage."
       ]
     },
     {
       "h2": "Bishnupur and Bengal's temple styles",
       "paras": [
-        "Bishnupur, in Bankura district, was the capital of the Malla kings, who built temples in the 17th and 18th centuries covered in terracotta panels showing epics, daily life, hunting and European ships. The Rasmancha, the Jor Bangla temple and the Shyam Rai temple are the best known. They use roof forms copied from Bengali thatched huts, such as the curved do-chala and the char-chala, and spires called ratnas.",
+        "Bishnupur, in Bankura district, was the capital of the Malla kings, who built temples from about 1600 to the 18th century covered in terracotta panels showing epics, daily life and hunting. The Rasmancha, the Jor Bangla temple and the Shyam Rai temple are the best known. They use roof forms copied from Bengali thatched huts, such as the curved do-chala and the char-chala, and spires called ratnas.",
         "Kalna, Baranagar near Azimganj and Antpur have more terracotta temples. Our lecture on [temple sculpture and iconography](temple-sculpture-iconography.html) helps students read the panels, and [Reading sculpture](reading-sculpture.html) teaches the basics."
       ]
     },
@@ -74,7 +74,7 @@
     },
     {
       "name": "Bishnupur temples",
-      "note": "17th and 18th century Malla terracotta temples, including Rasmancha and Jor Bangla.",
+      "note": "Malla terracotta temples of about 1600 to the 18th century, including Rasmancha and Jor Bangla.",
       "unesco": false
     },
     {
@@ -119,7 +119,7 @@
     },
     {
       "name": "Victoria Memorial, Kolkata",
-      "note": "Marble memorial hall completed in 1921, now a museum.",
+      "note": "Marble memorial hall opened in 1921, now a museum.",
       "unesco": false
     },
     {
@@ -166,7 +166,7 @@
     },
     {
       "q": "Why is Bishnupur famous?",
-      "a": "Bishnupur is famous for the terracotta temples built by the Malla kings in the 17th and 18th centuries. Their walls are covered in clay panels showing epics, daily life and hunting, and their roofs copy Bengali thatched huts."
+      "a": "Bishnupur is famous for the terracotta temples built by the Malla kings from about 1600 to the 18th century. Their walls are covered in clay panels showing epics, daily life and hunting, and their roofs copy Bengali thatched huts."
     },
     {
       "q": "What are the main archaeological sites in West Bengal?",
@@ -243,7 +243,7 @@
       {
         "angle": "fact",
         "hook": "Bengal built its temples in clay.",
-        "caption": "With little stone in the delta, the Malla kings of Bishnupur covered temples in terracotta panels of epics, hunts and even European ships."
+        "caption": "With little stone in the delta, the Malla kings of Bishnupur covered temples in terracotta panels of epics, hunts and daily life."
       },
       {
         "angle": "tip",

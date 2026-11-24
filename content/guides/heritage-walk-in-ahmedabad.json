@@ -22,7 +22,7 @@
       "paras": [
         "The site on the east bank of the Sabarmati was settled long before the sultans. An earlier town called Ashaval or Karnavati, associated with the Chaulukya (Solanki) rulers of the 11th century, lay nearby, though its exact extent is still discussed by historians.",
         "Sultan Ahmad Shah I of the Gujarat Sultanate founded the new capital in 1411, beginning with the citadel of Bhadra. Over the next century his successors built some of the finest mosques in India, mixing local temple-building traditions (carved pillars, corbelled domes, stone jali) with the plan of a congregational mosque. The Jama Masjid of 1424 and the jali windows of Sidi Saiyyed Mosque (about 1572 to 1573) are the best known results. Our guide to [Indo-Islamic architecture](indo-islamic-architecture.html) places these buildings in a wider Indian story.",
-        "The Mughals took Gujarat in 1572 to 1573, and Ahmedabad became a great textile and trading city under them, then under the Marathas from the mid 18th century, and the British from 1817. From the 1860s cotton mills made it the 'Manchester of the East'. In 1915 Gandhi set up his first ashram in the city, moving to the Sabarmati site in 1917. After independence, Le Corbusier, Louis Kahn and Charles Correa added modern buildings that are now heritage too."
+        "The Mughals took Gujarat in 1572 to 1573, and Ahmedabad became a great textile and trading city under them, then under the Marathas from the mid 18th century, and the British from the late 1810s. From the 1860s cotton mills made it the 'Manchester of the East'. In 1915 Gandhi set up his first ashram in the city, moving to the Sabarmati site in 1917. After independence, Le Corbusier, Louis Kahn and Charles Correa added modern buildings that are now heritage too."
       ]
     },
     {
@@ -44,13 +44,13 @@
     {
       "h2": "Beyond the walls: stepwells, rozas and modern heritage",
       "paras": [
-        "Adalaj stepwell, built in 1499 by Rani Rudabai, wife of a Vaghela chief, is five storeys deep with carved landings and octagonal openings. Dada Harir stepwell inside the city, built around 1499 to 1500, is plainer and less crowded. Both show how Gujarat turned a practical water source into public architecture.",
+        "Adalaj stepwell, built in 1499 by Rani Rudabai, is five storeys deep with carved landings and octagonal openings. Dada Harir stepwell inside the city, built around 1499 to 1500, is plainer and less crowded. Both show how Gujarat turned a practical water source into public architecture.",
         "Sarkhej Roza, a complex of tomb, mosque and tank built in the 15th century around the shrine of the Sufi saint Ahmad Khattu Ganj Bakhsh, is a calm, open contrast to the old city. Later layers include the Sabarmati Ashram and its museum by Charles Correa, and the Indian Institute of Management campus by Louis Kahn, both worth seeing for older students of architecture."
       ]
     }
   ],
   "stops": [
-    {"name": "Bhadra Fort", "period": "1411", "note": "The first citadel of Ahmad Shah I. Look at the gateway and the Bhadrakali shrine inside."},
+    {"name": "Bhadra Fort", "period": "Begun 1411", "note": "The first citadel of Ahmad Shah I. Look at the gateway and the Bhadrakali shrine inside."},
     {"name": "Teen Darwaza", "period": "1415", "note": "Triple gateway that once led from the citadel to the royal square; the market around it is busy all day."},
     {"name": "Jama Masjid", "period": "1424", "note": "Congregational mosque with 260 pillars and a prayer hall that borrows from local temple design."},
     {"name": "Tomb of Ahmad Shah (Badshah no Hajiro)", "period": "15th century", "note": "Tomb of the city's founder, just east of the Jama Masjid, with fine stone screens."},
@@ -62,7 +62,7 @@
     {"name": "Kalupur Swaminarayan Temple", "period": "1822", "note": "First temple of the Swaminarayan sect, with brightly painted carved wood."},
     {"name": "Hutheesing Jain Temple", "period": "1848", "note": "White marble temple built by a merchant family, just outside Delhi Darwaza."},
     {"name": "Sidi Bashir Mosque (Shaking Minarets)", "period": "15th century", "note": "Only the minarets survive, known for transmitting vibration from one to the other."},
-    {"name": "Dada Harir Stepwell", "period": "About 1499 to 1500", "note": "Five-level stepwell in Asarwa with Sanskrit and Arabic inscriptions."},
+    {"name": "Dada Harir Stepwell", "period": "About 1499 to 1500", "note": "Five-level stepwell in Asarwa with inscriptions."},
     {"name": "Adalaj Stepwell", "period": "1499", "note": "Ornate stepwell north of the city; a vehicle is needed."},
     {"name": "Sarkhej Roza", "period": "15th century", "note": "Tomb, mosque and tank complex south-west of the city; a vehicle is needed."},
     {"name": "Sabarmati Ashram", "period": "1917", "note": "Gandhi's home from 1917 to 1930 and the starting point of the Dandi March."}

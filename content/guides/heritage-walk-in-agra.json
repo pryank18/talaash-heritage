@@ -15,8 +15,8 @@
       "Most visitors see the Taj Mahal and leave. The city is better understood as a river city: the Mughal nobility built walled gardens, pavilions and tombs along both banks of the Yamuna, and the Taj is the grandest of them. A walk that follows the river makes sense of why the Taj sits where it does and faces the way it does."
     ]},
     {"h2": "Layers of Agra's history", "paras": [
-      "Before the Mughals, Agra was a fortified Lodi settlement, and little of that period survives above ground. Babur laid out the first Mughal garden in India on the left bank in the 1520s, now known as Ram Bagh (Aram Bagh).",
-      "Akbar rebuilt Agra Fort in red sandstone from 1565 and founded Fatehpur Sikri in the 1570s as a new capital, which he left within about 15 years. Jahangir's reign brought the tomb of Itmad-ud-Daula (1622 to 1628), built by Nur Jahan for her father, with fine stone inlay that anticipates the Taj. Shah Jahan built the Taj Mahal (begun 1632) for Mumtaz Mahal, added white marble palaces inside the fort, and had the Jama Masjid built in his daughter Jahanara's name in 1648.",
+      "Before the Mughals, Agra was a fortified Lodi settlement, and little of that period survives above ground. Babur is said to have laid out the first Mughal garden in India on the left bank in the 1520s, now known as Ram Bagh (Aram Bagh).",
+      "Akbar rebuilt Agra Fort in red sandstone from 1565 and founded Fatehpur Sikri in the 1570s as a new capital, which he left within about 15 years. Jahangir's reign brought the tomb of Itmad-ud-Daula (1622 to 1628), built by Nur Jahan for her father, with fine stone inlay that anticipates the Taj. Shah Jahan built the Taj Mahal (begun 1632) for Mumtaz Mahal, added white marble palaces inside the fort, and in his reign the Jama Masjid, built by his daughter Jahanara, was completed in 1648.",
       "Later layers include Jat and Maratha control in the 18th century, British cantonment buildings, and the Roman Catholic cemetery with early European graves. The [Mughal architecture](mughal-architecture.html) guide explains how the style developed across these sites."
     ]},
     {"h2": "What you see on an Agra walk", "paras": [
@@ -35,13 +35,13 @@
   "stops": [
     {"name": "Taj Mahal", "period": "1632 to about 1648", "note": "Shah Jahan's tomb for Mumtaz Mahal; look at the inlay, the calligraphy that enlarges as it rises, and the mosque and guest hall on either side."},
     {"name": "Agra Fort", "period": "1565 onward", "note": "Akbar's red sandstone fort with Jahangiri Mahal, and Shah Jahan's marble Khas Mahal, Diwan-i-Khas and Musamman Burj."},
-    {"name": "Jama Masjid, Agra", "period": "1648", "note": "Congregational mosque commissioned in Jahanara's name, facing the fort across the railway line."},
+    {"name": "Jama Masjid, Agra", "period": "completed 1648", "note": "Congregational mosque built by Jahanara, facing the fort across the railway line."},
     {"name": "Kinari Bazaar", "period": "Mughal period onward", "note": "Old city market lanes behind the Jama Masjid, with havelis and trade streets."},
     {"name": "Itmad-ud-Daula's Tomb", "period": "1622 to 1628", "note": "Nur Jahan's tomb for her father, often called the Baby Taj, with early white marble and stone inlay."},
     {"name": "Chini ka Rauza", "period": "about 1635", "note": "Tomb of Afzal Khan Shirazi, notable for glazed tile work in a Persian manner."},
     {"name": "Ram Bagh", "period": "1520s, later altered", "note": "Associated with Babur's first garden in India, with raised walkways and water channels."},
     {"name": "Mehtab Bagh", "period": "Shah Jahan's reign", "note": "Moonlight garden on the left bank, aligned with the Taj; excavated and replanted from the 1990s."},
-    {"name": "Akbar's Tomb, Sikandra", "period": "completed about 1613", "note": "Akbar's tomb, finished by Jahangir, with a gateway of inlaid stone and minarets."},
+    {"name": "Akbar's Tomb, Sikandra", "period": "early 17th century", "note": "Akbar's tomb, with a gateway of inlaid stone and minarets."},
     {"name": "Mariam-uz-Zamani's Tomb", "period": "1620s", "note": "Tomb of Akbar's wife near Sikandra, in a building that began as a Lodi structure."},
     {"name": "Roman Catholic Cemetery, Agra", "period": "17th century onward", "note": "Early European graves including the Hessing tomb, a red sandstone tomb in Mughal style."},
     {"name": "Fatehpur Sikri", "period": "1571 to 1585", "note": "Akbar's walled capital with the Jama Masjid, Buland Darwaza, Panch Mahal and Diwan-i-Khas. About 40 km by road."}

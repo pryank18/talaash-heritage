@@ -18,7 +18,7 @@
     "lakhudiyar rock paintings",
     "nanda devi and valley of flowers"
   ],
-  "summary": "Uttarakhand has one UNESCO listing, the Nanda Devi and Valley of Flowers National Parks, a natural site. Its cultural heritage includes Ashoka's rock edict at Kalsi, the stone temple clusters of Jageshwar and Baijnath, the Katarmal sun temple, painted rock shelters at Lakhudiyar, the early brick temple at Jagatgram and the Char Dham shrines.",
+  "summary": "Uttarakhand has one UNESCO listing, the Nanda Devi and Valley of Flowers National Parks, a natural site. Its cultural heritage includes Ashoka's rock edict at Kalsi, the stone temple clusters of Jageshwar and Baijnath, the Katarmal sun temple, painted rock shelters at Lakhudiyar, the brick ashvamedha altars at Jagatgram and the Char Dham shrines.",
   "sections": [
     {
       "h2": "Uttarakhand's heritage beyond pilgrimage",
@@ -37,7 +37,7 @@
     {
       "h2": "Ancient temples in Kumaon and Garhwal",
       "paras": [
-        "Jageshwar, in a deodar forest near Almora, has more than a hundred stone temples built from about the 7th to the 12th or 13th centuries, most in the Nagara style with curved towers capped by wooden canopies. Baijnath, near Garur, is another Katyuri-period group beside the Gomati river. The Katarmal sun temple, on a hill near Almora, is a 13th century complex whose carved wooden doors are now in the National Museum in New Delhi.",
+        "Jageshwar, in a deodar forest near Almora, has a large group of stone temples built over several centuries from about the 8th century, most in the Nagara style with curved towers. Baijnath, near Garur, is another Katyuri-period group beside the Gomati river. The Katarmal sun temple, on a hill near Almora, is a complex usually dated to about the 12th to 13th century, whose carved wooden doors are now in the National Museum in New Delhi.",
         "In Garhwal, the temples of Lakhamandal, Adi Badri and Pandukeshwar, and the great shrines of Kedarnath and Badrinath, continue the tradition. Our lecture [Nagara temple architecture](nagara-temple-architecture.html) is the best preparation for these mountain temples, which adapt the plains style to snow and timber."
       ]
     },
@@ -74,7 +74,7 @@
     },
     {
       "name": "Jageshwar temples",
-      "note": "Over a hundred stone temples of about the 7th to 13th centuries near Almora.",
+      "note": "Large group of stone temples from about the 8th century onward, near Almora.",
       "unesco": false
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "name": "Katarmal Sun Temple",
-      "note": "13th century sun temple complex on a hill near Almora.",
+      "note": "Sun temple complex on a hill near Almora, usually dated to about the 12th to 13th century.",
       "unesco": false
     },
     {
@@ -124,7 +124,7 @@
     },
     {
       "name": "Chandpur Garhi",
-      "note": "Ruins of an early Garhwal royal fort in Chamoli district.",
+      "note": "Ruins of an early fort in Chamoli district.",
       "unesco": false
     }
   ],
@@ -150,7 +150,7 @@
     },
     {
       "q": "Which are the oldest temples in Uttarakhand?",
-      "a": "The temple groups of Jageshwar, Baijnath and Lakhamandal include some of the oldest, with buildings from about the 7th century onward. The brick altars at Jagatgram are older still, but they are sacrificial altars rather than temples."
+      "a": "The temple groups of Jageshwar, Baijnath and Lakhamandal include some of the oldest, with buildings from about the 8th century onward. The brick altars at Jagatgram are older still, but they are sacrificial altars rather than temples."
     },
     {
       "q": "Where can you see rock paintings in Uttarakhand?",
@@ -227,7 +227,7 @@
       {
         "angle": "tip",
         "hook": "At Jageshwar, look up.",
-        "caption": "Many towers wear wooden canopies over the stone. They are a mountain answer to snow and rain on a plains temple form."
+        "caption": "The curved stone towers follow the Nagara form of the plains, built here in a deodar forest from about the 8th century."
       },
       {
         "angle": "offer",
