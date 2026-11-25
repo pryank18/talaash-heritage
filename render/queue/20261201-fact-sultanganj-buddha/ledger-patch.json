@@ -1,0 +1,39 @@
+{
+ "_note": "Pending ledger changes, 25 Nov 2026 21:43 run. Apply AFTER render/queue/20261129-heritage-this-week/ledger-patch.json, same method (insert adds after add_after, update fields in set, updated to 2026-11-25), run tools/check_universe.py (checked here on the combined result: OK, 125 items, next fact 018), then empty both files.",
+ "adds": [
+  {
+   "add_after": "tl-fact-015-panini-backus",
+   "item": {
+    "id": "tl-fact-017-sultanganj-buddha",
+    "brand": "talaash",
+    "series": "fact",
+    "number": 17,
+    "field": "archaeology",
+    "title": "Fact 017: the Sultanganj Buddha, 223 cm, found by railway engineers looking for ballast",
+    "status": "scheduled",
+    "slot": "2026-12-01T19:30",
+    "platforms": [
+     "instagram",
+     "facebook",
+     "linkedin"
+    ],
+    "page": "heritage-sites-in-bihar",
+    "topic_lock": [
+     "sultanganj-buddha"
+    ],
+    "sources": "render/queue/20261201-fact-sultanganj-buddha/checks.md",
+    "notes": "Tuesday evidence Fact (museum record BMAG 1885A1116). Built and three-checked 25 Nov 2026 21:43 run; 5 slides, Fact badge, logo on 1 and 5; image Birmingham Museums CC0 via Commons. Queued as sheet row 89."
+   }
+  }
+ ],
+ "set": {
+  "tl-since-when-01-rupee": {
+   "slot": "2026-12-01",
+   "notes": "25 Nov 2026: time removed (still an idea, not built); the Tue 1 Dec 19:30 Instagram slot went to Fact 017 Sultanganj Buddha. Give it a free 19:30 slot when built, keeping since-when numbers in order."
+  },
+  "tl-deep-ansi-2026": {
+   "status": "live"
+  }
+ },
+ "updated": "2026-11-25"
+}
