@@ -20,14 +20,14 @@
     {
       "h2": "Historical places in Bhubaneswar by period",
       "paras": [
-        "The Mauryan layer is at Dhauli, where Ashoka's edicts were cut into a rock face after the Kalinga war in the 3rd century BCE, with a carved elephant above them. The 1st century BCE belongs to Kharavela of the Mahameghavahana dynasty and the Jain monastic caves of Udayagiri and Khandagiri. Sisupalgarh, on the city's eastern edge, was occupied from around the 5th or 4th century BCE to the 4th century CE and is still being studied.",
+        "The Mauryan layer is at Dhauli, where Ashoka's edicts were cut into a rock face after the Kalinga war in the 3rd century BCE, with a carved elephant above them. Around the 1st century BCE (some scholars place it earlier) come Kharavela of the Chedi (Mahameghavahana) line and the Jain monastic caves of Udayagiri and Khandagiri. Sisupalgarh, on the city's eastern edge, was occupied for many centuries from about the middle of the first millennium BCE, and is still being studied.",
         "The temple sequence runs from the Parasuramesvara (about 7th century) and Vaital Deula (about 8th century) through the Mukteswara (about 10th century, often called the gem of Odisha architecture) and Rajarani (about 11th century) to the Lingaraja (about 11th century). The Ananta Vasudeva (13th century) is a Vaishnava temple of the Eastern Ganga period."
       ],
       "table": {
         "head": ["Period", "Examples"],
         "rows": [
           ["Mauryan, 3rd century BCE", "Dhauli rock edicts and elephant"],
-          ["Early historic, about 5th century BCE to 4th century CE", "Sisupalgarh fortified city, Udayagiri and Khandagiri caves"],
+          ["Early historic, from about the mid-first millennium BCE", "Sisupalgarh fortified city, Udayagiri and Khandagiri caves"],
           ["Early Kalinga temples, 7th to 9th century", "Parasuramesvara, Vaital Deula"],
           ["Mature Kalinga temples, 10th to 13th century", "Mukteswara, Rajarani, Lingaraja, Ananta Vasudeva"]
         ]
@@ -61,7 +61,7 @@
   ],
   "stops": [
     {"name": "Parasuramesvara Temple", "period": "About 7th century", "note": "One of the best preserved early Kalinga temples. Compare its tower and hall with later ones."},
-    {"name": "Vaital Deula", "period": "About 8th century", "note": "Unusual temple with a wagon-vaulted roof (khakhara form), dedicated to the goddess Chamunda."},
+    {"name": "Vaital Deula", "period": "About 8th century", "note": "Unusual temple with a wagon-vaulted roof, dedicated to the goddess Chamunda."},
     {"name": "Mukteswara Temple", "period": "About 10th century", "note": "Small, richly carved temple with a free-standing torana gateway."},
     {"name": "Siddheswara Temple", "period": "About 10th to 11th century", "note": "Plain but mature temple beside the Mukteswara, useful for comparison."},
     {"name": "Kedara Gauri Temple", "period": "About 10th to 11th century", "note": "Temple pair near the Mukteswara with a sacred tank."},
@@ -69,10 +69,10 @@
     {"name": "Bindusagar tank", "period": "Medieval", "note": "Large sacred tank at the heart of the Old Town, surrounded by shrines."},
     {"name": "Lingaraja Temple", "period": "About 11th century", "note": "The largest temple in the city. Non-Hindus view it from a platform beside the outer wall."},
     {"name": "Ananta Vasudeva Temple", "period": "13th century", "note": "Vaishnava temple of the Eastern Ganga period on the bank of the Bindusagar."},
-    {"name": "Udayagiri caves", "period": "About 1st century BCE", "note": "Jain monastic caves including the Rani Gumpha and the Hathigumpha inscription of Kharavela."},
-    {"name": "Khandagiri caves", "period": "About 1st century BCE, later additions", "note": "Caves on the facing hill with later Jain images and a hilltop temple."},
+    {"name": "Udayagiri caves", "period": "About 1st century BCE", "note": "Jain monastic caves of about the 1st century BCE (debated), including the Rani Gumpha and the Hathigumpha inscription of Kharavela."},
+    {"name": "Khandagiri caves", "period": "About 1st century BCE (debated), later additions", "note": "Caves on the facing hill with later Jain images and a hilltop temple."},
     {"name": "Dhauli", "period": "3rd century BCE", "note": "Ashoka's rock edicts with a carved elephant above them. About 8 km south; vehicle needed."},
-    {"name": "Sisupalgarh", "period": "About 5th century BCE to 4th century CE", "note": "Fortified early historic city with gateways and a pillared structure. Vehicle needed."}
+    {"name": "Sisupalgarh", "period": "From about the mid-first millennium BCE", "note": "Fortified early historic city with gateways and a pillared structure. Vehicle needed."}
   ],
   "routes": [
     {"name": "Old Town temples on foot", "length": "About 3 hours", "stops": ["Parasuramesvara Temple", "Mukteswara Temple", "Siddheswara Temple", "Kedara Gauri Temple", "Vaital Deula", "Bindusagar tank", "Ananta Vasudeva Temple", "Lingaraja Temple"]},
@@ -90,7 +90,7 @@
     {"q": "Can non-Hindus enter the Lingaraja Temple?", "a": "No. Entry is restricted to Hindus. There is a viewing platform beside the outer wall from which visitors can see the main tower and the complex."},
     {"q": "What is written at Dhauli?", "a": "Dhauli has a set of Ashoka's major rock edicts, including two separate edicts addressed to officials in Kalinga about fair treatment of the people. They are in Prakrit in the Brahmi script."},
     {"q": "How many days do school groups need in Bhubaneswar?", "a": "One full day covers the Old Town and the caves. Add a day for Dhauli and the State Museum, and another for Konark and Puri if you want the full Odisha temple circuit."},
-    {"q": "Is Bhubaneswar a UNESCO World Heritage Site?", "a": "No. Odisha's UNESCO site is the Konark Sun Temple, inscribed in 1984, about 65 km from Bhubaneswar."}
+    {"q": "Is Bhubaneswar a UNESCO World Heritage Site?", "a": "No. Odisha's UNESCO site is the Konark Sun Temple, inscribed in 1984, within a day trip of Bhubaneswar."}
   ],
   "related_programmes": ["bhubaneswar-ekamra-temples-and-urban-sacred-landscape.html", "udayagiri-khandagiri-caves-jain-heritage.html", "konark-sun-temple-architecture-and-astronomy.html", "kalinga-temple-architecture.html", "temples-of-eastern-india.html", "reading-sculpture.html", "write-like-asoka-s-scribes-a-brahmi-workshop.html", "museum-morning-with-an-archaeologist.html"],
   "related_guides": ["heritage-sites-in-odisha", "ashoka-and-his-edicts", "indian-temple-architecture", "brahmi-script", "buddhist-caves-in-india", "heritage-walk-in-kolkata"],

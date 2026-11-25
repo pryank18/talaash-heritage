@@ -20,15 +20,15 @@
     {
       "h2": "Layers of history in Badami, Aihole and Pattadakal",
       "paras": [
-        "Pulakeshin I fortified Vatapi (Badami) around 540 CE; an inscription on a boulder records this. His sons and grandson expanded the kingdom, and Pulakeshin II (ruled about 610 to 642) is known for checking the northern king Harsha on the Narmada, and for the Aihole inscription of 634 CE composed by the poet Ravikirti. The Pallavas of Kanchipuram sacked Badami around 642, and the Chalukyas recovered later. In 753 to 757 the Rashtrakutas took over.",
-        "Aihole has more than a hundred temples of different dates, from about the 6th to the 12th century, and is often described as a place where builders tried out ideas. The Durga temple, with its apsidal plan, and the Lad Khan temple are the best known. Pattadakal, where later Chalukya kings were crowned, has a group of 8th century temples including the Virupaksha temple, built around 740 by Queen Lokamahadevi to celebrate a victory over the Pallavas, alongside the Nagara-style Papanatha and Galaganatha temples. It was inscribed by UNESCO in 1987.",
-        "Later layers include the Bhutanatha temples on the tank (7th and 11th centuries), a Tipu Sultan-era treasury on the North Fort, and an 18th century mosque and tombs. A good companion session is the lecture on [early structural temples](early-structural-temples.html), which follows the move from caves to built temples."
+        "Pulakeshin I fortified Vatapi (Badami) around 540 CE. His sons and grandson expanded the kingdom, and Pulakeshin II (ruled about 610 to 642) is known for checking the northern king Harsha on the Narmada, and for the Aihole inscription of 634 CE composed by the poet Ravikirti. The Pallavas of Kanchipuram sacked Badami around 642, and the Chalukyas recovered later. By 757 the Rashtrakutas had taken over.",
+        "Aihole has more than a hundred temples of different dates, built over several centuries up to the 12th, and is often described as a place where builders tried out ideas. The Durga temple, with its apsidal plan, and the Lad Khan temple are the best known. Pattadakal, a royal centre of the Chalukyas, has a group of 8th century temples including the Virupaksha temple, built around 740 by Queen Lokamahadevi to celebrate a victory over the Pallavas, alongside the Nagara-style Galaganatha temple and the Papanatha, which combines northern and southern features. It was inscribed by UNESCO in 1987.",
+        "Later layers include additions to the Bhutanatha temples on the tank, and the granaries and treasury on the North Fort, where a cannon is linked to Tipu Sultan. A good companion session is the lecture on [early structural temples](early-structural-temples.html), which follows the move from caves to built temples."
       ]
     },
     {
       "h2": "What you see on a Badami heritage walk",
       "paras": [
-        "The walk climbs the southern cliff through the four cave temples in order. Cave 1 (Shaiva) has a dancing Shiva with eighteen arms. Cave 2 and Cave 3 are Vaishnava; Cave 3, dated by inscription to 578 CE under Mangalesha, has the largest and finest carving, including Trivikrama and Vishnu seated on the serpent. Cave 4 is Jain, with Mahavira and Tirthankara figures. Natural caves and a small Buddhist shrine lie nearby.",
+        "The walk climbs the southern cliff through the four cave temples in order. Cave 1 (Shaiva) has a dancing Shiva with eighteen arms. Cave 2 and Cave 3 are Vaishnava; Cave 3, dated by inscription to 578 CE under Mangalesha, has the largest and finest carving, including Trivikrama and Vishnu with the serpent Shesha. Cave 4 is Jain, with Mahavira and Tirthankara figures. Natural caves and a small Buddhist shrine lie nearby.",
         "From the caves you look across Agastya lake to the Bhutanatha temples and the North Fort. Walking round the tank brings you to the Bhutanatha group, then up the North Fort path to the Upper and Lower Shivalaya temples and the Malegitti Shivalaya, an early Dravida temple. The [Reading a temple](how-to-read-a-temple.html) session gives students a vocabulary for plinth, wall, shrine and tower before they arrive."
       ]
     },
@@ -43,14 +43,14 @@
   "stops": [
     {"name": "Badami Cave 1", "period": "Late 6th century CE", "note": "Shaiva cave with an eighteen-armed dancing Shiva and Ardhanarishvara panels."},
     {"name": "Badami Cave 2", "period": "Late 6th century CE", "note": "Vaishnava cave with Varaha and Trivikrama panels and carved ceilings."},
-    {"name": "Badami Cave 3", "period": "578 CE (inscribed)", "note": "Largest cave, Vaishnava, with fine sculpture and traces of painting on the ceiling."},
-    {"name": "Badami Cave 4", "period": "About 7th century CE", "note": "Jain cave with Mahavira, Parshvanatha and Bahubali figures."},
+    {"name": "Badami Cave 3", "period": "578 CE (inscribed)", "note": "Largest cave, Vaishnava, with the finest sculpture of the four."},
+    {"name": "Badami Cave 4", "period": "Early Chalukya period", "note": "Jain cave with Mahavira and other Tirthankara figures."},
     {"name": "Agastya Tirtha (lake)", "period": "Early Chalukya period", "note": "Tank around which the town is built; ghats and shrines along its banks."},
-    {"name": "Bhutanatha temples", "period": "7th century and about 11th century", "note": "Temple group on the east side of the lake, with a later Jain rock-cut shrine nearby."},
-    {"name": "Badami North Fort", "period": "Chalukya, with 18th century additions", "note": "Ridge with granaries, a treasury and gun points; rocky climb."},
-    {"name": "Upper and Lower Shivalaya", "period": "7th century CE", "note": "Early structural temples on the North Fort, with Dravida towers."},
-    {"name": "Malegitti Shivalaya", "period": "Late 7th century CE", "note": "Small, well-proportioned Dravida temple on a boulder."},
-    {"name": "Durga Temple, Aihole", "period": "About 8th century CE", "note": "Apsidal temple with a surrounding colonnade; vehicle needed."},
+    {"name": "Bhutanatha temples", "period": "Early Chalukya, with later additions", "note": "Temple group on the east side of the lake, with a later Jain rock-cut shrine nearby."},
+    {"name": "Badami North Fort", "period": "Chalukya, with later additions", "note": "Ridge with granaries, a treasury and gun points; rocky climb."},
+    {"name": "Upper and Lower Shivalaya", "period": "Early Chalukya period", "note": "Early structural temples on the North Fort, with Dravida towers."},
+    {"name": "Malegitti Shivalaya", "period": "Early Chalukya period", "note": "Small, well-proportioned Dravida temple on a boulder."},
+    {"name": "Durga Temple, Aihole", "period": "Late 7th or early 8th century CE", "note": "Apsidal temple with a surrounding colonnade; vehicle needed."},
     {"name": "Lad Khan Temple, Aihole", "period": "About 5th to 7th century CE (dates debated)", "note": "Flat-roofed temple once thought very early; good for discussing how we date temples."},
     {"name": "Meguti Jain Temple, Aihole", "period": "634 CE", "note": "Hilltop temple with the Aihole inscription of Ravikirti."},
     {"name": "Virupaksha Temple, Pattadakal", "period": "About 740 CE", "note": "Large Dravida temple built by Queen Lokamahadevi; UNESCO site; vehicle needed."},
@@ -62,7 +62,7 @@
     {"name": "Aihole and Pattadakal (vehicle needed)", "length": "A full day", "stops": ["Durga Temple, Aihole", "Lad Khan Temple, Aihole", "Meguti Jain Temple, Aihole", "Virupaksha Temple, Pattadakal", "Papanatha Temple, Pattadakal"]}
   ],
   "museums": [
-    {"name": "ASI Archaeological Museum, Badami", "note": "Chalukya sculpture from the region, including a striking Lajja Gauri image, near the North Fort path."},
+    {"name": "ASI Archaeological Museum, Badami", "note": "Chalukya sculpture from the region, near the North Fort path."},
     {"name": "ASI Sculpture Gallery, Aihole", "note": "Sculpture from Aihole's many temples, beside the Durga temple complex."}
   ],
   "best_time": "October to February. The rocks get very hot from March; the monsoon brings fewer visitors and a full lake.",

@@ -12,10 +12,10 @@
   "sections": [
     {"h2": "Why Amritsar matters", "paras": [
       "Amritsar is the central city of Sikh history. Guru Ram Das, the fourth Guru, founded the settlement around a sacred tank in the 1570s, and Guru Arjan Dev, the fifth Guru, built Harmandir Sahib in its centre and installed the Adi Granth there in 1604. The Akal Takht, facing it, was established by Guru Hargobind as the seat of temporal authority.",
-      "The city is also essential for the history of colonial rule and the freedom movement. The Jallianwala Bagh massacre of 13 April 1919 changed Indian opinion of British rule, and Amritsar, 30 km from the Wagah border, was deeply affected by Partition in 1947. A walk here moves from religious architecture to political memory within a few hundred metres."
+      "The city is also essential for the history of colonial rule and the freedom movement. The Jallianwala Bagh massacre of 13 April 1919 changed Indian opinion of British rule, and Amritsar, close to the Wagah border, was deeply affected by Partition in 1947. A walk here moves from religious architecture to political memory within a few hundred metres."
     ]},
     {"h2": "Layers of Amritsar's history", "paras": [
-      "The early town grew as a pilgrimage and trading centre under the Gurus in the late 16th and 17th centuries. In the 18th century Harmandir Sahib was damaged more than once in fighting with Afghan armies, including by Ahmad Shah Abdali in the 1760s, and rebuilt by the Sikh misls. Each misl built a katra, a walled trading quarter, around the temple, which is why the old city is a mosaic of neighbourhoods named after their founders.",
+      "The early town grew as a pilgrimage and trading centre under the Gurus in the late 16th and 17th centuries. In the 18th century Harmandir Sahib was damaged more than once in fighting with Afghan armies, and rebuilt by the Sikh misls by the 1770s. Misl chiefs built katras, a walled trading quarter, around the temple, which is why the old city is a mosaic of neighbourhoods named after their founders.",
       "Maharaja Ranjit Singh (ruled 1801 to 1839) covered the upper storeys of Harmandir Sahib in gilded copper, rebuilt Gobindgarh Fort, and laid out the Ram Bagh garden with its summer palace. After the British annexed Punjab in 1849 they added the Town Hall, the railway and the cantonment. The 20th century layers are 1919, Partition in 1947 and Operation Blue Star in 1984, which damaged the Akal Takht; that last event is handled historically and with care on a walk.",
       "The [Indian history timeline](indian-history-timeline.html) places these events in a wider sequence, and the lecture [Sacred architecture across communities](sacred-architecture-across-communities.html) helps students compare a gurdwara with temples, mosques and churches."
     ]},
@@ -29,18 +29,18 @@
     ]}
   ],
   "stops": [
-    {"name": "Harmandir Sahib", "period": "founded 1580s to 1604, rebuilt 1760s, gilded 1830s", "note": "The Golden Temple in its tank; look at the causeway, the marble inlay and the four entrances."},
-    {"name": "Akal Takht", "period": "1606, rebuilt", "note": "Seat of Sikh temporal authority facing Harmandir Sahib, rebuilt after 1984."},
+    {"name": "Harmandir Sahib", "period": "completed 1604, rebuilt by the 1770s, gilded early 19th century", "note": "The Golden Temple in its tank; look at the causeway, the marble inlay and the four entrances."},
+    {"name": "Akal Takht", "period": "Early 17th century, rebuilt", "note": "Seat of Sikh temporal authority facing Harmandir Sahib, rebuilt after 1984."},
     {"name": "Guru Ka Langar", "period": "continuing tradition", "note": "Community kitchen of Harmandir Sahib; a lesson in how a religious institution organises food and labour."},
     {"name": "Jallianwala Bagh", "period": "13 April 1919", "note": "Walled garden where General Dyer's troops fired on an unarmed crowd; memorial, well and bullet-marked walls."},
-    {"name": "Partition Museum", "period": "Town Hall 1860s, museum 2017", "note": "Museum of oral histories and objects from 1947, in the colonial Town Hall."},
-    {"name": "Town Hall", "period": "1860s to 1870s", "note": "Colonial administrative building on the edge of the walled city."},
+    {"name": "Partition Museum", "period": "Colonial Town Hall, museum 2017", "note": "Museum of oral histories and objects from 1947, in the colonial Town Hall."},
+    {"name": "Town Hall", "period": "19th century", "note": "Colonial administrative building on the edge of the walled city."},
     {"name": "Katra Jaimal Singh and the old bazaars", "period": "18th to 19th century", "note": "Misl-era trading quarters with havelis, gateways and specialist markets."},
     {"name": "Durgiana Temple", "period": "rebuilt 1921", "note": "Hindu temple in a tank, built on a plan that echoes Harmandir Sahib."},
     {"name": "Gobindgarh Fort", "period": "18th century, rebuilt 1805 to 1809", "note": "Brick fort strengthened by Ranjit Singh, later a British and Indian Army post."},
-    {"name": "Ram Bagh and Maharaja Ranjit Singh Panorama", "period": "1818 onward", "note": "Ranjit Singh's summer palace garden; the palace now houses a museum."},
-    {"name": "Khalsa College", "period": "1892", "note": "Indo-Saracenic college building by Ram Singh, a landmark of late 19th century Punjab."},
-    {"name": "Saragarhi Gurdwara", "period": "1902", "note": "Memorial gurdwara near Harmandir Sahib for the soldiers killed at Saragarhi in 1897."}
+    {"name": "Ram Bagh and Maharaja Ranjit Singh Panorama", "period": "1819 onward", "note": "Ranjit Singh's summer palace garden; the palace now houses a museum."},
+    {"name": "Khalsa College", "period": "1892", "note": "College building designed by Bhai Ram Singh, mixing Indian and colonial styles; a landmark of late 19th century Punjab."},
+    {"name": "Saragarhi Gurdwara", "period": "Built after the battle of 1897", "note": "Memorial gurdwara near Harmandir Sahib for the soldiers killed at Saragarhi in 1897."}
   ],
   "routes": [
     {"name": "The walled city on foot", "length": "About 3 hours", "stops": ["Harmandir Sahib", "Akal Takht", "Guru Ka Langar", "Jallianwala Bagh", "Saragarhi Gurdwara", "Katra Jaimal Singh and the old bazaars", "Town Hall", "Partition Museum"]},
