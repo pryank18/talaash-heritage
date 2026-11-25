@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-24 17:14 UTC",
+ "checked_at": "2026-11-25 17:19 UTC",
  "slides": [
   {
    "post": "20261025-sharad-purnima",
@@ -386,6 +386,18 @@
    "credit": "http://www.bl.uk/onlinegallery/onlineex/apac/photocoll/s/019pho000001003u00751000.html",
    "license_url": "",
    "page": "https://commons.wikimedia.org/wiki/File:500_CE%2C_south_side%2C_outer_wall_sanctum_sculpture_panel%2C_Deogarh_Hindu_Dashavatara_temple%2C_1875_photo.jpg"
+  },
+  {
+   "post": "20261201-fact-sultanganj-buddha",
+   "slide": "2.html",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/The_Sultanganj_Buddha.jpg",
+   "file": "The_Sultanganj_Buddha.jpg",
+   "exists": true,
+   "license": "CC0",
+   "artist": "Unknown author Unknown author ไก18.นายนิวัฒน์สิมมา.(ฯลฯ)",
+   "credit": "Birmingham Museums",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Sultanganj_Buddha.jpg"
   }
  ],
  "site": [

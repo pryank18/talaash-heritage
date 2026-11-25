@@ -1,6 +1,6 @@
-# Licence audit (2026-11-24 17:14 UTC)
+# Licence audit (2026-11-25 17:19 UTC)
 
-Slides checked: 32 image uses. Site photos checked: 303.
+Slides checked: 33 image uses. Site photos checked: 303.
 
 ## Problems
 
@@ -42,3 +42,4 @@ None.
 | 20261119-fact-prajnaparamita | 3.html | Four_Leaves_from_an_Ashtasahasrika_Prajnaparamita_Manuscript.jpg | Public domain | Unknown author Unknown author |
 | 20261119-fact-prajnaparamita | 4.html | Four_Leaves_from_an_Ashtasahasrika_Prajnaparamita_Manuscript.jpg | Public domain | Unknown author Unknown author |
 | 20261120-devutthana-deogarh | 3.html | 500_CE,_south_side,_outer_wall_sanctum_sculpture_panel,_Deogarh_Hindu_ | Public domain | Beglar, Joseph David (1875) |
+| 20261201-fact-sultanganj-buddha | 2.html | The_Sultanganj_Buddha.jpg | CC0 | Unknown author Unknown author ไก18.นายนิวัฒน์สิมมา.(ฯลฯ) |
