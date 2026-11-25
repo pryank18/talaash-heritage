@@ -1,0 +1,45 @@
+{
+  "slug": "pali-text-society-adds-first-m-entries-to-online-dictionary-of-pali",
+  "title": "Pali Text Society puts first entries from unpublished fourth volume of its Pali dictionary online",
+  "dek": "The online A Dictionary of Pāli, which until now covered the three printed volumes from a to bh, has gained a first set of entries beginning with m. They come from Martin Straube's fourth volume, which has not yet appeared in print.",
+  "body": [
+    "The Pali Text Society (PTS) has added an initial portion of the fourth volume of A Dictionary of Pāli to the free online version of the dictionary. The new material covers words beginning with m and is the work of Martin Straube; the volume has not been published in print. The society announced the addition on its website on 23 November 2026, and its president, Rupert Gethin, posted the news to the INDOLOGY mailing list the same day; he said further portions will follow when they are ready.",
+    "The online dictionary sits on Gandhari.org, alongside other dictionaries that can be searched there. The PTS first put the three printed volumes online in March 2024. Margaret Cone compiled those volumes, covering entries from a to bh, and they appeared in 2001, 2010 and 2020; the online edition now credits Cone and Straube together.",
+    "Gethin's post describes the dictionary as an ongoing project funded entirely by the society. Entries give meanings with references to passages in Pali works.",
+    "The dictionary is free to search and use, but the PTS keeps the copyright in it. Printed copies of the first three volumes are sold through the society's website."
+  ],
+  "category": "research",
+  "field": "linguistics",
+  "also_fields": [
+    "sanskrit"
+  ],
+  "published": "2026-11-25",
+  "place": "Online (Gandhari.org)",
+  "sources": [
+    {
+      "title": "A Dictionary of Pali Update",
+      "publisher": "Pali Text Society",
+      "url": "https://palitextsociety.org/a-dictionary-of-pali-update/",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "A Dictionary of Pali online",
+      "publisher": "INDOLOGY mailing list",
+      "url": "https://list.indology.info/pipermail/indology/2026-November/062647.html",
+      "date": "2026-11-23"
+    },
+    {
+      "title": "A Dictionary of Pāli",
+      "publisher": "Gandhari.org",
+      "url": "https://gandhari.org/dictionary?section=dop",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "A Dictionary of Pāli online",
+      "publisher": "Pali Text Society",
+      "url": "https://palitextsociety.org/a-dictionary-of-pali-online/",
+      "date": "2024-03-28"
+    }
+  ],
+  "status": "published"
+}
