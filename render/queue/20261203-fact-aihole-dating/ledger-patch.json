@@ -1,0 +1,27 @@
+{
+ "_note": "Pending ledger changes, 26 Nov 2026 21:43 run. Apply AFTER render/queue/20261129-heritage-this-week/ledger-patch.json and render/queue/20261201-fact-sultanganj-buddha/ledger-patch.json, same method (insert adds after add_after, update fields in set, updated to 2026-11-26), run tools/check_universe.py (checked here on the combined result: OK, 126 items, next fact 019), then empty all three files.",
+ "adds": [
+  {
+   "add_after": "tl-fact-017-sultanganj-buddha",
+   "item": {
+    "id": "tl-fact-018-aihole-dating",
+    "brand": "talaash",
+    "series": "fact",
+    "number": 18,
+    "field": "history",
+    "title": "Fact 018: date the Aihole inscription yourself (Shaka 556 + 78 = 634)",
+    "status": "scheduled",
+    "slot": "2026-12-03T19:30",
+    "platforms": ["instagram", "facebook", "linkedin"],
+    "page": "heritage-walk-in-badami",
+    "topic_lock": ["aihole-inscription"],
+    "sources": "render/queue/20261203-fact-aihole-dating/checks.md",
+    "notes": "Thursday teach-a-skill Fact (convert a Shaka date; reader question for the comments test). Built and three-checked 26 Nov 2026 21:43 run; 5 slides, Fact badge, logo on 1 and 5; image Aihole_inscription_of_Ravi_Kirti.jpg, Dineshkannambadi, CC BY-SA 3.0. Queued as sheet row 90."
+   }
+  }
+ ],
+ "set": {
+  "tl-fact-015-panini-backus": {"status": "live"}
+ },
+ "updated": "2026-11-26"
+}
