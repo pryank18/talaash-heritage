@@ -908,6 +908,72 @@
    "held": [
     "'khakhara' label for Vaital Deula"
    ]
+  },
+  {
+   "slug": "heritage-walk-in-bodh-gaya",
+   "date": "2026-11-27",
+   "claims_checked": 15,
+   "changed": [
+    "Early railings dated 3rd to 1st century BCE (ICOMOS range), later granite pillars 5th to 6th century CE; museum locations generalised",
+    "Burmese repairs: medieval and 19th century (11th to 13th not confirmed)",
+    "Royal Thai Monastery: 'first of the national monasteries' dropped",
+    "Sujata Stupa: Pala period, about 8th to 9th century CE (2nd century BCE not supported by ASI)",
+    "Distances per temple committee: Rajgir about 78 km, Nalanda about 100 km, airport 7 km, station 17 km"
+   ],
+   "held": []
+  },
+  {
+   "slug": "heritage-walk-in-chandigarh",
+   "date": "2026-11-27",
+   "claims_checked": 14,
+   "changed": [
+    "Capitol buildings: 'through the 1950s and early 1960s' (exact years not confirmed)",
+    "Mayer's team included Nowicki",
+    "Rock Garden start year: sources differ; opened 1976 kept",
+    "Pinjore about 22 km",
+    "Sukhna Lake period 1950s; Jeanneret museum wording softened"
+   ],
+   "held": []
+  },
+  {
+   "slug": "heritage-walk-in-chennai",
+   "date": "2026-11-27",
+   "claims_checked": 13,
+   "changed": [
+    "Fort St George begun around 1640, completed 1640s; 'first major fortified base' dropped",
+    "Kapaleeshwarar: earlier temple destroyed in the 16th century (not 'shore temple')",
+    "San Thome rebuilt in the 1890s (1893 v 1896 disagree)",
+    "Amaravati sculptures about 2,000 years old",
+    "Mahabalipuram about 58 km; Attirampakkam name dropped from FAQ"
+   ],
+   "held": []
+  },
+  {
+   "slug": "heritage-walk-in-chhatrapati-sambhajinagar",
+   "date": "2026-11-27",
+   "claims_checked": 17,
+   "changed": [
+    "Bibi ka Maqbara: mid-17th century (ASI 1651-61 v c.1660 disagree); marble on lower walls AND dome, plaster over basalt between (ASI)",
+    "Ajanta: early phase 2nd to 1st century BCE, later phase 5th to 6th century CE (UNESCO)",
+    "Aurangabad Caves mostly 6th to 7th century, 'in groups'",
+    "Daulatabad: transfer in the late 1320s; Yadava period",
+    "52 gates: traditional, walls under Aurangzeb (not Nizams)",
+    "Panchakki: Mughal period, underground channel; Soneri Mahal and Grishneshwar wording softened"
+   ],
+   "held": []
+  },
+  {
+   "slug": "heritage-walk-in-delhi",
+   "date": "2026-11-27",
+   "claims_checked": 16,
+   "changed": [
+    "Purana Qila: Painted Grey Ware sherds, not levels",
+    "Ghurid conquest of the 1190s",
+    "Hauz Khas: Alauddin Khalji's reign (1296-1316), not 1295",
+    "Tughlaqabad 1320s, Firoz Shah Kotla 1350s, Humayun's Tomb 1560s to about 1570, Safdarjung 1753 to 1754, Jama Masjid 1650s",
+    "India 45 World Heritage Sites confirmed (Sarnath, July 2026)"
+   ],
+   "held": []
   }
  ]
 }

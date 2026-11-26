@@ -8,15 +8,15 @@
   "seo_title": "Heritage Walk in Delhi: Historical Places, Routes, Museums",
   "meta_description": "Plan a heritage walk in Delhi: historical places from the Qutb to Shahjahanabad, walking routes by area, museums and advice for school and college groups.",
   "keywords": ["heritage walk in delhi", "historical places in delhi", "heritage sites in delhi", "museums in delhi", "delhi heritage walk for schools", "delhi heritage walk", "monuments of delhi", "old delhi heritage walk", "mehrauli heritage walk", "unesco sites in delhi"],
-  "summary": "A heritage walk in Delhi takes you through about 3,000 years of settlement, from Painted Grey Ware levels at Purana Qila to the Sultanate cities of the south, Mughal Shahjahanabad and the colonial capital. The city has three UNESCO World Heritage Sites (Qutb Minar, Humayun's Tomb, Red Fort Complex) and dozens of walkable precincts.",
+  "summary": "A heritage walk in Delhi takes you through about 3,000 years of settlement, from Painted Grey Ware finds at Purana Qila to the Sultanate cities of the south, Mughal Shahjahanabad and the colonial capital. The city has three UNESCO World Heritage Sites (Qutb Minar, Humayun's Tomb, Red Fort Complex) and dozens of walkable precincts.",
   "sections": [
     {"h2": "Why Delhi matters for Indian history", "paras": [
       "Few capitals have been rebuilt as often as Delhi. Rulers moved the centre of power across the same triangle of land between the Aravalli ridge and the Yamuna again and again, and each move left walls, mosques, tombs, step wells and reservoirs that still stand among modern neighbourhoods. That is why a walk here is less about one monument and more about reading layers: an Ashokan pillar re-erected by a Tughlaq sultan, a Lodi tomb inside a 1930s garden, a Mughal gateway beside a metro station.",
       "The usual shorthand is the [seven cities of Delhi](seven-cities-of-delhi.html), a list that runs from Qila Rai Pithora and Mehrauli to Shahjahanabad. Historians now count more than seven, and the list leaves out the ancient settlement at Purana Qila and the colonial city of New Delhi, but it is a useful way to organise a series of walks."
     ]},
     {"h2": "Layers of Delhi's history, period by period", "paras": [
-      "Excavations at Purana Qila have found Painted Grey Ware pottery of the early first millennium BCE, and later Mauryan, Shunga, Kushana and Gupta levels. An Ashokan rock edict survives at Srinivaspuri in south Delhi, and two Ashokan pillars were brought to the city in the 14th century by Firoz Shah Tughlaq.",
-      "The Tomar and Chauhan Rajput rulers held the Lal Kot and Qila Rai Pithora area in the 11th and 12th centuries. After 1192 the Delhi Sultanate built over it: the Qutb Minar and Quwwat-ul-Islam mosque under Qutbuddin Aibak and Iltutmish, Siri under Alauddin Khalji, Tughlaqabad and Jahanpanah under the Tughlaqs, Firozabad on the river under Firoz Shah, and garden tombs under the Sayyids and Lodis. The [Delhi Sultanate](delhi-sultanate.html) guide sets out this sequence.",
+      "Excavations at Purana Qila have found sherds of Painted Grey Ware, a pottery of the early first millennium BCE, and Mauryan, Shunga, Kushana and Gupta levels. An Ashokan rock edict survives at Srinivaspuri in south Delhi, and two Ashokan pillars were brought to the city in the 14th century by Firoz Shah Tughlaq.",
+      "The Tomar and Chauhan Rajput rulers held the Lal Kot and Qila Rai Pithora area in the 11th and 12th centuries. After the Ghurid conquest of the 1190s, the Delhi Sultanate built over it: the Qutb Minar and Quwwat-ul-Islam mosque under Qutbuddin Aibak and Iltutmish, Siri under Alauddin Khalji, Tughlaqabad and Jahanpanah under the Tughlaqs, Firozabad on the river under Firoz Shah, and garden tombs under the Sayyids and Lodis. The [Delhi Sultanate](delhi-sultanate.html) guide sets out this sequence.",
       "The Mughals and the Sur interlude gave Delhi Purana Qila, Humayun's Tomb, the tombs around Nizamuddin and, from 1639, Shah Jahan's walled city of Shahjahanabad with the Red Fort and Jama Masjid. After 1857 the British reshaped the old city, and from 1911 to 1931 built New Delhi to the designs of Edwin Lutyens and Herbert Baker."
     ]},
     {"h2": "Delhi heritage walks by area", "paras": [
@@ -38,20 +38,20 @@
     ]}
   ],
   "stops": [
-    {"name": "Qutb Minar and Quwwat-ul-Islam Mosque", "period": "1192 to 14th century", "note": "Look at the reused temple pillars in the mosque cloister, the iron pillar of the Gupta period, and the change of style between the minar's storeys."},
+    {"name": "Qutb Minar and Quwwat-ul-Islam Mosque", "period": "Late 12th to 14th century", "note": "Look at the reused temple pillars in the mosque cloister, the iron pillar of the Gupta period, and the change of style between the minar's storeys."},
     {"name": "Mehrauli Archaeological Park", "period": "12th to 19th century", "note": "Jamali Kamali, Balban's tomb with an early true arch, Rajon ki Baoli and Quli Khan's tomb in one walk."},
     {"name": "Sultan Ghari", "period": "1231", "note": "Tomb of Iltutmish's son Nasiruddin Mahmud, usually called the first monumental Islamic tomb in India."},
-    {"name": "Hauz Khas", "period": "about 1295 and 1352", "note": "Alauddin Khalji's reservoir and the madrasa and tomb added by Firoz Shah Tughlaq on its banks."},
-    {"name": "Tughlaqabad Fort", "period": "1321 to 1325", "note": "Massive sloping walls of the third city, with Ghiyasuddin Tughlaq's tomb across the causeway."},
+    {"name": "Hauz Khas", "period": "Alauddin Khalji's reign and 1352", "note": "Alauddin Khalji's reservoir and the madrasa and tomb added by Firoz Shah Tughlaq on its banks."},
+    {"name": "Tughlaqabad Fort", "period": "1320s", "note": "Massive sloping walls of the third city, with Ghiyasuddin Tughlaq's tomb across the causeway."},
     {"name": "Begumpur Mosque", "period": "14th century", "note": "A large congregational mosque of Jahanpanah, still standing among village houses."},
-    {"name": "Firoz Shah Kotla", "period": "1354", "note": "Ruins of Firozabad with an Ashokan pillar brought from Topra, inscribed in Brahmi."},
-    {"name": "Purana Qila", "period": "1530s to 1540s, site from about 1000 BCE", "note": "Sher Shah's Qila-i-Kuhna mosque, the Sher Mandal and excavated trenches showing earlier levels."},
+    {"name": "Firoz Shah Kotla", "period": "1350s", "note": "Ruins of Firozabad with an Ashokan pillar brought from Topra, inscribed in Brahmi."},
+    {"name": "Purana Qila", "period": "1530s to 1540s, finds from the 1st millennium BCE", "note": "Sher Shah's Qila-i-Kuhna mosque, the Sher Mandal and excavated trenches showing earlier levels."},
     {"name": "Nizamuddin Dargah", "period": "14th century onward", "note": "Shrine of Nizamuddin Auliya (died 1325), with the graves of Amir Khusrau and Jahanara nearby."},
-    {"name": "Humayun's Tomb", "period": "about 1565 to 1572", "note": "The first great Mughal garden tomb, a UNESCO site, with Isa Khan's tomb and Arab Serai next door."},
+    {"name": "Humayun's Tomb", "period": "1560s to about 1570", "note": "The first great Mughal garden tomb, a UNESCO site, with Isa Khan's tomb and Arab Serai next door."},
     {"name": "Lodhi Garden", "period": "15th to 16th century", "note": "Tombs of Muhammad Shah Sayyid and Sikandar Lodi, and the Bara Gumbad mosque group, set in a 1936 park."},
-    {"name": "Safdarjung's Tomb", "period": "1754", "note": "A late Mughal garden tomb that shows how the Humayun's Tomb model changed over two centuries."},
+    {"name": "Safdarjung's Tomb", "period": "1753 to 1754", "note": "A late Mughal garden tomb that shows how the Humayun's Tomb model changed over two centuries."},
     {"name": "Red Fort", "period": "1639 to 1648", "note": "Shah Jahan's palace fortress, a UNESCO site, with the Diwan-i-Am, Diwan-i-Khas and later British barracks."},
-    {"name": "Jama Masjid", "period": "1650 to 1656", "note": "Shah Jahan's congregational mosque on a raised plinth, looking down on the markets of Shahjahanabad."},
+    {"name": "Jama Masjid", "period": "1650s", "note": "Shah Jahan's congregational mosque on a raised plinth, looking down on the markets of Shahjahanabad."},
     {"name": "Kashmere Gate", "period": "1835, fighting of 1857", "note": "Gate in the city wall stormed by British troops in September 1857, near St James' Church and the old Residency."},
     {"name": "India Gate", "period": "1921 to 1931", "note": "Lutyens' war memorial at the end of Kartavya Path (formerly Rajpath), the axis of New Delhi."}
   ],
