@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-25 17:19 UTC",
+ "checked_at": "2026-11-26 17:19 UTC",
  "slides": [
   {
    "post": "20261025-sharad-purnima",
@@ -398,6 +398,18 @@
    "credit": "Birmingham Museums",
    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
    "page": "https://commons.wikimedia.org/wiki/File:The_Sultanganj_Buddha.jpg"
+  },
+  {
+   "post": "20261203-fact-aihole-dating",
+   "slide": "2.html",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Aihole_inscription_of_Ravi_Kirti.jpg",
+   "file": "Aihole_inscription_of_Ravi_Kirti.jpg",
+   "exists": true,
+   "license": "CC BY-SA 3.0",
+   "artist": "Dineshkannambadi ( talk ) 12:36, 1 August 2008 (UTC)",
+   "credit": "I created this work entirely by myself. Dineshkannambadi ( talk ) 12:36, 1 August 2008 (UTC)",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Aihole_inscription_of_Ravi_Kirti.jpg"
   }
  ],
  "site": [
