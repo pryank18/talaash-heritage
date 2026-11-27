@@ -8,15 +8,15 @@
   "seo_title": "Heritage Walk in Jaipur: Historical Places, Routes, Museums",
   "meta_description": "Plan a heritage walk in Jaipur: Hawa Mahal, City Palace, Jantar Mantar, Amber and Nahargarh, with walking routes, museums and advice for school groups.",
   "keywords": ["heritage walk in jaipur", "historical places in jaipur", "heritage sites in jaipur", "museums in jaipur", "jaipur heritage walk for schools", "jaipur walled city walk", "jaipur heritage walk", "amber fort history", "unesco sites in jaipur", "pink city heritage walk"],
-  "summary": "A heritage walk in Jaipur explores the planned walled city founded by Sawai Jai Singh II in 1727, a UNESCO World Heritage Site since 2019, with Jantar Mantar (UNESCO, 2010), the City Palace and Hawa Mahal. Amber Fort, part of the Hill Forts of Rajasthan site, sits about 11 km north on the old route into the hills.",
+  "summary": "A heritage walk in Jaipur explores the planned walled city founded by Sawai Jai Singh II in 1727, a UNESCO World Heritage Site since 2019, with Jantar Mantar (UNESCO, 2010), the City Palace and Hawa Mahal. Amber Fort, part of the Hill Forts of Rajasthan site, sits about 11 km north-east on the old route into the hills.",
   "sections": [
     {"h2": "Why Jaipur matters", "paras": [
       "Jaipur is one of the clearest examples of a planned early modern city in South Asia. Sawai Jai Singh II, the Kachhwaha ruler, moved his capital from the hill fortress of Amber to the plain in 1727 and laid out a grid of wide bazaars and city blocks (chowkris) inside a wall with gates. The streets, market arcades and temple plots still follow that plan.",
       "The city is also a meeting point of Rajput and Mughal traditions. The Kachhwahas served the Mughal emperors from Akbar's time onward, and Amber and Jaipur show how Rajput courts adopted Mughal garden planning, audience halls and decoration while keeping their own temples, stepwells and palace layouts."
     ]},
     {"h2": "Layers of Jaipur's history", "paras": [
-      "The Kachhwahas held Amber from about the 11th century. Raja Man Singh I, Akbar's general, began the present Amber Fort palace in the late 16th century, and Mirza Raja Jai Singh I added to it in the 17th. Jaigarh, on the ridge above, was built and rebuilt in the same period as the fortress that guarded Amber.",
-      "Sawai Jai Singh II (ruled 1699 to 1743) founded Jaipur, built the City Palace and the Jantar Mantar observatory between about 1728 and 1734, and Nahargarh on the ridge. Sawai Pratap Singh added the Hawa Mahal in 1799 so women of the court could watch street processions. The city was painted its familiar pink in the 19th century, often linked to the 1876 visit of the Prince of Wales, and Sawai Ram Singh II built the Albert Hall, now the city's main museum, in the 1880s.",
+      "The Kachhwahas held Amber from about the 11th or 12th century. Raja Man Singh I, Akbar's general, began the present Amber Fort palace in the late 16th century, and Mirza Raja Jai Singh I added to it in the 17th. Jaigarh, the fortress on the ridge above that guarded Amber, took its present form under Sawai Jai Singh II in the early 18th century.",
+      "Sawai Jai Singh II (ruled from 1699) founded Jaipur, built the City Palace, the Jantar Mantar observatory in the 1720s and 1730s, and Nahargarh on the ridge. Sawai Pratap Singh added the Hawa Mahal in 1799 so women of the court could watch street processions. The city was painted its familiar pink in the 19th century, often linked to the 1876 visit of the Prince of Wales, and the Albert Hall, begun in 1876 and opened in 1887, became the city's main museum.",
       "The [Forts of India](forts-of-india.html) guide places Amber in the wider story of Rajput hill forts."
     ]},
     {"h2": "What you see on a Jaipur walk", "paras": [
@@ -29,18 +29,18 @@
     ]}
   ],
   "stops": [
-    {"name": "Hawa Mahal", "period": "1799", "note": "A five-storey screen of small windows facing Siredeori Bazaar; go round the back to see how thin the building really is."},
+    {"name": "Hawa Mahal", "period": "1799", "note": "A five-storey screen of small windows facing the main street of the old city; go round the back to see how thin the building really is."},
     {"name": "City Palace", "period": "1727 onward", "note": "Royal residence with Mubarak Mahal, Diwan-i-Khas and the Pritam Niwas courtyard gates; parts are a museum."},
-    {"name": "Jantar Mantar", "period": "about 1728 to 1734", "note": "Sawai Jai Singh II's observatory of masonry instruments, a UNESCO site since 2010."},
+    {"name": "Jantar Mantar", "period": "1720s to 1730s", "note": "Sawai Jai Singh II's observatory of masonry instruments, a UNESCO site since 2010."},
     {"name": "Tripolia Bazaar and Chaura Rasta", "period": "1727 plan", "note": "Main grid bazaars of the walled city, with arcades and chowk junctions."},
     {"name": "Govind Dev Ji Temple", "period": "18th century", "note": "Temple in the City Palace grounds, aligned with the palace, an example of how the plan joined court and worship."},
-    {"name": "Isarlat", "period": "1749", "note": "Tower built by Sawai Ishwari Singh near Tripolia Gate, with a view over the grid."},
+    {"name": "Isarlat", "period": "Mid-18th century", "note": "Tower built by Sawai Ishwari Singh, with a view over the grid."},
     {"name": "Albert Hall Museum", "period": "1887", "note": "Indo-Saracenic building by Samuel Swinton Jacob, housing the state museum."},
     {"name": "Amber Fort", "period": "late 16th to 18th century", "note": "Kachhwaha palace of courtyards, the Sheesh Mahal and Ganesh Pol; part of the Hill Forts of Rajasthan UNESCO site."},
-    {"name": "Panna Meena ka Kund", "period": "17th century", "note": "Stepwell near Amber with criss-cross stairs on three sides."},
-    {"name": "Jaigarh Fort", "period": "17th to 18th century", "note": "Ridge fortress above Amber with cannon foundry and large water tanks."},
-    {"name": "Nahargarh Fort", "period": "1734, extended 1868", "note": "Fort on the ridge overlooking the city; the Madhavendra Bhawan suites were added in the 19th century."},
-    {"name": "Gaitore", "period": "18th to 20th century", "note": "Royal cenotaphs (chhatris) of the Jaipur rulers below Nahargarh."}
+    {"name": "Panna Meena ka Kund", "period": "Centuries old", "note": "Stepwell near Amber with criss-cross stairs on three sides."},
+    {"name": "Jaigarh Fort", "period": "Early 18th century", "note": "Ridge fortress above Amber with cannon foundry and large water tanks."},
+    {"name": "Nahargarh Fort", "period": "1734, extended in the 19th century", "note": "Fort on the ridge overlooking the city; the Madhavendra Bhawan suites were added later, under Sawai Madho Singh II."},
+    {"name": "Gaitore", "period": "18th century onward", "note": "Royal cenotaphs (chhatris) of the Jaipur rulers below Nahargarh."}
   ],
   "routes": [
     {"name": "The walled city on foot", "length": "About 3 hours", "stops": ["Hawa Mahal", "Jantar Mantar", "City Palace", "Govind Dev Ji Temple", "Tripolia Bazaar and Chaura Rasta", "Isarlat"]},
@@ -48,7 +48,7 @@
     {"name": "Museum and cenotaphs", "length": "About 3 hours, a short drive to Gaitore", "stops": ["Albert Hall Museum", "Gaitore", "Nahargarh Fort"]}
   ],
   "museums": [
-    {"name": "Albert Hall Museum", "note": "Rajasthan's oldest museum, with sculpture, metalwork, textiles, paintings and an Egyptian mummy."},
+    {"name": "Albert Hall Museum", "note": "The state museum, with sculpture, metalwork, textiles, paintings and an Egyptian mummy."},
     {"name": "City Palace museum", "note": "Royal textiles, arms, manuscripts and paintings of the Jaipur court."},
     {"name": "Amrapali Museum", "note": "Private museum of Indian jewellery and silver objects."}
   ],
