@@ -1,6 +1,6 @@
 # Durlabh #02 teaser · Mon 30 Nov 2026, evening slot (row label 19:30)
 
-Video: site/media/ig/durlabh-02-teaser.mp4 (1080×1920, cut from Part 1 of the lecture; TALAASHH logo on every frame; English captions burned in). Same file is YouTube Short 1 (shorts.md).
+Instagram, Facebook and LinkedIn: site/media/ig/durlabh-02-teaser-meta.mp4 (the text-only Meta cut: 1080×1920, 40 s, silent, the narration as burned-in English captions, TALAASHH logo on every frame, no cloned voice, so queue column N = "Not needed"). The voiced cut site/media/ig/durlabh-02-teaser.mp4 is YouTube Short 1 only (shorts.md).
 Every line comes from the checked long read content/durlabh/02-ajanta-copies.json (checks: checks.md in this folder).
 
 ## Caption
@@ -12,7 +12,6 @@ Then, in 1885, it happened again.
 
 Watch the full lecture on YouTube (@talaashheritage1967) and read the long read, with every source: talaash-heritage.pages.dev/durlabh-02-ajanta-copies
 
-Narrated with an AI clone of Pryank Wadhera's own voice.
 
 Follow Talaash Heritage
 Instagram: @talaashheritage
@@ -30,7 +29,6 @@ On Sunday 30 December 1866, fire swept the Crystal Palace at Sydenham, in south 
 
 Then, in 1885, it happened again.
 
-Narrated with an AI clone of Pryank Wadhera's own voice.
 
 Follow Talaash Heritage
 Instagram: @talaashheritage

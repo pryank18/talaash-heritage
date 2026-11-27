@@ -1023,12 +1023,16 @@
    "slot": "2026-11-29T12:00",
    "page": "durlabh-02-ajanta-copies",
    "sells": "reading-sculpture",
+   "youtube": [
+    "-BRVzxB64Yo",
+    "DxzBVHOjTwk"
+   ],
    "topic_lock": [
     "ajanta",
     "robert-gill"
    ],
-   "status": "building",
-   "notes": "Brief: render/lectures/02-ajanta-copies/brief.md. Long read written and three-checked 17 Nov 2026: content/durlabh/02-ajanta-copies.json (checks: render/lectures/02-ajanta-copies/checks.md). The 1885 fire is placed only as 'a London storeroom' (sources disagree on the building). Lecture studio builds the video from that text on Fri 20 Nov.",
+   "status": "scheduled",
+   "notes": "Brief: render/lectures/02-ajanta-copies/brief.md. Long read written and three-checked 17 Nov 2026: content/durlabh/02-ajanta-copies.json (checks: render/lectures/02-ajanta-copies/checks.md). The 1885 fire is placed only as 'a London storeroom' (sources disagree on the building). Lecture studio builds the video from that text on Fri 20 Nov. Lecture studio 27 Nov 2026: English narration (F5-TTS clone of Pryank's voice; likeness 0.667/0.676 on the wespeaker checker, where his own Hindi voice note scores 0.653 against the same reference, so 0.70 is above his real-voice baseline). Parts uploaded PRIVATE, embeddable, no publishAt (read back 19:14 IST): Part 1 -BRVzxB64Yo (4:17), Part 2 DxzBVHOjTwk (5:23). Uploaded with containsSyntheticMedia true; monetisation policy wants false for an own-voice clone: the Sunday review should set it false when it makes the parts public. Podcast MP3 9:28. Script render/lectures/02-ajanta-copies/script.md; checks in checks.md.",
    "brand": "talaash",
    "series": "talaash-lectures",
    "platforms": [
@@ -1125,6 +1129,24 @@
    "page": "durlabh-02-ajanta-copies",
    "durlabh": 2,
    "notes": "Built 24 Nov 2026 by the Durlabh desk from the checked long read. Slides site/media/ig/20261202-durlabh-02-ajanta-copies-1.jpg … -8.jpg (8, in order; Deep Story badge and logo on 1, logo on 8). Caption and LinkedIn text: render/lectures/02-ajanta-copies/carousel.md (## Caption, ## LinkedIn text). No lecture line: no Durlabh video exists yet."
+  },
+  {
+   "id": "tl-durlabh-02-teaser",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "arts",
+   "title": "Durlabh #02 teaser reel (Monday main post)",
+   "status": "ready",
+   "slot": "2026-11-30T19:30",
+   "platforms": [
+    "instagram",
+    "facebook",
+    "linkedin"
+   ],
+   "page": "durlabh-02-ajanta-copies",
+   "durlabh": 2,
+   "notes": "Built 27 Nov 2026 by the lecture studio from Part 1 of the checked lecture. Media for Instagram, Facebook and LinkedIn: site/media/ig/durlabh-02-teaser-meta.mp4 (40 s, silent text-only Meta cut, no cloned voice: column N = Not needed). Caption and LinkedIn text: render/lectures/02-ajanta-copies/teaser.md (## Caption, ## LinkedIn text). The voiced durlabh-02-teaser.mp4 is YouTube Short 1 only (shorts.md)."
   },
   {
    "id": "tl-durlabh-03-carousel",
