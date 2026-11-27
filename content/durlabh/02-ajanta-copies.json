@@ -142,5 +142,10 @@
   ],
   "youtube": [],
   "video_public": false,
+  "audio": {
+    "file": "media/podcast/durlabh-02-ajanta-copies.mp3",
+    "bytes": 4547648,
+    "seconds": 568
+  },
   "check_log": "render/lectures/02-ajanta-copies/checks.md"
 }

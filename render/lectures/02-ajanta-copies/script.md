@@ -1,7 +1,7 @@
 # Durlabh #02 · The Ajanta copies that burned twice: lecture script
 
-Talaash Lectures, Durlabh Sunday #02 (Sun 29 Nov 2026). English narration in the cloned voice of Pryank Wadhera (F5-TTS v1 Base, prompt clip from his 30 s reference). Every line comes from the checked long read content/durlabh/02-ajanta-copies.json; no new claims. Checks: checks.md in this folder (section "Lecture script checks", 27 Nov 2026).
-Format per line: on-screen bullet (if any) / spoken text. Spoken wording read to the voice model is in brackets where numbers are spelled out.
+Talaash Lectures, Durlabh Sunday #02 (Sun 29 Nov 2026). Two parts (Part 1 4 min 17 s, Part 2 5 min 23 s). English narration in the cloned voice of Pryank Wadhera (F5-TTS v1 Base; prompt clip 6.74–12.6 s of his 30 s reference). Every line comes from the checked long read content/durlabh/02-ajanta-copies.json; no new claims. Checks: checks.md in this folder (section "Lecture script checks", 27 Nov 2026).
+Format per line: spoken text (= burned-in subtitle), the on-screen bullet it reveals, and, in brackets, the wording read to the voice model where numbers are spelled out.
 
 ## Part 1 of 2
 
@@ -25,7 +25,7 @@ Format per line: on-screen bullet (if any) / spoken text. Spoken wording read to
 - At about two o'clock on Sunday 30 December 1866, fire broke out at the Crystal Palace at Sydenham, in south London.  
   On screen: Fire breaks out about 2 pm  
   [Voice: At about two o'clock on Sunday, the thirtieth of December, eighteen sixty-six, fire broke out at the Crystal Palace at Sydenham, in south London.]
-- It burned down the north transept.  
+- Fire burned down its north transept.  
   On screen: The north transept burns down
 - The Spectator, reporting the following Saturday, put it down to what seemed an explosion of gas.  
   On screen: The Spectator: ‘what seemed an explosion of gas’
@@ -165,14 +165,14 @@ Format per line: on-screen bullet (if any) / spoken text. Spoken wording read to
   On screen: Cave 6, floral strip: ‘badly damaged by fire’  
   [Voice: The museum's record for a copy of a strip of floral decoration from Cave Six notes that it has been badly damaged by fire.]
 **Slide: What Griffiths had: print**
-- But Griffiths had one thing Gill had not: print.  
+- But Griffiths had one advantage over Gill: his copies went into print.  
   On screen: Gill had none
 - His selection of the copies was published in two large volumes, in 1896 and 1897, by order of the Secretary of State for India.  
   On screen: The Paintings in the Buddhist Cave-Temples of Ajantâ (London: W. Griggs, 1896 and 1897)  
   [Voice: His selection of the copies was published in two large volumes, in eighteen ninety-six and eighteen ninety-seven, by order of the Secretary of State for India.]
 - The first volume covers the pictorial subjects, the second the decorative details.  
   On screen: Vol. I pictorial subjects · Vol. II decorative details
-- Those plates outlived the canvases that burned.  
+- Those printed plates outlived the canvases that burned.  
   On screen: The plates outlived the canvases
 
 ### Chapter 6: How we know, and why copies count (title card)
@@ -192,7 +192,7 @@ Format per line: on-screen bullet (if any) / spoken text. Spoken wording read to
 **Slide: Is a copy evidence?**
 - But a copy is not the original.  
   On screen: A copy is not the original
-- It carries the copyist's eye and the conventions of a Victorian art school.  
+- It carries the eye of the copyist, and the conventions of a Victorian art school.  
   On screen: It carries the copyist’s eye and a Victorian art school’s conventions
 - Yet it records a wall as it looked on the day it was painted, and the walls at Ajanta have gone on changing since.  
   On screen: It records the wall on the day it was painted
@@ -216,7 +216,7 @@ Format per line: on-screen bullet (if any) / spoken text. Spoken wording read to
   On screen: Griffiths (1896–97) and Herringham (1915): out of copyright, digitised
 - The Smithsonian Libraries' scan of Ajanta Frescoes is free to read online.  
   On screen: Smithsonian Libraries: Ajanta Frescoes, free online
-- Set a plate beside a recent photograph of the same wall, and you will see, scene by scene, what has been lost.  
+- Put a plate beside a recent photograph of the same wall, and you will see, scene by scene, what has been lost.  
   On screen: Plate beside a recent photograph: what has been lost?
 **Slide: Read the dates**
 - Read the dates as well as the pictures.  
@@ -224,16 +224,16 @@ Format per line: on-screen bullet (if any) / spoken text. Spoken wording read to
 - A copy finished in the 1870s shows the wall as it stood in the 1870s, not as it was painted.  
   On screen: A copy from the 1870s shows the wall in the 1870s  
   [Voice: A copy finished in the eighteen seventies shows the wall as it stood in the eighteen seventies, not as it was painted.]
-- At Ajanta itself, the caves are an Archaeological Survey of India site and a UNESCO World Heritage Site.  
-  On screen: Ajanta: ASI site · UNESCO World Heritage Site
+- As for Ajanta itself, the caves are a UNESCO World Heritage Site, in the care of the Archaeological Survey of India.  
+  On screen: Ajanta: UNESCO World Heritage Site, in the ASI’s care
 **Slide: Go deeper**
-- To go deeper, read the full long read, with every source, on the Talaash Heritage website.  
+- To go deeper, read the full article, with every source, on the Talaash Heritage website.  
   On screen: Long read: talaash-heritage.pages.dev/durlabh-02-ajanta-copies
 - To learn to read murals and reliefs by their gestures, costume and setting, see the Talaash programme Identifying sculpture.  
   On screen: Programme: Identifying sculpture · talaash-heritage.pages.dev/reading-sculpture
 - Next Sunday, Durlabh number 3 is Read Brahmi, a first lesson.  
   On screen: Next Sunday: Durlabh #03 · Read Brāhmī, a first lesson  
-  [Voice: Next Sunday, Durlabh number three is Read Brahmi, a first lesson.]
+  [Voice: Next Sunday, Durlabh number three is: Read Braahmee, a first lesson.]
 - Thank you for watching Talaash Heritage.
 - (Sources slide, then end slide: long read address and the Follow Talaash Heritage block.)
 
