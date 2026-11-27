@@ -1,10 +1,12 @@
-# Licence audit (2026-11-27 09:19 UTC)
+# Licence audit (2026-11-27 17:26 UTC)
 
-Slides checked: 34 image uses. Site photos checked: 303.
+Slides checked: 36 image uses. Site photos checked: 303.
 
 ## Problems
 
-None.
+- site sacred-architecture-across-communities: licence on Commons (CC BY-SA 3.0) differs from the one we show (CC BY-SA 4.0)
+- site guide:heritage-walk-in-amritsar: licence on Commons (CC BY-SA 3.0) differs from the one we show (CC BY-SA 4.0)
+- site guide:mughal-architecture: licence on Commons (CC BY-SA 3.0) differs from the one we show (CC BY-SA 4.0)
 
 ## Slide images
 
@@ -44,3 +46,5 @@ None.
 | 20261120-devutthana-deogarh | 3.html | 500_CE,_south_side,_outer_wall_sanctum_sculpture_panel,_Deogarh_Hindu_ | Public domain | Beglar, Joseph David (1875) |
 | 20261201-fact-sultanganj-buddha | 2.html | The_Sultanganj_Buddha.jpg | CC0 | Unknown author Unknown author ไก18.นายนิวัฒน์สิมมา.(ฯลฯ) |
 | 20261203-fact-aihole-dating | 2.html | Aihole_inscription_of_Ravi_Kirti.jpg | CC BY-SA 3.0 | Dineshkannambadi ( talk ) 12:36, 1 August 2008 (UTC) |
+| 20261205-fact-piprahwa-casket | 2.html | Piprawa_vase_with_relics_of_the_Buddha.jpg | Public domain | Smith, Vincent Arthur, 1848-1920; Edwardes, S. M. (Stephen M |
+| 20261205-fact-piprahwa-casket | 4.html | Piprawa_vase_with_relics_of_the_Buddha_inscription.jpg | Public domain | Smith, Vincent Arthur, 1848-1920; Edwardes, S. M. (Stephen M |

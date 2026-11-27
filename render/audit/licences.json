@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-27 09:19 UTC",
+ "checked_at": "2026-11-27 17:26 UTC",
  "slides": [
   {
    "post": "20261025-sharad-purnima",
@@ -410,6 +410,30 @@
    "credit": "I created this work entirely by myself. Dineshkannambadi ( talk ) 12:36, 1 August 2008 (UTC)",
    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Aihole_inscription_of_Ravi_Kirti.jpg"
+  },
+  {
+   "post": "20261205-fact-piprahwa-casket",
+   "slide": "2.html",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Piprawa_vase_with_relics_of_the_Buddha.jpg",
+   "file": "Piprawa_vase_with_relics_of_the_Buddha.jpg",
+   "exists": true,
+   "license": "Public domain",
+   "artist": "Smith, Vincent Arthur, 1848-1920; Edwardes, S. M. (Stephen Meredyth), 1873-1927",
+   "credit": "The early history of India : from 600 B.C. to the Muhammadan conquest, including the invasion of Alexander the Great. Publication date 1924 [1]",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Piprawa_vase_with_relics_of_the_Buddha.jpg"
+  },
+  {
+   "post": "20261205-fact-piprahwa-casket",
+   "slide": "4.html",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Piprawa_vase_with_relics_of_the_Buddha_inscription.jpg",
+   "file": "Piprawa_vase_with_relics_of_the_Buddha_inscription.jpg",
+   "exists": true,
+   "license": "Public domain",
+   "artist": "Smith, Vincent Arthur, 1848-1920; Edwardes, S. M. (Stephen Meredyth), 1873-1927",
+   "credit": "The early history of India : from 600 B.C. to the Muhammadan conquest, including the invasion of Alexander the Great. Publication date 1924 [1]",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:Piprawa_vase_with_relics_of_the_Buddha_inscription.jpg"
   }
  ],
  "site": [
@@ -2002,12 +2026,13 @@
    "page": "https://commons.wikimedia.org/wiki/File:Templo_dorado-Amritsar-India005.JPG",
    "commons": {
     "exists": true,
-    "license": "CC BY-SA 4.0",
+    "license": "CC BY-SA 3.0",
     "artist": "Diego Delso",
     "credit": "Own work",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Templo_dorado-Amritsar-India005.JPG"
-   }
+   },
+   "problem": "licence on Commons (CC BY-SA 3.0) differs from the one we show (CC BY-SA 4.0)"
   },
   {
    "key": "cemeteries-epitaphs-and-public-memory",
@@ -2744,12 +2769,13 @@
    "page": "https://commons.wikimedia.org/wiki/File:Templo_dorado-Amritsar-India005.JPG",
    "commons": {
     "exists": true,
-    "license": "CC BY-SA 4.0",
+    "license": "CC BY-SA 3.0",
     "artist": "Diego Delso",
     "credit": "Own work",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Templo_dorado-Amritsar-India005.JPG"
-   }
+   },
+   "problem": "licence on Commons (CC BY-SA 3.0) differs from the one we show (CC BY-SA 4.0)"
   },
   {
    "key": "guide:heritage-walk-in-badami",
@@ -4130,12 +4156,13 @@
    "page": "https://commons.wikimedia.org/wiki/File:Panch_Mahal-Fatehpur-Fatehpur_Sikri_India0014.JPG",
    "commons": {
     "exists": true,
-    "license": "CC BY-SA 4.0",
+    "license": "CC BY-SA 3.0",
     "artist": "Diego Delso",
     "credit": "Own work",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "page": "https://commons.wikimedia.org/wiki/File:Panch_Mahal-Fatehpur-Fatehpur_Sikri_India0014.JPG"
-   }
+   },
+   "problem": "licence on Commons (CC BY-SA 3.0) differs from the one we show (CC BY-SA 4.0)"
   },
   {
    "key": "guide:how-archaeologists-date-artifacts",
@@ -4621,5 +4648,9 @@
    "note": "could not open Unsplash page: HTTP Error 401: Unauthorized"
   }
  ],
- "problems": []
+ "problems": [
+  "site sacred-architecture-across-communities: licence on Commons (CC BY-SA 3.0) differs from the one we show (CC BY-SA 4.0)",
+  "site guide:heritage-walk-in-amritsar: licence on Commons (CC BY-SA 3.0) differs from the one we show (CC BY-SA 4.0)",
+  "site guide:mughal-architecture: licence on Commons (CC BY-SA 3.0) differs from the one we show (CC BY-SA 4.0)"
+ ]
 }
