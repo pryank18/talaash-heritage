@@ -39,8 +39,8 @@ function loadGoogle() {
   window.gtag = function gtag() { window.dataLayer.push(arguments); };
   window.gtag("consent", "default", {
     analytics_storage: "granted",
-    ad_storage: "granted",
-    ad_user_data: "granted",
+    ad_storage: CONFIG.googleAdsId ? "granted" : "denied",
+    ad_user_data: CONFIG.googleAdsId ? "granted" : "denied",
     ad_personalization: "denied",
   });
   window.gtag("js", new Date());
@@ -69,7 +69,7 @@ function decide(choice) {
   document.querySelector(".consent")?.remove();
   if (choice === "granted") {
     loadGoogle();
-    if (window.gtag) window.gtag("consent", "update", { analytics_storage: "granted", ad_storage: "granted", ad_user_data: "granted" });
+    if (window.gtag) window.gtag("consent", "update", { analytics_storage: "granted" });
   } else {
     if (window.gtag) window.gtag("consent", "update", { analytics_storage: "denied", ad_storage: "denied", ad_user_data: "denied" });
     clearGoogleCookies();
@@ -78,14 +78,14 @@ function decide(choice) {
 
 const TEXT = {
   en: {
-    body: "May we use Google Analytics and Google Ads cookies to see which adverts and pages bring people to us? Nothing is set unless you agree.",
+    body: "May we use Google Analytics cookies to see which pages bring people to us? Nothing is set unless you agree.",
     yes: "Accept",
     no: "No thanks",
     more: "Privacy notice",
     label: "Cookie choice",
   },
   hi: {
-    body: "क्या हम Google Analytics और Google Ads की कुकीज़ इस्तेमाल कर सकते हैं, ताकि पता चले कि कौन-से विज्ञापन और पेज लोगों को हम तक लाते हैं? आपकी अनुमति के बिना कुछ भी सेट नहीं होगा।",
+    body: "क्या हम Google Analytics की कुकीज़ इस्तेमाल कर सकते हैं, ताकि पता चले कि कौन-से पेज लोगों को हम तक लाते हैं? आपकी अनुमति के बिना कुछ भी सेट नहीं होगा।",
     yes: "स्वीकार करें",
     no: "नहीं, धन्यवाद",
     more: "निजता सूचना",
@@ -154,6 +154,13 @@ export function sendToGoogle(event, extra = {}) {
     case "enquiry_email":
     case "call_click":
       window.gtag("event", "generate_lead", { method: event.replace("enquiry_", "").replace("_click", ""), page: extra.label });
+      window.gtag("event", event === "call_click" ? "call_click" : event === "enquiry_email" ? "email_click" : "whatsapp_click", { page: extra.label });
+      break;
+    case "finder_result":
+      window.gtag("event", "finder_result", { page: extra.label });
+      break;
+    case "search":
+      window.gtag("event", "search", { search_term: String(extra.label || "").slice(0, 100) });
       break;
     default:
       break;
