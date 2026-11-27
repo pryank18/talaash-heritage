@@ -1,0 +1,28 @@
+{
+ "_note": "Pending ledger changes, 27 Nov 2026 21:43 run. Apply AFTER the 20261129, 20261201 and 20261203 ledger-patch.json files, same method (insert adds after add_after, update fields in set, updated to 2026-11-27), run tools/check_universe.py (checked here on the combined result), then empty all four files. The teaser slot is set to date-only because the owner's 27 Nov item clashed with tl-deep-bower-manuscript (sheet row 87, Ready, 30 Nov 19:30) and the teaser caption points to a YouTube lecture that is still private (video_public false).",
+ "adds": [
+  {
+   "add_after": "tl-fact-018-aihole-dating",
+   "item": {
+    "id": "tl-fact-019-piprahwa-casket",
+    "brand": "talaash",
+    "series": "fact",
+    "number": 19,
+    "field": "linguistics",
+    "title": "Fact 019: 18 feet down, a casket that names the Buddha (Piprahwa inscribed casket)",
+    "status": "scheduled",
+    "slot": "2026-12-05T19:30",
+    "platforms": ["instagram", "facebook", "linkedin"],
+    "page": "brahmi-script",
+    "topic_lock": ["piprahwa"],
+    "sources": "render/queue/20261205-fact-piprahwa-casket/checks.md",
+    "notes": "Saturday evidence Fact (museum record: Indian Museum, Kolkata, Inscribed Relic Casket from Piprahwa). Built and three-checked 27 Nov 2026 21:43 run; 5 slides, Fact badge, logo on 1 and 5; images from V. A. Smith, The Early History of India (1924), PD-old. Queued as a new sheet row."
+   }
+  }
+ ],
+ "set": {
+  "tl-jaisa-tha-02-arts": {"status": "live"},
+  "tl-durlabh-02-teaser": {"slot": "2026-11-30", "notes": "Built 27 Nov 2026 by the lecture studio from Part 1 of the checked lecture. Media for Instagram, Facebook and LinkedIn: site/media/ig/durlabh-02-teaser-meta.mp4 (40 s, silent text-only Meta cut, no cloned voice: column N = Not needed). Caption and LinkedIn text: render/lectures/02-ajanta-copies/teaser.md. HELD 27 Nov 21:43 run: caption says 'Watch the full lecture on YouTube' but parts -BRVzxB64Yo and DxzBVHOjTwk are private (video_public false), and 30 Nov 19:30 is taken by row 87 Bower Manuscript. Queue it only once both parts are public; then it may take 30 Nov 19:30 and row 87 moves to Fri 4 Dec 19:30 (free) in the same helper batch."}
+ },
+ "updated": "2026-11-27"
+}
