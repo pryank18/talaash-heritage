@@ -1,0 +1,34 @@
+{
+  "slug": "tamil-nadu-report-documents-484-great-trigonometrical-survey-stations",
+  "title": "Tamil Nadu report documents 484 historical stations of the colonial Great Trigonometrical Survey",
+  "dek": "A field record by the state's survey and archaeology departments locates hilltop pillars and engraved station marks from the 19th-century mapping of India, and identifies the disputed pillar on Thiruparankundram hill as one of them.",
+  "body": [
+    "Tamil Nadu's Department of Survey and Settlement and its Department of Archaeology have compiled a report titled Documentation of the Great Trigonometrical Survey Stations (GTS) in Tamil Nadu. According to The News Minute and ThePrint, both of which reported on it on 24 November 2026, it records 484 stations of the survey across the state.",
+    "The Great Trigonometrical Survey was the British-era project that measured a network of precisely fixed points across the subcontinent by triangulation. As The News Minute summarises it, William Lambton began the work in 1802 with a 12-km baseline between St Thomas Mount and Perumbakkam, near Chennai, and it took the name Great Trigonometrical Survey in 1818. Stations on hills were often masonry pillars; many were marked with a dot inside a circle, engraved on rock, masonry or embedded stones, sometimes with two control points that form a triangle with the station.",
+    "The News Minute reports that the exercise followed a state order of December 2025, that more than 800 stations were identified in its first phase, and that 484 were documented in the field, 210 primary and 274 secondary. The maps drew on differential GPS readings and drone surveys, and at selected sites the teams compared distances, angles and bearings with the colonial records; at eight chosen sites, the report says, the two agreed closely. The News Minute adds that, according to the document, around 67 stations had been converted into religious structures, and 10 of the 57 documented stone pillars were being used as oil pillars.",
+    "The report's maps cover Thiruparankundram hill in Madurai, which the colonial records call Sikandarmalai. It identifies the stone pillar near the Sikandar Badusha Dargah as a survey station, on the evidence of bearings to other stations and the station marks engraved on the rock beside it. According to The News Minute, the report also shows a second, inscribed Deepam pillar further down the hill.",
+    "The hilltop pillar is at the centre of a long-running dispute. Some Hindu groups have sought to light the Karthigai Deepam lamp there as well as at the traditional site, the Deepa Mandapam near the Uchi Pillaiyar temple, and the Tamil Nadu government has opposed this; The News Minute also describes a wider dispute over the hill between the Arulmigu Subramaniaswamy Temple and the dargah. Both outlets report that on 20 November the Supreme Court allowed the lamp to be lit at the pillar on 24 November as a limited, one-time arrangement, and that the state then filed a review petition. ThePrint reports that the interim order left questions of title, possession and practice open."
+  ],
+  "category": "research",
+  "field": "heritage",
+  "also_fields": [
+    "history"
+  ],
+  "published": "2026-11-27",
+  "place": "Tamil Nadu (including Thiruparankundram, Madurai)",
+  "sources": [
+    {
+      "title": "Atop Thiruparankundram is a survey pillar from British-era finds TN archeology report",
+      "publisher": "The News Minute",
+      "url": "https://www.thenewsminute.com/tamil-nadu/atop-thiruparankundram-is-a-survey-pillar-from-british-era-finds-tn-archeology-report",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Day before Deepam ritual, Tamil Nadu report identifies Thiruparankundram pillar as British-era survey marker",
+      "publisher": "ThePrint",
+      "url": "https://theprint.in/india/day-before-deepam-ritual-tamil-nadu-report-identifies-thiruparankundram-pillar-as-british-era-survey-marker/3107222/",
+      "date": "2026-11-24"
+    }
+  ],
+  "status": "published"
+}
