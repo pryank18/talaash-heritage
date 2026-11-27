@@ -6,9 +6,9 @@ Every claim comes from the checked long read content/durlabh/02-ajanta-copies.js
 ## Caption
 Durlabh Sunday #02 | The Ajanta copies that burned twice
 
-The murals in the Ajanta caves are the earliest surviving mural painting in India. Once the caves were exposed in 1819, the paintings began to deteriorate, so someone had to copy them.
+The murals in the Ajanta caves are some of the earliest surviving mural painting in India. Once the caves were exposed in 1819, the paintings began to deteriorate, so someone had to copy them.
 
-From 1844 to 1863 Major Robert Gill painted about thirty full-size copies in oils. Most of them burned when fire swept the Crystal Palace at Sydenham, London, on 30 December 1866.
+From 1844 to 1863 Robert Gill, an army officer, painted about thirty full-size copies in oils. Most of them burned when fire swept the Crystal Palace at Sydenham, London, on 30 December 1866.
 
 From 1872 John Griffiths and seven students of the Bombay School of Art spent every winter at the caves and made about 300 more. In June 1885 a fire in a London storeroom destroyed, by the V&A's own account, well over a hundred of them.
 
@@ -30,7 +30,7 @@ Website: talaash-heritage.pages.dev
 ## LinkedIn text
 Durlabh Sunday #02: the Ajanta copies that burned twice.
 
-The Ajanta murals, the earliest surviving mural painting in India, began to deteriorate once the caves were exposed in 1819. If they were to be studied anywhere but in the caves, someone had to copy them. Major Robert Gill painted about thirty full-size oil copies between 1844 and 1863; most were lost when fire swept the Crystal Palace at Sydenham in December 1866.
+The Ajanta murals, some of the earliest surviving mural painting in India, began to deteriorate once the caves were exposed in 1819. If they were to be studied anywhere but in the caves, someone had to copy them. Robert Gill, an army officer, painted about thirty full-size oil copies between 1844 and 1863; most were lost when fire swept the Crystal Palace at Sydenham in December 1866.
 
 From 1872 John Griffiths and seven students of the Bombay School of Art made about 300 more. In June 1885 a fire in a London storeroom destroyed, by the V&A's own account, well over a hundred of them.
 
