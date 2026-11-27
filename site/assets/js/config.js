@@ -35,7 +35,7 @@ export const CONFIG = {
   // Leave empty and the site sets no cookies at all. Fill one in and visitors
   // see a short cookie banner; Google loads only for those who press Accept
   // (assets/js/consent.js). Also add a "Cookies" line to privacy.html then.
-  ga4Id: "",                    // e.g. "G-XXXXXXXXXX"
+  ga4Id: "G-VBHTYX9ED9",        // GA4 property 565678295, loads only after a visitor accepts (consent.js)
   googleAdsId: "",              // e.g. "AW-123456789"
   googleAdsPurchaseLabel: "",   // the purchase conversion label from Google Ads, e.g. "AbC-D_efG"
   defaultCountry: "India",
