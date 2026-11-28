@@ -1,0 +1,38 @@
+{
+ "file": "jaisatha-03-varnamala.mp4",
+ "result": "PASS",
+ "checks": {
+  "format": {
+   "pass": true,
+   "video": "h264 1080x1920 30.00fps",
+   "audio": "aac 44100Hz 1ch",
+   "duration": 51.5
+  },
+  "size": {
+   "pass": true,
+   "bytes": 3625813
+  },
+  "loudness": {
+   "pass": true,
+   "lufs": -14.6,
+   "true_peak": -1.9
+  },
+  "music": {
+   "pass": true,
+   "onsets_per_s": 2.85,
+   "longest_silence_s": 0.0,
+   "steadiness": 0.551
+  },
+  "bass": {
+   "pass": true,
+   "share_below_100hz": 0.067
+  },
+  "logos": {
+   "frames": 52,
+   "talaash_min": 0.71,
+   "aw_min": 0.84,
+   "fail_at": [],
+   "pass": true
+  }
+ }
+}

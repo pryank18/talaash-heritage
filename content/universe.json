@@ -568,16 +568,24 @@
    "series": "jaisa-tha",
    "number": 3,
    "field": "linguistics",
-   "title": "Jaisa Tha #3 (Linguistics or Sanskrit: how a script was written or a word sounded)",
-   "status": "idea",
+   "title": "Jaisa Tha #3: The Sanskrit alphabet, a map of the mouth",
+   "status": "ready",
    "slot": "2026-12-04T19:30",
    "platforms": [
     "instagram",
     "facebook",
-    "youtube-short"
+    "youtube-short",
+    "linkedin"
    ],
-   "page": null,
-   "sources": "Talaash 3D studio, Sat 28 Nov run. Must not repeat the topic of Talaash Lectures #1 (Brahmi)."
+   "page": "sanskrit-alphabet",
+   "sources": "render/jaisatha/03-varnamala.md",
+   "sells": "sanskrit-alphabet",
+   "topic_lock": [
+    "varnamala",
+    "sanskrit-phonetics",
+    "paniniya-siksha"
+   ],
+   "notes": "built 2026-11-28; caption in render/jaisatha/03-varnamala.md (## Caption; ## LinkedIn text has no pages.dev); media site/media/ig/jaisatha-03-varnamala.mp4 (51.5 s, 1080x1920, 3.63 MB, sha256 b91c89c71e1f); tools/reel_qc.py --3d PASS (render/jaisatha/score/jaisatha-03-varnamala.qc.json: -14.6 LUFS, both logos on all 52 sampled frames); edgecheck 0 of 1,545 frames; frames read back per segment against the checked text; three checks passed 28 Nov (claims changed or dropped listed in the .md). Silent of voice, no synthetic voice, non-photorealistic plain shapes: column N can be Not needed. Fields: Thursday 3 Dec Fact 018 is Aihole (history/epigraphy), so no clash."
   },
   {
    "id": "aw-rahasya-02-konark",
@@ -671,7 +679,7 @@
    ],
    "page": "khajuraho-architecture-deep-dive",
    "sources": "render/3d/kandariya-sources.md (canvas aa5f80ed-5676-496a-aaee-353ea79aee60)",
-   "notes": "Social launch of the live 3D page 3d-kandariya-mahadeva (no separate post before this episode: one topic, one reel, and the 30-day topic rule). Caption and end card name both the 3D page (3d-kandariya-mahadeva) and the programme page; LinkedIn text names the 3D model in words, no pages.dev. Both logos on every frame. Planned 15 Nov 2026.",
+   "notes": "Social launch of the live 3D page 3d-kandariya-mahadeva (no separate post before this episode: one topic, one reel, and the 30-day topic rule). Caption and end card name both the 3D page (3d-kandariya-mahadeva) and the programme page; LinkedIn text names the 3D model in words, no pages.dev. Both logos on every frame. Planned 15 Nov 2026. 28 Nov 2026 (3D studio): script and caption drafted in render/jaisatha/04-kandariya.md and portrait stills shot from the site model (render/jaisatha/kandariya_shoot.py), but NOT built: in this unattended run the checkers could not open Cunningham (ASI Reports vol. II), Krishna Deva (archive.org) or Fergusson fig. 342, so check 2 could confirm only \"largest standing temple at Khajuraho\" and the ASI attribution to Gaṇḍa. Fixes already found: say \"about 60 ft\" or cite Cunningham for 59½; keep \"standing\"; give Gaṇḍa (ASI, AD 1017–29) and Krishna Deva (c. 1025–50, Vidyādhara) as two views; tag the chamber sizes Estimated on screen; confirm \"three open porticoes\", \"marble\", the 872 count and the 116½/88 ft heights in Cunningham. Next 3D studio run (Sat 5 Dec) finishes the checks and builds; slot stays Fri 11 Dec.",
    "topic_lock": [
     "khajuraho"
    ]

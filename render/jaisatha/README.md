@@ -17,3 +17,11 @@ One episode per field of TALAASH (archaeology, linguistics, anthropology, arts, 
 1. Script from primary sources; two independent fact checks (one opens every source, one tries to disprove each claim) before rendering.
 2. Render, then check every segment frame by frame: text clear of objects, labels on the right layers. Run `python3 edgecheck.py <reel.mp4>`: it must report 0 frames touching an edge (a vertical frame is narrow, so the camera auto-fits each scene inside 110–970 px; the push-in is kept to 3.5% and the sway to 12 px so they never crop).
 3. Schedule on @talaashheritage (not at 08:10 or 19:40, the daily slide times), add the entry to content/reels.json, and fill its "instagram" link once it is live.
+
+## Episode 3: the Sanskrit alphabet, a map of the mouth (made 28 Nov 2026, linguistics)
+- Script, caption, LinkedIn text, sources, three-check notes: 03-varnamala.md
+- Stills: three.js r158 in headless Chromium, `python3 varnamala_shoot.py` (renders varnamala_scene.html from /tmp/claude-0/jt3 for 9 scenes and writes label positions); `python3 varnamala_compose.py`; score `python3 score/varnamala_score.py out.wav 51.5`, then acompressor + volume 19 dB + alimiter 0.56 (gives -14.6 LUFS, -1.9 dBTP); two-pass x264 at 480 kbit/s + 64 kbit/s mono AAC (51.5 s, 3.63 MB). Fonts: Noto Sans latin + latin-ext merged, Tiro Devanagari Sanskrit (latin and devanagari) from @fontsource, converted to TTF with fontTools.
+- One framing for every scene so the head never touches the frame edge (edgecheck 0). Logos as in episode 2 v2: archaeologywala at 96 px beside the Talaash badge, no backing disc (tools/reel_qc.py --3d PASS).
+
+## Episode 4: Kandariya Mahadeva (drafted 28 Nov 2026, not built)
+- Draft text: 04-kandariya.md. Stills come from the site's own model: serve site/ on localhost:8765 and run `python3 kandariya_shoot.py` (portrait 1080x1920 stage, labels off). Checks still open: see the ledger notes for tl-jaisa-tha-04-kandariya.

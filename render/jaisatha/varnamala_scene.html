@@ -1,0 +1,83 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><script src="three.min.js"></script><script>
+// Jaisa Tha #3: the Sanskrit stop rows. Illustrative mid-line section of a head, plain shapes, not to scale.
+const P = new URLSearchParams(location.search);
+const SCENE = P.get('s') || 'hero';
+const W = 1080, H = 1920;
+const R = new THREE.WebGLRenderer({antialias: true, preserveDrawingBuffer: true});
+R.setSize(W, H); R.setPixelRatio(1);
+R.outputColorSpace = THREE.SRGBColorSpace; R.toneMapping = THREE.ACESFilmicToneMapping; R.toneMappingExposure = 1.0;
+document.body.appendChild(R.domElement);
+const S = new THREE.Scene();
+const bg = document.createElement('canvas'); bg.width = 4; bg.height = 512;
+const g = bg.getContext('2d'); const gr = g.createLinearGradient(0, 0, 0, 512);
+gr.addColorStop(0, '#1c1a24'); gr.addColorStop(0.5, '#2d2830'); gr.addColorStop(1, '#4a3a30');
+g.fillStyle = gr; g.fillRect(0, 0, 4, 512);
+const bgT = new THREE.CanvasTexture(bg); bgT.colorSpace = THREE.SRGBColorSpace; S.background = bgT;
+S.add(new THREE.HemisphereLight(0xf3ead8, 0x4a3a30, 1.25));
+const key = new THREE.DirectionalLight(0xffe2bd, 2.0); key.position.set(18, 20, 30); S.add(key);
+const rim = new THREE.DirectionalLight(0x9fb4d8, 0.6); rim.position.set(-20, 10, -10); S.add(rim);
+const M = (c, o = {}) => new THREE.MeshStandardMaterial(Object.assign({color: c, roughness: 0.8, metalness: 0}, o));
+function shp(pts) { const s = new THREE.Shape(); s.moveTo(pts[0][0], pts[0][1]); pts.slice(1).forEach(p => s.lineTo(p[0], p[1])); s.closePath(); return s; }
+function smooth(pts, n = 8) { // closed Catmull-Rom through the points
+  const c = new THREE.CatmullRomCurve3(pts.map(p => new THREE.Vector3(p[0], p[1], 0)), true, 'centripetal');
+  return c.getPoints(pts.length * n).map(v => [v.x, v.y]);
+}
+function slab(pts, z0, d, mat, sm = true) {
+  const geo = new THREE.ExtrudeGeometry(shp(sm ? smooth(pts) : pts), {depth: d, bevelEnabled: true, bevelThickness: 0.08, bevelSize: 0.06, bevelSegments: 2, curveSegments: 4});
+  const m = new THREE.Mesh(geo, mat); m.position.z = z0; S.add(m); return m;
+}
+const G = new THREE.Group(); S.add(G);
+// head, neck and upper chest outline (facing +x)
+slab([[0,13],[6,12.4],[9.6,9.6],[10.6,6],[11,4.4],[13.4,0.9],[11.4,-0.2],[11.9,-1.5],[11.5,-2.6],[11.8,-3.7],[10.8,-5.1],[11.2,-7],[9.2,-9],[4.4,-9.6],[3.8,-13],[4.4,-16.6],[9.2,-18.6],[10.4,-23.5],[-10.4,-23.5],[-9.2,-18],[-7.2,-14],[-7.6,-10],[-9.6,-5.6],[-11,0],[-9.4,7.6],[-5.4,11.8]], 0, 3, M(0xd8c6a8));
+// airway: nasal cavity, mouth, pharynx, windpipe (dark)
+slab([[11.1,-2.55],[9.6,-1.15],[6,-0.75],[2,-0.55],[-0.6,0.3],[1,0.75],[9.4,0.75],[11.3,0.35],[11.7,0.9],[10.5,3.1],[5,4.1],[0.4,3.3],[-1.7,1.7],[-2.4,-1],[-2.6,-6],[-2.4,-12],[-1.9,-18.5],[-0.5,-18.5],[-0.7,-12],[-0.5,-9.2],[2,-8.8],[8.4,-5.3],[10.3,-3.7]], 3.0, 0.12, M(0x2a1d1a, {roughness: 1}), false);
+// hard palate (bone) and soft palate (velum)
+slab([[0.9,-0.55],[3,-0.35],[6,-0.55],[9.4,-0.85],[9.6,-0.3],[6,0.1],[3,0.25],[0.9,0.15]], 3.1, 0.6, M(0xefe4cf));
+const velum = slab([[1.0,-0.5],[0.9,0.15],[-0.4,0.1],[-1.5,-0.8],[-1.8,-2.2],[-1.3,-2.5],[-0.8,-1.5],[0.2,-0.85]], 3.1, 0.6, M(0xc9897c));
+// teeth
+slab([[9.5,-0.85],[10.3,-0.95],[10.2,-2.35],[9.7,-2.4]], 3.12, 0.7, M(0xf7f2e8), false);
+slab([[9.4,-2.75],[9.9,-2.7],[10.1,-4.1],[9.3,-4.2]], 3.12, 0.7, M(0xf7f2e8), false);
+// lips
+const LAB = SCENE === 'labial';
+slab([[10.3,-0.9],[11.6,-1.0],[12.0,-1.8],[11.7,-2.5],[10.6,-2.45],[10.3,-1.9]], 3.1, 0.8, M(0xb8685a));
+slab(LAB ? [[10.2,-2.5],[11.7,-2.5],[11.9,-3.3],[11.4,-4.2],[10.4,-4.1],[10.1,-3.2]] : [[10.2,-2.8],[11.6,-2.8],[11.9,-3.5],[11.4,-4.3],[10.4,-4.2],[10.1,-3.4]], 3.1, 0.8, M(0xb8685a));
+// tongue: posture per row
+const TONGUE = {
+  rest:     [[-0.6,-9],[-1.3,-6],[-1.3,-3.2],[0.2,-1.7],[3,-1.3],[6.4,-1.5],[8.6,-2.0],[9.4,-2.6],[9.0,-3.3],[7,-3.9],[3,-6],[0,-8.8]],
+  velar:    [[-0.6,-9],[-1.3,-6],[-1.0,-2.8],[0.0,-1.1],[1.4,-0.75],[3,-1.4],[6.2,-2.0],[8.4,-2.4],[9.2,-2.9],[8.8,-3.5],[7,-4.0],[3,-6],[0,-8.8]],
+  palatal:  [[-0.6,-9],[-1.3,-6],[-1.3,-3.2],[0.4,-1.8],[2.6,-0.9],[4.6,-0.7],[6.6,-1.0],[8.6,-2.0],[9.3,-2.6],[8.9,-3.3],[7,-3.9],[3,-6],[0,-8.8]],
+  retroflex:[[-0.6,-9],[-1.3,-6],[-1.3,-3.2],[0.4,-2.2],[3,-2.2],[5.2,-2.0],[6.4,-1.3],[6.9,-0.7],[7.4,-0.75],[7.3,-1.4],[6.8,-2.4],[6.2,-3.4],[3,-6],[0,-8.8]],
+  dental:   [[-0.6,-9],[-1.3,-6],[-1.3,-3.2],[0.2,-1.9],[3,-1.6],[6.4,-1.4],[8.6,-1.3],[9.45,-1.45],[9.3,-2.2],[8.6,-3.0],[7,-3.9],[3,-6],[0,-8.8]],
+};
+const tp = {velar: 'velar', palatal: 'palatal', retroflex: 'retroflex', dental: 'dental'}[SCENE] || 'rest';
+slab(TONGUE[tp], 3.1, 0.75, M(0xcf7a6b));
+// contact points
+const PTS = {velar: [0.8, -0.95], palatal: [4.4, -0.55], retroflex: [7.1, -0.55], dental: [9.55, -1.5], labial: [11.05, -2.5]};
+const GOLD = 0xdda638;
+function dot(x, y, r = 0.42) {
+  const s = new THREE.Mesh(new THREE.SphereGeometry(r, 24, 16), M(GOLD, {emissive: 0xc88a1a, emissiveIntensity: 1.2})); s.position.set(x, y, 4.2); S.add(s);
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(r * 2.1, 0.07, 8, 48), M(GOLD, {emissive: 0xc88a1a, emissiveIntensity: 0.9})); ring.position.set(x, y, 4.2); S.add(ring);
+}
+const LBLPTS = {};
+if (PTS[SCENE]) dot(PTS[SCENE][0], PTS[SCENE][1], 0.6);
+if (SCENE === 'rows') { ['velar','palatal','retroflex','dental','labial'].forEach((k, i) => { dot(PTS[k][0], PTS[k][1], 0.42); LBLPTS['n' + (i + 1)] = [PTS[k][0], PTS[k][1], 4.2]; }); }
+if (SCENE === 'places') {
+  const pl = {chest: [1, -18.2], throat: [-1.6, -6.5], head: [-3, 8], root: [-0.4, -4.4], teeth: [9.9, -1.6], nose: [11.6, 1.8], lips: [11.6, -3.6], palate: [5, -0.2]};
+  for (const k in pl) { const s = new THREE.Mesh(new THREE.SphereGeometry(0.3, 16, 12), M(GOLD, {emissive: 0xc88a1a, emissiveIntensity: 1})); s.position.set(pl[k][0], pl[k][1], 4.0); S.add(s); LBLPTS[k] = [pl[k][0], pl[k][1], 4.0]; }
+}
+for (const k in PTS) LBLPTS[k] = [PTS[k][0], PTS[k][1], 4.2];
+// camera: three-quarter view, head in the lower part of the frame
+const cam = new THREE.PerspectiveCamera(30, W / H, 0.1, 500);
+const v = {t: [1.2, -6, 1.5], d: 104, a: 0.25, e: 0.04, o: SCENE === 'places' ? 0.19 : 0.216};
+cam.position.set(v.t[0] + Math.sin(v.a) * v.d, v.t[1] + Math.sin(v.e) * v.d, v.t[2] + Math.cos(v.a) * v.d);
+cam.lookAt(v.t[0], v.t[1], v.t[2]);
+// shift the image down so the text block above stays clear
+cam.setViewOffset(W, H, 0, -H * (v.o || 0.17), W, H);
+cam.updateProjectionMatrix();
+R.render(S, cam);
+const L = {};
+for (const k in LBLPTS) { const p = new THREE.Vector3(...LBLPTS[k]).project(cam); L[k] = [(p.x + 1) / 2 * W, (1 - p.y) / 2 * H, p.z]; }
+window.LABELS = L; window.DONE = true;
+</script></body></html>
