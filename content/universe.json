@@ -510,7 +510,7 @@
    "number": 2,
    "field": "arts",
    "title": "Jaisa Tha #2: Sabz Burj, Delhi",
-   "status": "scheduled",
+   "status": "live",
    "slot": "2026-11-27T19:30",
    "platforms": [
     "instagram",
@@ -523,7 +523,7 @@
    "topic_lock": [
     "sabz-burj"
    ],
-   "notes": "22 Nov 2026: first file failed tools/reel_qc.py on audio; rescored with an original score written in code (render/jaisatha/score/sabz_score.py) and the archaeologywala logo moved beside the Talaash logo; new file site/media/ig/jaisatha-02-sabz-burj-v2.mp4, QC PASS (render/jaisatha/score/jaisatha-02-sabz-burj-v2.qc.json), sha256 4808d57326b2. built 2026-11-14; caption in render/jaisatha/02-sabz-burj.md; media site/media/ig/jaisatha-02-sabz-burj.mp4 (55.7 s, 3.45 MB); three checks passed 14 Nov (claims dropped listed in the .md); both logos on every frame; edgecheck 0 Queue row 78 (v2 file)."
+   "notes": "28 Nov 2026: posted on Instagram 27 Nov 19:35 (queue row 78 Posted, post id 18047496965829588); YouTube Short 5KNKTE6NRCA (ledger tl-jaisa-tha-02-sabz-burj-short). 22 Nov 2026: first file failed tools/reel_qc.py on audio; rescored with an original score written in code (render/jaisatha/score/sabz_score.py) and the archaeologywala logo moved beside the Talaash logo; new file site/media/ig/jaisatha-02-sabz-burj-v2.mp4, QC PASS (render/jaisatha/score/jaisatha-02-sabz-burj-v2.qc.json), sha256 4808d57326b2. built 2026-11-14; caption in render/jaisatha/02-sabz-burj.md; media site/media/ig/jaisatha-02-sabz-burj.mp4 (55.7 s, 3.45 MB); three checks passed 14 Nov (claims dropped listed in the .md); both logos on every frame; edgecheck 0 Queue row 78 (v2 file)."
   },
   {
    "id": "aw-guess-03",
@@ -2432,6 +2432,22 @@
    "page": "purana-qila",
    "sources": "site/media/ig/jaisatha-01-purana-qila.mp4; caption from queue sheet row 54",
    "notes": "YouTube Short B77NVW_8nJg (public, embeddable, no publishAt, synthetic media false; read back in the channel feed 22 Nov 2026 23:55). Uploaded by the owner session after the 21 Nov 3D studio run failed on the usage limit."
+  },
+  {
+   "id": "tl-jaisa-tha-02-sabz-burj-short",
+   "brand": "talaash",
+   "series": null,
+   "number": null,
+   "field": "arts",
+   "title": "Jaisa Tha #2 YouTube Short: Sabz Burj",
+   "status": "live",
+   "slot": "2026-11-28T13:10",
+   "platforms": [
+    "youtube"
+   ],
+   "page": "humayuns-tomb",
+   "sources": "site/media/ig/jaisatha-02-sabz-burj-v2.mp4; caption from queue sheet row 78",
+   "notes": "YouTube Short 5KNKTE6NRCA (public, embeddable, upload processed, no publishAt; read back through the YouTube API 28 Nov 2026 13:18 IST). Description = the Instagram caption with the programme link tagged utm_campaign=jaisa-tha-02. Uploaded by the 3D studio through a temporary Make scenario (deleted); poster 6534359 reactivated and confirmed active."
   },
   {
    "id": "tl-deep-ansi-2026",
